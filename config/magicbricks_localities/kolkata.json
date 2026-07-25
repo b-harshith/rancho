@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "kolkata": {
+      "components": [
+        {
+          "source_city_id": "6903",
+          "source_city_name": "Kolkata",
+          "verified_url": "https://www.magicbricks.com/localities-in-Kolkata",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

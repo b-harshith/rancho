@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "total_source_schools": 476,
+    "total_target_schools": 2015,
+    "matched": 476,
+    "unmatched": 0,
+    "match_percentage": 100.0
+  },
+  "missing_schools": []
+}

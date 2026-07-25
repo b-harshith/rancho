@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   RanchoLabs Multi-City Deep Dive
+  </title>
+  <meta content="RanchoLabs city decision brief for Delhi NCR, Bengaluru, Hyderabad, and Mumbai, grounded in reported Premium+ school enrollment, candidate catchments, partnership targets, and residential projects." name="description"/>
+  <!-- Space Grotesk & Questrial Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Questrial&amp;display=swap" rel="stylesheet"/>
+  <!-- Leaflet CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+  <!-- KaTeX Math Rendering CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet"/>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js">
+  </script>
+  <script defer="" onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js">
+  </script>
+  <!-- Custom Stylesheet -->
+  <link href="index.css?v=panel-controls-20260718a" rel="stylesheet"/>
+  <link href="metric-help.css?v=20260717a" rel="stylesheet"/>
+  <link href="utilities.css" rel="stylesheet"/>
+  <link href="/auth.css" rel="stylesheet"/>
+  <script src="/auth.js"></script>
+ </head>
+ <body>
+  <div class="app-container">
+   <!-- Left Sidebar: Notion-Style Controls & Details -->
+   <aside class="sidebar" id="app-sidebar">
+    <!-- Notion Collapse button -->
+    <button class="notion-sidebar-collapse-btn" id="button-collapse-sidebar-app-sidebar" title="Collapse sidebar" type="button">
+     <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="16">
+      <polyline points="15 18 9 12 15 6">
+      </polyline>
+     </svg>
+    </button>
+    <div class="sidebar-header">
+	     <div class="sidebar-brand-block">
+	      <span class="sidebar-kicker">Platform view 2 of 2 · City deep dive</span>
+	      <h1 id="app-title">
+	       RanchoLabs
+	      </h1>
+	      <p class="subtitle">
+	       Selected city · operating evidence workspace
+	      </p>
+	     </div>
+	     <div class="sidebar-header-actions">
+	      <a class="header-action-btn" id="portal-home-link" href="/?city=bengaluru#start-here">
+	       ← All-city overview
+	      </a>
+	      <button aria-label="Open Methodology and Sources" class="header-action-btn" id="button-assumptions-app-sidebar" type="button">
+	       Methodology
+      </button>
+      <button class="header-action-btn" id="button-onboarding-app-sidebar" type="button">
+       Onboarding
+      </button>
+     </div>
+     <div class="legacy-city-switcher" id="legacy-city-switcher">
+      <label for="legacy-city-select">City</label>
+      <select id="legacy-city-select" aria-label="Select city deep dive">
+       <option value="delhi_ncr">Delhi NCR</option>
+       <option value="bengaluru" selected>Bengaluru</option>
+       <option value="hyderabad">Hyderabad</option>
+       <option value="mumbai">Mumbai</option>
+      </select>
+      <label for="legacy-category-select">School audience</label>
+      <select id="legacy-category-select" aria-label="Select school category bucket">
+       <option value="premium_plus" selected>Premium + Super-Premium</option>
+       <option value="super_premium">Super-Premium</option>
+       <option value="premium">Premium</option>
+       <option value="affordable_plus">Affordable and above</option>
+       <option value="affordable">Affordable</option>
+       <option value="budget">Budget</option>
+       <option value="all_private">All private</option>
+      </select>
+     </div>
+    </div>
+    <!-- Navigation Tabs -->
+    <nav class="sidebar-nav" id="sidebar-tabs">
+     <button class="nav-tab active" id="tab-btn-summary">
+      Decision Brief
+     </button>
+     <button aria-controls="pane-schoolmarket" aria-selected="false" class="nav-tab" id="tab-btn-schoolmarket" role="tab" type="button">
+      School Market
+     </button>
+     <button class="nav-tab" id="tab-btn-zones">
+      Candidate Catchments
+     </button>
+     <button class="nav-tab" id="tab-btn-catchment">
+      Site Catchment
+     </button>
+     <button class="nav-tab nav-tab-secondary" id="tab-btn-overview">
+      Map Layers
+     </button>
+
+    </nav>
+    <div class="sidebar-content">
+     <!-- TAB 0: CLIENT DECISION BRIEF -->
+     <section class="tab-pane active" id="pane-summary">
+      <div class="decision-brief-heading">
+       <div>
+        <span class="decision-eyebrow">Market decision brief</span>
+        <h2 class="notion-heading-2">Where should we act next?</h2>
+       </div>
+       <span class="decision-evidence-chip">Premium+ · reported enrollment first</span>
+      </div>
+      <p class="help-text decision-intro">A concise operating view of source-reported Premium+ school enrollment, the first catchment to validate, and the partners and residential projects to approach.</p>
+      <section aria-live="polite" class="legacy-city-overview" id="legacy-city-overview">
+       <div class="school-surface-loading"><span></span><span></span></div>
+      </section>
+      <div aria-live="polite" class="decision-question-grid" id="client-decision-metrics">
+       <div class="school-surface-loading"><span></span><span></span></div>
+      </div>
+      <section aria-labelledby="decision-catchment-title" class="decision-section">
+       <div class="decision-section-header"><div><span>First validation move</span><h3 id="decision-catchment-title">Candidate catchments</h3></div><button class="header-action-btn" id="button-open-candidate-catchments-summary" type="button">Explore catchments</button></div>
+       <div class="decision-table-wrap"><table class="decision-table"><thead><tr><th>Priority</th><th>Catchment</th><th class="num-col">Reported students</th><th class="num-col">Schools</th><th class="num-col">Residential targets</th><th>Action</th></tr></thead><tbody id="decision-catchments-body"></tbody></table></div>
+      </section>
+      <section aria-labelledby="decision-schools-title" class="decision-section">
+       <div class="decision-section-header"><div><span>Partnership pipeline</span><h3 id="decision-schools-title">Priority school partners</h3></div><button class="header-action-btn" id="button-open-school-market-summary" type="button">Open School Market</button></div>
+       <div class="decision-table-wrap"><table class="decision-table"><thead><tr><th>School</th><th>Area</th><th class="num-col">Reported Grade 2–9</th><th>Evidence</th><th>Action</th></tr></thead><tbody id="decision-school-partners-body"></tbody></table></div>
+      </section>
+      <section aria-labelledby="decision-residential-title" class="decision-section">
+       <div class="decision-section-header"><div><span>Direct marketing list</span><h3 id="decision-residential-title">Residential project targets</h3></div><span class="decision-evidence-note">Named projects and source-listed unit inventory</span></div>
+       <div class="decision-table-wrap"><table class="decision-table"><thead><tr><th>Residential project</th><th>Area</th><th>Positioning</th><th class="num-col">Known units</th><th>Action</th></tr></thead><tbody id="decision-residential-targets-body"></tbody></table></div>
+      </section>
+      <section aria-labelledby="decision-campus-title" class="decision-section decision-scenario-section">
+       <div class="decision-section-header"><div><span>Planning scenarios, not forecasts</span><h3 id="decision-campus-title">How many campuses could this market support?</h3></div><span class="decision-evidence-note">200 seats · 80% utilization</span></div>
+       <div class="campus-scenario-grid" id="decision-campus-scenarios"></div>
+       <p class="school-method-note">Scenarios apply 1%, 2%, and 3% capture only to derived reported Premium+ Grade 2–9 enrollment, transparently prorated from source-reported grade spans. Overlapping catchments, competition, pricing, and site economics must be validated before committing.</p>
+      </section>
+      <button class="methodology-inline-link" id="assumptions-highlight-link" type="button">Review Methodology &amp; Sources</button>
+     </section>
+     <!-- TAB 1: OVERVIEW & LAYERS -->
+     <section class="tab-pane" id="pane-overview">
+      <h2 class="notion-heading-2">
+       Analysis Layers
+      </h2>
+      <p class="help-text">
+       Toggle overlays on the map and filter features to explore localized clusters.
+      </p>
+      <div class="analysis-layer-panel">
+       <div>
+        <span class="analysis-layer-eyebrow">
+         Layer stack
+        </span>
+        <strong>
+         Use school enrollment and campus locations first; add named residential projects, access, and boundaries as supporting context.
+        </strong>
+       </div>
+       <div aria-label="Analysis layer groups" class="analysis-layer-stats">
+        <span>
+         <strong>
+          Primary
+         </strong>
+         Reported demand
+        </span>
+        <span>
+         <strong>
+          Context
+         </strong>
+         Roads and boundaries
+        </span>
+        <span>
+         <strong>
+          Density
+         </strong>
+         Residential projects and hospitals
+        </span>
+        <span>
+         <strong>
+          School
+         </strong>
+         Canonical campus evidence
+        </span>
+       </div>
+      </div>
+
+      <!-- Layer Controller Cards -->
+      <div class="layers-container" id="layers-control-list">
+       <!-- Candidate catchment H3 layer -->
+       <div class="layer-card" id="layer-card-h3-hexes">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input checked="" id="toggle-layer-hexes" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Candidate Catchment Map
+          </span>
+          <span class="layer-desc">
+           City-scoped demand cells &middot; reported enrollment first
+          </span>
+         </div>
+        </div>
+        <div class="layer-filters" id="filters-h3-hexes">
+         <div class="filter-row">
+          <label class="filter-label" for="legacy-hex-coverage-select">Map coverage:</label>
+          <select id="legacy-hex-coverage-select" onchange="setLegacyHexCoverage(this.value)">
+           <option value="priority">Priority ranked H3s</option>
+           <option value="all">All occupied H3s</option>
+          </select>
+         </div>
+         <div class="layer-note" id="legacy-hex-coverage-note">Ranked H3 coverage is loading.</div>
+         <!-- Color By segmented control -->
+         <div class="filter-row">
+          <span class="filter-label">
+           Color By:
+          </span>
+          <div class="pill-group" id="hex-color-segmented">
+           <button class="pill-item active" data-val="affluence" id="color-btn-affluence" type="button">
+            Context score
+           </button>
+           <button class="pill-item" data-val="pagerank" id="color-btn-pagerank" type="button">
+            PageRank
+           </button>
+          </div>
+         </div>
+         <!-- Tier filter -->
+         <div class="filter-row">
+          <span class="filter-label">
+           Tier Filter:
+          </span>
+          <div class="pill-group" id="pill-hex-tier">
+           <button class="pill-item active" data-val="all" id="button-all-pill-hex-tier" type="button">
+            All
+           </button>
+           <button class="pill-item" data-val="Premium / Luxury Affluence" id="button-premium-pill-hex-tier" type="button">
+            Premium / Luxury
+           </button>
+           <button class="pill-item" data-val="Upper-Mid / Emerging Affluence" id="button-upper-mid-pill-hex-tier" type="button">
+            Upper-Mid / Emerging
+           </button>
+           <button class="pill-item" data-val="Mixed / Watchlist" id="button-watchlist-pill-hex-tier" type="button">
+            Mixed / Watchlist
+           </button>
+           <button class="pill-item" data-val="Low Evidence" id="button-low-evidence-pill-hex-tier" type="button">
+            Low Evidence
+           </button>
+          </div>
+         </div>
+         <!-- PageRank Classification Filter -->
+         <div class="filter-row">
+          <span class="filter-label">
+           PageRank Filter:
+          </span>
+          <div class="pill-group" id="pill-hex-pagerank">
+           <button class="pill-item active" data-val="all" id="button-all-pill-hex-pagerank" type="button">
+            All
+           </button>
+           <button class="pill-item" data-val="Strategic Hub" id="button-hubs-pill-hex-pagerank" type="button">
+            Hubs
+           </button>
+           <button class="pill-item" data-val="Wealth Island" id="button-islands-pill-hex-pagerank" type="button">
+            Islands
+           </button>
+           <button class="pill-item" data-val="Connected Residential" id="button-residentials-pill-hex-pagerank" type="button">
+            Residentials
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="layer-controls">
+         <span class="opacity-label">
+          Opacity
+         </span>
+         <input id="opacity-slider-hexes" max="1" min="0" step="0.05" type="range" value="0.55"/>
+        </div>
+        <div class="layer-note">
+         Use reported school demand for prioritization. Context and network color modes are directional qualifiers.
+        </div>
+       </div>
+       <!-- Localities Heatmap Layer -->
+       <div class="layer-card" id="layer-card-localities">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-localities" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Localities (Cost Heatmap)
+          </span>
+          <span class="layer-desc">
+           Amber-Red cost concentration
+          </span>
+         </div>
+        </div>
+        <div class="layer-controls">
+         <span class="opacity-label">
+          Opacity
+         </span>
+         <input id="opacity-slider-localities" max="1" min="0" step="0.05" type="range" value="0.75"/>
+        </div>
+        <div class="layer-note">
+         Shows price concentration around named localities.
+        </div>
+       </div>
+       <!-- Roads Network Layer -->
+       <div class="layer-card" id="layer-card-roads">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-roads" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Roads Network
+          </span>
+          <span class="layer-desc">
+           Street network overlay for map and satellite views
+          </span>
+         </div>
+        </div>
+        <div class="layer-note">
+         Useful with satellite when checking access and frontage.
+        </div>
+       </div>
+       <!-- Residential projects heatmap layer -->
+       <div class="layer-card" id="layer-card-societies">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-societies" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Residential projects
+          </span>
+          <span class="layer-desc">
+           Known project and unit density
+          </span>
+         </div>
+        </div>
+        <!-- Residential project filters -->
+        <div class="layer-filters" id="filters-societies">
+         <div class="filter-row">
+          <span class="filter-label">
+           Category Filter:
+          </span>
+          <div class="pill-group" data-select-id="filter-soc-category" id="pill-soc-category">
+           <button class="pill-item active" data-val="all">
+            All
+           </button>
+           <button class="pill-item" data-val="Ultra Luxury">
+            Ultra
+           </button>
+           <button class="pill-item" data-val="Super Luxury">
+            Super
+           </button>
+           <button class="pill-item" data-val="Luxury">
+            Luxury
+           </button>
+           <button class="pill-item" data-val="Premium">
+            Prem
+           </button>
+           <button class="pill-item" data-val="Aspirational Premium">
+            Asp
+           </button>
+          </div>
+          <select class="pill-hidden" id="filter-soc-category">
+           <option value="all">
+            All Categories
+           </option>
+           <option value="Ultra Luxury">
+            Ultra Luxury
+           </option>
+           <option value="Super Luxury">
+            Super Luxury
+           </option>
+           <option value="Luxury">
+            Luxury
+           </option>
+           <option value="Premium">
+            Premium
+           </option>
+           <option value="Aspirational Premium">
+            Aspirational Premium
+           </option>
+          </select>
+         </div>
+        </div>
+        <div class="layer-controls">
+         <span class="opacity-label">
+          Opacity
+         </span>
+         <input id="opacity-slider-societies" max="1" min="0" step="0.05" type="range" value="0.75"/>
+        </div>
+        <div class="layer-note">
+         Filter by project category before reading density.
+        </div>
+       </div>
+
+       <!-- Hospitals Layer -->
+       <div class="layer-card" id="layer-card-hospitals">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-hospitals" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Hospitals (Premium Healthcare)
+          </span>
+          <span class="layer-desc">
+           Violet-Purple multi-specialty density
+          </span>
+         </div>
+        </div>
+        <!-- Hospitals Filters -->
+        <div class="layer-filters" id="filters-hospitals">
+         <div class="filter-row">
+          <span class="filter-label">
+           Healthcare Tier:
+          </span>
+          <div class="pill-group" data-select-id="filter-hosp-category" id="pill-hosp-category">
+           <button class="pill-item active" data-val="all">
+            All
+           </button>
+           <button class="pill-item" data-val="Ultra Premium">
+            Ultra
+           </button>
+           <button class="pill-item" data-val="Super Premium">
+            Super
+           </button>
+           <button class="pill-item" data-val="Premium">
+            Prem
+           </button>
+           <button class="pill-item" data-val="Mid-Premium">
+            Mid
+           </button>
+          </div>
+          <select class="pill-hidden" id="filter-hosp-category">
+           <option value="all">
+            All Categories
+           </option>
+           <option value="Ultra Premium">
+            Ultra Premium
+           </option>
+           <option value="Super Premium">
+            Super Premium
+           </option>
+           <option value="Premium">
+            Premium
+           </option>
+           <option value="Mid-Premium">
+            Mid-Premium
+           </option>
+          </select>
+         </div>
+        </div>
+        <div class="layer-controls">
+         <span class="opacity-label">
+          Opacity
+         </span>
+         <input id="opacity-slider-hospitals" max="1" min="0" step="0.05" type="range" value="0.75"/>
+        </div>
+        <div class="layer-note">
+         Premium healthcare density as a support signal.
+        </div>
+       </div>
+       <!-- Office boundary layer: Bengaluru-only SEZ polygons when available -->
+       <div class="layer-card workplace-layer-card" id="layer-card-sez">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-sez" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-eyebrow">
+           Workplace geography
+          </span>
+          <span class="layer-name">
+           Office Boundary Zones
+          </span>
+          <span class="layer-desc">
+           Bengaluru-only boundary polygons with workplace-capacity context
+          </span>
+         </div>
+        </div>
+        <div aria-label="Office boundary zone summary" class="workplace-layer-stats">
+         <span>
+          <strong>
+           7
+          </strong>
+          zones
+         </span>
+         <span>
+          <strong>
+           27
+          </strong>
+          capacity proxy
+         </span>
+         <span>
+          <strong>
+           Boundary
+          </strong>
+          layer
+         </span>
+        </div>
+        <!-- SEZ Filters -->
+        <div class="layer-filters" id="filters-sez">
+         <div class="filter-row">
+          <span class="filter-label">
+           Capacity threshold:
+          </span>
+          <div class="pill-group" data-select-id="filter-sez-spaces" id="pill-sez-spaces">
+           <button class="pill-item active" data-val="0">
+            All Sizes
+           </button>
+           <button class="pill-item" data-val="2000">
+            &gt; 2k
+           </button>
+           <button class="pill-item" data-val="5000">
+            &gt; 5k
+           </button>
+           <button class="pill-item" data-val="10000">
+            &gt; 10k
+           </button>
+          </div>
+          <select class="pill-hidden" id="filter-sez-spaces">
+           <option value="0">
+            All Sizes
+           </option>
+           <option value="2000">
+            &gt; 2,000 office spaces
+           </option>
+           <option value="5000">
+            &gt; 5,000 office spaces
+           </option>
+           <option value="10000">
+            &gt; 10,000 office spaces
+           </option>
+          </select>
+         </div>
+        </div>
+        <div class="layer-controls">
+         <span class="opacity-label">
+          Opacity
+         </span>
+         <input id="opacity-slider-sez" max="1" min="0" step="0.05" type="range" value="0.60"/>
+        </div>
+        <div class="layer-note workplace-note">
+         Boundary context only where sourced. Other cities use office-anchor points, not fabricated SEZ outlines.
+        </div>
+       </div>
+       <!-- Office Listings Layer -->
+       <div class="layer-card workplace-layer-card office-listing-layer-card" id="layer-card-sez-offices">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-sezOffices" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-eyebrow">
+           Company overlay
+          </span>
+          <span class="layer-name">
+           Office Anchor Listings
+          </span>
+          <span class="layer-desc">
+           Ranked workplace/office-anchor records by city
+          </span>
+         </div>
+        </div>
+        <div aria-label="Office listings summary" class="workplace-layer-stats">
+         <span>
+          <strong>
+           3,577
+          </strong>
+          offices
+         </span>
+         <span>
+          <strong>
+           821
+          </strong>
+          inside
+         </span>
+         <span>
+          <strong>
+           2,756
+          </strong>
+          near
+         </span>
+        </div>
+        <div class="layer-filters" id="filters-sez-offices">
+         <div class="filter-row">
+          <span class="filter-label">
+           Boundary proximity:
+          </span>
+          <div class="pill-group" data-select-id="filter-office-proximity" id="pill-office-proximity">
+           <button class="pill-item" data-val="inside">
+            Inside
+           </button>
+           <button class="pill-item" data-val="within1">
+            &le; 1km
+           </button>
+           <button class="pill-item active" data-val="within2">
+            &le; 2km
+           </button>
+          </div>
+          <select class="pill-hidden" id="filter-office-proximity">
+           <option value="inside">
+            Inside sourced boundary only
+           </option>
+           <option value="within1">
+            Inside or within 1km
+           </option>
+           <option selected="" value="within2">
+            Inside or within 2km
+           </option>
+          </select>
+         </div>
+         <div class="filter-row">
+          <span class="filter-label">
+           Company tier:
+          </span>
+          <div class="pill-group" data-select-id="filter-office-tier" id="pill-office-tier">
+           <button class="pill-item" data-val="all">
+            All
+           </button>
+           <button class="pill-item" data-val="tier1">
+            MNC/GCC
+           </button>
+           <button class="pill-item active" data-val="tier2plus">
+            Enterprise+
+           </button>
+           <button class="pill-item" data-val="local">
+            Local
+           </button>
+          </div>
+          <select class="pill-hidden" id="filter-office-tier">
+           <option value="all">
+            All offices
+           </option>
+           <option value="tier1">
+            Tier 1 MNC/GCC anchors
+           </option>
+           <option selected="" value="tier2plus">
+            Tier 1 + Tier 2 enterprise anchors
+           </option>
+           <option value="local">
+            Local/generic offices
+           </option>
+          </select>
+         </div>
+        </div>
+        <div aria-label="Office marker legend" class="office-tier-legend">
+         <span>
+          <i class="office-dot tier-one">
+          </i>
+          MNC/GCC
+         </span>
+         <span>
+          <i class="office-dot tier-two">
+          </i>
+          Enterprise
+         </span>
+         <span>
+          <i class="office-dot tier-three">
+          </i>
+          Professional
+         </span>
+         <span>
+          <i class="office-dot tier-four">
+          </i>
+          Local
+         </span>
+        </div>
+        <div class="layer-note workplace-note">
+         Company prominence is a name-signal proxy. Boundary proximity is only shown where a sourced boundary exists.
+        </div>
+       </div>
+       <!-- Boundaries Layer -->
+       <div class="layer-card" id="layer-card-boundaries">
+        <div class="layer-card-header">
+         <label class="switch-container">
+          <input id="toggle-layer-boundaries" type="checkbox"/>
+          <span class="switch-slider">
+          </span>
+         </label>
+         <div class="layer-info">
+          <span class="layer-name">
+           Boundaries
+          </span>
+          <span class="layer-desc">
+           Zone edges and sourced administrative outlines for spatial context
+          </span>
+         </div>
+        </div>
+        <!-- Boundary Filters -->
+        <div class="layer-filters" id="filters-boundaries">
+         <div class="filter-row">
+          <span class="filter-label">
+           Boundary Type:
+          </span>
+          <div class="pill-group" id="pill-boundary-type">
+           <button class="pill-item active" data-val="both" id="button-both-pill-boundary-type" type="button">
+            Both
+           </button>
+           <button class="pill-item" data-val="zone" id="button-zone-only-pill-boundary-type" type="button">
+            Zone Only
+           </button>
+           <button class="pill-item" data-val="sez" id="button-sez-only-pill-boundary-type" type="button">
+            Office Boundary Only
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="layer-note">
+         Keeps zone and sourced administrative outlines visible while exploring other modules.
+        </div>
+       </div>
+      </div>
+      <div class="notion-block info-block methodology-pointer">
+       <h3 class="notion-heading-3">How to read these layers</h3>
+       <p>School enrollment and physical campus locations are the demand evidence. Residential projects, known units, hospitals, access, and network scores provide context and should not be converted into student or household counts.</p>
+       <button class="methodology-inline-link" onclick="openFormulasDrawer()" type="button">Open Methodology &amp; Sources</button>
+      </div>
+     </section>
+     <!-- TAB 2: ZONE ANALYSIS -->
+     <!-- TAB: SCHOOL MARKET -->
+     <section aria-labelledby="school-market-title" class="tab-pane school-market-pane" id="pane-schoolmarket" role="tabpanel">
+      <div class="school-market-header">
+       <div>
+        <span class="school-market-eyebrow" id="school-market-eyebrow">Reported enrollment · Physical campuses · Partnership targets</span>
+        <h2 class="notion-heading-2" id="school-market-title">School Market</h2>
+       </div>
+       <span class="school-method-badge" id="school-method-badge">Premium+ source bucket</span>
+      </div>
+      <p class="help-text" id="school-market-help">Use source-reported all-grade Premium+ enrollment to compare cities and prioritize partnership evidence. Derived Grade 2–9 is used for local screening and capacity scenarios; modeled additions remain separate.</p>
+
+      <div aria-live="polite" class="school-market-status" id="school-market-status">Loading canonical school evidence…</div>
+      <div aria-busy="true" class="school-kpi-grid" id="school-market-kpis"><div class="school-surface-loading"><span></span><span></span></div></div>
+
+      <section aria-labelledby="school-directory-title" class="school-market-section school-directory-section">
+       <div class="school-section-heading">
+        <div><span class="school-section-kicker">Complete campus index</span><h3 id="school-directory-title">Find any school on the map</h3></div>
+        <span class="school-directory-count" id="school-directory-count">Loading schools…</span>
+       </div>
+       <div class="school-directory-toolbar">
+        <label class="school-directory-search" for="school-directory-search"><span>Search schools</span><input autocomplete="off" id="school-directory-search" placeholder="Name, area, zone, board, or fee bucket" type="search"/></label>
+        <label class="school-directory-toggle"><input id="school-directory-audience-only" type="checkbox"/><span>Selected audience only</span></label>
+        <label class="decision-sort-label" for="school-directory-sort">Sort by<select id="school-directory-sort"><option value="name">School name</option><option value="enrollment">Grade 2–9 enrollment</option><option value="zone">Zone</option></select></label>
+       </div>
+       <p aria-live="polite" class="school-directory-meta" id="school-directory-meta"></p>
+       <div class="decision-table-wrap school-directory-table-wrap">
+        <table class="decision-table school-directory-table">
+         <thead><tr><th>School</th><th>Zone / area</th><th>Board</th><th>Fee bucket</th><th class="num-col">Grade 2–9</th><th>Map</th></tr></thead>
+         <tbody id="school-directory-body"></tbody>
+        </table>
+       </div>
+       <div class="school-directory-pagination"><button id="school-directory-prev" type="button">Previous</button><span id="school-directory-page">Page 1</span><button id="school-directory-next" type="button">Next</button></div>
+       <p class="school-method-note">The directory includes every canonical physical campus in the loaded city. “Selected audience only” applies the School audience filter above; map focus requires valid campus coordinates.</p>
+      </section>
+
+      <section aria-labelledby="school-partnership-title" class="school-market-section partnership-section">
+       <div class="school-section-heading"><div><span class="school-section-kicker">Named outreach list</span><h3 id="school-partnership-title">Priority school partnerships</h3></div><label class="decision-sort-label" for="school-partner-sort">Sort by<select id="school-partner-sort"><option value="reported">Reported enrollment</option><option value="name">School name</option><option value="area">Area</option></select></label></div>
+       <div class="decision-table-wrap"><table class="decision-table"><thead><tr><th>School</th><th>Area</th><th>Board</th><th class="num-col">Reported Grade 2–9</th><th>Evidence</th><th>Action</th></tr></thead><tbody id="school-partnership-targets-body"></tbody></table></div>
+       <p class="school-method-note">Treat this as an outreach shortlist. Enrollment is attached to the source school record or physical campus; it is not a count of students living nearby.</p>
+      </section>
+
+      <section aria-labelledby="school-board-title" class="school-market-section">
+       <div class="school-section-heading"><div><span class="school-section-kicker">Outreach mix</span><h3 id="school-board-title">Priority partner boards</h3></div></div>
+       <div class="school-board-grid" id="school-board-grid"></div>
+      </section>
+     </section>
+
+     <section class="tab-pane" id="pane-zones">
+      <h2 class="notion-heading-2">
+       Candidate Catchments
+      </h2>
+      <p class="help-text" id="zones-help-text">
+       Start with source-reported Premium+ school enrollment; local catchment totals use transparent Grade 2–9 derivation. Then qualify each area with school count, named residential projects, access, and overlap risk.
+      </p>
+      <section aria-labelledby="candidate-shortlist-title" class="decision-section candidate-shortlist-section">
+       <div class="decision-section-header"><div><span>Recommended validation order</span><h3 id="candidate-shortlist-title">Catchment shortlist</h3></div><span class="decision-evidence-note">Sorted by reported enrollment</span></div>
+       <div class="decision-table-wrap"><table class="decision-table"><thead><tr><th>Priority</th><th>Catchment</th><th class="num-col">Reported students</th><th class="num-col">Schools</th><th class="num-col">Residential targets</th><th>Overlap / next step</th></tr></thead><tbody id="candidate-catchments-body"></tbody></table></div>
+      </section>
+      <div class="candidate-detail-heading"><span>Supporting geography</span><strong>Zone and contiguous market context</strong></div>
+      <div class="module-toolbar">
+       <div class="module-toolbar-search">
+        <input id="zone-search-query" placeholder="Search zones or values" type="search"/>
+        <button class="header-action-btn" id="button-clear-zones" type="button">
+         Clear
+        </button>
+       </div>
+      </div>
+      <div class="zone-quick-filters" id="zone-quick-filters">
+       <button class="zone-filter-chip active" data-filter="all" id="button-all-zone-quick-filters" type="button">
+        All
+       </button>
+       <button class="zone-filter-chip" data-filter="top" id="button-top-tam-zone-quick-filters" type="button">
+        <span id="zone-top-demand-filter-label">Top premium+ demand</span>
+       </button>
+       <button class="zone-filter-chip" data-filter="has_tam" id="button-has-tam-zone-quick-filters" type="button">
+        Has demand / units
+       </button>
+      </div>
+      <div class="zone-summary-strip" id="zone-summary-strip">
+      </div>
+      <div class="table-container">
+       <table class="notion-table" id="zones-summary-table">
+        <thead>
+         <tr>
+          <th>
+           Zone
+          </th>
+          <th class="num-col">
+           Hexes
+          </th>
+          <th class="num-col">
+           Residential Units
+          </th>
+          <th class="num-col" id="zones-school-audience-heading">
+           Premium+ Students
+          </th>
+         </tr>
+        </thead>
+        <tbody id="zones-table-body">
+         <tr id="zone-row-south-east">
+          <td>
+           <strong>
+            South-East
+           </strong>
+          </td>
+          <td class="num-col">
+           41
+          </td>
+          <td class="num-col">
+           38,418
+          </td>
+          <td class="num-col">
+           24.5%
+          </td>
+         </tr>
+         <tr id="zone-row-east">
+          <td>
+           <strong>
+            East
+           </strong>
+          </td>
+          <td class="num-col">
+           34
+          </td>
+          <td class="num-col">
+           33,836
+          </td>
+          <td class="num-col">
+           21.5%
+          </td>
+         </tr>
+         <tr id="zone-row-north">
+          <td>
+           <strong>
+            North
+           </strong>
+          </td>
+          <td class="num-col">
+           39
+          </td>
+          <td class="num-col">
+           23,730
+          </td>
+          <td class="num-col">
+           15.1%
+          </td>
+         </tr>
+         <tr id="zone-row-south">
+          <td>
+           <strong>
+            South
+           </strong>
+          </td>
+          <td class="num-col">
+           26
+          </td>
+          <td class="num-col">
+           20,430
+          </td>
+          <td class="num-col">
+           13.0%
+          </td>
+         </tr>
+         <tr id="zone-row-south-west">
+          <td>
+           <strong>
+            South-West
+           </strong>
+          </td>
+          <td class="num-col">
+           21
+          </td>
+          <td class="num-col">
+           18,395
+          </td>
+          <td class="num-col">
+           11.7%
+          </td>
+         </tr>
+         <tr id="zone-row-north-east">
+          <td>
+           <strong>
+            North-East
+           </strong>
+          </td>
+          <td class="num-col">
+           37
+          </td>
+          <td class="num-col">
+           15,515
+          </td>
+         </tr>
+         <tr id="zone-row-central">
+          <td>
+           <strong>
+            Central
+           </strong>
+          </td>
+          <td class="num-col">
+           15
+          </td>
+          <td class="num-col">
+           6,553
+          </td>
+         </tr>
+         <tr id="zone-row-north-west">
+          <td>
+           <strong>
+            North-West
+           </strong>
+          </td>
+          <td class="num-col">
+           31
+          </td>
+          <td class="num-col">
+           196
+          </td>
+         </tr>
+         <tr id="zone-row-west">
+          <td>
+           <strong>
+            West
+           </strong>
+          </td>
+          <td class="num-col">
+           20
+          </td>
+          <td class="num-col">
+           0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <!-- Zone Details moved to Right Panel -->
+     </section>
+     <!-- TAB 3: MICRO MARKETS -->
+     <section class="tab-pane" id="pane-micromarkets">
+      <h2 class="notion-heading-2">
+       Micro Markets
+      </h2>
+      <p class="help-text">
+       Explore the selected city's ranked, contiguous opportunity micro-markets.
+      </p>
+      <div class="module-toolbar">
+       <div class="module-toolbar-search">
+        <input id="market-search-query" placeholder="Search markets or values" type="search"/>
+        <button class="header-action-btn" id="button-clear-markets" type="button">
+         Clear
+        </button>
+       </div>
+      </div>
+      <div class="micromarkets-hierarchy-container" id="micromarkets-hierarchy-container">
+       <!-- Rendered dynamically by JS -->
+      </div>
+     </section>
+     <!-- TAB 4: INTERACTIVE SITE CATCHMENT -->
+     <section class="tab-pane" id="pane-catchment">
+      <div class="catchment-module-heading">
+       <span class="decision-eyebrow">Live site validation</span>
+       <h2 class="notion-heading-2">Site Catchment</h2>
+       <p class="help-text">Test a proposed campus against mapped schools and named residential projects. Student counts remain attached to school locations and are not treated as home locations.</p>
+      </div>
+
+      <!-- Active Tool Banner (shown when toggle is ON) -->
+      <div class="catchment-armed-banner" id="catchment-armed-banner">
+        <span class="catchment-armed-dot"></span>
+        <span><strong>Click Tool Armed</strong> — Click any point on the map to generate isochrones</span>
+        <button class="catchment-armed-dismiss" onclick="syncCatchmentMode(false)" title="Disarm tool">✕</button>
+      </div>
+
+      <!-- Setup Card -->
+      <div class="catchment-setup-card" id="catchment-setup-card">
+
+        <!-- Step 1: Client Google key -->
+        <div class="catchment-step">
+          <div class="catchment-step-header">
+            <span class="catchment-step-num">1</span>
+            <div>
+              <strong class="catchment-step-title">Connect Google routing</strong>
+              <span class="catchment-step-hint">Use a domain-restricted key with the required routing APIs enabled.</span>
+            </div>
+          </div>
+          <label class="catchment-key-label" for="catchment-google-api-key">Google Maps API key</label>
+          <div class="catchment-key-row">
+           <input aria-describedby="catchment-key-help catchment-key-status" autocomplete="off" class="catchment-key-input" id="catchment-google-api-key" placeholder="Paste key for this session" spellcheck="false" type="password"/>
+           <button aria-label="Show Google Maps API key" aria-pressed="false" class="catchment-key-visibility" id="catchment-key-visibility" type="button">Show</button>
+          </div>
+          <p class="catchment-key-help" id="catchment-key-help">Held only in this browser tab's memory and sent over HTTPS in a request header. It is not saved, logged, or returned by the portal.</p>
+          <div aria-live="polite" class="catchment-key-status" id="catchment-key-status"></div>
+        </div>
+
+        <!-- Step 2: Travel Time -->
+        <div class="catchment-step">
+          <div class="catchment-step-header">
+            <span class="catchment-step-num">2</span>
+            <div>
+              <strong class="catchment-step-title">Choose drive time</strong>
+              <span class="catchment-step-hint">Drive · live traffic. One portal request compares all four bands.</span>
+            </div>
+          </div>
+          <div class="catchment-time-chips" id="catchment-time-chip-row">
+            <button class="catchment-chip active" data-minutes="15" type="button" onclick="selectCatchmentTravelTime(15, this)">
+              <span class="chip-dot" style="background:#2563eb"></span>15m
+            </button>
+            <button class="catchment-chip" data-minutes="30" type="button" onclick="selectCatchmentTravelTime(30, this)">
+              <span class="chip-dot" style="background:#7c3aed"></span>30m
+            </button>
+            <button class="catchment-chip" data-minutes="45" type="button" onclick="selectCatchmentTravelTime(45, this)">
+              <span class="chip-dot" style="background:#ea580c"></span>45m
+            </button>
+            <button class="catchment-chip" data-minutes="60" type="button" onclick="selectCatchmentTravelTime(60, this)">
+              <span class="chip-dot" style="background:#16a34a"></span>60m
+            </button>
+          </div>
+          <!-- Hidden input still needed by JS -->
+          <input id="catchment-input-time" type="hidden" value="15"/>
+          <!-- Hidden select still needed by JS -->
+          <select id="catchment-time-picker" style="display:none;" onchange="selectCatchmentTravelTime(Number(this.value), this)">
+            <option value="15" selected>15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">60 minutes</option>
+          </select>
+        </div>
+
+        <!-- Step 3: Arm the tool -->
+        <div class="catchment-step catchment-step-activate">
+          <div class="catchment-step-header">
+            <span class="catchment-step-num">3</span>
+            <div style="flex:1;">
+              <strong class="catchment-step-title">Arm &amp; Click</strong>
+              <span class="catchment-step-hint">Enable, then click a map location</span>
+            </div>
+            <label class="catchment-big-toggle">
+              <input id="btn-toggle-catchment-mode" onchange="toggleCatchmentMode()" type="checkbox"/>
+              <span class="catchment-toggle-track">
+                <span class="catchment-toggle-thumb"></span>
+              </span>
+              <span class="catchment-toggle-label" id="catchment-toggle-label">Off</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Summary badge -->
+        <div class="catchment-summary-badge" id="catchment-calculated-distance-display">
+          <span>Ready to query:</span>
+          <strong><span id="catchment-calculated-radius-val">15</span> min · Drive · Live Traffic</strong>
+        </div>
+
+      </div>
+
+      <!-- Instructions / Loading / Results placeholder -->
+      <div class="catchment-instructions" id="catchment-placeholder">
+       <div class="catchment-idle-state">
+         <div aria-hidden="true" class="catchment-idle-icon">◎</div>
+         <strong class="catchment-idle-title">Ready when your routing key is connected</strong>
+         <p class="catchment-idle-desc">Paste a restricted Google Maps key, choose a drive time, arm the tool, then click a proposed site on the map.</p>
+         <div class="catchment-idle-steps">
+           <div class="catchment-idle-step"><span>1</span>Connect the key for this session</div>
+           <div class="catchment-idle-step"><span>2</span>Arm the map click tool</div>
+           <div class="catchment-idle-step"><span>3</span>Click a site to compare school and residential evidence</div>
+         </div>
+       </div>
+      </div>
+      <!-- Catchment Dashboard Details moved to Right Panel -->
+     </section>
+
+     <!-- Inert legacy template retained only for backwards-compatible internal code paths. -->
+     <template id="pane-commercial">
+      <h2 class="notion-heading-2">
+       Workplace Context
+      </h2>
+      <p class="help-text">
+       Use office and employment anchors as directional context when validating a candidate site. These records are not proof of employee residence or Premium+ student demand.
+      </p>
+      <div class="commercial-summary-grid">
+       <div class="commercial-stat-card">
+        <span class="commercial-stat-value" id="commercial-total-count">
+         0
+        </span>
+        <span class="commercial-stat-label">
+         Listings
+        </span>
+       </div>
+       <div class="commercial-stat-card">
+        <span class="commercial-stat-value" id="commercial-visible-count">
+         0
+        </span>
+        <span class="commercial-stat-label">
+         Visible
+        </span>
+       </div>
+       <div class="commercial-stat-card">
+        <span class="commercial-stat-value" id="commercial-top-score">
+         0
+        </span>
+        <span class="commercial-stat-label">
+         Top score
+        </span>
+       </div>
+      </div>
+      <div class="commercial-mode-toggle">
+       <button class="active" id="commercial-mode-browse" type="button">
+        Browse saved
+       </button>
+       <button id="commercial-mode-custom" type="button">
+        Add custom
+       </button>
+      </div>
+      <div class="commercial-helper-row" id="commercial-data-note">
+       Search a saved listing or place, then use the map to inspect or jump to that area.
+      </div>
+      <div id="commercial-browse-panel">
+       <div class="commercial-search-panel">
+        <div class="commercial-search-row">
+         <input id="commercial-search-query" placeholder="Search saved listings or a place name" type="search"/>
+         <button class="commercial-secondary-btn" id="button-search-map-commercial-browse" type="button">
+          Search map
+         </button>
+         <button class="commercial-secondary-btn" id="button-fit-map-commercial-browse" type="button">
+          Fit map
+         </button>
+         <button class="commercial-secondary-btn" id="button-clear-commercial-browse" type="button">
+          Clear
+         </button>
+        </div>
+       </div>
+       <div class="commercial-toolbar commercial-toolbar-custom">
+        <h3 class="notion-heading-3 notion-heading-3-custom-1">
+         My Saved Listings
+        </h3>
+        <button class="close-btn" id="button-clear-selection-commercial-browse" type="button">
+         Clear selection
+        </button>
+       </div>
+       <div class="commercial-list" id="commercial-list">
+        <!-- Custom listings will populate here -->
+       </div>
+       <!-- Commercial Details & Comparison panels moved to Right Panel -->
+      </div>
+      <div id="commercial-custom-panel">
+       <div class="commercial-filter-panel">
+        <h3 class="notion-heading-3 notion-heading-3-custom-2">
+         Add Custom Listing
+        </h3>
+        <div class="commercial-filter-row">
+         <label for="commercial-custom-address">
+          Area / address
+         </label>
+         <input id="commercial-custom-address" placeholder="Example: Cyber City, Hitec City, BKC, Baner" type="text"/>
+        </div>
+        <div class="commercial-filter-row">
+         <label for="commercial-custom-url">
+          Listing URL
+         </label>
+         <input id="commercial-custom-url" placeholder="Paste URL from another platform" type="url"/>
+        </div>
+        <div class="commercial-filter-two">
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-price">
+           Monthly rent
+          </label>
+          <input id="commercial-custom-price" placeholder="Example: 250000" type="number"/>
+         </div>
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-sqft">
+           Sqft
+          </label>
+          <input id="commercial-custom-sqft" placeholder="Example: 2500" type="number"/>
+         </div>
+        </div>
+        <div class="commercial-filter-two">
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-lat">
+           Latitude
+          </label>
+          <input id="commercial-custom-lat" placeholder="12.9716" step="0.000001" type="number"/>
+         </div>
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-lon">
+           Longitude
+          </label>
+          <input id="commercial-custom-lon" placeholder="77.5946" step="0.000001" type="number"/>
+         </div>
+        </div>
+        <div class="commercial-filter-two">
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-type">
+           Property type
+          </label>
+          <select id="commercial-custom-type">
+           <option value="Learning Centre">
+            Learning Centre
+           </option>
+           <option value="Office Space">
+            Office Space
+           </option>
+           <option value="Managed Office">
+            Managed Office
+           </option>
+           <option value="High Street Retail">
+            High Street Retail
+           </option>
+          </select>
+         </div>
+         <div class="commercial-filter-row">
+          <label for="commercial-custom-floor">
+           Floor
+          </label>
+          <select id="commercial-custom-floor">
+           <option value="Ground">
+            Ground
+           </option>
+           <option value="Lower">
+            Lower
+           </option>
+           <option value="Mid">
+            Mid
+           </option>
+           <option value="Upper">
+            Upper
+           </option>
+          </select>
+         </div>
+        </div>
+        <div class="commercial-filter-row">
+         <label for="commercial-custom-amenities">
+          Amenities (comma separated)
+         </label>
+         <input id="commercial-custom-amenities" placeholder="parking, lift, security, frontage" type="text"/>
+        </div>
+        <div class="commercial-search-row">
+         <button class="commercial-secondary-btn" id="commercial-pick-location-btn" type="button">
+          Pick from map
+         </button>
+         <button class="commercial-secondary-btn" id="button-resolve-address-commercial-custom" type="button">
+          Resolve address
+         </button>
+        </div>
+        <div class="commercial-draft-note" id="commercial-draft-note">
+         No custom location selected yet.
+        </div>
+        <button class="commercial-primary-btn" id="button-run-catchment-and-save-listing-commercial-custom" type="button">
+         Run catchment and save listing
+        </button>
+        <div class="commercial-form-status" id="commercial-custom-status">
+        </div>
+       </div>
+      </div>
+     </template>
+     <!-- TAB 6: GRAPH ANALYTICS -->
+     <section class="tab-pane" id="pane-graph">
+      <div class="graph-page-hero">
+       <div>
+        <span class="network-card-eyebrow">
+         Graph analytics
+        </span>
+        <h2 class="notion-heading-2">
+         Graph Network Insights
+        </h2>
+        <p class="help-text" id="graph-network-help-text">
+         Secondary spatial-contiguity context. Node size represents known residential units, color represents network classification, and edges connect adjacent cells with comparable context.
+        </p>
+       </div>
+       <div class="graph-hero-metrics">
+        <div>
+         <strong id="graph-hero-hubs">
+          &mdash;
+         </strong>
+         <span>
+          Hubs
+         </span>
+        </div>
+        <div>
+         <strong id="graph-hero-islands">
+          &mdash;
+         </strong>
+         <span>
+          Islands
+         </span>
+        </div>
+        <div>
+         <strong id="graph-hero-clusters">
+          &mdash;
+         </strong>
+         <span>
+          Clusters
+         </span>
+        </div>
+       </div>
+      </div>
+      <!-- Before / After Inference Block -->
+      <div class="graph-inference-strip" id="graph-inference-block">
+       <div class="graph-inference-col graph-inference-before">
+        <span class="graph-inference-label">
+         Before graph analysis
+        </span>
+        <p>
+         Rankings are based purely on
+         <strong>
+          affluence score
+         </strong>
+         &mdash; a weighted composite of society, hospital, and enterprise office proximity signals. This treats every hex
+         <em>
+          independently
+         </em>
+         .
+        </p>
+        <ul>
+         <li>
+          High-affluence but
+          <strong>
+           isolated
+          </strong>
+          cells rank near the top
+         </li>
+         <li>
+          No awareness of
+          <strong>
+           neighborhood network effect
+          </strong>
+         </li>
+         <li>
+          Misses clusters that reinforce each other's geographic reach
+         </li>
+        </ul>
+       </div>
+       <div class="graph-inference-arrow">
+        to
+       </div>
+       <div class="graph-inference-col graph-inference-after">
+        <span class="graph-inference-label">
+         After PageRank analysis
+        </span>
+        <p>
+         Rankings are
+         <strong>
+          network-aware
+         </strong>
+         . Cells that sit at the intersection of premium clusters receive a centrality boost proportional to the quality of their neighbors.
+        </p>
+        <ul>
+         <li>
+          <strong>
+           Strategic Hubs
+          </strong>
+          rise &mdash; dense connectivity + good affluence
+         </li>
+         <li>
+          <strong>
+           Wealth Islands
+          </strong>
+          drop &mdash; wealthy but isolated, lower reach
+         </li>
+         <li>
+          Context signal becomes
+          <strong>
+           contextually amplified
+          </strong>
+          by network position
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="graph-analytics-card graph-network-card">
+       <div class="graph-section-header">
+        <div>
+         <span class="network-card-eyebrow">
+          Interactive model
+         </span>
+         <h3 class="notion-heading-3">
+          Force-directed spatial network
+         </h3>
+        </div>
+        <div class="graph-legend-pills">
+         <span>
+          <i class="graph-dot hub">
+          </i>
+          Strategic Hub
+         </span>
+         <span>
+          <i class="graph-dot island">
+          </i>
+          Wealth Island
+         </span>
+         <span>
+          <i class="graph-dot standard">
+          </i>
+          Standard
+         </span>
+        </div>
+       </div>
+       <p class="graph-section-copy">
+        Each node is a city-scoped H3 hex cell. Edges connect spatially adjacent cells; thicker edges indicate higher evidence-score similarity. Scroll to zoom, drag to pan, hover for details.
+       </p>
+       <div class="force-graph-wrapper" id="force-graph-container">
+        <div class="force-graph-loading" id="force-graph-loading">
+         Loading network data&hellip;
+        </div>
+       </div>
+      </div>
+      <div class="graph-analytics-card">
+       <div class="graph-section-header compact">
+        <div>
+         <span class="network-card-eyebrow">
+          Centrality movement
+         </span>
+         <h3 class="notion-heading-3">
+          Rank shifts: hubs vs. islands
+         </h3>
+        </div>
+       </div>
+       <p class="graph-section-copy">
+        Compare raw affluence rank against PageRank centrality rank. Cells above the diagonal gain from dense connectivity; cells below it lose rank because they are isolated.
+       </p>
+       <img alt="Rank Shift Scatter Plot" class="drawer-image graph-rank-image" id="img-openimagemodal-img-rank-graph" src="img/rank_comparison.png"/>
+      </div>
+      <div class="graph-analytics-card graph-ranking-card">
+       <div class="graph-section-header compact">
+        <div>
+         <span class="network-card-eyebrow">
+          Prioritized hex cells
+         </span>
+         <h3 class="notion-heading-3">
+          Personalized PageRank ranking
+         </h3>
+        </div>
+       </div>
+       <div class="table-container graph-ranking-table-wrap">
+        <table class="notion-table graph-ranking-table">
+         <thead>
+          <tr>
+           <th>
+            Rank
+           </th>
+           <th>
+            Locality
+           </th>
+           <th class="num-col">
+            PPR (&times;1k)
+           </th>
+           <th class="num-col">
+            Shift
+           </th>
+           <th>
+            Action
+           </th>
+          </tr>
+         </thead>
+         <tbody id="graph-ranking-table-body">
+          <!-- Injected dynamically via index.js -->
+         </tbody>
+        </table>
+       </div>
+      </div>
+      </section>
+     </div>
+    </aside>
+   <!-- Left Resize Handle -->
+   <div aria-hidden="true" class="sidebar-resize-handle" id="sidebar-resize-handle" title="Drag to resize the left sidebar">
+   </div>
+   <!-- Right Map Container -->
+   <main class="map-container" id="map-section">
+    <div class="panel-visibility-dock" aria-label="Workspace panel controls" role="group">
+     <span class="panel-dock-label">Panels</span>
+     <button aria-label="Collapse left panel" aria-pressed="true" class="panel-visibility-btn is-open" id="toggle-left-panel-btn" type="button">
+      <span aria-hidden="true" class="panel-control-icon">‹</span>
+      <span>Left</span>
+      <small>Hide</small>
+     </button>
+     <button aria-label="Open right panel" aria-pressed="false" class="panel-visibility-btn" id="toggle-right-panel-btn" type="button">
+      <span>Right</span>
+      <small>Show</small>
+      <span aria-hidden="true" class="panel-control-icon">‹</span>
+     </button>
+    </div>
+    <!-- Notion-style floating expand buttons -->
+    <button class="notion-sidebar-expand-btn hidden" id="left-sidebar-expand-btn" title="Open sidebar" type="button">
+     <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16">
+      <line x1="3" x2="21" y1="12" y2="12">
+      </line>
+      <line x1="3" x2="21" y1="6" y2="6">
+      </line>
+      <line x1="3" x2="21" y1="18" y2="18">
+      </line>
+     </svg>
+     <span>
+      Menu
+     </span>
+    </button>
+    <button class="notion-sidebar-expand-btn" id="right-panel-expand-btn" title="Open details panel" type="button">
+     <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16">
+      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z">
+      </path>
+      <line x1="4" x2="4" y1="22" y2="15">
+      </line>
+     </svg>
+     <span>
+      Details
+     </span>
+    </button>
+    <div class="map-top-controls">
+     <div class="map-search-control google-map-search">
+      <input aria-label="Search map places, companies, zones, and localities" autocomplete="off" id="map-search-query-top" placeholder="Search places, companies, zones" type="search"/>
+      <button class="map-control-btn map-search-submit" id="button-search-map-section" title="Search map" type="button">
+       Search
+      </button>
+      <button class="map-control-btn secondary map-search-clear" id="button-clear-map-section" title="Clear map search" type="button">
+       Clear
+      </button>
+      <div class="map-search-suggestions" id="map-search-suggestions">
+      </div>
+     </div>
+     <div class="map-basemap-toggle">
+      <button class="map-control-btn active" id="basemap-light-btn" type="button">
+       Map
+      </button>
+      <button class="map-control-btn" id="basemap-satellite-btn" type="button">
+       Satellite
+      </button>
+     </div>
+     <div class="map-search-status" id="map-search-status">
+      Search map places and localities, including areas outside this dataset.
+     </div>
+    </div>
+    <div id="leaflet-map-canvas">
+    </div>
+    <!-- Floating Map Control for Catchment Mode -->
+    <div class="map-floating-control" id="map-catchment-toggle">
+     <label class="switch-container">
+      <input id="map-btn-toggle-catchment-mode" onchange="syncCatchmentMode(this.checked)" type="checkbox"/>
+      <span class="switch-slider">
+      </span>
+     </label>
+     <span class="control-label">
+      Catchment Click Tool
+     </span>
+    </div>
+    <!-- Active Selections / Layers Panel -->
+    <div class="map-active-selections d-none" id="map-active-selections">
+     <div class="active-selections-title">
+      Active Layers &amp; Selections
+     </div>
+     <div class="active-selections-list" id="active-selections-list">
+      <!-- Populated dynamically -->
+     </div>
+    </div>
+    <!-- Sleek floating Legend -->
+    <div class="map-legend" id="hex-legend">
+     <div class="legend-title">
+      Catchment context score
+     </div>
+     <div class="legend-scale">
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom">
+       </span>
+       Very High (80-90+)
+      </div>
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom-1">
+       </span>
+       High (70-80)
+      </div>
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom-2">
+       </span>
+       Upper-Mid (55-70)
+      </div>
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom-3">
+       </span>
+       Emerging (40-55)
+      </div>
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom-4">
+       </span>
+       Mixed/Watch (25-40)
+      </div>
+      <div class="legend-row">
+       <span class="legend-swatch legend-swatch-custom-5">
+       </span>
+       Low Evidence (&lt;25)
+      </div>
+     </div>
+    </div>
+    <div aria-label="School market map legend" class="map-legend school-map-legend hidden" id="school-map-legend">
+     <div class="legend-title">School market evidence</div>
+     <div class="school-legend-row"><span class="school-legend-heat"></span><span>All-campus density</span></div>
+     <div class="school-legend-row"><span class="school-legend-marker q4"></span><span id="school-audience-legend-label">Premium+ audience</span></div>
+     <div class="school-legend-row hidden" id="school-sensitivity-legend-row"><span class="school-legend-marker sensitivity"></span><span id="school-sensitivity-legend-label">Fee-cutoff subset</span></div>
+    </div>
+   </main>
+   <!-- Right Resize Handle -->
+   <div aria-hidden="true" class="sidebar-resize-handle right-panel-resize-handle-style" id="right-panel-resize-handle" title="Drag to resize the right panel">
+   </div>
+   <!-- Right Sidebar: Notion-Style Details Strip -->
+   <aside class="right-panel collapsed" id="app-right-panel">
+    <div class="right-panel-header">
+     <h2 class="notion-heading-2" id="right-panel-title">
+      Details
+     </h2>
+     <button class="close-btn" id="right-panel-close-btn" title="Collapse details panel" type="button">
+      ✕ Close
+     </button>
+    </div>
+    <div class="right-panel-content">
+     <!-- Default Placeholder -->
+     <div class="right-panel-placeholder" id="right-panel-placeholder">
+      <div class="placeholder-icon">
+       📍
+      </div>
+      <p>
+       Select a zone, micro-market, commercial listing, or click on the map to view detailed demographics, wealth analysis, and lists here.
+      </p>
+     </div>
+     <!-- Zone Detailed View Pane (moved here) -->
+     <div class="details-panel hidden" id="zone-details-card">
+     </div>
+     <!-- Micro-Market Detailed View Pane -->
+     <div class="details-panel hidden" id="market-details-card">
+     </div>
+     <!-- School campus / candidate evidence pane -->
+     <div class="details-panel hidden" id="school-market-details-panel">
+     </div>
+     <!-- Catchment Aggregation Dashboard (moved here) -->
+     <div class="details-panel hidden" id="catchment-results-panel">
+     </div>
+     <!-- Commercial Details Pane (moved here) -->
+     <div class="details-panel hidden" id="commercial-details-panel">
+     </div>
+     <!-- Commercial Comparison Pane (moved here) -->
+     <div class="details-panel hidden" id="commercial-comparison-panel">
+      <div class="details-header">
+       <h3 class="notion-heading-3">
+        Comparison set
+       </h3>
+       <button class="close-btn" id="button-clear-commercial-comparison">
+        Clear
+       </button>
+      </div>
+      <div class="table-container commercial-mini-table">
+       <table class="notion-table">
+        <thead>
+         <tr>
+          <th>
+           Listing
+          </th>
+          <th class="num-col">
+           Score
+          </th>
+          <th class="num-col">
+           Known units
+          </th>
+          <th class="num-col">
+           Metro
+          </th>
+         </tr>
+        </thead>
+        <tbody id="commercial-comparison-table">
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <!-- Hex Details Pane (NEW!) -->
+     <div class="details-panel hidden" id="hex-details-card">
+     </div>
+    </div>
+   </aside>
+  </div>
+  <!-- Full-screen Landing Page Overlay -->
+  <div class="welcome-landing-page" id="welcome-landing">
+   <div class="landing-container landing-editorial">
+    <div class="landing-topbar">
+     <div class="landing-brand-stack">
+      <span class="brand-tag">
+       RanchoLabs Market Research
+      </span>
+      <span class="landing-kicker">
+       Selected-city market research deck
+      </span>
+     </div>
+     <div aria-label="Presentation progress" class="landing-progress-pill">
+      <span class="landing-progress-label">
+       Page
+      </span>
+      <span id="landing-current-slide">
+       1
+      </span>
+      <span class="landing-progress-divider">
+       /
+      </span>
+      <span id="landing-total-slides">
+       3
+      </span>
+     </div>
+    </div>
+    <div class="landing-stage">
+     <section aria-labelledby="landing-slide-1-title" class="landing-slide active" data-slide="0">
+      <div class="landing-slide-grid intro-grid">
+       <div class="landing-slide-copy">
+        <p class="landing-slide-label">
+         Page 1 &middot; Market view
+        </p>
+        <h1 id="landing-slide-1-title">
+         RanchoLabs City Market Research
+        </h1>
+        <div class="landing-brief-grid">
+         <article class="landing-brief-card">
+         <span>
+           Primary school audience
+          </span>
+          <strong>
+           Premium+ bucket entities · Grades 2–9
+          </strong>
+         </article>
+         <article class="landing-brief-card">
+          <span>
+           Residential evidence
+          </span>
+          <strong>
+           Luxury+ societies · Separate ledger
+          </strong>
+         </article>
+         <article class="landing-brief-card">
+          <span>
+           Parent profiles
+          </span>
+          <strong>
+           CXOs &middot; Doctors &middot; IAS &middot; VPs &middot; Engineers &middot; Business owners
+          </strong>
+         </article>
+        </div>
+        <div class="landing-kpi-strip landing-kpi-strip-compact">
+         <div class="landing-kpi-card highlight-card">
+          <span class="landing-kpi-value" id="landing-slide1-total-tam">
+           157,073
+          </span>
+          <span class="landing-kpi-label">
+           Premium Units
+          </span>
+          <span class="landing-kpi-subtext">
+           Total units in Q4 premium projects
+          </span>
+         </div>
+         <div class="landing-kpi-card school-highlight-card">
+          <span class="landing-kpi-value" id="landing-slide1-q4-students">—</span>
+          <span class="landing-kpi-label">Premium+ grade 2–9 enrollment</span>
+          <span class="landing-kpi-subtext" id="landing-slide1-school-scope">Loading canonical entity and campus scope</span>
+         </div>
+         <div class="landing-kpi-card highlight-card">
+          <span class="landing-kpi-value" id="landing-slide1-localities">
+           1,164
+          </span>
+          <span class="landing-kpi-label">
+           Locality records
+          </span>
+          <span class="landing-kpi-subtext">
+           Raw selected-city locality coverage
+          </span>
+         </div>
+         <div class="landing-kpi-card highlight-card">
+          <span class="landing-kpi-value" id="landing-slide1-confidence">
+           82.4%
+          </span>
+          <span class="landing-kpi-label">
+           Data confidence
+          </span>
+          <span class="landing-kpi-subtext">
+           Society source completeness
+          </span>
+         </div>
+        </div>
+       </div>
+       <aside class="landing-real-map-panel">
+        <div class="landing-preview-header">
+         <span>
+          Live H3 map
+         </span>
+         <span class="preview-badge">
+          Real data
+         </span>
+        </div>
+        <div aria-label="Live preview of the selected-city H3 TAM map" class="landing-live-map" id="landing-map-preview">
+        </div>
+        <div class="landing-map-stat-row">
+         <span>
+          <strong id="landing-slide1-hexes">
+           264
+          </strong>
+          H3 cells
+         </span>
+         <span>
+          <strong id="landing-slide1-zones">
+           9
+          </strong>
+          zones
+         </span>
+         <span>
+          <strong id="landing-slide1-markets">
+           8
+          </strong>
+          micro-markets
+         </span>
+        </div>
+       </aside>
+      </div>
+     </section>
+     <section aria-labelledby="landing-slide-2-title" class="landing-slide" data-slide="1">
+      <div class="landing-slide-single landing-slide-data">
+       <p class="landing-slide-label">
+        Page 2 &middot; Data foundation
+       </p>
+       <h2 id="landing-slide-2-title">
+        What powers the model
+       </h2>
+       <div class="dataset-bento">
+        <article class="dataset-card dataset-card-large">
+         <div class="dataset-card-header">
+          <span class="dataset-name">
+           Localities
+          </span>
+          <span class="dataset-count" id="landing-slide2-localities">
+           1,164
+          </span>
+         </div>
+         <div class="dataset-file">
+          DATA/raw/bangalore_localities_enriched.json
+         </div>
+         <div class="dataset-facts">
+          <span>
+           Plotted:
+           <strong id="landing-slide2-localities-plotted">
+            587
+           </strong>
+          </span>
+          <span>
+           Role: locality coverage + market price signal
+          </span>
+         </div>
+         <div class="dataset-attributes">
+          <span>
+           locality_info.name
+          </span>
+          <span>
+           coordinates
+          </span>
+          <span>
+           market_price_per_sqft
+          </span>
+          <span>
+           budget_segment
+          </span>
+          <span>
+           income_analytics
+          </span>
+          <span>
+           trends
+          </span>
+         </div>
+        </article>
+        <article class="dataset-card">
+         <div class="dataset-card-header">
+          <span class="dataset-name">
+           Societies
+          </span>
+          <span class="dataset-count" id="landing-slide2-societies">
+           573
+          </span>
+         </div>
+         <div class="dataset-file">
+          web_platform/static/data/societies.json
+         </div>
+         <div class="dataset-facts">
+          <span id="landing-slide2-societies-breakdown">
+           466 Ready | 25 UC | 82 NA
+          </span>
+          <span>
+           Role: residential TAM
+          </span>
+         </div>
+         <div class="dataset-attributes">
+          <span>
+           category
+          </span>
+          <span>
+           tam
+          </span>
+          <span>
+           units
+          </span>
+          <span>
+           price
+          </span>
+          <span>
+           confidence
+          </span>
+          <span>
+           construction_status
+          </span>
+         </div>
+        </article>
+
+        <article class="dataset-card school-dataset-card">
+         <div class="dataset-card-header">
+          <span class="dataset-name">Canonical schools</span>
+          <span class="dataset-count" id="landing-slide2-school-entities">—</span>
+         </div>
+         <div class="dataset-file">school_entities.json · school_campuses.json</div>
+         <div class="dataset-facts">
+          <span>Physical campuses: <strong id="landing-slide2-school-campuses">—</strong></span>
+          <span>Role: campus-attached grade 2–9 enrollment</span>
+         </div>
+         <div class="dataset-attributes">
+          <span>school_entity_id</span><span>campus_id</span><span>fee bucket</span><span>school quartile</span><span>enrollment source</span><span>zone</span>
+         </div>
+        </article>
+
+        <article class="dataset-card">
+         <div class="dataset-card-header">
+          <span class="dataset-name">
+           Hospitals
+          </span>
+          <span class="dataset-count" id="landing-slide2-hospitals">
+           235
+          </span>
+         </div>
+         <div class="dataset-file">
+          web_platform/static/data/hospitals.json
+         </div>
+         <div class="dataset-facts">
+          <span>
+           Role: premium service anchors
+          </span>
+          <span>
+           Tiered by category
+          </span>
+         </div>
+         <div class="dataset-attributes">
+          <span>
+           category
+          </span>
+          <span>
+           beds
+          </span>
+          <span>
+           rating
+          </span>
+          <span>
+           reviews
+          </span>
+          <span>
+           hex_id
+          </span>
+          <span>
+           zone
+          </span>
+         </div>
+        </article>
+        <article class="dataset-card dataset-card-wide">
+         <div class="dataset-card-header">
+          <span class="dataset-name">
+           H3 + report model
+          </span>
+          <span class="dataset-count" id="landing-slide2-hexes">
+           264 hexes
+          </span>
+         </div>
+         <div class="dataset-file">
+          hexes.geojson &middot; report.json &middot; sez_zones.geojson
+         </div>
+         <div class="dataset-facts">
+          <span>
+           Zones:
+           <strong id="landing-slide2-zones">
+            9
+           </strong>
+          </span>
+          <span>
+           Micro-markets:
+           <strong id="landing-slide2-markets">
+            8
+           </strong>
+          </span>
+          <span>
+           SEZ layer: workplace capacity
+          </span>
+         </div>
+         <div class="dataset-attributes">
+          <span>
+           final_affluence_score
+          </span>
+          <span>
+           income_band_totals
+          </span>
+          <span>
+           countable_family_tam
+          </span>
+          <span>
+           society_score
+          </span>
+          <span>
+           hospital_score
+          </span>
+          <span>
+           sez_workplace_score
+          </span>
+          <span>
+           centroid_lat/lon
+          </span>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section aria-labelledby="landing-slide-3-title" class="landing-slide" data-slide="2">
+      <div class="landing-slide-single landing-slide-rules">
+       <p class="landing-slide-label">
+        Page 3 &middot; Analytical rules
+       </p>
+       <h2 id="landing-slide-3-title">
+        Rules and brackets
+       </h2>
+       <div class="rules-grid">
+        <article class="rule-card rule-card-large">
+         <h3>
+          Income bands (AHI)
+         </h3>
+         <div class="bracket-list">
+          <span>
+           8L-15L
+          </span>
+          <span>
+           15L-30L
+          </span>
+          <span>
+           30L-60L
+          </span>
+          <span>
+           60L-1.5Cr
+          </span>
+          <span>
+           1.5Cr+
+          </span>
+         </div>
+         <div class="rule-note">
+          Target TAM: ₹40L+ Annual Household Income (AHI)
+         </div>
+        </article>
+        <article class="rule-card">
+         <h3>
+          Society wealth bands
+         </h3>
+         <div class="rule-table">
+          <span>
+           Ultra Luxury
+          </span>
+          <strong>
+           ₹5Cr+
+          </strong>
+          <span>
+           Super Luxury
+          </span>
+          <strong>
+           ₹2Cr&ndash;₹5Cr
+          </strong>
+          <span>
+           Luxury
+          </span>
+          <strong>
+           ₹1Cr&ndash;₹2Cr
+          </strong>
+          <span>
+           Premium
+          </span>
+          <strong>
+           ₹50L&ndash;₹1Cr
+          </strong>
+          <span>
+           Aspirational Premium
+          </span>
+          <strong>
+           ₹25L&ndash;₹50L
+          </strong>
+         </div>
+        </article>
+        <article class="rule-card">
+         <h3>
+          SqFt price brackets
+         </h3>
+         <div class="rule-table">
+          <span>
+           Ultra Luxury
+          </span>
+          <strong>
+           ₹10.7k-₹28k
+          </strong>
+          <span>
+           Super Luxury
+          </span>
+          <strong>
+           ₹8.4k-₹21k
+          </strong>
+          <span>
+           Luxury
+          </span>
+          <strong>
+           8.1-17.5k
+          </strong>
+         </div>
+        </article>
+        <article class="rule-card rule-card-score">
+         <h3>
+          H3 score bands
+         </h3>
+         <div class="score-band-list">
+          <span>
+           <i class="i-gen-28">
+           </i>
+           80+ Very high
+          </span>
+          <span>
+           <i class="i-gen-29">
+           </i>
+           70-80 High
+          </span>
+          <span>
+           <i class="i-gen-30">
+           </i>
+           55-70 Upper-mid
+          </span>
+          <span>
+           <i class="i-gen-31">
+           </i>
+           40-55 Emerging
+          </span>
+          <span>
+           <i class="i-gen-32">
+           </i>
+           25-40 Mixed/watch
+          </span>
+          <span>
+           <i class="i-gen-33">
+           </i>
+           &lt;25 Low evidence
+          </span>
+         </div>
+        </article>
+        <article class="rule-card">
+         <h3>
+          Catchment defaults
+         </h3>
+         <div class="rule-table">
+          <span>
+           Distance mode
+          </span>
+          <strong>
+           7 km default
+          </strong>
+          <span>
+           Time mode
+          </span>
+          <strong>
+           15 min @ 20 km/h
+          </strong>
+          <span>
+           Capacity planner
+          </span>
+          <strong>
+           200 seats &middot; 5%
+          </strong>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+    </div>
+    <div class="landing-footer">
+     <div aria-label="Presentation pages" class="landing-step-dots">
+      <button aria-label="Go to page 1" class="landing-step-dot active" id="button-gotolandingslide-0-welcome-landing" type="button">
+      </button>
+      <button aria-label="Go to page 2" class="landing-step-dot" id="button-gotolandingslide-1-welcome-landing" type="button">
+      </button>
+      <button aria-label="Go to page 3" class="landing-step-dot" id="button-gotolandingslide-2-welcome-landing" type="button">
+      </button>
+     </div>
+     <div class="landing-footer-actions">
+      <button class="landing-nav-btn secondary" id="button-skip-intro-welcome-landing" type="button">
+       Skip intro
+      </button>
+      <button class="landing-nav-btn secondary" disabled="" id="landing-back-btn" type="button">
+       Back
+      </button>
+      <button class="landing-nav-btn primary" id="landing-next-btn" type="button">
+       Next
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-hidden="true" class="map-transition-overlay" id="map-transition-overlay">
+   <span class="transition-orb orb-blue">
+   </span>
+   <span class="transition-orb orb-red">
+   </span>
+   <span class="transition-orb orb-white">
+   </span>
+   <span class="transition-ring ring-1">
+   </span>
+   <span class="transition-ring ring-2">
+   </span>
+  </div>
+  <!-- Full Page Data Modal (Gumroad Style) -->
+  <div class="full-page-data-overlay hidden" id="full-data-modal">
+   <div class="gumroad-modal">
+    <div class="gumroad-modal-header">
+     <h2 id="full-data-title">
+      Zone Data
+     </h2>
+     <div class="gumroad-modal-actions">
+      <button class="gumroad-btn export-btn" id="button-export-csv-full-data-modal">
+       ⬇ Export CSV
+      </button>
+      <button class="gumroad-close-btn" id="button-close-full-data-modal">
+       ✖ Close
+      </button>
+     </div>
+    </div>
+    <div class="gumroad-modal-controls">
+     <div class="full-data-search-bar">
+      <input id="full-data-search-query" placeholder="Search names, tags, zones, URLs, or numbers" type="search"/>
+      <select id="full-data-scope">
+       <option value="zone">
+        Current zone
+       </option>
+       <option value="all">
+        All zones
+       </option>
+      </select>
+     </div>
+     <div class="gumroad-tabs">
+      <button class="gumroad-tab active" id="tab-societies">
+       Residential projects
+      </button>
+      <button class="gumroad-tab" id="tab-schools">
+       Schools
+      </button>
+      <button class="gumroad-tab" id="tab-hospitals">
+       Hospitals/Markets
+      </button>
+      <button class="gumroad-tab" id="tab-offices">
+       Offices
+      </button>
+     </div>
+     <div class="gumroad-filters" id="gumroad-filters-container">
+      <!-- Filters injected dynamically -->
+     </div>
+    </div>
+    <div class="full-data-meta-row" id="full-data-meta-row">
+    </div>
+    <div class="full-data-pagination" id="full-data-pagination">
+    </div>
+    <div class="gumroad-table-container">
+     <table class="gumroad-table" id="full-data-table">
+      <thead id="full-data-thead">
+       <!-- Headers injected dynamically -->
+      </thead>
+      <tbody id="full-data-tbody">
+       <!-- Data injected dynamically -->
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+  <div aria-hidden="true" class="formulas-drawer hidden" id="formulas-drawer">
+   <div aria-describedby="methodology-drawer-description" aria-labelledby="methodology-drawer-title" aria-modal="true" class="formulas-drawer-panel" role="dialog" tabindex="-1">
+    <div class="formulas-drawer-header">
+     <div>
+      <span class="decision-eyebrow">Evidence register</span>
+      <h2 id="methodology-drawer-title">Methodology &amp; Sources</h2>
+      <p id="methodology-drawer-description">What is observed, what is calculated, what is only a planning scenario, and what can influence a city recommendation.</p>
+     </div>
+     <div class="div-gen-34">
+      <button aria-label="Close Methodology and Sources" class="close-btn" id="button-close-formulas-drawer" type="button">
+       Close
+      </button>
+     </div>
+    </div>
+    <div class="formulas-drawer-body">
+     <section aria-labelledby="method-observed-title" class="evidence-register-section observed">
+      <div class="evidence-register-heading"><span>01</span><div><h3 id="method-observed-title">Directly observed</h3><p>Source values shown without a demand conversion.</p></div></div>
+      <div class="evidence-register-table" role="table" aria-label="Directly observed evidence">
+       <div class="evidence-register-row header" role="row"><span>Metric</span><span>Source and coverage</span><span>Use in recommendation</span></div>
+       <div class="evidence-register-row" role="row"><strong>Source-reported school enrollment</strong><span>All-grade enrollment from source-reported school rows; coverage is reported per city and bucket. It remains separate from derived Grade 2–9 and modeled rows.</span><span>Primary school-demand input in the city recommendation and ranking.</span></div>
+       <div class="evidence-register-row" role="row"><strong>School, board, fee bucket, campus location</strong><span>Supplied school records, canonical entities, and physical campus grouping.</span><span>Defines Premium+ scope, partnership targets, and school-location catchments.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Residential project and known units</strong><span>Supplied project/listing layer. Missing units remain unavailable.</span><span>Marketing and operational context; no resident-student or household conversion.</span></div>
+      </div>
+     </section>
+     <section aria-labelledby="method-calculated-title" class="evidence-register-section calculated">
+      <div class="evidence-register-heading"><span>02</span><div><h3 id="method-calculated-title">Directly calculated</h3><p>Transparent rollups of observed source values.</p></div></div>
+      <div class="evidence-register-table" role="table" aria-label="Direct calculations">
+       <div class="evidence-register-row header" role="row"><span>Metric</span><span>Formula and coverage</span><span>Use in recommendation</span></div>
+       <div class="evidence-register-row" role="row"><strong>Derived reported Premium+ Grade 2–9</strong><span>For each source-reported school row, total enrollment is prorated by the overlap between Grades 2–9 and the supplied grade span, then summed. Example: a Grades 1–12 school contributes 8/12 of reported total enrollment.</span><span>Local catchment ordering and campus-scenario basis; not the primary city-ranking input.</span></div>
+       <div class="evidence-register-row" role="row"><strong>School and campus counts</strong><span>Distinct canonical school entities and distinct grouped physical campuses.</span><span>Partnership density and operational reach.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Catchment concentration</strong><span>Reported Premium+ Grade 2–9 in a geography divided by the city reported Premium+ total.</span><span>Qualifies concentration; never interpreted as home location.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Known residential units</strong><span>Sum of available units on named project records; records with unknown units stay unknown.</span><span>Marketing depth qualifier, not a student or household estimate.</span></div>
+      </div>
+     </section>
+     <section aria-labelledby="method-scenarios-title" class="evidence-register-section scenario">
+      <div class="evidence-register-heading"><span>03</span><div><h3 id="method-scenarios-title">Planning scenarios</h3><p>Adjustable operating assumptions; never presented as forecasts.</p></div></div>
+      <div class="evidence-register-table" role="table" aria-label="Planning scenarios">
+       <div class="evidence-register-row header" role="row"><span>Scenario</span><span>Formula</span><span>Use in recommendation</span></div>
+       <div class="evidence-register-row" role="row"><strong>Campus capacity range</strong><span>Derived reported Premium+ Grade 2–9 × 1%, 2%, or 3% capture ÷ (200 seats × 80% utilization), rounded down to fully supportable campuses.</span><span>Planning range only; excluded from city ranking.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Modeled enrollment addition</strong><span>Shown separately where a source-reported enrollment value is unavailable and a documented model produced an estimate.</span><span>Secondary sensitivity only; excluded from the reported headline.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Drive-time catchment</strong><span>Google live-traffic drive-time geometry at 15, 30, 45, or 60 minutes around a proposed site. School enrollment remains attached to schools inside the returned geometry, and overlapping catchments must not be added.</span><span>Site validation only; excluded from the city ranking.</span></div>
+      </div>
+     </section>
+     <section aria-labelledby="method-directional-title" class="evidence-register-section directional">
+      <div class="evidence-register-heading"><span>04</span><div><h3 id="method-directional-title">Directional indicators</h3><p>Useful context that cannot establish student residence or conversion.</p></div></div>
+      <div class="evidence-register-table" role="table" aria-label="Directional indicators">
+       <div class="evidence-register-row header" role="row"><span>Indicator</span><span>Interpretation</span><span>Use in recommendation</span></div>
+       <div class="evidence-register-row" role="row"><strong>City evidence score</strong><span>A secondary normalized comparison across the selected market scope. The recommendation order is led by source-reported all-grade Premium+ enrollment; the score must always be read beside the direct counts.</span><span>Recommendation posture only; never substitutes for observed enrollment.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Residential positioning labels</strong><span>Mapped source project categories. They describe project positioning, not household income.</span><span>Marketing prioritization only.</span></div>
+       <div class="evidence-register-row" role="row"><strong>Access and routing context</strong><span>Current drive-time geometry around a candidate site when a client-controlled Google key is supplied.</span><span>Operational qualifier only.</span></div>
+      </div>
+     </section>
+     <p class="evidence-register-footer" id="methodology-live-context">Current view: Premium+ evidence. Source dates and coverage should be read from the selected city artifact where available.</p>
+    </div>
+   </div>
+  </div>
+  <!-- Vercel Web Analytics -->
+  <script>
+   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+   if (!['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
+    const vercelAnalytics = document.createElement('script');
+    vercelAnalytics.defer = true;
+    vercelAnalytics.src = '/_vercel/insights/script.js';
+    document.head.appendChild(vercelAnalytics);
+   }
+  </script>
+  <!-- D3.js for interactive force-directed graph -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js">
+  </script>
+  <!-- Leaflet JS -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+  <!-- Leaflet Heatmap Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js">
+  </script>
+  <!-- Reusable Details Template Engine -->
+  <script defer="" src="template.js">
+  </script>
+  <!-- Client Application logic -->
+  <script defer="True" src="events.js?v=panel-controls-20260718a">
+  </script>
+  <script src="index.js?v=panel-controls-20260718a">
+  </script>
+  <script defer src="metric-help.js?v=20260717a"></script>
+ </body>
+</html>

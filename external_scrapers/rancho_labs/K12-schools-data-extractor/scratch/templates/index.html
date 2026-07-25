@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K12 Bangalore Schools Mission Control Dashboard</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        :root {
+            --bg-color: #0c0d12;
+            --bg-gradient: radial-gradient(circle at top left, #141624, #08090f);
+            --panel-bg: rgba(20, 22, 37, 0.6);
+            --panel-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00f2fe;
+            --accent-cyan-glow: rgba(0, 242, 254, 0.3);
+            --accent-magenta: #f35588;
+            --accent-magenta-glow: rgba(243, 85, 136, 0.3);
+            --accent-green: #00ff87;
+            --accent-green-glow: rgba(0, 255, 135, 0.3);
+            --accent-orange: #ff9f43;
+            --accent-red: #ff5252;
+            --card-radius: 16px;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg-color);
+            background-image: var(--bg-gradient);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            overflow-x: hidden;
+        }
+
+        /* ── Glassmorphism Styles ────────────────────────────────────────────── */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--card-radius);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        /* ── Header Area ─────────────────────────────────────────────────────── */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 16px 24px;
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-glow {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            box-shadow: 0 0 12px var(--accent-cyan);
+            animation: pulse-glow 2s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(0.9); box-shadow: 0 0 8px var(--accent-cyan-glow); }
+            100% { transform: scale(1.1); box-shadow: 0 0 20px var(--accent-cyan); }
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-secondary);
+        }
+
+        .status-dot.active {
+            background: var(--accent-green);
+            box-shadow: 0 0 8px var(--accent-green);
+            animation: pulse-active 1s infinite alternate;
+        }
+
+        @keyframes pulse-active {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        /* ── Grid Layout ─────────────────────────────────────────────────────── */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 38% 62%;
+            gap: 24px;
+            flex-grow: 1;
+            align-items: stretch;
+        }
+
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* ── Cards & Metrics ─────────────────────────────────────────────────── */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .metric-value {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .metric-value.cyan { color: var(--accent-cyan); text-shadow: 0 0 10px var(--accent-cyan-glow); }
+        .metric-value.magenta { color: var(--accent-magenta); text-shadow: 0 0 10px var(--accent-magenta-glow); }
+        .metric-value.green { color: var(--accent-green); text-shadow: 0 0 10px var(--accent-green-glow); }
+
+        /* ── Progress Bar ────────────────────────────────────────────────────── */
+        .progress-container {
+            margin-bottom: 16px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .progress-track {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+            width: 0%;
+            border-radius: 10px;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px var(--accent-cyan-glow);
+        }
+
+        /* ── Controls ────────────────────────────────────────────────────────── */
+        .controls-card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .control-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .select-input {
+            background: rgba(12, 13, 18, 0.8);
+            color: var(--text-primary);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 14px;
+            flex-grow: 1;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            outline: none;
+        }
+
+        .btn:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, #0984e3 100%);
+            border: none;
+            color: #040508;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--accent-cyan-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px var(--accent-cyan);
+        }
+
+        .btn-accent {
+            background: linear-gradient(135deg, var(--accent-magenta) 0%, #d63031 100%);
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--accent-magenta-glow);
+        }
+
+        .btn-accent:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px var(--accent-magenta);
+        }
+
+        .btn-stop {
+            background: rgba(255, 82, 82, 0.15);
+            color: var(--accent-red);
+            border: 1px solid rgba(255, 82, 82, 0.3);
+        }
+
+        .btn-stop:hover:not(:disabled) {
+            background: rgba(255, 82, 82, 0.25);
+            border-color: var(--accent-red);
+        }
+
+        .btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        /* ── Log Console ─────────────────────────────────────────────────────── */
+        .console-panel {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 250px;
+        }
+
+        .console-output {
+            background: #06070a;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 16px;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            line-height: 1.6;
+            overflow-y: auto;
+            flex-grow: 1;
+            height: 0; /* Webkit fix */
+            color: #cbd5e1;
+        }
+
+        .log-entry {
+            margin-bottom: 8px;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+            animation: fade-in-log 0.2s ease-out;
+        }
+
+        @keyframes fade-in-log {
+            from { opacity: 0; transform: translateX(-5px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .log-time {
+            color: var(--text-secondary);
+            margin-right: 8px;
+        }
+
+        .log-code {
+            color: var(--accent-cyan);
+            margin-right: 8px;
+        }
+
+        .log-status {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .log-entry.SUCCESS { border-color: var(--accent-green); }
+        .log-entry.SUCCESS .log-status { color: var(--accent-green); }
+        
+        .log-entry.FOUND { border-color: var(--accent-green); }
+        .log-entry.FOUND .log-status { color: var(--accent-green); }
+
+        .log-entry.CACHED { border-color: #0984e3; }
+        .log-entry.CACHED .log-status { color: #0984e3; }
+
+        .log-entry.FAIL { border-color: var(--accent-red); }
+        .log-entry.FAIL .log-status { color: var(--accent-red); }
+        
+        .log-entry.MISSING { border-color: var(--accent-orange); }
+        .log-entry.MISSING .log-status { color: var(--accent-orange); }
+
+        .log-entry.SYS { border-color: var(--accent-magenta); }
+        .log-entry.SYS .log-status { color: var(--accent-magenta); }
+
+        /* ── Map ─────────────────────────────────────────────────────────────── */
+        #map {
+            height: 480px;
+            border-radius: var(--card-radius);
+            border: 1px solid var(--panel-border);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        /* ── Data Table ──────────────────────────────────────────────────────── */
+        .table-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .table-filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-input {
+            background: rgba(12, 13, 18, 0.8);
+            color: var(--text-primary);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-size: 14px;
+            width: 250px;
+            outline: none;
+        }
+
+        .table-wrapper {
+            max-height: 350px;
+            overflow-y: auto;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: #08090f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--panel-border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            color: #e2e8f0;
+            max-width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .badge-success { background: rgba(0, 255, 135, 0.1); color: var(--accent-green); border: 1px solid rgba(0, 255, 135, 0.2); }
+        .badge-warning { background: rgba(255, 159, 67, 0.1); color: var(--accent-orange); border: 1px solid rgba(255, 159, 67, 0.2); }
+        .badge-error { background: rgba(255, 82, 82, 0.1); color: var(--accent-red); border: 1px solid rgba(255, 82, 82, 0.2); }
+        .badge-info { background: rgba(0, 242, 254, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 242, 254, 0.2); }
+
+        .btn-mini {
+            padding: 4px 8px;
+            font-size: 11px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Local file Warning Overlay -->
+    <div id="file-protocol-warning" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(8,9,14,0.95); z-index: 99999; justify-content: center; align-items: center; flex-direction: column; padding: 40px; text-align: center;">
+        <div style="background: rgba(255, 82, 82, 0.1); border: 1.5px solid var(--accent-red); border-radius: 16px; padding: 40px; max-width: 600px; box-shadow: 0 0 30px rgba(255,82,82,0.2);">
+            <span style="font-size: 64px; margin-bottom: 20px; display: block;">⚠️</span>
+            <h2 style="font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">DASHBOARD CONNECTION REQUIRED</h2>
+            <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 24px;">
+                You have opened this HTML file directly from your filesystem using the <code style="font-family: var(--font-mono); color: var(--accent-red); background: rgba(255,82,82,0.15); padding: 2px 6px; border-radius: 4px;">file://</code> protocol. The dashboard requires the Python backend server to be running in order to load data, fetch coordinates, and stream logs.
+            </p>
+            <h3 style="font-size: 15px; color: var(--accent-cyan); margin-bottom: 8px;">Please access the dashboard via this URL instead:</h3>
+            <div style="font-family: var(--font-mono); font-size: 18px; color: var(--text-primary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px; margin-bottom: 24px; letter-spacing: 0.5px;">
+                http://localhost:8080
+            </div>
+            <p style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.5;">
+                To launch the backend server, open your terminal and run:<br/>
+                <code style="font-family: var(--font-mono); background: rgba(255,255,255,0.08); padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 6px; color: #fff;">.venv/bin/python3 scratch/web_dashboard.py</code>
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-panel">
+        <div class="header-title-container">
+            <div class="logo-glow"></div>
+            <h1>BANGALORE K12 SCHOOLS MISSION CONTROL</h1>
+        </div>
+        <div class="status-pill">
+            <div class="status-dot" id="system-status-dot"></div>
+            <span id="system-status-text" style="text-transform: uppercase;">IDLE</span>
+        </div>
+    </header>
+
+    <!-- Main Grid -->
+    <div class="dashboard-grid">
+        
+        <!-- Left Column (Stats & Control) -->
+        <div class="left-col">
+            
+            <!-- Controls Card -->
+            <div class="glass-panel controls-card">
+                <div class="card-header">
+                    <h2 class="card-title">Pipeline Controls</h2>
+                </div>
+                
+                <div class="control-row">
+                    <select id="provider-select" class="select-input">
+                        <option value="ArcGIS">ArcGIS Geocoder (Free/No-Key)</option>
+                        <option value="Google Maps">Google Maps API (Key Required)</option>
+                        <option value="OpenStreetMap">OpenStreetMap Nominatim (Standard)</option>
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <button id="btn-geocode" class="btn btn-primary" onclick="startPipeline('geocode')">
+                        ⚡ Run Geocoder
+                    </button>
+                    <button id="btn-match" class="btn btn-accent" onclick="startPipeline('match')">
+                        🗺️ Match Footprints
+                    </button>
+                    <button id="btn-stop" class="btn btn-stop" onclick="stopPipeline()" disabled>
+                        🛑 Stop
+                    </button>
+                </div>
+            </div>
+
+            <!-- Metrics Card -->
+            <div class="glass-panel">
+                <div class="card-header">
+                    <h2 class="card-title">Processing Metrics</h2>
+                    <span id="metric-timer" class="metric-label" style="font-family: var(--font-mono)">0s</span>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span>Total Progress</span>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-label">Processed / Total</span>
+                        <span class="metric-value" id="val-processed-total">0 / 0</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Match Success Rate</span>
+                        <span class="metric-value green" id="val-match-rate">0.0%</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Found / Fails</span>
+                        <span class="metric-value cyan" id="val-found-fails">0 / 0</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Avg Footprint Size</span>
+                        <span class="metric-value magenta" id="val-avg-perimeter">—</span>
+                    </div>
+                    <div class="metric-card" id="card-cache-hits">
+                        <span class="metric-label">Local Cache Hits</span>
+                        <span class="metric-value" id="val-cache-hits">0</span>
+                    </div>
+                    <div class="metric-card" id="card-api-queries">
+                        <span class="metric-label">API Queries Executed</span>
+                        <span class="metric-value" id="val-api-queries">0</span>
+                    </div>
+                </div>
+
+                <div style="font-size: 13px; border-top: 1px solid var(--panel-border); padding-top: 12px; margin-top: 4px;">
+                    <span style="color: var(--text-secondary);">Currently: </span>
+                    <span id="val-current-school" style="font-weight: 500;">Idle...</span>
+                </div>
+            </div>
+
+            <!-- Console Card -->
+            <div class="glass-panel console-panel">
+                <div class="card-header">
+                    <h2 class="card-title">Live API logs Console</h2>
+                    <button class="btn btn-mini" onclick="clearConsole()">Clear</button>
+                </div>
+                <div id="console-output" class="console-output">
+                    <div class="log-entry SYS"><span class="log-time">00:00:00</span><span class="log-status">[SYSTEM]</span> Ready to monitor geoprocessing pipelines.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column (Map & Table) -->
+        <div class="right-col">
+            
+            <!-- Map Card -->
+            <div class="glass-panel" style="padding: 10px;">
+                <div id="map"></div>
+            </div>
+
+            <!-- Schools Table -->
+            <div class="glass-panel table-panel">
+                <div class="table-filter-bar">
+                    <h2 class="card-title">Schools Database</h2>
+                    <div>
+                        <input type="text" id="search-box" class="search-input" placeholder="Search school name..." oninput="filterSchoolsTable()">
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>Board</th>
+                                <th>Coordinates</th>
+                                <th>Boundary Size</th>
+                                <th>Status</th>
+                                <th style="text-align: center;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="schools-table-body">
+                            <tr>
+                                <td colspan="7" style="text-align: center; color: var(--text-secondary); padding: 40px;">
+                                    Loading schools data database...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script Application Logic -->
+    <script>
+        var darkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        });
+
+        var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+            maxZoom: 20
+        });
+
+        var map = L.map('map', { 
+            renderer: L.canvas(),
+            layers: [darkMatter]
+        }).setView([12.9716, 77.5946], 11);
+
+        var baseMaps = {
+            "Dark Matter": darkMatter,
+            "Satellite Imagery": satellite
+        };
+
+        L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
+
+        var schoolMarkers = {};
+        var footprintLayer = null;
+        var schoolsData = [];
+        var eventSource = null;
+
+        // Fetch initial schools on load
+        async function fetchSchools() {
+            try {
+                const res = await fetch('/api/schools');
+                schoolsData = await res.json();
+                renderSchoolsOnMap();
+                renderSchoolsTable();
+            } catch (err) {
+                console.error("Error fetching schools:", err);
+            }
+        }
+
+        // Render markers on Leaflet map
+        function renderSchoolsOnMap() {
+            // Clear existing markers
+            Object.values(schoolMarkers).forEach(m => map.removeLayer(m));
+            schoolMarkers = {};
+
+            schoolsData.forEach(school => {
+                if (school.lat && school.lon) {
+                    var color = school.has_polygon ? '#00ff87' : '#00f2fe';
+                    var radius = school.has_polygon ? 6 : 4;
+                    
+                    var marker = L.circleMarker([school.lat, school.lon], {
+                        radius: radius,
+                        fillColor: color,
+                        color: '#000',
+                        weight: 1,
+                        opacity: 0.8,
+                        fillOpacity: 0.8
+                    });
+
+                    var popupContent = `
+                        <div style="font-family: var(--font-body); color: #000;">
+                            <strong style="font-size: 14px;">${school.name}</strong><br/>
+                            <span style="font-size: 12px; color: #555;">Code: ${school.code}</span><br/>
+                            <span style="font-size: 12px; color: #555;">Board: ${school.board}</span><br/>
+                            <span style="font-size: 12px; color: #555;">Coords: ${school.lat.toFixed(5)}, ${school.lon.toFixed(5)}</span><br/>
+                            ${school.perimeter ? `<span style="font-size: 12px; font-weight: bold; color: #8433FF;">Footprint: ${school.perimeter}m</span>` : ''}
+                        </div>
+                    `;
+                    marker.bindPopup(popupContent);
+                    marker.addTo(map);
+                    schoolMarkers[school.code] = marker;
+                }
+            });
+        }
+
+        // Render schools in list table
+        function renderSchoolsTable() {
+            const tbody = document.getElementById('schools-table-body');
+            tbody.innerHTML = '';
+            
+            if (schoolsData.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-secondary);">No schools found.</td></tr>`;
+                return;
+            }
+
+            schoolsData.forEach(school => {
+                const tr = document.createElement('tr');
+                tr.id = `row-${school.code}`;
+                
+                let coordsText = '—';
+                if (school.lat && school.lon) {
+                    coordsText = `${school.lat.toFixed(4)}, ${school.lon.toFixed(4)}`;
+                }
+
+                let statusBadge = `<span class="badge badge-warning">Pending Coords</span>`;
+                if (school.lat && school.lon) {
+                    statusBadge = `<span class="badge badge-info">Geocoded</span>`;
+                }
+                if (school.has_polygon) {
+                    statusBadge = `<span class="badge badge-success">Matched 2D</span>`;
+                }
+
+                tr.innerHTML = `
+                    <td style="font-family: var(--font-mono); font-size:11px;">${school.code}</td>
+                    <td style="font-weight: 500;" title="${school.name}">${school.name}</td>
+                    <td>${school.board}</td>
+                    <td style="font-family: var(--font-mono); font-size:11px;">${coordsText}</td>
+                    <td>${school.perimeter ? `${school.perimeter} m` : '—'}</td>
+                    <td>${statusBadge}</td>
+                    <td style="text-align: center;">
+                        ${school.lat ? `<button class="btn btn-mini" style="background: rgba(0,242,254,0.1); border-color: rgba(0,242,254,0.3); color: var(--accent-cyan);" onclick="panToSchool('${school.code}', ${school.lat}, ${school.lon})">🔍 Locate</button>` : '—'}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterSchoolsTable() {
+            const query = document.getElementById('search-box').value.toLowerCase();
+            schoolsData.forEach(school => {
+                const row = document.getElementById(`row-${school.code}`);
+                if (row) {
+                    const match = school.name.toLowerCase().includes(query) || school.code.toLowerCase().includes(query);
+                    row.style.display = match ? '' : 'none';
+                }
+            });
+        }
+
+        // Pans map and zooms on marker
+        function panToSchool(code, lat, lon) {
+            map.setView([lat, lon], 17);
+            
+            // Check if school has polygon and draw it
+            const school = schoolsData.find(s => s.code === code);
+            if (school && school.has_polygon && school.polygon) {
+                drawFootprintPolygon(school.polygon, school.name, school.perimeter);
+            } else {
+                if (footprintLayer) {
+                    map.removeLayer(footprintLayer);
+                    footprintLayer = null;
+                }
+            }
+
+            if (schoolMarkers[code]) {
+                schoolMarkers[code].openPopup();
+            }
+        }
+
+        // Draw Overture 2D Footprint polygon on map
+        function drawFootprintPolygon(ring, name, perimeter) {
+            if (footprintLayer) {
+                map.removeLayer(footprintLayer);
+            }
+            
+            // Convert GeoJSON coords back to Leaflet [lat, lon]
+            footprintLayer = L.polygon(ring, {
+                color: '#00f2fe',
+                fillColor: '#f35588',
+                fillOpacity: 0.4,
+                weight: 2
+            }).addTo(map);
+
+            footprintLayer.bindTooltip(`<strong>${name}</strong><br/>Boundary Size: ${perimeter}m`, {
+                permanent: false,
+                sticky: true
+            }).openTooltip();
+        }
+
+        // SSE connection handler
+        function setupEventSource() {
+            if (eventSource) eventSource.close();
+            
+            eventSource = new EventSource('/api/stream');
+            
+            eventSource.onmessage = function(e) {
+                const event = JSON.parse(e.data);
+                const type = event.type;
+                const data = event.data;
+                
+                if (type === 'status_update') {
+                    updateStatusWidgets(data);
+                } else if (type === 'log') {
+                    appendConsoleLog(event.timestamp, data);
+                    
+                    // If matched polygon event, update local list and draw polygon live
+                    if (data.status === 'FOUND' && data.polygon) {
+                        const index = schoolsData.findIndex(s => s.code === data.code);
+                        if (index !== -1) {
+                            schoolsData[index].has_polygon = true;
+                            schoolsData[index].polygon = data.polygon;
+                            schoolsData[index].perimeter = data.details.match(/[\d.]+/)[0]; // parse perimeter
+                            
+                            // Re-render marker color and tooltip
+                            if (schoolMarkers[data.code]) {
+                                schoolMarkers[data.code].setStyle({
+                                    radius: 6,
+                                    fillColor: '#00ff87'
+                                });
+                            }
+                            
+                            // Fly to matching building dynamically to show live matching!
+                            panToSchool(data.code, data.latitude, data.longitude);
+                            renderSchoolsTable();
+                        }
+                    } else if (data.status === 'SUCCESS' && data.type.includes('API')) {
+                        // Geocoding success: add coordinate marker
+                        const index = schoolsData.findIndex(s => s.code === data.code);
+                        if (index !== -1) {
+                            // Extract coords
+                            const match = data.details.match(/\(([^,]+),\s*([^)]+)\)/);
+                            if (match) {
+                                const lat = parseFloat(match[1]);
+                                const lon = parseFloat(match[2]);
+                                schoolsData[index].lat = lat;
+                                schoolsData[index].lon = lon;
+                                
+                                renderSchoolsOnMap();
+                                renderSchoolsTable();
+                                panToSchool(data.code, lat, lon);
+                            }
+                        }
+                    }
+                }
+            };
+
+            eventSource.onerror = function(err) {
+                console.error("SSE connection dropped. Retrying...");
+                setTimeout(setupEventSource, 3000);
+            };
+        }
+
+        // Update UI panels with pipeline values
+        function updateStatusWidgets(state) {
+            const statusDot = document.getElementById('system-status-dot');
+            const statusText = document.getElementById('system-status-text');
+            const btnGeocode = document.getElementById('btn-geocode');
+            const btnMatch = document.getElementById('btn-match');
+            const btnStop = document.getElementById('btn-stop');
+            const providerSelect = document.getElementById('provider-select');
+            
+            // Set status
+            statusText.innerText = state.status.replace('_', ' ');
+            statusDot.className = 'status-dot';
+            
+            if (state.status !== 'IDLE') {
+                statusDot.classList.add('active');
+                btnGeocode.disabled = true;
+                btnMatch.disabled = true;
+                btnStop.disabled = false;
+                providerSelect.disabled = true;
+            } else {
+                btnGeocode.disabled = false;
+                btnMatch.disabled = false;
+                btnStop.disabled = true;
+                providerSelect.disabled = false;
+            }
+
+            // Stats
+            document.getElementById('metric-timer').innerText = state.elapsed_time || '0s';
+            document.getElementById('val-processed-total').innerText = `${state.processed_count} / ${state.total_count}`;
+            document.getElementById('val-match-rate').innerText = state.match_rate;
+            document.getElementById('val-found-fails').innerText = `${state.success_count} / ${state.fail_count}`;
+            document.getElementById('val-avg-perimeter').innerText = state.avg_perimeter;
+            document.getElementById('val-current-school').innerText = state.current_school || 'Idle...';
+            document.getElementById('val-cache-hits').innerText = state.cache_hits;
+            document.getElementById('val-api-queries').innerText = state.api_queries;
+
+            // Hide/Show cache panels depending on active task
+            const cacheHitsCard = document.getElementById('card-cache-hits');
+            const apiQueriesCard = document.getElementById('card-api-queries');
+            if (state.status === 'MATCHING') {
+                cacheHitsCard.style.display = 'none';
+                apiQueriesCard.style.display = 'none';
+            } else {
+                cacheHitsCard.style.display = 'flex';
+                apiQueriesCard.style.display = 'flex';
+            }
+
+            // Progress bar
+            const percent = state.total_count > 0 ? (state.processed_count / state.total_count * 100) : 0;
+            document.getElementById('progress-percent').innerText = `${percent.toFixed(0)}%`;
+            document.getElementById('progress-fill').style.width = `${percent}%`;
+        }
+
+        // Control API calls
+        async function startPipeline(task) {
+            const provider = document.getElementById('provider-select').value;
+            try {
+                const res = await fetch('/api/start', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ task, provider })
+                });
+                const result = await res.json();
+                if (result.error) {
+                    alert(result.error);
+                } else {
+                    appendConsoleLog(new Date().toLocaleTimeString(), {
+                        status: 'SYS',
+                        name: 'Control Router',
+                        code: 'START',
+                        details: result.message
+                    });
+                }
+            } catch (err) {
+                console.error("Start failed:", err);
+            }
+        }
+
+        async function stopPipeline() {
+            try {
+                const res = await fetch('/api/stop', { method: 'POST' });
+                const result = await res.json();
+                appendConsoleLog(new Date().toLocaleTimeString(), {
+                    status: 'SYS',
+                    name: 'Control Router',
+                    code: 'STOP',
+                    details: 'Stopping processing request sent...'
+                });
+            } catch (err) {
+                console.error("Stop failed:", err);
+            }
+        }
+
+        // Console logger
+        function appendConsoleLog(time, event) {
+            const out = document.getElementById('console-output');
+            const div = document.createElement('div');
+            div.className = `log-entry ${event.status}`;
+            
+            let badgeText = event.status;
+            if (event.type) badgeText = `${event.type} ${event.status}`;
+            
+            div.innerHTML = `
+                <span class="log-time">${time}</span>
+                <span class="log-status">[${badgeText}]</span>
+                <span class="log-code">${event.code || 'SYS'}</span> | 
+                <span style="font-weight: 500;">${event.name}</span> | 
+                <span>${event.details}</span>
+            `;
+            out.appendChild(div);
+            out.scrollTop = out.scrollHeight;
+        }
+
+        function clearConsole() {
+            document.getElementById('console-output').innerHTML = '';
+        }
+
+        // Run
+        if (window.location.protocol === 'file:') {
+            document.getElementById('file-protocol-warning').style.display = 'flex';
+        } else {
+            fetchSchools();
+            setupEventSource();
+        }
+    </script>
+</body>
+</html>

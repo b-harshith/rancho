@@ -1,0 +1,5447 @@
+[
+  {
+    "name": "Mira Bhayandar Road",
+    "lat": 19.28556,
+    "lon": 72.8692,
+    "price_sqft": 10960.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b452dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chembur",
+    "lat": 19.06012,
+    "lon": 72.89981,
+    "price_sqft": 21752.7,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b569dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marine Drive",
+    "lat": 18.94558,
+    "lon": 72.82234,
+    "price_sqft": 84912.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0149fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahim",
+    "lat": 19.03828,
+    "lon": 72.83903,
+    "price_sqft": 36431.29,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Byculla East",
+    "lat": 18.9805,
+    "lon": 72.83865,
+    "price_sqft": 23936.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b18b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kandivali East",
+    "lat": 19.18248,
+    "lon": 72.86541,
+    "price_sqft": 18739.32,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4629fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahalakshmi",
+    "lat": 18.98473,
+    "lon": 72.82146,
+    "price_sqft": 41480.3,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandra East",
+    "lat": 19.06541,
+    "lon": 72.8524,
+    "price_sqft": 33512.58,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b01fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Worli",
+    "lat": 19.00881,
+    "lon": 72.8186,
+    "price_sqft": 49045.1,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a1dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vile Parle West",
+    "lat": 19.10649,
+    "lon": 72.83869,
+    "price_sqft": 34936.11,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0947fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kandivali West",
+    "lat": 19.20657,
+    "lon": 72.83705,
+    "price_sqft": 17687.47,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4447fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lower Parel West",
+    "lat": 19.00103,
+    "lon": 72.82377,
+    "price_sqft": 37548.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Santacruz West",
+    "lat": 19.08168,
+    "lon": 72.83806,
+    "price_sqft": 41453.22,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b31fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parel",
+    "lat": 19.0006,
+    "lon": 72.84093,
+    "price_sqft": 32113.4,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malad West",
+    "lat": 19.19089,
+    "lon": 72.8292,
+    "price_sqft": 19236.85,
+    "budget_segment": "Premium",
+    "hex_id": "88608b445dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadala",
+    "lat": 19.02692,
+    "lon": 72.87027,
+    "price_sqft": 24030.39,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b19b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mira Road Area",
+    "lat": 19.28359,
+    "lon": 72.8149,
+    "price_sqft": 9882.38,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b45adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jogeshwari Vikhroli Link Road",
+    "lat": 19.15124,
+    "lon": 72.88031,
+    "price_sqft": 17648.5,
+    "budget_segment": "Premium",
+    "hex_id": "88608b464dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Virar",
+    "lat": 19.45499,
+    "lon": 72.80287,
+    "price_sqft": 5205.29,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db4887fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jogeshwari East",
+    "lat": 19.13407,
+    "lon": 72.8567,
+    "price_sqft": 18980.33,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4659fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Powai",
+    "lat": 19.13589,
+    "lon": 72.92424,
+    "price_sqft": 25755.44,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5431fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulund West",
+    "lat": 19.17343,
+    "lon": 72.87849,
+    "price_sqft": 18472.4,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4661fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Goregaon West",
+    "lat": 19.14933,
+    "lon": 72.85195,
+    "price_sqft": 20729.56,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4655fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Andheri West",
+    "lat": 19.21778,
+    "lon": 72.69165,
+    "price_sqft": 27526.4,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b7133fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandup West",
+    "lat": 19.15022,
+    "lon": 72.68819,
+    "price_sqft": 15943.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b7009fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Prabhadevi",
+    "lat": 19.01555,
+    "lon": 72.82966,
+    "price_sqft": 44888.91,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a01fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadala East",
+    "lat": 19.01875,
+    "lon": 72.86258,
+    "price_sqft": 21995.25,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b1997fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikhroli",
+    "lat": 19.09343,
+    "lon": 72.9375,
+    "price_sqft": 25173.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5459fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikhroli West",
+    "lat": 19.11402,
+    "lon": 72.91954,
+    "price_sqft": 21085.17,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5411fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandup",
+    "lat": 19.14946,
+    "lon": 72.94126,
+    "price_sqft": 17317.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5427fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nahur East",
+    "lat": 19.16099,
+    "lon": 72.95095,
+    "price_sqft": 14388.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5511fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Oshiwara",
+    "lat": 19.14802,
+    "lon": 72.83928,
+    "price_sqft": 23605.25,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4619fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borivali East",
+    "lat": 19.22602,
+    "lon": 72.69163,
+    "price_sqft": 19570.87,
+    "budget_segment": "Premium",
+    "hex_id": "88608b7137fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jogeshwari West",
+    "lat": 19.14105,
+    "lon": 72.84301,
+    "price_sqft": 22396.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4653fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Virar West",
+    "lat": 19.45443,
+    "lon": 72.79072,
+    "price_sqft": 7562.69,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Matunga West",
+    "lat": 19.03247,
+    "lon": 72.84339,
+    "price_sqft": 44271.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a67fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Byculla",
+    "lat": 18.97667,
+    "lon": 72.8371,
+    "price_sqft": 30105.86,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b18b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lower Parel",
+    "lat": 18.99932,
+    "lon": 72.82871,
+    "price_sqft": 39418.55,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vasai West",
+    "lat": 19.99708,
+    "lon": 72.81427,
+    "price_sqft": 7704.7,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db1163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sewri",
+    "lat": 18.9944,
+    "lon": 72.85152,
+    "price_sqft": 26784.12,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b18a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tardeo",
+    "lat": 18.96971,
+    "lon": 72.81414,
+    "price_sqft": 47293.89,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Goregaon East",
+    "lat": 19.16062,
+    "lon": 72.87098,
+    "price_sqft": 20841.22,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4647fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sion West",
+    "lat": 19.0404,
+    "lon": 72.86121,
+    "price_sqft": 30357.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b19b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malad East",
+    "lat": 19.18323,
+    "lon": 72.86002,
+    "price_sqft": 17334.88,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4621fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vasai East",
+    "lat": 19.39523,
+    "lon": 72.85155,
+    "price_sqft": 5678.73,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c27fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikhroli East",
+    "lat": 19.09896,
+    "lon": 72.93353,
+    "price_sqft": 22441.08,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5451fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mira Bhayandar",
+    "lat": 19.28225,
+    "lon": 72.85985,
+    "price_sqft": 10259.29,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4529fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mira Road East",
+    "lat": 19.28032,
+    "lon": 72.87257,
+    "price_sqft": 9510.56,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4567fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Andheri East",
+    "lat": 19.11975,
+    "lon": 72.86795,
+    "price_sqft": 21138.62,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5495fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandra Kurla Complex",
+    "lat": 19.06451,
+    "lon": 72.86344,
+    "price_sqft": 33371.2,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dahisar East",
+    "lat": 19.24968,
+    "lon": 72.86601,
+    "price_sqft": 15868.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4543fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dadar East - Naigaon",
+    "lat": 19.01073,
+    "lon": 72.84578,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a45fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navghar Road",
+    "lat": 19.30757,
+    "lon": 72.86205,
+    "price_sqft": 16427.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4e11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borivali West",
+    "lat": 19.23179,
+    "lon": 72.78213,
+    "price_sqft": 22732.98,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b44adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marine Lines",
+    "lat": 18.94484,
+    "lon": 72.82693,
+    "price_sqft": 61769.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0327fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thakur Village, Kandivali East",
+    "lat": 19.21128,
+    "lon": 72.87262,
+    "price_sqft": 25000.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b471dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khar West",
+    "lat": 19.06207,
+    "lon": 72.83499,
+    "price_sqft": 51286.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vasai",
+    "lat": 19.34826,
+    "lon": 72.24486,
+    "price_sqft": 5998.97,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842da75d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vile Parle East",
+    "lat": 19.09462,
+    "lon": 72.91375,
+    "price_sqft": 36289.62,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sion East",
+    "lat": 19.04258,
+    "lon": 72.86859,
+    "price_sqft": 23323.14,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b4bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Palghar Naigaon East",
+    "lat": 19.34456,
+    "lon": 72.86626,
+    "price_sqft": 5369.36,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c4bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jankalyan Nagar",
+    "lat": 19.18985,
+    "lon": 72.81977,
+    "price_sqft": 14658.82,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4451fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanjurmarg East",
+    "lat": 19.12811,
+    "lon": 72.93313,
+    "price_sqft": 15800.89,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5407fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhayandar East",
+    "lat": 19.30448,
+    "lon": 72.86077,
+    "price_sqft": 9953.25,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sion",
+    "lat": 19.04403,
+    "lon": 72.86658,
+    "price_sqft": 30576.33,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b4bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanjurmarg West",
+    "lat": 19.13339,
+    "lon": 72.92685,
+    "price_sqft": 16768.75,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5431fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chembur East",
+    "lat": 19.05428,
+    "lon": 72.89531,
+    "price_sqft": 20190.9,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5699fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Magathane",
+    "lat": 19.22212,
+    "lon": 72.86424,
+    "price_sqft": 23750.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b473bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lokhandwala Township Kandivali East",
+    "lat": 19.19771,
+    "lon": 72.8735,
+    "price_sqft": 19524.2,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4753fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandup East",
+    "lat": 19.14438,
+    "lon": 72.93697,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5423fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malad",
+    "lat": 19.18817,
+    "lon": 72.8427,
+    "price_sqft": 21098.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4635fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandra West",
+    "lat": 19.05759,
+    "lon": 72.83093,
+    "price_sqft": 53747.2,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b13fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mazgaon",
+    "lat": 18.96525,
+    "lon": 72.84162,
+    "price_sqft": 29375.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b1895fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govandi",
+    "lat": 19.05268,
+    "lon": 72.91347,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vakola",
+    "lat": 19.08002,
+    "lon": 72.85375,
+    "price_sqft": 23946.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dadar West",
+    "lat": 19.02265,
+    "lon": 72.83763,
+    "price_sqft": 37433.38,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a63fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Matunga East",
+    "lat": 19.0301,
+    "lon": 72.69701,
+    "price_sqft": 29803.33,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0f37fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Suresh Nagar Andheri",
+    "lat": 19.13426,
+    "lon": 72.83009,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0921fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nalasopara West",
+    "lat": 19.34768,
+    "lon": 72.83344,
+    "price_sqft": 5333.33,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chembur West",
+    "lat": 19.06538,
+    "lon": 72.90062,
+    "price_sqft": 17900.5,
+    "budget_segment": "Premium",
+    "hex_id": "88608b569dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kurla East",
+    "lat": 19.06348,
+    "lon": 72.88103,
+    "price_sqft": 16897.86,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5693fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandivali",
+    "lat": 19.11343,
+    "lon": 72.89712,
+    "price_sqft": 19863.37,
+    "budget_segment": "Premium",
+    "hex_id": "88608b54c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "DN Nagar",
+    "lat": 19.12314,
+    "lon": 72.83013,
+    "price_sqft": 32366.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0905fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Palghar Naigaon",
+    "lat": 19.35458,
+    "lon": 72.85468,
+    "price_sqft": 5370.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghatkopar West",
+    "lat": 19.09051,
+    "lon": 72.90121,
+    "price_sqft": 20657.43,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juhu",
+    "lat": 19.04979,
+    "lon": 72.69517,
+    "price_sqft": 43438.79,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0d47fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Walkeshwar",
+    "lat": 18.94726,
+    "lon": 72.94428,
+    "price_sqft": 79861.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b1a21fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Versova Andheri West",
+    "lat": 20.17066,
+    "lon": 71.78249,
+    "price_sqft": 29677.0,
+    "budget_segment": "Luxury",
+    "hex_id": "8842d85b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deonar Govandi East",
+    "lat": 19.05252,
+    "lon": 72.91675,
+    "price_sqft": 27753.8,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulund East",
+    "lat": 19.15757,
+    "lon": 72.79067,
+    "price_sqft": 20565.39,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4683fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gamdevi",
+    "lat": 18.95911,
+    "lon": 72.81194,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borivali",
+    "lat": 19.23004,
+    "lon": 72.85088,
+    "price_sqft": 20620.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4465fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dindoshi",
+    "lat": 19.17604,
+    "lon": 72.86275,
+    "price_sqft": 17559.5,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4605fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Santacruz East",
+    "lat": 19.08103,
+    "lon": 72.85126,
+    "price_sqft": 24843.29,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghatkopar East",
+    "lat": 19.07961,
+    "lon": 72.90558,
+    "price_sqft": 21265.56,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pant Nagar",
+    "lat": 19.08501,
+    "lon": 72.91063,
+    "price_sqft": 25146.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kurla",
+    "lat": 19.07583,
+    "lon": 72.88685,
+    "price_sqft": 17449.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b0b6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dahisar",
+    "lat": 19.24828,
+    "lon": 72.86062,
+    "price_sqft": 12000.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b455dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dahisar West",
+    "lat": 19.25533,
+    "lon": 72.8549,
+    "price_sqft": 18717.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4555fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kurla West",
+    "lat": 19.07507,
+    "lon": 72.88078,
+    "price_sqft": 18236.17,
+    "budget_segment": "Premium",
+    "hex_id": "88608b0b6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govandi East",
+    "lat": 19.05413,
+    "lon": 72.91841,
+    "price_sqft": 17113.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b56c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marol",
+    "lat": 19.11658,
+    "lon": 72.88134,
+    "price_sqft": 20919.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5481fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhuleshwar",
+    "lat": 18.95949,
+    "lon": 72.83035,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ulhasnagar",
+    "lat": 19.23041,
+    "lon": 73.16257,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a2483fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghatkopar",
+    "lat": 19.07875,
+    "lon": 72.90633,
+    "price_sqft": 21152.25,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5687fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Andheri",
+    "lat": 19.11919,
+    "lon": 72.84913,
+    "price_sqft": 27422.2,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vidyavihar",
+    "lat": 19.0864,
+    "lon": 72.90408,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalbadevi",
+    "lat": 18.95471,
+    "lon": 72.82903,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mumbai Central",
+    "lat": 18.97508,
+    "lon": 72.82184,
+    "price_sqft": 28537.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0165fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mira Road",
+    "lat": 19.34708,
+    "lon": 72.93883,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b41a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Matunga",
+    "lat": 19.03589,
+    "lon": 71.72154,
+    "price_sqft": 42921.8,
+    "budget_segment": "Luxury",
+    "hex_id": "8842da4b31fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalina",
+    "lat": 19.07735,
+    "lon": 72.86445,
+    "price_sqft": 21176.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b29fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahim West",
+    "lat": 19.03774,
+    "lon": 72.84123,
+    "price_sqft": 38772.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadala West",
+    "lat": 19.01603,
+    "lon": 72.85735,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1997fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dadar East",
+    "lat": 18.99171,
+    "lon": 72.84425,
+    "price_sqft": 32238.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a49fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mamledarwadi",
+    "lat": 19.18703,
+    "lon": 72.84443,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4635fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yari Road",
+    "lat": 19.13926,
+    "lon": 72.81006,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b46cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "JVPD Scheme",
+    "lat": 19.10829,
+    "lon": 72.83228,
+    "price_sqft": 47742.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0909fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanjurmarg",
+    "lat": 19.12808,
+    "lon": 72.92533,
+    "price_sqft": 18162.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5439fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chinchpokli",
+    "lat": 18.98846,
+    "lon": 72.83363,
+    "price_sqft": 18228.5,
+    "budget_segment": "Premium",
+    "hex_id": "88608b18b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "LBS Road",
+    "lat": 19.14872,
+    "lon": 72.94278,
+    "price_sqft": 15000.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5427fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Evershine Nagar",
+    "lat": 19.19091,
+    "lon": 72.83285,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b445dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhayandar",
+    "lat": 19.29589,
+    "lon": 72.84773,
+    "price_sqft": 9750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4ec9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shell Colony",
+    "lat": 19.06478,
+    "lon": 72.894,
+    "price_sqft": 16412.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5695fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanti Nagar JB Nagar",
+    "lat": 19.10642,
+    "lon": 72.8669,
+    "price_sqft": 22450.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5499fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vile Parle",
+    "lat": 19.09184,
+    "lon": 72.859,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b21fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Girgaon",
+    "lat": 18.96851,
+    "lon": 72.82368,
+    "price_sqft": 48307.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0169fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malabar Hill",
+    "lat": 18.95393,
+    "lon": 72.80056,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Santacruz",
+    "lat": 19.08413,
+    "lon": 72.83631,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b37fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandra",
+    "lat": 19.05864,
+    "lon": 72.84034,
+    "price_sqft": 70000.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b1dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tilak Nagar Chembur",
+    "lat": 19.07193,
+    "lon": 72.89435,
+    "price_sqft": 15264.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5695fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Byculla West",
+    "lat": 18.97673,
+    "lon": 72.83147,
+    "price_sqft": 39414.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b18b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charni Road",
+    "lat": 18.95255,
+    "lon": 72.81897,
+    "price_sqft": 99602.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b014dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Grant Road",
+    "lat": 18.96268,
+    "lon": 72.81764,
+    "price_sqft": 36134.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b016bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vinay Nagar",
+    "lat": 19.2802,
+    "lon": 72.8818,
+    "price_sqft": 8497.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4565fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charkop Gaon",
+    "lat": 19.2127,
+    "lon": 72.82147,
+    "price_sqft": 19750.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4403fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhayandar West",
+    "lat": 19.389,
+    "lon": 72.87436,
+    "price_sqft": 10568.33,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4d5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bolinj",
+    "lat": 19.44575,
+    "lon": 72.79814,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nalasopara East",
+    "lat": 19.4009,
+    "lon": 72.18311,
+    "price_sqft": 5263.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842da7623fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "JB Nagar",
+    "lat": 19.10917,
+    "lon": 72.86693,
+    "price_sqft": 25312.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5491fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Virar East",
+    "lat": 19.4377,
+    "lon": 72.82005,
+    "price_sqft": 6061.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Goregaon",
+    "lat": 19.16021,
+    "lon": 72.87117,
+    "price_sqft": 17054.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4647fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Senapati Bapat Marg",
+    "lat": 19.01474,
+    "lon": 72.83868,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Agripada",
+    "lat": 18.97586,
+    "lon": 72.82551,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b016dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chunabhatti",
+    "lat": 19.05213,
+    "lon": 72.8711,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulund",
+    "lat": 20.06089,
+    "lon": 72.06431,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842dab213fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Babulnath",
+    "lat": 18.95799,
+    "lon": 72.80858,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Matunga Central Railway Workshop",
+    "lat": 19.02761,
+    "lon": 72.84822,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a65fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lal Baug",
+    "lat": 18.99375,
+    "lon": 72.83956,
+    "price_sqft": 40741.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a4bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Masjid Bandar",
+    "lat": 18.95405,
+    "lon": 72.83696,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghodapdeo",
+    "lat": 18.98459,
+    "lon": 72.8393,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b18b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nilemore",
+    "lat": 19.42502,
+    "lon": 72.8161,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4dbdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kherwadi",
+    "lat": 19.08312,
+    "lon": 72.84456,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b35fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Motilal Nagar",
+    "lat": 19.15627,
+    "lon": 72.83934,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b461dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bangalipura",
+    "lat": 18.94927,
+    "lon": 72.83584,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khetwadi",
+    "lat": 18.95873,
+    "lon": 72.82278,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivaji Park",
+    "lat": 19.0296,
+    "lon": 72.83932,
+    "price_sqft": 42601.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0a67fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Eksar",
+    "lat": 18.47076,
+    "lon": 69.89014,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860d3aacdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madanpura",
+    "lat": 18.97073,
+    "lon": 72.82746,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b016dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kakadwadi",
+    "lat": 18.95561,
+    "lon": 72.82385,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nahur West",
+    "lat": 19.15559,
+    "lon": 72.94605,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b551bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dadar",
+    "lat": 19.02244,
+    "lon": 72.84329,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a61fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Virat Nagar",
+    "lat": 19.44794,
+    "lon": 72.80903,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kajupada Kurla",
+    "lat": 19.09077,
+    "lon": 72.886,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kandivali",
+    "lat": 19.20612,
+    "lon": 72.85167,
+    "price_sqft": 21784.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4713fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shimpoli",
+    "lat": 19.22193,
+    "lon": 72.84334,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4461fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahar Road",
+    "lat": 19.10872,
+    "lon": 72.85651,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5493fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nariman Point",
+    "lat": 18.92581,
+    "lon": 72.82205,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0307fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambivali",
+    "lat": 19.14067,
+    "lon": 72.90499,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fort",
+    "lat": 18.93588,
+    "lon": 72.83441,
+    "price_sqft": 37940.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0321fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Prabhat Colony",
+    "lat": 19.08727,
+    "lon": 72.84356,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b35fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Valnai",
+    "lat": 19.19194,
+    "lon": 72.82102,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4451fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hariyali",
+    "lat": 19.10528,
+    "lon": 72.9347,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5457fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chakala",
+    "lat": 19.11323,
+    "lon": 72.85926,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5497fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Daulat Nagar Borivali East",
+    "lat": 19.23597,
+    "lon": 72.86013,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4737fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nagpada",
+    "lat": 18.96483,
+    "lon": 72.82844,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1897fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "IC Colony",
+    "lat": 19.24917,
+    "lon": 72.84923,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4557fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dongri",
+    "lat": 18.96248,
+    "lon": 72.83782,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1895fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kannamwar Nagar 1",
+    "lat": 19.11616,
+    "lon": 72.93945,
+    "price_sqft": 21760.5,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b540bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jogeshwari",
+    "lat": 19.13971,
+    "lon": 72.84861,
+    "price_sqft": 25000.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b465bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navagaon",
+    "lat": 19.28407,
+    "lon": 72.88081,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4565fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Four Bungalows",
+    "lat": 19.13096,
+    "lon": 72.83353,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0929fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kopri",
+    "lat": 19.47983,
+    "lon": 72.8217,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db489bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pali Hill",
+    "lat": 19.06455,
+    "lon": 72.83221,
+    "price_sqft": 55000.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0b17fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kashimira",
+    "lat": 19.27609,
+    "lon": 72.88348,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b456dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambewadi Lal Baug",
+    "lat": 18.98272,
+    "lon": 72.83583,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b18b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kirol Village",
+    "lat": 19.08045,
+    "lon": 72.89746,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sher E Punjab Society",
+    "lat": 19.12599,
+    "lon": 72.86181,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tirandaz",
+    "lat": 19.12534,
+    "lon": 72.91859,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b543bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nahar Amrit Shakti",
+    "lat": 19.10761,
+    "lon": 72.89922,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govind Nagar Borivali West",
+    "lat": 19.1214,
+    "lon": 72.88353,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5481fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pestom Sagar Colony",
+    "lat": 19.06993,
+    "lon": 72.90291,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5683fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malvani",
+    "lat": 19.18118,
+    "lon": 72.86645,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4629fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Swami Samarth Nagar",
+    "lat": 18.9629,
+    "lon": 73.07765,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608bce57fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadavali Village",
+    "lat": 19.03932,
+    "lon": 72.89715,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Everard Nagar",
+    "lat": 19.05059,
+    "lon": 72.87811,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b4dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandivali",
+    "lat": 19.13657,
+    "lon": 72.84453,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b465bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Prathna Samaj",
+    "lat": 18.95744,
+    "lon": 72.82073,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0145fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "MHADA Colony Chandivali",
+    "lat": 19.1388,
+    "lon": 72.89138,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kokanipada Malad East",
+    "lat": 19.18467,
+    "lon": 72.86114,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4621fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navpada",
+    "lat": 19.10245,
+    "lon": 72.84889,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b094dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sion Chunabhatti",
+    "lat": 19.05542,
+    "lon": 72.87512,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Babhai Naka",
+    "lat": 19.22641,
+    "lon": 72.84646,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4461fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Colaba",
+    "lat": 18.91038,
+    "lon": 72.81995,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b030bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dahanukar Wadi",
+    "lat": 19.20762,
+    "lon": 72.83835,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4447fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ekta Nagar Kandivali West",
+    "lat": 19.20197,
+    "lon": 72.82998,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4455fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karadi Wadi",
+    "lat": 19.17787,
+    "lon": 72.86292,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4629fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mazgaon Road",
+    "lat": 18.96556,
+    "lon": 72.83902,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1895fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juchandra Road",
+    "lat": 19.36151,
+    "lon": 72.86356,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khar East",
+    "lat": 19.10143,
+    "lon": 72.84036,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0941fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vazira",
+    "lat": 19.22856,
+    "lon": 72.84325,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4467fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kurar Village",
+    "lat": 19.19017,
+    "lon": 72.86256,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4621fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chittranjan Nagar",
+    "lat": 19.07625,
+    "lon": 72.89763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mandvi",
+    "lat": 18.95976,
+    "lon": 72.84995,
+    "price_sqft": 23429.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b188bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nahur",
+    "lat": 19.16004,
+    "lon": 72.94662,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b551bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kastur Park",
+    "lat": 19.22294,
+    "lon": 72.84647,
+    "price_sqft": 28714.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4461fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Azad Nagar Andheri East",
+    "lat": 19.11981,
+    "lon": 72.85227,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0969fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dharavi",
+    "lat": 19.05166,
+    "lon": 72.85434,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Antop Hill",
+    "lat": 19.02809,
+    "lon": 72.8665,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Cumballa Hill",
+    "lat": 18.95904,
+    "lon": 72.79107,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0103fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Goraswadi",
+    "lat": 19.19562,
+    "lon": 72.84514,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4449fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Trombay",
+    "lat": 19.01861,
+    "lon": 72.90651,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charai",
+    "lat": 19.11137,
+    "lon": 72.92532,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b541dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Linking Road",
+    "lat": 19.07809,
+    "lon": 72.83513,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b31fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Worli Sea Face",
+    "lat": 19.00954,
+    "lon": 72.81602,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a1dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sikka Nagar",
+    "lat": 18.95674,
+    "lon": 72.82284,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mogra Village",
+    "lat": 19.12509,
+    "lon": 72.84897,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoir Nagar",
+    "lat": 19.16963,
+    "lon": 72.96337,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5503fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddharth Nagar Borivali East",
+    "lat": 19.12431,
+    "lon": 72.86199,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Orlem",
+    "lat": 19.19553,
+    "lon": 72.83751,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b444bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Azad Nagar 2",
+    "lat": 19.1312,
+    "lon": 72.83437,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0929fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajendra Nagar",
+    "lat": 19.21933,
+    "lon": 72.8588,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4717fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deonar Chembur",
+    "lat": 19.05144,
+    "lon": 72.9172,
+    "price_sqft": 23936.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kumud Nagar",
+    "lat": 19.15741,
+    "lon": 72.84473,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b461dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mankhurd",
+    "lat": 19.04909,
+    "lon": 72.93237,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56c9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivaji Nagar",
+    "lat": 19.08936,
+    "lon": 72.91363,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pathan Wadi",
+    "lat": 19.20159,
+    "lon": 72.86107,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b471bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sunder Nagar Santacruz East",
+    "lat": 19.07565,
+    "lon": 72.86107,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramdev Park",
+    "lat": 19.2988,
+    "lon": 72.87099,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kondivita",
+    "lat": 19.11341,
+    "lon": 72.86925,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5495fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deonar Village Road",
+    "lat": 19.05359,
+    "lon": 72.91462,
+    "price_sqft": 26744.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b56d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pratiksha Nagar Vakola",
+    "lat": 19.05553,
+    "lon": 72.86533,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b43fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shramjivi Nagar",
+    "lat": 19.06321,
+    "lon": 72.89523,
+    "price_sqft": 21818.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5691fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nehru Nagar Kurla",
+    "lat": 19.06392,
+    "lon": 72.88258,
+    "price_sqft": 17143.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b5693fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Gautam Nagar",
+    "lat": 19.05574,
+    "lon": 72.91149,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khar",
+    "lat": 19.07163,
+    "lon": 72.83784,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b3bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vidya Vihar East",
+    "lat": 19.07545,
+    "lon": 72.89645,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Grant Road West",
+    "lat": 18.96402,
+    "lon": 72.81561,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b016bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tagore Nagar",
+    "lat": 19.11437,
+    "lon": 72.9328,
+    "price_sqft": 21792.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b540bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Qureshi Nagar",
+    "lat": 19.05991,
+    "lon": 72.87716,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b45fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jawahar Nagar Goregaon West",
+    "lat": 19.16053,
+    "lon": 72.84639,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b461dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Model Town Andheri West",
+    "lat": 19.1328,
+    "lon": 72.82256,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0923fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kandarpada",
+    "lat": 19.23961,
+    "lon": 72.86107,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4737fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikoowadi Borivali West",
+    "lat": 19.22277,
+    "lon": 72.84367,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4461fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Natwar Nagar",
+    "lat": 19.15142,
+    "lon": 72.84458,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4657fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madh",
+    "lat": 19.16108,
+    "lon": 72.79487,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4681fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Amboli",
+    "lat": 19.12694,
+    "lon": 72.84394,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0967fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gulmohar Road",
+    "lat": 19.10864,
+    "lon": 72.83689,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0947fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navghar Gaon",
+    "lat": 19.30635,
+    "lon": 72.86374,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Churi Wadi",
+    "lat": 19.16697,
+    "lon": 72.85075,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4603fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parsee Colony",
+    "lat": 18.97644,
+    "lon": 72.94486,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1b3bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Link Road",
+    "lat": 19.16359,
+    "lon": 72.83477,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4617fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Surya Nagar",
+    "lat": 19.12544,
+    "lon": 72.92273,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b543bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddharath Nagar",
+    "lat": 19.07884,
+    "lon": 72.85308,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nepean Sea Road",
+    "lat": 18.95709,
+    "lon": 72.79977,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghoghari Mohalla Street",
+    "lat": 18.9562,
+    "lon": 72.83094,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1891fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Walkeshwar Road",
+    "lat": 18.94559,
+    "lon": 72.79595,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghodbunder Road",
+    "lat": 19.27379,
+    "lon": 72.91357,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4085fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Zaveri Bazaar",
+    "lat": 18.94968,
+    "lon": 72.83063,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b189bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saki Naka",
+    "lat": 19.10019,
+    "lon": 72.88272,
+    "price_sqft": 16667.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b54d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Agashi",
+    "lat": 19.46169,
+    "lon": 72.78101,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nala Sopara",
+    "lat": 19.41765,
+    "lon": 72.81386,
+    "price_sqft": 5082.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4db9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Naupada",
+    "lat": 19.16173,
+    "lon": 72.94481,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5511fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxmi Nagar Goregaon West",
+    "lat": 19.07107,
+    "lon": 72.85608,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chakla",
+    "lat": 18.95129,
+    "lon": 72.83508,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikuwadi Malad West",
+    "lat": 19.19642,
+    "lon": 72.80659,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b441bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mandapeshwar",
+    "lat": 19.24806,
+    "lon": 72.85539,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4555fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nehru Nagar Airport Area",
+    "lat": 19.07706,
+    "lon": 72.86469,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b29fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khar Danda",
+    "lat": 19.07723,
+    "lon": 59.3874,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842b452a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gundavali",
+    "lat": 19.13534,
+    "lon": 72.87069,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parnaka",
+    "lat": 19.3445,
+    "lon": 72.80527,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4cc3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Garodia Nagar",
+    "lat": 19.07534,
+    "lon": 72.90969,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5687fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rambaug Powai",
+    "lat": 19.11852,
+    "lon": 72.89857,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Collector Colony",
+    "lat": 19.04447,
+    "lon": 72.89131,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanakiya",
+    "lat": 19.29275,
+    "lon": 72.87304,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shiv Srushti Kurla",
+    "lat": 19.05745,
+    "lon": 72.88182,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5693fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddharth Nagar Bandra East",
+    "lat": 19.05874,
+    "lon": 72.84824,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b0bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chira Bazaar",
+    "lat": 18.94973,
+    "lon": 72.82516,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b014dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Samata Nagar Thakur Village",
+    "lat": 19.20317,
+    "lon": 72.87063,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4719fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Apollo Bandar",
+    "lat": 19.03581,
+    "lon": 72.83968,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vijay Nagar Andheri East",
+    "lat": 19.15552,
+    "lon": 72.89465,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5599fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahavir Nagar Kandivali West",
+    "lat": 19.20244,
+    "lon": 72.84371,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4441fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattapada",
+    "lat": 19.22235,
+    "lon": 72.85777,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b446dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Napean Sea Road",
+    "lat": 18.95667,
+    "lon": 72.79922,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Waterfield Road",
+    "lat": 19.05968,
+    "lon": 72.83422,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "MIG Colony Bandra East",
+    "lat": 19.05773,
+    "lon": 72.85062,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b0bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "P and T Colony Vakola",
+    "lat": 19.01797,
+    "lon": 73.00198,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608bcc89fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Umerkhadi",
+    "lat": 18.96273,
+    "lon": 72.83386,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1897fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lal Bahadur Shastri Road",
+    "lat": 18.92597,
+    "lon": 73.0174,
+    "price_sqft": 18344.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608bc5e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jesal Park Road",
+    "lat": 19.31416,
+    "lon": 72.85602,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e17fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Upper Worli",
+    "lat": 18.9965,
+    "lon": 72.82155,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a51fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gavanpada Mulund East",
+    "lat": 19.17387,
+    "lon": 72.96381,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5503fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 1 Shanti Nagar",
+    "lat": 19.28052,
+    "lon": 72.85856,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b452bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lokhandwala Complex Andheri West",
+    "lat": 19.15153,
+    "lon": 72.82841,
+    "price_sqft": 31909.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b461bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Seven Bungalows",
+    "lat": 19.13036,
+    "lon": 72.82045,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b093dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashok Nagar Kandivali East",
+    "lat": 19.18244,
+    "lon": 72.86633,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4629fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Azad Nagar Andheri West",
+    "lat": 19.13148,
+    "lon": 72.85421,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0965fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Warden Road",
+    "lat": 19.00129,
+    "lon": 72.82836,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulund Railway Station",
+    "lat": 19.17032,
+    "lon": 72.95717,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5503fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juhu Versova Link Road",
+    "lat": 19.12269,
+    "lon": 72.8246,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0907fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gorai 2",
+    "lat": 19.21624,
+    "lon": 72.83066,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4401fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yogi Nagar",
+    "lat": 19.23629,
+    "lon": 72.84238,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b442dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Badam Wadi",
+    "lat": 18.9492,
+    "lon": 72.82921,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b189bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Palghar Naigaon West",
+    "lat": 19.3491,
+    "lon": 72.83187,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4c1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Akurli Road",
+    "lat": 19.05297,
+    "lon": 73.08016,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608bcd59fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "LIC Colony Borivali West",
+    "lat": 19.24096,
+    "lon": 72.84962,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4551fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nensey Colony",
+    "lat": 19.23615,
+    "lon": 72.86502,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4737fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Haji Ali",
+    "lat": 18.97699,
+    "lon": 72.81151,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0167fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "MIDC Industrial Estate",
+    "lat": 19.1184,
+    "lon": 72.87473,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5483fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vidyavihar West",
+    "lat": 19.08158,
+    "lon": 72.89282,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tambe Nagar",
+    "lat": 19.1788,
+    "lon": 72.95652,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5539fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Varsova Road",
+    "lat": 19.28674,
+    "lon": 72.89258,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b40b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kemps Corner Malabar Hill",
+    "lat": 18.99289,
+    "lon": 72.80717,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0125fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shiv Shankar Nagar Goregaon East",
+    "lat": 19.15431,
+    "lon": 72.85086,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b460bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balaji Nagar Dahisar East",
+    "lat": 18.77781,
+    "lon": 74.28497,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e769bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kamgaar Nagar Kurla",
+    "lat": 19.06248,
+    "lon": 72.88767,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5691fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manori",
+    "lat": 19.20897,
+    "lon": 72.78523,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b44ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Asha Nagar Kandivali",
+    "lat": 19.21351,
+    "lon": 72.86448,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4715fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aarey Colony",
+    "lat": 19.15267,
+    "lon": 72.8794,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b464dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sarvodaya Nagar Mulund West",
+    "lat": 19.16426,
+    "lon": 72.94493,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5511fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Battipada",
+    "lat": 19.14979,
+    "lon": 72.93529,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55c9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saibaba Nagar Borivali West",
+    "lat": 19.21849,
+    "lon": 72.84483,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b446bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "GTB Nagar Sindh Seva Samiti Nagar",
+    "lat": 20.63726,
+    "lon": 73.56883,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88609964d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pedder Road",
+    "lat": 18.96852,
+    "lon": 72.80847,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gowalia Tank",
+    "lat": 18.96562,
+    "lon": 72.81065,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b016bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chincholi Phatak",
+    "lat": 19.15922,
+    "lon": 72.82786,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4613fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Motilal Nagar 2",
+    "lat": 19.16523,
+    "lon": 72.83551,
+    "price_sqft": 15926.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b4615fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Breach Candy",
+    "lat": 18.97845,
+    "lon": 72.81157,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0167fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lamington Road",
+    "lat": 18.96071,
+    "lon": 72.81334,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b016bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoiwada",
+    "lat": 19.11895,
+    "lon": 72.91339,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5417fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Worli Hill Road",
+    "lat": 18.99706,
+    "lon": 72.81439,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Upper Govind Nagar",
+    "lat": 19.17542,
+    "lon": 72.85351,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4607fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kolad",
+    "lat": 18.40677,
+    "lon": 73.20851,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088282dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shiv Sagar Estate",
+    "lat": 18.99111,
+    "lon": 72.81176,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 8 Charkop",
+    "lat": 19.21825,
+    "lon": 72.81549,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4439fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manvelpada Gaon",
+    "lat": 19.44294,
+    "lon": 72.82562,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4da7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 7 Charkop",
+    "lat": 19.22235,
+    "lon": 72.83137,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4405fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mumbai CST Area",
+    "lat": 18.94393,
+    "lon": 72.83604,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0325fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "PL Lokhande Marg",
+    "lat": 19.06165,
+    "lon": 72.90678,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b568bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "LIC Housing Colony",
+    "lat": 19.22747,
+    "lon": 72.83938,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4467fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Triveni Nagar",
+    "lat": 19.18264,
+    "lon": 72.86292,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4629fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Poisar",
+    "lat": 19.21614,
+    "lon": 72.84978,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4469fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghodbunder",
+    "lat": 19.26122,
+    "lon": 72.93276,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b40c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Central Avenue Road",
+    "lat": 19.06157,
+    "lon": 72.903,
+    "price_sqft": 20312.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b569dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kulupwadi",
+    "lat": 19.22906,
+    "lon": 72.86568,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4731fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 6 Charkop",
+    "lat": 19.21964,
+    "lon": 72.83419,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4405fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Irani Wadi",
+    "lat": 19.20155,
+    "lon": 72.83942,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4441fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokuldham Colony Goregaon East",
+    "lat": 19.1727,
+    "lon": 72.87145,
+    "price_sqft": 21835.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b4663fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Postal Colony",
+    "lat": 19.06025,
+    "lon": 72.89446,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5691fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Altamount Road",
+    "lat": 18.96573,
+    "lon": 72.80856,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b010dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Swastik Park",
+    "lat": 19.05446,
+    "lon": 72.88875,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b569bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indian Oil Nagar Shivaji Nagar",
+    "lat": 19.06486,
+    "lon": 72.91337,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5689fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indira Nagar Kajupada",
+    "lat": 19.09175,
+    "lon": 72.88579,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Cuffe Parade",
+    "lat": 18.91454,
+    "lon": 72.82009,
+    "price_sqft": 76800.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b0303fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Penkarpada",
+    "lat": 19.26429,
+    "lon": 72.86979,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b456bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Film City Road",
+    "lat": 19.16861,
+    "lon": 72.87617,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4669fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NL Complex",
+    "lat": 19.25969,
+    "lon": 72.86799,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4547fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Royal Palms Estate",
+    "lat": 19.15558,
+    "lon": 72.87956,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b464dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Samel Pada",
+    "lat": 19.41919,
+    "lon": 72.799,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db4993fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chedda Nagar",
+    "lat": 19.05639,
+    "lon": 72.93405,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangeet Samrat Naushad Ali Road",
+    "lat": 19.11944,
+    "lon": 72.83787,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0963fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kamathipura",
+    "lat": 18.96487,
+    "lon": 72.82366,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0169fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganesh Nagar Kalaram Nagar",
+    "lat": 19.09518,
+    "lon": 72.92774,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5453fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar Wadala",
+    "lat": 19.02989,
+    "lon": 72.86507,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juhu Tara Road",
+    "lat": 19.10184,
+    "lon": 72.82655,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0955fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nana Chowk Area",
+    "lat": 18.97851,
+    "lon": 72.80348,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0129fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Golani Naka",
+    "lat": 19.41415,
+    "lon": 72.8643,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4d15fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar Kurla",
+    "lat": 19.01265,
+    "lon": 72.85284,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a69fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambedkar Nagar Kanjurmarg West",
+    "lat": 19.19945,
+    "lon": 72.99861,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b425dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kumbharwada Malad West",
+    "lat": 19.18227,
+    "lon": 72.83941,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4631fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navghar Naka",
+    "lat": 19.30598,
+    "lon": 72.85758,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e13fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bamanwada",
+    "lat": 19.10431,
+    "lon": 72.85969,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b549bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Veera Desai Road",
+    "lat": 19.11933,
+    "lon": 72.84892,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marol Maroshi Road",
+    "lat": 19.11748,
+    "lon": 72.88011,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5481fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Churchgate",
+    "lat": 18.93654,
+    "lon": 72.82461,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0323fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mangal Wadi",
+    "lat": 18.95338,
+    "lon": 72.8224,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b014dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattani Park",
+    "lat": 19.21203,
+    "lon": 72.87038,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b471dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Railway Colony Lower Parel",
+    "lat": 19.11881,
+    "lon": 72.84603,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Moti Nagar",
+    "lat": 19.1678,
+    "lon": 72.93541,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Samarth Nagar Chunabhatti",
+    "lat": 19.0516,
+    "lon": 72.87213,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Elphinstone",
+    "lat": 19.03593,
+    "lon": 72.83347,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a21fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "BDD Chawl",
+    "lat": 18.99429,
+    "lon": 72.83086,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a5dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gorai",
+    "lat": 19.23157,
+    "lon": 72.81817,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b443dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Queens Park",
+    "lat": 19.29229,
+    "lon": 72.8623,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4525fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thakurdwar",
+    "lat": 18.95054,
+    "lon": 72.82272,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b014dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhakti Park",
+    "lat": 19.02838,
+    "lon": 72.87911,
+    "price_sqft": 29932.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b1987fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hari Om Nagar",
+    "lat": 19.22199,
+    "lon": 72.85444,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b446dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jai Ambika Nagar",
+    "lat": 19.22466,
+    "lon": 73.08811,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5111fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dev Nagar",
+    "lat": 19.21313,
+    "lon": 72.84607,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b446bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhalchandra Nagar",
+    "lat": 19.33165,
+    "lon": 72.83918,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4eadfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Devki Nagar",
+    "lat": 19.24266,
+    "lon": 72.84601,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4553fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marve",
+    "lat": 19.19631,
+    "lon": 72.79726,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b44cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Basant Garden",
+    "lat": 19.05095,
+    "lon": 72.90378,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandrakant Dhuru Wadi",
+    "lat": 19.02265,
+    "lon": 72.83442,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalina University",
+    "lat": 19.07602,
+    "lon": 72.85949,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Western Express Highway",
+    "lat": 19.17394,
+    "lon": 72.85974,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4605fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashok Van",
+    "lat": 19.24382,
+    "lon": 72.86638,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b454bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dongarpada Road",
+    "lat": 19.47098,
+    "lon": 72.80695,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db488bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kannamwar Nagar 2",
+    "lat": 19.11784,
+    "lon": 72.93821,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5401fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Babrekar Nagar Kandivali West",
+    "lat": 19.18808,
+    "lon": 72.81261,
+    "price_sqft": 16667.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608b46adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govandi West",
+    "lat": 19.0632,
+    "lon": 72.92484,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mangal Nagar Versova",
+    "lat": 19.13654,
+    "lon": 72.81349,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0935fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sunder Nagar Malad West",
+    "lat": 19.17679,
+    "lon": 72.8399,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4631fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Naya Nagar Mira Road East",
+    "lat": 19.2842,
+    "lon": 72.85831,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4521fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Central Area",
+    "lat": 19.1279,
+    "lon": 72.91727,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b543bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chinchpada",
+    "lat": 19.22628,
+    "lon": 72.93005,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b42b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Golden Nest Phase 1",
+    "lat": 19.29677,
+    "lon": 72.86158,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4525fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mithchowki",
+    "lat": 19.3864,
+    "lon": 72.82858,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4dd9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deonar Farm Road",
+    "lat": 19.04305,
+    "lon": 72.91177,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juhu Beach Area",
+    "lat": 19.11133,
+    "lon": 72.82498,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0901fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand Nagar Dahisar East",
+    "lat": 19.22,
+    "lon": 72.86187,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b473bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bangur Nagar",
+    "lat": 19.16625,
+    "lon": 72.833,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4617fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hatkesh Udhog Nagar",
+    "lat": 19.28126,
+    "lon": 72.87859,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4565fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kajupada Borivali East",
+    "lat": 19.23831,
+    "lon": 72.86673,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4737fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Five Gardens",
+    "lat": 19.01998,
+    "lon": 72.85413,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govardhan Nagar Mulund West",
+    "lat": 19.18419,
+    "lon": 72.94577,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5533fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jacob Circle",
+    "lat": 18.98154,
+    "lon": 72.82846,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b18b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokul Township",
+    "lat": 19.45039,
+    "lon": 72.79763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db48abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Behram Baug",
+    "lat": 19.14468,
+    "lon": 72.84165,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4653fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahindra Colony",
+    "lat": 19.23634,
+    "lon": 72.86484,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4737fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mhatre Wadi Dahisar West",
+    "lat": 19.25279,
+    "lon": 72.85763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4555fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 2 Charkop",
+    "lat": 19.21316,
+    "lon": 72.82125,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4403fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Miragaon",
+    "lat": 19.27344,
+    "lon": 72.87769,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4561fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "King Circle",
+    "lat": 19.02673,
+    "lon": 72.85534,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "BMC Colony Malad West",
+    "lat": 19.19262,
+    "lon": 72.82271,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4451fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shakti Nagar Andheri West",
+    "lat": 19.12276,
+    "lon": 72.83246,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0905fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "BPCL Colony Chembur",
+    "lat": 19.03709,
+    "lon": 72.89971,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navi Mumbai-Khargar-Panvel",
+    "lat": 19.06478,
+    "lon": 73.04432,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608bcdc1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Morya Nagar",
+    "lat": 19.42896,
+    "lon": 72.81079,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4db1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mantralaya Area",
+    "lat": 18.92901,
+    "lon": 72.83013,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b032bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Best Nagar Goregaon West",
+    "lat": 19.15158,
+    "lon": 72.84013,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4619fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Amrut Nagar Jogeshwari West",
+    "lat": 19.14609,
+    "lon": 72.84583,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4653fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashok Kedare Chowk",
+    "lat": 19.14794,
+    "lon": 72.92802,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navy Nagar",
+    "lat": 18.89765,
+    "lon": 72.81169,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0319fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Nagardas Road",
+    "lat": 19.12496,
+    "lon": 72.84818,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hindu Colony Dadar East",
+    "lat": 19.02012,
+    "lon": 72.84731,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a61fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Agripada Santacruz East",
+    "lat": 19.08641,
+    "lon": 72.8459,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b35fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mumbai Port Trust Colony",
+    "lat": 19.05008,
+    "lon": 72.91394,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jay Prakash Nagar Goregaon East",
+    "lat": 19.16405,
+    "lon": 72.85366,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4601fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Azad Nagar Colaba",
+    "lat": 18.91474,
+    "lon": 72.82537,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0301fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ranwar Bandra West",
+    "lat": 19.05341,
+    "lon": 72.82847,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dindayal Nagar Vasai",
+    "lat": 19.37987,
+    "lon": 72.82701,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4ce5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marol Maroshi",
+    "lat": 19.12037,
+    "lon": 72.8788,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5487fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phase 1 Indralok",
+    "lat": 19.2949,
+    "lon": 72.86097,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4525fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Netaji Subhash Nagar",
+    "lat": 19.10835,
+    "lon": 72.85069,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0945fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 1 Charkop",
+    "lat": 19.21181,
+    "lon": 72.82495,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4401fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lower Parel East",
+    "lat": 18.99209,
+    "lon": 72.82968,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a5dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahajan Wadi",
+    "lat": 19.26468,
+    "lon": 72.87655,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4569fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gogate Wadi",
+    "lat": 19.16856,
+    "lon": 72.85093,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4607fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Union Park Chembur",
+    "lat": 19.04951,
+    "lon": 72.90253,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sen Nagar",
+    "lat": 19.08023,
+    "lon": 72.84511,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b3dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thakur Complex",
+    "lat": 19.20951,
+    "lon": 72.86354,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4711fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Juhu Koliwada",
+    "lat": 19.08364,
+    "lon": 72.82937,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0959fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indira Nagar Jogeshwari East",
+    "lat": 19.29977,
+    "lon": 72.86101,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalachowki Abhyudaya Nagar",
+    "lat": 18.98897,
+    "lon": 72.84144,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b18b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dalal Estate",
+    "lat": 18.96536,
+    "lon": 72.82328,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0169fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 3 Charkop",
+    "lat": 19.21723,
+    "lon": 72.83078,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4405fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patil Nagar",
+    "lat": 19.10135,
+    "lon": 72.82655,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0955fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shastri Nagar Andheri West",
+    "lat": 19.07343,
+    "lon": 72.95078,
+    "price_sqft": 27841.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608b5615fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sukarwadi",
+    "lat": 19.24973,
+    "lon": 72.85018,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4557fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhulabhai Desai Marg",
+    "lat": 18.97188,
+    "lon": 72.80496,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0105fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gilbert Hill",
+    "lat": 19.12289,
+    "lon": 72.83884,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0963fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Beverly Park",
+    "lat": 19.29392,
+    "lon": 72.87291,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Masjid Bandar West",
+    "lat": 18.95137,
+    "lon": 72.83689,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pali Naka",
+    "lat": 19.06115,
+    "lon": 72.82974,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b17fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lallu Bhai Park",
+    "lat": 19.00642,
+    "lon": 72.82099,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a0bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandan Nagar",
+    "lat": 19.12486,
+    "lon": 72.92248,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b543bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalachauki",
+    "lat": 18.99753,
+    "lon": 72.87091,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rifle Range Road",
+    "lat": 19.07786,
+    "lon": 72.9082,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5687fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Govandi Station Road",
+    "lat": 19.05331,
+    "lon": 72.91486,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gorai 1",
+    "lat": 19.22661,
+    "lon": 72.83273,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4429fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Irla",
+    "lat": 19.1093,
+    "lon": 72.84255,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0947fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mogra Pada",
+    "lat": 19.126,
+    "lon": 72.84964,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chuim",
+    "lat": 19.06794,
+    "lon": 72.82397,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0869fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Milat Nagar",
+    "lat": 19.15017,
+    "lon": 72.82822,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b461bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nav Pada",
+    "lat": 19.08327,
+    "lon": 72.88876,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chulne",
+    "lat": 19.37729,
+    "lon": 72.80787,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4ca9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hanuman Road",
+    "lat": 19.10334,
+    "lon": 72.84865,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b094dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanchpada",
+    "lat": 19.19186,
+    "lon": 72.83989,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b444bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "ML Dahanukar Marg",
+    "lat": 18.97272,
+    "lon": 72.81136,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karve Nagar",
+    "lat": 19.12953,
+    "lon": 72.93537,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5407fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gundavali Gaothan",
+    "lat": 19.12183,
+    "lon": 72.85365,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b096dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chincholi Bunder",
+    "lat": 19.18466,
+    "lon": 72.83647,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4637fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Konkani Pada",
+    "lat": 19.24696,
+    "lon": 72.87372,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4549fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahada Colony Andheri West",
+    "lat": 19.17893,
+    "lon": 72.8135,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b46e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Veera Desai Industrial Estate",
+    "lat": 19.13834,
+    "lon": 72.83456,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0921fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kharodi",
+    "lat": 19.20047,
+    "lon": 72.81995,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4457fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Suman Nagar Chembur",
+    "lat": 19.05533,
+    "lon": 72.88296,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b4dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sheshwadi",
+    "lat": 19.04816,
+    "lon": 72.85685,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b5dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koldongri Andheri East",
+    "lat": 19.11186,
+    "lon": 72.85273,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5493fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ketkipada",
+    "lat": 19.25529,
+    "lon": 72.87278,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4541fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chakala Industrial Area MIDC",
+    "lat": 19.06155,
+    "lon": 72.89401,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5691fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashwant Nagar Santacruz East",
+    "lat": 19.07729,
+    "lon": 72.85419,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "SV Patel Nagar Andheri West",
+    "lat": 19.13624,
+    "lon": 72.82117,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0923fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Neelam Nagar",
+    "lat": 19.17005,
+    "lon": 72.96551,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5501fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gandhi Nagar Bandra East",
+    "lat": 19.16733,
+    "lon": 72.92982,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sindhi Society Chembur",
+    "lat": 19.05131,
+    "lon": 72.89047,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b569bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "BPT Colony Worli",
+    "lat": 19.01187,
+    "lon": 72.82073,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a03fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahakali Nagar",
+    "lat": 19.12064,
+    "lon": 72.93328,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5403fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chembur Colony",
+    "lat": 19.04534,
+    "lon": 72.89535,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fish Market Area",
+    "lat": 19.12468,
+    "lon": 72.84577,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0961fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vaishali Nagar Jogeshwari West",
+    "lat": 19.19679,
+    "lon": 72.85724,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4627fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sarvodaya Nagar Bhandup West",
+    "lat": 19.14911,
+    "lon": 72.93216,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55c9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Alika Nagar",
+    "lat": 19.19388,
+    "lon": 72.86788,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4753fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manish Nagar",
+    "lat": 19.61666,
+    "lon": 74.38782,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88609d352dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghatla",
+    "lat": 19.04942,
+    "lon": 72.90848,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56d1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Reclamation",
+    "lat": 19.05029,
+    "lon": 72.83138,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Unnat Nagar Jay Prakash Nagar",
+    "lat": 19.16451,
+    "lon": 72.84492,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4603fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Veena Nagar",
+    "lat": 19.17447,
+    "lon": 72.94028,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55edfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Taximens Colony",
+    "lat": 19.11023,
+    "lon": 72.88912,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5489fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gundecha Garden",
+    "lat": 18.99372,
+    "lon": 72.83414,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a5dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jeevan Nagar Azad Nagar 2",
+    "lat": 19.13141,
+    "lon": 72.83409,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0929fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Poonam Sagar Complex",
+    "lat": 19.27348,
+    "lon": 72.86065,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4505fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirley",
+    "lat": 19.06525,
+    "lon": 72.82387,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0869fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Null Bazar",
+    "lat": 18.95975,
+    "lon": 72.83169,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1891fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 4 Charkop",
+    "lat": 19.22067,
+    "lon": 72.83225,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4405fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lower Govind Nagar",
+    "lat": 19.17745,
+    "lon": 72.85132,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4607fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Century Bazaar",
+    "lat": 19.01279,
+    "lon": 72.82578,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a01fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Damodarwadi",
+    "lat": 19.11873,
+    "lon": 73.00343,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5709fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gurunanak Nagar Narayan Nagar",
+    "lat": 19.08766,
+    "lon": 72.89325,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahalaxmi Race Course",
+    "lat": 18.98447,
+    "lon": 72.81997,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adarsh Nagar Malad West",
+    "lat": 19.19129,
+    "lon": 72.84432,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4449fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashodham",
+    "lat": 19.1713,
+    "lon": 72.86499,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4663fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kapad Bazar",
+    "lat": 19.03737,
+    "lon": 72.83946,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishwakarma Nagar",
+    "lat": 19.16769,
+    "lon": 72.94933,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5511fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulund Colony",
+    "lat": 19.17078,
+    "lon": 72.9392,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahim East",
+    "lat": 19.03979,
+    "lon": 72.84882,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khira Nagar",
+    "lat": 19.08858,
+    "lon": 72.83709,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b37fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jagruti Nagar",
+    "lat": 19.06593,
+    "lon": 72.88192,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b69fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahar Village",
+    "lat": 19.0979,
+    "lon": 72.86619,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b25fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NS Patkar Marg",
+    "lat": 18.95807,
+    "lon": 72.8086,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Paranjape Nagar Vile Parle East",
+    "lat": 19.10402,
+    "lon": 72.84778,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b094dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sane Guruji Nagar Mulund East",
+    "lat": 19.16669,
+    "lon": 72.95905,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b551dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chowpatty",
+    "lat": 18.9554,
+    "lon": 72.81315,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panjarpole",
+    "lat": 18.95422,
+    "lon": 72.83034,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b189bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pydhonie",
+    "lat": 18.95411,
+    "lon": 72.83518,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1891fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vinoba Bhave Nagar",
+    "lat": 19.0717,
+    "lon": 72.883,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajawadi Colony",
+    "lat": 19.07948,
+    "lon": 72.90105,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gangawadi",
+    "lat": 19.09121,
+    "lon": 72.90913,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Leo Peter Wadi",
+    "lat": 19.2439,
+    "lon": 72.85824,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b455dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambawadi Borivali",
+    "lat": 19.24061,
+    "lon": 72.86018,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b455dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Andheri Kurla Road",
+    "lat": 19.11295,
+    "lon": 72.86376,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5491fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Marine Lines",
+    "lat": 18.93989,
+    "lon": 72.82755,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0327fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Brhmanwada",
+    "lat": 19.03039,
+    "lon": 72.85475,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a65fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chinchbunder",
+    "lat": 18.9569,
+    "lon": 72.83765,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1891fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vaithara Nagar",
+    "lat": 19.16332,
+    "lon": 72.94913,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5511fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chembur Gaothan",
+    "lat": 19.06082,
+    "lon": 72.89918,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b569dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fanas Wadi",
+    "lat": 18.95153,
+    "lon": 72.82574,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b014dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aghadi Nagar",
+    "lat": 19.12327,
+    "lon": 72.86164,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hanuman Nagar Andheri East",
+    "lat": 19.1579,
+    "lon": 72.8638,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4647fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kadam Wadi Marol",
+    "lat": 19.11318,
+    "lon": 72.87336,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b549dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanyapada",
+    "lat": 19.17422,
+    "lon": 72.87125,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4663fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "IT Colony",
+    "lat": 18.97191,
+    "lon": 72.8102,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bharti Nagar",
+    "lat": 19.28595,
+    "lon": 72.86322,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4521fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Inlaks Nagar",
+    "lat": 19.13851,
+    "lon": 72.81516,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0935fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhobi Ghat Shanti Nagar",
+    "lat": 18.98252,
+    "lon": 72.82546,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a59fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gamadia Colony",
+    "lat": 18.96912,
+    "lon": 72.81321,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0163fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Narayan Nagar",
+    "lat": 19.0894,
+    "lon": 72.89274,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b56b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand Nagar Santacruz East",
+    "lat": 19.07956,
+    "lon": 72.85133,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b2bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hallow Pul",
+    "lat": 19.07746,
+    "lon": 72.88044,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kashigaon",
+    "lat": 19.27025,
+    "lon": 72.88866,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4097fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tirupati Nagar",
+    "lat": 19.45502,
+    "lon": 72.79851,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8842db4885fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokhale Road",
+    "lat": 19.02207,
+    "lon": 72.83763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a63fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maratha Colony Dahisar",
+    "lat": 19.25209,
+    "lon": 72.86011,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4543fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kala Nagar",
+    "lat": 19.05681,
+    "lon": 72.85075,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b0bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mustafa Bazar",
+    "lat": 18.97337,
+    "lon": 72.83723,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b18bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navneeth Colony",
+    "lat": 19.12588,
+    "lon": 72.84431,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0967fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandup Village",
+    "lat": 19.14388,
+    "lon": 72.94991,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b542dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Akurli Nagar",
+    "lat": 19.19874,
+    "lon": 72.86051,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b471bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NNP Colony",
+    "lat": 19.17246,
+    "lon": 72.88053,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b466dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maharashtra Nagar Borivali West",
+    "lat": 19.22944,
+    "lon": 72.84806,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4465fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Friends Colony Bhandup East",
+    "lat": 19.07796,
+    "lon": 72.88044,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b65fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Subhash Nagar Jogeshwari East",
+    "lat": 19.16649,
+    "lon": 72.83729,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4615fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hasmukh Nagar",
+    "lat": 19.08694,
+    "lon": 72.83494,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0b37fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gandhi Bazar",
+    "lat": 22.44581,
+    "lon": 88.39743,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "883cf2c533fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahul",
+    "lat": 19.01366,
+    "lon": 72.89707,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b19c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gulal Wadi",
+    "lat": 18.95561,
+    "lon": 72.82821,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1893fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jijamata Nagar Worli",
+    "lat": 18.99272,
+    "lon": 72.81876,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a51fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kashi Nagar Bhayandar",
+    "lat": 19.29993,
+    "lon": 72.86429,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4e19fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadgadi",
+    "lat": 18.95158,
+    "lon": 72.8375,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b1899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Devipada",
+    "lat": 19.21384,
+    "lon": 72.86173,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4717fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Uttan",
+    "lat": 19.26638,
+    "lon": 72.80413,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4585fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kokan Nagar Bhandup West",
+    "lat": 19.14646,
+    "lon": 72.92707,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b55cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Majas Wadi",
+    "lat": 19.13951,
+    "lon": 72.85976,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b54b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Abhyudaya Nagar",
+    "lat": 18.99129,
+    "lon": 72.84566,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a49fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ram Nagar Goregaon East",
+    "lat": 19.21637,
+    "lon": 73.08701,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b511bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anushakti Nagar",
+    "lat": 19.03353,
+    "lon": 72.93108,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b193dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vithalwadi",
+    "lat": 19.22286,
+    "lon": 73.15214,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a249dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tata Colony Mulund East",
+    "lat": 19.16026,
+    "lon": 72.95778,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5557fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadavali",
+    "lat": 18.55652,
+    "lon": 73.78434,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088421dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rebello Road",
+    "lat": 18.99994,
+    "lon": 72.84012,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b0a41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Waliv",
+    "lat": 19.41415,
+    "lon": 72.8643,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4d15fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajan Pada",
+    "lat": 19.18005,
+    "lon": 72.83357,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4633fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Barrister Nath Pai Nagar",
+    "lat": 19.07288,
+    "lon": 72.90634,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b5687fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sheetal Nagar Mira Road East",
+    "lat": 19.28257,
+    "lon": 72.86529,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4529fffff",
+    "zone": "Central"
+  }
+]

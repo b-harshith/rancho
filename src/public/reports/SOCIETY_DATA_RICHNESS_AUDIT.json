@@ -1,0 +1,259 @@
+{
+  "before_after": {
+    "old_premium_feed": {
+      "record_count": 2268,
+      "unique_hexes": 246,
+      "category_counts": {
+        "Ultra Luxury": 561,
+        "Premium Luxury": 551,
+        "Elite Luxury": 559,
+        "Super Luxury": 569,
+        "Luxury": 6,
+        "Premium": 7,
+        "Aspirational Premium": 15
+      }
+    },
+    "new_full_project_feed": {
+      "record_count": 8920,
+      "valid_geocoded_rows": 8891,
+      "quartile_distribution": {
+        "Q4": 2268,
+        "Q3": 2200,
+        "Q2": 2271,
+        "Q1": 2152
+      },
+      "source_category_counts_q4_only": {
+        "Ultra Luxury": 561,
+        "Premium Luxury": 551,
+        "Elite Luxury": 559,
+        "Super Luxury": 569,
+        "Luxury": 6,
+        "Premium": 7,
+        "Aspirational Premium": 15
+      },
+      "derived_hex_coverage_all_projects": 436,
+      "missing_price_sqft_rows": 7142,
+      "missing_original_hex_id_rows": 0
+    },
+    "q4_scorer_input": {
+      "record_count": 2268,
+      "derived_category_counts": {
+        "Ultra Luxury": 561,
+        "Premium Luxury": 551,
+        "Elite Luxury": 559,
+        "Super Luxury": 569,
+        "Luxury": 6,
+        "Premium": 7,
+        "Aspirational Premium": 15
+      },
+      "derived_hex_coverage": 246,
+      "units_total": 384295.0,
+      "families_total": 384544
+    },
+    "quartile_breakdown": [
+      {
+        "quartile": "Q1",
+        "rows": 2152,
+        "units": 314491.0,
+        "avg_price": 9789159.75,
+        "min_price": 560105.0,
+        "max_price": 24710000.0
+      },
+      {
+        "quartile": "Q2",
+        "rows": 2271,
+        "units": 290052.0,
+        "avg_price": 13260191.2,
+        "min_price": 3183000.0,
+        "max_price": 27410000.0
+      },
+      {
+        "quartile": "Q3",
+        "rows": 2200,
+        "units": 315313.0,
+        "avg_price": 16842361.03,
+        "min_price": 4200000.0,
+        "max_price": 55000000.0
+      },
+      {
+        "quartile": "Q4",
+        "rows": 2268,
+        "units": 384295.0,
+        "avg_price": 32069059.24,
+        "min_price": 4310346.0,
+        "max_price": 537110000.0
+      }
+    ],
+    "project_type_breakdown": [
+      {
+        "project_type": "Apartment",
+        "count": 8339,
+        "share_pct": 93.49
+      },
+      {
+        "project_type": "Villa/House",
+        "count": 362,
+        "share_pct": 4.06
+      },
+      {
+        "project_type": "Builder Floor",
+        "count": 190,
+        "share_pct": 2.13
+      }
+    ]
+  },
+  "q3_and_below": {
+    "property_count": 6623,
+    "units_total": 919856.0,
+    "derived_hex_coverage": 423,
+    "inside_active_stage_hex_count": 5805,
+    "outside_active_stage_hex_count": 818,
+    "outside_active_stage_hex_coverage": 197,
+    "top_outside_active_stage_hexes": [
+      {
+        "hex_id": "87618922cffffff",
+        "property_count": 58
+      },
+      {
+        "hex_id": "87618920cffffff",
+        "property_count": 40
+      },
+      {
+        "hex_id": "876014513ffffff",
+        "property_count": 34
+      },
+      {
+        "hex_id": "876016915ffffff",
+        "property_count": 27
+      },
+      {
+        "hex_id": "87618920effffff",
+        "property_count": 26
+      },
+      {
+        "hex_id": "876189352ffffff",
+        "property_count": 25
+      },
+      {
+        "hex_id": "8760145aaffffff",
+        "property_count": 20
+      },
+      {
+        "hex_id": "876189265ffffff",
+        "property_count": 19
+      },
+      {
+        "hex_id": "876189225ffffff",
+        "property_count": 19
+      },
+      {
+        "hex_id": "87618934cffffff",
+        "property_count": 18
+      },
+      {
+        "hex_id": "87601696cffffff",
+        "property_count": 16
+      },
+      {
+        "hex_id": "876189256ffffff",
+        "property_count": 13
+      },
+      {
+        "hex_id": "876189280ffffff",
+        "property_count": 11
+      },
+      {
+        "hex_id": "8761892a9ffffff",
+        "property_count": 11
+      },
+      {
+        "hex_id": "876189201ffffff",
+        "property_count": 11
+      },
+      {
+        "hex_id": "87601692cffffff",
+        "property_count": 10
+      },
+      {
+        "hex_id": "876189355ffffff",
+        "property_count": 10
+      },
+      {
+        "hex_id": "876016902ffffff",
+        "property_count": 10
+      },
+      {
+        "hex_id": "876189285ffffff",
+        "property_count": 9
+      },
+      {
+        "hex_id": "876016908ffffff",
+        "property_count": 9
+      }
+    ]
+  },
+  "q4": {
+    "property_count": 2268,
+    "units_total": 384295.0
+  },
+  "delta_summary": {
+    "additional_records_vs_old_premium": 6652,
+    "multiple_vs_old_premium": 3.93,
+    "full_quartile_visibility_enabled": true
+  },
+  "q4_summary": {
+    "total_units": 384295.0,
+    "total_families": 384544
+  },
+  "quartile_breakdown": [
+    {
+      "quartile": "Q1",
+      "rows": 2152,
+      "units": 314491.0,
+      "avg_price": 9789159.75,
+      "min_price": 560105.0,
+      "max_price": 24710000.0
+    },
+    {
+      "quartile": "Q2",
+      "rows": 2271,
+      "units": 290052.0,
+      "avg_price": 13260191.2,
+      "min_price": 3183000.0,
+      "max_price": 27410000.0
+    },
+    {
+      "quartile": "Q3",
+      "rows": 2200,
+      "units": 315313.0,
+      "avg_price": 16842361.03,
+      "min_price": 4200000.0,
+      "max_price": 55000000.0
+    },
+    {
+      "quartile": "Q4",
+      "rows": 2268,
+      "units": 384295.0,
+      "avg_price": 32069059.24,
+      "min_price": 4310346.0,
+      "max_price": 537110000.0
+    }
+  ],
+  "project_type_breakdown": [
+    {
+      "project_type": "Apartment",
+      "count": 8339,
+      "share_pct": 93.49
+    },
+    {
+      "project_type": "Villa/House",
+      "count": 362,
+      "share_pct": 4.06
+    },
+    {
+      "project_type": "Builder Floor",
+      "count": 190,
+      "share_pct": 2.13
+    }
+  ]
+}

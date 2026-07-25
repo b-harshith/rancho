@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RanchoLabs - Bangalore Analysis Explainer</title>
+  <meta name="description" content="Interactive visual animation explaining the H3 affluence modeling and spatial TAM aggregation pipeline.">
+  
+  <!-- Space Grotesk & Questrial Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  
+  <style>
+    :root {
+      --bg-dark: #fbfbfa;
+      --bg-panel: #fbfbfa;
+      --bg-card: #ffffff;
+      --text-bright: #37352f;
+      --text-normal: #37352f;
+      --text-muted: #6b7280;
+      --border-color: #e9e9e6;
+      --accent-color: #2383e2; /* Blue */
+      --accent-glow: rgba(35, 131, 226, 0.4);
+      --shadow-floating: 0 4px 12px rgba(15, 15, 15, 0.12);
+      
+      /* Target layer colors */
+      --color-society: #10b981;    /* Emerald Green */
+      --color-school: #2383e2;     /* Royal Blue */
+      --color-hospital: #8b5cf6;   /* Purple/Violet */
+      --color-locality: #f59e0b;   /* Amber */
+      --color-route: #ec4899;      /* Pink */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Questrial', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-normal);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    h1, h2, h3, h4, button, .font-space {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Split Screen Layout */
+    .app-container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 460px;
+      background-color: var(--bg-panel);
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      flex-shrink: 0;
+      z-index: 10;
+      box-shadow: var(--shadow-floating);
+    }
+
+    .sidebar-header {
+      padding: 24px;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-panel);
+    }
+
+    .sidebar-header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.02em;
+    }
+
+    .sidebar-header p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Scrollable Slide Deck */
+    .slide-deck-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      position: relative;
+    }
+
+    .slide-deck-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .slide-deck-container::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .slide-deck-container::-webkit-scrollbar-thumb {
+      background: rgba(156, 163, 175, 0.2);
+      border-radius: 3px;
+    }
+    .slide-deck-container::-webkit-scrollbar-thumb:hover {
+      background: rgba(156, 163, 175, 0.4);
+    }
+
+    .slide-card {
+      display: none;
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    .slide-card.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Navigation Panel */
+    .nav-controls {
+      padding: 20px 24px;
+      border-top: 1px solid var(--border-color);
+      background-color: rgba(251, 251, 250, 0.95);
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 4px;
+      background-color: var(--border-color);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      transition: width 0.3s ease;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .step-indicator {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-btn {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-bright);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--border-color);
+      border-color: var(--text-muted);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .nav-btn.primary-btn {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    .nav-btn.primary-btn:hover {
+      background-color: #2563eb;
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .autoplay-btn {
+      background: none;
+      border: none;
+      color: var(--text-normal);
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s;
+    }
+
+    .autoplay-btn:hover {
+      color: var(--text-bright);
+      background-color: var(--border-color);
+    }
+
+    .autoplay-btn.playing {
+      color: #ef4444;
+      border-color: rgba(239, 68, 68, 0.4);
+      box-shadow: 0 0 8px rgba(239, 68, 68, 0.2);
+    }
+
+    /* Map Area */
+    .map-container {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      background-color: #f3f4f6;
+    }
+
+    #leaflet-map {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Editorial Cards styling */
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .badge-step {
+      background-color: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .slide-card h2 {
+      font-size: 24px;
+      color: var(--text-bright);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .slide-card p {
+      font-size: 14px;
+      color: var(--text-normal);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* Metric Cards inside sidebar */
+    .sidebar-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .metric-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .metric-card span {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .metric-card strong {
+      font-size: 18px;
+      color: var(--text-bright);
+      margin-top: 4px;
+    }
+
+    .metric-card.highlight {
+      border-color: var(--accent-color);
+      background: rgba(35, 131, 226, 0.05);
+      box-shadow: var(--shadow-floating);
+    }
+
+    /* Formula display */
+    .formula-box {
+      background-color: rgba(35, 131, 226, 0.05);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 6px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 12.5px;
+      color: #60a5fa;
+      margin: 16px 0;
+      overflow-x: auto;
+    }
+
+    .formula-explanation {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    /* Custom CSS charts in sidebar */
+    .chart-container {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chart-row {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .chart-label {
+      width: 100px;
+      color: var(--text-normal);
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .chart-bar-bg {
+      flex: 1;
+      height: 12px;
+      background-color: var(--bg-card);
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 0 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .chart-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      border-radius: 6px;
+      width: 0; /* Animated in JS */
+      transition: width 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .chart-value {
+      width: 60px;
+      text-align: right;
+      font-weight: 600;
+      color: var(--text-bright);
+    }
+
+    /* Sandbox controls */
+    .sandbox-toggles {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .sandbox-toggle-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .sandbox-toggle-row label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: var(--text-bright);
+      font-weight: 550;
+    }
+
+    .dot-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* Switch styling */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 34px;
+      height: 20px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--border-color);
+      transition: .3s;
+      border-radius: 20px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--accent-color);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(14px);
+    }
+
+    /* Interactive sandbox tools */
+    .sandbox-tool {
+      background-color: rgba(35, 131, 226, 0.02);
+      border: 1px dashed var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 16px;
+    }
+
+    .sandbox-tool h4 {
+      font-size: 13px;
+      color: var(--text-bright);
+      margin-bottom: 8px;
+    }
+
+    .sandbox-tool p {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .sandbox-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .sandbox-kpi {
+      background-color: var(--bg-panel);
+      padding: 8px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .sandbox-kpi span {
+      font-size: 9px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .sandbox-kpi strong {
+      font-size: 14px;
+      color: var(--text-bright);
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* Glowing marker classes for Leaflet SVG styling */
+    @keyframes pulse-emerald {
+      0% { stroke-width: 1px; stroke-opacity: 0.8; fill-opacity: 0.5; }
+      100% { stroke-width: 10px; stroke-opacity: 0.1; fill-opacity: 0.95; }
+    }
+    .pulse-emerald {
+      animation: pulse-emerald 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse-blue {
+      0% { stroke-width: 1px; stroke-opacity: 0.8; fill-opacity: 0.5; }
+      100% { stroke-width: 10px; stroke-opacity: 0.1; fill-opacity: 0.95; }
+    }
+    .pulse-blue {
+      animation: pulse-blue 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse-purple {
+      0% { stroke-width: 1px; stroke-opacity: 0.8; fill-opacity: 0.5; }
+      100% { stroke-width: 10px; stroke-opacity: 0.1; fill-opacity: 0.95; }
+    }
+    .pulse-purple {
+      animation: pulse-purple 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse-amber {
+      0% { stroke-width: 1px; stroke-opacity: 0.8; fill-opacity: 0.5; }
+      100% { stroke-width: 10px; stroke-opacity: 0.1; fill-opacity: 0.95; }
+    }
+    .pulse-amber {
+      animation: pulse-amber 1.8s infinite ease-in-out;
+    }
+
+    @keyframes flash-formula {
+      0% { background-color: rgba(35, 131, 226, 0.4); border-color: var(--accent-color); }
+      100% { background-color: rgba(35, 131, 226, 0.05); border-color: var(--border-color); }
+    }
+    .flash-formula {
+      animation: flash-formula 0.6s ease-out;
+    }
+
+    @keyframes streaming {
+      to {
+        stroke-dashoffset: -40;
+      }
+    }
+    .streaming-line {
+      stroke-dasharray: 8, 4;
+      animation: streaming 1.2s linear infinite;
+    }
+
+    /* Neon Route Lines */
+    .neon-route-outer {
+      filter: drop-shadow(0 0 6px var(--color-route));
+    }
+    .neon-route-inner {
+      stroke-dasharray: 5, 10;
+      animation: streaming 0.6s linear infinite;
+    }
+
+    /* Custom Leaflet Tooltip for dark mode */
+    .leaflet-tooltip-dark {
+      background-color: var(--bg-panel) !important;
+      border: 1px solid var(--border-color) !important;
+      color: var(--text-bright) !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+      border-radius: 6px !important;
+      font-family: 'Questrial', sans-serif !important;
+      font-size: 12px !important;
+      padding: 8px 12px !important;
+    }
+    .leaflet-tooltip-dark strong {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Inline lists */
+    .narrative-list {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      font-size: 13.5px;
+    }
+    .narrative-list li {
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .legend-panel {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px;
+      z-index: 1000;
+      font-size: 11px;
+      box-shadow: var(--shadow-floating);
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .legend-title {
+      font-weight: 700;
+      color: var(--text-bright);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-normal);
+    }
+
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+    }
+
+    /* Sliders inside cards */
+    .card-slider {
+      width: 100%;
+      height: 6px;
+      background-color: var(--border-color);
+      border-radius: 3px;
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      margin: 8px 0 16px;
+    }
+    .card-slider::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      cursor: pointer;
+      border: 2px solid var(--text-bright);
+    }
+
+    /* On-map HUD Overlay */
+    .hud-overlay {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px 18px;
+      z-index: 1000;
+      font-family: 'Space Grotesk', sans-serif;
+      box-shadow: var(--shadow-floating);
+      backdrop-filter: blur(8px);
+      pointer-events: none;
+    }
+
+    .hud-title {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hud-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-bright);
+      margin-top: 2px;
+    }
+
+    .pill-group {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill-btn {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-normal);
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .pill-btn:hover {
+      background-color: var(--border-color);
+    }
+
+    .pill-btn.active {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--text-bright);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Sidebar: Step Walkthrough -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>RanchoLabs</h1>
+        <p>Bangalore Expansion Analysis Explainer</p>
+      </div>
+
+      <div class="slide-deck-container" id="slide-deck">
+        
+        <!-- Slide 0: Welcome -->
+        <section class="slide-card active" data-step="0">
+          <span class="badge badge-step">Introduction</span>
+          <h2>Geospatial Methodology</h2>
+          <p>
+            Welcome to the interactive market research explainer for Bengaluru. 
+            This tool visualizes the exact, step-by-step mathematical and spatial pipeline 
+            used to evaluate locations, estimate target addressable markets (TAM), and determine optimal center launch points.
+          </p>
+          <p>
+            We will walk you through:
+          </p>
+          <ul class="narrative-list">
+            <li>Stage 1: Plotting geo-coordinates for raw locations</li>
+            <li>Stage 2: Double-Quartile pricing filtering & classification</li>
+            <li>Stage 2.1: Q4 School Market Evidence</li>
+            <li>Stage 3: Affluence modeling & family TAM calculations</li>
+            <li>Stage 4: H3 spatial grid index mapping</li>
+            <li>Stage 5: Zone-wise rollups & priority recommendations</li>
+            <li>Stage 6: Multi-point catchments and road route scoring</li>
+          </ul>
+          <p>
+            Click <strong>Next</strong> to start the animation, or click the Play button to let it run automatically.
+          </p>
+        </section>
+
+        <!-- Slide 1: Raw Lat/Lon Plotting -->
+        <section class="slide-card" data-step="1">
+          <span class="badge badge-step">Step 1 of 7</span>
+          <h2>Plotting Raw Geo-Signals</h2>
+          <p>
+            The analysis starts with raw spatial data collection. We map four distinct layers of geo-coordinates across Bangalore representing affluence and family demand signals.
+          </p>
+          <div class="sidebar-metrics">
+            <div class="metric-card">
+              <span style="color: var(--color-society);">● Societies</span>
+              <strong id="stat-raw-societies">573</strong>
+            </div>
+            <div class="metric-card">
+              <span style="color: var(--color-school);">● Schools</span>
+              <strong id="stat-raw-schools">476</strong>
+            </div>
+            <div class="metric-card">
+              <span style="color: var(--color-hospital);">● Hospitals</span>
+              <strong id="stat-raw-hospitals">235</strong>
+            </div>
+            <div class="metric-card">
+              <span style="color: var(--color-locality);">● Localities</span>
+              <strong id="stat-raw-localities">1,164</strong>
+            </div>
+          </div>
+          <p>
+            Watch the map as hundreds of data points are plotted based on their latitude and longitude coordinates, creating a dense map of infrastructure.
+          </p>
+        </section>
+
+        <!-- Slide 2: Double-Quartile Filtering -->
+        <section class="slide-card" data-step="2">
+          <span class="badge badge-step">Step 2 of 7</span>
+          <h2>Double-Quartile Filtering</h2>
+          <p>
+            To isolate target customers, raw datasets are filtered using a <strong>Double-Quartile Process</strong>.
+          </p>
+          <p>
+            First, raw listings are split into pricing quartiles (Q1–Q4). Only listings in the <strong>4th quartile (Q4 - top 25% premium bracket)</strong> are retained. 
+            A secondary Q1-Q4 distribution is run exclusively on this premium subset to classify them into luxury tiers.
+          </p>
+          <p>
+            Watch the map. Non-premium points fade into the background, leaving only the premium subsets color-coded by their luxury level.
+          </p>
+          <div class="pill-group" id="tier-filter-pills">
+            <button class="pill-btn active" onclick="highlightFilterTier('all')">All Premium</button>
+            <button class="pill-btn" onclick="highlightFilterTier('Ultra Luxury')">Ultra Luxury</button>
+            <button class="pill-btn" onclick="highlightFilterTier('Super Luxury')">Super Luxury</button>
+            <button class="pill-btn" onclick="highlightFilterTier('Luxury')">Luxury</button>
+            <button class="pill-btn" onclick="highlightFilterTier('Premium')">Premium</button>
+            <button class="pill-btn" onclick="highlightFilterTier('Aspirational Premium')">Aspir. Prem</button>
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            Toggling these categories displays their spatial clusters. Ultra Luxury housing (5Cr+ per unit) is highly concentrated in central and eastern belts.
+          </p>
+        </section>
+
+        <!-- Slide 3: School Market Evidence -->
+        <section class="slide-card" data-step="3">
+          <span class="badge badge-step">Step 3 of 7</span>
+          <h2>Q4 School Market Evidence</h2>
+          <p>
+            We clean and deduplicate the school universe, then recompute Q4 as the top <strong>25% of school entities by maximum annual fee</strong>.
+          </p>
+          <p>
+            The evidence remains attached to each school entity:
+          </p>
+          <ul class="narrative-list">
+            <li><strong>Grades 2–9 enrollment:</strong> Shown as UDISE-backed or estimated.</li>
+            <li><strong>Physical campus:</strong> Used for mapping without assigning students to residential hexes.</li>
+          </ul>
+          <div class="formula-box">
+            Q4 = top floor(N / 4) cleaned entities ranked by fee_max
+          </div>
+          <p>
+            The map shows Q4 school entities and their enrollment evidence. Location decisions use separate live catchment and residential ledgers.
+          </p>
+        </section>
+
+        <!-- Slide 4: Affluence & TAM Formulas -->
+        <section class="slide-card" data-step="4">
+          <span class="badge badge-step">Step 4 of 7</span>
+          <h2>Income Mapping & TAM Derivation</h2>
+          <p>
+            To estimate the target addressable market (TAM), we calculate the estimated number of affluent families per society based on its size (unit count) and luxury category.
+          </p>
+          <p>
+            Our core target is families with **household income of ₹50L+**. To estimate this, we apply weighting factors:
+          </p>
+          <div class="formula-box">
+            TAM = Ultra + Super + Luxury + Premium + (0.4 * Aspirational)
+          </div>
+          <p class="formula-explanation">
+            We include 100% of units from Premium and above, plus a conservative 40% of units from the Aspirational Premium band (₹25L–₹50L) to account for households crossing the ₹40L+ threshold.
+          </p>
+          <p>
+            On the map, society points are now scaled in size proportional to their derived family TAM count. Larger circles represent massive luxury societies (e.g. 2,000+ units).
+          </p>
+        </section>
+
+        <!-- Slide 5: H3 Hex Grid Aggregation -->
+        <section class="slide-card" data-step="5">
+          <span class="badge badge-step">Step 5 of 7</span>
+          <h2>H3 Hexagon Aggregation</h2>
+          <p>
+            Plotting raw points is not enough for spatial statistics. We overlay Uber's **H3 spatial index** at **Resolution 7** (cells of ~5.16 sq km area).
+          </p>
+          <p>
+            Watch the animation: points stream their TAM values into the nearest hexagon centroid. The cells then light up as a heatmap representing the aggregated total family TAM.
+          </p>
+          <div class="sidebar-metrics">
+            <div class="metric-card highlight">
+              <span>H3 Hex Resolution</span>
+              <strong>Level 7</strong>
+            </div>
+            <div class="metric-card highlight">
+              <span>Total Active Cells</span>
+              <strong>310 Cells</strong>
+            </div>
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            Hexagonal grids solve boundary bias and let us run standard geospatial queries. Click on any illuminated hex cell on the map to see its aggregated metrics.
+          </p>
+        </section>
+
+        <!-- Slide 6: Zone Rollups & Priorities -->
+        <section class="slide-card" data-step="6">
+          <span class="badge badge-step">Step 6 of 7</span>
+          <h2>Zone Aggregation & Priorities</h2>
+          <p>
+            Next, we roll up individual H3 cells into the **9 major macro zones** of Bangalore to formulate high-level business decisions.
+          </p>
+          <p>
+            The final output recommends <strong>"Launch Now"</strong> (green pulsing zones), <strong>"Shortlist"</strong> (blue zones), or <strong>"Avoid/Deprioritize"</strong> (grey zones).
+          </p>
+          
+          <div class="chart-container" id="zone-tam-chart">
+            <!-- CSS bar chart injected by JS -->
+          </div>
+          
+          <p style="font-size: 12px; margin-top: 10px;">
+            The South-East and East zones carry a dominant <strong>46.0% combined share</strong> of Bangalore's total target family TAM, making them the primary launch markets.
+          </p>
+        </section>
+
+        <!-- Slide 7: Catchments & OSRM Routing -->
+        <section class="slide-card" data-step="7">
+          <span class="badge badge-step">Step 7 of 7</span>
+          <h2>Catchments & Route Finding</h2>
+          <p>
+            When selecting specific commercial sites, we calculate **travel catchments** and **route-based accessibility scores**.
+          </p>
+          <p>
+            Rather than drawing simple circles, we trace route paths along the OpenStreetMap road network. We compute travel distances and travel times using a local OpenSource Routing Machine (OSRM) graph.
+          </p>
+          <p>
+            Watch the map: we have placed a center in **Chikkakanneli (South-East)**. We draw a 7km drive catchment circle and trace the OSRM route paths (magenta neon lines) to the nearest luxury societies and premium schools.
+          </p>
+          <div class="sidebar-metrics">
+            <div class="metric-card">
+              <span>Catchment Radius</span>
+              <strong>7.0 km</strong>
+            </div>
+            <div class="metric-card">
+              <span>Travel Speed</span>
+              <strong>20 km/h</strong>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 8: Sandbox Mode -->
+        <section class="slide-card" data-step="8">
+          <span class="badge badge-step">Sandbox</span>
+          <h2>Interactive Sandbox</h2>
+          <p>
+            You have reached the end of the explainer! You can now explore the entire spatial dataset freely. Toggle layers below and test the interactive catchment query tool.
+          </p>
+          
+          <div class="sandbox-toggles">
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: var(--color-society);"></span> Premium Societies</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-societies" checked onchange="toggleSandboxLayer('societies')">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: var(--color-school);"></span> Premium Schools</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-schools" checked onchange="toggleSandboxLayer('schools')">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: var(--color-hospital);"></span> Premium Hospitals</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-hospitals" onchange="toggleSandboxLayer('hospitals')">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: var(--color-locality);"></span> Localities (KDE)</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-localities" onchange="toggleSandboxLayer('localities')">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: #6366f1;"></span> H3 Hex Grid</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-hexes" checked onchange="toggleSandboxLayer('hexes')">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="sandbox-toggle-row">
+              <label><span class="dot-indicator" style="background-color: #e2e8f0;"></span> Zone Wedges</label>
+              <label class="switch">
+                <input type="checkbox" id="chk-sb-zones" onchange="toggleSandboxLayer('zones')">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="sandbox-tool">
+            <h4>🧭 Interactive Catchment Clicker</h4>
+            <p>
+              Click anywhere on the map to inspect residential evidence and Q4 school entities inside the selected range. The two ledgers remain separate.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 11px;">Radius: <strong id="lbl-sb-radius">7.0</strong> km</span>
+              <input type="range" id="rng-sb-radius" min="2" max="12" step="0.5" value="7.0" class="card-slider" style="width: 140px; margin: 0;" oninput="adjustSandboxRadius(this.value)">
+            </div>
+            <div class="sandbox-kpi-grid">
+              <div class="sandbox-kpi">
+                <span>Total TAM</span>
+                <strong id="sb-kpi-tam">--</strong>
+              </div>
+              <div class="sandbox-kpi">
+                <span>Societies</span>
+                <strong id="sb-kpi-societies">--</strong>
+              </div>
+              <div class="sandbox-kpi">
+                <span>Schools</span>
+                <strong id="sb-kpi-schools">--</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Navigation & Progress Panel -->
+      <div class="nav-controls">
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="deck-progress"></div>
+        </div>
+        <div class="nav-buttons">
+          <button class="nav-btn" id="btn-prev" onclick="changeStep(-1)" disabled>Back</button>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button class="autoplay-btn" id="btn-autoplay" onclick="toggleAutoplay()" title="Autoplay Slideshow">▶</button>
+            <span class="step-indicator" id="step-index-lbl">Step 0 / 7</span>
+          </div>
+          <button class="nav-btn primary-btn" id="btn-next" onclick="changeStep(1)">Next</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Map Content Area -->
+    <main class="map-container">
+      <!-- On-Map HUD Overlay -->
+      <div class="hud-overlay" id="hud-panel">
+        <div class="hud-title" id="hud-title-lbl">Bangalore Centroid</div>
+        <div class="hud-value" id="hud-value-lbl"> Bengaluru, KA </div>
+      </div>
+      
+      <!-- Leaflet Map Canvas -->
+      <div id="leaflet-map"></div>
+
+      <!-- Map Legend Panel -->
+      <div class="legend-panel" id="map-legend" style="display: none;">
+        <div class="legend-title" id="legend-title-lbl">Legend</div>
+        <div id="legend-content-area"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet Heatmap Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+  <script>
+    // Global State
+    let currentStep = 0;
+    const totalSteps = 8;
+    let autoplayInterval = null;
+    let isPlaying = false;
+    const stepDuration = 7000; // 7 seconds per slide in autoplay
+
+    // Map object & layers
+    let map = null;
+    const datasets = {
+      localities: [],
+      societies: [],
+      schools: [],
+      hospitals: [],
+      hexes: null,
+      sez_zones: null,
+      report: null
+    };
+
+    // Leaflet Layer groups
+    const layers = {
+      base: null,
+      localitiesHeat: null,
+      societiesHeat: null,
+      schoolsHeat: null,
+      hospitalsHeat: null,
+      hexesLayer: null,
+      zonesLayer: null,
+      sezLayer: null,
+      markers: L.layerGroup(),
+      animationLines: L.layerGroup(),
+      catchmentCircle: null,
+      sandboxCircle: null,
+      sandboxMarkers: L.layerGroup(),
+      sandboxRoutes: L.layerGroup()
+    };
+
+    // Zone Wedges Coordinates Configurations
+    const CENTRAL_LAT = 12.9716;
+    const CENTRAL_LON = 77.5946;
+    const zonePolygons = {};
+    const zoneColors = {
+      "North": '#3b82f6',
+      "North-East": '#10b981',
+      "East": '#f59e0b',
+      "South-East": '#8b5cf6',
+      "South": '#ec4899',
+      "South-West": '#6366f1',
+      "West": '#14b8a6',
+      "North-West": '#84cc16',
+      "Central": '#ef4444'
+    };
+    
+    // Zone Priorities
+    const zonePriorities = {
+      "South-East": { status: "Launch now", share: "24.5%", tam: 38418 },
+      "East": { status: "Launch now", share: "21.5%", tam: 33836 },
+      "North": { status: "Shortlist", share: "15.1%", tam: 23730 },
+      "South": { status: "Launch now", share: "13.0%", tam: 20430 },
+      "South-West": { status: "Shortlist", share: "11.7%", tam: 18395 },
+      "North-East": { status: "Shortlist", share: "9.9%", tam: 15515 },
+      "Central": { status: "Shortlist", share: "4.2%", tam: 6553 },
+      "North-West": { status: "Deprioritize", share: "0.1%", tam: 196 },
+      "West": { status: "Deprioritize", share: "0.0%", tam: 0 }
+    };
+
+    // Prebaked routes for Step 6 (Chikkakanneli center)
+    const CHIKKAKANNELI_CENTER = [12.9136, 77.6918];
+    const prebakedRoutes = [
+      // Route to Society 1 (Prestige Lakeside Habitat)
+      {
+        name: "Prestige Lakeside Habitat",
+        type: "society",
+        coords: [
+          [12.9136, 77.6918],
+          [12.9102, 77.7011],
+          [12.9056, 77.7123],
+          [12.8988, 77.7214],
+          [12.8932, 77.7258]
+        ]
+      },
+      // Route to Society 2 (Sobha Dream Acres)
+      {
+        name: "Sobha Dream Acres",
+        type: "society",
+        coords: [
+          [12.9136, 77.6918],
+          [12.9208, 77.6934],
+          [12.9272, 77.7012],
+          [12.9324, 77.7088],
+          [12.9372, 77.7145]
+        ]
+      },
+      // Route to School 1 (The Greenwood High School)
+      {
+        name: "Greenwood High",
+        type: "school",
+        coords: [
+          [12.9136, 77.6918],
+          [12.9102, 77.6912],
+          [12.9022, 77.6884],
+          [12.8955, 77.6841],
+          [12.8872, 77.6811],
+          [12.8795, 77.6804]
+        ]
+      },
+      // Route to School 2 (Oakridge International)
+      {
+        name: "Oakridge International",
+        type: "school",
+        coords: [
+          [12.9136, 77.6918],
+          [12.9102, 77.6912],
+          [12.9011, 77.6908],
+          [12.8934, 77.6902],
+          [12.8842, 77.6914]
+        ]
+      }
+    ];
+
+    // Initialization
+    window.addEventListener('DOMContentLoaded', async () => {
+      initMap();
+      await loadAllData();
+      updateDashboard();
+    });
+
+    function initMap() {
+      // Create Leaflet map with dark options
+      map = L.map('leaflet-map', {
+        zoomControl: false,
+        attributionControl: false
+      }).setView([12.9716, 77.5946], 11);
+
+      // Add CartoDB Positron base tile layer (Light Mode)
+      layers.base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19
+      }).addTo(map);
+
+      // Set up onEachFeature functions, custom icons and helper geometry variables
+      layers.markers.addTo(map);
+      layers.animationLines.addTo(map);
+      layers.sandboxMarkers.addTo(map);
+      layers.sandboxRoutes.addTo(map);
+
+      // Initialize Zoom control on top-right
+      L.control.zoom({ position: 'topright' }).addTo(map);
+      
+      // Setup zone sector geometry wedges
+      initZoneGeometry();
+
+      // Catchment mode map click listener for Sandbox
+      map.on('click', (e) => {
+        if (currentStep === 7) {
+          runSandboxCatchment(e.latlng.lat, e.latlng.lng);
+        }
+      });
+    }
+
+    // Mathematical utility functions for Wedge sectors (copied/aligned from index.js)
+    function destinationLatLng(lat, lon, d, bearingDegrees) {
+      const radius = 6371.0088; // Earth radius in km
+      const distRatio = d / radius;
+      const latRad = lat * Math.PI / 180;
+      const lonRad = lon * Math.PI / 180;
+      const bearingRad = bearingDegrees * Math.PI / 180;
+
+      const newLatRad = Math.asin(Math.sin(latRad) * Math.cos(distRatio) +
+                        Math.cos(latRad) * Math.sin(distRatio) * Math.cos(bearingRad));
+      const newLonRad = lonRad + Math.atan2(Math.sin(bearingRad) * Math.sin(distRatio) * Math.cos(latRad),
+                        Math.cos(distRatio) - Math.sin(latRad) * Math.sin(newLatRad));
+
+      return [newLatRad * 180 / Math.PI, newLonRad * 180 / Math.PI];
+    }
+
+    function generateWedge(c_lat, c_lon, r_inner, r_outer, angle1, angle2) {
+      const coords = [];
+      const steps = 16;
+      
+      // Arc going clockwise on the outer radius
+      for (let i = 0; i <= steps; i++) {
+        const angle = angle1 + (angle2 - angle1) * (i / steps);
+        coords.push(destinationLatLng(c_lat, c_lon, r_outer, angle));
+      }
+      
+      // Arc going counter-clockwise on the inner radius
+      for (let i = steps; i >= 0; i--) {
+        const angle = angle1 + (angle2 - angle1) * (i / steps);
+        coords.push(destinationLatLng(c_lat, c_lon, r_inner, angle));
+      }
+      
+      return coords;
+    }
+
+    function generateCentralCircle(c_lat, c_lon, r) {
+      const coords = [];
+      const steps = 64;
+      for (let i = 0; i < steps; i++) {
+        const angle = (360 / steps) * i;
+        coords.push(destinationLatLng(c_lat, c_lon, r, angle));
+      }
+      return coords;
+    }
+
+    function initZoneGeometry() {
+      const zoneAngles = {
+        "North": { start: -22.5, end: 22.5 },
+        "North-East": { start: 22.5, end: 67.5 },
+        "East": { start: 67.5, end: 112.5 },
+        "South-East": { start: 112.5, end: 157.5 },
+        "South": { start: 157.5, end: 202.5 },
+        "South-West": { start: 202.5, end: 247.5 },
+        "West": { start: 247.5, end: 292.5 },
+        "North-West": { start: 292.5, end: 337.5 }
+      };
+
+      // 1. Central Zone (Circle at 5km radius)
+      const centralCoords = generateCentralCircle(CENTRAL_LAT, CENTRAL_LON, 5.0);
+      zonePolygons["Central"] = {
+        name: "Central",
+        coords: centralCoords,
+        color: zoneColors["Central"]
+      };
+
+      // 2. Outer sector wedges
+      Object.entries(zoneAngles).forEach(([name, cfg]) => {
+        const coords = generateWedge(CENTRAL_LAT, CENTRAL_LON, 5.0, 35.0, cfg.start, cfg.end);
+        zonePolygons[name] = {
+          name: name,
+          coords: coords,
+          color: zoneColors[name]
+        };
+      });
+    }
+
+    // Load static datasets from data/
+    async function loadAllData() {
+      try {
+        const [resLoc, resSoc, resSchool, resHosp, resHex, resSez] = await Promise.all([
+          fetch('data/localities.json').then(r => r.json()),
+          fetch('data/societies.json').then(r => r.json()),
+          fetch('data/school_entities.json').then(r => {
+            if (r.ok) return r.json();
+            return fetch('data/schools.json').then(fallback => fallback.json());
+          }),
+          fetch('data/hospitals.json').then(r => r.json()),
+          fetch('data/hexes.geojson').then(r => r.json()),
+          fetch('data/sez_zones.geojson').then(r => r.json())
+        ]);
+
+        datasets.localities = resLoc;
+        datasets.societies = resSoc;
+        datasets.schools = Array.isArray(resSchool) ? resSchool : (resSchool.entities || []);
+        datasets.hospitals = resHosp;
+        datasets.hexes = resHex;
+        datasets.sez_zones = resSez;
+
+        // Update raw numbers in slide 1
+        document.getElementById('stat-raw-societies').textContent = datasets.societies.length.toLocaleString();
+        document.getElementById('stat-raw-schools').textContent = datasets.schools.length.toLocaleString();
+        document.getElementById('stat-raw-hospitals').textContent = datasets.hospitals.length.toLocaleString();
+        document.getElementById('stat-raw-localities').textContent = datasets.localities.length.toLocaleString();
+
+        // Calculate and cache TAM scores in societies
+        datasets.societies.forEach(soc => {
+          soc.tam = calculateSocietyTAM(soc);
+        });
+
+      } catch (err) {
+        console.error("Failed to load platform data:", err);
+      }
+    }
+
+    function calculateSocietyTAM(soc) {
+      // TAM Weight factors for Annual Household Income (AHI) >= 40L
+      const units = Number(soc.units || 0);
+      if (soc.category === 'Ultra Luxury') return units;
+      if (soc.category === 'Super Luxury') return units;
+      if (soc.category === 'Luxury') return Math.round(units * 0.667);
+      if (soc.category === 'Premium') return 0;
+      if (soc.category === 'Aspirational Premium') return 0;
+      return 0; // fallback
+    }
+
+    // Dashboard Controller
+    function changeStep(dir) {
+      currentStep = Math.max(0, Math.min(totalSteps, currentStep + dir));
+      updateDashboard();
+    }
+
+    function goToStep(stepNum) {
+      currentStep = stepNum;
+      updateDashboard();
+    }
+
+    function updateDashboard() {
+      // 1. Update narrative cards visibility
+      document.querySelectorAll('.slide-card').forEach((card, index) => {
+        if (index === currentStep) {
+          card.classList.add('active');
+        } else {
+          card.classList.remove('active');
+        }
+      });
+
+      // 2. Update navigation progress
+      const progressPercent = (currentStep / totalSteps) * 100;
+      document.getElementById('deck-progress').style.width = `${progressPercent}%`;
+      document.getElementById('step-index-lbl').textContent = `Step ${currentStep} / ${totalSteps}`;
+
+      // Disable/enable buttons
+      document.getElementById('btn-prev').disabled = currentStep === 0;
+      document.getElementById('btn-next').disabled = currentStep === totalSteps;
+      if (currentStep === totalSteps) {
+        document.getElementById('btn-next').textContent = "Finish";
+      } else {
+        document.getElementById('btn-next').textContent = "Next";
+      }
+
+      // 3. Clear existing custom animations and markers before drawing next step
+      clearMapStates();
+
+      // 4. Fire map action matching the current step
+      executeStepMapAction(currentStep);
+    }
+
+    function clearMapStates() {
+      layers.markers.clearLayers();
+      layers.animationLines.clearLayers();
+      layers.sandboxMarkers.clearLayers();
+      layers.sandboxRoutes.clearLayers();
+      
+      if (layers.localitiesHeat) { map.removeLayer(layers.localitiesHeat); layers.localitiesHeat = null; }
+      if (layers.societiesHeat) { map.removeLayer(layers.societiesHeat); layers.societiesHeat = null; }
+      if (layers.schoolsHeat) { map.removeLayer(layers.schoolsHeat); layers.schoolsHeat = null; }
+      if (layers.hospitalsHeat) { map.removeLayer(layers.hospitalsHeat); layers.hospitalsHeat = null; }
+      if (layers.hexesLayer) { map.removeLayer(layers.hexesLayer); layers.hexesLayer = null; }
+      if (layers.zonesLayer) { map.removeLayer(layers.zonesLayer); layers.zonesLayer = null; }
+      if (layers.sezLayer) { map.removeLayer(layers.sezLayer); layers.sezLayer = null; }
+      
+      if (layers.catchmentCircle) { map.removeLayer(layers.catchmentCircle); layers.catchmentCircle = null; }
+      if (layers.sandboxCircle) { map.removeLayer(layers.sandboxCircle); layers.sandboxCircle = null; }
+
+      document.getElementById('map-legend').style.display = 'none';
+    }
+
+    // Execute step map actions
+    function executeStepMapAction(step) {
+      const hudTitle = document.getElementById('hud-title-lbl');
+      const hudVal = document.getElementById('hud-value-lbl');
+
+      switch (step) {
+        case 0: // Welcome/Intro
+          hudTitle.textContent = "Bangalore Centroid";
+          hudVal.textContent = "Bengaluru, India";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          
+          // Draw standard light boundary lines for reference
+          drawZoneOutlines();
+          break;
+
+        case 1: // Raw Coordinates Plotting
+          hudTitle.textContent = "Stage 1: Spatial Signals";
+          hudVal.textContent = "Plotting Coordinate Records";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          animateRawPlotting();
+          break;
+
+        case 2: // Double-Quartile Filtering
+          hudTitle.textContent = "Stage 2: Affluence Filter";
+          hudVal.textContent = "Double-Quartile Q4 Cutoff";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          renderFilteredPoints('all');
+          setupStepLegend('categories');
+          break;
+
+        case 3: // Q4 school market
+          hudTitle.textContent = "Stage 2.1: Q4 School Market";
+          hudVal.textContent = "Top 25% by Maximum Annual Fee";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          animateSchoolScoring();
+          break;
+
+        case 4: // TAM Formulas
+          hudTitle.textContent = "Stage 2.2: Weighted TAM";
+          hudVal.textContent = "TAM = Ultra + Super + Luxury + Prem + 0.4*Asp";
+          map.flyTo([12.95, 77.66], 11.5, { duration: 1.5 });
+          renderWeightedTAMMarkers();
+          setupStepLegend('tam');
+          break;
+
+        case 5: // H3 Grid Aggregation
+          hudTitle.textContent = "Stage 2.5: Spatial Indexing";
+          hudVal.textContent = "H3 Resolution 7 Aggregation";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          animateH3Aggregation();
+          setupStepLegend('h3');
+          break;
+
+        case 6: // Zone Aggregations & Priorities
+          hudTitle.textContent = "Stage 3: Market Decision";
+          hudVal.textContent = "BBMP Macro-Zone Rollups";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          renderZoneAggregations();
+          renderSidebarZoneChart();
+          setupStepLegend('zones');
+          break;
+
+        case 7: // Catchments & OSRM Routing
+          hudTitle.textContent = "Catchment & Access Planning";
+          hudVal.textContent = "Chikkakanneli Center drive catchment";
+          map.flyTo(CHIKKAKANNELI_CENTER, 13, { duration: 1.5 });
+          renderCatchmentAndRoutes();
+          setupStepLegend('routing');
+          break;
+
+        case 8: // Sandbox Mode
+          hudTitle.textContent = "Interactive Sandbox";
+          hudVal.textContent = "Click map to analyze custom drive catchments";
+          map.flyTo([12.9716, 77.5946], 11, { duration: 1.5 });
+          setupSandboxLayers();
+          setupStepLegend('sandbox');
+          break;
+      }
+    }
+
+    // Step 0 & 5 Utility: Draw basic zone outlines
+    function drawZoneOutlines(interactive = false) {
+      const geoLayer = L.layerGroup();
+      Object.values(zonePolygons).forEach(zone => {
+        const poly = L.polygon(zone.coords, {
+          color: zone.color,
+          fillColor: zone.color,
+          weight: 1.5,
+          fillOpacity: 0.05,
+          dashArray: '3, 5',
+          interactive: interactive
+        });
+
+        if (interactive) {
+          poly.bindTooltip(`<strong>${zone.name} Zone</strong>`, { sticky: true });
+        }
+        
+        geoLayer.addLayer(poly);
+      });
+      layers.zonesLayer = geoLayer;
+      layers.zonesLayer.addTo(map);
+    }
+
+    // Step 1: Animated point plotting
+    function animateRawPlotting() {
+      // 1. Gather a sample subset to animate so the browser doesn't freeze
+      const socSample = datasets.societies.slice(0, 120);
+      const schoolSample = datasets.schools.slice(0, 80);
+      const hospSample = datasets.hospitals.slice(0, 60);
+      const locSample = datasets.localities.slice(0, 150);
+
+      let delay = 0;
+
+      // Plot Localities (Amber)
+      locSample.forEach((loc, idx) => {
+        setTimeout(() => {
+          if (currentStep !== 1) return;
+          const circle = L.circleMarker([loc.lat, loc.lon], {
+            radius: 3,
+            color: varColor('--color-locality'),
+            fillColor: varColor('--color-locality'),
+            fillOpacity: 0.6,
+            weight: 1,
+            interactive: false
+          });
+          layers.markers.addLayer(circle);
+        }, delay);
+        delay += 6;
+      });
+
+      // Plot Societies (Green)
+      socSample.forEach((soc, idx) => {
+        setTimeout(() => {
+          if (currentStep !== 1) return;
+          const circle = L.circleMarker([soc.lat, soc.lon], {
+            radius: 4,
+            color: varColor('--color-society'),
+            fillColor: varColor('--color-society'),
+            fillOpacity: 0.8,
+            weight: 1,
+            interactive: false
+          });
+          layers.markers.addLayer(circle);
+        }, delay);
+        delay += 10;
+      });
+
+      // Plot Schools (Blue)
+      schoolSample.forEach((sch, idx) => {
+        setTimeout(() => {
+          if (currentStep !== 1) return;
+          const circle = L.circleMarker([sch.lat, sch.lon], {
+            radius: 4,
+            color: varColor('--color-school'),
+            fillColor: varColor('--color-school'),
+            fillOpacity: 0.8,
+            weight: 1,
+            interactive: false
+          });
+          layers.markers.addLayer(circle);
+        }, delay);
+        delay += 12;
+      });
+
+      // Plot Hospitals (Purple)
+      hospSample.forEach((hosp, idx) => {
+        setTimeout(() => {
+          if (currentStep !== 1) return;
+          const circle = L.circleMarker([hosp.lat, hosp.lon], {
+            radius: 4,
+            color: varColor('--color-hospital'),
+            fillColor: varColor('--color-hospital'),
+            fillOpacity: 0.8,
+            weight: 1,
+            interactive: false
+          });
+          layers.markers.addLayer(circle);
+        }, delay);
+        delay += 15;
+      });
+    }
+
+    // Step 2: Render Q4 filtered points by luxury tier
+    const luxuryColors = {
+      'Ultra Luxury': '#a855f7',
+      'Super Luxury': '#ef4444',
+      'Luxury': '#ec4899',
+      'Premium': '#10b981',
+      'Aspirational Premium': '#f59e0b'
+    };
+
+    function renderFilteredPoints(filterTier = 'all') {
+      layers.markers.clearLayers();
+      
+      // Draw filtered societies
+      datasets.societies.forEach(soc => {
+        const isMatch = filterTier === 'all' || soc.category === filterTier;
+        const color = luxuryColors[soc.category] || '#9ca3af';
+        
+        const circle = L.circleMarker([soc.lat, soc.lon], {
+          radius: isMatch ? 6 : 2.5,
+          color: color,
+          fillColor: color,
+          fillOpacity: isMatch ? 0.85 : 0.08,
+          weight: isMatch ? 1.5 : 0.5,
+          className: isMatch ? getPulseClassName(soc.category) : '',
+          interactive: isMatch
+        });
+
+        if (isMatch) {
+          circle.bindTooltip(`
+            <strong>${soc.name || 'Premium Housing'}</strong><br/>
+            Tier: <span style="color:${color}; font-weight:700;">${soc.category}</span><br/>
+            Units: <strong>${Number(soc.units || 0).toLocaleString()}</strong>
+          `, { className: 'leaflet-tooltip-dark', sticky: true });
+        }
+
+        layers.markers.addLayer(circle);
+      });
+    }
+
+    function getPulseClassName(cat) {
+      if (cat === 'Ultra Luxury') return 'pulse-purple';
+      if (cat === 'Super Luxury') return 'pulse-red';
+      if (cat === 'Luxury') return 'pulse-pink';
+      if (cat === 'Premium') return 'pulse-emerald';
+      return 'pulse-amber';
+    }
+
+    function highlightFilterTier(tier) {
+      // Highlight pills
+      document.querySelectorAll('#tier-filter-pills .pill-btn').forEach(btn => {
+        if (btn.textContent.toLowerCase().includes(tier.substring(0, 5).toLowerCase()) || (tier === 'all' && btn.textContent.toLowerCase() === 'all premium')) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      renderFilteredPoints(tier);
+    }
+
+    // Step 3: Q4 school-entity evidence
+    function animateSchoolScoring() {
+      const schoolSample = datasets.schools.filter((sch) => {
+        const quartile = sch.fee_quartile || sch.quartile_analysis_1 || sch['quartile analysis 1'];
+        const enrollment = Number(sch.students_grades_2_9 || sch.grade_2_9_enrollment || 0);
+        return quartile === 'Q4' && enrollment > 0;
+      });
+      
+      let delay = 0;
+      schoolSample.forEach((sch) => {
+        setTimeout(() => {
+          if (currentStep !== 3) return;
+          const feeTier = Number(sch.fee_max || sch.fee_max_inr || sch.fee || 0);
+          const enrollment = Number(sch.students_grades_2_9 || sch.grade_2_9_enrollment || 0);
+          const source = sch.enrollment_source === 'udise' || sch.enrollment_source === 'udise_backed'
+            ? 'UDISE-backed'
+            : 'Estimated';
+          const targetR = Math.min(10, 3 + Math.sqrt(enrollment) / 5);
+          
+          const circle = L.circleMarker([sch.lat, sch.lon], {
+            radius: 0,
+            color: '#ffffff',
+            fillColor: 'var(--color-school)',
+            fillOpacity: 0.8,
+            weight: 1.5
+          });
+          
+          circle.bindTooltip(`<strong>${sch.name}</strong><br/>Maximum fee: ₹${feeTier.toLocaleString()}<br/>Grades 2–9 enrollment: ${enrollment.toLocaleString()}<br/>${source}`, { className: 'leaflet-tooltip-dark', sticky: true });
+          layers.markers.addLayer(circle);
+          
+          // Animate entry expansion
+          let r = 0;
+          const interval = setInterval(() => {
+            r += 0.5;
+            if (r >= targetR) {
+              clearInterval(interval);
+              circle.setRadius(targetR);
+            } else {
+              circle.setRadius(r);
+            }
+          }, 15);
+          
+        }, delay);
+        delay += 6; // Quick staggering
+      });
+    }
+
+    // Step 4: Weighted TAM derived from income formulasl scaling
+    function renderWeightedTAMMarkers() {
+      layers.markers.clearLayers();
+
+      datasets.societies.forEach(soc => {
+        const tam = soc.tam || 0;
+        if (tam === 0) return;
+
+        // Size proportional to TAM (Square root scaling for area correctness)
+        const radius = Math.max(3, Math.min(20, Math.sqrt(tam) * 0.4));
+        const color = luxuryColors[soc.category] || '#9ca3af';
+
+        const circle = L.circleMarker([soc.lat, soc.lon], {
+          radius: radius,
+          color: color,
+          fillColor: color,
+          fillOpacity: 0.7,
+          weight: 1.5,
+          interactive: true
+        });
+
+        const units = Number(soc.units || 0);
+        const calcWeight = soc.category === 'Aspirational Premium' ? '40% weight' : '100% weight';
+
+        circle.bindTooltip(`
+          <strong>${soc.name || 'Premium Housing'}</strong><br/>
+          Tier: <span style="color:${color}; font-weight:700;">${soc.category}</span><br/>
+          Total Units: <strong>${units.toLocaleString()}</strong><br/>
+          Calculated TAM: <strong style="color:#60a5fa;">${tam.toLocaleString()} families</strong> (${calcWeight})
+        `, { className: 'leaflet-tooltip-dark', sticky: true });
+
+        layers.markers.addLayer(circle);
+      });
+    }
+
+    // Step 4: Spatial grid aggregation animation
+    function animateH3Aggregation() {
+      // 1. Draw H3 Grid (hexagons)
+      const hexLayer = L.geoJSON(datasets.hexes, {
+        style: function (feature) {
+          return {
+            fillColor: 'transparent',
+            color: '#475569',
+            weight: 0.75,
+            fillOpacity: 0
+          };
+        }
+      });
+      layers.hexesLayer = hexLayer;
+      layers.hexesLayer.addTo(map);
+
+      // 2. Gather centroids from hexes
+      const hexCentroids = {};
+      datasets.hexes.features.forEach(feature => {
+        const p = feature.properties;
+        hexCentroids[p.name] = [p.centroid_lat, p.centroid_lon];
+      });
+
+      // 3. Draw streaming paths from premium societies to nearest hex centroids
+      let lineDelay = 0;
+      const socSample = datasets.societies.filter(s => s.category !== 'Aspirational Premium').slice(0, 100);
+
+      socSample.forEach(soc => {
+        // Find associated H3 cell (usually stored in societies.json, or we look for it in the closest hex)
+        // We'll simulate finding closest centroid
+        let nearestCentroid = null;
+        let minDist = Infinity;
+        
+        Object.values(hexCentroids).forEach(coord => {
+          const dist = clientHaversineKm(soc.lat, soc.lon, coord[0], coord[1]);
+          if (dist < minDist) {
+            minDist = dist;
+            nearestCentroid = coord;
+          }
+        });
+
+        if (nearestCentroid && minDist < 3) {
+          setTimeout(() => {
+            if (currentStep !== 4) return;
+
+            // Draw line
+            const path = L.polyline([[soc.lat, soc.lon], nearestCentroid], {
+              color: '#3b82f6',
+              weight: 1.5,
+              opacity: 0.55,
+              className: 'streaming-line'
+            });
+            layers.animationLines.addLayer(path);
+          }, lineDelay);
+          lineDelay += 15;
+        }
+      });
+
+      // 4. Fill in hex colors after points stream
+      setTimeout(() => {
+        if (currentStep !== 4) return;
+        
+        // Remove animation lines
+        layers.animationLines.clearLayers();
+
+        // Re-style hex layers with choropleth
+        layers.hexesLayer.setStyle(feature => {
+          const score = feature.properties.final_affluence_score;
+          return {
+            fillColor: getHexColor(score),
+            color: '#1e293b',
+            weight: 1,
+            fillOpacity: 0.66
+          };
+        });
+
+        // Add interactive popups
+        layers.hexesLayer.eachLayer(layer => {
+          const p = layer.feature.properties;
+          layer.bindTooltip(`
+            <strong>#${p.rank} ${p.name}</strong><br/>
+            Affluence Score: <strong>${p.final_affluence_score.toFixed(1)}</strong><br/>
+            Target TAM: <strong>${p.countable_family_tam.toLocaleString()} families</strong><br/>
+            Direct Units: <strong>${p.direct_total_units.toLocaleString()} units</strong>
+          `, { className: 'leaflet-tooltip-dark', sticky: true });
+        });
+
+      }, 3000);
+    }
+
+    // Step 5: Zone rollups & status prioritization
+    function renderZoneAggregations() {
+      // Draw filled macro zone polygons
+      const geoLayer = L.layerGroup();
+      Object.values(zonePolygons).forEach(zone => {
+        const pri = zonePriorities[zone.name] || { status: "Deprioritize", share: "0.0%" };
+        
+        // Style color based on Priority Status
+        let fillColor = '#64748b'; // Deprioritize (Slate)
+        let strokeColor = '#475569';
+        let pulsing = false;
+
+        if (pri.status === 'Launch now') {
+          fillColor = '#10b981'; // Green
+          strokeColor = '#10b981';
+          pulsing = true;
+        } else if (pri.status === 'Shortlist') {
+          fillColor = '#3b82f6'; // Blue
+          strokeColor = '#3b82f6';
+        }
+
+        const poly = L.polygon(zone.coords, {
+          color: strokeColor,
+          fillColor: fillColor,
+          weight: pulsing ? 2.5 : 1.5,
+          fillOpacity: 0.18,
+          interactive: true
+        });
+
+        poly.bindTooltip(`
+          <strong>${zone.name} Zone</strong><br/>
+          Status: <strong style="color:${pulsing ? '#34d399' : '#60a5fa'}">${pri.status}</strong><br/>
+          TAM Share: <strong>${pri.share}</strong> (${Number(pri.tam || 0).toLocaleString()} families)
+        `, { className: 'leaflet-tooltip-dark', sticky: true });
+
+        geoLayer.addLayer(poly);
+
+        // If Launch Now, draw an animated pulse ring inside
+        if (pulsing) {
+          const centroid = getPolygonCentroid(zone.coords);
+          const pulseCircle = L.circleMarker(centroid, {
+            radius: 12,
+            color: '#10b981',
+            fillColor: '#10b981',
+            className: 'pulse-emerald',
+            interactive: false
+          });
+          geoLayer.addLayer(pulseCircle);
+        }
+      });
+
+      layers.zonesLayer = geoLayer;
+      layers.zonesLayer.addTo(map);
+    }
+
+    function renderSidebarZoneChart() {
+      const container = document.getElementById('zone-tam-chart');
+      container.innerHTML = `<h4>Zone TAM Share Rankings</h4>`;
+
+      // Sort zones by TAM
+      const sortedZones = Object.entries(zonePriorities).sort((a, b) => b[1].tam - a[1].tam);
+      const maxTAM = sortedZones[0][1].tam;
+
+      sortedZones.forEach(([name, data]) => {
+        const percent = maxTAM > 0 ? (data.tam / maxTAM) * 100 : 0;
+        const color = data.status === 'Launch now' ? 'var(--color-society)' : (data.status === 'Shortlist' ? 'var(--accent-color)' : 'var(--text-muted)');
+        
+        const row = document.createElement('div');
+        row.className = 'chart-row';
+        row.innerHTML = `
+          <div class="chart-label" title="${name}">${name}</div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar" style="width: 0%; background: ${color}"></div>
+          </div>
+          <div class="chart-value">${data.share}</div>
+        `;
+        container.appendChild(row);
+
+        // Animate width
+        setTimeout(() => {
+          const bar = row.querySelector('.chart-bar');
+          if (bar) bar.style.width = `${percent}%`;
+        }, 100);
+      });
+    }
+
+    // Step 6: Catchments & route finding
+    function renderCatchmentAndRoutes() {
+      // 1. Fetch Isochrone polygon instead of simple circle
+      fetch(`/api/catchment?lat=${CHIKKAKANNELI_CENTER[0]}&lon=${CHIKKAKANNELI_CENTER[1]}&radius=7`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.isochrone_geojson) {
+            layers.catchmentCircle = L.geoJSON(data.isochrone_geojson, {
+              style: {
+                color: 'var(--color-route)',
+                fillColor: 'var(--color-route)',
+                fillOpacity: 0.08,
+                weight: 2,
+                dashArray: '3, 4'
+              },
+              interactive: false
+            }).addTo(map);
+          } else {
+            layers.catchmentCircle = L.circle(CHIKKAKANNELI_CENTER, {
+              radius: 7000,
+              color: 'var(--color-route)',
+              fillColor: 'var(--color-route)',
+              fillOpacity: 0.04,
+              weight: 1.5,
+              dashArray: '3, 4',
+              interactive: false
+            }).addTo(map);
+          }
+        }).catch(e => console.error(e));
+
+      // 2. Draw Center pin
+      const centerPin = L.circleMarker(CHIKKAKANNELI_CENTER, {
+        radius: 8,
+        color: '#ffffff',
+        fillColor: 'var(--color-route)',
+        fillOpacity: 1,
+        weight: 2,
+        interactive: true
+      });
+      centerPin.bindTooltip(`<strong>Center Candidate: Chikkakanneli</strong>`, { className: 'leaflet-tooltip-dark', sticky: true });
+      layers.markers.addLayer(centerPin);
+
+      // 3. Draw routes along roads and animate a particle dot along them
+      prebakedRoutes.forEach(route => {
+        const isSociety = route.type === 'society';
+        const color = isSociety ? 'var(--color-society)' : 'var(--color-school)';
+
+        // Draw background glowing path
+        const neonBg = L.polyline(route.coords, {
+          color: 'var(--color-route)',
+          weight: 4,
+          opacity: 0.75,
+          className: 'neon-route-outer'
+        });
+        layers.animationLines.addLayer(neonBg);
+
+        const neonFg = L.polyline(route.coords, {
+          color: '#ffffff',
+          weight: 1.5,
+          opacity: 0.9,
+          className: 'neon-route-inner'
+        });
+        layers.animationLines.addLayer(neonFg);
+
+        // Draw destination pin
+        const destCoord = route.coords[route.coords.length - 1];
+        const destPin = L.circleMarker(destCoord, {
+          radius: 5,
+          color: color,
+          fillColor: color,
+          fillOpacity: 0.9,
+          weight: 1.5
+        });
+        destPin.bindTooltip(`<strong>${route.name}</strong><br/>Type: ${route.type}`, { className: 'leaflet-tooltip-dark', sticky: true });
+        layers.markers.addLayer(destPin);
+
+        // Animate a particle marker travelling along path coordinates
+        animateParticleOnPath(route.coords, color);
+      });
+    }
+
+    function animateParticleOnPath(coords, color) {
+      const dot = L.circleMarker(coords[0], {
+        radius: 4.5,
+        color: '#ffffff',
+        fillColor: color,
+        fillOpacity: 1,
+        weight: 1.5,
+        interactive: false
+      });
+      layers.animationLines.addLayer(dot);
+
+      let step = 0;
+      const speed = 0.08; // movement fraction
+
+      function move() {
+        if (currentStep !== 6) return;
+
+        step += speed;
+        if (step >= coords.length - 1) {
+          step = 0; // loop back
+        }
+
+        const idx = Math.floor(step);
+        const t = step - idx;
+        const start = coords[idx];
+        const end = coords[idx + 1];
+
+        // Linear interpolation between nodes
+        const lat = start[0] + (end[0] - start[0]) * t;
+        const lon = start[1] + (end[1] - start[1]) * t;
+
+        dot.setLatLng([lat, lon]);
+        requestAnimationFrame(move);
+      }
+
+      requestAnimationFrame(move);
+    }
+
+    // Step 7: Sandbox controls & interactivity
+    let sandboxQueryRadius = 7.0;
+
+    function setupSandboxLayers() {
+      // 1. Draw H3 Grid by default
+      toggleSandboxLayer('hexes');
+      // 2. Draw Societies & Schools by default
+      toggleSandboxLayer('societies');
+      toggleSandboxLayer('schools');
+      
+      // Clear HUD and set prompt
+      document.getElementById('hud-title-lbl').textContent = "Sandbox Mode";
+      document.getElementById('hud-value-lbl').textContent = "Click map to query travel catchment";
+    }
+
+    function toggleSandboxLayer(layerName) {
+      const isChecked = document.getElementById(`chk-sb-${layerName}`).checked;
+
+      switch (layerName) {
+        case 'societies':
+          if (isChecked) {
+            renderSandboxHeatmap('societies', datasets.societies, [0.2, '#e5f5e0', 0.5, '#a1d99b', 0.8, '#31a354', 1.0, '#006d2c'], 400);
+          } else if (layers.societiesHeat) {
+            map.removeLayer(layers.societiesHeat);
+            layers.societiesHeat = null;
+          }
+          break;
+
+        case 'schools':
+          if (isChecked) {
+            renderSandboxHeatmap('schools', datasets.schools, [0.2, '#deebf7', 0.5, '#9ecae1', 0.8, '#3182bd', 1.0, '#08519c'], null);
+          } else if (layers.schoolsHeat) {
+            map.removeLayer(layers.schoolsHeat);
+            layers.schoolsHeat = null;
+          }
+          break;
+
+        case 'hospitals':
+          if (isChecked) {
+            renderSandboxHeatmap('hospitals', datasets.hospitals, [0.2, '#f2f0f7', 0.5, '#bcbddc', 0.8, '#756bb1', 1.0, '#54278f'], 150);
+          } else if (layers.hospitalsHeat) {
+            map.removeLayer(layers.hospitalsHeat);
+            layers.hospitalsHeat = null;
+          }
+          break;
+
+        case 'localities':
+          if (isChecked) {
+            renderSandboxHeatmap('localities', datasets.localities, [0.2, '#fee8c8', 0.5, '#fdbb84', 0.8, '#e34a33', 1.0, '#b30000'], 12000, 'price_sqft');
+          } else if (layers.localitiesHeat) {
+            map.removeLayer(layers.localitiesHeat);
+            layers.localitiesHeat = null;
+          }
+          break;
+
+        case 'hexes':
+          if (isChecked) {
+            layers.hexesLayer = L.geoJSON(datasets.hexes, {
+              style: function (feature) {
+                const score = feature.properties.final_affluence_score;
+                return {
+                  fillColor: getHexColor(score),
+                  color: '#1e293b',
+                  weight: 0.75,
+                  fillOpacity: 0.4
+                };
+              },
+              onEachFeature: function (feature, layer) {
+                const p = feature.properties;
+                layer.bindTooltip(`
+                  <strong>#${p.rank} ${p.name}</strong><br/>
+                  Affluence Score: <strong>${p.final_affluence_score.toFixed(1)}</strong><br/>
+                  Target TAM: <strong>${p.countable_family_tam.toLocaleString()} families</strong>
+                `, { className: 'leaflet-tooltip-dark', sticky: true });
+              }
+            }).addTo(map);
+          } else if (layers.hexesLayer) {
+            map.removeLayer(layers.hexesLayer);
+            layers.hexesLayer = null;
+          }
+          break;
+
+        case 'zones':
+          if (isChecked) {
+            drawZoneOutlines(true);
+          } else if (layers.zonesLayer) {
+            map.removeLayer(layers.zonesLayer);
+            layers.zonesLayer = null;
+          }
+          break;
+      }
+    }
+
+    function renderSandboxHeatmap(key, data, gradientColor, intensityDivisor = null, intensityKey = 'tam') {
+      const points = data.map(item => {
+        const val = intensityKey ? item[intensityKey] : null;
+        const intensity = intensityDivisor ? Math.min(1.0, Math.max(0.4, val / intensityDivisor)) : 0.7;
+        return [item.lat, item.lon, intensity];
+      });
+
+      const heatLayer = L.heatLayer(points, {
+        radius: 14,
+        blur: 10,
+        max: 0.7,
+        minOpacity: 0.4,
+        gradient: {0.2: gradientColor[1], 0.5: gradientColor[3], 0.8: gradientColor[5], 1.0: gradientColor[7]}
+      });
+
+      layers[key + 'Heat'] = heatLayer;
+      layers[key + 'Heat'].addTo(map);
+    }
+
+    function adjustSandboxRadius(val) {
+      sandboxQueryRadius = parseFloat(val);
+      document.getElementById('lbl-sb-radius').textContent = sandboxQueryRadius.toFixed(1);
+      
+      const formulaBox = document.querySelector('.formula-box');
+      if (formulaBox) {
+        formulaBox.classList.remove('flash-formula');
+        void formulaBox.offsetWidth; // Trigger reflow
+        formulaBox.classList.add('flash-formula');
+      }
+      
+      if (layers.sandboxCircle && window.currentSandboxCenter) {
+        // Re-run catchment query at existing center coordinates
+        runSandboxCatchment(window.currentSandboxCenter[0], window.currentSandboxCenter[1]);
+      }
+    }
+
+    function runSandboxCatchment(lat, lon) {
+      window.currentSandboxCenter = [lat, lon];
+      if (layers.sandboxCircle) {
+        map.removeLayer(layers.sandboxCircle);
+        layers.sandboxCircle = null;
+      }
+      
+      // Fetch dynamic isochrone polygon and metrics from server
+      fetch(`/api/catchment?lat=${lat}&lon=${lon}&radius=${sandboxQueryRadius}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.isochrone_geojson) {
+            layers.sandboxCircle = L.geoJSON(data.isochrone_geojson, {
+              style: {
+                color: 'var(--color-route)',
+                fillColor: 'var(--color-route)',
+                fillOpacity: 0.08,
+                weight: 2,
+                dashArray: '3, 4'
+              },
+              interactive: false
+            }).addTo(map);
+          } else {
+            layers.sandboxCircle = L.circle([lat, lon], {
+              radius: sandboxQueryRadius * 1000,
+              color: 'var(--color-route)',
+              fillColor: 'var(--color-route)',
+              fillOpacity: 0.05,
+              weight: 1.5,
+              dashArray: '3, 4',
+              interactive: false
+            }).addTo(map);
+          }
+        }).catch(e => console.error(e));
+
+      // Clear old markers/routes
+      layers.sandboxMarkers.clearLayers();
+      layers.sandboxRoutes.clearLayers();
+
+      // Add center marker
+      const centerPin = L.circleMarker([lat, lon], {
+        radius: 7,
+        color: '#ffffff',
+        fillColor: 'var(--color-route)',
+        fillOpacity: 1,
+        weight: 2
+      });
+      layers.sandboxMarkers.addLayer(centerPin);
+
+      // 2. Query societies inside radius (Haversine)
+      let totalTAM = 0;
+      let matchingSocieties = 0;
+      
+      datasets.societies.forEach(soc => {
+        const d = clientHaversineKm(lat, lon, soc.lat, soc.lon);
+        if (d <= sandboxQueryRadius) {
+          matchingSocieties++;
+          totalTAM += soc.tam || 0;
+
+          // Draw small green marker
+          const circle = L.circleMarker([soc.lat, soc.lon], {
+            radius: 3.5,
+            color: 'var(--color-society)',
+            fillColor: 'var(--color-society)',
+            fillOpacity: 0.8,
+            weight: 1
+          });
+          circle.bindTooltip(`<strong>${soc.name}</strong><br/>TAM: ${soc.tam} families`, { className: 'leaflet-tooltip-dark', sticky: true });
+          layers.sandboxMarkers.addLayer(circle);
+
+          // Draw a connecting line if closer than 4km (simulated routes)
+          if (d <= 4 && matchingSocieties <= 8) {
+            const conn = L.polyline([[lat, lon], [soc.lat, soc.lon]], {
+              color: 'rgba(236, 72, 153, 0.45)',
+              weight: 1,
+              dashArray: '4, 4'
+            });
+            layers.sandboxRoutes.addLayer(conn);
+          }
+        }
+      });
+
+      // 3. Query schools inside radius
+      let matchingSchools = 0;
+      datasets.schools.filter((sch) => {
+        const quartile = sch.fee_quartile || sch.quartile_analysis_1 || sch['quartile analysis 1'];
+        return quartile === 'Q4';
+      }).forEach(sch => {
+        const d = clientHaversineKm(lat, lon, sch.lat, sch.lon);
+        if (d <= sandboxQueryRadius) {
+          matchingSchools++;
+
+          // Draw small blue marker
+          const circle = L.circleMarker([sch.lat, sch.lon], {
+            radius: 3.5,
+            color: 'var(--color-school)',
+            fillColor: 'var(--color-school)',
+            fillOpacity: 0.8,
+            weight: 1
+          });
+          const tier = sch.q4_tier_label || sch.quartile_category || sch.category || 'Q4';
+          const enrollment = Number(sch.students_grades_2_9 || sch.grade_2_9_enrollment || 0);
+          circle.bindTooltip(`<strong>${sch.name}</strong><br/>${tier}<br/>Grades 2–9 enrollment: ${enrollment.toLocaleString()}`, { className: 'leaflet-tooltip-dark', sticky: true });
+          layers.sandboxMarkers.addLayer(circle);
+        }
+      });
+
+      // Update KPI displays in sidebar
+      document.getElementById('sb-kpi-tam').textContent = totalTAM.toLocaleString();
+      document.getElementById('sb-kpi-societies').textContent = matchingSocieties.toLocaleString();
+      document.getElementById('sb-kpi-schools').textContent = matchingSchools.toLocaleString();
+
+      // Update Map HUD
+      document.getElementById('hud-title-lbl').textContent = "Catchment Query";
+      document.getElementById('hud-value-lbl').textContent = `${totalTAM.toLocaleString()} families target TAM`;
+    }
+
+    // Help functions for legend customization
+    function setupStepLegend(type) {
+      const legend = document.getElementById('map-legend');
+      const title = document.getElementById('legend-title-lbl');
+      const content = document.getElementById('legend-content-area');
+      
+      legend.style.display = 'flex';
+      content.innerHTML = '';
+
+      if (type === 'categories') {
+        title.textContent = "Premium Brackets";
+        const items = [
+          { name: "Ultra Luxury (5Cr+)", color: "#a855f7" },
+          { name: "Super Luxury (2Cr–5Cr)", color: "#ef4444" },
+          { name: "Luxury (1Cr–2Cr)", color: "#ec4899" },
+          { name: "Premium (50L–1Cr)", color: "#10b981" },
+          { name: "Aspirational Premium (25L–50L)", color: "#f59e0b" }
+        ];
+        items.forEach(item => {
+          content.innerHTML += `
+            <div class="legend-row">
+              <span class="legend-color" style="background-color: ${item.color};"></span>
+              <span>${item.name}</span>
+            </div>
+          `;
+        });
+      } else if (type === 'tam') {
+        title.textContent = "Family TAM Size";
+        content.innerHTML = `
+          <div class="legend-row"><span class="legend-color" style="background-color: #10b981; width: 6px; height: 6px; border-radius:50%;"></span> Low TAM (&lt; 100 families)</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: #10b981; width: 12px; height: 12px; border-radius:50%;"></span> Mid TAM (100–500)</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: #10b981; width: 20px; height: 20px; border-radius:50%;"></span> High TAM (500+)</div>
+        `;
+      } else if (type === 'h3') {
+        title.textContent = "H3 Affluence Score";
+        const scales = [
+          { name: "Very High (80+)", color: "#312e81" },
+          { name: "High (70-80)", color: "#4f46e5" },
+          { name: "Upper-Mid (55-70)", color: "#6366f1" },
+          { name: "Emerging (40-55)", color: "#818cf8" },
+          { name: "Mixed/Watch (25-40)", color: "#a5b4fc" },
+          { name: "Low Evidence (&lt;25)", color: "#f1f5f9" }
+        ];
+        scales.forEach(s => {
+          content.innerHTML += `
+            <div class="legend-row">
+              <span class="legend-color" style="background-color: ${s.color}; border: 1px solid #94a3b8;"></span>
+              <span>${s.name}</span>
+            </div>
+          `;
+        });
+      } else if (type === 'zones') {
+        title.textContent = "Zone Decisions";
+        content.innerHTML = `
+          <div class="legend-row"><span class="legend-color" style="background-color: #10b981; opacity:0.8;"></span> Launch Now (Primary Target)</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: #3b82f6; opacity:0.8;"></span> Shortlist (Secondary Target)</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: #64748b; opacity:0.8;"></span> Deprioritize (Low Evidence)</div>
+        `;
+      } else if (type === 'routing') {
+        title.textContent = "Catchment Legend";
+        content.innerHTML = `
+          <div class="legend-row"><span class="legend-color" style="background-color: var(--color-route);"></span> Center Location</div>
+          <div class="legend-row"><span class="legend-color" style="border: 2px dashed var(--color-route); background:none;"></span> 7 km Travel Range Boundary</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: var(--color-society);"></span> Premium Housing inside Drive Circle</div>
+          <div class="legend-row"><span class="legend-color" style="background-color: var(--color-school);"></span> Q4 school entity inside Drive Circle</div>
+        `;
+      } else {
+        legend.style.display = 'none';
+      }
+    }
+
+    // Helper functions
+    function clientHaversineKm(lat1, lon1, lat2, lon2) {
+      const radius = 6371.0088;
+      const phi1 = lat1 * Math.PI / 180;
+      const phi2 = lat2 * Math.PI / 180;
+      const dPhi = (lat2 - lat1) * Math.PI / 180;
+      const dLam = (lon2 - lon1) * Math.PI / 180;
+      const a = Math.sin(dPhi / 2) ** 2 + Math.cos(phi1) * Math.cos(phi2) * Math.sin(dLam / 2) ** 2;
+      return 2 * radius * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
+
+    function getHexColor(score) {
+      if (score >= 80) return '#312e81';
+      if (score >= 70) return '#4f46e5';
+      if (score >= 55) return '#6366f1';
+      if (score >= 40) return '#818cf8';
+      if (score >= 25) return '#a5b4fc';
+      return '#f1f5f9';
+    }
+
+    function varColor(cssVar) {
+      return getComputedStyle(document.documentElement).getPropertyValue(cssVar).trim();
+    }
+
+    function getPolygonCentroid(pts) {
+      let latSum = 0, lonSum = 0;
+      pts.forEach(p => {
+        latSum += p[0];
+        lonSum += p[1];
+      });
+      return [latSum / pts.length, lonSum / pts.length];
+    }
+
+    // Autoplay Loop Controller
+    function toggleAutoplay() {
+      const btn = document.getElementById('btn-autoplay');
+      if (isPlaying) {
+        // Pause
+        clearInterval(autoplayInterval);
+        autoplayInterval = null;
+        isPlaying = false;
+        btn.textContent = "▶";
+        btn.classList.remove('playing');
+      } else {
+        // Play
+        isPlaying = true;
+        btn.textContent = "⏸";
+        btn.classList.add('playing');
+        
+        autoplayInterval = setInterval(() => {
+          if (currentStep < totalSteps) {
+            changeStep(1);
+          } else {
+            goToStep(0); // loop to beginning
+          }
+        }, stepDuration);
+      }
+    }
+  </script>
+</body>
+</html>

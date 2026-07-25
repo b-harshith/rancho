@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "canonical_city_id": "delhi_ncr",
+  "scope_policy": "Union of all 11 Delhi NCT districts plus the Gurgaon, Faridabad, Ghaziabad, and Gautam Buddha Nagar districts; every source record must retain component_id.",
+  "geometry_file": "delhi_ncr_components.geojson",
+  "crs": "EPSG:4326",
+  "primary_source": {
+    "name": "geoBoundaries gbOpen India ADM2",
+    "metadata_url": "https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/",
+    "geometry_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM2/geoBoundaries-IND-ADM2.geojson",
+    "source_revision": "9469f09",
+    "boundary_year_represented": "2021",
+    "source_data_update_date": "2023-01-19",
+    "build_date": "2023-12-12",
+    "license": "Open Data Commons Open Database License 1.0",
+    "upstream_attribution": "Pathways Data Pvt. Ltd., lgdirectory.gov.in"
+  },
+  "open_cross_check": {
+    "name": "Overture Maps divisions",
+    "documentation_url": "https://docs.overturemaps.org/guides/divisions/",
+    "release_available_when_prepared": "2026-06-17.0",
+    "license": "ODbL",
+    "status": "documented_not_materialized",
+    "reason": "ADM2 district geometry is the approved component policy; Overture is retained as a later conflict-review source."
+  },
+  "google_reference": {
+    "service": "Google Geocoding API",
+    "documentation_url": "https://developers.google.com/maps/documentation/geocoding/guides-v3/requests-geocoding",
+    "role": "center, viewport, bounds, and address-label conflict check only; not polygon source",
+    "status": "pending_runtime_key_injection",
+    "cache_ttl_days": 29,
+    "warning": "Google bounds/viewports are not administrative polygons and Google geocodes must follow applicable attribution and caching terms."
+  },
+  "validation_report": "../../cities/delhi_ncr/audits/geospatial/preparation_report.json"
+}

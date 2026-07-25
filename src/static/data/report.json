@@ -1,0 +1,3273 @@
+{
+  "overall": {
+    "total_hexes": 264,
+    "score_min": 1.11,
+    "score_max": 86.78,
+    "score_median": 35.8,
+    "score_mean": 36.48,
+    "total_direct_family_tam": 157073.0,
+    "total_countable_family_tam": 115738.0,
+    "total_direct_units": 184702.0,
+    "total_cluster_tam": 267046.0,
+    "tier_counts": {
+      "Very High Affluence": 6,
+      "High Affluence": 21,
+      "Upper-Mid / Emerging Affluence": 59,
+      "Mixed / Watchlist": 33,
+      "Low Evidence": 145
+    },
+    "income_band_totals": {
+      "1.5Cr+": 23247.0,
+      "15L-30L": 27866.0,
+      "30L-60L": 26553.0,
+      "60L-1.5Cr": 38072.0,
+      "8L-15L": 41335.0
+    }
+  },
+  "zones": {
+    "Central": {
+      "hex_count": 15,
+      "high_affluence_hexes": 1,
+      "upper_mid_hexes": 8,
+      "avg_score": 56.76,
+      "max_score": 73.65,
+      "min_score": 37.19,
+      "median_score": 56.99,
+      "direct_family_tam": 6553.0,
+      "countable_family_tam": 6248.0,
+      "direct_total_units": 7694.0,
+      "society_cluster_tam": 10544.0,
+      "tier_counts": {
+        "High Affluence": 1,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 5,
+        "Low Evidence": 1
+      },
+      "income_bands": {
+        "1.5Cr+": 4070.0,
+        "15L-30L": 384.0,
+        "30L-60L": 476.0,
+        "60L-1.5Cr": 1318.0,
+        "8L-15L": 305.0
+      },
+      "top_hexes": [
+        {
+          "rank": 20,
+          "name": "Ejipura-Sri Lakshmi Devi Ward",
+          "score": 73.6507,
+          "direct_tam": 2282.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 33,
+          "name": "Sunkenahalli-Devagiri Temple Ward",
+          "score": 69.0703,
+          "direct_tam": 623.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 46,
+          "name": "Ashokanagar-Sampangirama Nagar",
+          "score": 66.0071,
+          "direct_tam": 399.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 54,
+          "name": "Ramaswamy Palya-Jayamahal",
+          "score": 63.4368,
+          "direct_tam": 703.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 60,
+          "name": "A Adugodi-Lakkasandra",
+          "score": 61.5506,
+          "direct_tam": 525.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        }
+      ]
+    },
+    "East": {
+      "hex_count": 34,
+      "high_affluence_hexes": 9,
+      "upper_mid_hexes": 8,
+      "avg_score": 41.53,
+      "max_score": 86.78,
+      "min_score": 1.8,
+      "median_score": 55.93,
+      "direct_family_tam": 33836.0,
+      "countable_family_tam": 27167.0,
+      "direct_total_units": 39792.0,
+      "society_cluster_tam": 54340.0,
+      "tier_counts": {
+        "Very High Affluence": 2,
+        "High Affluence": 7,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 2,
+        "Low Evidence": 15
+      },
+      "income_bands": {
+        "1.5Cr+": 7865.0,
+        "15L-30L": 7988.0,
+        "30L-60L": 4440.0,
+        "60L-1.5Cr": 6874.0,
+        "8L-15L": 6669.0
+      },
+      "top_hexes": [
+        {
+          "rank": 1,
+          "name": "Hagaduru",
+          "score": 86.7807,
+          "direct_tam": 2080.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 2,
+          "name": "Kundalahalli-AECS Layout E Block",
+          "score": 82.921,
+          "direct_tam": 3105.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 7,
+          "name": "Bharath Aikya Ward-S.M Krishna Ward",
+          "score": 79.8115,
+          "direct_tam": 4781.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 9,
+          "name": "Hoodi-Basavanapura",
+          "score": 78.4179,
+          "direct_tam": 1305.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 10,
+          "name": "Panathur",
+          "score": 78.2859,
+          "direct_tam": 6297.0,
+          "tier": "High Affluence"
+        }
+      ]
+    },
+    "North": {
+      "hex_count": 39,
+      "high_affluence_hexes": 5,
+      "upper_mid_hexes": 8,
+      "avg_score": 39.72,
+      "max_score": 81.45,
+      "min_score": 2.08,
+      "median_score": 41.54,
+      "direct_family_tam": 23730.0,
+      "countable_family_tam": 14392.0,
+      "direct_total_units": 27906.0,
+      "society_cluster_tam": 39165.0,
+      "tier_counts": {
+        "Very High Affluence": 1,
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 8,
+        "Low Evidence": 18
+      },
+      "income_bands": {
+        "1.5Cr+": 4167.0,
+        "15L-30L": 1866.0,
+        "30L-60L": 1986.0,
+        "60L-1.5Cr": 6373.0,
+        "8L-15L": 9338.0
+      },
+      "top_hexes": [
+        {
+          "rank": 3,
+          "name": "Kempapura-Byatarayanapura",
+          "score": 81.4496,
+          "direct_tam": 1050.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 13,
+          "name": "Thanisandra-Jakkur",
+          "score": 77.3648,
+          "direct_tam": 2066.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 18,
+          "name": "Kogilu",
+          "score": 74.2186,
+          "direct_tam": 3217.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 22,
+          "name": "Yelahanka Old Town",
+          "score": 73.0185,
+          "direct_tam": 636.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 24,
+          "name": "Byatarayanapura-Nyayanga Badavane",
+          "score": 72.332,
+          "direct_tam": 1044.0,
+          "tier": "High Affluence"
+        }
+      ]
+    },
+    "North-East": {
+      "hex_count": 37,
+      "high_affluence_hexes": 0,
+      "upper_mid_hexes": 11,
+      "avg_score": 32.65,
+      "max_score": 68.77,
+      "min_score": 2.03,
+      "median_score": 34.34,
+      "direct_family_tam": 15515.0,
+      "countable_family_tam": 13116.0,
+      "direct_total_units": 18245.0,
+      "society_cluster_tam": 26411.0,
+      "tier_counts": {
+        "Upper-Mid / Emerging Affluence": 11,
+        "Mixed / Watchlist": 7,
+        "Low Evidence": 19
+      },
+      "income_bands": {
+        "1.5Cr+": 128.0,
+        "15L-30L": 4474.0,
+        "30L-60L": 6704.0,
+        "60L-1.5Cr": 1810.0,
+        "8L-15L": 2399.0
+      },
+      "top_hexes": [
+        {
+          "rank": 34,
+          "name": "Cheemasandra",
+          "score": 68.7659,
+          "direct_tam": 3498.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 40,
+          "name": "Thanisandra-Byrathi",
+          "score": 67.7111,
+          "direct_tam": 983.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 47,
+          "name": "HBR Layout-Chellakere",
+          "score": 65.7448,
+          "direct_tam": 710.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 51,
+          "name": "Kitthaganur-Bhattarahalli",
+          "score": 64.3319,
+          "direct_tam": 1468.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 63,
+          "name": "Hennur-Lingarajpura",
+          "score": 60.8077,
+          "direct_tam": 128.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        }
+      ]
+    },
+    "North-West": {
+      "hex_count": 31,
+      "high_affluence_hexes": 0,
+      "upper_mid_hexes": 0,
+      "avg_score": 17.66,
+      "max_score": 52.78,
+      "min_score": 1.11,
+      "median_score": 16.5,
+      "direct_family_tam": 196.0,
+      "countable_family_tam": 0.0,
+      "direct_total_units": 231.0,
+      "society_cluster_tam": 1281.0,
+      "tier_counts": {
+        "Mixed / Watchlist": 2,
+        "Low Evidence": 29
+      },
+      "income_bands": {
+        "1.5Cr+": 0.0,
+        "30L-60L": 0.0,
+        "60L-1.5Cr": 0.0,
+        "8L-15L": 196.0
+      },
+      "top_hexes": [
+        {
+          "rank": 94,
+          "name": "Dollars Colony",
+          "score": 52.7764,
+          "direct_tam": 0.0,
+          "tier": "Mixed / Watchlist"
+        },
+        {
+          "rank": 112,
+          "name": "Vidyaranyapura-Kuvempunagara",
+          "score": 43.8986,
+          "direct_tam": 0.0,
+          "tier": "Mixed / Watchlist"
+        },
+        {
+          "rank": 121,
+          "name": "HMT Ward",
+          "score": 38.5694,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        },
+        {
+          "rank": 124,
+          "name": "Shettihalli-Abbigere",
+          "score": 37.6055,
+          "direct_tam": 131.0,
+          "tier": "Low Evidence"
+        },
+        {
+          "rank": 126,
+          "name": "Basaveshwara Nagara",
+          "score": 37.3707,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        }
+      ]
+    },
+    "South": {
+      "hex_count": 26,
+      "high_affluence_hexes": 4,
+      "upper_mid_hexes": 7,
+      "avg_score": 40.81,
+      "max_score": 78.76,
+      "min_score": 4.15,
+      "median_score": 36.17,
+      "direct_family_tam": 20430.0,
+      "countable_family_tam": 15115.0,
+      "direct_total_units": 24024.0,
+      "society_cluster_tam": 33421.0,
+      "tier_counts": {
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 7,
+        "Mixed / Watchlist": 1,
+        "Low Evidence": 14
+      },
+      "income_bands": {
+        "1.5Cr+": 3050.0,
+        "15L-30L": 2730.0,
+        "30L-60L": 4343.0,
+        "60L-1.5Cr": 4992.0,
+        "8L-15L": 5315.0
+      },
+      "top_hexes": [
+        {
+          "rank": 8,
+          "name": "Vijaya Bank Layout-Beguru",
+          "score": 78.7616,
+          "direct_tam": 2062.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 12,
+          "name": "RBI Layout-Harinagar",
+          "score": 77.8034,
+          "direct_tam": 4103.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 14,
+          "name": "Sarakki-Kumaraswamy Layout",
+          "score": 76.618,
+          "direct_tam": 1357.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 21,
+          "name": "Yelenahalli-Doddakammanahalli",
+          "score": 73.2168,
+          "direct_tam": 2167.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 28,
+          "name": "Hulimavu-Yelenahalli",
+          "score": 69.7866,
+          "direct_tam": 1660.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        }
+      ]
+    },
+    "South-East": {
+      "hex_count": 41,
+      "high_affluence_hexes": 7,
+      "upper_mid_hexes": 10,
+      "avg_score": 41.19,
+      "max_score": 80.98,
+      "min_score": 3.12,
+      "median_score": 48.32,
+      "direct_family_tam": 38418.0,
+      "countable_family_tam": 27912.0,
+      "direct_total_units": 45179.0,
+      "society_cluster_tam": 70969.0,
+      "tier_counts": {
+        "Very High Affluence": 3,
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 10,
+        "Mixed / Watchlist": 4,
+        "Low Evidence": 20
+      },
+      "income_bands": {
+        "1.5Cr+": 3574.0,
+        "15L-30L": 5795.0,
+        "30L-60L": 6340.0,
+        "60L-1.5Cr": 12203.0,
+        "8L-15L": 10506.0
+      },
+      "top_hexes": [
+        {
+          "rank": 4,
+          "name": "Chikkakanneli-Gunjur",
+          "score": 80.9801,
+          "direct_tam": 3450.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 5,
+          "name": "Halanayakanahalli-Kasavanahalli",
+          "score": 80.7482,
+          "direct_tam": 6471.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 6,
+          "name": "Kodathi",
+          "score": 80.249,
+          "direct_tam": 2606.0,
+          "tier": "Very High Affluence"
+        },
+        {
+          "rank": 11,
+          "name": "Bellanduru",
+          "score": 78.1748,
+          "direct_tam": 3491.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 15,
+          "name": "Singasandra-Kudlu",
+          "score": 76.4801,
+          "direct_tam": 2850.0,
+          "tier": "High Affluence"
+        }
+      ]
+    },
+    "South-West": {
+      "hex_count": 21,
+      "high_affluence_hexes": 1,
+      "upper_mid_hexes": 7,
+      "avg_score": 44.49,
+      "max_score": 70.94,
+      "min_score": 11.65,
+      "median_score": 48.2,
+      "direct_family_tam": 18395.0,
+      "countable_family_tam": 11788.0,
+      "direct_total_units": 21631.0,
+      "society_cluster_tam": 29955.0,
+      "tier_counts": {
+        "High Affluence": 1,
+        "Upper-Mid / Emerging Affluence": 7,
+        "Mixed / Watchlist": 3,
+        "Low Evidence": 10
+      },
+      "income_bands": {
+        "1.5Cr+": 393.0,
+        "15L-30L": 4629.0,
+        "30L-60L": 2264.0,
+        "60L-1.5Cr": 4502.0,
+        "8L-15L": 6607.0
+      },
+      "top_hexes": [
+        {
+          "rank": 26,
+          "name": "Anjanapura-Vasanthapura",
+          "score": 70.9414,
+          "direct_tam": 2595.0,
+          "tier": "High Affluence"
+        },
+        {
+          "rank": 35,
+          "name": "Subramanyapura",
+          "score": 68.7465,
+          "direct_tam": 3136.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 38,
+          "name": "Bangarappa Nagara-Rajarajeshwari Nagara",
+          "score": 68.0225,
+          "direct_tam": 2078.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 56,
+          "name": "Talagattapura",
+          "score": 63.2097,
+          "direct_tam": 3613.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        },
+        {
+          "rank": 57,
+          "name": "Kane Muneshwara Ward-Sarvabhouma Nagar",
+          "score": 62.9341,
+          "direct_tam": 539.0,
+          "tier": "Upper-Mid / Emerging Affluence"
+        }
+      ]
+    },
+    "West": {
+      "hex_count": 20,
+      "high_affluence_hexes": 0,
+      "upper_mid_hexes": 0,
+      "avg_score": 18.94,
+      "max_score": 49.16,
+      "min_score": 2.26,
+      "median_score": 19.26,
+      "direct_family_tam": 0.0,
+      "countable_family_tam": 0.0,
+      "direct_total_units": 0.0,
+      "society_cluster_tam": 959.0,
+      "tier_counts": {
+        "Mixed / Watchlist": 1,
+        "Low Evidence": 19
+      },
+      "income_bands": {
+        "15L-30L": 0.0,
+        "30L-60L": 0.0,
+        "60L-1.5Cr": 0.0,
+        "8L-15L": 0.0
+      },
+      "top_hexes": [
+        {
+          "rank": 102,
+          "name": "Attigupe-Hampi Nagar",
+          "score": 49.1598,
+          "direct_tam": 0.0,
+          "tier": "Mixed / Watchlist"
+        },
+        {
+          "rank": 134,
+          "name": "Kamakshipalya",
+          "score": 35.2906,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        },
+        {
+          "rank": 135,
+          "name": "Jnana Bharathi Ward-Vinayaka Layout",
+          "score": 34.907,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        },
+        {
+          "rank": 140,
+          "name": "1st Block-5th Block",
+          "score": 32.5554,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        },
+        {
+          "rank": 144,
+          "name": "Mallathahalli-Srigandada Kaval",
+          "score": 29.0499,
+          "direct_tam": 0.0,
+          "tier": "Low Evidence"
+        }
+      ]
+    }
+  },
+  "top_10_micro_markets": [
+    {
+      "id": 1,
+      "primary_name": "Chikkakanneli-Gunjur",
+      "all_locality_names": [
+        "Chikkakanneli-Gunjur",
+        "Halanayakanahalli-Kasavanahalli",
+        "Kodathi",
+        "Bellanduru",
+        "Singasandra-Kudlu",
+        "Kudlu-Agara",
+        "Iblur-Agaram",
+        "Halanayakanahalli",
+        "HSR Layout",
+        "Panathur",
+        "Koramangala 4th Block-A Adugodi",
+        "Avalahalli-Gattahalli",
+        "Veerasandra-Chikkathoguru",
+        "Devarachikkanahalli-Kudlu",
+        "Koramangala 1st Block",
+        "Maragondanahalli",
+        "Singasandra-Chikkathoguru",
+        "Gulimangala-Veerasandra",
+        "Maruthi Seva Nagara",
+        "Yamalur",
+        "Hyarandahalli-Hebbagodi"
+      ],
+      "primary_zone": "South-East",
+      "hex_count": 21,
+      "avg_affluence_score": 66.17,
+      "max_affluence_score": 80.98,
+      "min_affluence_score": 48.32,
+      "tier_counts": {
+        "Very High Affluence": 3,
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 10,
+        "Mixed / Watchlist": 4
+      },
+      "centroid_lat": 12.890886,
+      "centroid_lon": 77.66898,
+      "direct_family_tam": 37896.0,
+      "countable_family_tam": 27784.0,
+      "direct_total_units": 44565.0,
+      "society_cluster_tam": 68699.0,
+      "income_bands": {
+        "1.5Cr+": 3574.0,
+        "15L-30L": 5667.0,
+        "30L-60L": 6340.0,
+        "60L-1.5Cr": 12203.0,
+        "8L-15L": 10112.0
+      },
+      "feeding_societies": [
+        {
+          "name": "GM Global Techies Town",
+          "category": "Aspirational Premium",
+          "tam": 3565.0,
+          "units": 4194.0,
+          "income_band": "8L-15L",
+          "locality": "Electronic City"
+        },
+        {
+          "name": "GM Infinite E City Town",
+          "category": "Aspirational Premium",
+          "tam": 1903.0,
+          "units": 2239.0,
+          "income_band": "8L-15L",
+          "locality": "Electronic City"
+        },
+        {
+          "name": "DLF Westend Heights",
+          "category": "Luxury",
+          "tam": 1683.0,
+          "units": 1980.0,
+          "income_band": "30L-60L",
+          "locality": "Akshaya Nagar"
+        },
+        {
+          "name": "Prestige Sunrise Park",
+          "category": "Luxury",
+          "tam": 1624.0,
+          "units": 1910.0,
+          "income_band": "30L-60L",
+          "locality": "Electronics City Phase 1"
+        },
+        {
+          "name": "Assetz 63 Degree East",
+          "category": "Super Luxury",
+          "tam": 1572.0,
+          "units": 1850.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kodathi"
+        },
+        {
+          "name": "Prestige Ferns Residency",
+          "category": "Super Luxury",
+          "tam": 1261.0,
+          "units": 1483.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Harlur Road"
+        },
+        {
+          "name": "SJR Blue Waters",
+          "category": "Premium",
+          "tam": 1020.0,
+          "units": 1200.0,
+          "income_band": "15L-30L",
+          "locality": "Parappana Agrahara"
+        },
+        {
+          "name": "Godrej Nurture",
+          "category": "Premium",
+          "tam": 1002.0,
+          "units": 1179.0,
+          "income_band": "15L-30L",
+          "locality": "Maragondanahalli"
+        },
+        {
+          "name": "Shriram Summitt",
+          "category": "Aspirational Premium",
+          "tam": 959.0,
+          "units": 1128.0,
+          "income_band": "8L-15L",
+          "locality": "Attibele"
+        },
+        {
+          "name": "Mahaveer Ranches",
+          "category": "Super Luxury",
+          "tam": 926.0,
+          "units": 1090.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Hosa Road"
+        },
+        {
+          "name": "SJR Palazza City",
+          "category": "Super Luxury",
+          "tam": 840.0,
+          "units": 988.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Sarjapur Road"
+        },
+        {
+          "name": "Bren Imperia",
+          "category": "Super Luxury",
+          "tam": 835.0,
+          "units": 982.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Sarjapur Road"
+        },
+        {
+          "name": "Godrej Park Retreat",
+          "category": "Super Luxury",
+          "tam": 830.0,
+          "units": 976.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Sarjapur Road"
+        },
+        {
+          "name": "Shriram Chirping Woods",
+          "category": "Luxury",
+          "tam": 787.0,
+          "units": 926.0,
+          "income_band": "30L-60L",
+          "locality": "Kasavanahalli"
+        },
+        {
+          "name": "Sobha Silicon Oasis",
+          "category": "Super Luxury",
+          "tam": 779.0,
+          "units": 917.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Hosa Road"
+        },
+        {
+          "name": "Ozone Evergreens",
+          "category": "Aspirational Premium",
+          "tam": 775.0,
+          "units": 912.0,
+          "income_band": "8L-15L",
+          "locality": "Sector 1 HSR Layout"
+        },
+        {
+          "name": "Concorde Manhattans",
+          "category": "Aspirational Premium",
+          "tam": 765.0,
+          "units": 900.0,
+          "income_band": "8L-15L",
+          "locality": "Karuna Nagar"
+        },
+        {
+          "name": "Godrej E City",
+          "category": "Aspirational Premium",
+          "tam": 731.0,
+          "units": 860.0,
+          "income_band": "8L-15L",
+          "locality": "Doddathoguru"
+        },
+        {
+          "name": "SNN Raj Etternia",
+          "category": "Ultra Luxury",
+          "tam": 698.0,
+          "units": 821.0,
+          "income_band": "1.5Cr+",
+          "locality": "Kudlu"
+        },
+        {
+          "name": "Parkway Homes",
+          "category": "Aspirational Premium",
+          "tam": 688.0,
+          "units": 810.0,
+          "income_band": "8L-15L",
+          "locality": "Gattahalli"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 4,
+          "hex_id": "876189272ffffff",
+          "name": "Chikkakanneli-Gunjur",
+          "score": 80.9801,
+          "tier": "Very High Affluence",
+          "direct_tam": 3450.0,
+          "direct_units": 4056.0
+        },
+        {
+          "rank": 5,
+          "hex_id": "876189273ffffff",
+          "name": "Halanayakanahalli-Kasavanahalli",
+          "score": 80.7482,
+          "tier": "Very High Affluence",
+          "direct_tam": 6471.0,
+          "direct_units": 7608.0
+        },
+        {
+          "rank": 6,
+          "hex_id": "876189276ffffff",
+          "name": "Kodathi",
+          "score": 80.249,
+          "tier": "Very High Affluence",
+          "direct_tam": 2606.0,
+          "direct_units": 3065.0
+        },
+        {
+          "rank": 11,
+          "hex_id": "876189254ffffff",
+          "name": "Bellanduru",
+          "score": 78.1748,
+          "tier": "High Affluence",
+          "direct_tam": 3491.0,
+          "direct_units": 4104.0
+        },
+        {
+          "rank": 15,
+          "hex_id": "876189271ffffff",
+          "name": "Singasandra-Kudlu",
+          "score": 76.4801,
+          "tier": "High Affluence",
+          "direct_tam": 2850.0,
+          "direct_units": 3353.0
+        },
+        {
+          "rank": 23,
+          "hex_id": "876189246ffffff",
+          "name": "Kudlu-Agara",
+          "score": 72.8174,
+          "tier": "High Affluence",
+          "direct_tam": 1426.0,
+          "direct_units": 1677.0
+        },
+        {
+          "rank": 27,
+          "hex_id": "876189255ffffff",
+          "name": "Iblur-Agaram",
+          "score": 70.7294,
+          "tier": "High Affluence",
+          "direct_tam": 1420.0,
+          "direct_units": 1670.0
+        },
+        {
+          "rank": 31,
+          "hex_id": "876189270ffffff",
+          "name": "Halanayakanahalli",
+          "score": 69.3785,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1071.0,
+          "direct_units": 1260.0
+        },
+        {
+          "rank": 42,
+          "hex_id": "876189242ffffff",
+          "name": "HSR Layout",
+          "score": 66.9916,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 384.0,
+          "direct_units": 450.0
+        },
+        {
+          "rank": 43,
+          "hex_id": "87618920dffffff",
+          "name": "Panathur",
+          "score": 66.7983,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 306.0,
+          "direct_units": 360.0
+        },
+        {
+          "rank": 48,
+          "hex_id": "87618925cffffff",
+          "name": "Koramangala 4th Block-A Adugodi",
+          "score": 65.6777,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 619.0,
+          "direct_units": 726.0
+        },
+        {
+          "rank": 49,
+          "hex_id": "876189274ffffff",
+          "name": "Avalahalli-Gattahalli",
+          "score": 65.4635,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1572.0,
+          "direct_units": 1850.0
+        },
+        {
+          "rank": 50,
+          "hex_id": "876189262ffffff",
+          "name": "Veerasandra-Chikkathoguru",
+          "score": 65.3604,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2215.0,
+          "direct_units": 2606.0
+        },
+        {
+          "rank": 52,
+          "hex_id": "876189240ffffff",
+          "name": "Devarachikkanahalli-Kudlu",
+          "score": 64.1894,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 824.0,
+          "direct_units": 969.0
+        },
+        {
+          "rank": 59,
+          "hex_id": "876189251ffffff",
+          "name": "Koramangala 1st Block",
+          "score": 62.3825,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 931.0,
+          "direct_units": 1094.0
+        },
+        {
+          "rank": 62,
+          "hex_id": "876189260ffffff",
+          "name": "Maragondanahalli",
+          "score": 60.957,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 5964.0,
+          "direct_units": 7016.0
+        },
+        {
+          "rank": 71,
+          "hex_id": "876189244ffffff",
+          "name": "Singasandra-Chikkathoguru",
+          "score": 58.9151,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 194.0,
+          "direct_units": 228.0
+        },
+        {
+          "rank": 91,
+          "hex_id": "876189266ffffff",
+          "name": "Gulimangala-Veerasandra",
+          "score": 53.9901,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 656.0,
+          "direct_units": 771.0
+        },
+        {
+          "rank": 96,
+          "hex_id": "876189275ffffff",
+          "name": "Maruthi Seva Nagara",
+          "score": 52.2292,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 1032.0,
+          "direct_units": 1215.0
+        },
+        {
+          "rank": 106,
+          "hex_id": "876189250ffffff",
+          "name": "Yamalur",
+          "score": 48.7789,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 128.0,
+          "direct_units": 150.0
+        },
+        {
+          "rank": 107,
+          "hex_id": "876189264ffffff",
+          "name": "Hyarandahalli-Hebbagodi",
+          "score": 48.3152,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 286.0,
+          "direct_units": 337.0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "primary_name": "Hagaduru",
+      "all_locality_names": [
+        "Hagaduru",
+        "Kundalahalli-AECS Layout E Block",
+        "Bharath Aikya Ward-S.M Krishna Ward",
+        "Hoodi-Basavanapura",
+        "Panathur",
+        "Bharath Aikya Ward-Friend's Layout",
+        "Belathur-S.M Krishna Ward",
+        "Belathur",
+        "Priyadarshini Ward-Marathahalli",
+        "Kodihalli-Domluru",
+        "Hagaduru-Channasandra",
+        "Vignananagara-Sangama Ward",
+        "Uday Nagar-G.M Palya",
+        "Garudachar Palya",
+        "Kurudusonnenahalli",
+        "Jeevan Bhimanagar-L.B Shastri Nagar",
+        "Indiranagar"
+      ],
+      "primary_zone": "East",
+      "hex_count": 19,
+      "avg_affluence_score": 67.65,
+      "max_affluence_score": 86.78,
+      "min_affluence_score": 42.54,
+      "tier_counts": {
+        "Very High Affluence": 2,
+        "High Affluence": 7,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 2
+      },
+      "centroid_lat": 12.974908,
+      "centroid_lon": 77.711925,
+      "direct_family_tam": 33836.0,
+      "countable_family_tam": 27167.0,
+      "direct_total_units": 39792.0,
+      "society_cluster_tam": 54134.0,
+      "income_bands": {
+        "1.5Cr+": 7865.0,
+        "15L-30L": 7988.0,
+        "30L-60L": 4440.0,
+        "60L-1.5Cr": 6874.0,
+        "8L-15L": 6669.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Sobha Dream Acres",
+          "category": "Premium",
+          "tam": 5525.0,
+          "units": 6500.0,
+          "income_band": "15L-30L",
+          "locality": "Balagere"
+        },
+        {
+          "name": "Prestige Shantiniketan",
+          "category": "Ultra Luxury",
+          "tam": 2552.0,
+          "units": 3002.0,
+          "income_band": "1.5Cr+",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "AWHO Sandeep Vihar",
+          "category": "Super Luxury",
+          "tam": 1295.0,
+          "units": 1524.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Ardendale"
+        },
+        {
+          "name": "Pavani Mirabilia",
+          "category": "Luxury",
+          "tam": 1177.0,
+          "units": 1385.0,
+          "income_band": "30L-60L",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "Total Environment Pursuit of A Radical Rhapsody",
+          "category": "Ultra Luxury",
+          "tam": 1157.0,
+          "units": 1361.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hoodi"
+        },
+        {
+          "name": "Divyasree Republic Of Whitefield",
+          "category": "Super Luxury",
+          "tam": 1105.0,
+          "units": 1300.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kundalahalli"
+        },
+        {
+          "name": "Brigade Lakefront",
+          "category": "Ultra Luxury",
+          "tam": 903.0,
+          "units": 1062.0,
+          "income_band": "1.5Cr+",
+          "locality": "EPIP Zone"
+        },
+        {
+          "name": "Rohan Ekanta",
+          "category": "Premium",
+          "tam": 599.0,
+          "units": 705.0,
+          "income_band": "15L-30L",
+          "locality": "Varthur"
+        },
+        {
+          "name": "Prestige Waterford",
+          "category": "Ultra Luxury",
+          "tam": 586.0,
+          "units": 689.0,
+          "income_band": "1.5Cr+",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "Purva Seasons",
+          "category": "Super Luxury",
+          "tam": 561.0,
+          "units": 660.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Nagavarapalya"
+        },
+        {
+          "name": "Sobha Lake Gardens",
+          "category": "Super Luxury",
+          "tam": 507.0,
+          "units": 597.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "KR Puram"
+        },
+        {
+          "name": "Gopalan Grandeur",
+          "category": "Super Luxury",
+          "tam": 474.0,
+          "units": 558.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Hoodi"
+        },
+        {
+          "name": "Godrej United",
+          "category": "Ultra Luxury",
+          "tam": 437.0,
+          "units": 514.0,
+          "income_band": "1.5Cr+",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "Shriram Samruddhi",
+          "category": "Aspirational Premium",
+          "tam": 436.0,
+          "units": 513.0,
+          "income_band": "8L-15L",
+          "locality": "Silver Springs Layout"
+        },
+        {
+          "name": "Rohan Vasantha",
+          "category": "Luxury",
+          "tam": 425.0,
+          "units": 500.0,
+          "income_band": "30L-60L",
+          "locality": "Lakshminarayana Pura"
+        },
+        {
+          "name": "Orchid Whitefield",
+          "category": "Luxury",
+          "tam": 403.0,
+          "units": 474.0,
+          "income_band": "30L-60L",
+          "locality": "Hagadur"
+        },
+        {
+          "name": "Rohan Iksha",
+          "category": "Luxury",
+          "tam": 400.0,
+          "units": 471.0,
+          "income_band": "30L-60L",
+          "locality": "Bhoganhalli"
+        },
+        {
+          "name": "Shriram Blue",
+          "category": "Luxury",
+          "tam": 400.0,
+          "units": 471.0,
+          "income_band": "30L-60L",
+          "locality": "Seegehalli"
+        },
+        {
+          "name": "Sowparnika Sanvi",
+          "category": "Ultra Luxury",
+          "tam": 371.0,
+          "units": 436.0,
+          "income_band": "1.5Cr+",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "Assetz East Point",
+          "category": "Super Luxury",
+          "tam": 361.0,
+          "units": 425.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Bellandur"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 1,
+          "hex_id": "87618921dffffff",
+          "name": "Hagaduru",
+          "score": 86.7807,
+          "tier": "Very High Affluence",
+          "direct_tam": 2080.0,
+          "direct_units": 2445.0
+        },
+        {
+          "rank": 2,
+          "hex_id": "87618920affffff",
+          "name": "Kundalahalli-AECS Layout E Block",
+          "score": 82.921,
+          "tier": "Very High Affluence",
+          "direct_tam": 3105.0,
+          "direct_units": 3653.0
+        },
+        {
+          "rank": 7,
+          "hex_id": "876189219ffffff",
+          "name": "Bharath Aikya Ward-S.M Krishna Ward",
+          "score": 79.8115,
+          "tier": "High Affluence",
+          "direct_tam": 4781.0,
+          "direct_units": 5623.0
+        },
+        {
+          "rank": 9,
+          "hex_id": "8761892e6ffffff",
+          "name": "Hoodi-Basavanapura",
+          "score": 78.4179,
+          "tier": "High Affluence",
+          "direct_tam": 1305.0,
+          "direct_units": 1536.0
+        },
+        {
+          "rank": 10,
+          "hex_id": "876189208ffffff",
+          "name": "Panathur",
+          "score": 78.2859,
+          "tier": "High Affluence",
+          "direct_tam": 6297.0,
+          "direct_units": 7409.0
+        },
+        {
+          "rank": 16,
+          "hex_id": "8761892e4ffffff",
+          "name": "Bharath Aikya Ward-Friend's Layout",
+          "score": 76.1603,
+          "tier": "High Affluence",
+          "direct_tam": 2540.0,
+          "direct_units": 2987.0
+        },
+        {
+          "rank": 17,
+          "hex_id": "876189209ffffff",
+          "name": "Panathur",
+          "score": 76.0953,
+          "tier": "High Affluence",
+          "direct_tam": 1519.0,
+          "direct_units": 1787.0
+        },
+        {
+          "rank": 19,
+          "hex_id": "876189218ffffff",
+          "name": "Belathur-S.M Krishna Ward",
+          "score": 73.8945,
+          "tier": "High Affluence",
+          "direct_tam": 1416.0,
+          "direct_units": 1665.0
+        },
+        {
+          "rank": 25,
+          "hex_id": "87618921affffff",
+          "name": "Belathur",
+          "score": 72.0094,
+          "tier": "High Affluence",
+          "direct_tam": 4021.0,
+          "direct_units": 4730.0
+        },
+        {
+          "rank": 41,
+          "hex_id": "87618920bffffff",
+          "name": "Priyadarshini Ward-Marathahalli",
+          "score": 67.7108,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 937.0,
+          "direct_units": 1100.0
+        },
+        {
+          "rank": 53,
+          "hex_id": "876189253ffffff",
+          "name": "Kodihalli-Domluru",
+          "score": 64.12,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 536.0,
+          "direct_units": 629.0
+        },
+        {
+          "rank": 58,
+          "hex_id": "87618921cffffff",
+          "name": "Hagaduru-Channasandra",
+          "score": 62.5528,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1486.0,
+          "direct_units": 1747.0
+        },
+        {
+          "rank": 66,
+          "hex_id": "8761892e5ffffff",
+          "name": "Vignananagara-Sangama Ward",
+          "score": 59.8403,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 899.0,
+          "direct_units": 1056.0
+        },
+        {
+          "rank": 69,
+          "hex_id": "8761892e1ffffff",
+          "name": "Uday Nagar-G.M Palya",
+          "score": 59.091,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 945.0,
+          "direct_units": 1110.0
+        },
+        {
+          "rank": 73,
+          "hex_id": "8761892e0ffffff",
+          "name": "Garudachar Palya",
+          "score": 57.9186,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 616.0,
+          "direct_units": 724.0
+        },
+        {
+          "rank": 75,
+          "hex_id": "87618921bffffff",
+          "name": "Kurudusonnenahalli",
+          "score": 57.725,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 400.0,
+          "direct_units": 471.0
+        },
+        {
+          "rank": 85,
+          "hex_id": "876189252ffffff",
+          "name": "Jeevan Bhimanagar-L.B Shastri Nagar",
+          "score": 55.9281,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 550.0,
+          "direct_units": 646.0
+        },
+        {
+          "rank": 92,
+          "hex_id": "876189203ffffff",
+          "name": "Hagaduru",
+          "score": 53.4592,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 403.0,
+          "direct_units": 474.0
+        },
+        {
+          "rank": 116,
+          "hex_id": "8761892ecffffff",
+          "name": "Indiranagar",
+          "score": 42.536,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 0.0,
+          "direct_units": 0.0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "primary_name": "Vijaya Bank Layout-Beguru",
+      "all_locality_names": [
+        "Vijaya Bank Layout-Beguru",
+        "RBI Layout-Harinagar",
+        "Sarakki-Kumaraswamy Layout",
+        "Yelenahalli-Doddakammanahalli",
+        "Hulimavu-Yelenahalli",
+        "Doresanipalya-Puttenahalli",
+        "Beguru-Yelenahalli",
+        "J.P Nagar-N.S Palya",
+        "Kodi Chikkanahalli",
+        "Chikkathoguru-Maragondanahalli",
+        "Anjanapura-Harinagar",
+        "Anjanapura-Doddakammanahalli"
+      ],
+      "primary_zone": "South",
+      "hex_count": 12,
+      "avg_affluence_score": 67.61,
+      "max_affluence_score": 78.76,
+      "min_affluence_score": 54.26,
+      "tier_counts": {
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 7,
+        "Mixed / Watchlist": 1
+      },
+      "centroid_lat": 12.880569,
+      "centroid_lon": 77.59823,
+      "direct_family_tam": 20430.0,
+      "countable_family_tam": 15115.0,
+      "direct_total_units": 24024.0,
+      "society_cluster_tam": 31121.0,
+      "income_bands": {
+        "1.5Cr+": 3050.0,
+        "15L-30L": 2730.0,
+        "30L-60L": 4343.0,
+        "60L-1.5Cr": 4992.0,
+        "8L-15L": 5315.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Prestige Falcon City",
+          "category": "Ultra Luxury",
+          "tam": 2142.0,
+          "units": 2520.0,
+          "income_band": "1.5Cr+",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Prestige Song of the South",
+          "category": "Super Luxury",
+          "tam": 1850.0,
+          "units": 2176.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Chandrasekarapura"
+        },
+        {
+          "name": "DLF Westend Heights",
+          "category": "Luxury",
+          "tam": 1683.0,
+          "units": 1980.0,
+          "income_band": "30L-60L",
+          "locality": "Akshaya Nagar"
+        },
+        {
+          "name": "Elita Promenade",
+          "category": "Luxury",
+          "tam": 1337.0,
+          "units": 1573.0,
+          "income_band": "30L-60L",
+          "locality": "7th Phase JP Nagar"
+        },
+        {
+          "name": "Ittina Mahavir",
+          "category": "Aspirational Premium",
+          "tam": 870.0,
+          "units": 1024.0,
+          "income_band": "8L-15L",
+          "locality": "Electronics City Phase 1"
+        },
+        {
+          "name": "Concorde Manhattans",
+          "category": "Aspirational Premium",
+          "tam": 765.0,
+          "units": 900.0,
+          "income_band": "8L-15L",
+          "locality": "Karuna Nagar"
+        },
+        {
+          "name": "Godrej E City",
+          "category": "Aspirational Premium",
+          "tam": 731.0,
+          "units": 860.0,
+          "income_band": "8L-15L",
+          "locality": "Doddathoguru"
+        },
+        {
+          "name": "Sona Vistaas",
+          "category": "Premium",
+          "tam": 511.0,
+          "units": 601.0,
+          "income_band": "15L-30L",
+          "locality": "Bannerghatta Road"
+        },
+        {
+          "name": "Prestige Park Square",
+          "category": "Super Luxury",
+          "tam": 498.0,
+          "units": 586.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Basavanapura"
+        },
+        {
+          "name": "Mantri Residency",
+          "category": "Aspirational Premium",
+          "tam": 490.0,
+          "units": 576.0,
+          "income_band": "8L-15L",
+          "locality": "Kalena Agrahara"
+        },
+        {
+          "name": "Hiranandani QueensGate",
+          "category": "Luxury",
+          "tam": 368.0,
+          "units": 433.0,
+          "income_band": "30L-60L",
+          "locality": "Begur"
+        },
+        {
+          "name": "Ajmera Stone Park",
+          "category": "Premium",
+          "tam": 357.0,
+          "units": 420.0,
+          "income_band": "15L-30L",
+          "locality": "Electronic City"
+        },
+        {
+          "name": "Shriram Southern Crest",
+          "category": "Super Luxury",
+          "tam": 351.0,
+          "units": 413.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "JP Nagar"
+        },
+        {
+          "name": "Arya Hamsa Grande",
+          "category": "Aspirational Premium",
+          "tam": 346.0,
+          "units": 407.0,
+          "income_band": "8L-15L",
+          "locality": "8th Phase JP Nagar"
+        },
+        {
+          "name": "Mahindra Lifespace Windchimes",
+          "category": "Super Luxury",
+          "tam": 343.0,
+          "units": 403.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Arekere"
+        },
+        {
+          "name": "SNN Raj Grandeur",
+          "category": "Super Luxury",
+          "tam": 316.0,
+          "units": 372.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Bommanahalli"
+        },
+        {
+          "name": "PSR Krish Kamal",
+          "category": "Aspirational Premium",
+          "tam": 298.0,
+          "units": 351.0,
+          "income_band": "8L-15L",
+          "locality": "Doddathoguru"
+        },
+        {
+          "name": "Shriram Signiaa",
+          "category": "Aspirational Premium",
+          "tam": 296.0,
+          "units": 348.0,
+          "income_band": "8L-15L",
+          "locality": "Electronics City Phase 1"
+        },
+        {
+          "name": "Windsor Troika",
+          "category": "Premium",
+          "tam": 282.0,
+          "units": 332.0,
+          "income_band": "15L-30L",
+          "locality": "Begur"
+        },
+        {
+          "name": "Hiranandani Club Meadows",
+          "category": "Premium",
+          "tam": 275.0,
+          "units": 324.0,
+          "income_band": "15L-30L",
+          "locality": "Akshaya Nagar"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 8,
+          "hex_id": "876189241ffffff",
+          "name": "Vijaya Bank Layout-Beguru",
+          "score": 78.7616,
+          "tier": "High Affluence",
+          "direct_tam": 2062.0,
+          "direct_units": 2425.0
+        },
+        {
+          "rank": 12,
+          "hex_id": "876189248ffffff",
+          "name": "RBI Layout-Harinagar",
+          "score": 77.8034,
+          "tier": "High Affluence",
+          "direct_tam": 4103.0,
+          "direct_units": 4825.0
+        },
+        {
+          "rank": 14,
+          "hex_id": "87618924affffff",
+          "name": "Sarakki-Kumaraswamy Layout",
+          "score": 76.618,
+          "tier": "High Affluence",
+          "direct_tam": 1357.0,
+          "direct_units": 1596.0
+        },
+        {
+          "rank": 21,
+          "hex_id": "87618926affffff",
+          "name": "Yelenahalli-Doddakammanahalli",
+          "score": 73.2168,
+          "tier": "High Affluence",
+          "direct_tam": 2167.0,
+          "direct_units": 2548.0
+        },
+        {
+          "rank": 28,
+          "hex_id": "87618924cffffff",
+          "name": "Hulimavu-Yelenahalli",
+          "score": 69.7866,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1660.0,
+          "direct_units": 1951.0
+        },
+        {
+          "rank": 29,
+          "hex_id": "87618924effffff",
+          "name": "Doresanipalya-Puttenahalli",
+          "score": 69.7127,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2116.0,
+          "direct_units": 2487.0
+        },
+        {
+          "rank": 37,
+          "hex_id": "876189245ffffff",
+          "name": "Beguru-Yelenahalli",
+          "score": 68.1122,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2093.0,
+          "direct_units": 2462.0
+        },
+        {
+          "rank": 39,
+          "hex_id": "87618925dffffff",
+          "name": "J.P Nagar-N.S Palya",
+          "score": 67.7761,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 903.0,
+          "direct_units": 1061.0
+        },
+        {
+          "rank": 55,
+          "hex_id": "876189243ffffff",
+          "name": "Kodi Chikkanahalli",
+          "score": 63.4244,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 771.0,
+          "direct_units": 906.0
+        },
+        {
+          "rank": 80,
+          "hex_id": "876189263ffffff",
+          "name": "Chikkathoguru-Maragondanahalli",
+          "score": 56.6646,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2165.0,
+          "direct_units": 2548.0
+        },
+        {
+          "rank": 86,
+          "hex_id": "87618924dffffff",
+          "name": "Anjanapura-Harinagar",
+          "score": 55.1402,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 346.0,
+          "direct_units": 407.0
+        },
+        {
+          "rank": 90,
+          "hex_id": "87618926bffffff",
+          "name": "Anjanapura-Doddakammanahalli",
+          "score": 54.259,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 687.0,
+          "direct_units": 808.0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "primary_name": "Kempapura-Byatarayanapura",
+      "all_locality_names": [
+        "Kempapura-Byatarayanapura",
+        "Thanisandra-Jakkur",
+        "Kogilu",
+        "Yelahanka Old Town",
+        "Byatarayanapura-Nyayanga Badavane",
+        "Byatarayanapura",
+        "Sampigehalli-Akash Ward",
+        "Geddalahalli-Kodigehalli",
+        "Nagashettyhalli-Bhoopasandra",
+        "Jakkur-Amruthahalli",
+        "Sampigehalli-Jakkur",
+        "Thindlu-Vidyaranyapura",
+        "Raja Kempegowda Ward",
+        "Attur",
+        "Sadashiva Nagara",
+        "Dinnur",
+        "Singapura",
+        "Byyappanahalli"
+      ],
+      "primary_zone": "North",
+      "hex_count": 19,
+      "avg_affluence_score": 61.77,
+      "max_affluence_score": 81.45,
+      "min_affluence_score": 40.87,
+      "tier_counts": {
+        "Very High Affluence": 1,
+        "High Affluence": 4,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 6
+      },
+      "centroid_lat": 13.075341,
+      "centroid_lon": 77.597796,
+      "direct_family_tam": 19201.0,
+      "countable_family_tam": 11835.0,
+      "direct_total_units": 22577.0,
+      "society_cluster_tam": 30931.0,
+      "income_bands": {
+        "1.5Cr+": 4167.0,
+        "15L-30L": 738.0,
+        "30L-60L": 1523.0,
+        "60L-1.5Cr": 5407.0,
+        "8L-15L": 7366.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Bhartiya City Nikoo Homes 6",
+          "category": "Super Luxury",
+          "tam": 2395.0,
+          "units": 2818.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kogilu"
+        },
+        {
+          "name": "Sobha Dream Gardens",
+          "category": "Aspirational Premium",
+          "tam": 1513.0,
+          "units": 1780.0,
+          "income_band": "8L-15L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "G Corp The Icon",
+          "category": "Ultra Luxury",
+          "tam": 969.0,
+          "units": 1140.0,
+          "income_band": "1.5Cr+",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Brigade Bricklane",
+          "category": "Aspirational Premium",
+          "tam": 637.0,
+          "units": 749.0,
+          "income_band": "8L-15L",
+          "locality": "Jakkur"
+        },
+        {
+          "name": "Pebble Bay",
+          "category": "Ultra Luxury",
+          "tam": 510.0,
+          "units": 600.0,
+          "income_band": "1.5Cr+",
+          "locality": "Ramakrishnappa Layout"
+        },
+        {
+          "name": "Alpine Pyramid",
+          "category": "Aspirational Premium",
+          "tam": 480.0,
+          "units": 565.0,
+          "income_band": "8L-15L",
+          "locality": "Rajiv Gandhi Nagar"
+        },
+        {
+          "name": "Mantri Manyata Lithos",
+          "category": "Ultra Luxury",
+          "tam": 449.0,
+          "units": 528.0,
+          "income_band": "1.5Cr+",
+          "locality": "Manyata Tech Park"
+        },
+        {
+          "name": "NCC Urban Nagarjuna Meadows 2",
+          "category": "Super Luxury",
+          "tam": 444.0,
+          "units": 522.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Yelahanka"
+        },
+        {
+          "name": "Sobha Chrysanthemum",
+          "category": "Premium",
+          "tam": 433.0,
+          "units": 509.0,
+          "income_band": "15L-30L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Shriram Suhaana",
+          "category": "Aspirational Premium",
+          "tam": 432.0,
+          "units": 508.0,
+          "income_band": "8L-15L",
+          "locality": "Yelahanka"
+        },
+        {
+          "name": "Brigade Northridge",
+          "category": "Luxury",
+          "tam": 428.0,
+          "units": 503.0,
+          "income_band": "30L-60L",
+          "locality": "Yelahanka"
+        },
+        {
+          "name": "Embassy Lake Terraces",
+          "category": "Ultra Luxury",
+          "tam": 397.0,
+          "units": 467.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hebbal Kempapura"
+        },
+        {
+          "name": "Orchid Piccadilly",
+          "category": "Aspirational Premium",
+          "tam": 391.0,
+          "units": 460.0,
+          "income_band": "8L-15L",
+          "locality": "Thirumenahalli"
+        },
+        {
+          "name": "Prestige Willow Tree",
+          "category": "Aspirational Premium",
+          "tam": 383.0,
+          "units": 451.0,
+          "income_band": "8L-15L",
+          "locality": "Vidyaranyapura"
+        },
+        {
+          "name": "SNN Clermont",
+          "category": "Ultra Luxury",
+          "tam": 365.0,
+          "units": 429.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hebbal"
+        },
+        {
+          "name": "Sushantham Phase 1",
+          "category": "Aspirational Premium",
+          "tam": 345.0,
+          "units": 406.0,
+          "income_band": "8L-15L",
+          "locality": "Yelahanka"
+        },
+        {
+          "name": "Karle Zenith Residences",
+          "category": "Ultra Luxury",
+          "tam": 337.0,
+          "units": 396.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hebbal"
+        },
+        {
+          "name": "Nitesh Columbus Square",
+          "category": "Aspirational Premium",
+          "tam": 309.0,
+          "units": 364.0,
+          "income_band": "8L-15L",
+          "locality": "Kattigenahalli"
+        },
+        {
+          "name": "DS Max Synergy",
+          "category": "Aspirational Premium",
+          "tam": 306.0,
+          "units": 360.0,
+          "income_band": "8L-15L",
+          "locality": "Yelahanka"
+        },
+        {
+          "name": "NCC Urban Mayfair",
+          "category": "Super Luxury",
+          "tam": 305.0,
+          "units": 359.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Yelahanka"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 3,
+          "hex_id": "8761892c8ffffff",
+          "name": "Kempapura-Byatarayanapura",
+          "score": 81.4496,
+          "tier": "Very High Affluence",
+          "direct_tam": 1050.0,
+          "direct_units": 1234.0
+        },
+        {
+          "rank": 13,
+          "hex_id": "8761892ceffffff",
+          "name": "Thanisandra-Jakkur",
+          "score": 77.3648,
+          "tier": "High Affluence",
+          "direct_tam": 2066.0,
+          "direct_units": 2431.0
+        },
+        {
+          "rank": 18,
+          "hex_id": "8761892dbffffff",
+          "name": "Kogilu",
+          "score": 74.2186,
+          "tier": "High Affluence",
+          "direct_tam": 3217.0,
+          "direct_units": 3785.0
+        },
+        {
+          "rank": 22,
+          "hex_id": "876016966ffffff",
+          "name": "Yelahanka Old Town",
+          "score": 73.0185,
+          "tier": "High Affluence",
+          "direct_tam": 636.0,
+          "direct_units": 748.0
+        },
+        {
+          "rank": 24,
+          "hex_id": "876016964ffffff",
+          "name": "Byatarayanapura-Nyayanga Badavane",
+          "score": 72.332,
+          "tier": "High Affluence",
+          "direct_tam": 1044.0,
+          "direct_units": 1227.0
+        },
+        {
+          "rank": 30,
+          "hex_id": "8761892cbffffff",
+          "name": "Byatarayanapura",
+          "score": 69.52,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1219.0,
+          "direct_units": 1430.0
+        },
+        {
+          "rank": 32,
+          "hex_id": "8761892d9ffffff",
+          "name": "Sampigehalli-Akash Ward",
+          "score": 69.2816,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 603.0,
+          "direct_units": 709.0
+        },
+        {
+          "rank": 36,
+          "hex_id": "876014596ffffff",
+          "name": "Geddalahalli-Kodigehalli",
+          "score": 68.2125,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1405.0,
+          "direct_units": 1652.0
+        },
+        {
+          "rank": 44,
+          "hex_id": "8761892c9ffffff",
+          "name": "Nagashettyhalli-Bhoopasandra",
+          "score": 66.3775,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 564.0,
+          "direct_units": 662.0
+        },
+        {
+          "rank": 45,
+          "hex_id": "8761892caffffff",
+          "name": "Jakkur-Amruthahalli",
+          "score": 66.3746,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 986.0,
+          "direct_units": 1160.0
+        },
+        {
+          "rank": 61,
+          "hex_id": "8761892d8ffffff",
+          "name": "Kogilu",
+          "score": 61.5138,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2969.0,
+          "direct_units": 3492.0
+        },
+        {
+          "rank": 65,
+          "hex_id": "8761892ddffffff",
+          "name": "Sampigehalli-Jakkur",
+          "score": 60.0099,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 327.0,
+          "direct_units": 384.0
+        },
+        {
+          "rank": 83,
+          "hex_id": "876016965ffffff",
+          "name": "Thindlu-Vidyaranyapura",
+          "score": 56.1748,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1208.0,
+          "direct_units": 1422.0
+        },
+        {
+          "rank": 87,
+          "hex_id": "876016962ffffff",
+          "name": "Raja Kempegowda Ward",
+          "score": 54.9505,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 1340.0,
+          "direct_units": 1575.0
+        },
+        {
+          "rank": 101,
+          "hex_id": "876016960ffffff",
+          "name": "Attur",
+          "score": 49.6426,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 311.0,
+          "direct_units": 366.0
+        },
+        {
+          "rank": 110,
+          "hex_id": "8760145b2ffffff",
+          "name": "Sadashiva Nagara",
+          "score": 47.3958,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 0.0,
+          "direct_units": 0.0
+        },
+        {
+          "rank": 113,
+          "hex_id": "8761892cdffffff",
+          "name": "Dinnur",
+          "score": 43.4675,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 0.0,
+          "direct_units": 0.0
+        },
+        {
+          "rank": 117,
+          "hex_id": "876016961ffffff",
+          "name": "Singapura",
+          "score": 41.5435,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 256.0,
+          "direct_units": 300.0
+        },
+        {
+          "rank": 119,
+          "hex_id": "8761892daffffff",
+          "name": "Byyappanahalli",
+          "score": 40.8663,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 0.0,
+          "direct_units": 0.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "primary_name": "Anjanapura-Vasanthapura",
+      "all_locality_names": [
+        "Anjanapura-Vasanthapura",
+        "Subramanyapura",
+        "Bangarappa Nagara-Rajarajeshwari Nagara",
+        "Talagattapura",
+        "Kane Muneshwara Ward-Sarvabhouma Nagar",
+        "Kamakya Layout-Subramanyapura",
+        "Swamy Vivekananda Ward-Deepanjali Nagara",
+        "Padmanabhanagara-Kathriguppe",
+        "Rajarajeshwari Nagara-Nagadevanahalli"
+      ],
+      "primary_zone": "South-West",
+      "hex_count": 11,
+      "avg_affluence_score": 60.31,
+      "max_affluence_score": 70.94,
+      "min_affluence_score": 48.2,
+      "tier_counts": {
+        "High Affluence": 1,
+        "Upper-Mid / Emerging Affluence": 7,
+        "Mixed / Watchlist": 3
+      },
+      "centroid_lat": 12.906592,
+      "centroid_lon": 77.536371,
+      "direct_family_tam": 16378.0,
+      "countable_family_tam": 11660.0,
+      "direct_total_units": 19259.0,
+      "society_cluster_tam": 25131.0,
+      "income_bands": {
+        "1.5Cr+": 393.0,
+        "15L-30L": 4501.0,
+        "30L-60L": 2264.0,
+        "60L-1.5Cr": 4502.0,
+        "8L-15L": 4718.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Mantri Serenity",
+          "category": "Super Luxury",
+          "tam": 2326.0,
+          "units": 2736.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Prestige Falcon City",
+          "category": "Ultra Luxury",
+          "tam": 2142.0,
+          "units": 2520.0,
+          "income_band": "1.5Cr+",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Prestige Primrose Hills",
+          "category": "Premium",
+          "tam": 1428.0,
+          "units": 1680.0,
+          "income_band": "15L-30L",
+          "locality": "Uttarahalli Manavarthekaval"
+        },
+        {
+          "name": "Purva Highland",
+          "category": "Aspirational Premium",
+          "tam": 1351.0,
+          "units": 1589.0,
+          "income_band": "8L-15L",
+          "locality": "Mallasandra"
+        },
+        {
+          "name": "Prestige Lake Ridge",
+          "category": "Luxury",
+          "tam": 951.0,
+          "units": 1119.0,
+          "income_band": "30L-60L",
+          "locality": "Uttarahalli"
+        },
+        {
+          "name": "Sobha Forest View",
+          "category": "Super Luxury",
+          "tam": 756.0,
+          "units": 889.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Banashankari Stage 6"
+        },
+        {
+          "name": "Godrej Eternity",
+          "category": "Premium",
+          "tam": 756.0,
+          "units": 889.0,
+          "income_band": "15L-30L",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Sattva Divinity",
+          "category": "Super Luxury",
+          "tam": 700.0,
+          "units": 824.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Mysore Road"
+        },
+        {
+          "name": "Sattva Misty Charm",
+          "category": "Aspirational Premium",
+          "tam": 677.0,
+          "units": 797.0,
+          "income_band": "8L-15L",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Mahindra Eden",
+          "category": "Super Luxury",
+          "tam": 592.0,
+          "units": 697.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Vajarahalli"
+        },
+        {
+          "name": "Brigade 7 Gardens",
+          "category": "Premium",
+          "tam": 576.0,
+          "units": 678.0,
+          "income_band": "15L-30L",
+          "locality": "Banashankari"
+        },
+        {
+          "name": "Brigade Omega",
+          "category": "Premium",
+          "tam": 442.0,
+          "units": 520.0,
+          "income_band": "15L-30L",
+          "locality": "Banashankari Stage 6"
+        },
+        {
+          "name": "GRC Brundavan",
+          "category": "Aspirational Premium",
+          "tam": 423.0,
+          "units": 498.0,
+          "income_band": "8L-15L",
+          "locality": "3rd Phase Iti Layout"
+        },
+        {
+          "name": "Gopalan Florenza",
+          "category": "Aspirational Premium",
+          "tam": 408.0,
+          "units": 480.0,
+          "income_band": "8L-15L",
+          "locality": "Banashankari Stage 6"
+        },
+        {
+          "name": "Navami Landmaark",
+          "category": "Luxury",
+          "tam": 398.0,
+          "units": 468.0,
+          "income_band": "30L-60L",
+          "locality": "Rajarajeshwari Nagar"
+        },
+        {
+          "name": "Pride Springfields",
+          "category": "Aspirational Premium",
+          "tam": 388.0,
+          "units": 456.0,
+          "income_band": "8L-15L",
+          "locality": "Jayanagar Housing Society Layout"
+        },
+        {
+          "name": "Rohan Akriti",
+          "category": "Premium",
+          "tam": 376.0,
+          "units": 442.0,
+          "income_band": "15L-30L",
+          "locality": "Kanakapura Road"
+        },
+        {
+          "name": "Pride Enchanta",
+          "category": "Luxury",
+          "tam": 366.0,
+          "units": 430.0,
+          "income_band": "30L-60L",
+          "locality": "Mysore Road"
+        },
+        {
+          "name": "Shriram Southern Crest",
+          "category": "Super Luxury",
+          "tam": 351.0,
+          "units": 413.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "JP Nagar"
+        },
+        {
+          "name": "MBR Shangri-la",
+          "category": "Aspirational Premium",
+          "tam": 306.0,
+          "units": 360.0,
+          "income_band": "8L-15L",
+          "locality": "Valagerahalli"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 26,
+          "hex_id": "876189249ffffff",
+          "name": "Anjanapura-Vasanthapura",
+          "score": 70.9414,
+          "tier": "High Affluence",
+          "direct_tam": 2595.0,
+          "direct_units": 3052.0
+        },
+        {
+          "rank": 35,
+          "hex_id": "876014516ffffff",
+          "name": "Subramanyapura",
+          "score": 68.7465,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 3136.0,
+          "direct_units": 3688.0
+        },
+        {
+          "rank": 38,
+          "hex_id": "8760145a1ffffff",
+          "name": "Bangarappa Nagara-Rajarajeshwari Nagara",
+          "score": 68.0225,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2078.0,
+          "direct_units": 2444.0
+        },
+        {
+          "rank": 56,
+          "hex_id": "876014532ffffff",
+          "name": "Talagattapura",
+          "score": 63.2097,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 3613.0,
+          "direct_units": 4250.0
+        },
+        {
+          "rank": 57,
+          "hex_id": "87618924bffffff",
+          "name": "Kane Muneshwara Ward-Sarvabhouma Nagar",
+          "score": 62.9341,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 539.0,
+          "direct_units": 632.0
+        },
+        {
+          "rank": 64,
+          "hex_id": "8760145a5ffffff",
+          "name": "Kamakya Layout-Subramanyapura",
+          "score": 60.4345,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 578.0,
+          "direct_units": 680.0
+        },
+        {
+          "rank": 67,
+          "hex_id": "876014514ffffff",
+          "name": "Talagattapura",
+          "score": 59.7854,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2574.0,
+          "direct_units": 3028.0
+        },
+        {
+          "rank": 76,
+          "hex_id": "8760145a0ffffff",
+          "name": "Swamy Vivekananda Ward-Deepanjali Nagara",
+          "score": 57.5128,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 366.0,
+          "direct_units": 430.0
+        },
+        {
+          "rank": 88,
+          "hex_id": "8760145a4ffffff",
+          "name": "Padmanabhanagara-Kathriguppe",
+          "score": 54.7468,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 128.0,
+          "direct_units": 150.0
+        },
+        {
+          "rank": 105,
+          "hex_id": "8760145acffffff",
+          "name": "Rajarajeshwari Nagara-Nagadevanahalli",
+          "score": 48.8242,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 515.0,
+          "direct_units": 605.0
+        },
+        {
+          "rank": 109,
+          "hex_id": "876014512ffffff",
+          "name": "Bangarappa Nagara-Rajarajeshwari Nagara",
+          "score": 48.1979,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 256.0,
+          "direct_units": 300.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "primary_name": "Cheemasandra",
+      "all_locality_names": [
+        "Cheemasandra",
+        "Kitthaganur-Bhattarahalli",
+        "T.C Palya-Bhattarahalli",
+        "Bidare Agrahara",
+        "K.S. Nissar Ahmed Ward",
+        "Nimbekayipura",
+        "Horamavu-Byrathi",
+        "Kitthaganur"
+      ],
+      "primary_zone": "North-East",
+      "hex_count": 8,
+      "avg_affluence_score": 54.61,
+      "max_affluence_score": 68.77,
+      "min_affluence_score": 43.11,
+      "tier_counts": {
+        "Upper-Mid / Emerging Affluence": 4,
+        "Mixed / Watchlist": 4
+      },
+      "centroid_lat": 13.032332,
+      "centroid_lon": 77.714633,
+      "direct_family_tam": 8165.0,
+      "countable_family_tam": 6851.0,
+      "direct_total_units": 9603.0,
+      "society_cluster_tam": 11798.0,
+      "income_bands": {
+        "1.5Cr+": 128.0,
+        "15L-30L": 1230.0,
+        "30L-60L": 4227.0,
+        "60L-1.5Cr": 1266.0,
+        "8L-15L": 1314.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Prestige Tranquility",
+          "category": "Luxury",
+          "tam": 2013.0,
+          "units": 2368.0,
+          "income_band": "30L-60L",
+          "locality": "Budigere"
+        },
+        {
+          "name": "Shriram Greenfield",
+          "category": "Aspirational Premium",
+          "tam": 1398.0,
+          "units": 1645.0,
+          "income_band": "8L-15L",
+          "locality": "Bommenahalli"
+        },
+        {
+          "name": "Sumadhura Eden Garden",
+          "category": "Luxury",
+          "tam": 946.0,
+          "units": 1113.0,
+          "income_band": "30L-60L",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "Brigade Buena Vista",
+          "category": "Super Luxury",
+          "tam": 631.0,
+          "units": 742.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Budigere"
+        },
+        {
+          "name": "Brigade Golden Triangle",
+          "category": "Luxury",
+          "tam": 570.0,
+          "units": 670.0,
+          "income_band": "30L-60L",
+          "locality": "Katamnallur"
+        },
+        {
+          "name": "Sattva East Crest",
+          "category": "Premium",
+          "tam": 567.0,
+          "units": 667.0,
+          "income_band": "15L-30L",
+          "locality": "Bandapura"
+        },
+        {
+          "name": "Sobha Lake Gardens",
+          "category": "Super Luxury",
+          "tam": 507.0,
+          "units": 597.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "KR Puram"
+        },
+        {
+          "name": "Concorde Auriga",
+          "category": "Premium",
+          "tam": 426.0,
+          "units": 501.0,
+          "income_band": "15L-30L",
+          "locality": "KR Puram"
+        },
+        {
+          "name": "Monarch Aqua",
+          "category": "Luxury",
+          "tam": 411.0,
+          "units": 483.0,
+          "income_band": "30L-60L",
+          "locality": "KR Puram"
+        },
+        {
+          "name": "Shriram Blue",
+          "category": "Luxury",
+          "tam": 400.0,
+          "units": 471.0,
+          "income_band": "30L-60L",
+          "locality": "Seegehalli"
+        },
+        {
+          "name": "Prestige Gulmohar",
+          "category": "Premium",
+          "tam": 343.0,
+          "units": 404.0,
+          "income_band": "15L-30L",
+          "locality": "Horamavu"
+        },
+        {
+          "name": "Sattva Bliss",
+          "category": "Luxury",
+          "tam": 287.0,
+          "units": 338.0,
+          "income_band": "30L-60L",
+          "locality": "Budigere Cross"
+        },
+        {
+          "name": "Disha Pursuit of Sunshine",
+          "category": "Premium",
+          "tam": 274.0,
+          "units": 322.0,
+          "income_band": "15L-30L",
+          "locality": "Budigere Cross"
+        },
+        {
+          "name": "Oceanus Tranquil",
+          "category": "Aspirational Premium",
+          "tam": 259.0,
+          "units": 305.0,
+          "income_band": "8L-15L",
+          "locality": "Horamavu"
+        },
+        {
+          "name": "SBR Pravanika",
+          "category": "Aspirational Premium",
+          "tam": 187.0,
+          "units": 220.0,
+          "income_band": "8L-15L",
+          "locality": "Budigere Cross"
+        },
+        {
+          "name": "SBR Keerthi",
+          "category": "Aspirational Premium",
+          "tam": 184.0,
+          "units": 217.0,
+          "income_band": "8L-15L",
+          "locality": "Katamnallur"
+        },
+        {
+          "name": "Ruchira Iris",
+          "category": "Aspirational Premium",
+          "tam": 176.0,
+          "units": 207.0,
+          "income_band": "8L-15L",
+          "locality": "Whitefield"
+        },
+        {
+          "name": "V Classic",
+          "category": "Premium",
+          "tam": 169.0,
+          "units": 199.0,
+          "income_band": "15L-30L",
+          "locality": "Ramamurthy Nagar"
+        },
+        {
+          "name": "Vaishno Spark",
+          "category": "Aspirational Premium",
+          "tam": 146.0,
+          "units": 172.0,
+          "income_band": "8L-15L",
+          "locality": "KR Puram"
+        },
+        {
+          "name": "Fortius Waterscape",
+          "category": "Aspirational Premium",
+          "tam": 133.0,
+          "units": 156.0,
+          "income_band": "8L-15L",
+          "locality": "Bharathi Nagar"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 34,
+          "hex_id": "8761892f6ffffff",
+          "name": "Cheemasandra",
+          "score": 68.7659,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 3498.0,
+          "direct_units": 4115.0
+        },
+        {
+          "rank": 51,
+          "hex_id": "8761892f5ffffff",
+          "name": "Kitthaganur-Bhattarahalli",
+          "score": 64.3319,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1468.0,
+          "direct_units": 1726.0
+        },
+        {
+          "rank": 81,
+          "hex_id": "8761892e2ffffff",
+          "name": "T.C Palya-Bhattarahalli",
+          "score": 56.5252,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 411.0,
+          "direct_units": 483.0
+        },
+        {
+          "rank": 82,
+          "hex_id": "8761892f4ffffff",
+          "name": "Bidare Agrahara",
+          "score": 56.4565,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 946.0,
+          "direct_units": 1113.0
+        },
+        {
+          "rank": 89,
+          "hex_id": "8761892e3ffffff",
+          "name": "K.S. Nissar Ahmed Ward",
+          "score": 54.6964,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 297.0,
+          "direct_units": 349.0
+        },
+        {
+          "rank": 100,
+          "hex_id": "8761892abffffff",
+          "name": "Nimbekayipura",
+          "score": 49.6845,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 1009.0,
+          "direct_units": 1187.0
+        },
+        {
+          "rank": 114,
+          "hex_id": "8761892c4ffffff",
+          "name": "Horamavu-Byrathi",
+          "score": 43.3332,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 293.0,
+          "direct_units": 345.0
+        },
+        {
+          "rank": 115,
+          "hex_id": "8761892f1ffffff",
+          "name": "Kitthaganur",
+          "score": 43.11,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 243.0,
+          "direct_units": 285.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "primary_name": "Thanisandra-Byrathi",
+      "all_locality_names": [
+        "Thanisandra-Byrathi",
+        "HBR Layout-Chellakere",
+        "Hennur-Lingarajpura",
+        "Kannuru",
+        "HRBR Layout-Subbayanapalya",
+        "Doddagubbi",
+        "Horamavu",
+        "Banaswadi-Babusab Palya",
+        "Banaswadi-Kasturi Nagar",
+        "Horamavu-Byrathi"
+      ],
+      "primary_zone": "North-East",
+      "hex_count": 11,
+      "avg_affluence_score": 55.26,
+      "max_affluence_score": 67.71,
+      "min_affluence_score": 40.99,
+      "tier_counts": {
+        "Upper-Mid / Emerging Affluence": 7,
+        "Mixed / Watchlist": 4
+      },
+      "centroid_lat": 13.04564,
+      "centroid_lon": 77.652453,
+      "direct_family_tam": 7643.0,
+      "countable_family_tam": 6265.0,
+      "direct_total_units": 8987.0,
+      "society_cluster_tam": 13499.0,
+      "income_bands": {
+        "1.5Cr+": 0.0,
+        "15L-30L": 3244.0,
+        "30L-60L": 2477.0,
+        "60L-1.5Cr": 544.0,
+        "8L-15L": 1378.0
+      },
+      "feeding_societies": [
+        {
+          "name": "Mantri Webcity",
+          "category": "Premium",
+          "tam": 1870.0,
+          "units": 2200.0,
+          "income_band": "15L-30L",
+          "locality": "Hennur Road"
+        },
+        {
+          "name": "Sobha Dream Gardens",
+          "category": "Aspirational Premium",
+          "tam": 1513.0,
+          "units": 1780.0,
+          "income_band": "8L-15L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Purva Palm Beach",
+          "category": "Luxury",
+          "tam": 1125.0,
+          "units": 1323.0,
+          "income_band": "30L-60L",
+          "locality": "Hennur Road"
+        },
+        {
+          "name": "Rohan Upavan",
+          "category": "Luxury",
+          "tam": 850.0,
+          "units": 1000.0,
+          "income_band": "30L-60L",
+          "locality": "Hennur Road"
+        },
+        {
+          "name": "Sobha Chrysanthemum",
+          "category": "Premium",
+          "tam": 433.0,
+          "units": 509.0,
+          "income_band": "15L-30L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Orchid Piccadilly",
+          "category": "Aspirational Premium",
+          "tam": 391.0,
+          "units": 460.0,
+          "income_band": "8L-15L",
+          "locality": "Thirumenahalli"
+        },
+        {
+          "name": "Shriram Luxor",
+          "category": "Premium",
+          "tam": 377.0,
+          "units": 444.0,
+          "income_band": "15L-30L",
+          "locality": "Kannur"
+        },
+        {
+          "name": "SNN Clermont",
+          "category": "Ultra Luxury",
+          "tam": 365.0,
+          "units": 429.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hebbal"
+        },
+        {
+          "name": "Prestige Gulmohar",
+          "category": "Premium",
+          "tam": 343.0,
+          "units": 404.0,
+          "income_band": "15L-30L",
+          "locality": "Horamavu"
+        },
+        {
+          "name": "Karle Zenith Residences",
+          "category": "Ultra Luxury",
+          "tam": 337.0,
+          "units": 396.0,
+          "income_band": "1.5Cr+",
+          "locality": "Hebbal"
+        },
+        {
+          "name": "Sobha City Casa Paradiso",
+          "category": "Super Luxury",
+          "tam": 279.0,
+          "units": 328.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Nagareshwara - Nagenahalli"
+        },
+        {
+          "name": "Oceanus Tranquil",
+          "category": "Aspirational Premium",
+          "tam": 259.0,
+          "units": 305.0,
+          "income_band": "8L-15L",
+          "locality": "Horamavu"
+        },
+        {
+          "name": "Mantri Splendor",
+          "category": "Premium",
+          "tam": 221.0,
+          "units": 260.0,
+          "income_band": "15L-30L",
+          "locality": "Hiremath Layout"
+        },
+        {
+          "name": "Pride Pegasus",
+          "category": "Luxury",
+          "tam": 177.0,
+          "units": 208.0,
+          "income_band": "30L-60L",
+          "locality": "Hennur Gardens"
+        },
+        {
+          "name": "V Classic",
+          "category": "Premium",
+          "tam": 169.0,
+          "units": 199.0,
+          "income_band": "15L-30L",
+          "locality": "Ramamurthy Nagar"
+        },
+        {
+          "name": "Trendsquare Ambience",
+          "category": "Aspirational Premium",
+          "tam": 166.0,
+          "units": 195.0,
+          "income_band": "8L-15L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Prestige North Point",
+          "category": "Super Luxury",
+          "tam": 160.0,
+          "units": 188.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kammanahalli"
+        },
+        {
+          "name": "Nava Gokulam",
+          "category": "Aspirational Premium",
+          "tam": 153.0,
+          "units": 180.0,
+          "income_band": "8L-15L",
+          "locality": "Divya Unnathi Layout"
+        },
+        {
+          "name": "Blue Berry Homes",
+          "category": "Aspirational Premium",
+          "tam": 150.0,
+          "units": 177.0,
+          "income_band": "8L-15L",
+          "locality": "Thanisandra"
+        },
+        {
+          "name": "Sobha Petunia",
+          "category": "Ultra Luxury",
+          "tam": 133.0,
+          "units": 156.0,
+          "income_band": "1.5Cr+",
+          "locality": "Veerannapalya"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 40,
+          "hex_id": "8761892c3ffffff",
+          "name": "Thanisandra-Byrathi",
+          "score": 67.7111,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 983.0,
+          "direct_units": 1155.0
+        },
+        {
+          "rank": 47,
+          "hex_id": "8761892c1ffffff",
+          "name": "HBR Layout-Chellakere",
+          "score": 65.7448,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 710.0,
+          "direct_units": 835.0
+        },
+        {
+          "rank": 63,
+          "hex_id": "8761892ccffffff",
+          "name": "Hennur-Lingarajpura",
+          "score": 60.8077,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 128.0,
+          "direct_units": 150.0
+        },
+        {
+          "rank": 72,
+          "hex_id": "8761892dcffffff",
+          "name": "Kannuru",
+          "score": 58.5111,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 2552.0,
+          "direct_units": 3002.0
+        },
+        {
+          "rank": 74,
+          "hex_id": "8761892eaffffff",
+          "name": "HRBR Layout-Subbayanapalya",
+          "score": 57.9149,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 288.0,
+          "direct_units": 338.0
+        },
+        {
+          "rank": 77,
+          "hex_id": "8761892c2ffffff",
+          "name": "Doddagubbi",
+          "score": 57.046,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 1171.0,
+          "direct_units": 1377.0
+        },
+        {
+          "rank": 79,
+          "hex_id": "8761892c0ffffff",
+          "name": "Horamavu",
+          "score": 56.7375,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 850.0,
+          "direct_units": 1000.0
+        },
+        {
+          "rank": 98,
+          "hex_id": "8761892c5ffffff",
+          "name": "Banaswadi-Babusab Palya",
+          "score": 50.7971,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 471.0,
+          "direct_units": 554.0
+        },
+        {
+          "rank": 108,
+          "hex_id": "8761892eeffffff",
+          "name": "Banaswadi-Kasturi Nagar",
+          "score": 48.2221,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 197.0,
+          "direct_units": 231.0
+        },
+        {
+          "rank": 114,
+          "hex_id": "8761892c4ffffff",
+          "name": "Horamavu-Byrathi",
+          "score": 43.3332,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 293.0,
+          "direct_units": 345.0
+        },
+        {
+          "rank": 118,
+          "hex_id": "8761892deffffff",
+          "name": "Kannuru",
+          "score": 40.9897,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 0.0,
+          "direct_units": 0.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "primary_name": "Ejipura-Sri Lakshmi Devi Ward",
+      "all_locality_names": [
+        "Ejipura-Sri Lakshmi Devi Ward",
+        "Sunkenahalli-Devagiri Temple Ward",
+        "Ashokanagar-Sampangirama Nagar",
+        "Ramaswamy Palya-Jayamahal",
+        "A Adugodi-Lakkasandra",
+        "Ashoka Pillar-Dharmaraya Swamy Temple Ward",
+        "Pulakeshi Nagar-Vasanth Nagar",
+        "Kempambudhi Ward-N.R Colony",
+        "Agaram",
+        "Kodandarampura-Vasanth Nagar",
+        "Lingarajpura-Aruna Asif Ali Ward",
+        "Old Baiyappanahalli-Maruthi Seva Nagara"
+      ],
+      "primary_zone": "Central",
+      "hex_count": 13,
+      "avg_affluence_score": 59.15,
+      "max_affluence_score": 73.65,
+      "min_affluence_score": 48.88,
+      "tier_counts": {
+        "High Affluence": 1,
+        "Upper-Mid / Emerging Affluence": 8,
+        "Mixed / Watchlist": 4
+      },
+      "centroid_lat": 12.97098,
+      "centroid_lon": 77.600967,
+      "direct_family_tam": 6553.0,
+      "countable_family_tam": 6248.0,
+      "direct_total_units": 7694.0,
+      "society_cluster_tam": 10412.0,
+      "income_bands": {
+        "1.5Cr+": 4070.0,
+        "15L-30L": 384.0,
+        "30L-60L": 476.0,
+        "60L-1.5Cr": 1318.0,
+        "8L-15L": 305.0
+      },
+      "feeding_societies": [
+        {
+          "name": "KHB National Games Village",
+          "category": "Ultra Luxury",
+          "tam": 2154.0,
+          "units": 2534.0,
+          "income_band": "1.5Cr+",
+          "locality": "Koramangala"
+        },
+        {
+          "name": "Embassy Habitat",
+          "category": "Super Luxury",
+          "tam": 296.0,
+          "units": 348.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Abshot Layout"
+        },
+        {
+          "name": "Sai Krishna Wilson Vintage",
+          "category": "Luxury",
+          "tam": 163.0,
+          "units": 192.0,
+          "income_band": "30L-60L",
+          "locality": "Shamana Garden"
+        },
+        {
+          "name": "Prestige Woodland Park",
+          "category": "Ultra Luxury",
+          "tam": 141.0,
+          "units": 166.0,
+          "income_band": "1.5Cr+",
+          "locality": "Cooke Town"
+        },
+        {
+          "name": "KMB La Palazzo",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Sarjapur Road"
+        },
+        {
+          "name": "Alpine Regency",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Jayanagar"
+        },
+        {
+          "name": "RRBC Parasmani Regency",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "2nd Block Jayanagar"
+        },
+        {
+          "name": "Bharath Housing Society",
+          "category": "Super Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Kanakapura"
+        },
+        {
+          "name": "Sycon Heritage",
+          "category": "Super Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Basavangudi"
+        },
+        {
+          "name": "Swamy Towers",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Basavangudi"
+        },
+        {
+          "name": "Brigade Vintage",
+          "category": "Super Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Basavangudi"
+        },
+        {
+          "name": "Brigade Park View",
+          "category": "Premium",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "15L-30L",
+          "locality": "Basavangudi"
+        },
+        {
+          "name": "SVG Manhattan",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Vishweshwarapura"
+        },
+        {
+          "name": "Symbiosis Adithya",
+          "category": "Super Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Shanti Nagar"
+        },
+        {
+          "name": "Express Apartment",
+          "category": "Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "30L-60L",
+          "locality": "Richmond Town"
+        },
+        {
+          "name": "Prestige Richmond",
+          "category": "Super Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "60L-1.5Cr",
+          "locality": "Sampangi Rama Nagar"
+        },
+        {
+          "name": "Casa Lavelle",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Shanthala Nagar"
+        },
+        {
+          "name": "Golden Orchids",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Shanthala Nagar"
+        },
+        {
+          "name": "Embassy Woods",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Vasanth nagar"
+        },
+        {
+          "name": "Raheja Gardenia",
+          "category": "Ultra Luxury",
+          "tam": 128.0,
+          "units": 150.0,
+          "income_band": "1.5Cr+",
+          "locality": "Shivaji Nagar"
+        }
+      ],
+      "hex_details": [
+        {
+          "rank": 20,
+          "hex_id": "87618925effffff",
+          "name": "Ejipura-Sri Lakshmi Devi Ward",
+          "score": 73.6507,
+          "tier": "High Affluence",
+          "direct_tam": 2282.0,
+          "direct_units": 2684.0
+        },
+        {
+          "rank": 33,
+          "hex_id": "876189259ffffff",
+          "name": "Sunkenahalli-Devagiri Temple Ward",
+          "score": 69.0703,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 623.0,
+          "direct_units": 731.0
+        },
+        {
+          "rank": 46,
+          "hex_id": "87618925affffff",
+          "name": "Ashokanagar-Sampangirama Nagar",
+          "score": 66.0071,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 399.0,
+          "direct_units": 468.0
+        },
+        {
+          "rank": 54,
+          "hex_id": "8760145b6ffffff",
+          "name": "Ramaswamy Palya-Jayamahal",
+          "score": 63.4368,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 703.0,
+          "direct_units": 824.0
+        },
+        {
+          "rank": 60,
+          "hex_id": "876189258ffffff",
+          "name": "A Adugodi-Lakkasandra",
+          "score": 61.5506,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 525.0,
+          "direct_units": 617.0
+        },
+        {
+          "rank": 68,
+          "hex_id": "87618925bffffff",
+          "name": "Ashoka Pillar-Dharmaraya Swamy Temple Ward",
+          "score": 59.7206,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 285.0,
+          "direct_units": 334.0
+        },
+        {
+          "rank": 70,
+          "hex_id": "8760145b4ffffff",
+          "name": "Ashokanagar-Sampangirama Nagar",
+          "score": 59.085,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 384.0,
+          "direct_units": 450.0
+        },
+        {
+          "rank": 78,
+          "hex_id": "8761892e9ffffff",
+          "name": "Pulakeshi Nagar-Vasanth Nagar",
+          "score": 56.9945,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 173.0,
+          "direct_units": 202.0
+        },
+        {
+          "rank": 84,
+          "hex_id": "8760145a6ffffff",
+          "name": "Kempambudhi Ward-N.R Colony",
+          "score": 56.0593,
+          "tier": "Upper-Mid / Emerging Affluence",
+          "direct_tam": 617.0,
+          "direct_units": 724.0
+        },
+        {
+          "rank": 95,
+          "hex_id": "8761892edffffff",
+          "name": "Agaram",
+          "score": 52.4908,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 30.0,
+          "direct_units": 35.0
+        },
+        {
+          "rank": 97,
+          "hex_id": "8760145b0ffffff",
+          "name": "Kodandarampura-Vasanth Nagar",
+          "score": 51.5272,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 223.0,
+          "direct_units": 262.0
+        },
+        {
+          "rank": 99,
+          "hex_id": "8761892ebffffff",
+          "name": "Lingarajpura-Aruna Asif Ali Ward",
+          "score": 50.4124,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 40.0,
+          "direct_units": 47.0
+        },
+        {
+          "rank": 104,
+          "hex_id": "8761892e8ffffff",
+          "name": "Old Baiyappanahalli-Maruthi Seva Nagara",
+          "score": 48.8823,
+          "tier": "Mixed / Watchlist",
+          "direct_tam": 269.0,
+          "direct_units": 316.0
+        }
+      ]
+    }
+  ],
+  "all_micro_market_count": 8
+}

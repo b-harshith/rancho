@@ -1,0 +1,31 @@
+{
+  "canonical_city_id": "kolkata",
+  "generated_on": "2026-06-30",
+  "scope_policy": "District geometry aligned to the district-based India Post PIN candidate scope; not a municipal or cadastral boundary.",
+  "source_districts": [
+    "Kolkata"
+  ],
+  "feature_count": 1,
+  "geometry_type": "Polygon",
+  "center": {
+    "lat": 22.555716357654912,
+    "lon": 88.35515335010558
+  },
+  "bounds": {
+    "west": 88.27358,
+    "south": 22.49899,
+    "east": 88.41006,
+    "north": 22.63361
+  },
+  "area_square_degrees": 0.008021304249999988,
+  "boundary_sha256": "e952b6ca9ab80aa9bb4865f72a3635c1a80e4ca4ce7a2e3bbf9e41241a00d178",
+  "source": {
+    "dataset": "geoBoundaries gbOpen India ADM2",
+    "revision": "9469f09",
+    "boundary_year": "2021",
+    "license": "ODbL 1.0",
+    "source_organization": "Pathways Data Pvt. Ltd., lgdirectory.gov.in",
+    "api_url": "https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/",
+    "download_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM2/geoBoundaries-IND-ADM2.geojson"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "pune": {
+      "components": [
+        {
+          "source_city_id": "4378",
+          "source_city_name": "Pune",
+          "verified_url": "https://www.magicbricks.com/localities-in-Pune",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

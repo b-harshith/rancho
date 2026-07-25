@@ -1,0 +1,100 @@
+{
+  "task_id": "DNC-SCOPE-REVISION-QA-R1",
+  "reviewed_on": "2026-06-30",
+  "overall": "FAIL",
+  "launch_recommendation": "NO_GO",
+  "scope": "Prior scope-revision findings only; offline remediation QA",
+  "tracks": {
+    "DNC-GEO-PINS": {
+      "status": "PASS",
+      "highest_severity": "NONE",
+      "evidence": {
+        "candidate_rows": 194,
+        "candidate_unique": 194,
+        "exclusion_rows": 101,
+        "intersection": [],
+        "synthetic_repeat_build_byte_identical": true,
+        "synthetic_cross_district_included_pin_excluded": false
+      },
+      "findings": []
+    },
+    "DNC-EZYSCHOOLING": {
+      "status": "FAIL",
+      "highest_severity": "HIGH",
+      "code_remediation": "PARTIAL_PASS",
+      "evidence": {
+        "producer_tests": "5/5 PASS",
+        "canonical_runtime_validation": "PASS",
+        "school_json_schema_validation": "PASS",
+        "durable_challenge_manifest_and_evidence": "PASS",
+        "hashed_redacted_cache": "PASS",
+        "stale_entry_not_used": "PASS",
+        "stale_entry_durably_pruned": "FAIL",
+        "out_of_bounds_geocode_rejected": "PASS",
+        "mapping_status": "BLOCKED_UNVERIFIED"
+      },
+      "findings": [
+        {
+          "id": "EZY-R1-01",
+          "severity": "HIGH",
+          "summary": "Delhi NCR mapping remains the intended hard launch block",
+          "evidence": "The mapping memo and shared configuration still do not provide a verified Ezyschooling Delhi NCR mapping. The collector correctly refuses it; therefore no launch is authorized."
+        },
+        {
+          "id": "EZY-R1-02",
+          "severity": "MEDIUM",
+          "summary": "Expired Google cache entries remain persisted past 29 days",
+          "evidence": "Independent probe inserted a 30-day-old hashed entry and ran with geocode limit 0. The stale coordinate was correctly not used, but the entry remained in cache.json. The code enforces freshness on reads, not 29-day retention/deletion."
+        }
+      ]
+    },
+    "DNC-MB-LOCALITIES": {
+      "status": "FAIL",
+      "highest_severity": "HIGH",
+      "code_remediation": "PARTIAL_PASS",
+      "evidence": {
+        "producer_tests": "9/9 PASS",
+        "canonical_common_and_typed_locality_validation": "PASS",
+        "independent_invalid_entity_review_coordinate_mutations_rejected": "3/3",
+        "limit_accounting": "PASS",
+        "trusted_url_and_foreign_listing_quarantine": "PASS",
+        "challenge_quarantine": "PASS",
+        "preflight_component_records": 5,
+        "preflight_detail_records": 5,
+        "preflight_hash_format": "PASS",
+        "preflight_raw_hash_targets_present": false,
+        "output_containment_mutation": "FAIL"
+      },
+      "findings": [
+        {
+          "id": "MBL-R1-01",
+          "severity": "HIGH",
+          "summary": "Raw/checkpoint filenames still accept traversal through source_city_id",
+          "evidence": "Independent Collector mutation used source_city_id='../../../../escape'. _save_raw wrote escape-p00001-...html at the configured temporary root, outside the collector raw/stage tree. Root/city containment helpers do not cover _save_raw keys or checkpoint names."
+        },
+        {
+          "id": "MBL-R1-02",
+          "severity": "HIGH",
+          "summary": "Preflight evidence is durable as a summary but not independently authenticatable",
+          "evidence": "delhi_ncr_preflight_20260630.json has the expected five component and five detail records, timestamps, HTTP status, counts and 64-character hashes. It explicitly says it was reconstructed from /tmp; no raw HTML/JSONL or signed manifest remains under evidence, so QA cannot recompute any hash or authenticate source observations."
+        },
+        {
+          "id": "MBL-R1-03",
+          "severity": "MEDIUM",
+          "summary": "Foreign URL quarantine is limited to stage-1 parsed rows",
+          "evidence": "Stage 1 catches and redacts foreign listing links. A foreign URL introduced through resumed/discovered state reaches trusted_url at the top of stage2 and raises before a quarantine record is appended."
+        }
+      ]
+    }
+  },
+  "security": {
+    "committed_google_key_matches_in_rechecked_paths": 0,
+    "osrm_references_in_rechecked_new_pipeline_paths": 0,
+    "live_requests_made_by_qa": 0
+  },
+  "commands": [
+    "python3 -m unittest tests.schools.test_ezyschooling tests.localities.test_magicbricks_localities -v",
+    "python3 tests/qa_scope_revision/remediation_probes.py",
+    "repository secret and OSRM scans over remediation paths"
+  ]
+}

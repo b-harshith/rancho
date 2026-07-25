@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/city_summary.schema.json",
+  "title": "Admissible city summary v1",
+  "type": "object",
+  "required": ["canonical_city_id", "schema_version", "admission_status", "as_of", "metrics", "lineage"],
+  "properties": {
+    "canonical_city_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "schema_version": {"const": "1.0.0"},
+    "admission_status": {"enum": ["admitted", "pending", "rejected"]},
+    "as_of": {"type": "string", "format": "date-time"},
+    "lineage": {"type": "object", "minProperties": 1},
+    "metrics": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "coverage_pct", "source_count", "lineage"],
+        "properties": {
+          "value": {"type": ["number", "null"]},
+          "coverage_pct": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+          "source_count": {"type": ["integer", "null"], "minimum": 0},
+          "lineage": {"type": "object", "minProperties": 1}
+        }
+      }
+    }
+  }
+}

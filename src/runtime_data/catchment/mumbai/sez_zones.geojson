@@ -1,0 +1,1 @@
+{"canonical_city_id":"mumbai","features":[],"schema_version":"city-legacy-parity-v2","semantics":"No SEZ polygon boundary source exists in the final multi-city data; office anchors are supplied separately in sez_offices.json.","status":"unavailable","type":"FeatureCollection"}

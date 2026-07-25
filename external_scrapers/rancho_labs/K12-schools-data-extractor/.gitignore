@@ -1,0 +1,31 @@
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# ─── Environment ───
+.env
+
+# ─── Data artifacts (large / sensitive) ───
+data/cache/
+data/raw_pdfs/
+data/extracted_text/
+data/output/
+
+# ─── SQLite ───
+*.db
+*.db-journal
+
+# ─── Logs ───
+logs/
+
+# ─── IDE ───
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

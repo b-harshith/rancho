@@ -1,0 +1,63 @@
+{
+  "removed_count": 8,
+  "remaining_count": 2007,
+  "removed_rows": [
+    {
+      "name": "RAM KISHAN INSTITUTE",
+      "google_formatted_address": "N-517, Raj Nagar, Block E, Sector 23, Sanjay Nagar, Ghaziabad, Uttar Pradesh 201017, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 13.0369229,
+      "lon": 77.57851339999999
+    },
+    {
+      "name": "S K ENGLISH HIGH SCHOOL",
+      "google_formatted_address": "Munish Petals Building, Mira Road, Indralok Phase 3, Bhayandar East, Mira Bhayandar, Maharashtra 401105, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 12.9446574,
+      "lon": 77.5872231
+    },
+    {
+      "name": "Mount Litera Zee School",
+      "google_formatted_address": "opposite MICRO LABS, Alasanatham, Hosur, Tamil Nadu 635109, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 12.7353531,
+      "lon": 77.8453681
+    },
+    {
+      "name": "Darshan Academy",
+      "google_formatted_address": "Sawan Ashram, 216, Westend Road, Meerut Cantt, Meerut Cantt, Meerut, Uttar Pradesh 250001, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 12.9070131,
+      "lon": 77.58064399999999
+    },
+    {
+      "name": "Translam Academy International",
+      "google_formatted_address": "Mawana road, Mawana Road NH 119, Ganga Nagar, Meerut, Uttar Pradesh 250001, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 13.0205848,
+      "lon": 77.5886738
+    },
+    {
+      "name": "S.D.PUBLIC SCHOOL",
+      "google_formatted_address": "Jr. Wing, Sr. Wing, Bhopa Rd, near Roadways Bus Stand, Patel Nagar, New Mandi, Muzaffarnagar, Uttar Pradesh 251001, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 12.9628685,
+      "lon": 77.6744275
+    },
+    {
+      "name": "Our Lady of Bon Secours School",
+      "google_formatted_address": "23, Madha Church Rd, Mandavelipakkam, Mylapore, Chennai, Tamil Nadu 600028, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 12.9662403,
+      "lon": 77.61178389999999
+    },
+    {
+      "name": "Christel House India",
+      "google_formatted_address": "4QWV+4CW, Sector 25, Atal Nagar-Nava Raipur, Chhattisgarh 492018, India",
+      "google_geocode_source": "places_text_search",
+      "lat": 13.096266185732922,
+      "lon": 77.65187788380774
+    }
+  ],
+  "rule": "Removed listings whose Google-resolved address is clearly outside Bengaluru/Bangalore or in another state."
+}

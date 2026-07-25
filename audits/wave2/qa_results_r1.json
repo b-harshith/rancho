@@ -1,0 +1,132 @@
+{
+  "task_id": "W2-INDEPENDENT-QA-R1",
+  "status": "PASS",
+  "executed_at": "2026-06-30T10:17:00+05:30",
+  "scope": "Fresh verification of remediated collector contracts, path containment, fail-close behavior, credential-code remediation, and unchanged Bengaluru staging",
+  "recommendation": "Accept the bounded Wave 2 remediation evidence. Keep external Google API key rotation/revocation as a separate owner action because it cannot be verified from this workspace.",
+  "artifact_results": [
+    {
+      "artifact": "collectors/adapters.py normalized records",
+      "status": "PASS",
+      "evidence": {
+        "fixtures_tested": ["yellowslate", "udise", "magicbricks", "99acres", "practo"],
+        "runtime_validator_passed": 5,
+        "common_entity_schema_passed": 5,
+        "typed_entity_schema_passed": 5,
+        "typed_entity_schema_errors": 0,
+        "observed_ids": [
+          "hyderabad:school:yellowslate:ys-redacted-1",
+          "hyderabad:school:udise:ud-redacted-1",
+          "hyderabad:project:magicbricks:mb-redacted-1",
+          "hyderabad:locality:99acres:ac-redacted-1",
+          "hyderabad:hospital:practo:pr-redacted-1"
+        ],
+        "lineage_nested_and_nonempty": true,
+        "schemas_meta_valid": 7
+      },
+      "issues": []
+    },
+    {
+      "artifact": "collectors/core.py Layout and source-record ID guards",
+      "status": "PASS",
+      "evidence": {
+        "hostile_probes_run": 12,
+        "hostile_probes_blocked": 12,
+        "city_inputs_blocked": ["../x", "/tmp/x", "foo/bar", "foo\\bar"],
+        "source_inputs_blocked": ["../x", "/tmp/x", "foo/bar", "foo\\bar"],
+        "source_record_ids_blocked": ["../x", "/tmp/x", "foo/bar", "foo\\bar"],
+        "traversal_blocked": true,
+        "absolute_path_blocked": true,
+        "forward_slash_blocked": true,
+        "backslash_blocked": true
+      },
+      "issues": []
+    },
+    {
+      "artifact": "collector null-mapping fail-close",
+      "status": "PASS",
+      "evidence": {
+        "canonical_cities_tested": 8,
+        "sources_per_city": 5,
+        "null_mappings_tested": 40,
+        "null_mappings_blocked": 40,
+        "cli_unknown_mapping_exit_code": 2
+      },
+      "issues": []
+    },
+    {
+      "artifact": "src/server.py literal-key remediation and workspace secret/OCR scan",
+      "status": "PASS",
+      "evidence": {
+        "google_api_key_literals_in_src_server": 0,
+        "high_confidence_secret_literals_found": 0,
+        "ocr_or_captcha_solver_code_found": 0,
+        "runtime_google_key_lookup": "src/api/catchment_market.py uses GOOGLE_MAPS_API_KEY from the environment",
+        "env_example_contains_names_only": true
+      },
+      "issues": [],
+      "external_action_remaining": {
+        "owner_action": "Rotate/revoke the previously exposed Google Maps API key and review provider usage/restrictions.",
+        "locally_verifiable": false,
+        "affects_code_remediation_result": false
+      }
+    },
+    {
+      "artifact": "DATA/staging/bengaluru/current",
+      "status": "PASS",
+      "evidence": {
+        "reconciliation_status": "PASS",
+        "master_hexes": 309,
+        "geojson_hexes": 309,
+        "residential_records": 2268,
+        "residential_hex_ids_outside_master": 34,
+        "independent_totals": {
+          "countable_family_tam": 0.0,
+          "direct_family_tam": 316676.0,
+          "direct_total_units": 316676.0,
+          "nearby_family_tam_weighted_context": 353613.62,
+          "society_cluster_tam_weighted_context_not_counted": 528821.07,
+          "surrounding_affluent_cluster_tam_weighted_context_not_counted": 143292.89
+        },
+        "hashes_unchanged_from_initial_qa": true,
+        "output_hashes": {
+          "client_summary.json": "5854faa57019c7060bd03fd4401eb6379ecb6bef5c756cbb59391af5faa8e3f0",
+          "hexes.geojson": "0438e0c38ee81fb0f715e241258873a615b7462f896d619c24e2f1a0954584d2",
+          "hexes_master.json": "ebea3677ad8b0af0493d8b697796da16471d9b59b1adef8109e864eb69393e00",
+          "report.json": "77b6af8eed812c05131979e054719875bccfcb49c997db8ab820375672b115b7",
+          "residential.json": "45e54585664835663bb08e67acae8f05b673bcc28df6c4af9619eddb15134994",
+          "run_manifest.json": "7f3da54245c997a8ab7ec2d3bb49dab4bd80105f72608df92e288fdf5175c43d"
+        }
+      },
+      "issues": [
+        {
+          "id": "W2-QA-003-R1",
+          "severity": "informational",
+          "summary": "The prior semantic observation remains: hash-locked input has countable_family_tam=0 and direct_family_tam=316676. This is unchanged and does not indicate remediation drift."
+        }
+      ]
+    }
+  ],
+  "test_runs": {
+    "targeted_multicity": {"run": 10, "passed": 10, "failed": 0},
+    "targeted_collectors": {"run": 8, "passed": 8, "failed": 0},
+    "targeted_reconciliation": {"run": 2, "passed": 2, "failed": 0},
+    "core_legacy": {"run": 26, "passed": 26, "failed": 0},
+    "independent_fixture_validations": {"run": 5, "passed": 5, "failed": 0},
+    "independent_hostile_path_probes": {"run": 12, "blocked": 12, "escaped": 0},
+    "independent_null_mapping_probes": {"run": 40, "blocked": 40, "allowed": 0}
+  },
+  "commands": [
+    "python3 -m unittest discover -s tests/multicity -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests/collectors -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests/reconciliation -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "independent Python: normalize all five fixtures, validate with validate_entity, common_entity.schema.json, and typed schemas",
+    "independent Python: probe ../x, /tmp/x, foo/bar, and foo\\bar for city, source, and source_record_id",
+    "independent Python: verify 40/40 canonical null mappings raise SafetyError",
+    "rg high-confidence credential patterns excluding venv/.git",
+    "rg OCR/CAPTCHA-solver code patterns over Python/JavaScript excluding venv/.git",
+    "python3 tests/reconciliation/reconcile_bengaluru.py --staging DATA/staging/bengaluru/current",
+    "sha256sum DATA/staging/bengaluru/current/*.json DATA/staging/bengaluru/current/*.geojson"
+  ]
+}

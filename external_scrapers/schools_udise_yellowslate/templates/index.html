@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UDISE+ Collection Console</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Human-assisted network collector</p>
+        <h1>UDISE+ Collection Console</h1>
+        <p class="muted">API responses are captured from Chrome and stored in SQLite. CAPTCHA remains human-only.</p>
+      </div>
+      <span class="mode">{{ 'Headless Chrome' if headless else 'Visible Chrome' }} · {{ browser_concurrency }} sessions</span>
+    </header>
+
+    <section class="controls card">
+      <label>PIN limit <input id="limit" type="number" min="1" placeholder="All"></label>
+      <button id="start">Start collection</button>
+      <button id="stop" class="secondary">Stop</button>
+      <button id="retry" class="secondary hidden">Retry failures</button>
+      <a id="export" class="button secondary hidden">Export JSON</a>
+    </section>
+
+    <section class="metrics">
+      <article class="card"><span>Status</span><strong id="status">Idle</strong></article>
+      <article class="card"><span>PIN codes</span><strong id="pins">0 / 0</strong></article>
+      <article class="card"><span>Schools</span><strong id="schools">0 / 0</strong></article>
+      <article class="card"><span>JSON responses</span><strong id="responses">0</strong></article>
+    </section>
+
+    <section id="captchaPanel" class="captcha-queue hidden">
+      <div class="section-title"><div><p class="eyebrow">Action required</p><h2>CAPTCHA queue</h2></div><span class="muted">Up to {{ browser_concurrency }} active sessions</span></div>
+      <div id="captchaCards" class="captcha-cards"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">
+        <h2>PIN progress</h2>
+        <span id="currentSchool" class="muted"></span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>PIN code</th><th>Status</th><th>CAPTCHA tries</th><th>Schools</th><th>Error</th></tr></thead>
+          <tbody id="pinRows"><tr><td colspan="5" class="empty">No job started.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card logs-card">
+      <div class="section-title"><h2>Diagnostic log</h2><span class="muted">Newest first</span></div>
+      <div id="eventRows" class="event-rows"><p class="empty">No events yet.</p></div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='app.js', v='retry-failures-v1') }}"></script>
+</body>
+</html>

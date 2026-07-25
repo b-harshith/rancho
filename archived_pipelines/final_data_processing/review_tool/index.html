@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Coordinate Review</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #5d6b78;
+      --line: #d8dee6;
+      --panel: #ffffff;
+      --soft: #f4f6f8;
+      --google: #2364aa;
+      --udise: #b24a21;
+      --manual: #2f7d57;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #eef1f4;
+      letter-spacing: 0;
+    }
+    .shell {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      min-height: 100vh;
+    }
+    aside {
+      background: var(--panel);
+      border-right: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    header {
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    h1 {
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 0;
+      font-weight: 700;
+    }
+    .counter {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .school {
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .school h2 {
+      font-size: 17px;
+      line-height: 1.3;
+      margin: 0 0 10px;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .meta b { color: var(--ink); font-weight: 650; }
+    .status {
+      margin-top: 12px;
+      padding: 10px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    .choices {
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+      overflow: auto;
+    }
+    button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 12px;
+      text-align: left;
+      cursor: pointer;
+      font: inherit;
+      min-height: 44px;
+    }
+    button:hover { border-color: #9aa7b4; }
+    button.active {
+      outline: 3px solid rgba(47, 125, 87, 0.22);
+      border-color: var(--manual);
+    }
+    button .label {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    button .detail {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .button-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 16px;
+      border-top: 1px solid var(--line);
+      margin-top: auto;
+    }
+    .button-row button {
+      text-align: center;
+      font-weight: 700;
+      padding: 10px;
+    }
+    .save {
+      grid-column: span 2;
+      background: #1f6f4a;
+      color: white;
+      border-color: #1f6f4a;
+    }
+    .save:disabled {
+      background: #b9c1c8;
+      border-color: #b9c1c8;
+      cursor: not-allowed;
+    }
+    main { position: relative; min-width: 0; }
+    #map { height: 100vh; width: 100%; }
+    .toast {
+      position: absolute;
+      left: 50%;
+      top: 16px;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background: rgba(23, 32, 42, 0.92);
+      color: white;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease;
+    }
+    .toast.show { opacity: 1; }
+    .pin {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+    .pin.google { background: var(--google); }
+    .pin.udise { background: var(--udise); }
+    .pin.manual { background: var(--manual); }
+    @media (max-width: 820px) {
+      .shell { grid-template-columns: 1fr; grid-template-rows: 48vh auto; }
+      aside { order: 2; border-right: 0; border-top: 1px solid var(--line); }
+      main { order: 1; }
+      #map { height: 48vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <header>
+        <div class="title-row">
+          <h1>Coordinate Review</h1>
+          <div class="counter" id="counter">Loading</div>
+        </div>
+      </header>
+      <section class="school">
+        <h2 id="schoolName">Loading</h2>
+        <div class="meta">
+          <div><b>UDISE</b><br><span id="udiseCode"></span></div>
+          <div><b>Fee</b><br><span id="feeBand"></span></div>
+          <div><b>City</b><br><span id="city"></span></div>
+          <div><b>District</b><br><span id="district"></span></div>
+        </div>
+        <div class="status" id="reason"></div>
+      </section>
+      <section class="choices">
+        <button id="chooseGoogle" data-source="google">
+          <span class="label"><span><span class="pin google"></span>Google Maps</span><span>1</span></span>
+          <span class="detail" id="googleDetail"></span>
+        </button>
+        <button id="chooseUdise" data-source="udise">
+          <span class="label"><span><span class="pin udise"></span>UDISE</span><span>2</span></span>
+          <span class="detail" id="udiseDetail"></span>
+        </button>
+        <button id="chooseManual" data-source="manual">
+          <span class="label"><span><span class="pin manual"></span>Manual map click</span><span>3</span></span>
+          <span class="detail" id="manualDetail">Click anywhere on the map to place a manual marker.</span>
+        </button>
+      </section>
+      <div class="button-row">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Skip</button>
+        <button class="save" id="saveBtn" disabled>Save choice and next</button>
+      </div>
+    </aside>
+    <main>
+      <div id="map"></div>
+      <div class="toast" id="toast"></div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const state = {
+      schools: [],
+      decisions: {},
+      index: 0,
+      selected: null,
+      markers: {},
+      line: null,
+      bboxes: null,
+      bboxLayer: null
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const map = L.map("map", { zoomControl: true });
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+      maxZoom: 19,
+      attribution: "Tiles &copy; Esri"
+    }).addTo(map);
+    L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", {
+      maxZoom: 19,
+      attribution: "Labels &copy; Esri",
+      pane: "overlayPane"
+    }).addTo(map);
+
+    const icons = {
+      google: L.divIcon({ className: "", html: markerHtml("#2364aa", "G"), iconSize: [30, 30], iconAnchor: [15, 30] }),
+      udise: L.divIcon({ className: "", html: markerHtml("#b24a21", "U"), iconSize: [30, 30], iconAnchor: [15, 30] }),
+      manual: L.divIcon({ className: "", html: markerHtml("#2f7d57", "M"), iconSize: [30, 30], iconAnchor: [15, 30] })
+    };
+
+    function markerHtml(color, label) {
+      return `<div style="width:30px;height:30px;border-radius:18px 18px 18px 4px;background:${color};transform:rotate(-45deg);border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,.35);display:grid;place-items:center;"><span style="transform:rotate(45deg);color:white;font-weight:800;font-size:12px">${label}</span></div>`;
+    }
+
+    function num(value) {
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed : null;
+    }
+
+    function current() {
+      return state.schools[state.index];
+    }
+
+    function toast(message) {
+      $("toast").textContent = message;
+      $("toast").classList.add("show");
+      setTimeout(() => $("toast").classList.remove("show"), 1200);
+    }
+
+    function clearMap() {
+      Object.values(state.markers).forEach((marker) => marker.remove());
+      state.markers = {};
+      if (state.line) state.line.remove();
+      state.line = null;
+      if (state.bboxLayer) state.bboxLayer.remove();
+      state.bboxLayer = null;
+    }
+
+    function addMarker(kind, lat, lon, label) {
+      if (lat === null || lon === null) return;
+      const marker = L.marker([lat, lon], { icon: icons[kind] }).addTo(map);
+      marker.bindPopup(label);
+      marker.on("click", () => select(kind, lat, lon));
+      state.markers[kind] = marker;
+    }
+
+    function render() {
+      const s = current();
+      if (!s) {
+        $("counter").textContent = "0 / 0";
+        $("schoolName").textContent = "No schools loaded";
+        $("reason").textContent = "The current review dataset is empty.";
+        map.setView([22.9734, 78.6569], 5);
+        return;
+      }
+      state.selected = null;
+      clearMap();
+
+      $("counter").textContent = `${state.index + 1} / ${state.schools.length} reviewed ${Object.keys(state.decisions).length}`;
+      $("schoolName").textContent = s.school_name || "Unnamed school";
+      $("udiseCode").textContent = s.udise_code;
+      $("feeBand").textContent = s.fee_band_calibrated || "";
+      $("city").textContent = s.city || "";
+      $("district").textContent = s.district || "";
+      $("reason").textContent = `${s.coordinate_reason || ""} | distance ${s.udise_google_distance_m || ""} m`;
+      if (s.bbox_status) {
+        $("reason").textContent += ` | ${s.bbox_status}`;
+      }
+
+      const glat = num(s.google_latitude), glon = num(s.google_longitude);
+      const ulat = num(s.udise_latitude), ulon = num(s.udise_longitude);
+      $("googleDetail").textContent = `${latLon(glat, glon)} | pin ${s.google_postal_code || "missing"} | ${s.google_location_type || ""} | ${s.google_formatted_address || ""}`;
+      $("udiseDetail").textContent = `${latLon(ulat, ulon)} | official address: ${s.udise_address || ""}`;
+      $("manualDetail").textContent = "Click anywhere on the map to place a manual marker.";
+
+      addMarker("google", glat, glon, "Google Maps");
+      addMarker("udise", ulat, ulon, "UDISE");
+      addCityBox(s.city);
+      const points = [];
+      if (glat !== null && glon !== null) points.push([glat, glon]);
+      if (ulat !== null && ulon !== null) points.push([ulat, ulon]);
+      if (points.length === 2) state.line = L.polyline(points, { color: "#6b7280", dashArray: "6,6" }).addTo(map);
+      if (state.bboxLayer) {
+        const bounds = points.length ? L.latLngBounds(points) : state.bboxLayer.getBounds();
+        state.bboxLayer.eachLayer((layer) => bounds.extend(layer.getBounds()));
+        map.fitBounds(bounds.pad(0.18), { maxZoom: 13 });
+      } else if (points.length) map.fitBounds(L.latLngBounds(points).pad(0.35), { maxZoom: 15 });
+      else map.setView([22.9734, 78.6569], 5);
+
+      const existing = state.decisions[s.udise_code];
+      if (existing) {
+        select(existing.chosen_source, num(existing.chosen_latitude), num(existing.chosen_longitude), false);
+        toast("Already saved. Change and press Enter to overwrite.");
+      } else {
+        updateButtons();
+      }
+    }
+
+    function latLon(lat, lon) {
+      if (lat === null || lon === null) return "missing coordinates";
+      return `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
+    }
+
+    function addCityBox(city) {
+      if (!state.bboxes || !city || city === "Other") return;
+      const feature = state.bboxes.features.find((item) => item.properties && item.properties.city === city);
+      if (!feature) return;
+      state.bboxLayer = L.geoJSON(feature, {
+        style: {
+          color: "#ffe66d",
+          weight: 3,
+          opacity: 0.95,
+          fillColor: "#ffe66d",
+          fillOpacity: 0.08
+        }
+      }).addTo(map);
+      state.bboxLayer.bindPopup(`${city} bounding box`);
+    }
+
+    function select(source, lat, lon, pan = true) {
+      if (lat === null || lon === null) {
+        toast("That option has no coordinate.");
+        return;
+      }
+      state.selected = { source, lat, lon };
+      if (source === "manual") {
+        if (state.markers.manual) state.markers.manual.remove();
+        state.markers.manual = L.marker([lat, lon], { icon: icons.manual }).addTo(map).bindPopup("Manual choice");
+        $("manualDetail").textContent = latLon(lat, lon);
+      }
+      if (pan) map.panTo([lat, lon]);
+      updateButtons();
+    }
+
+    function updateButtons() {
+      document.querySelectorAll("button[data-source]").forEach((button) => {
+        button.classList.toggle("active", state.selected && button.dataset.source === state.selected.source);
+      });
+      $("saveBtn").disabled = !state.selected;
+    }
+
+    async function save() {
+      if (!state.selected) return;
+      const s = current();
+      const payload = {
+        udise_code: s.udise_code,
+        school_name: s.school_name,
+        chosen_source: state.selected.source,
+        chosen_latitude: state.selected.lat,
+        chosen_longitude: state.selected.lon,
+        saved_at: new Date().toISOString(),
+        udise_latitude: s.udise_latitude,
+        udise_longitude: s.udise_longitude,
+        google_latitude: s.google_latitude,
+        google_longitude: s.google_longitude,
+        udise_google_distance_m: s.udise_google_distance_m,
+        fee_band_calibrated: s.fee_band_calibrated,
+        coordinate_reason: s.coordinate_reason
+      };
+      const response = await fetch("/api/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      if (!result.ok) {
+        toast(result.error || "Save failed");
+        return;
+      }
+      state.decisions[s.udise_code] = payload;
+      toast("Saved");
+      go(1, true);
+    }
+
+    function go(delta, jumpUnsaved = false) {
+      let next = Math.max(0, Math.min(state.schools.length - 1, state.index + delta));
+      if (jumpUnsaved && delta > 0) {
+        while (next < state.schools.length - 1 && state.decisions[state.schools[next].udise_code]) next += 1;
+      }
+      state.index = next;
+      render();
+    }
+
+    map.on("click", (event) => select("manual", event.latlng.lat, event.latlng.lng, false));
+    $("chooseGoogle").addEventListener("click", () => {
+      const s = current();
+      select("google", num(s.google_latitude), num(s.google_longitude));
+    });
+    $("chooseUdise").addEventListener("click", () => {
+      const s = current();
+      select("udise", num(s.udise_latitude), num(s.udise_longitude));
+    });
+    $("chooseManual").addEventListener("click", () => toast("Click the map to place the manual marker."));
+    $("prevBtn").addEventListener("click", () => go(-1));
+    $("nextBtn").addEventListener("click", () => go(1));
+    $("saveBtn").addEventListener("click", save);
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") save();
+      if (event.key === "ArrowRight") go(1);
+      if (event.key === "ArrowLeft") go(-1);
+      if (event.key === "1") $("chooseGoogle").click();
+      if (event.key === "2") $("chooseUdise").click();
+      if (event.key === "3") $("chooseManual").click();
+    });
+
+    async function init() {
+      const [response, bboxResponse] = await Promise.all([fetch("/api/data"), fetch("/api/bboxes")]);
+      const data = await response.json();
+      state.bboxes = await bboxResponse.json();
+      state.schools = data.schools;
+      state.decisions = data.decisions || {};
+      const firstOpen = state.schools.findIndex((school) => !state.decisions[school.udise_code]);
+      state.index = firstOpen >= 0 ? firstOpen : 0;
+      render();
+    }
+
+    init().catch((error) => {
+      console.error(error);
+      $("reason").textContent = `Failed to load review data: ${error && error.message ? error.message : error}`;
+      toast("Failed to load review data.");
+    });
+  </script>
+</body>
+</html>

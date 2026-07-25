@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RanchoLabs Expansion Decisions</title>
+  <meta name="description" content="Compare reported premium-school demand and plan RanchoLabs' next city expansion.">
+  <meta property="og:title" content="RanchoLabs Expansion Decisions">
+  <meta property="og:description" content="Direct school evidence for the next-city, partnership and campus decision.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-expansion.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/multicity.css?v=20260718a">
+  <link rel="stylesheet" href="/auth.css">
+  <script src="/auth.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to platform guide</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Portal navigation">
+      <a class="brand" href="/" aria-label="RanchoLabs expansion home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span><strong>RanchoLabs</strong><small>Market intelligence</small></span>
+      </a>
+
+      <div class="workspace-switcher" aria-label="Platform views">
+        <p>Choose a view</p>
+        <a class="workspace-link active" href="#start-here" aria-current="page">
+          <span><strong>All-city overview</strong><small>Compare markets &amp; decide</small></span>
+          <b aria-hidden="true">01</b>
+        </a>
+        <a id="sidebar-deep-dive-link" class="workspace-link" href="/bangalore?from=multicity&amp;city=mumbai&amp;category=premium_plus">
+          <span><strong>City deep dive</strong><small>Investigate one market</small></span>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a class="active" href="#start-here"><span>01</span>Start here</a>
+        <a href="#executive"><span>02</span>Executive decision</a>
+        <a href="#comparison"><span>03</span>City comparison</a>
+        <a href="#city-plan"><span>04</span>City plan</a>
+        <a href="#scenarios"><span>05</span>Campus scenarios</a>
+        <a href="#methodology"><span>06</span>Methodology &amp; sources</a>
+      </nav>
+
+      <div class="city-switcher" aria-labelledby="city-switcher-title">
+        <p id="city-switcher-title">Markets</p>
+        <button class="city-nav" data-city="delhi_ncr" type="button"><span>Delhi NCR</span><small>Benchmark</small></button>
+        <button class="city-nav" data-city="bengaluru" type="button"><span>Bengaluru</span><small>Candidate</small></button>
+        <button class="city-nav" data-city="hyderabad" type="button"><span>Hyderabad</span><small>Candidate</small></button>
+        <button class="city-nav" data-city="mumbai" type="button"><span>Mumbai</span><small>Recommended</small></button>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span><strong>Direct evidence first</strong><small>Source-reported school enrollment</small></span>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Expansion intelligence workspace</p>
+          <h1>Start broad. Then investigate one city.</h1>
+        </div>
+        <div class="topbar-actions">
+          <a id="topbar-deep-dive-link" class="topbar-quick-link" href="/bangalore?from=multicity&amp;city=mumbai&amp;category=premium_plus">Open city deep dive <span aria-hidden="true">↗</span></a>
+          <label class="topbar-select">School audience
+            <select id="category-select" aria-label="School audience category"></select>
+          </label>
+          <span id="generated-date" class="as-of">Loading evidence…</span>
+        </div>
+      </header>
+
+      <div id="loading" class="loading-state" role="status"><span></span><strong>Preparing the decision view…</strong></div>
+      <div id="error" class="error-state" role="alert" aria-live="assertive" hidden></div>
+
+      <div id="dashboard" hidden>
+        <section id="start-here" class="section orientation-section" aria-labelledby="start-here-title">
+          <div class="orientation-hero">
+            <div class="orientation-copy">
+              <p class="orientation-kicker"><span aria-hidden="true"></span>Start here · 2-minute orientation</p>
+              <h2 id="start-here-title">Two views. One decision workflow.</h2>
+              <p>Use the all-city view to choose where to focus. Then open a city deep dive to decide where to validate, who to approach, and what to test on the ground.</p>
+            </div>
+
+            <div class="view-path-grid">
+              <article class="view-path-card current-view">
+                <div class="view-path-head"><span class="path-number">01</span><span class="current-view-pill">YOU ARE HERE</span></div>
+                <p class="path-label">All-city platform</p>
+                <h3>Compare markets and make the portfolio decision.</h3>
+                <ul>
+                  <li>Compare Delhi NCR, Bengaluru, Hyderabad, and Mumbai</li>
+                  <li>See the recommended next market and the evidence behind it</li>
+                  <li>Test audience filters and campus capacity scenarios</li>
+                </ul>
+                <a class="path-cta secondary" href="#executive">Review the market recommendation <span aria-hidden="true">↓</span></a>
+              </article>
+
+              <article id="deep-dive" class="view-path-card deep-dive-view">
+                <div class="view-path-head"><span class="path-number">02</span><span class="next-step-pill">NEXT STEP</span></div>
+                <p class="path-label">City deep dive</p>
+                <h3>Turn one city into an operating action plan.</h3>
+                <ul>
+                  <li>Inspect candidate catchments and map layers</li>
+                  <li>Shortlist school partners and residential targets</li>
+                  <li>Run site catchment, access, and local evidence checks</li>
+                </ul>
+                <div class="deep-dive-launcher">
+                  <label for="deep-dive-city-select">Choose a city</label>
+                  <select id="deep-dive-city-select" aria-label="Choose a city deep dive"></select>
+                  <a id="deep-dive-cta" class="path-cta primary" href="/bangalore?from=multicity&amp;city=mumbai&amp;category=premium_plus">Open Mumbai deep dive <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="workflow-rail" aria-label="Recommended platform workflow">
+            <div><span>1</span><p><strong>Compare</strong>Use reported enrollment to select the market worth deeper attention.</p></div>
+            <div><span>2</span><p><strong>Investigate</strong>Open that city’s catchments, schools, projects, access, and map layers.</p></div>
+            <div><span>3</span><p><strong>Validate</strong>Confirm competition, rent, travel time, and partner interest before committing capital.</p></div>
+          </div>
+
+          <div class="snapshot-panel" aria-labelledby="coverage-snapshot-title">
+            <div class="snapshot-heading">
+              <div><p class="eyebrow">Full data coverage</p><h3 id="coverage-snapshot-title">Everything supplied, in one snapshot</h3></div>
+              <p>Coverage totals span all four city markets and the complete private-school audience. They describe the dataset—not market size estimates.</p>
+            </div>
+            <div id="platform-kpis" class="platform-kpi-grid" aria-live="polite"></div>
+          </div>
+
+          <div class="orientation-details-grid">
+            <article class="deliverables-panel">
+              <div class="mini-section-heading"><div><p class="eyebrow">What is delivered</p><h3>Decision-ready outputs</h3></div><span>8 deliverables</span></div>
+              <div class="deliverables-grid">
+                <div><b>01</b><span><strong>Expansion recommendation</strong><small>Best next candidate, with benchmark context</small></span></div>
+                <div><b>02</b><span><strong>Four-city comparison</strong><small>Like-for-like enrollment and inventory</small></span></div>
+                <div><b>03</b><span><strong>Four city deep dives</strong><small>Decision brief for every market</small></span></div>
+                <div><b>04</b><span><strong>Catchment maps</strong><small>Ranked local demand areas and layers</small></span></div>
+                <div><b>05</b><span><strong>School partner lists</strong><small>Named outreach priorities</small></span></div>
+                <div><b>06</b><span><strong>Residential targets</strong><small>Named projects and known units</small></span></div>
+                <div><b>07</b><span><strong>Campus scenarios</strong><small>1%, 2%, and 3% planning cases</small></span></div>
+                <div><b>08</b><span><strong>Source &amp; method register</strong><small>Direct, derived, and modeled labels</small></span></div>
+              </div>
+            </article>
+
+            <article class="source-snapshot-panel">
+              <div class="mini-section-heading"><div><p class="eyebrow">Where the data comes from</p><h3>Source lineage at a glance</h3></div><span>5 source groups</span></div>
+              <div class="source-snapshot-list">
+                <div><span class="source-icon">SC</span><p><strong>Schools &amp; enrollment</strong><small>Supplied curated school master, primarily UDISE-backed; audience tier and coordinates retained with evidence labels.</small></p></div>
+                <div><span class="source-icon">RE</span><p><strong>Projects &amp; localities</strong><small>Primarily Magicbricks project and locality records, with limited 99acres source links in the supplied inventory.</small></p></div>
+                <div><span class="source-icon">HC</span><p><strong>Hospitals</strong><small>Practo hospital listings, including location and available facility fields.</small></p></div>
+                <div><span class="source-icon">AC</span><p><strong>Access &amp; built context</strong><small>OpenStreetMap/OSRM routing evidence and Overture building context.</small></p></div>
+                <div><span class="source-icon">OF</span><p><strong>Offices &amp; SEZ anchors</strong><small>Supplied unified office and SEZ source files used as supporting context, not primary demand.</small></p></div>
+              </div>
+              <p class="source-caveat">Source observation dates were not supplied. The portal build date shows when the analysis was produced—not when each source was observed.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="executive" class="section executive-section" aria-labelledby="executive-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">The answer first</p><h2 id="executive-title">Executive decision</h2></div>
+            <p>Source-reported all-grade enrollment determines the market recommendation. Derived Grades 2–9 and modeled additions are shown separately for planning.</p>
+          </div>
+
+          <div class="decision-grid">
+            <article class="decision-card recommendation-card">
+              <div class="card-label"><span>Recommended next market</span><span class="decision-pill">RECOMMENDED</span></div>
+              <div class="decision-title"><h3 id="winner-city">Mumbai</h3><span id="winner-rank">#1</span></div>
+              <p id="winner-reason">—</p>
+              <div id="winner-metrics" class="metric-row"></div>
+              <p class="decision-note">Advance to catchment validation, rent and competition diligence before committing capital.</p>
+            </article>
+
+            <article class="decision-card benchmark-card">
+              <div class="card-label"><span>Operating benchmark</span><span class="benchmark-pill">BENCHMARK</span></div>
+              <h3>Delhi NCR</h3>
+              <p id="benchmark-copy">—</p>
+              <div id="benchmark-metrics" class="metric-row compact-row"></div>
+            </article>
+          </div>
+
+          <div id="decision-questions" class="question-strip" aria-label="Investor questions answered"></div>
+        </section>
+
+        <section id="comparison" class="section" aria-labelledby="comparison-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Like-for-like evidence</p><h2 id="comparison-title">City comparison</h2></div>
+            <p>Four decision markets in the agreed order. Select a row to build its city plan.</p>
+          </div>
+          <div class="table-card">
+            <div class="table-scroll">
+              <table>
+                <caption class="sr-only">Comparison of four city markets using reported premium-school enrollment</caption>
+                <thead><tr><th>Market</th><th>Decision role</th><th>Reported enrollment · all grades</th><th>Derived Grades 2–9</th><th>Modeled addition</th><th>Schools in audience</th><th>Known residential units</th><th>Enrollment rank</th></tr></thead>
+                <tbody id="comparison-table"></tbody>
+              </table>
+            </div>
+          </div>
+          <p class="table-footnote">Enrollment rank excludes the Delhi NCR benchmark and uses source-reported all-grade enrollment only. Derived Grades 2–9 supports planning; residential units show source-listed project inventory.</p>
+        </section>
+
+        <section id="city-plan" class="section" aria-labelledby="city-plan-title">
+          <div class="section-heading city-plan-heading">
+            <div><p class="eyebrow">From market to action</p><h2 id="city-plan-title">City plan: <span id="selected-city-label">—</span></h2></div>
+            <label class="inline-select">Selected market<select id="city-select"></select></label>
+          </div>
+
+          <div id="city-kpis" class="kpi-grid"></div>
+
+          <div class="map-layout">
+            <article class="map-card">
+              <div class="panel-head">
+                <div><strong id="map-title">Reported school demand</strong><small id="map-subtitle">Where enrolled students are concentrated</small></div>
+                <div class="segmented-control" role="group" aria-label="Map evidence layer">
+                  <button class="active" data-map-layer="schools" type="button">School demand</button>
+                  <button data-map-layer="projects" type="button">Residential units</button>
+                </div>
+              </div>
+              <div id="map-layer-summary" class="map-layer-summary" aria-live="polite">Loading city evidence…</div>
+              <div id="market-map" role="img" aria-label="Selected city evidence map"></div>
+            </article>
+            <article class="plan-summary-card">
+              <p class="eyebrow">What this means</p>
+              <h3 id="plan-summary-title">—</h3>
+              <div id="plan-summary" class="plan-summary"></div>
+              <a id="legacy-link" class="text-link" href="/bangalore?from=multicity&amp;city=bengaluru&amp;category=premium_plus">Open the detailed city evidence →</a>
+            </article>
+          </div>
+
+          <div class="action-grid">
+            <article class="action-card">
+              <div class="panel-head"><div><strong>Priority school partners</strong><small>Start outreach with large, source-reported schools</small></div></div>
+              <ol id="school-partners" class="action-list"></ol>
+            </article>
+            <article class="action-card">
+              <div class="panel-head"><div><strong>Residential marketing targets</strong><small>Known project inventory for direct activation</small></div></div>
+              <ol id="residential-targets" class="action-list"></ol>
+            </article>
+            <article class="action-card">
+              <div class="panel-head"><div><strong>Candidate catchments</strong><small>Areas to validate for a first campus</small></div></div>
+              <ol id="candidate-catchments" class="action-list"></ol>
+            </article>
+          </div>
+        </section>
+
+        <section id="scenarios" class="section" aria-labelledby="scenarios-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Capacity, not a sales forecast</p><h2 id="scenarios-title">Campus scenarios</h2></div>
+            <p>Conservative, base and upside cases use Grades 2–9 derived only from source-reported school enrollment.</p>
+          </div>
+          <div id="scenario-cards" class="scenario-grid"></div>
+          <div class="formula-card"><strong>Fixed planning assumptions</strong><span>200 seats per campus</span><span>80% target utilization</span><span>160 occupied seats per mature campus</span></div>
+          <p class="scenario-note">Only fully supportable campuses are counted, so fractional results are rounded down. Catchment overlap, competition, pricing, rent and ramp time must be tested before choosing a campus count.</p>
+        </section>
+
+        <section id="methodology" class="section methodology-section" aria-labelledby="methodology-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Transparent evidence</p><h2 id="methodology-title">Methodology &amp; sources</h2></div>
+            <p>Every headline is labeled as direct, derived or modeled so evidence strength is visible at the point of use.</p>
+          </div>
+          <div class="method-grid">
+            <article><span class="evidence-tag direct">DIRECT</span><h3>Reported enrollment · all grades</h3><p>The sum of source-reported enrollment for schools in the selected audience determines the candidate recommendation and enrollment rank.</p></article>
+            <article><span class="evidence-tag derived">DERIVED</span><h3>Grades 2–9 planning audience</h3><p>Grades 2–9 is derived only from source-reported school rows. It drives the local demand map, candidate catchments and campus scenarios.</p></article>
+            <article><span class="evidence-tag direct">DIRECT</span><h3>Residential inventory</h3><p>Project names, locations and known units come from the supplied residential source. Units indicate source-listed marketing reach; occupancy is not inferred.</p></article>
+            <article><span class="evidence-tag modeled">MODELED</span><h3>Modeled additions &amp; scenarios</h3><p>Modeled student additions stay separate from reported evidence. Campus cases use 1%, 2% and 3% of derived Grades 2–9 and round down to fully supportable campuses.</p></article>
+          </div>
+          <div id="source-register" class="source-register"></div>
+          <p class="method-note">Recommendation guardrail: source-reported all-grade enrollment sets the market order. Residential depth, partner fit, competition and economics are validation gates—not hidden score adjustments.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/multicity.js?v=20260718a" defer></script>
+</body>
+</html>

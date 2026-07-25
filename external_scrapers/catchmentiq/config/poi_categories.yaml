@@ -1,0 +1,49 @@
+premium_40lpa:
+  - category: "luxury_auto_dealer"
+    google_type: "car_dealer"
+    keywords: ["BMW", "Mercedes", "Audi", "Jaguar", "Porsche", "Lexus"]
+    weight: 2                    # Higher weight = stronger validation signal
+
+  - category: "international_school"
+    google_type: "school"
+    keywords: ["international", "IB", "IGCSE", "global"]
+    weight: 1
+
+  - category: "premium_supermarket"
+    google_type: "supermarket"
+    keywords: ["Nature's Basket", "Foodhall", "Le Marche", "Godrej Nature's"]
+    weight: 0.6
+
+  - category: "premium_gym"
+    google_type: "gym"
+    keywords: ["Gold's Gym", "Cult.fit", "Anytime Fitness", "F45"]
+    weight: 0.6
+
+  - category: "fine_dining"
+    google_type: "restaurant"
+    # Replaced generic "premium" with explicit luxury brands/hotels known for fine dining in BLR
+    keywords: ["Taj", "ITC", "JW Marriott", "The Leela", "Oberoi", "Olive Beach", "Yauatcha", "Karavalli", "Edo", "Ritz-Carlton"]
+    price_level_min: 3             # Used if Google Places API is ever integrated
+    weight: 0.7
+
+  - category: "tech_park_sez"
+    google_type: "office"
+    keywords: ["Tech Park", "Business Park", "SEZ", "Embassy", "Bagmane", "Manyata", "EcoSpace", "IT Park", "Google", "Microsoft", "Amazon", "Apple", "Goldman Sachs", "Morgan Stanley", "Intel", "IBM", "Cisco", "SAP", "Oracle", "Flipkart", "Accenture", "TCS", "Infosys", "Wipro"]
+    weight: 1.5
+
+midmarket_12lpa:
+  - category: "value_retail"
+    google_type: "supermarket"
+    keywords: ["DMart", "Reliance Smart", "Big Bazaar", "More Supermarket"]
+    weight: 0.6
+
+  - category: "coaching_centre"
+    google_type: "school"
+    keywords: ["coaching", "tuition", "BYJU'S", "Kumon"]
+    weight: 1.2
+
+  - category: "mid_tier_gym"
+    google_type: "gym"
+    keywords: ["gym", "fitness"]
+    price_level_max: 2
+    weight: 0.3

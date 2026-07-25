@@ -1,0 +1,134 @@
+{
+  "input_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/new data/schools_geocoded.json",
+  "input_row_count": 2007,
+  "published_entity_count": 1996,
+  "published_campus_count": 1961,
+  "duplicate_rows_collapsed": 4,
+  "multi_entity_campus_count": 31,
+  "quarantined_row_count": 7,
+  "quarantined_rows": [
+    {
+      "row_index": 100,
+      "name": "DELHI PUBLIC SCHOOL",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    },
+    {
+      "row_index": 313,
+      "name": "Delhi Public School",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    },
+    {
+      "row_index": 386,
+      "name": "DPS Electronic City",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    },
+    {
+      "row_index": 1206,
+      "name": "MANASA VIDHYA KENDRA",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    },
+    {
+      "row_index": 1393,
+      "name": "BNR INTERNATIONAL PUBLIC SCHOOL",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    },
+    {
+      "row_index": 1871,
+      "name": "Aikya World School",
+      "reasons": [
+        "no_board_quarantine"
+      ]
+    },
+    {
+      "row_index": 1946,
+      "name": "Daffodils Public School",
+      "reasons": [
+        "google_address_outside_bengaluru_scope"
+      ]
+    }
+  ],
+  "ambiguous_identity_groups": [],
+  "raw_preclean_benchmarks": {
+    "q4": {
+      "row_count_all": 501,
+      "row_count_grade_2_9_positive": 461,
+      "students_grades_2_9_expanded": 264742.0,
+      "description": "Raw source-row Q4 benchmark before quarantine, duplicate collapse, and entity recomputation."
+    },
+    "fee_max_sensitivity": [
+      {
+        "threshold_fee_max": 175000,
+        "positive_grade_2_9_row_count": 86,
+        "students_grades_2_9_expanded": 32775.0,
+        "description": "Raw pre-clean rows whose maximum fee reaches the cutoff; audit baseline only."
+      },
+      {
+        "threshold_fee_max": 180000,
+        "positive_grade_2_9_row_count": 81,
+        "students_grades_2_9_expanded": 30499.0,
+        "description": "Raw pre-clean rows whose maximum fee reaches the cutoff; audit baseline only."
+      },
+      {
+        "threshold_fee_max": 200000,
+        "positive_grade_2_9_row_count": 39,
+        "students_grades_2_9_expanded": 11617.0,
+        "description": "Raw pre-clean rows whose maximum fee reaches the cutoff; audit baseline only."
+      }
+    ]
+  },
+  "q4": {
+    "school_entity_count_all": 499,
+    "school_entity_count_grade_2_9_positive": 458,
+    "campus_count_context": 487,
+    "students_grades_2_9_expanded": 258833.0,
+    "students_grades_2_9_by_source": {
+      "udise_backed": 110585.0,
+      "estimated": 148248.0
+    }
+  },
+  "q4_fee_max_cutoff": 70000.0,
+  "validation": {
+    "source_rows_reconciled": true,
+    "unique_entity_ids": true,
+    "entity_id_aliases_match": true,
+    "unique_campus_ids": true,
+    "all_hexes_recomputed": true,
+    "all_zones_assigned": true,
+    "q4_exact_floor_quarter": true,
+    "q4_subquartiles_reconcile": true,
+    "enrollment_source_reconciles": true,
+    "sensitivity_monotonic": true
+  },
+  "board_counts": {
+    "cambridge": 60,
+    "cbse": 680,
+    "cisce": 314,
+    "ib": 43,
+    "montessori": 7,
+    "nios": 1,
+    "other": 385,
+    "state": 800,
+    "unknown": 1
+  },
+  "zone_counts": {
+    "Central": 272,
+    "East": 243,
+    "North": 286,
+    "North-East": 219,
+    "North-West": 154,
+    "South": 262,
+    "South-East": 229,
+    "South-West": 183,
+    "West": 148
+  }
+}

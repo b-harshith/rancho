@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/common_entity.schema.json",
+  "title": "Multi-city common entity v1",
+  "type": "object",
+  "required": ["canonical_city_id", "entity_id", "source", "source_entity_id", "source_city_id", "source_city_name", "name", "lat", "lon", "coordinate_source", "coordinate_precision", "source_url", "scraped_at", "schema_version", "quality_flags", "lineage"],
+  "properties": {
+    "canonical_city_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "entity_id": {"type": "string", "pattern": "^[^:]+:[^:]+:[^:]+:[^:]+$"},
+    "source": {"type": "string", "minLength": 1},
+    "source_entity_id": {"type": ["string", "integer"]},
+    "source_city_id": {"type": ["string", "integer", "null"]},
+    "source_city_name": {"type": ["string", "null"]},
+    "name": {"type": "string", "minLength": 1},
+    "lat": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "lon": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "coordinate_source": {"type": ["string", "null"]},
+    "coordinate_precision": {"type": ["string", "null"]},
+    "source_url": {"type": "string", "format": "uri"},
+    "scraped_at": {"type": "string", "format": "date-time"},
+    "schema_version": {"const": "1.0.0"},
+    "quality_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "lineage": {"type": "object", "minProperties": 1}
+  }
+}

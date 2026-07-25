@@ -1,0 +1,23 @@
+{
+  "city_slug": "your-city-slug",
+  "city_name": "Your City",
+  "city_geocode_context": "Your City, India",
+  "city_boundary_context": "Your City, State, India",
+  "city_zone_names": [],
+  "city_map_center": [12.9716, 77.5946],
+  "city_metro_bounds": {
+    "min_lat": 12.65,
+    "max_lat": 13.40,
+    "min_lon": 77.20,
+    "max_lon": 78.05
+  },
+  "99acres_locality_target_url": "https://www.99acres.com/your-city-reviews-and-ratings-wrffid",
+  "99acres_locality_api_city_id": "20_LOCATION",
+  "99acres_society_target_url": "https://www.99acres.com/property-registry-records-in-your-city-rrffid?entityType=PROJECT&referrer_section=CHECK_TRANSACTION_PRICES&src_page=REI_CITY_INSIGHTS&sortOrder=MOST_REGISTRY_RECORDS&timeDuration=1",
+  "99acres_society_api_city_id": "20_LOCATION",
+  "99acres_cookie_header": "",
+  "osrm_url": "http://localhost:5001",
+  "sez_kml_path": "data/Stage2 processing/sez_office_zones.kml",
+  "overture_buildings_path": "data/overture/bangalore_buildings.geojson",
+  "emit_html_maps": false
+}

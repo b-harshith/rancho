@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "mumbai": {
+      "components": [
+        {
+          "source_city_id": "4320",
+          "source_city_name": "Mumbai",
+          "verified_url": "https://www.magicbricks.com/localities-in-Mumbai",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

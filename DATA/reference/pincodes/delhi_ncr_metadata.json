@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "canonical_city_id": "delhi_ncr",
+  "candidate_file": "delhi_ncr_pin_candidates.csv",
+  "exclusion_file": "delhi_ncr_pin_exclusions.csv",
+  "source": {
+    "name": "All India Pincode Directory till last month",
+    "publisher": "Department of Posts, Ministry of Communications, Government of India",
+    "catalog_url": "https://www.data.gov.in/resource/all-india-pincode-directory-till-last-month",
+    "download_url": "https://www.data.gov.in/files/ogdpv2dms/s3fs-public/dataurl03122020/pincode.csv",
+    "resource_id": "5c2f62fe-5afa-4119-a499-fec9d604d5bd",
+    "portal_updated_on": "2025-10-03",
+    "downloaded_on": "2026-06-30",
+    "license": "Government Open Data License - India"
+  },
+  "inclusion_rule": "Include a PIN when at least one published post-office row belongs to Delhi state or to Gurgaon/Gurugram, Faridabad, Ghaziabad, or Gautam Buddha Nagar district.",
+  "dedupe_rule": "One row per six-digit PIN. Components, districts, and states are sorted semicolon-delimited sets; office_count counts distinct office names.",
+  "exclusion_rule": "At deduplicated PIN level, exclude only a PIN with zero approved-component office rows when it shares a three-digit postal prefix with an included PIN. A PIN with any approved-component office is included exactly once and excluded nowhere. This is a near-scope audit universe, not an exhaustive all-India rejection list.",
+  "known_cross_component_pin": "201009",
+  "warning": "PIN codes are postal service areas, not boundary polygons. District membership is office-based and must not be used as point-in-polygon proof."
+}

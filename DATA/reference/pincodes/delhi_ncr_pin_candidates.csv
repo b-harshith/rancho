@@ -1,0 +1,195 @@
+pincode,canonical_city_id,components,districts,states,office_count,has_delivery_office,decision,decision_rule,source
+110001,delhi_ncr,delhi_nct,CENTRAL;NEW DELHI,DELHI,23,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110002,delhi_ncr,delhi_nct,CENTRAL,DELHI,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110003,delhi_ncr,delhi_nct,NEW DELHI;SOUTH;South East,DELHI,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110004,delhi_ncr,delhi_nct,NEW DELHI,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110005,delhi_ncr,delhi_nct,CENTRAL,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110006,delhi_ncr,delhi_nct,CENTRAL;NORTH,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110007,delhi_ncr,delhi_nct,CENTRAL;NORTH;NORTH WEST,DELHI,11,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110008,delhi_ncr,delhi_nct,WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110009,delhi_ncr,delhi_nct,NORTH;NORTH WEST,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110010,delhi_ncr,delhi_nct,NEW DELHI,DELHI,13,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110011,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110012,delhi_ncr,delhi_nct,WEST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110013,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110014,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110015,delhi_ncr,delhi_nct,WEST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110016,delhi_ncr,delhi_nct,SOUTH,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110017,delhi_ncr,delhi_nct,SOUTH,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110018,delhi_ncr,delhi_nct,WEST,DELHI,12,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110019,delhi_ncr,delhi_nct,South East,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110020,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110021,delhi_ncr,delhi_nct,NEW DELHI,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110022,delhi_ncr,delhi_nct,NEW DELHI,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110023,delhi_ncr,delhi_nct,NEW DELHI,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110024,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110025,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110026,delhi_ncr,delhi_nct,WEST,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110027,delhi_ncr,delhi_nct,WEST,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110028,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110029,delhi_ncr,delhi_nct,SOUTH,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110030,delhi_ncr,delhi_nct,SOUTH,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110031,delhi_ncr,delhi_nct,EAST;SHAHDARA,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110032,delhi_ncr,delhi_nct,SHAHDARA,DELHI,13,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110033,delhi_ncr,delhi_nct,NORTH,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110034,delhi_ncr,delhi_nct,NORTH WEST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110035,delhi_ncr,delhi_nct,NORTH WEST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110036,delhi_ncr,delhi_nct,NORTH,DELHI,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110037,delhi_ncr,delhi_nct,NEW DELHI,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110038,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110039,delhi_ncr,delhi_nct,NORTH;NORTH WEST,DELHI,11,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110040,delhi_ncr,delhi_nct,NORTH;NORTH WEST,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110041,delhi_ncr,delhi_nct,WEST,DELHI,12,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110042,delhi_ncr,delhi_nct,NORTH;NORTH WEST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110043,delhi_ncr,delhi_nct,SOUTH WEST;WEST,DELHI,18,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110044,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110045,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110046,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110047,delhi_ncr,delhi_nct,SOUTH,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110048,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110049,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110051,delhi_ncr,delhi_nct,EAST;SHAHDARA,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110052,delhi_ncr,delhi_nct,NORTH;NORTH WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110053,delhi_ncr,delhi_nct,NORTH EAST,DELHI,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110054,delhi_ncr,delhi_nct,CENTRAL,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110055,delhi_ncr,delhi_nct,CENTRAL;WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110056,delhi_ncr,delhi_nct,NORTH WEST,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110057,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110058,delhi_ncr,delhi_nct,WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110059,delhi_ncr,delhi_nct,WEST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110060,delhi_ncr,delhi_nct,CENTRAL,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110061,delhi_ncr,delhi_nct,NEW DELHI;SOUTH WEST,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110062,delhi_ncr,delhi_nct,SOUTH,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110063,delhi_ncr,delhi_nct,WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110064,delhi_ncr,delhi_nct,WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110065,delhi_ncr,delhi_nct,SOUTH;South East,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110066,delhi_ncr,delhi_nct,NEW DELHI,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110067,delhi_ncr,delhi_nct,NEW DELHI,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110068,delhi_ncr,delhi_nct,SOUTH,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110069,delhi_ncr,delhi_nct,NEW DELHI,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110070,delhi_ncr,delhi_nct,NEW DELHI,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110071,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110072,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110073,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,11,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110074,delhi_ncr,delhi_nct,SOUTH,DELHI,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110075,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110076,delhi_ncr,delhi_nct,SOUTH,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110077,delhi_ncr,delhi_nct,NEW DELHI;SOUTH WEST,DELHI,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110078,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110080,delhi_ncr,delhi_nct,SOUTH,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110081,delhi_ncr,delhi_nct,NORTH WEST,DELHI,12,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110082,delhi_ncr,delhi_nct,NORTH,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110083,delhi_ncr,delhi_nct,NORTH WEST,DELHI,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110084,delhi_ncr,delhi_nct,CENTRAL;NORTH,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110085,delhi_ncr,delhi_nct,NORTH WEST,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110086,delhi_ncr,delhi_nct,NORTH WEST,DELHI,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110087,delhi_ncr,delhi_nct,WEST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110088,delhi_ncr,delhi_nct,NORTH,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110089,delhi_ncr,delhi_nct,NORTH WEST,DELHI,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110090,delhi_ncr,delhi_nct,NORTH EAST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110091,delhi_ncr,delhi_nct,EAST,DELHI,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110092,delhi_ncr,delhi_nct,EAST;SHAHDARA,DELHI,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110093,delhi_ncr,delhi_nct,NORTH EAST,DELHI,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110094,delhi_ncr,delhi_nct,NORTH EAST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110095,delhi_ncr,delhi_nct,SHAHDARA,DELHI,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110096,delhi_ncr,delhi_nct,EAST,DELHI,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110097,delhi_ncr,delhi_nct,SOUTH WEST,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110099,delhi_ncr,delhi_nct,NORTH WEST,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+110110,delhi_ncr,delhi_nct,NORTH WEST,DELHI,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121001,delhi_ncr,faridabad,FARIDABAD,HARYANA,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121002,delhi_ncr,faridabad,FARIDABAD,HARYANA,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121003,delhi_ncr,faridabad,FARIDABAD,HARYANA,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121004,delhi_ncr,faridabad,FARIDABAD,HARYANA,21,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121005,delhi_ncr,faridabad,FARIDABAD,HARYANA,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121006,delhi_ncr,faridabad,FARIDABAD,HARYANA,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121007,delhi_ncr,faridabad,FARIDABAD,HARYANA,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121008,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121009,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121010,delhi_ncr,faridabad,FARIDABAD,HARYANA,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121012,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121013,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121014,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121015,delhi_ncr,faridabad,FARIDABAD,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+121101,delhi_ncr,faridabad,FARIDABAD,HARYANA,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122001,delhi_ncr,gurugram,GURUGRAM,HARYANA,11,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122002,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122003,delhi_ncr,gurugram,GURUGRAM,HARYANA,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122004,delhi_ncr,gurugram,GURUGRAM,HARYANA,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122005,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122006,delhi_ncr,gurugram,GURUGRAM,HARYANA,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122007,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122008,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122009,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122010,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122011,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122012,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122015,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122016,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122017,delhi_ncr,gurugram,GURUGRAM,HARYANA,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122018,delhi_ncr,gurugram,GURUGRAM,HARYANA,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122051,delhi_ncr,gurugram,GURUGRAM,HARYANA,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122052,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122098,delhi_ncr,gurugram,GURUGRAM,HARYANA,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122101,delhi_ncr,gurugram,GURUGRAM,HARYANA,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122102,delhi_ncr,gurugram,GURUGRAM,HARYANA,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122103,delhi_ncr,gurugram,GURUGRAM,HARYANA,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122413,delhi_ncr,gurugram,GURUGRAM,HARYANA,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122414,delhi_ncr,gurugram,GURUGRAM,HARYANA,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122502,delhi_ncr,gurugram,GURUGRAM,HARYANA,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122503,delhi_ncr,gurugram,GURUGRAM,HARYANA,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122504,delhi_ncr,gurugram,GURUGRAM,HARYANA,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122505,delhi_ncr,gurugram,GURUGRAM,HARYANA,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+122506,delhi_ncr,gurugram,GURUGRAM,HARYANA,6,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201001,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201002,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,12,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201003,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201004,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201005,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201006,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201007,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201008,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201009,delhi_ncr,ghaziabad;noida_greater_noida,GAUTAM BUDDHA NAGAR;GHAZIABAD,UTTAR PRADESH,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201010,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201011,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201012,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201013,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201014,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201015,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201016,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201017,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201018,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201019,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201020,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201021,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201102,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201103,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201201,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201204,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,14,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201206,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,22,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201301,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201302,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201303,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201304,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201305,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,2,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201306,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201307,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201309,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201310,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201311,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,4,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201312,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,3,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201313,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201314,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201315,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201316,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201317,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+201318,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203135,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,7,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203141,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,13,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203155,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203201,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203202,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,9,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203203,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,12,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203207,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,10,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+203209,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,5,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+212652,delhi_ncr,noida_greater_noida,GAUTAM BUDDHA NAGAR,UTTAR PRADESH,1,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory
+245304,delhi_ncr,ghaziabad,GHAZIABAD,UTTAR PRADESH,8,true,include,office belongs to an approved NCR component district,India Post All India Pincode Directory

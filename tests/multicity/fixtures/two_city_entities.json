@@ -1,0 +1,38 @@
+[
+  {
+    "canonical_city_id": "bengaluru",
+    "entity_id": "bengaluru:school:yellowslate:shared-42",
+    "source": "yellowslate",
+    "source_entity_id": "shared-42",
+    "source_city_id": null,
+    "source_city_name": "Bengaluru",
+    "name": "Shared Name School",
+    "lat": 12.97,
+    "lon": 77.59,
+    "coordinate_source": "source",
+    "coordinate_precision": "point",
+    "source_url": "https://example.test/school/shared-42",
+    "scraped_at": "2026-06-30T00:00:00Z",
+    "schema_version": "1.0.0",
+    "quality_flags": [],
+    "lineage": {"raw_artifact": "page-1.json"}
+  },
+  {
+    "canonical_city_id": "hyderabad",
+    "entity_id": "hyderabad:school:yellowslate:shared-42",
+    "source": "yellowslate",
+    "source_entity_id": "shared-42",
+    "source_city_id": null,
+    "source_city_name": "Hyderabad",
+    "name": "Shared Name School",
+    "lat": 17.38,
+    "lon": 78.48,
+    "coordinate_source": "source",
+    "coordinate_precision": "point",
+    "source_url": "https://example.test/school/shared-42",
+    "scraped_at": "2026-06-30T00:00:00Z",
+    "schema_version": "1.0.0",
+    "quality_flags": [],
+    "lineage": {"raw_artifact": "page-1.json"}
+  }
+]

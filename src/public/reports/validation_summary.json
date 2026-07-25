@@ -1,0 +1,51 @@
+{
+  "coverage": {
+    "final_h3_hexes": 309,
+    "active_analysis_hexes": 309,
+    "coverage_note": "The rerun publishes the active analysis H3 footprint used for zone, micro-market, hex, and catchment views."
+  },
+  "totals": {
+    "final_countable_family_tam": 0.0,
+    "csv_countable_family_tam": 0.0,
+    "active_geojson_family_tam": 0.0,
+    "zone_report_family_tam": 316676.0
+  },
+  "checks": [
+    {
+      "name": "Final master hex count",
+      "status": "pass",
+      "value": 309,
+      "expected": 309
+    },
+    {
+      "name": "Active analysis hex count",
+      "status": "pass",
+      "value": 309,
+      "expected": 309
+    },
+    {
+      "name": "Final JSON vs CSV TAM",
+      "status": "pass",
+      "value": 0.0,
+      "expected": 0.0
+    },
+    {
+      "name": "Active GeoJSON vs zone report TAM",
+      "status": "fail",
+      "value": 0.0,
+      "expected": 316676.0
+    },
+    {
+      "name": "Missing POI coordinates",
+      "status": "pass",
+      "value": 0,
+      "expected": 0
+    },
+    {
+      "name": "Duplicate society names",
+      "status": "warn",
+      "value": 5,
+      "expected": 0
+    }
+  ]
+}

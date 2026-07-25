@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "ahmedabad": {
+      "components": [
+        {
+          "source_city_id": "2690",
+          "source_city_name": "Ahmedabad",
+          "verified_url": "https://www.magicbricks.com/localities-in-Ahmedabad",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

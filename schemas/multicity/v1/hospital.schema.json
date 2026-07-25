@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/hospital.schema.json",
+  "title": "Canonical hospital v1",
+  "allOf": [{"$ref": "common_entity.schema.json"}],
+  "type": "object",
+  "required": ["entity_kind", "address", "rating", "review_count", "bed_count"],
+  "properties": {
+    "entity_kind": {"const": "hospital"},
+    "address": {"type": ["string", "null"]},
+    "rating": {"type": ["number", "null"], "minimum": 0},
+    "review_count": {"type": ["integer", "null"], "minimum": 0},
+    "bed_count": {"type": ["integer", "null"], "minimum": 0}
+  }
+}

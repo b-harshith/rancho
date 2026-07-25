@@ -1,0 +1,32 @@
+{
+  "city": "delhi_ncr",
+  "dry_run": true,
+  "finished_at": "2026-06-30T10:52:13.271396Z",
+  "http_status_distribution": {},
+  "pages_attempted": 0,
+  "pages_failed": 0,
+  "pages_succeeded": 0,
+  "records_normalized": 0,
+  "records_raw": 0,
+  "records_rejected": 0,
+  "records_unique": 0,
+  "rejection_reasons": {},
+  "resolved": {
+    "city": "delhi_ncr",
+    "mapping": {
+      "city_id": "multi_component",
+      "city_name": "Delhi NCR",
+      "verified_url": "https://www.magicbricks.com/property-for-sale/residential-real-estate?bedroom=&proptype=Multistorey-Apartment&cityName=New-Delhi"
+    },
+    "network_collection": false,
+    "output": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/data/cities/delhi_ncr",
+    "retries": 3,
+    "sleep": 3.0,
+    "source": "magicbricks",
+    "timeout": 30.0,
+    "workers": 1
+  },
+  "schema_version": "1.0.0",
+  "source": "magicbricks",
+  "started_at": "2026-06-30T10:52:13.270370Z"
+}

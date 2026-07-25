@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/project.schema.json",
+  "title": "Canonical residential project v1",
+  "allOf": [{"$ref": "common_entity.schema.json"}],
+  "type": "object",
+  "required": ["entity_kind", "developer", "total_units", "price_min", "price_max", "construction_status"],
+  "properties": {
+    "entity_kind": {"const": "project"},
+    "developer": {"type": ["string", "null"]},
+    "total_units": {"type": ["integer", "null"], "minimum": 0},
+    "price_min": {"type": ["number", "null"], "minimum": 0},
+    "price_max": {"type": ["number", "null"], "minimum": 0},
+    "construction_status": {"type": ["string", "null"]}
+  }
+}

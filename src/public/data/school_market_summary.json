@@ -1,0 +1,608 @@
+{
+  "methodology": {
+    "primary_cohort": "top floor(N/4) canonical school entities ranked by annual fee_max",
+    "quartile_sort": [
+      "fee_max_desc",
+      "fee_min_desc",
+      "normalized_name_asc",
+      "entity_id_asc"
+    ],
+    "sensitivity_basis": "canonical school entity fee_max >= inclusive threshold",
+    "sensitivity_caveat": "Enrollment is associated with a qualifying school entity; it is not a count of students proven to pay the threshold fee.",
+    "campus_enrollment_rule": "prefer UDISE-backed entity, then largest enrollment; never sum co-located entity records",
+    "enrollment_sources": [
+      "udise_backed",
+      "estimated"
+    ],
+    "center_capacity": 200,
+    "target_utilization": 0.8
+  },
+  "all_school_entities": {
+    "school_entity_count_all": 1996,
+    "school_entity_count_grade_2_9_positive": 1729,
+    "campus_count_context": 1961,
+    "students_grades_2_9_expanded": 881255.0,
+    "students_grades_2_9_by_source": {
+      "udise_backed": 493773.0,
+      "estimated": 387482.0
+    }
+  },
+  "campus_map_context": {
+    "campus_count": 1961,
+    "multi_entity_campus_count": 31,
+    "campus_count_grade_2_9_positive": 1696
+  },
+  "q4": {
+    "school_entity_count_all": 499,
+    "school_entity_count_grade_2_9_positive": 458,
+    "campus_count_context": 487,
+    "students_grades_2_9_expanded": 258833.0,
+    "students_grades_2_9_by_source": {
+      "udise_backed": 110585.0,
+      "estimated": 148248.0
+    },
+    "capacity": [
+      {
+        "capture_rate": 0.05,
+        "captured": 12941.65,
+        "packed_full_centers": 64,
+        "packed_residual": 141.65,
+        "minimum_centers_required": 65,
+        "maximum_centers_at_80pct": 80,
+        "utilization_at_minimum_centers": 0.995512,
+        "below_target_utilization": false
+      },
+      {
+        "capture_rate": 0.1,
+        "captured": 25883.3,
+        "packed_full_centers": 129,
+        "packed_residual": 83.3,
+        "minimum_centers_required": 130,
+        "maximum_centers_at_80pct": 161,
+        "utilization_at_minimum_centers": 0.995512,
+        "below_target_utilization": false
+      },
+      {
+        "capture_rate": 0.2,
+        "captured": 51766.6,
+        "packed_full_centers": 258,
+        "packed_residual": 166.6,
+        "minimum_centers_required": 259,
+        "maximum_centers_at_80pct": 323,
+        "utilization_at_minimum_centers": 0.999355,
+        "below_target_utilization": false
+      },
+      {
+        "capture_rate": 1.0,
+        "captured": 258833.0,
+        "packed_full_centers": 1294,
+        "packed_residual": 33.0,
+        "minimum_centers_required": 1295,
+        "maximum_centers_at_80pct": 1617,
+        "utilization_at_minimum_centers": 0.999355,
+        "below_target_utilization": false
+      }
+    ]
+  },
+  "q4_by_segment": {
+    "Premium Elite": {
+      "school_entity_count_all": 127,
+      "school_entity_count_grade_2_9_positive": 114,
+      "campus_count_context": 125,
+      "students_grades_2_9_expanded": 72957.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 23958.0,
+        "estimated": 48999.0
+      }
+    },
+    "Elite Luxury": {
+      "school_entity_count_all": 124,
+      "school_entity_count_grade_2_9_positive": 111,
+      "campus_count_context": 123,
+      "students_grades_2_9_expanded": 69715.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 35471.0,
+        "estimated": 34244.0
+      }
+    },
+    "Super Luxury": {
+      "school_entity_count_all": 124,
+      "school_entity_count_grade_2_9_positive": 113,
+      "campus_count_context": 124,
+      "students_grades_2_9_expanded": 65924.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 34728.0,
+        "estimated": 31196.0
+      }
+    },
+    "Ultra Luxury": {
+      "school_entity_count_all": 124,
+      "school_entity_count_grade_2_9_positive": 120,
+      "campus_count_context": 121,
+      "students_grades_2_9_expanded": 50237.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 16428.0,
+        "estimated": 33809.0
+      }
+    }
+  },
+  "q4_by_zone": {
+    "Central": {
+      "school_entity_count_all": 66,
+      "school_entity_count_grade_2_9_positive": 61,
+      "campus_count_context": 65,
+      "students_grades_2_9_expanded": 32312.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 16368.0,
+        "estimated": 15944.0
+      }
+    },
+    "North": {
+      "school_entity_count_all": 79,
+      "school_entity_count_grade_2_9_positive": 72,
+      "campus_count_context": 77,
+      "students_grades_2_9_expanded": 36475.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 12272.0,
+        "estimated": 24203.0
+      }
+    },
+    "North-East": {
+      "school_entity_count_all": 63,
+      "school_entity_count_grade_2_9_positive": 59,
+      "campus_count_context": 63,
+      "students_grades_2_9_expanded": 32335.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 11690.0,
+        "estimated": 20645.0
+      }
+    },
+    "East": {
+      "school_entity_count_all": 68,
+      "school_entity_count_grade_2_9_positive": 58,
+      "campus_count_context": 65,
+      "students_grades_2_9_expanded": 33154.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 15838.0,
+        "estimated": 17316.0
+      }
+    },
+    "South-East": {
+      "school_entity_count_all": 65,
+      "school_entity_count_grade_2_9_positive": 58,
+      "campus_count_context": 62,
+      "students_grades_2_9_expanded": 33536.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 14018.0,
+        "estimated": 19518.0
+      }
+    },
+    "South": {
+      "school_entity_count_all": 58,
+      "school_entity_count_grade_2_9_positive": 54,
+      "campus_count_context": 58,
+      "students_grades_2_9_expanded": 28543.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 9348.0,
+        "estimated": 19195.0
+      }
+    },
+    "South-West": {
+      "school_entity_count_all": 39,
+      "school_entity_count_grade_2_9_positive": 35,
+      "campus_count_context": 39,
+      "students_grades_2_9_expanded": 21669.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 9371.0,
+        "estimated": 12298.0
+      }
+    },
+    "West": {
+      "school_entity_count_all": 34,
+      "school_entity_count_grade_2_9_positive": 34,
+      "campus_count_context": 33,
+      "students_grades_2_9_expanded": 23014.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 12164.0,
+        "estimated": 10850.0
+      }
+    },
+    "North-West": {
+      "school_entity_count_all": 27,
+      "school_entity_count_grade_2_9_positive": 27,
+      "campus_count_context": 25,
+      "students_grades_2_9_expanded": 17795.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 9516.0,
+        "estimated": 8279.0
+      }
+    }
+  },
+  "fee_max_sensitivity": [
+    {
+      "threshold_fee_max": 175000,
+      "school_entity_count_all": 87,
+      "school_entity_count_grade_2_9_positive": 84,
+      "campus_count_context": 85,
+      "students_grades_2_9_expanded": 32261.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 10044.0,
+        "estimated": 22217.0
+      },
+      "fee_range_crossing_entity_count": 2,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 1613.05,
+          "packed_full_centers": 8,
+          "packed_residual": 13.05,
+          "minimum_centers_required": 9,
+          "maximum_centers_at_80pct": 10,
+          "utilization_at_minimum_centers": 0.896139,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 3226.1,
+          "packed_full_centers": 16,
+          "packed_residual": 26.1,
+          "minimum_centers_required": 17,
+          "maximum_centers_at_80pct": 20,
+          "utilization_at_minimum_centers": 0.948853,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 6452.2,
+          "packed_full_centers": 32,
+          "packed_residual": 52.2,
+          "minimum_centers_required": 33,
+          "maximum_centers_at_80pct": 40,
+          "utilization_at_minimum_centers": 0.977606,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 32261.0,
+          "packed_full_centers": 161,
+          "packed_residual": 61.0,
+          "minimum_centers_required": 162,
+          "maximum_centers_at_80pct": 201,
+          "utilization_at_minimum_centers": 0.99571,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 180000,
+      "school_entity_count_all": 82,
+      "school_entity_count_grade_2_9_positive": 79,
+      "campus_count_context": 80,
+      "students_grades_2_9_expanded": 29985.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 9164.0,
+        "estimated": 20821.0
+      },
+      "fee_range_crossing_entity_count": 2,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 1499.25,
+          "packed_full_centers": 7,
+          "packed_residual": 99.25,
+          "minimum_centers_required": 8,
+          "maximum_centers_at_80pct": 9,
+          "utilization_at_minimum_centers": 0.937031,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 2998.5,
+          "packed_full_centers": 14,
+          "packed_residual": 198.5,
+          "minimum_centers_required": 15,
+          "maximum_centers_at_80pct": 18,
+          "utilization_at_minimum_centers": 0.9995,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 5997.0,
+          "packed_full_centers": 29,
+          "packed_residual": 197.0,
+          "minimum_centers_required": 30,
+          "maximum_centers_at_80pct": 37,
+          "utilization_at_minimum_centers": 0.9995,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 29985.0,
+          "packed_full_centers": 149,
+          "packed_residual": 185.0,
+          "minimum_centers_required": 150,
+          "maximum_centers_at_80pct": 187,
+          "utilization_at_minimum_centers": 0.9995,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 200000,
+      "school_entity_count_all": 39,
+      "school_entity_count_grade_2_9_positive": 37,
+      "campus_count_context": 38,
+      "students_grades_2_9_expanded": 11103.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 3875.0,
+        "estimated": 7228.0
+      },
+      "fee_range_crossing_entity_count": 1,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 555.15,
+          "packed_full_centers": 2,
+          "packed_residual": 155.15,
+          "minimum_centers_required": 3,
+          "maximum_centers_at_80pct": 3,
+          "utilization_at_minimum_centers": 0.92525,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 1110.3,
+          "packed_full_centers": 5,
+          "packed_residual": 110.3,
+          "minimum_centers_required": 6,
+          "maximum_centers_at_80pct": 6,
+          "utilization_at_minimum_centers": 0.92525,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 2220.6,
+          "packed_full_centers": 11,
+          "packed_residual": 20.6,
+          "minimum_centers_required": 12,
+          "maximum_centers_at_80pct": 13,
+          "utilization_at_minimum_centers": 0.92525,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 11103.0,
+          "packed_full_centers": 55,
+          "packed_residual": 103.0,
+          "minimum_centers_required": 56,
+          "maximum_centers_at_80pct": 69,
+          "utilization_at_minimum_centers": 0.991339,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 225000,
+      "school_entity_count_all": 31,
+      "school_entity_count_grade_2_9_positive": 29,
+      "campus_count_context": 30,
+      "students_grades_2_9_expanded": 8586.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 2766.0,
+        "estimated": 5820.0
+      },
+      "fee_range_crossing_entity_count": 1,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 429.3,
+          "packed_full_centers": 2,
+          "packed_residual": 29.3,
+          "minimum_centers_required": 3,
+          "maximum_centers_at_80pct": 2,
+          "utilization_at_minimum_centers": 0.7155,
+          "below_target_utilization": true
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 858.6,
+          "packed_full_centers": 4,
+          "packed_residual": 58.6,
+          "minimum_centers_required": 5,
+          "maximum_centers_at_80pct": 5,
+          "utilization_at_minimum_centers": 0.8586,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 1717.2,
+          "packed_full_centers": 8,
+          "packed_residual": 117.2,
+          "minimum_centers_required": 9,
+          "maximum_centers_at_80pct": 10,
+          "utilization_at_minimum_centers": 0.954,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 8586.0,
+          "packed_full_centers": 42,
+          "packed_residual": 186.0,
+          "minimum_centers_required": 43,
+          "maximum_centers_at_80pct": 53,
+          "utilization_at_minimum_centers": 0.998372,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 250000,
+      "school_entity_count_all": 24,
+      "school_entity_count_grade_2_9_positive": 23,
+      "campus_count_context": 24,
+      "students_grades_2_9_expanded": 7077.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 2086.0,
+        "estimated": 4991.0
+      },
+      "fee_range_crossing_entity_count": 2,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 353.85,
+          "packed_full_centers": 1,
+          "packed_residual": 153.85,
+          "minimum_centers_required": 2,
+          "maximum_centers_at_80pct": 2,
+          "utilization_at_minimum_centers": 0.884625,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 707.7,
+          "packed_full_centers": 3,
+          "packed_residual": 107.7,
+          "minimum_centers_required": 4,
+          "maximum_centers_at_80pct": 4,
+          "utilization_at_minimum_centers": 0.884625,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 1415.4,
+          "packed_full_centers": 7,
+          "packed_residual": 15.4,
+          "minimum_centers_required": 8,
+          "maximum_centers_at_80pct": 8,
+          "utilization_at_minimum_centers": 0.884625,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 7077.0,
+          "packed_full_centers": 35,
+          "packed_residual": 77.0,
+          "minimum_centers_required": 36,
+          "maximum_centers_at_80pct": 44,
+          "utilization_at_minimum_centers": 0.982917,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 300000,
+      "school_entity_count_all": 20,
+      "school_entity_count_grade_2_9_positive": 19,
+      "campus_count_context": 20,
+      "students_grades_2_9_expanded": 5650.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 1534.0,
+        "estimated": 4116.0
+      },
+      "fee_range_crossing_entity_count": 3,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 282.5,
+          "packed_full_centers": 1,
+          "packed_residual": 82.5,
+          "minimum_centers_required": 2,
+          "maximum_centers_at_80pct": 1,
+          "utilization_at_minimum_centers": 0.70625,
+          "below_target_utilization": true
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 565.0,
+          "packed_full_centers": 2,
+          "packed_residual": 165.0,
+          "minimum_centers_required": 3,
+          "maximum_centers_at_80pct": 3,
+          "utilization_at_minimum_centers": 0.941667,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 1130.0,
+          "packed_full_centers": 5,
+          "packed_residual": 130.0,
+          "minimum_centers_required": 6,
+          "maximum_centers_at_80pct": 7,
+          "utilization_at_minimum_centers": 0.941667,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 5650.0,
+          "packed_full_centers": 28,
+          "packed_residual": 50.0,
+          "minimum_centers_required": 29,
+          "maximum_centers_at_80pct": 35,
+          "utilization_at_minimum_centers": 0.974138,
+          "below_target_utilization": false
+        }
+      ]
+    },
+    {
+      "threshold_fee_max": 500000,
+      "school_entity_count_all": 17,
+      "school_entity_count_grade_2_9_positive": 16,
+      "campus_count_context": 17,
+      "students_grades_2_9_expanded": 4318.0,
+      "students_grades_2_9_by_source": {
+        "udise_backed": 1018.0,
+        "estimated": 3300.0
+      },
+      "fee_range_crossing_entity_count": 4,
+      "description": "Grade 2-9 enrollment associated with canonical school entities whose maximum fee reaches the cutoff.",
+      "capacity": [
+        {
+          "capture_rate": 0.05,
+          "captured": 215.9,
+          "packed_full_centers": 1,
+          "packed_residual": 15.9,
+          "minimum_centers_required": 2,
+          "maximum_centers_at_80pct": 1,
+          "utilization_at_minimum_centers": 0.53975,
+          "below_target_utilization": true
+        },
+        {
+          "capture_rate": 0.1,
+          "captured": 431.8,
+          "packed_full_centers": 2,
+          "packed_residual": 31.8,
+          "minimum_centers_required": 3,
+          "maximum_centers_at_80pct": 2,
+          "utilization_at_minimum_centers": 0.719667,
+          "below_target_utilization": true
+        },
+        {
+          "capture_rate": 0.2,
+          "captured": 863.6,
+          "packed_full_centers": 4,
+          "packed_residual": 63.6,
+          "minimum_centers_required": 5,
+          "maximum_centers_at_80pct": 5,
+          "utilization_at_minimum_centers": 0.8636,
+          "below_target_utilization": false
+        },
+        {
+          "capture_rate": 1.0,
+          "captured": 4318.0,
+          "packed_full_centers": 21,
+          "packed_residual": 118.0,
+          "minimum_centers_required": 22,
+          "maximum_centers_at_80pct": 26,
+          "utilization_at_minimum_centers": 0.981364,
+          "below_target_utilization": false
+        }
+      ]
+    }
+  ]
+}

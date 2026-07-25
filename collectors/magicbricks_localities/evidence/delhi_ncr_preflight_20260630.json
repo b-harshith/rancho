@@ -1,0 +1,90 @@
+{
+  "audit_type": "bounded_source_mapping_and_parser_preflight",
+  "canonical_city_id": "delhi_ncr",
+  "collected_at_start": "2026-06-30T10:03:15.227836Z",
+  "collected_at_end": "2026-06-30T10:03:29.998740Z",
+  "status": "pass",
+  "production_crawl": false,
+  "request_policy": "Public HTTPS pages, serialized bounded requests; URLs reduced to non-sensitive paths in this evidence file.",
+  "components": [
+    {
+      "configured_source_city_id": "2624",
+      "configured_source_city_name": "New delhi",
+      "source_returned_city_id": "2624",
+      "source_returned_city_name": "New delhi",
+      "redacted_request_path": "/localities-in-new-delhi",
+      "http_status": 200,
+      "artifact_path": "artifacts/page_2624.json",
+      "artifact_sha256": "f2c4db71219c5354951e62c3b30ad450e030b60af737ca5b90df4965fd1331ad",
+      "sample_size": 20,
+      "city_matches": 20,
+      "match_pct": 100.0,
+      "pass": true
+    },
+    {
+      "configured_source_city_id": "6403",
+      "configured_source_city_name": "Noida",
+      "source_returned_city_id": "6403",
+      "source_returned_city_name": "Noida",
+      "redacted_request_path": "/localities-in-noida",
+      "http_status": 200,
+      "artifact_path": "artifacts/page_6403.json",
+      "artifact_sha256": "d9e3bef36c76734fa1b316facf71269221f75da378ee74b1d866195537cd8e2f",
+      "sample_size": 20,
+      "city_matches": 20,
+      "match_pct": 100.0,
+      "pass": true
+    },
+    {
+      "configured_source_city_id": "2951",
+      "configured_source_city_name": "Gurgaon",
+      "source_returned_city_id": "2951",
+      "source_returned_city_name": "Gurgaon",
+      "redacted_request_path": "/localities-in-gurgaon",
+      "http_status": 200,
+      "artifact_path": "artifacts/page_2951.json",
+      "artifact_sha256": "43f50496043a773ee1f896e53ba6efe633bac87097892768aed3c1f04bca67ee",
+      "sample_size": 20,
+      "city_matches": 20,
+      "match_pct": 100.0,
+      "pass": true
+    },
+    {
+      "configured_source_city_id": "6146",
+      "configured_source_city_name": "Ghaziabad",
+      "source_returned_city_id": "6146",
+      "source_returned_city_name": "Ghaziabad",
+      "redacted_request_path": "/localities-in-ghaziabad",
+      "http_status": 200,
+      "artifact_path": "artifacts/page_6146.json",
+      "artifact_sha256": "b90fddb1f20bd99edae32ec3cf9f38df9a349c3202ee326e730f7b1065e401d5",
+      "sample_size": 20,
+      "city_matches": 20,
+      "match_pct": 100.0,
+      "pass": true
+    },
+    {
+      "configured_source_city_id": "2944",
+      "configured_source_city_name": "Faridabad",
+      "source_returned_city_id": "2944",
+      "source_returned_city_name": "Faridabad",
+      "redacted_request_path": "/localities-in-faridabad",
+      "http_status": 200,
+      "artifact_path": "artifacts/page_2944.json",
+      "artifact_sha256": "9e105b5068c6b22087c6944f0fbd6837d29d2393d7f2f333ef7feb934880eec5",
+      "sample_size": 20,
+      "city_matches": 20,
+      "match_pct": 100.0,
+      "pass": true
+    }
+  ],
+  "sampled_details": [
+    {"sample_index": 1, "source_entity_id": "78191", "source_city_id": "2624", "source_returned_city_name": "New Delhi", "artifact_path": "artifacts/detail_78191.json", "artifact_sha256": "32d9aa64c569a28c2109275be23082253eca52bd4c4b7c5784c326c9bd27b881", "identity_and_coordinates_parsed": true},
+    {"sample_index": 2, "source_entity_id": "77692", "source_city_id": "2624", "source_returned_city_name": "New Delhi", "artifact_path": "artifacts/detail_77692.json", "artifact_sha256": "a9594322fd96feb610bbb8748a55b7b59c97cad921fe87ab6c8811e49f2e1ce9", "identity_and_coordinates_parsed": true},
+    {"sample_index": 3, "source_entity_id": "84415", "source_city_id": "2624", "source_returned_city_name": "New Delhi", "artifact_path": "artifacts/detail_84415.json", "artifact_sha256": "f18a8fffb3f353b73154ed4ad10e5ca0a803b9522668cb5f4f7f04be1da7ec20", "identity_and_coordinates_parsed": true},
+    {"sample_index": 4, "source_entity_id": "53159", "source_city_id": "2624", "source_returned_city_name": "New Delhi", "artifact_path": "artifacts/detail_53159.json", "artifact_sha256": "c1c4a86bc2c29c068c3f0e09ad591a9883e899b75538fabd566511a5864f972b", "identity_and_coordinates_parsed": true},
+    {"sample_index": 5, "source_entity_id": "53177", "source_city_id": "2624", "source_returned_city_name": "New Delhi", "artifact_path": "artifacts/detail_53177.json", "artifact_sha256": "ac6415a1e4155451e3209a2201254a772606d6dffd3e8493890989aaf1a477cd", "identity_and_coordinates_parsed": true}
+  ],
+  "detail_sample_summary": {"required": 5, "completed": 5, "match_pct": 100.0},
+  "evidence_origin": "Reconstructed without new requests from the bounded /tmp preflight raw metadata, content hashes, parser output and manifest produced earlier on 2026-06-30."
+}

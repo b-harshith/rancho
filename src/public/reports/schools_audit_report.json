@@ -1,0 +1,1618 @@
+{
+  "source_profile": {
+    "record_count": 2015,
+    "exact_duplicate_names": 128,
+    "normalized_duplicate_names": 172,
+    "duplicate_coordinate_points": 129,
+    "rows_with_na_address": 810,
+    "rows_with_na_pincode": 821,
+    "rows_with_unknown_area": 108,
+    "rows_missing_udise_code": 946,
+    "rows_missing_hex_id": 101,
+    "rows_missing_zone": 101,
+    "rows_missing_fee_bracket_min": 101,
+    "rows_missing_fee_bracket_max": 133,
+    "rows_missing_rank_in_bracket": 101,
+    "students_total_max": 8159.0,
+    "students_max": 5709.0,
+    "fee_max": 1811000.0
+  },
+  "geocode_summary": {
+    "google_match": 1365,
+    "google_weak_match": 10,
+    "fallback_source_coords": 0,
+    "status_breakdown": {
+      "google_match": 1365,
+      "reverse_geocoded_source": 640,
+      "google_weak_match": 10
+    },
+    "confidence_min": 0.6,
+    "confidence_median": 0.84,
+    "confidence_mean": 0.831,
+    "distance_median_m": 0.3,
+    "distance_mean_m": 3857.2
+  },
+  "quality_flags": {
+    "rows_with_distance_over_2500m": 273,
+    "rows_with_confidence_below_0_8": 884
+  },
+  "high_distance_examples": [
+    {
+      "name": "JAIN International Residential School",
+      "area": "KANAKAPUR ROAD",
+      "source_lat": 12.8777458,
+      "source_lon": 77.5838437,
+      "google_lat": 12.638819,
+      "google_lon": 77.4423653,
+      "distance_m": 30679.7,
+      "query": "JAIN International Residential School, KANAKAPUR ROAD, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "The School of Raya",
+      "area": "Hennur Main Road",
+      "source_lat": 13.0208861,
+      "source_lon": 77.6299432,
+      "google_lat": 13.118127699999999,
+      "google_lon": 77.67078769999999,
+      "distance_m": 11682.8,
+      "query": "The School of Raya, Hennur Main Road, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Sharanya Narayani International School",
+      "area": "Whitefield",
+      "source_lat": 12.956924,
+      "source_lon": 77.7007577,
+      "google_lat": 13.1012088,
+      "google_lon": 77.90937749999999,
+      "distance_m": 27715.9,
+      "query": "Sharanya Narayani International School, Whitefield, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Greenwood High International School",
+      "area": "Bengaluru",
+      "source_lat": 12.8995793,
+      "source_lon": 77.7490609,
+      "google_lat": 12.927152999999999,
+      "google_lon": 77.5362298,
+      "distance_m": 23270.1,
+      "query": "Greenwood High International School, Bengaluru, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Head Start Educational Academy",
+      "area": "Harohalli",
+      "source_lat": 12.968439,
+      "source_lon": 77.7353645,
+      "google_lat": 12.859213599999999,
+      "google_lon": 77.7355966,
+      "distance_m": 12145.3,
+      "query": "Head Start Educational Academy, Harohalli, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "National Academy For Learning",
+      "area": "Basaveshwar Nagar",
+      "source_lat": 12.944766,
+      "source_lon": 77.5044599,
+      "google_lat": 12.9879128,
+      "google_lon": 77.5417703,
+      "distance_m": 6274.0,
+      "query": "National Academy For Learning, Basaveshwar Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "MODERN ENGLISH MEDIUM SCHOOL",
+      "area": "1st Stage,BTM Layout",
+      "source_lat": 12.9212043,
+      "source_lon": 77.6070474,
+      "google_lat": 12.9515259,
+      "google_lon": 77.61038409999999,
+      "distance_m": 3390.9,
+      "query": "MODERN ENGLISH MEDIUM SCHOOL, 1st Stage,BTM Layout, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "JYOTHI ENGLISH SCHOOL",
+      "area": "Sarjapur",
+      "source_lat": 12.8611097,
+      "source_lon": 77.78703279999999,
+      "google_lat": 13.0080932,
+      "google_lon": 77.69937879999999,
+      "distance_m": 18903.9,
+      "query": "JYOTHI ENGLISH SCHOOL, Sarjapur, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Jawahar Navodaya Vidyalaya",
+      "area": "Bengaluru",
+      "source_lat": 12.9700247,
+      "source_lon": 77.6536125,
+      "google_lat": 13.1492246,
+      "google_lon": 77.67385840000001,
+      "distance_m": 20046.4,
+      "query": "Jawahar Navodaya Vidyalaya, Bengaluru, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "New Ushodaya High School",
+      "area": "Subhash Nagar",
+      "source_lat": 12.9722875,
+      "source_lon": 77.5683899,
+      "google_lat": 12.969157,
+      "google_lon": 77.6295159,
+      "distance_m": 6632.6,
+      "query": "New Ushodaya High School, Subhash Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Vishwa Vidyapeeth School Magadha",
+      "area": "Varthur",
+      "source_lat": 12.938265,
+      "source_lon": 77.7468954,
+      "google_lat": 12.9256187,
+      "google_lon": 77.772316,
+      "distance_m": 3093.1,
+      "query": "Vishwa Vidyapeeth School Magadha, Varthur, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "INFANT JESUS HIGH SCHOOL",
+      "area": "Hennur Main Road",
+      "source_lat": 13.0097347,
+      "source_lon": 77.625625,
+      "google_lat": 13.032946599999999,
+      "google_lon": 77.6324545,
+      "distance_m": 2685.0,
+      "query": "INFANT JESUS HIGH SCHOOL, Hennur Main Road, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "COLONEL HILL ENGLISH SCHOOL",
+      "area": "Sulthangunta,Shivaji Nagar",
+      "source_lat": 12.9905292,
+      "source_lon": 77.603164,
+      "google_lat": 12.9788798,
+      "google_lon": 77.5795028,
+      "distance_m": 2872.4,
+      "query": "COLONEL HILL ENGLISH SCHOOL, Sulthangunta,Shivaji Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "NEHRU ENGLISH HIGH SCHOOL",
+      "area": "Basaveshwar Nagar",
+      "source_lat": 12.991924,
+      "source_lon": 77.6106013,
+      "google_lat": 13.035471600000001,
+      "google_lon": 77.6091785,
+      "distance_m": 4844.7,
+      "query": "NEHRU ENGLISH HIGH SCHOOL, Basaveshwar Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Jain Heritage School",
+      "area": "Hebbal Kempapura",
+      "source_lat": 13.0311599,
+      "source_lon": 77.76047109999999,
+      "google_lat": 13.0484406,
+      "google_lon": 77.6014275,
+      "distance_m": 17335.6,
+      "query": "Jain Heritage School, Hebbal Kempapura, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "National Public School",
+      "area": "Electronic City",
+      "source_lat": 12.969271,
+      "source_lon": 77.6468843,
+      "google_lat": 12.8297847,
+      "google_lon": 77.68190109999999,
+      "distance_m": 15967.8,
+      "query": "National Public School, Electronic City, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "Womens Peace League School",
+      "area": "Shankarapura",
+      "source_lat": 34.0836708,
+      "source_lon": 74.7972825,
+      "google_lat": 12.9490707,
+      "google_lon": 77.56997249999999,
+      "distance_m": 2366700.8,
+      "query": "Womens Peace League School, Shankarapura, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Bethany High School",
+      "area": "2nd Stage,Nagarbhavi",
+      "source_lat": 12.8613691,
+      "source_lon": 77.7866469,
+      "google_lat": 12.863902999999999,
+      "google_lon": 77.73366999999999,
+      "distance_m": 5749.9,
+      "query": "Bethany High School, 2nd Stage,Nagarbhavi, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "St. Anthonys Church School",
+      "area": "Chandra Layout",
+      "source_lat": 12.9557468,
+      "source_lon": 77.7043358,
+      "google_lat": 13.0221793,
+      "google_lon": 77.700172,
+      "distance_m": 7400.7,
+      "query": "St. Anthonys Church School, Chandra Layout, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "Brilliant School",
+      "area": "Bengaluru",
+      "source_lat": 12.9603867,
+      "source_lon": 77.7154698,
+      "google_lat": 12.984041399999999,
+      "google_lon": 77.6574229,
+      "distance_m": 6817.6,
+      "query": "Brilliant School, Bengaluru, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "DELHI PUBLIC SCHOOL",
+      "area": "Volagerekallahalli",
+      "source_lat": 12.8892105,
+      "source_lon": 77.7738188,
+      "google_lat": 13.061648799999999,
+      "google_lon": 77.5092535,
+      "distance_m": 34488.5,
+      "query": "DELHI PUBLIC SCHOOL, Volagerekallahalli, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "OASIS INTERNATIONAL SCHOOL",
+      "area": "Maruthi Sevanagar",
+      "source_lat": 12.9963965,
+      "source_lon": 77.62298179999999,
+      "google_lat": 13.09039,
+      "google_lon": 77.6657968,
+      "distance_m": 11434.5,
+      "query": "OASIS INTERNATIONAL SCHOOL, Maruthi Sevanagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "LILLY ROSE ENGLISH SCHOOL",
+      "area": "1st Stage,BTM Layout",
+      "source_lat": 12.9263653,
+      "source_lon": 77.60356139999999,
+      "google_lat": 13.0762059,
+      "google_lon": 77.5570077,
+      "distance_m": 17408.2,
+      "query": "LILLY ROSE ENGLISH SCHOOL, 560029, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "Nisarga Vidyanikethan",
+      "area": "Ramamurthy Nagar",
+      "source_lat": 13.0183047,
+      "source_lon": 77.6838683,
+      "google_lat": 13.0650579,
+      "google_lon": 77.5030037,
+      "distance_m": 20270.5,
+      "query": "Nisarga Vidyanikethan, Ramamurthy Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "SAI SHANKAR VIDYASHALA HIGH SCHOOL",
+      "area": "Yelahanka",
+      "source_lat": 13.1154662,
+      "source_lon": 77.6069977,
+      "google_lat": 13.1545355,
+      "google_lon": 77.5651649,
+      "distance_m": 6276.4,
+      "query": "SAI SHANKAR VIDYASHALA HIGH SCHOOL, Yelahanka, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "ADARSHA EDUCATION SOCIETY",
+      "area": "Hongasandra",
+      "source_lat": 12.8921587,
+      "source_lon": 77.6258438,
+      "google_lat": 12.923477,
+      "google_lon": 77.6115873,
+      "distance_m": 3809.9,
+      "query": "ADARSHA EDUCATION SOCIETY, Hongasandra, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Sri Vinayaka School",
+      "area": "Ambedkar Veedhi,Sampangi Rama Nagar",
+      "source_lat": 12.9708466,
+      "source_lon": 77.5846365,
+      "google_lat": 12.9368093,
+      "google_lon": 77.55770059999999,
+      "distance_m": 4779.6,
+      "query": "Sri Vinayaka School, Ambedkar Veedhi,Sampangi Rama Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Rajarajeshwari Vidya Mandira",
+      "area": "Banashankari Stage I,Banashankari",
+      "source_lat": 12.9446007,
+      "source_lon": 77.54150899999999,
+      "google_lat": 12.924871099999999,
+      "google_lon": 77.5662407,
+      "distance_m": 3463.6,
+      "query": "Rajarajeshwari Vidya Mandira, Banashankari Stage I,Banashankari, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "ST. PAULS ENGLISH SCHOOL",
+      "area": "2nd Phase,JP Nagar",
+      "source_lat": 12.9147566,
+      "source_lon": 77.5963451,
+      "google_lat": 13.0305889,
+      "google_lon": 77.5511975,
+      "distance_m": 13777.7,
+      "query": "ST. PAULS ENGLISH SCHOOL, 2nd Phase,JP Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Sainik School",
+      "area": "JP Nagar",
+      "source_lat": 12.9063433,
+      "source_lon": 77.5856825,
+      "google_lat": 12.957820199999999,
+      "google_lon": 77.50760629999999,
+      "distance_m": 10215.7,
+      "query": "Sainik School, JP Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "CAMBRIDGE SCHOOL",
+      "area": "Panchasheel Nagar,Vijaya Nagar",
+      "source_lat": 12.9727534,
+      "source_lon": 77.54312259999999,
+      "google_lat": 12.959859199999999,
+      "google_lon": 77.59402159999999,
+      "distance_m": 5698.7,
+      "query": "CAMBRIDGE SCHOOL, Panchasheel Nagar,Vijaya Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "St. Marys High School",
+      "area": "Bommasandra Industrial Area",
+      "source_lat": 12.83603,
+      "source_lon": 77.6459625,
+      "google_lat": 12.8275964,
+      "google_lon": 77.6785695,
+      "distance_m": 3657.5,
+      "query": "St. Marys High School, Bommasandra Industrial Area, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "GCIS Pre University College",
+      "area": "Jaladarsini Layout",
+      "source_lat": 13.0386443,
+      "source_lon": 77.5744127,
+      "google_lat": 12.9860747,
+      "google_lon": 77.71725190000001,
+      "distance_m": 16542.4,
+      "query": "GCIS Pre University College, Jaladarsini Layout, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "NEW CENTURY HPS AND HS SCHOOL",
+      "area": "Indiranagar",
+      "source_lat": 12.9971267,
+      "source_lon": 77.6142024,
+      "google_lat": 12.9675847,
+      "google_lon": 77.6419487,
+      "distance_m": 4453.0,
+      "query": "NEW CENTURY HPS AND HS SCHOOL, Indiranagar, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "Tippu Education Society",
+      "area": "Manayata Tech Park,Thanisandra",
+      "source_lat": 13.0474758,
+      "source_lon": 77.6199596,
+      "google_lat": 12.999106,
+      "google_lon": 77.5686856,
+      "distance_m": 7732.0,
+      "query": "Tippu Education Society, Manayata Tech Park,Thanisandra, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "CECILIA ENGLISH HIGHER PRIMARY SCHOOL",
+      "area": "Bengaluru",
+      "source_lat": 12.9715987,
+      "source_lon": 77.5945627,
+      "google_lat": 13.003789099999999,
+      "google_lon": 77.63530000000002,
+      "distance_m": 5682.8,
+      "query": "CECILIA ENGLISH HIGHER PRIMARY SCHOOL, Bengaluru, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Vivero International Preschool",
+      "area": "C V Raman Nagar",
+      "source_lat": 12.9855687,
+      "source_lon": 77.6639087,
+      "google_lat": 12.9969828,
+      "google_lon": 77.7019076,
+      "distance_m": 4308.3,
+      "query": "Vivero International Preschool, C V Raman Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Deeksha @ Sri Venkateshwara PU College",
+      "area": "Vidyanagar",
+      "source_lat": 13.0128291,
+      "source_lon": 77.6959703,
+      "google_lat": 13.161267599999999,
+      "google_lon": 77.63583179999999,
+      "distance_m": 17744.3,
+      "query": "Deeksha @ Sri Venkateshwara PU College, Vidyanagar, Bangalore, Karnataka, India",
+      "confidence": 0.75,
+      "status": "google_match"
+    },
+    {
+      "name": "MANJUNATHA HIGH SCHOOL",
+      "area": "Vijayanagar",
+      "source_lat": 12.9753616,
+      "source_lon": 77.5239502,
+      "google_lat": 13.0365229,
+      "google_lon": 77.5724987,
+      "distance_m": 8597.5,
+      "query": "MANJUNATHA HIGH SCHOOL, Vijayanagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Priyadarshini Public School",
+      "area": "Thammenahalli Village",
+      "source_lat": 13.0746992,
+      "source_lon": 77.5017187,
+      "google_lat": 13.010389799999999,
+      "google_lon": 77.5263721,
+      "distance_m": 7633.3,
+      "query": "Priyadarshini Public School, 560060, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "NARAYANA OLYMPIAD SCHOOL",
+      "area": "JP Nagar",
+      "source_lat": 12.8885191,
+      "source_lon": 77.62040449999999,
+      "google_lat": 12.8977551,
+      "google_lon": 77.6577045,
+      "distance_m": 4171.4,
+      "query": "NARAYANA OLYMPIAD SCHOOL, JP Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Global Residential School",
+      "area": "Hoskote",
+      "source_lat": 13.0692593,
+      "source_lon": 77.7982428,
+      "google_lat": 13.114663199999999,
+      "google_lon": 77.8393347,
+      "distance_m": 6730.2,
+      "query": "Global Residential School, Hoskote, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "VIBGYOR ROOTS &amp; RISE",
+      "area": "Panathur",
+      "source_lat": 12.938265,
+      "source_lon": 77.7468954,
+      "google_lat": 12.937645100000001,
+      "google_lon": 77.70028889999999,
+      "distance_m": 5051.3,
+      "query": "VIBGYOR ROOTS &amp; RISE, Panathur, Bangalore, Karnataka, India",
+      "confidence": 0.84,
+      "status": "google_match"
+    },
+    {
+      "name": "Feathertouch International",
+      "area": "Electronic City",
+      "source_lat": 12.8489799,
+      "source_lon": 77.6574782,
+      "google_lat": 12.8146545,
+      "google_lon": 77.671224,
+      "distance_m": 4097.4,
+      "query": "Feathertouch International, Electronic City, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Presidency School",
+      "area": "RT Nagar",
+      "source_lat": 13.0258741,
+      "source_lon": 77.5945332,
+      "google_lat": 13.0053887,
+      "google_lon": 77.6615113,
+      "distance_m": 7605.4,
+      "query": "Presidency School, RT Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Vivero International Preschool",
+      "area": "Sarjapur",
+      "source_lat": 12.8575579,
+      "source_lon": 77.7864057,
+      "google_lat": 12.912956699999999,
+      "google_lon": 77.63830229999999,
+      "distance_m": 17194.9,
+      "query": "Vivero International Preschool, Sarjapur, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "St.Patricks Academy",
+      "area": "Kodathi Village Road",
+      "source_lat": 12.8988662,
+      "source_lon": 77.7165929,
+      "google_lat": 12.9709427,
+      "google_lon": 77.60618269999999,
+      "distance_m": 14401.6,
+      "query": "St.Patricks Academy, Kodathi Village Road, Bangalore, Karnataka, India",
+      "confidence": 0.92,
+      "status": "google_match"
+    },
+    {
+      "name": "Sacred Heart Boys School",
+      "area": "Ashok Nagar",
+      "source_lat": 12.9664326,
+      "source_lon": 77.609957,
+      "google_lat": 12.9899729,
+      "google_lon": 77.6054834,
+      "distance_m": 2662.1,
+      "query": "Sacred Heart Boys School, Ashok Nagar, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Rashtrotthana Vidya Kendra",
+      "area": "Bengaluru",
+      "source_lat": 13.0123119,
+      "source_lon": 77.6673794,
+      "google_lat": 13.0682162,
+      "google_lon": 77.634492,
+      "distance_m": 7164.8,
+      "query": "Rashtrotthana Vidya Kendra, Bengaluru, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    },
+    {
+      "name": "Nagarjuna Vidyaniketan",
+      "area": "Ramagondanahalli",
+      "source_lat": 12.9558356,
+      "source_lon": 77.7411363,
+      "google_lat": 13.123043299999999,
+      "google_lon": 77.56467339999999,
+      "distance_m": 26666.5,
+      "query": "Nagarjuna Vidyaniketan, Ramagondanahalli, Bangalore, Karnataka, India",
+      "confidence": 0.98,
+      "status": "google_match"
+    }
+  ],
+  "low_confidence_examples": [
+    {
+      "name": "The International School Bangalore",
+      "area": "Sarjapur",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "The International School Bangalore, Sarjapur, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Christ Junior College - Residential",
+      "area": "Bengaluru",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Christ Junior College - Residential, CHRIST JUNIOR COLLEGE, HOSUR ROAD, BENGALURU 560029, SOUTH3, BENGALURU U SOUTH, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Bangalore International School",
+      "area": "Banjara Residency,Hennur Gardens",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Bangalore International School, Banjara Residency,Hennur Gardens, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Chaman Bhartiya School",
+      "area": "Bhartiya City",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Chaman Bhartiya School, Bhartiya City, thanisandra bangalore 560077, 560077, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "AKR MEMORIAL SCHOOL",
+      "area": "Horamavu",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "AKR MEMORIAL SCHOOL, Horamavu, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "C F ANDREW ENLISH HIGH SCHOOL",
+      "area": "Hennur Main Road",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "C F ANDREW ENLISH HIGH SCHOOL, Hennur Main Road, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "JET(Jaysree Education Trust)",
+      "area": "Chandapura",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "JET(Jaysree Education Trust), Chandapura, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "POORNA PRAGATI VIDYA MANDIR ASSOCIATION",
+      "area": "Udaya Nagar,Mahadevapura",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "POORNA PRAGATI VIDYA MANDIR ASSOCIATION, Udaya Nagar,Mahadevapura, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "COLONEL HILL ENGLISH SCHOOL",
+      "area": "Sulthangunta,Shivaji Nagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "COLONEL HILL ENGLISH SCHOOL, Sulthangunta,Shivaji Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "BEST HIGH SCHOOL",
+      "area": "HBR Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "BEST HIGH SCHOOL, HBR Layout, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "St.Jospeh High School",
+      "area": "KSRTC Colony",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "St.Jospeh High School, KSRTC Colony, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "J S S Public School",
+      "area": "Banashankari Stage II,Banashankari",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "J S S Public School, Banashankari Stage II,Banashankari, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "National Public School",
+      "area": "Electronic City",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "National Public School, Electronic City, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "St. Anthonys Church School",
+      "area": "Chandra Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "St. Anthonys Church School, Chandra Layout, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "RAM KISHAN INSTITUTE",
+      "area": "Sanjay Nagar",
+      "confidence": 0.6,
+      "status": "google_weak_match",
+      "query": "RAM KISHAN INSTITUTE, Sanjay Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "KHALASA PUBLIC SCHOOL",
+      "area": "2nd Block,Koramangala",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "KHALASA PUBLIC SCHOOL, 2nd Block,Koramangala, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "NEHRU SMARKA VIDYALAYA",
+      "area": "Basavanagudi",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "NEHRU SMARKA VIDYALAYA, Basavanagudi, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "S K ENGLISH HIGH SCHOOL",
+      "area": "Jaya Nagar East,Jayanagar",
+      "confidence": 0.6,
+      "status": "google_weak_match",
+      "query": "S K ENGLISH HIGH SCHOOL, Jaya Nagar East,Jayanagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "LILLY ROSE ENGLISH SCHOOL",
+      "area": "1st Stage,BTM Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "LILLY ROSE ENGLISH SCHOOL, 560029, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Hombe Gowda Boys High School",
+      "area": "Bannerghatta Main Road",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Hombe Gowda Boys High School, Bannerghatta Main Road, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "SAI SHANKAR VIDYASHALA HIGH SCHOOL",
+      "area": "Yelahanka",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "SAI SHANKAR VIDYASHALA HIGH SCHOOL, Yelahanka, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "BRIGHT WAY SCHOOL",
+      "area": "Subramanyapura",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "BRIGHT WAY SCHOOL, Subramanyapura, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "SSVP",
+      "area": "New Guddadahalli,Bapuji Nagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "SSVP, Sarjapura Anekal Bangalore, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Orchids International School Hennur",
+      "area": "Narayanapura",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Orchids International School Hennur, Narayanapura, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "BEST PUBLIC SCHOOL",
+      "area": "Sagayapura,Richards Town",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "BEST PUBLIC SCHOOL, Sagayapura,Richards Town, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Your Kids R Our Kids",
+      "area": "C V Raman Nagar",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Your Kids R Our Kids, C V Raman Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Your Kids R Our Kids",
+      "area": "HSR Layout",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Your Kids R Our Kids, HSR Layout, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Your Kids R Our Kids",
+      "area": "Kadubeesanahalli",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Your Kids R Our Kids, Kadubeesanahalli, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "GCIS Pre University College",
+      "area": "Malleshpalya",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "GCIS Pre University College, Malleshpalya, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "ADITHYA ENGLISH SCHOOL",
+      "area": "RT Nagar",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "ADITHYA ENGLISH SCHOOL, RT Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "NEW CENTURY HPS AND HS SCHOOL",
+      "area": "Indiranagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "NEW CENTURY HPS AND HS SCHOOL, Indiranagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Shreegandha Vidyodaya Nursery &amp; Prmary School",
+      "area": "Sahakar Nagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Shreegandha Vidyodaya Nursery &amp; Prmary School, Sahakar Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Deeksha @ Sri Venkateshwara PU College",
+      "area": "Vidyanagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Deeksha @ Sri Venkateshwara PU College, Vidyanagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Vivero International Preschool",
+      "area": "Manayata Tech Park",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Vivero International Preschool, Manayata Tech Park, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "BANGALORE PUBLIC SCHOOL",
+      "area": "SBI Colony,Koramangala",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "BANGALORE PUBLIC SCHOOL, SBI Colony,Koramangala, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "BHS HIGHER EDUCATION SOCIETY",
+      "area": "4th T Block East,Jayanagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "BHS HIGHER EDUCATION SOCIETY, 560011, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Royale Concorde International School",
+      "area": "Hennur Main Road",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Royale Concorde International School, Hennur Main Road, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "K L E SOCIETY SCHOOL",
+      "area": "Rajajinagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "K L E SOCIETY SCHOOL, 560072, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Envision High - The Future Plus School",
+      "area": "Devinagar",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Envision High - The Future Plus School, Devinagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Oi Playschool",
+      "area": "JP Nagar",
+      "confidence": 0.68,
+      "status": "reverse_geocoded_source",
+      "query": "Oi Playschool, JP Nagar, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "SARATHY INTERNATIONAL SCHOOL",
+      "area": "Kothanur",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "SARATHY INTERNATIONAL SCHOOL, Kothanur, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "SJR PUBLIC SCHOOL",
+      "area": "3rd Block,HBR Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "SJR PUBLIC SCHOOL, 560010, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Maitry Vidyaniketan",
+      "area": "NRI Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Maitry Vidyaniketan, NRI Layout, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Bangalore International Academy Jayanagar",
+      "area": "Basavanagudi",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Bangalore International Academy Jayanagar, Basavanagudi, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "CHISTIYA INTERNATIONAL SCHOOL",
+      "area": "Varthur",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "CHISTIYA INTERNATIONAL SCHOOL, Varthur, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "M.V.J. International School",
+      "area": "Marathahalli Village,Marathahalli",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "M.V.J. International School, Marathahalli Village,Marathahalli, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "V.S.S. International Public School",
+      "area": "Nagdevanahalli",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "V.S.S. International Public School, Nagdevanahalli, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Euro School - HSR",
+      "area": "HSR Layout",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Euro School - HSR, HSR Layout, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Auden Institute of Education",
+      "area": "Hosakerehalli",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Auden Institute of Education, Hosakerehalli, Bangalore, Karnataka, India"
+    },
+    {
+      "name": "Incarnations Montissori",
+      "area": "Jayanagar",
+      "confidence": 0.75,
+      "status": "google_match",
+      "query": "Incarnations Montissori, Jayanagar, Bangalore, Karnataka, India"
+    }
+  ],
+  "duplicate_name_examples": [
+    {
+      "normalized_name": "kidzee",
+      "count": 65,
+      "examples": [
+        {
+          "name": "Kidzee",
+          "area": "Whitefield",
+          "address": "NA"
+        },
+        {
+          "name": "Kidzee",
+          "area": "Bommanahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Kidzee",
+          "area": "Devarachikkana Halli",
+          "address": "NA"
+        },
+        {
+          "name": "Kidzee",
+          "area": "HSR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Kidzee",
+          "area": "Sarjapur Main Rd",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "hello kids",
+      "count": 27,
+      "examples": [
+        {
+          "name": "Hello Kids",
+          "area": "Basapura",
+          "address": "NA"
+        },
+        {
+          "name": "Hello Kids",
+          "area": "JP Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Hello Kids",
+          "area": "Bellandur",
+          "address": "NA"
+        },
+        {
+          "name": "Hello Kids",
+          "area": "Hebbal",
+          "address": "NA"
+        },
+        {
+          "name": "Hello Kids",
+          "area": "Nagappa Reddy Layout",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "poddar jumbo kids",
+      "count": 21,
+      "examples": [
+        {
+          "name": "Poddar Jumbo Kids",
+          "area": "SBM Colony",
+          "address": "NA"
+        },
+        {
+          "name": "Poddar Jumbo Kids",
+          "area": "Banaswadi",
+          "address": "NA"
+        },
+        {
+          "name": "Poddar Jumbo Kids",
+          "area": "BTM 2nd Stage",
+          "address": "NA"
+        },
+        {
+          "name": "Poddar Jumbo Kids",
+          "area": "Doddakammanahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Poddar Jumbo Kids",
+          "area": "Koramangala",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "bachpan play school",
+      "count": 17,
+      "examples": [
+        {
+          "name": "Bachpan Play School",
+          "area": "Electronic City",
+          "address": "NA"
+        },
+        {
+          "name": "Bachpan Play School",
+          "area": "Koramangala",
+          "address": "NA"
+        },
+        {
+          "name": "Bachpan Play School",
+          "area": "Domlur",
+          "address": "NA"
+        },
+        {
+          "name": "Bachpan Play School",
+          "area": "HSR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Bachpan Play School",
+          "area": "RT Nagar",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "national public school",
+      "count": 16,
+      "examples": [
+        {
+          "name": "National Public School",
+          "area": "5th Block,Rajaji Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "National Public School",
+          "area": "2nd Stage,Nagarbhavi",
+          "address": "NA"
+        },
+        {
+          "name": "National Public School",
+          "area": "Electronic City",
+          "address": "NA"
+        },
+        {
+          "name": "National Public School",
+          "area": "Sector 4,HSR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "National Public School",
+          "area": "Yelahanka Satellite Town,Yelahanka",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "time kids",
+      "count": 15,
+      "examples": [
+        {
+          "name": "Time Kids",
+          "area": "AECS Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Time Kids",
+          "area": "Brindavan Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Time Kids",
+          "area": "BTM 2nd Stage",
+          "address": "NA"
+        },
+        {
+          "name": "Time Kids",
+          "area": "Battarahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Time Kids",
+          "area": "Vishwanatha Layout",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "euro kids",
+      "count": 12,
+      "examples": [
+        {
+          "name": "Euro kids",
+          "area": "Bharath Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Euro Kids",
+          "area": "Vijayanagar",
+          "address": "HOODI36/183, behind KPS yard,Hoodi, Mahadevapura, Bangalore, 560048"
+        },
+        {
+          "name": "Euro kids",
+          "area": "Ramamurthy Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Euro kids",
+          "area": "Thanisandra",
+          "address": "NA"
+        },
+        {
+          "name": "Euro kids",
+          "area": "JP Nagar",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "planet kids",
+      "count": 12,
+      "examples": [
+        {
+          "name": "Planet Kids",
+          "area": "Basavanagudi",
+          "address": "NA"
+        },
+        {
+          "name": "Planet Kids",
+          "area": "Banashankari",
+          "address": "NA"
+        },
+        {
+          "name": "Planet Kids",
+          "area": "JP Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Planet Kids",
+          "area": "Koramangala",
+          "address": "NA"
+        },
+        {
+          "name": "Planet Kids",
+          "area": "Vijayanagar",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "i play i learn",
+      "count": 10,
+      "examples": [
+        {
+          "name": "I Play I Learn",
+          "area": "JP Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "I Play I Learn",
+          "area": "Bellandur",
+          "address": "NA"
+        },
+        {
+          "name": "I Play I Learn",
+          "area": "Yelahanka",
+          "address": "NA"
+        },
+        {
+          "name": "I Play I Learn",
+          "area": "AECS Layout",
+          "address": "NA"
+        },
+        {
+          "name": "I Play I Learn",
+          "area": "Doddakammanahalli",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "narayana e techno school",
+      "count": 10,
+      "examples": [
+        {
+          "name": "Narayana e-Techno school",
+          "area": "Bellandur",
+          "address": "NARAYANA TECHNO SCHOOL, BNR DIAMOND, GREENGLEN LAYOUT,BELLANDUR,BANGALORE-560103."
+        },
+        {
+          "name": "NARAYANA E TECHNO SCHOOL",
+          "area": "Popular Colony,Garvebhavi Palya",
+          "address": "no. 89 G B Palya Hosur Road Beside maruthi suzuki showroomhosur road bangalore"
+        },
+        {
+          "name": "NARAYANA E-TECHNO SCHOOL",
+          "area": "Ganapathipura,Konanakunte",
+          "address": "5, J.P.Nagar 7th Phase, Puttenahalli,"
+        },
+        {
+          "name": "NARAYANA E TECHNO SCHOOL",
+          "area": "DODDABETTAHALLI",
+          "address": "YELAHANKA, NORTH4, BENGALURU U NORTH"
+        },
+        {
+          "name": "NARAYANA E-TECHNO SCHOOL",
+          "area": "Thubarahalli,Munnekollal",
+          "address": "beside vishnu residency ,near sriram samrudhi apt thubarahalli"
+        }
+      ]
+    },
+    {
+      "normalized_name": "podar jumbo kids plus",
+      "count": 10,
+      "examples": [
+        {
+          "name": "Podar Jumbo Kids Plus",
+          "area": "Vidyaranyapura",
+          "address": "NA"
+        },
+        {
+          "name": "Podar Jumbo Kids Plus",
+          "area": "Sarjapur Main Rd",
+          "address": "NA"
+        },
+        {
+          "name": "Podar Jumbo Kids Plus",
+          "area": "Sector 7, HSR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Podar Jumbo Kids Plus",
+          "area": "Indiranagar",
+          "address": "NA"
+        },
+        {
+          "name": "Podar Jumbo Kids Plus",
+          "area": "Banashankari 3rd Stage",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "sri chaitanya techno school",
+      "count": 10,
+      "examples": [
+        {
+          "name": "Sri Chaitanya Techno School",
+          "area": "Sector 2,HSR Layout 5th Sector",
+          "address": "SRI CHAITANYA TECHNO"
+        },
+        {
+          "name": "SRI CHAITANYA TECHNO SCHOOL",
+          "area": "Veerannapalya,Nagavara",
+          "address": "75/A Hulimavu gate, bannerughatta road"
+        },
+        {
+          "name": "SRI CHAITANYA TECHNO SCHOOL",
+          "area": "KR Puram",
+          "address": "SHAMANNA GARDEN BEHIND KAVERI BEKARI DEVASANDRA MAIN ROAD K R PURAM BANGALORE -36"
+        },
+        {
+          "name": "SRI CHAITANYA TECHNO SCHOOL",
+          "area": "Horamavu",
+          "address": "RAGHAVENDRA CIRCLE TC PALYA main road R M NAGAR"
+        },
+        {
+          "name": "Sri Chaitanya Techno School",
+          "area": "JP Nagar",
+          "address": "32/1,MARUTHI LAYOUT,NEAR SHIVA TEMPLE,KUDLU,BNG-68kudlu"
+        }
+      ]
+    },
+    {
+      "normalized_name": "maple bear canadian pre school",
+      "count": 9,
+      "examples": [
+        {
+          "name": "Maple Bear Canadian Pre School",
+          "area": "Stage 2,BTM 2nd Stage",
+          "address": "NA"
+        },
+        {
+          "name": "Maple Bear Canadian Pre School",
+          "area": "1st Stage,BTM Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Maple Bear Canadian Pre School",
+          "area": "Kasavanahalli Village",
+          "address": "NA"
+        },
+        {
+          "name": "Maple Bear Canadian Pre-school",
+          "area": "Konanakunte",
+          "address": "NA"
+        },
+        {
+          "name": "Maple Bear Canadian Pre School",
+          "area": "Mahadevapura",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "the tree house",
+      "count": 9,
+      "examples": [
+        {
+          "name": "The Tree House",
+          "area": "Sanjay Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "The Tree House",
+          "area": "Doddanekkundi",
+          "address": "NA"
+        },
+        {
+          "name": "The Tree House",
+          "area": "Maruthi Sevanagar",
+          "address": "NA"
+        },
+        {
+          "name": "The Tree House",
+          "area": "RT Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "The Tree House",
+          "area": "Bannerghatta Main Road",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "bright kid montessori house",
+      "count": 7,
+      "examples": [
+        {
+          "name": "Bright Kid Montessori House",
+          "area": "RT Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Bright Kid Montessori House",
+          "area": "Kammanahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Bright Kid Montessori House",
+          "area": "Ramamurthy Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Bright Kid Montessori House",
+          "area": "Sahakar Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Bright Kid Montessori House",
+          "area": "Arekere",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "sesame street preschool",
+      "count": 7,
+      "examples": [
+        {
+          "name": "Sesame Street Preschool",
+          "area": "Varthur",
+          "address": "NA"
+        },
+        {
+          "name": "Sesame Street Preschool",
+          "area": "Haralur",
+          "address": "NA"
+        },
+        {
+          "name": "Sesame Street Preschool",
+          "area": "Vinayaka Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Sesame Street Preschool",
+          "area": "Sector 7, HSR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Sesame Street Preschool",
+          "area": "Yelahanka New Town",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "shanti juniors",
+      "count": 7,
+      "examples": [
+        {
+          "name": "Shanti Juniors",
+          "area": "Banashankari 3rd Stage",
+          "address": "NA"
+        },
+        {
+          "name": "Shanti Juniors",
+          "area": "JP Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Shanti Juniors",
+          "area": "Krishnarajapura",
+          "address": "NA"
+        },
+        {
+          "name": "Shanti Juniors",
+          "area": "Mallathahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Shanti Juniors",
+          "area": "New Tippasandra",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "kids castle preschool",
+      "count": 6,
+      "examples": [
+        {
+          "name": "Kids Castle Preschool",
+          "area": "Mahadevapura",
+          "address": "NA"
+        },
+        {
+          "name": "Kids Castle Preschool",
+          "area": "Bommanahalli",
+          "address": "NA"
+        },
+        {
+          "name": "Kids Castle Preschool",
+          "area": "Malleshpalya",
+          "address": "NA"
+        },
+        {
+          "name": "Kids Castle Preschool",
+          "area": "Yelahanka",
+          "address": "NA"
+        },
+        {
+          "name": "Kids Castle Preschool",
+          "area": "JP Nagar",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "oi playschool",
+      "count": 6,
+      "examples": [
+        {
+          "name": "Oi Playschool",
+          "area": "JP Nagar",
+          "address": "NA"
+        },
+        {
+          "name": "Oi Playschool",
+          "area": "AECS Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Oi Playschool",
+          "area": "Banashankari",
+          "address": "NA"
+        },
+        {
+          "name": "Oi Playschool",
+          "area": "HRBR Layout",
+          "address": "NA"
+        },
+        {
+          "name": "Oi Playschool",
+          "area": "HSR Layout",
+          "address": "NA"
+        }
+      ]
+    },
+    {
+      "normalized_name": "orchids the international school",
+      "count": 6,
+      "examples": [
+        {
+          "name": "Orchids The International School",
+          "area": "Panathur",
+          "address": "PANATTUR, Bangalore 103"
+        },
+        {
+          "name": "ORCHIDS The International School",
+          "area": "Kengeri Satellite Town",
+          "address": "14 18 TH CROSS 18 MAIN MC LAYOUTVIJAYNAGARA BANGALORE"
+        },
+        {
+          "name": "Orchids The International School",
+          "area": "BTM Layout",
+          "address": "24-39 Sheryas colony J P Nagar 7th Phase KothanoorBangalore-560078"
+        },
+        {
+          "name": "Orchids The International School",
+          "area": "Bannerughatta",
+          "address": "Sy. No.93/2 situated at Hommadevanahalli Village Begur Hobli, Bengaluru South, Taluk, Bengaluru, Kar"
+        },
+        {
+          "name": "Orchids The International School",
+          "area": "Malleshwaram West",
+          "address": "24 OTC Main road Bangalore 560002"
+        }
+      ]
+    }
+  ],
+  "input_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/new data/schools.json",
+  "output_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/new data/schools_geocoded.json",
+  "public_output_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/src/public/data/schools.json"
+}

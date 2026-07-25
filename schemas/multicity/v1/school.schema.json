@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/school.schema.json",
+  "title": "Canonical school v1",
+  "allOf": [{"$ref": "common_entity.schema.json"}],
+  "type": "object",
+  "required": ["entity_kind", "udise_code", "enrollment", "annual_fee_min", "annual_fee_max"],
+  "properties": {
+    "entity_kind": {"const": "school"},
+    "udise_code": {"type": ["string", "null"]},
+    "enrollment": {"type": ["integer", "null"], "minimum": 0},
+    "annual_fee_min": {"type": ["number", "null"], "minimum": 0},
+    "annual_fee_max": {"type": ["number", "null"], "minimum": 0}
+  }
+}

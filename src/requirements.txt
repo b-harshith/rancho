@@ -1,0 +1,4 @@
+requests
+h3
+shapely
+psycopg2-binary

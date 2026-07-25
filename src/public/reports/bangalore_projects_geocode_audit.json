@@ -1,0 +1,50 @@
+{
+  "source_profile": {
+    "record_count": 8920,
+    "duplicate_names": 77,
+    "duplicate_coordinate_points": 377,
+    "missing_hex_id": 8920,
+    "missing_price_sqft": 7171,
+    "min_price_gt_max_price": 0,
+    "quartile_analysis_1": {
+      "Q4": 2273,
+      "Q3": 2206,
+      "Q2": 2280,
+      "Q1": 2161
+    },
+    "quartile_analysis_2": {
+      "Q4-Sub-Q3": 562,
+      "Q4-Sub-Q1": 554,
+      "Q4-Sub-Q4": 559,
+      "NA": 6675,
+      "Q4-Sub-Q2": 570
+    },
+    "price_sqft_min": 0.0,
+    "price_sqft_median": 0.0,
+    "price_sqft_max": 30000.0,
+    "max_price_median": 16460000.0,
+    "min_price_median": 12912010.5
+  },
+  "geocode_summary": {
+    "google_match": 6166,
+    "google_weak_match": 502,
+    "reverse_geocoded_source": 2252,
+    "fallback_source_coords": 0,
+    "status_breakdown": {
+      "google_match": 6166,
+      "google_weak_match": 502,
+      "reverse_geocoded_source": 2252
+    },
+    "confidence_min": 0.68,
+    "confidence_median": 0.92,
+    "confidence_mean": 0.868,
+    "distance_median_m": 0.0,
+    "distance_mean_m": 4535.2
+  },
+  "quality_flags": {
+    "rows_with_distance_over_2500m": 1067,
+    "rows_with_confidence_below_0_8": 2754
+  },
+  "input_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/new data/bangalore_projects_classified.json",
+  "output_path": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/new data/bangalore_projects_geocoded.json"
+}

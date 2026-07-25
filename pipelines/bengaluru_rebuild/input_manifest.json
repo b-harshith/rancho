@@ -1,0 +1,32 @@
+{
+  "manifest_version": "1.0.0",
+  "city_id": "bengaluru",
+  "status": "READY",
+  "runtime": {"python": ">=3.11", "external_packages": []},
+  "inputs": {
+    "master": {
+      "path": "DATA/final/bangalore_hex7_affluent_family_intelligence_master.json",
+      "sha256": "3ff13a21eef6ac45c772b5d42f4185900196f8a87eddd91537c78eabfe1fd0b2",
+      "role": "accepted baseline intelligence records"
+    },
+    "geometry": {
+      "path": "DATA/final/bangalore_hex7_affluent_family_intelligence.geojson",
+      "sha256": "9820bd4b876ca3e4fc8ef959b3f159c6f20df7c5dc3be88585eb4fd2bf5d5286",
+      "role": "accepted baseline H3 polygon geometry"
+    },
+    "residential": {
+      "path": "src/public/data/societies.json",
+      "sha256": "191abadcd155c43879f60cced9e72aaa0ca8841ac0beadcc39c13c48d6d0793f",
+      "role": "accepted baseline normalized residential layer"
+    }
+  },
+  "generator": {
+    "path": "pipelines/bengaluru_rebuild/rebuild.py",
+    "version": "1.0.0",
+    "method": "hash-locked staging reconstruction; master records are preserved, geometry is joined by hex_id, and aggregate artifacts are independently derived"
+  },
+  "limitations": [
+    "The original end-to-end generator is path-coupled to public and DATA/final destinations and is therefore not executed by this staging-only task.",
+    "This reconstruction proves deterministic packaging and aggregate consistency from the accepted baseline; it does not reproduce source collection."
+  ]
+}

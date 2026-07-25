@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDISE School Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --surface-hover: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --border-radius: 12px;
+            --border-color: #334155;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s, border-color 0.2s;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover {
+            color: var(--text-primary);
+        }
+        .nav-link.active {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        .container {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+
+        .input-field {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badge-success { background-color: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.2); }
+        .badge-secondary { background-color: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.2); }
+        .badge-info { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.2); }
+
+        .table-container {
+            overflow-x: auto;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: rgba(30, 41, 59, 0.75);
+            padding: 1rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background-color: var(--surface-hover);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .pagination-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
+            font-family: 'Outfit', sans-serif;
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+        }
+
+        .btn:hover:not(:disabled) {
+            background-color: var(--surface-hover);
+            border-color: #64748b;
+        }
+
+        .btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: var(--accent-hover);
+        }
+
+        .school-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+            font-weight: 500;
+        }
+
+        .school-link:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+
+        #loading {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(15, 23, 42, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            display: none;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+
+    <header>
+        <div style="display: flex; align-items: center; gap: 2.5rem;">
+            <h1>School Matching Tool</h1>
+            <nav style="display: flex; gap: 1.5rem;">
+                <a href="/" class="nav-link">Match Queue</a>
+                <a href="/udise" class="nav-link active">UDISE Directory</a>
+            </nav>
+        </div>
+        <div id="total-badge" class="badge badge-info">Schools: Loading...</div>
+    </header>
+
+    <div class="container">
+        <!-- Filter Card -->
+        <div class="card">
+            <div class="filter-bar">
+                <div class="filter-group" style="flex: 2;">
+                    <span class="filter-label">Search School</span>
+                    <input type="text" id="search-input" class="input-field" placeholder="Search school name or UDISE code..." oninput="triggerSearch()">
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Filter by Pincode</span>
+                    <select id="pincode-select" class="input-field" onchange="triggerSearch()">
+                        <option value="">All Pincodes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Match Status</span>
+                    <select id="status-select" class="input-field" onchange="triggerSearch()">
+                        <option value="all">All Statuses</option>
+                        <option value="matched">Matched Only</option>
+                        <option value="unmatched">Unmatched Only</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="card" style="flex: 1; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">UDISE Code</th>
+                            <th style="width: 30%;">UDISE School Name</th>
+                            <th style="width: 10%;">Pincode</th>
+                            <th style="width: 15%;">Status</th>
+                            <th style="width: 20%;">Matched Yellowslate School</th>
+                            <th style="width: 10%;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="directory-body">
+                        <!-- Table rows will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <div id="pagination-info" style="color: var(--text-secondary); font-size: 0.95rem;">
+                    Showing 0 to 0 of 0 schools
+                </div>
+                <div class="pagination-controls">
+                    <button class="btn" id="prev-btn" onclick="changePage(-1)">Previous</button>
+                    <span id="page-indicator" style="font-weight: 500; min-width: 60px; text-align: center;">Page 1 of 1</span>
+                    <button class="btn" id="next-btn" onclick="changePage(1)">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        let totalPages = 1;
+        const limit = 50;
+        let searchTimeout = null;
+
+        function showLoading() { document.getElementById('loading').style.display = 'flex'; }
+        function hideLoading() { document.getElementById('loading').style.display = 'none'; }
+
+        // Populate Pincode dropdown on load
+        async function loadPincodes() {
+            try {
+                const res = await fetch('/api/pincodes');
+                const pincodes = await res.json();
+                const select = document.getElementById('pincode-select');
+                pincodes.forEach(pin => {
+                    const opt = document.createElement('option');
+                    opt.value = pin;
+                    opt.textContent = pin;
+                    select.appendChild(opt);
+                });
+            } catch (err) {
+                console.error('Error loading pincodes', err);
+            }
+        }
+
+        // Fetch and render UDISE directory list
+        async function fetchDirectory() {
+            showLoading();
+            const search = document.getElementById('search-input').value.trim();
+            const pincode = document.getElementById('pincode-select').value;
+            const status = document.getElementById('status-select').value;
+
+            try {
+                const url = `/api/udise_list?search=${encodeURIComponent(search)}&pincode=${encodeURIComponent(pincode)}&status=${encodeURIComponent(status)}&page=${currentPage}&limit=${limit}`;
+                const res = await fetch(url);
+                const data = await res.json();
+
+                renderTable(data.schools);
+                updatePagination(data.total, data.page, data.pages);
+            } catch (err) {
+                console.error('Error fetching directory data', err);
+                alert('Error fetching directory data');
+            }
+            hideLoading();
+        }
+
+        function renderTable(schools) {
+            const body = document.getElementById('directory-body');
+            body.innerHTML = '';
+
+            if (!schools || schools.length === 0) {
+                body.innerHTML = `
+                    <tr>
+                        <td colspan="6">
+                            <div class="empty-state">
+                                <h3 style="margin: 0; font-size: 1.2rem; color: var(--text-primary);">No Schools Found</h3>
+                                <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">Try adjusting your filters or search query.</p>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            schools.forEach(s => {
+                const tr = document.createElement('tr');
+                
+                // Status badge
+                let statusBadge = '';
+                let matchCell = '';
+                
+                if (s.is_matched) {
+                    const badgeType = s.match_type === 'auto' ? 'badge-success' : 'badge-info';
+                    const badgeText = s.match_type === 'auto' ? 'Auto Matched' : 'Manual Matched';
+                    statusBadge = `<span class="badge ${badgeType}">${badgeText}</span>`;
+                    
+                    if (s.matched_to_url) {
+                        matchCell = `<a class="school-link" href="${s.matched_to_url}" target="_blank">${s.matched_to}</a>`;
+                    } else {
+                        matchCell = `<span style="font-weight: 500;">${s.matched_to}</span>`;
+                    }
+                } else {
+                    statusBadge = `<span class="badge badge-secondary">Unmatched</span>`;
+                    matchCell = `<span style="color: var(--text-secondary); font-style: italic;">Not Linked</span>`;
+                }
+
+                let actionBtn = '';
+                if (s.is_matched) {
+                    actionBtn = `<button class="btn" onclick="unmatchSchool('${s.udise_code}')" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.05); color: #f87171; width: auto; margin-top: 0;">Unmatch</button>`;
+                } else {
+                    actionBtn = `<span style="color: var(--text-secondary); font-size: 0.85rem;">-</span>`;
+                }
+
+                tr.innerHTML = `
+                    <td style="font-family: monospace; font-size: 0.95rem; font-weight: 600; color: #cbd5e1;">${s.udise_code}</td>
+                    <td style="font-weight: 500; color: var(--text-primary);">${s.school_name}</td>
+                    <td>${s.pincode || 'N/A'}</td>
+                    <td>${statusBadge}</td>
+                    <td>${matchCell}</td>
+                    <td>${actionBtn}</td>
+                `;
+                body.appendChild(tr);
+            });
+        }
+
+        function updatePagination(total, page, pages) {
+            currentPage = page;
+            totalPages = pages || 1;
+
+            const start = total === 0 ? 0 : (page - 1) * limit + 1;
+            const end = Math.min(page * limit, total);
+            
+            document.getElementById('pagination-info').textContent = `Showing ${start} to ${end} of ${total} schools`;
+            document.getElementById('page-indicator').textContent = `Page ${page} of ${totalPages}`;
+            document.getElementById('total-badge').textContent = `Schools: ${total}`;
+
+            document.getElementById('prev-btn').disabled = page <= 1;
+            document.getElementById('next-btn').disabled = page >= totalPages;
+        }
+
+        function changePage(direction) {
+            const targetPage = currentPage + direction;
+            if (targetPage >= 1 && targetPage <= totalPages) {
+                currentPage = targetPage;
+                fetchDirectory();
+            }
+        }
+
+        function triggerSearch() {
+            clearTimeout(searchTimeout);
+            currentPage = 1; // reset to first page on filter change
+            searchTimeout = setTimeout(fetchDirectory, 300); // 300ms debounce
+        }
+
+        async function unmatchSchool(udiseCode) {
+            if (!confirm(`Are you sure you want to unmatch UDISE school ${udiseCode}?`)) return;
+            
+            showLoading();
+            try {
+                const res = await fetch('/api/unmatch', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ udise_code: udiseCode })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    fetchDirectory();
+                } else {
+                    alert('Error unmatching school');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error making unmatch request');
+            }
+            hideLoading();
+        }
+
+        // Initialize
+        async function init() {
+            await loadPincodes();
+            await fetchDirectory();
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>

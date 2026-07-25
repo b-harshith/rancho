@@ -1,0 +1,62 @@
+{
+  "task_id": "DNC-SCOPE-REVISION-QA",
+  "reviewed_on": "2026-06-30",
+  "independent": true,
+  "overall": "FAIL",
+  "launch_recommendation": "NO_GO",
+  "tracks": {
+    "DNC-GEO-PINS": {
+      "status": "FAIL",
+      "highest_severity": "HIGH",
+      "verified": {
+        "included_pins": 194,
+        "unique_pins": 194,
+        "component_pin_counts": {"delhi_nct": 97, "faridabad": 15, "ghaziabad": 26, "gurugram": 29, "noida_greater_noida": 28},
+        "cross_component_pins": 1,
+        "boundary_features": 15,
+        "boundary_component_counts": {"delhi_nct": 11, "faridabad": 1, "ghaziabad": 1, "gurugram": 1, "noida_greater_noida": 1},
+        "all_geometries_valid": true,
+        "union_valid": true,
+        "union_type": "Polygon",
+        "bounds": [76.65104, 28.07571, 77.71876, 28.92616],
+        "haversine_equatorial_degree_km": 111.1950802335329,
+        "new_pipeline_osrm_references": 0,
+        "committed_google_key_matches": 0
+      },
+      "findings": [
+        {"severity": "HIGH", "id": "GEO-01", "summary": "Exclusion ledger contradicts inclusion output for seven PINs", "evidence": "110025, 121004, 122103, 122502, 201015, 212652, and 245304 occur in both delhi_ncr_pin_candidates.csv and delhi_ncr_pin_exclusions.csv. Metadata says the exclusion ledger records non-component PINs, so its decision semantics are false/ambiguous even if individual post-office rows span districts."},
+        {"severity": "MEDIUM", "id": "GEO-02", "summary": "Google conflict check remains blocked", "evidence": "preparation_report.json reports prepared_open_sources_google_reference_pending and google_conflict_check.status=blocked. No key was used by QA."},
+        {"severity": "MEDIUM", "id": "GEO-03", "summary": "Primary boundary freshness is limited and open cross-check is documentary only", "evidence": "Boundary metadata identifies 2021 represented boundaries, a 2023-01-19 source update, and Overture status documented_not_materialized. Licenses are recorded (ODbL); India Post metadata records GODL-India and portal update 2025-10-03."}
+      ]
+    },
+    "DNC-EZYSCHOOLING": {
+      "status": "FAIL",
+      "highest_severity": "HIGH",
+      "verified": {"fixture_parser": "PASS", "canonical_fixture_schema": "PASS", "entity_id": "in:delhi_ncr:school:101", "one_to_one_collision": "collision_review", "distance_metric": "haversine"},
+      "findings": [
+        {"severity": "HIGH", "id": "EZY-01", "summary": "Delhi NCR mapping and preflight are deliberately unresolved", "evidence": "docs/multicity/source_mappings/ezyschooling_delhi_ncr.md says BLOCKED / mapping not yet verified; config/cities.yaml and config/source_city_registry.json retain null Ezyschooling mappings. Collector correctly refuses such mapping, but is not launchable."},
+        {"severity": "HIGH", "id": "EZY-02", "summary": "No runtime canonical-schema validation before normalized write", "evidence": "normalize_school happens to validate for the supplied fixture, but collector.run writes ezyschooling_schools.json directly and never loads school.schema.json or rejects invalid output."},
+        {"severity": "MEDIUM", "id": "EZY-03", "summary": "Challenge failure does not produce durable challenge/checkpoint evidence", "evidence": "detail_job raises from parse_detail_document inside ThreadPoolExecutor. The exception exits before a challenge quarantine/manifest is written; the manifest's challenge_detected is a constant false on successful completion."},
+        {"severity": "MEDIUM", "id": "EZY-04", "summary": "Geocode cache/error handling does not meet shared policy", "evidence": "pipelines/schools/merge.py cache has no fetched_at/expires_at TTL and urlopen errors are not redacted; an HTTP exception may carry a URL containing the key. Bounds rejection works when --bounds is supplied, but bounds are optional."}
+      ]
+    },
+    "DNC-MB-LOCALITIES": {
+      "status": "FAIL",
+      "highest_severity": "CRITICAL",
+      "verified": {"fixture_listing_links": 2, "fixture_detail_id": "78191", "two_stage": true, "checkpoint_resume": true, "repeated_page_detection": true, "components": [["2624", "New delhi"], ["6403", "Noida"], ["2951", "Gurgaon"], ["6146", "Ghaziabad"], ["2944", "Faridabad"]]},
+      "findings": [
+        {"severity": "CRITICAL", "id": "MBL-01", "summary": "Collector normalized output violates the canonical locality contract", "evidence": "Independent validation of a fixture-merged row reports 13 missing required properties, including entity_id, source, lat/lon (collector uses latitude/longitude), entity_kind, price_per_sqft, review_count, schema_version, quality_flags, and lineage. Collector.finalize writes these rows without runtime validation."},
+        {"severity": "HIGH", "id": "MBL-02", "summary": "Claimed live preflight/sample evidence is not materialized", "evidence": "Mapping memo claims 5x 20/20 first-page matches and 5/5 followed details, but repository contains no raw responses, run manifest, preflight JSON, or sample output supporting those claims. Only documentation and fixture files exist."},
+        {"severity": "HIGH", "id": "MBL-03", "summary": "Sample/limit status can incorrectly appear diagnostic_complete with zero missing", "evidence": "A --limit truncates discovered links before finalize; missing is then computed only against the truncated set, so diagnostic_complete does not disclose omitted discovered links. It remains production_complete=false, but completeness statistics are misleading."},
+        {"severity": "MEDIUM", "id": "MBL-04", "summary": "URL and filesystem path containment are not enforced", "evidence": "Stage 2 follows any absolute URL emitted by listing parsing without a magicbricks.com allowlist. Raw filename key incorporates configured source_city_id without rejecting slashes/path traversal. Config is intended verified, but the collector should enforce containment."},
+        {"severity": "MEDIUM", "id": "MBL-05", "summary": "Shared source registries do not contain the five verified mappings", "evidence": "The exact five IDs/names appear only in collectors/magicbricks_localities/delhi_ncr.example.json and the mapping memo; config/cities.yaml and config/source_city_registry.json remain null."}
+      ]
+    }
+  },
+  "commands": [
+    "python3 tests/qa_scope_revision/independent_checks.py",
+    "python3 -m pytest -q tests/schools/test_ezyschooling.py tests/localities/test_magicbricks_localities.py (pytest unavailable; replaced by direct independent assertions)",
+    "rg secret/OSRM/contract patterns over repository"
+  ],
+  "qa_artifacts": ["tests/qa_scope_revision/independent_checks.py", "audits/scope_revision/QA_REPORT.md", "audits/scope_revision/qa_results.json"]
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-06-30T00:00:00+05:30",
+  "verification_policy": "Never infer or mutate source IDs/slugs. Populate only from source selector/rendered state/network evidence.",
+  "cities": {
+    "bengaluru": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "delhi_ncr": {
+      "yellowslate": {
+        "verified": true,
+        "verified_at": "2026-06-30",
+        "verified_url": "https://yellowslate.com/schools/delhi",
+        "city_id": "multi_component",
+        "city_name": "Delhi NCR",
+        "components": [
+          {"source_city_slug": "delhi", "source_city_name": "Delhi"},
+          {"source_city_slug": "gurugram", "source_city_name": "Gurgaon"},
+          {"source_city_slug": "noida", "source_city_name": "Noida"},
+          {"source_city_slug": "ghaziabad", "source_city_name": "Ghaziabad"},
+          {"source_city_slug": "faridabad", "source_city_name": "Faridabad"}
+        ],
+        "evidence": "docs/multicity/source_mappings/yellowslate_delhi_ncr.md"
+      },
+      "ezyschooling": {
+        "verified": false,
+        "route_verified": true,
+        "verified_at": "2026-06-30",
+        "verified_url": "https://ezyschooling.com/delhi",
+        "city_id": null,
+        "city_name": "Delhi NCR",
+        "city_slug": null,
+        "api_school_city": null,
+        "components": [
+          {"source_city_name": "Delhi", "route": "https://ezyschooling.com/delhi", "api_school_city": null},
+          {"source_city_name": "Gurgaon", "route": "https://ezyschooling.com/gurugram", "api_school_city": null},
+          {"source_city_name": "Ghaziabad", "route": "https://ezyschooling.com/ghaziabad", "api_school_city": null},
+          {"source_city_name": "Faridabad", "route": "https://ezyschooling.com/faridabad", "api_school_city": null},
+          {"source_city_name": "Noida", "route": "https://ezyschooling.com/noida", "api_school_city": null},
+          {"source_city_name": "Greater Noida", "route": "https://ezyschooling.com/greater-noida", "api_school_city": null},
+          {"source_city_name": "Greater Noida West", "route": "https://ezyschooling.com/greater-noida-west", "api_school_city": null}
+        ],
+        "evidence": "docs/multicity/source_mappings/ezyschooling_delhi_ncr.md",
+        "blocker": "Exact first-party API school_city values/IDs and one-page API preflights are not yet evidenced."
+      },
+      "magicbricks": {
+        "verified": true,
+        "verified_at": "2026-06-30",
+        "verified_url": null,
+        "city_id": "multi_component",
+        "city_name": "Delhi NCR",
+        "components": [
+          {"source_city_id": "2624", "source_city_name": "New Delhi", "page_type": "new_projects_fallback", "verified_url": "https://www.magicbricks.com/new-projects-New-Delhi"},
+          {"source_city_id": "6403", "source_city_name": "Noida", "page_type": "residential_projects", "verified_url": "https://www.magicbricks.com/residential-projects-in-noida--nprid"},
+          {"source_city_id": "2951", "source_city_name": "Gurgaon", "canonical_component_name": "Gurugram", "page_type": "residential_projects", "verified_url": "https://www.magicbricks.com/residential-projects-in-gurgaon--nprid"},
+          {"source_city_id": "6146", "source_city_name": "Ghaziabad", "page_type": "residential_projects", "verified_url": "https://www.magicbricks.com/residential-projects-in-ghaziabad--nprid"},
+          {"source_city_id": "2944", "source_city_name": "Faridabad", "page_type": "new_projects_fallback", "verified_url": "https://www.magicbricks.com/new-projects-Faridabad"}
+        ],
+        "evidence": "docs/multicity/source_mappings/magicbricks_delhi_ncr.md"
+      },
+      "magicbricks_localities": {
+        "verified": true,
+        "verified_at": "2026-06-30",
+        "verified_url": "https://www.magicbricks.com/localities-in-new-delhi",
+        "city_id": "multi_component",
+        "city_name": "Delhi NCR",
+        "components": [
+          {"source_city_id": "2624", "source_city_name": "New delhi", "verified_url": "https://www.magicbricks.com/localities-in-new-delhi"},
+          {"source_city_id": "6403", "source_city_name": "Noida", "verified_url": "https://www.magicbricks.com/localities-in-noida"},
+          {"source_city_id": "2951", "source_city_name": "Gurgaon", "verified_url": "https://www.magicbricks.com/localities-in-gurgaon"},
+          {"source_city_id": "6146", "source_city_name": "Ghaziabad", "verified_url": "https://www.magicbricks.com/localities-in-ghaziabad"},
+          {"source_city_id": "2944", "source_city_name": "Faridabad", "verified_url": "https://www.magicbricks.com/localities-in-faridabad"}
+        ],
+        "evidence": "collectors/magicbricks_localities/evidence/delhi_ncr_preflight_20260630.json"
+      },
+      "practo": {
+        "verified": true,
+        "verified_at": "2026-06-30",
+        "verified_url": "https://www.practo.com/delhi/hospitals",
+        "city_id": "multi_component",
+        "city_name": "Delhi NCR",
+        "components": [
+          {"source_city_slug": "delhi", "source_city_name": "Delhi"},
+          {"source_city_slug": "noida", "source_city_name": "Noida"},
+          {"source_city_slug": "gurgaon", "source_city_name": "Gurgaon"},
+          {"source_city_slug": "ghaziabad", "source_city_name": "Ghaziabad"},
+          {"source_city_slug": "faridabad", "source_city_name": "Faridabad"}
+        ],
+        "evidence": "docs/multicity/source_mappings/practo_delhi_ncr.md"
+      },
+      "udise": null
+    },
+    "mumbai": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "hyderabad": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "chennai": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "kolkata": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "pune": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null},
+    "ahmedabad": {"yellowslate": null, "ezyschooling": null, "magicbricks": null, "magicbricks_localities": null, "practo": null, "udise": null}
+  }
+}

@@ -1,0 +1,5285 @@
+[
+  {
+    "name": "Amruthahalli",
+    "lat": 13.06464,
+    "lon": 77.60159,
+    "price_sqft": 7514.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892caffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sadashiva Nagar",
+    "lat": 13.01041,
+    "lon": 77.58064,
+    "price_sqft": 16308.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b2ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dollars Colony",
+    "lat": 13.0398721,
+    "lon": 77.5670315,
+    "price_sqft": 18400.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014594ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Hennur Road",
+    "lat": 13.030853625187,
+    "lon": 77.636956445201,
+    "price_sqft": 10350.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hebbal",
+    "lat": 13.0415525,
+    "lon": 77.5995164,
+    "price_sqft": 12950.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sahakara Nagar",
+    "lat": 13.06376,
+    "lon": 77.58519,
+    "price_sqft": 6736.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892cbffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Yelahanka",
+    "lat": 13.1001182,
+    "lon": 77.5963458,
+    "price_sqft": 10000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016966ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "RMV",
+    "lat": 13.01321,
+    "lon": 77.583,
+    "price_sqft": 14550.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b2ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bellari Road",
+    "lat": 13.04691,
+    "lon": 77.59146,
+    "price_sqft": 3345.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "RT Nagar",
+    "lat": 13.0235205,
+    "lon": 77.5996652,
+    "price_sqft": 4950.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892cdffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Coffee Board Layout",
+    "lat": 13.0485612,
+    "lon": 77.608612,
+    "price_sqft": 4655.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Malleshwaram",
+    "lat": 13.0056233,
+    "lon": 77.5691014,
+    "price_sqft": 11475.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b3ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Whitefield",
+    "lat": 12.9698454,
+    "lon": 77.7510373,
+    "price_sqft": 12001.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618921dffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Banaswadi",
+    "lat": 13.0137875,
+    "lon": 77.6510744,
+    "price_sqft": 6158.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "CV Raman Nagar",
+    "lat": 12.9820982,
+    "lon": 77.6613936,
+    "price_sqft": 4313.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Brookefield",
+    "lat": 12.9655,
+    "lon": 77.71651,
+    "price_sqft": 6344.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Indiranagar",
+    "lat": 12.9952644,
+    "lon": 77.5458269,
+    "price_sqft": 12313.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b1ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Vignana Nagar",
+    "lat": 12.9770892,
+    "lon": 77.6806173,
+    "price_sqft": 4363.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Ramamurthy Nagar",
+    "lat": 13.011801,
+    "lon": 77.660401,
+    "price_sqft": 6000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Kaggadasapura",
+    "lat": 12.975339,
+    "lon": 77.6745166,
+    "price_sqft": 5152.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Malleshpalya",
+    "lat": 12.972102096513,
+    "lon": 77.680415992325,
+    "price_sqft": 4519.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Marathahalli",
+    "lat": 12.9545264,
+    "lon": 77.7027027,
+    "price_sqft": 6347.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Domlur",
+    "lat": 12.9656549,
+    "lon": 77.6257174,
+    "price_sqft": 10400.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892edffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "HRBR Layout",
+    "lat": 13.0137022,
+    "lon": 77.6386394,
+    "price_sqft": 9550.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Nagavarapalya",
+    "lat": 12.9865013,
+    "lon": 77.6695757,
+    "price_sqft": 4392.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kasturi Nagar",
+    "lat": 12.9989422,
+    "lon": 77.6622136,
+    "price_sqft": 19150.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892eeffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Cambridge Layout",
+    "lat": 12.9706114,
+    "lon": 77.6290849,
+    "price_sqft": 12323.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892edffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pai Layout",
+    "lat": 12.9947983,
+    "lon": 77.665886,
+    "price_sqft": 4310.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Old Madras Road",
+    "lat": 13.099452416548,
+    "lon": 77.860270156883,
+    "price_sqft": 9754.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892b0ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "KR Puram",
+    "lat": 13.00029,
+    "lon": 77.67351,
+    "price_sqft": 9800.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e3ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Outer Ring Road East",
+    "lat": 12.939824563423,
+    "lon": 77.532605294852,
+    "price_sqft": 12800.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kammanahalli",
+    "lat": 12.8583073,
+    "lon": 77.6043065,
+    "price_sqft": 12074.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618926affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Maruthi Nagar",
+    "lat": 13.0488151,
+    "lon": 77.5799792,
+    "price_sqft": 3764.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "OMBR Layout",
+    "lat": 13.0087355,
+    "lon": 77.6505735,
+    "price_sqft": 22500.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892eeffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Lavelle Road",
+    "lat": 12.967190618605,
+    "lon": 77.596490386074,
+    "price_sqft": 16100.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Richmond Road",
+    "lat": 12.968539329782,
+    "lon": 77.614527209468,
+    "price_sqft": 21050.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandapura",
+    "lat": 12.8010172,
+    "lon": 77.7056854,
+    "price_sqft": 4900.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618934effffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Cunningham Road",
+    "lat": 12.991189137927,
+    "lon": 77.585506313477,
+    "price_sqft": 17676.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b0ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "St Johns Road",
+    "lat": 12.988540415181,
+    "lon": 77.617263858028,
+    "price_sqft": 8678.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e9ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Victoria Layout",
+    "lat": 12.9657187,
+    "lon": 77.6161438,
+    "price_sqft": 4126.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Richards Town",
+    "lat": 13.00375,
+    "lon": 77.6185,
+    "price_sqft": 12910.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892ebffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Banashankari",
+    "lat": 12.9222559,
+    "lon": 77.5576731,
+    "price_sqft": 13350.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bannerghatta Road",
+    "lat": 12.819474336625,
+    "lon": 77.577221304722,
+    "price_sqft": 9462.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189269ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "BTM Layout",
+    "lat": 12.9087084,
+    "lon": 77.6006203,
+    "price_sqft": 9108.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Basavangudi",
+    "lat": 12.9434522,
+    "lon": 77.5741,
+    "price_sqft": 15150.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "HSR Layout",
+    "lat": 12.9165423,
+    "lon": 77.6519551,
+    "price_sqft": 7739.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189255ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "JP Nagar",
+    "lat": 12.9060976,
+    "lon": 77.5804529,
+    "price_sqft": 7105.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kumaraswamy Layout",
+    "lat": 12.90573,
+    "lon": 77.56174,
+    "price_sqft": 4609.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Jigani",
+    "lat": 12.7863138,
+    "lon": 77.6386725,
+    "price_sqft": 5000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014c90ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Rajajinagar",
+    "lat": 12.9888923,
+    "lon": 77.555775,
+    "price_sqft": 19700.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b1ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand nagar",
+    "lat": 12.9658117,
+    "lon": 77.6928518,
+    "price_sqft": 8305.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Chamrajpet",
+    "lat": 12.945513,
+    "lon": 77.5770297,
+    "price_sqft": 10670.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Puttanahalli",
+    "lat": 13.1107763,
+    "lon": 77.5823343,
+    "price_sqft": 4152.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016962ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Giri Nagar",
+    "lat": 12.940811,
+    "lon": 77.543355,
+    "price_sqft": 6192.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Basaveshwara Nagar",
+    "lat": 12.9953074,
+    "lon": 77.539983,
+    "price_sqft": 11450.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Nagarbhavi",
+    "lat": 12.928142,
+    "lon": 77.57727,
+    "price_sqft": 6250.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189259ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Vasanth nagar",
+    "lat": 12.9900979,
+    "lon": 77.5911473,
+    "price_sqft": 19215.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "HBR Layout",
+    "lat": 13.0371446,
+    "lon": 77.6401266,
+    "price_sqft": 4555.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Jeevan bima nagar",
+    "lat": 12.9669832,
+    "lon": 77.6588364,
+    "price_sqft": 8045.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kalyan nagar",
+    "lat": 13.0215211,
+    "lon": 77.6404036,
+    "price_sqft": 5224.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Wilson Garden",
+    "lat": 12.9486889,
+    "lon": 77.59922,
+    "price_sqft": 8235.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mathikere",
+    "lat": 13.0358924,
+    "lon": 77.559636,
+    "price_sqft": 8254.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014594ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Dinnur",
+    "lat": 12.98498,
+    "lon": 77.7616665,
+    "price_sqft": 10304.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618921cffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Govindpura",
+    "lat": 13.029551,
+    "lon": 77.852883,
+    "price_sqft": 4784.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892a4ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "RK Hegde Nagar",
+    "lat": 13.0665681,
+    "lon": 77.6371467,
+    "price_sqft": 5305.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c3ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hessarghatta",
+    "lat": 13.13908,
+    "lon": 77.4783,
+    "price_sqft": 4100.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601694dffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Kempapura",
+    "lat": 13.1299264,
+    "lon": 77.7955583,
+    "price_sqft": 4315.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618929cffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "MLA Layout",
+    "lat": 13.017041,
+    "lon": 77.5915552,
+    "price_sqft": 5185.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892cdffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Marasandra",
+    "lat": 13.199035,
+    "lon": 77.444677,
+    "price_sqft": 5110.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016861ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "MCECHS  layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 14500.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Nagawara Junction",
+    "lat": 13.0479739,
+    "lon": 77.6067,
+    "price_sqft": 4655.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Nandi Hills",
+    "lat": 13.014522,
+    "lon": 77.502811,
+    "price_sqft": 3750.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014583ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Thanisandra",
+    "lat": 13.05786,
+    "lon": 77.63551,
+    "price_sqft": 8609.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ceffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Babusapalaya",
+    "lat": 13.0229887,
+    "lon": 77.6489162,
+    "price_sqft": 4205.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hoysalanagar",
+    "lat": 12.9916115,
+    "lon": 77.500481,
+    "price_sqft": 4035.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014581ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Jagadish Nagar",
+    "lat": 12.9696224,
+    "lon": 77.6641191,
+    "price_sqft": 6723.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kasavanhalli",
+    "lat": 12.9048148,
+    "lon": 77.6777941,
+    "price_sqft": 9691.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189273ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Munnekollal",
+    "lat": 12.9537292,
+    "lon": 77.7101843,
+    "price_sqft": 9895.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Austin Town",
+    "lat": 12.9595116,
+    "lon": 77.6145438,
+    "price_sqft": 7170.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gandhi Nagar",
+    "lat": 12.9754223,
+    "lon": 77.5793653,
+    "price_sqft": 13831.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Coles Road",
+    "lat": 12.995708453264,
+    "lon": 77.613658659693,
+    "price_sqft": 9263.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e9ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kumara Park",
+    "lat": 12.99599,
+    "lon": 77.58287,
+    "price_sqft": 3782.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b0ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adugodi",
+    "lat": 12.9442396,
+    "lon": 77.6079635,
+    "price_sqft": 9756.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Silk Board",
+    "lat": 12.914202,
+    "lon": 77.625029,
+    "price_sqft": 3987.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Srinagar",
+    "lat": 12.9406243,
+    "lon": 77.5554543,
+    "price_sqft": 8000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a6ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Vidyapeeta",
+    "lat": 12.9301499,
+    "lon": 77.5586948,
+    "price_sqft": 6147.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Arekere",
+    "lat": 13.20008,
+    "lon": 77.53838,
+    "price_sqft": 7936.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601695effffff",
+    "zone": "North"
+  },
+  {
+    "name": "Ashok Nagar",
+    "lat": 12.9702216,
+    "lon": 77.6047763,
+    "price_sqft": 5333.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Begur Road",
+    "lat": 12.877163335037,
+    "lon": 77.624016064378,
+    "price_sqft": 7104.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189245ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Bommasandra",
+    "lat": 12.818262,
+    "lon": 77.692519,
+    "price_sqft": 5273.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189359ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "NR Colony",
+    "lat": 12.9376196,
+    "lon": 77.569062,
+    "price_sqft": 6893.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shanti Nagar",
+    "lat": 12.9619975,
+    "lon": 77.5970419,
+    "price_sqft": 4809.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivaji Nagar",
+    "lat": 12.9880905,
+    "lon": 77.6030852,
+    "price_sqft": 5102.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e9ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bangalore Mysore Highway",
+    "lat": 12.95489554331,
+    "lon": 77.544684066819,
+    "price_sqft": 3750.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145a2ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Chandra Layout",
+    "lat": 12.9607585,
+    "lon": 77.5269707,
+    "price_sqft": 16750.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a3ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Jai Bharat Nagar",
+    "lat": 12.9835618,
+    "lon": 77.4788724,
+    "price_sqft": 8888.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601458cffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Kalasipalya",
+    "lat": 12.961,
+    "lon": 77.57725,
+    "price_sqft": 7039.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925bffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "RPC layout",
+    "lat": 12.9579912,
+    "lon": 77.5386889,
+    "price_sqft": 5615.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a2ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Laggere Road",
+    "lat": 13.019963290086,
+    "lon": 77.520650018715,
+    "price_sqft": 9250.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014582ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Lalbagh Road",
+    "lat": 12.95392805848,
+    "lon": 77.585677452192,
+    "price_sqft": 8964.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925bffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishwapriya Layout",
+    "lat": 12.933507395412,
+    "lon": 77.54788902474,
+    "price_sqft": 3793.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Vibuthipura",
+    "lat": 12.9672756,
+    "lon": 77.6864304,
+    "price_sqft": 4258.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Hoodi",
+    "lat": 12.9937234,
+    "lon": 77.7170159,
+    "price_sqft": 10210.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e6ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vittal Nagar, Kumaraswamy Layout",
+    "lat": 12.902814637146,
+    "lon": 77.556592717753,
+    "price_sqft": 3855.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Hulimavu",
+    "lat": 12.8793372,
+    "lon": 77.5958506,
+    "price_sqft": 6686.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618924cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "ITI Layout",
+    "lat": 12.9306604,
+    "lon": 77.5541946,
+    "price_sqft": 4235.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Gnana Bharathi",
+    "lat": 12.93553,
+    "lon": 77.51099,
+    "price_sqft": 4312.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145a1ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Billekahalli",
+    "lat": 12.8959381,
+    "lon": 77.6086221,
+    "price_sqft": 6165.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189243ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "ISRO Layout",
+    "lat": 12.89556,
+    "lon": 77.55764,
+    "price_sqft": 4762.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Madiwala",
+    "lat": 12.7662268,
+    "lon": 77.724837,
+    "price_sqft": 6320.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189341ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Bhoopsandra",
+    "lat": 13.04261,
+    "lon": 77.58107,
+    "price_sqft": 12916.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Lingarajapuram",
+    "lat": 13.00958,
+    "lon": 77.63738,
+    "price_sqft": 5570.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Chickpet",
+    "lat": 12.970048008938,
+    "lon": 77.575071033824,
+    "price_sqft": 10353.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hayes Road",
+    "lat": 12.966994608745,
+    "lon": 77.601056075649,
+    "price_sqft": 7080.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marenahalli",
+    "lat": 12.9686397,
+    "lon": 77.5360277,
+    "price_sqft": 9321.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014584ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Ejipura",
+    "lat": 12.9485007,
+    "lon": 77.6275877,
+    "price_sqft": 8771.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925effffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kodihalli",
+    "lat": 13.0261233,
+    "lon": 77.8034504,
+    "price_sqft": 7377.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892acffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Gandhi Bazar",
+    "lat": 12.9459074,
+    "lon": 77.570758,
+    "price_sqft": 7296.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kengeri",
+    "lat": 12.9001567,
+    "lon": 77.466591,
+    "price_sqft": 10000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601451effffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Wheelers Road",
+    "lat": 13.000610235595,
+    "lon": 77.62333871192,
+    "price_sqft": 12876.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ebffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Amar Jyoti Layout ",
+    "lat": 12.9507026,
+    "lon": 77.6445492,
+    "price_sqft": 5866.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189253ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Arehalli",
+    "lat": 12.934644,
+    "lon": 77.830367,
+    "price_sqft": 16000.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189230ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Avenue Road",
+    "lat": 12.972545278206,
+    "lon": 77.581061867489,
+    "price_sqft": 19453.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b4ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashwathnagar",
+    "lat": 13.0520414,
+    "lon": 77.6324904,
+    "price_sqft": 5056.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ceffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Begur",
+    "lat": 13.137462,
+    "lon": 77.844118,
+    "price_sqft": 6916.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189295ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Jalahalli",
+    "lat": 13.0537074,
+    "lon": 77.5433027,
+    "price_sqft": 6346.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014590ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Doddabommasandra ",
+    "lat": 13.0628709,
+    "lon": 77.5620102,
+    "price_sqft": 3583.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "IVC Road",
+    "lat": 13.230212427813,
+    "lon": 77.640589234775,
+    "price_sqft": 10050.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601690affffff",
+    "zone": "North"
+  },
+  {
+    "name": "Ganganahalli",
+    "lat": 13.14502,
+    "lon": 77.5882,
+    "price_sqft": 6949.0,
+    "budget_segment": "Premium",
+    "hex_id": "876016971ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Devanahalli Int Airport",
+    "lat": 13.1999693,
+    "lon": 77.7095244,
+    "price_sqft": 1000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876016906ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Channasandra",
+    "lat": 12.9824373,
+    "lon": 77.7686096,
+    "price_sqft": 4550.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618921cffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Murugeshpalya",
+    "lat": 12.9579976,
+    "lon": 77.6541393,
+    "price_sqft": 5812.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189253ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vimanapura",
+    "lat": 12.9639378,
+    "lon": 77.6712979,
+    "price_sqft": 3587.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Channasandra Layout",
+    "lat": 12.9014789,
+    "lon": 77.5236476,
+    "price_sqft": 3750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014512ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Devarachikkanahalli",
+    "lat": 12.884715,
+    "lon": 77.6252411,
+    "price_sqft": 5454.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189240ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Chikkajala",
+    "lat": 13.171625,
+    "lon": 77.634886,
+    "price_sqft": 6500.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601690dffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Dhanalakshmi Layout ",
+    "lat": 13.066311,
+    "lon": 77.571869,
+    "price_sqft": 6469.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016965ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Dr Shivarama Karantha Nagar ",
+    "lat": 13.072903,
+    "lon": 77.614169,
+    "price_sqft": 4666.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892caffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Mission Road",
+    "lat": 12.963304935472,
+    "lon": 77.595795457063,
+    "price_sqft": 30150.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikka Tirupathi",
+    "lat": 12.985646805019,
+    "lon": 77.783124076688,
+    "price_sqft": 3750.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189211ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Millers Road",
+    "lat": 12.98605989571,
+    "lon": 77.589663633886,
+    "price_sqft": 13768.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b4ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "RMV Extension",
+    "lat": 13.04599,
+    "lon": 77.57665,
+    "price_sqft": 5021.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Old Airport Road",
+    "lat": 12.960454779955,
+    "lon": 77.642684889638,
+    "price_sqft": 7030.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189253ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "NRI Layout",
+    "lat": 13.0284554,
+    "lon": 77.6838679,
+    "price_sqft": 4984.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hoskote",
+    "lat": 13.0721692,
+    "lon": 77.7922176,
+    "price_sqft": 3450.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892aaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Harlur Road",
+    "lat": 12.888426688867,
+    "lon": 77.667493551189,
+    "price_sqft": 12231.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189271ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Vidyaranyapura",
+    "lat": 13.0854316,
+    "lon": 77.5566754,
+    "price_sqft": 6176.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016961ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Abbigere",
+    "lat": 13.0719273,
+    "lon": 77.5249134,
+    "price_sqft": 7100.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014593ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Virupakshapura",
+    "lat": 13.0614003,
+    "lon": 77.5696625,
+    "price_sqft": 14100.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Rajankunte",
+    "lat": 13.1739082,
+    "lon": 77.5589108,
+    "price_sqft": 3750.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876016942ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Magadi Road",
+    "lat": 12.981246818779,
+    "lon": 77.535490028092,
+    "price_sqft": 10600.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014584ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Jaraganahalli",
+    "lat": 12.910058,
+    "lon": 77.5692569,
+    "price_sqft": 5732.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Outer Ring Road South",
+    "lat": 12.91615,
+    "lon": 77.6389,
+    "price_sqft": 12750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Anjanapura",
+    "lat": 12.857585,
+    "lon": 77.5595363,
+    "price_sqft": 12100.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Muthanallur",
+    "lat": 12.830769,
+    "lon": 77.737583,
+    "price_sqft": 4583.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618935cffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Mahalakshmi Layout",
+    "lat": 13.009861,
+    "lon": 77.5465088,
+    "price_sqft": 10000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b3ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Chikkalasandra",
+    "lat": 12.9147634,
+    "lon": 77.5512318,
+    "price_sqft": 5435.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Jalahalli West",
+    "lat": 13.0563327,
+    "lon": 77.5272432,
+    "price_sqft": 7150.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014593ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "RMV 2nd Stage",
+    "lat": 13.048515,
+    "lon": 77.5357972,
+    "price_sqft": 11668.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014590ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Cubbonpet",
+    "lat": 12.9696761,
+    "lon": 77.5850403,
+    "price_sqft": 15025.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b4ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Basapura",
+    "lat": 12.870063464971,
+    "lon": 77.653417036858,
+    "price_sqft": 6449.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189244ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Byrathi",
+    "lat": 12.929997305819,
+    "lon": 77.535444413095,
+    "price_sqft": 10500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a5ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kalkere",
+    "lat": 13.0341198,
+    "lon": 77.6735755,
+    "price_sqft": 4818.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Thubarahalli",
+    "lat": 12.9547791,
+    "lon": 77.7213257,
+    "price_sqft": 7296.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Amruthnagar",
+    "lat": 13.0554023,
+    "lon": 77.599507,
+    "price_sqft": 4345.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Pillanna Gardens",
+    "lat": 13.0114803,
+    "lon": 77.6159441,
+    "price_sqft": 6000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ebffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Seshadripuram",
+    "lat": 12.9815422,
+    "lon": 77.5744477,
+    "price_sqft": 10511.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Avalahalli",
+    "lat": 12.8738099,
+    "lon": 77.7082097,
+    "price_sqft": 3953.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189274ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Konanakunte",
+    "lat": 12.8780026,
+    "lon": 77.5699904,
+    "price_sqft": 7212.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189248ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kadugodi",
+    "lat": 13.0062718,
+    "lon": 77.7584083,
+    "price_sqft": 5797.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kumbalgodu",
+    "lat": 12.859631,
+    "lon": 77.535165,
+    "price_sqft": 3300.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014532ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Nayandana halli",
+    "lat": 12.93961,
+    "lon": 77.52601,
+    "price_sqft": 7224.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a1ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Suddaguntepalya",
+    "lat": 12.9817314,
+    "lon": 77.6506409,
+    "price_sqft": 4271.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892ecffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Bagalur Main Road",
+    "lat": 13.12158022861,
+    "lon": 77.620922285707,
+    "price_sqft": 10000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892dbffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Singasandra",
+    "lat": 12.8866855,
+    "lon": 77.6426655,
+    "price_sqft": 5230.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189240ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "SMV layout ",
+    "lat": 12.934588,
+    "lon": 77.48062,
+    "price_sqft": 11750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a8ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "SMV layout Block 3",
+    "lat": 12.934588,
+    "lon": 77.48062,
+    "price_sqft": 14200.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a8ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "SMV Layout Block 1",
+    "lat": 12.934588,
+    "lon": 77.48062,
+    "price_sqft": 14000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a8ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Malur Hosur Road",
+    "lat": 12.944075875392,
+    "lon": 77.607640852646,
+    "price_sqft": 3050.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "1st Block Koramangala",
+    "lat": 12.9272387,
+    "lon": 77.6357469,
+    "price_sqft": 4285.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189251ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "8th block Koramangala",
+    "lat": 12.9416003,
+    "lon": 77.617177,
+    "price_sqft": 3447.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925effffff",
+    "zone": "Central"
+  },
+  {
+    "name": "1st Phase JP Nagar",
+    "lat": 12.91062,
+    "lon": 77.58152,
+    "price_sqft": 31500.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "2nd Phase JP Nagar",
+    "lat": 12.91138,
+    "lon": 77.58888,
+    "price_sqft": 30950.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "3rd Phase JP Nagar",
+    "lat": 12.9073,
+    "lon": 77.59987,
+    "price_sqft": 8428.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "6th Phase JP Nagar",
+    "lat": 12.90816,
+    "lon": 77.58039,
+    "price_sqft": 4955.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "7th Phase JP Nagar",
+    "lat": 12.868928844017,
+    "lon": 77.570051605736,
+    "price_sqft": 6659.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "1st Block Jayanagar",
+    "lat": 12.959936078323,
+    "lon": 77.601240984278,
+    "price_sqft": 9852.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "4th T block Jayanagar",
+    "lat": 12.9244366,
+    "lon": 77.5880909,
+    "price_sqft": 9475.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "5th Block Jayanagar",
+    "lat": 12.9190858,
+    "lon": 77.5834092,
+    "price_sqft": 4526.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "8th Block Jayanagar",
+    "lat": 12.9196298,
+    "lon": 77.5782931,
+    "price_sqft": 14868.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "9th Block Jayanagar",
+    "lat": 12.9207375,
+    "lon": 77.5995713,
+    "price_sqft": 16000.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "3rd Block Jayanagar",
+    "lat": 12.9324878,
+    "lon": 77.5818098,
+    "price_sqft": 4534.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "6th Block Jayanagar",
+    "lat": 12.9317501,
+    "lon": 77.5779789,
+    "price_sqft": 8852.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "2nd Block Jayanagar",
+    "lat": 12.9393718,
+    "lon": 77.5835315,
+    "price_sqft": 8120.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 2 HSR Layout",
+    "lat": 12.9075602,
+    "lon": 77.6471359,
+    "price_sqft": 35000.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sector 5 HSR Layout",
+    "lat": 12.9173602,
+    "lon": 77.6372563,
+    "price_sqft": 12250.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sector 6 HSR Layout",
+    "lat": 12.9142152,
+    "lon": 77.6291333,
+    "price_sqft": 7189.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sector 7 HSR Layout",
+    "lat": 12.9096119,
+    "lon": 77.6352868,
+    "price_sqft": 35700.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Rustam Bagh Layout",
+    "lat": 12.9555611,
+    "lon": 77.653083,
+    "price_sqft": 5357.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189253ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Annapurneshwari Nagar ",
+    "lat": 12.9801654,
+    "lon": 77.5087458,
+    "price_sqft": 15000.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014585ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Dodda Banaswadi",
+    "lat": 13.0150277,
+    "lon": 77.6503711,
+    "price_sqft": 5179.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "LB Shastri Nagar",
+    "lat": 12.9704769,
+    "lon": 77.6729218,
+    "price_sqft": 4535.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "New Thippasandra",
+    "lat": 12.9680717,
+    "lon": 77.6533694,
+    "price_sqft": 7105.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ecffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Panathur",
+    "lat": 12.9305377,
+    "lon": 77.7036809,
+    "price_sqft": 6875.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189209ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Bettahalsoor",
+    "lat": 13.1608066,
+    "lon": 77.6087169,
+    "price_sqft": 9050.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016970ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Budigere",
+    "lat": 13.1361713,
+    "lon": 77.7530311,
+    "price_sqft": 9568.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189299ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Kadugondanahalli",
+    "lat": 13.0106276,
+    "lon": 77.6234437,
+    "price_sqft": 3750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ebffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Kattigenahalli",
+    "lat": 13.022502,
+    "lon": 77.8789,
+    "price_sqft": 6374.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618938affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Maruthi Sevanagar",
+    "lat": 13.0115364,
+    "lon": 77.6351265,
+    "price_sqft": 6551.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Yelahanka New Town",
+    "lat": 13.1006775,
+    "lon": 77.5686474,
+    "price_sqft": 6832.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016960ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Koppa",
+    "lat": 12.8059914,
+    "lon": 77.6254514,
+    "price_sqft": 3798.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014c92ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Hongasandra",
+    "lat": 12.89163,
+    "lon": 77.6221091,
+    "price_sqft": 7142.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189240ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kanakapura",
+    "lat": 12.8465,
+    "lon": 77.5204,
+    "price_sqft": 2800.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014533ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kodichikkanahalli",
+    "lat": 12.8987103,
+    "lon": 77.6178357,
+    "price_sqft": 4209.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189243ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Langford Town",
+    "lat": 12.9579776,
+    "lon": 77.6056038,
+    "price_sqft": 9789.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panduranga Nagar",
+    "lat": 12.8928336,
+    "lon": 77.5955864,
+    "price_sqft": 5347.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924effffff",
+    "zone": "South"
+  },
+  {
+    "name": "Subramanyapura",
+    "lat": 12.8972106,
+    "lon": 77.5267734,
+    "price_sqft": 4663.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014516ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Akash Nagar",
+    "lat": 12.9914172,
+    "lon": 77.678746,
+    "price_sqft": 4412.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Horamavu",
+    "lat": 12.909616792067,
+    "lon": 77.596029982714,
+    "price_sqft": 8211.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Horamavu Agara",
+    "lat": 13.0383133,
+    "lon": 77.6599736,
+    "price_sqft": 4720.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c0ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Banjara Layout",
+    "lat": 13.03830578599,
+    "lon": 77.665260814906,
+    "price_sqft": 4253.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c0ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Bikasipura",
+    "lat": 12.8983894,
+    "lon": 77.5563426,
+    "price_sqft": 5500.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Ashwini layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 5531.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Banashankari Stage 1",
+    "lat": 12.9287376,
+    "lon": 77.556762,
+    "price_sqft": 6156.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Banashankari Stage 2",
+    "lat": 12.9228497,
+    "lon": 77.5698019,
+    "price_sqft": 7141.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Banashankari Stage 3",
+    "lat": 12.9242047,
+    "lon": 77.5462686,
+    "price_sqft": 4724.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a5ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Doopanahalli",
+    "lat": 12.9684585,
+    "lon": 77.6409747,
+    "price_sqft": 7917.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ecffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Sampigehalli",
+    "lat": 12.80887,
+    "lon": 77.585172,
+    "price_sqft": 12850.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014c9affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Konena Agrahara",
+    "lat": 12.9587727,
+    "lon": 77.6591749,
+    "price_sqft": 6663.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vyalikaval",
+    "lat": 13.037764398864,
+    "lon": 77.620544534931,
+    "price_sqft": 15068.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892ccffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Dooravani Nagar",
+    "lat": 13.0062197,
+    "lon": 77.6740969,
+    "price_sqft": 6773.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e3ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Vijinapura",
+    "lat": 13.001371198563,
+    "lon": 77.675384340016,
+    "price_sqft": 5986.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e3ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vinayaka Layout",
+    "lat": 13.0435823,
+    "lon": 77.5793435,
+    "price_sqft": 4207.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Kempegowda Nagar",
+    "lat": 12.9550586,
+    "lon": 77.5670509,
+    "price_sqft": 3913.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vasanthapura",
+    "lat": 12.9049789,
+    "lon": 77.5526652,
+    "price_sqft": 4883.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Cottonpet",
+    "lat": 12.971249,
+    "lon": 77.5685655,
+    "price_sqft": 10945.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pillaganahalli",
+    "lat": 12.8449205,
+    "lon": 77.5787669,
+    "price_sqft": 3713.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926bffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Yelenahalli",
+    "lat": 12.8643437,
+    "lon": 77.6228018,
+    "price_sqft": 3349.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189245ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Andrahalli",
+    "lat": 13.009187486793,
+    "lon": 77.483513496631,
+    "price_sqft": 6350.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601458effffff",
+    "zone": "West"
+  },
+  {
+    "name": "Shinivagalu Tank Bed Layout",
+    "lat": 12.9382653,
+    "lon": 77.6304596,
+    "price_sqft": 19150.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189251ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sudhama Nagar",
+    "lat": 12.9630339,
+    "lon": 77.6640503,
+    "price_sqft": 7150.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Sunkadakatte",
+    "lat": 12.7486612,
+    "lon": 77.5088272,
+    "price_sqft": 7100.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014cd6ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Devi Nagar",
+    "lat": 13.0469714,
+    "lon": 77.5658306,
+    "price_sqft": 17500.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Tata Nagar",
+    "lat": 13.0572112,
+    "lon": 77.5749142,
+    "price_sqft": 4803.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "BEL Layout",
+    "lat": 13.073567,
+    "lon": 77.5546932,
+    "price_sqft": 16000.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014592ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Byatarayanapura",
+    "lat": 12.95151,
+    "lon": 77.53992,
+    "price_sqft": 6645.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a0ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Cholanayakanahalli",
+    "lat": 13.0365684,
+    "lon": 77.5999149,
+    "price_sqft": 6774.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Judicial Layout",
+    "lat": 13.080801,
+    "lon": 77.5862885,
+    "price_sqft": 23650.0,
+    "budget_segment": "Premium",
+    "hex_id": "876016964ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Kacharakanahalli",
+    "lat": 12.9888806,
+    "lon": 77.8132681,
+    "price_sqft": 5145.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189210ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Tindlu",
+    "lat": 13.070241453793,
+    "lon": 77.561350054651,
+    "price_sqft": 4397.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016965ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Rayasandra",
+    "lat": 13.2193651,
+    "lon": 77.7254637,
+    "price_sqft": 8550.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016906ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "AGB Layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 4822.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Agrahara Layout",
+    "lat": 13.1001111,
+    "lon": 77.6276445,
+    "price_sqft": 2500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892d8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Naidu Layout, Chikkalasandra",
+    "lat": 12.9147634,
+    "lon": 77.5512318,
+    "price_sqft": 4123.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Nallurhalli",
+    "lat": 12.9676202,
+    "lon": 77.7336407,
+    "price_sqft": 6898.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kaverappa Layout",
+    "lat": 12.9334524,
+    "lon": 77.6915099,
+    "price_sqft": 6845.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189209ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Neelasandra",
+    "lat": 12.9572599,
+    "lon": 77.6121201,
+    "price_sqft": 5352.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jeevanhalli",
+    "lat": 13.01469,
+    "lon": 77.61159,
+    "price_sqft": 7432.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892ebffffff",
+    "zone": "North"
+  },
+  {
+    "name": "BCMC Layout",
+    "lat": 12.8804,
+    "lon": 77.5487,
+    "price_sqft": 5064.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189249ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bismillah Nagar",
+    "lat": 12.9242706,
+    "lon": 77.6005482,
+    "price_sqft": 4537.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Anepalya",
+    "lat": 12.9515885,
+    "lon": 77.6106153,
+    "price_sqft": 7133.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pantharapalya",
+    "lat": 12.9397662,
+    "lon": 77.526954,
+    "price_sqft": 7086.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a1ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "BTM 2nd Stage",
+    "lat": 13.048515,
+    "lon": 77.5357972,
+    "price_sqft": 10928.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014590ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "BTM 1st Stage",
+    "lat": 13.014400202607,
+    "lon": 77.550436307743,
+    "price_sqft": 4750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b3ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Carmelaram",
+    "lat": 12.90763,
+    "lon": 77.70601,
+    "price_sqft": 8599.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189272ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Pulikeshi Nagar",
+    "lat": 12.9963419,
+    "lon": 77.60908,
+    "price_sqft": 6000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e9ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marsur",
+    "lat": 12.752226,
+    "lon": 77.707347,
+    "price_sqft": 4250.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618936bffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "KSRTC Layout",
+    "lat": 12.91063,
+    "lon": 77.5930118,
+    "price_sqft": 4000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kodathi",
+    "lat": 12.888527,
+    "lon": 77.716851,
+    "price_sqft": 12500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189276ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Kaveri Nagar",
+    "lat": 12.9284678,
+    "lon": 77.5610799,
+    "price_sqft": 5383.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kaikondrahalli",
+    "lat": 12.91431,
+    "lon": 77.67639,
+    "price_sqft": 7759.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189273ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Kadarenahalli",
+    "lat": 13.0417001,
+    "lon": 77.4484255,
+    "price_sqft": 5541.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760144a4ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Kachanayakanahalli",
+    "lat": 12.7977481,
+    "lon": 77.6811789,
+    "price_sqft": 3199.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618934bffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Gavipuram",
+    "lat": 12.9470281,
+    "lon": 77.5590943,
+    "price_sqft": 3884.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kammasandra",
+    "lat": 13.2106035,
+    "lon": 77.3849368,
+    "price_sqft": 4095.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601686bffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "AGS Layout",
+    "lat": 12.9132323,
+    "lon": 77.5405407,
+    "price_sqft": 16000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a5ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Mylasandra",
+    "lat": 12.8402976,
+    "lon": 77.6321699,
+    "price_sqft": 5166.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926effffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kaggalipura",
+    "lat": 12.8545252,
+    "lon": 77.7232501,
+    "price_sqft": 6000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618935affffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Hosapalya",
+    "lat": 12.892181482531,
+    "lon": 77.644522589095,
+    "price_sqft": 4339.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189246ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Doddakannelli",
+    "lat": 12.915534059478,
+    "lon": 77.692187175943,
+    "price_sqft": 8808.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189272ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Doddakallasandra",
+    "lat": 12.8874876,
+    "lon": 77.5605369,
+    "price_sqft": 7202.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189249ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Tejaswini Nagar",
+    "lat": 12.8634903,
+    "lon": 77.6039235,
+    "price_sqft": 3611.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Abbaiah Reddy Layout ",
+    "lat": 12.9796693,
+    "lon": 77.6826622,
+    "price_sqft": 4852.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "EPIP Zone",
+    "lat": 12.9724228,
+    "lon": 77.7217665,
+    "price_sqft": 14347.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618920affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Battarahalli",
+    "lat": 13.0217143,
+    "lon": 77.7062495,
+    "price_sqft": 4412.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Green Glen Layout",
+    "lat": 12.928225,
+    "lon": 77.669829,
+    "price_sqft": 5468.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189254ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Harappanahalli",
+    "lat": 12.7915876,
+    "lon": 77.6225506,
+    "price_sqft": 2719.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014c90ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Hagadur",
+    "lat": 12.96675,
+    "lon": 77.76171,
+    "price_sqft": 5401.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189203ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Jogupalya",
+    "lat": 12.9765117,
+    "lon": 77.6270148,
+    "price_sqft": 5423.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892edffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Suryanagar",
+    "lat": 12.795421660939,
+    "lon": 77.698257897376,
+    "price_sqft": 4800.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618934affffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Chikkakannalli",
+    "lat": 12.9006526,
+    "lon": 77.7001804,
+    "price_sqft": 10550.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189272ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Nagavara",
+    "lat": 13.0479739,
+    "lon": 77.6067,
+    "price_sqft": 10000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Seegehalli",
+    "lat": 13.004599,
+    "lon": 77.756379,
+    "price_sqft": 7932.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Rampura",
+    "lat": 13.05283,
+    "lon": 77.690961,
+    "price_sqft": 11650.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c6ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Ramagondanahalli",
+    "lat": 13.1198872,
+    "lon": 77.5565883,
+    "price_sqft": 6250.0,
+    "budget_segment": "Premium",
+    "hex_id": "876016963ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Chinnapanahalli",
+    "lat": 13.031258994262,
+    "lon": 77.742715132303,
+    "price_sqft": 5489.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f4ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kannamangala",
+    "lat": 13.210641,
+    "lon": 77.668372,
+    "price_sqft": 5291.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601690effffff",
+    "zone": "North"
+  },
+  {
+    "name": "Kogilu",
+    "lat": 13.0980134,
+    "lon": 77.6067865,
+    "price_sqft": 10450.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892d9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Vijayapura",
+    "lat": 13.0405064,
+    "lon": 77.8819994,
+    "price_sqft": 1550.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189399ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Ullalu",
+    "lat": 12.9767463,
+    "lon": 77.5752782,
+    "price_sqft": 14000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalena Agrahara",
+    "lat": 12.864826,
+    "lon": 77.5911482,
+    "price_sqft": 10339.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Mangammanapalya",
+    "lat": 12.9036089,
+    "lon": 77.6313659,
+    "price_sqft": 6395.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189242ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Neeladri Nagar",
+    "lat": 12.8406203,
+    "lon": 77.6444519,
+    "price_sqft": 3828.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189263ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Shanthala Nagar",
+    "lat": 12.9714262,
+    "lon": 77.6044412,
+    "price_sqft": 14036.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925affffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kithaganur",
+    "lat": 13.039199,
+    "lon": 77.712592,
+    "price_sqft": 7297.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892f0ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Choodasandra",
+    "lat": 12.8905208,
+    "lon": 77.681615,
+    "price_sqft": 5460.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189270ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Hebbagodi",
+    "lat": 12.8275292,
+    "lon": 77.6768482,
+    "price_sqft": 13350.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189264ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Kada Agrahara",
+    "lat": 12.861185,
+    "lon": 77.766763,
+    "price_sqft": 6590.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618922cffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Mariyannapalya",
+    "lat": 13.0555399,
+    "lon": 77.6107215,
+    "price_sqft": 4606.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Nehru Nagar",
+    "lat": 12.9877005,
+    "lon": 77.5754717,
+    "price_sqft": 5810.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b0ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Doddathoguru",
+    "lat": 12.8462234,
+    "lon": 77.6512974,
+    "price_sqft": 5333.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189263ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Devanahalli",
+    "lat": 13.2430894,
+    "lon": 77.7048978,
+    "price_sqft": 6300.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876016911ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Hosa Road",
+    "lat": 12.888773240562,
+    "lon": 77.673063258353,
+    "price_sqft": 7285.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189271ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "8th Phase JP Nagar",
+    "lat": 12.9069203,
+    "lon": 77.5802268,
+    "price_sqft": 5742.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kannur",
+    "lat": 13.0984958,
+    "lon": 77.6524728,
+    "price_sqft": 10050.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892deffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Challaghatta",
+    "lat": 12.8979501,
+    "lon": 77.45366,
+    "price_sqft": 5840.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014518ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Dodda Nekkundi",
+    "lat": 12.9725449,
+    "lon": 77.7073296,
+    "price_sqft": 7617.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e4ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Belathur",
+    "lat": 13.0043795,
+    "lon": 77.7540857,
+    "price_sqft": 5046.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921affffff",
+    "zone": "East"
+  },
+  {
+    "name": "Nyanappana Halli",
+    "lat": 12.8822469,
+    "lon": 77.6192794,
+    "price_sqft": 5000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189241ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Chikkathoguru",
+    "lat": 12.85988235424,
+    "lon": 77.654124258328,
+    "price_sqft": 3726.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189262ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sondekoppa",
+    "lat": 13.019861,
+    "lon": 77.383225,
+    "price_sqft": 4600.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014413ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Hennur Gardens",
+    "lat": 13.030853625187,
+    "lon": 77.636956445201,
+    "price_sqft": 5194.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hanumantha Nagar",
+    "lat": 12.94735,
+    "lon": 77.5632,
+    "price_sqft": 5130.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kengeri Satellite Town",
+    "lat": 12.9250051,
+    "lon": 77.4826846,
+    "price_sqft": 14000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145adffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Shampura",
+    "lat": 13.0266929,
+    "lon": 77.6144786,
+    "price_sqft": 3407.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ccffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Varanasi",
+    "lat": 13.030667446324,
+    "lon": 77.690715383914,
+    "price_sqft": 5026.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Doddagubbi",
+    "lat": 13.070864,
+    "lon": 77.67264,
+    "price_sqft": 6900.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c2ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Ambalipura",
+    "lat": 13.0735156,
+    "lon": 77.8787849,
+    "price_sqft": 8176.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892b4ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Syndicate Bank Colony",
+    "lat": 13.0006181,
+    "lon": 77.474772,
+    "price_sqft": 4622.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601458effffff",
+    "zone": "West"
+  },
+  {
+    "name": "Manyata Tech Park",
+    "lat": 13.0607412,
+    "lon": 77.6192362,
+    "price_sqft": 6941.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ceffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Nagarathpet",
+    "lat": 12.9662505,
+    "lon": 77.5820883,
+    "price_sqft": 15522.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925bffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jai Bheema Nagar",
+    "lat": 12.9166728,
+    "lon": 77.6141492,
+    "price_sqft": 5775.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618925cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Bhuvaneswari Nagar",
+    "lat": 12.9851153,
+    "lon": 77.6654723,
+    "price_sqft": 4779.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Rahmath Nagar",
+    "lat": 13.0174267,
+    "lon": 77.5936951,
+    "price_sqft": 3333.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892cdffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Ckikkakammana Halli",
+    "lat": 12.849501,
+    "lon": 77.599878,
+    "price_sqft": 3240.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Shankarapuram",
+    "lat": 12.95086,
+    "lon": 77.5709,
+    "price_sqft": 8309.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Iblur Village",
+    "lat": 12.916479,
+    "lon": 77.592234,
+    "price_sqft": 15100.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Ittamadu",
+    "lat": 12.9238877,
+    "lon": 77.5437598,
+    "price_sqft": 6499.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a5ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bannerghatta",
+    "lat": 12.8126605,
+    "lon": 77.5788331,
+    "price_sqft": 4000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014c9affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Karuna Nagar",
+    "lat": 12.843591,
+    "lon": 77.648445,
+    "price_sqft": 7098.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189263ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Konappana Agrahara",
+    "lat": 12.8548582,
+    "lon": 77.6657264,
+    "price_sqft": 3883.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189262ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Himagiri Meadows",
+    "lat": 12.8583552,
+    "lon": 77.5892411,
+    "price_sqft": 3558.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926bffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Shantiniketan Layout",
+    "lat": 12.882341,
+    "lon": 77.605151,
+    "price_sqft": 3844.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189241ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "SR Krishnappa Garden",
+    "lat": 12.9316227,
+    "lon": 77.5984251,
+    "price_sqft": 6338.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoganhalli",
+    "lat": 12.9204967,
+    "lon": 77.703924,
+    "price_sqft": 13333.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618920dffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Roopena Agrahara",
+    "lat": 12.9085109,
+    "lon": 77.6231216,
+    "price_sqft": 4040.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189243ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Harlur",
+    "lat": 13.06522,
+    "lon": 77.83855,
+    "price_sqft": 7782.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892a2ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vysya Bank Colony",
+    "lat": 12.9147965,
+    "lon": 77.6031921,
+    "price_sqft": 5587.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Seetharampalya",
+    "lat": 12.978455,
+    "lon": 77.7231529,
+    "price_sqft": 4643.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189219ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "New Gurappana Palya",
+    "lat": 12.921374462981,
+    "lon": 77.604806615478,
+    "price_sqft": 7916.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Bohra Layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 4257.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "NS Palya",
+    "lat": 12.905422110532,
+    "lon": 77.601966172271,
+    "price_sqft": 7485.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924effffff",
+    "zone": "South"
+  },
+  {
+    "name": "Sunshine Colony",
+    "lat": 12.93503629646,
+    "lon": 77.626318828029,
+    "price_sqft": 3789.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925cffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "OLd Gurappanapalya",
+    "lat": 12.9220411,
+    "lon": 77.6005074,
+    "price_sqft": 8772.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Krishnaraju Layout",
+    "lat": 12.8976996,
+    "lon": 77.5990557,
+    "price_sqft": 3869.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924effffff",
+    "zone": "South"
+  },
+  {
+    "name": "Venkatadri Layout",
+    "lat": 13.083756785994,
+    "lon": 77.636233777592,
+    "price_sqft": 4335.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892ddffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Shanthi Pura",
+    "lat": 12.844575280499,
+    "lon": 77.687208467337,
+    "price_sqft": 13174.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189266ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Nobo Nagar",
+    "lat": 12.867968753405,
+    "lon": 77.596480628751,
+    "price_sqft": 3974.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Sadahalli",
+    "lat": 13.208381,
+    "lon": 77.646759,
+    "price_sqft": 9400.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601690effffff",
+    "zone": "North"
+  },
+  {
+    "name": "Silver Springs Layout",
+    "lat": 12.952268,
+    "lon": 77.711822,
+    "price_sqft": 5121.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Lakshmi Layout",
+    "lat": 12.9554944,
+    "lon": 77.7054338,
+    "price_sqft": 5710.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Jaya Chamarajendra Nagar",
+    "lat": 13.006145875094,
+    "lon": 77.593170489249,
+    "price_sqft": 6165.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Immadihalli",
+    "lat": 12.9650372,
+    "lon": 77.7597421,
+    "price_sqft": 4580.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189203ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Talaghattapura",
+    "lat": 12.8630859,
+    "lon": 77.5309654,
+    "price_sqft": 6993.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014514ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Raghuvanahalli",
+    "lat": 12.8846721,
+    "lon": 77.5472546,
+    "price_sqft": 7374.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189249ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Lingadheeranahalli",
+    "lat": 12.8728609,
+    "lon": 77.5100834,
+    "price_sqft": 12500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014515ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Tata Silk Farm",
+    "lat": 12.9350096,
+    "lon": 77.5734597,
+    "price_sqft": 9610.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kallumantapa",
+    "lat": 12.9767463,
+    "lon": 77.5752782,
+    "price_sqft": 4274.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramaswamipalya",
+    "lat": 13.0016703,
+    "lon": 77.5994603,
+    "price_sqft": 5733.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pattandur Agrahara",
+    "lat": 12.9869875,
+    "lon": 77.7340088,
+    "price_sqft": 3350.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189219ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Armane Nagar",
+    "lat": 13.0075575,
+    "lon": 77.5791508,
+    "price_sqft": 18900.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b2ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jakkuru Layout",
+    "lat": 13.0732336,
+    "lon": 77.5931844,
+    "price_sqft": 3976.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016964ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sneha Colony",
+    "lat": 12.929431,
+    "lon": 77.589286,
+    "price_sqft": 4252.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kambipura",
+    "lat": 12.875504,
+    "lon": 77.4781738,
+    "price_sqft": 2083.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601451cffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Jyothi Nagar",
+    "lat": 12.966957,
+    "lon": 77.668692,
+    "price_sqft": 4906.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vasantha Vallabha Nagar",
+    "lat": 12.916932517158,
+    "lon": 77.542603396598,
+    "price_sqft": 4458.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a5ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "GD Layout",
+    "lat": 13.071409,
+    "lon": 77.5609723,
+    "price_sqft": 4201.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016965ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Narayana Nagar 1st Block",
+    "lat": 12.883292,
+    "lon": 77.554969,
+    "price_sqft": 4889.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189249ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bhattarahalli",
+    "lat": 13.048089,
+    "lon": 77.347747,
+    "price_sqft": 4363.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760144a9ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Vibhutipura Extension",
+    "lat": 12.9701396,
+    "lon": 77.6909543,
+    "price_sqft": 6122.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Yarandahalli",
+    "lat": 12.812094,
+    "lon": 77.672599,
+    "price_sqft": 3151.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189264ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Green Garden Layout",
+    "lat": 12.872527096316,
+    "lon": 77.645105813246,
+    "price_sqft": 4742.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189244ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Iggalur",
+    "lat": 12.7863173,
+    "lon": 77.7044493,
+    "price_sqft": 3375.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618934effffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Chikkanagamangala",
+    "lat": 12.8597534,
+    "lon": 77.6937581,
+    "price_sqft": 4591.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189275ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Gattahalli",
+    "lat": 12.8694049,
+    "lon": 77.7026277,
+    "price_sqft": 9650.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189274ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Ankappa Layout",
+    "lat": 13.033552785885,
+    "lon": 77.676640338114,
+    "price_sqft": 4454.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Mannarayanapalya",
+    "lat": 13.0284373,
+    "lon": 77.6052246,
+    "price_sqft": 4779.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892cdffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Brindavan Nagar",
+    "lat": 12.911729,
+    "lon": 77.5555999,
+    "price_sqft": 6746.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Balagere",
+    "lat": 12.9375487,
+    "lon": 77.7286554,
+    "price_sqft": 6392.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189208ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Anand Nagar",
+    "lat": 12.9658117,
+    "lon": 77.6928518,
+    "price_sqft": 4848.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Parappana Agrahara",
+    "lat": 12.870666611879,
+    "lon": 77.654063095178,
+    "price_sqft": 6167.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189244ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "KG Colony",
+    "lat": 12.9724659,
+    "lon": 77.6643946,
+    "price_sqft": 3692.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Akshaya Vana",
+    "lat": 12.867463,
+    "lon": 77.6076801,
+    "price_sqft": 3916.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Canara Bank Colony",
+    "lat": 12.9314623,
+    "lon": 77.5896216,
+    "price_sqft": 4356.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Subramanyanagar",
+    "lat": 13.0024904,
+    "lon": 77.5534943,
+    "price_sqft": 5437.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b3ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Adityanagar",
+    "lat": 13.0213126,
+    "lon": 77.485394,
+    "price_sqft": 7100.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601459dffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Kathreguppe",
+    "lat": 12.9141817,
+    "lon": 77.7647854,
+    "price_sqft": 6004.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189205ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kudlu",
+    "lat": 12.8862041,
+    "lon": 77.6558256,
+    "price_sqft": 5655.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189246ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Hanuman Nagar",
+    "lat": 12.8843448,
+    "lon": 77.6059059,
+    "price_sqft": 5049.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189241ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Chikka Adugodi",
+    "lat": 12.9289565,
+    "lon": 77.6095317,
+    "price_sqft": 4537.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Sathya Sai Layout",
+    "lat": 12.9705556,
+    "lon": 77.7509176,
+    "price_sqft": 8536.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618921dffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Gandhipuram",
+    "lat": 12.9703184,
+    "lon": 77.7589866,
+    "price_sqft": 5092.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921cffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Gokula Extension",
+    "lat": 13.0399877,
+    "lon": 77.5569217,
+    "price_sqft": 5241.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014594ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Chowdeshwari Layout",
+    "lat": 13.1084676,
+    "lon": 77.5918717,
+    "price_sqft": 4064.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016966ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sidedahalli",
+    "lat": 13.0699869,
+    "lon": 77.4977189,
+    "price_sqft": 3693.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601459affffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "HAL 2nd Stage",
+    "lat": 13.048515,
+    "lon": 77.5357972,
+    "price_sqft": 7670.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014590ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Vinayaka Nagar",
+    "lat": 12.9511244,
+    "lon": 77.602422,
+    "price_sqft": 5751.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Srinivasa Nagar",
+    "lat": 12.93371,
+    "lon": 77.55026,
+    "price_sqft": 5748.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Mandur",
+    "lat": 13.0831017,
+    "lon": 77.7387021,
+    "price_sqft": 2583.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189289ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hallehalli",
+    "lat": 13.041088263523,
+    "lon": 77.70082862475,
+    "price_sqft": 4220.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892f1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Sri Balaji Krupa Layout",
+    "lat": 13.0670072,
+    "lon": 77.6302758,
+    "price_sqft": 7500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ddffffff",
+    "zone": "North"
+  },
+  {
+    "name": "B Channasandra",
+    "lat": 13.0113652,
+    "lon": 77.6609023,
+    "price_sqft": 6148.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "PNS Layout",
+    "lat": 13.0163636,
+    "lon": 77.6419188,
+    "price_sqft": 3935.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Srirampura Jakkur",
+    "lat": 12.9894594,
+    "lon": 77.5677543,
+    "price_sqft": 6363.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145b0ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Horamavu Banaswadi",
+    "lat": 13.0137875,
+    "lon": 77.6510744,
+    "price_sqft": 3605.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Indra Nagar",
+    "lat": 13.006777005739,
+    "lon": 77.562367002276,
+    "price_sqft": 6790.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b3ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Electronics City Phase 1",
+    "lat": 12.85492,
+    "lon": 77.6633,
+    "price_sqft": 5809.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189262ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Singanayakanahalli",
+    "lat": 13.1461809,
+    "lon": 77.5618608,
+    "price_sqft": 2066.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016944ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Chandra Reddy Layout",
+    "lat": 12.885975,
+    "lon": 77.617673,
+    "price_sqft": 19750.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189241ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "9th Phase JP Nagar",
+    "lat": 12.9069203,
+    "lon": 77.5802268,
+    "price_sqft": 4959.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "KG Halli",
+    "lat": 13.0223383,
+    "lon": 77.6194164,
+    "price_sqft": 800.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892ccffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "KR Garden",
+    "lat": 12.9944589,
+    "lon": 77.6308863,
+    "price_sqft": 7436.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e8ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thurahalli",
+    "lat": 12.8875938,
+    "lon": 77.5307416,
+    "price_sqft": 4307.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014516ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Banashankari Stage 6",
+    "lat": 12.9450321,
+    "lon": 77.5486979,
+    "price_sqft": 13000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Aavalahalli",
+    "lat": 12.8738099,
+    "lon": 77.7082097,
+    "price_sqft": 4074.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189274ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Virgonagar",
+    "lat": 13.0441612,
+    "lon": 77.7374224,
+    "price_sqft": 11050.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f6ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Someshwara Colony",
+    "lat": 12.9160197,
+    "lon": 77.6179692,
+    "price_sqft": 6057.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925cffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Lakshminarayana Pura",
+    "lat": 12.9579231,
+    "lon": 77.70484,
+    "price_sqft": 14850.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Chennappa Layout",
+    "lat": 12.962274,
+    "lon": 77.7042349,
+    "price_sqft": 5490.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Palanahalli",
+    "lat": 13.1164737,
+    "lon": 77.610382,
+    "price_sqft": 1396.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892dbffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Lal Bahadur Shastri Nagar",
+    "lat": 12.857677832355,
+    "lon": 77.559916287122,
+    "price_sqft": 12050.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Arasanakunte",
+    "lat": 13.1845425,
+    "lon": 77.6882076,
+    "price_sqft": 3500.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876016905ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Munireddy Layout",
+    "lat": 12.886413,
+    "lon": 77.558675,
+    "price_sqft": 3696.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189249ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Jayamahal",
+    "lat": 13.0063889,
+    "lon": 77.5931622,
+    "price_sqft": 8048.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramanagara",
+    "lat": 12.8325329,
+    "lon": 77.7339732,
+    "price_sqft": 2700.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618935cffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Margondanahalli",
+    "lat": 13.203482,
+    "lon": 77.575513,
+    "price_sqft": 6500.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876016950ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Srinivaspura",
+    "lat": 13.123758,
+    "lon": 77.647707,
+    "price_sqft": 14000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892daffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sagayapura",
+    "lat": 12.9996958,
+    "lon": 77.6241949,
+    "price_sqft": 4946.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e8ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jayanti Nagar",
+    "lat": 13.0300125,
+    "lon": 77.6679938,
+    "price_sqft": 4666.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Mullur",
+    "lat": 12.903938730201,
+    "lon": 77.725294445673,
+    "price_sqft": 8685.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618922bffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Devasandra Extension",
+    "lat": 13.008279252336,
+    "lon": 77.695910375424,
+    "price_sqft": 6874.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e2ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Postal Colony",
+    "lat": 13.0362064,
+    "lon": 77.5788503,
+    "price_sqft": 4000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Hosakerehalli Layout",
+    "lat": 12.9325748,
+    "lon": 77.5449088,
+    "price_sqft": 4507.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a0ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Poorna Pragna Layout",
+    "lat": 12.9325937,
+    "lon": 77.5531207,
+    "price_sqft": 4268.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Coconut Grove Layout",
+    "lat": 13.02688,
+    "lon": 77.654798,
+    "price_sqft": 5390.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Maithri Layout",
+    "lat": 12.985473,
+    "lon": 77.758907,
+    "price_sqft": 5360.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189218ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kenchenhalli",
+    "lat": 12.9274597,
+    "lon": 77.508949,
+    "price_sqft": 5340.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145acffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Air View Colony",
+    "lat": 12.943595921446,
+    "lon": 77.609762371691,
+    "price_sqft": 5644.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Garden Layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 11860.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Pragathi Nagar",
+    "lat": 12.862446002592,
+    "lon": 77.652177776412,
+    "price_sqft": 4003.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189244ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Hosabasavanapura",
+    "lat": 13.0178127,
+    "lon": 77.7105948,
+    "price_sqft": 6045.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "K Channasandra",
+    "lat": 13.040646,
+    "lon": 77.679815,
+    "price_sqft": 4669.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Keerthi Layout",
+    "lat": 13.0154203,
+    "lon": 77.6357669,
+    "price_sqft": 2948.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Jnana Ganga Nagar",
+    "lat": 12.9522732,
+    "lon": 77.4819321,
+    "price_sqft": 12750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a8ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Garebhavipalya",
+    "lat": 12.8613882,
+    "lon": 77.6041722,
+    "price_sqft": 4643.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618926affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Balaji Nagar",
+    "lat": 13.0161247,
+    "lon": 77.4963517,
+    "price_sqft": 4806.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014583ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Siddapura",
+    "lat": 13.13535,
+    "lon": 77.8670514,
+    "price_sqft": 13700.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189294ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Akshayanagara West",
+    "lat": 12.8707045,
+    "lon": 77.6106957,
+    "price_sqft": 3329.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189241ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Srinivas Colony",
+    "lat": 12.9619067,
+    "lon": 77.5939049,
+    "price_sqft": 3981.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925bffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bommasandra Industrial Area",
+    "lat": 12.81774,
+    "lon": 77.68415,
+    "price_sqft": 2757.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189264ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Chelekare",
+    "lat": 13.030131089457,
+    "lon": 77.643392492344,
+    "price_sqft": 3896.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Devara Jeevanahalli",
+    "lat": 13.0143532,
+    "lon": 77.6088863,
+    "price_sqft": 2299.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ebffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Green Woods Layout",
+    "lat": 13.02969,
+    "lon": 77.685427,
+    "price_sqft": 4723.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c4ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Doddakammanahalli",
+    "lat": 12.849987585407,
+    "lon": 77.595901777855,
+    "price_sqft": 5021.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926bffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Venkatala",
+    "lat": 13.112751,
+    "lon": 77.602988,
+    "price_sqft": 3304.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016966ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Hennagara",
+    "lat": 12.7836937,
+    "lon": 77.6616324,
+    "price_sqft": 5237.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189349ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "SMV Layout Block 4",
+    "lat": 12.934588,
+    "lon": 77.48062,
+    "price_sqft": 10850.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a8ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Chikkagubbi",
+    "lat": 13.080839,
+    "lon": 77.666272,
+    "price_sqft": 7269.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892d1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hennur Bande",
+    "lat": 13.0374339,
+    "lon": 77.6478297,
+    "price_sqft": 6823.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Bellahalli",
+    "lat": 13.0951,
+    "lon": 77.6390267,
+    "price_sqft": 1474.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892d8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Vijay Nagar",
+    "lat": 12.974625,
+    "lon": 77.755321,
+    "price_sqft": 5296.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921dffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Veer Sandra",
+    "lat": 12.8393148,
+    "lon": 77.6732801,
+    "price_sqft": 6459.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189266ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Aishwarya Crystal Layout",
+    "lat": 12.8714937,
+    "lon": 77.6451395,
+    "price_sqft": 5172.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189244ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Shree Ananth Nagar Layout",
+    "lat": 12.83518635184,
+    "lon": 77.69328204209,
+    "price_sqft": 4553.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189359ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Gowdanapalya",
+    "lat": 12.91088,
+    "lon": 77.5557481,
+    "price_sqft": 5000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618924bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bettadasanapura",
+    "lat": 12.8417,
+    "lon": 77.608245,
+    "price_sqft": 1907.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189268ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Chikku Lakshmaiah Layout",
+    "lat": 12.935907,
+    "lon": 77.6101104,
+    "price_sqft": 14441.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189258ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Duvasapalya",
+    "lat": 12.9767463,
+    "lon": 77.5752782,
+    "price_sqft": 4350.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maragondanahalli",
+    "lat": 13.203482,
+    "lon": 77.575513,
+    "price_sqft": 6539.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016950ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "1st Block HRBR Layout",
+    "lat": 13.0210435,
+    "lon": 77.6237293,
+    "price_sqft": 29000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892ccffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "BSM Extension",
+    "lat": 12.9145076,
+    "lon": 77.4681064,
+    "price_sqft": 4191.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601451affffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kothnur Narayanapura",
+    "lat": 13.068691,
+    "lon": 77.632386,
+    "price_sqft": 3853.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892ddffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Agara Village",
+    "lat": 13.0340085,
+    "lon": 77.6562118,
+    "price_sqft": 7587.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Vijayashree Layout",
+    "lat": 12.916371574098,
+    "lon": 77.493236647655,
+    "price_sqft": 6945.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145acffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Pattanagere",
+    "lat": 12.9247,
+    "lon": 77.5140639,
+    "price_sqft": 15000.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a1ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Basavanna Nagar",
+    "lat": 12.9824567,
+    "lon": 77.7217727,
+    "price_sqft": 6079.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189219ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Vinayak Nagar",
+    "lat": 12.959508,
+    "lon": 77.6682073,
+    "price_sqft": 7225.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189252ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Brindavan Layout",
+    "lat": 12.90133594378,
+    "lon": 77.475686488593,
+    "price_sqft": 3428.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601451effffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Thirumalashettyhally",
+    "lat": 12.9888537,
+    "lon": 77.7839721,
+    "price_sqft": 9351.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189211ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Palace Guttahalli",
+    "lat": 12.998931237195,
+    "lon": 77.575462869613,
+    "price_sqft": 8666.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145b0ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hunasamaranahalli",
+    "lat": 13.14384,
+    "lon": 77.61695,
+    "price_sqft": 1728.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016974ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Ambedkar Colony",
+    "lat": 13.0873757,
+    "lon": 77.5883463,
+    "price_sqft": 14600.0,
+    "budget_segment": "Premium",
+    "hex_id": "876016964ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Doddanagamangala",
+    "lat": 12.7621826,
+    "lon": 77.5345165,
+    "price_sqft": 6805.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014524ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "D Souza Layout",
+    "lat": 12.9703267,
+    "lon": 77.5944816,
+    "price_sqft": 800.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b4ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madavara",
+    "lat": 13.050486,
+    "lon": 77.473499,
+    "price_sqft": 5500.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601459bffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Sarjapura Attibele Road",
+    "lat": 12.806254166748,
+    "lon": 77.783666215777,
+    "price_sqft": 6350.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189373ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Vishweshwarapura",
+    "lat": 12.9532584,
+    "lon": 77.5741055,
+    "price_sqft": 7312.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a6ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashirvad Colony",
+    "lat": 13.0267935,
+    "lon": 77.6617914,
+    "price_sqft": 4237.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Nagondanahalli",
+    "lat": 12.9720404,
+    "lon": 77.7685908,
+    "price_sqft": 6632.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921cffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Hadosiddapura",
+    "lat": 12.9007098,
+    "lon": 77.7068213,
+    "price_sqft": 7019.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189276ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Nagashetty Halli",
+    "lat": 13.0392931,
+    "lon": 77.5718017,
+    "price_sqft": 15769.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Chennammana Kere",
+    "lat": 12.93212,
+    "lon": 77.56371,
+    "price_sqft": 4528.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Uganavadi",
+    "lat": 13.239894,
+    "lon": 77.656335,
+    "price_sqft": 4600.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601691dffffff",
+    "zone": "North"
+  },
+  {
+    "name": "3rd Block HBR Layout",
+    "lat": 13.024183,
+    "lon": 77.6335348,
+    "price_sqft": 5000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Nandanam Colony",
+    "lat": 13.022536,
+    "lon": 77.6597467,
+    "price_sqft": 6000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Kothannur",
+    "lat": 12.8582223,
+    "lon": 77.5677354,
+    "price_sqft": 6227.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Hebbal Kempapura",
+    "lat": 13.053941,
+    "lon": 77.59867,
+    "price_sqft": 11303.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Bheemanakuppe",
+    "lat": 12.9071644,
+    "lon": 77.4468305,
+    "price_sqft": 9000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601451bffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kommaghatta",
+    "lat": 12.9284184,
+    "lon": 77.4620951,
+    "price_sqft": 9150.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a9ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Thirumenahalli",
+    "lat": 13.116394,
+    "lon": 77.742427,
+    "price_sqft": 5599.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618928bffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "TMC Layout",
+    "lat": 12.9148226,
+    "lon": 77.5831258,
+    "price_sqft": 12955.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Sarakki Nagar",
+    "lat": 12.9104517,
+    "lon": 77.581981,
+    "price_sqft": 8190.0,
+    "budget_segment": "Premium",
+    "hex_id": "87618924affffff",
+    "zone": "South"
+  },
+  {
+    "name": "Maruthi Nagar",
+    "lat": 13.0488151,
+    "lon": 77.5799792,
+    "price_sqft": 5083.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "3rd Phase Iti Layout",
+    "lat": 12.9306604,
+    "lon": 77.5541946,
+    "price_sqft": 5813.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Ananth Nagar",
+    "lat": 12.828081346968,
+    "lon": 77.686077564809,
+    "price_sqft": 5150.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189359ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Mailasandra",
+    "lat": 12.9155958,
+    "lon": 77.4960758,
+    "price_sqft": 5687.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014513ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Bidadi",
+    "lat": 12.8905089,
+    "lon": 77.4662148,
+    "price_sqft": 3350.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87601451effffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Hemmigepura",
+    "lat": 12.8909042,
+    "lon": 77.5001924,
+    "price_sqft": 3964.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014511ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Kengeri Hobli,Challegatta",
+    "lat": 12.8979501,
+    "lon": 77.45366,
+    "price_sqft": 7650.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014518ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Sree Narayana Nagar",
+    "lat": 12.915866213346,
+    "lon": 77.607714020464,
+    "price_sqft": 4670.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Sri Venkateshpura Layout",
+    "lat": 12.998879,
+    "lon": 77.5336935,
+    "price_sqft": 4442.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Nisarga Layout",
+    "lat": 12.7911113,
+    "lon": 77.6202129,
+    "price_sqft": 3050.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014c93ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Handenahalli",
+    "lat": 12.957198,
+    "lon": 77.848578,
+    "price_sqft": 1382.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189232ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Gkvk Layout",
+    "lat": 13.07893604357,
+    "lon": 77.604682003248,
+    "price_sqft": 12000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892caffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sannatammanahalli",
+    "lat": 13.0305896,
+    "lon": 77.7103275,
+    "price_sqft": 3867.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892f5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Bhagyalakshmi Avenue",
+    "lat": 12.907569805583,
+    "lon": 77.590244206409,
+    "price_sqft": 4113.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924effffff",
+    "zone": "South"
+  },
+  {
+    "name": "Muddayanapalya",
+    "lat": 12.9340746,
+    "lon": 77.4168952,
+    "price_sqft": 5000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014430ffffff",
+    "zone": "West"
+  },
+  {
+    "name": "Sidlaghatta",
+    "lat": 13.112054219725,
+    "lon": 77.815877376301,
+    "price_sqft": 2750.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189282ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Hejjala",
+    "lat": 13.041691991054,
+    "lon": 77.567321964338,
+    "price_sqft": 3000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Chikkabettahalli",
+    "lat": 13.091817,
+    "lon": 77.5494893,
+    "price_sqft": 3916.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016961ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Sri Nivasa Reddy Layout",
+    "lat": 12.8834245,
+    "lon": 77.7578812,
+    "price_sqft": 8010.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189228ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Divya Unnathi Layout",
+    "lat": 12.935110895399,
+    "lon": 77.587551939109,
+    "price_sqft": 4186.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gunjur Palya",
+    "lat": 12.9262108,
+    "lon": 77.7225015,
+    "price_sqft": 5185.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618920dffffff",
+    "zone": "East"
+  },
+  {
+    "name": "BTM 4th Stage",
+    "lat": 12.92481179951,
+    "lon": 77.652014390403,
+    "price_sqft": 17750.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189255ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sri Sai Layout",
+    "lat": 12.873634,
+    "lon": 77.661377,
+    "price_sqft": 4638.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189271ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Anantapuram",
+    "lat": 13.13133,
+    "lon": 77.37797,
+    "price_sqft": 4137.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87601449cffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Ramakrishnappa Layout",
+    "lat": 13.0428504,
+    "lon": 77.5711031,
+    "price_sqft": 15384.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014596ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Mallasandra",
+    "lat": 13.0086696,
+    "lon": 77.783585,
+    "price_sqft": 9750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189213ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Basaveshwara Nagar Yelahanka",
+    "lat": 12.9953074,
+    "lon": 77.539983,
+    "price_sqft": 4263.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Ferrar Nagar",
+    "lat": 13.038803145945,
+    "lon": 77.703977570405,
+    "price_sqft": 4850.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f1ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Surabhi Layout",
+    "lat": 13.033211684336,
+    "lon": 77.578002939736,
+    "price_sqft": 4607.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Singena Agrahara",
+    "lat": 12.8324116,
+    "lon": 77.7145086,
+    "price_sqft": 5554.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189358ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Thirupalya",
+    "lat": 12.823835,
+    "lon": 77.670932,
+    "price_sqft": 4333.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189264ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Harohalli",
+    "lat": 12.9572871,
+    "lon": 77.7860375,
+    "price_sqft": 3700.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189202ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Alfa Gardens",
+    "lat": 12.960072,
+    "lon": 77.6390442,
+    "price_sqft": 4251.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189253ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhuvaneshwari Nagar",
+    "lat": 12.9223473,
+    "lon": 77.5496352,
+    "price_sqft": 4472.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8760145a4ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Uday Nagar",
+    "lat": 12.9927846,
+    "lon": 77.671448,
+    "price_sqft": 6147.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892e1ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Reliable Tranquil Layout",
+    "lat": 12.894957,
+    "lon": 77.655195,
+    "price_sqft": 4353.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189246ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Basavanagara",
+    "lat": 12.9636092,
+    "lon": 77.6824755,
+    "price_sqft": 4910.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Kurudusonnenahalli",
+    "lat": 13.016511,
+    "lon": 77.733219,
+    "price_sqft": 3380.0,
+    "budget_segment": "Affordable",
+    "hex_id": "87618921bffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Uttarahalli Manavarthekaval",
+    "lat": 12.8568957,
+    "lon": 77.5214851,
+    "price_sqft": 8154.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014533ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Ias Layout",
+    "lat": 12.918802980761,
+    "lon": 77.601992030443,
+    "price_sqft": 3966.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618925dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Gundur",
+    "lat": 12.875492,
+    "lon": 77.83949,
+    "price_sqft": 3200.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876189319ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Channasandra",
+    "lat": 12.9824373,
+    "lon": 77.7686096,
+    "price_sqft": 4885.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618921cffffff",
+    "zone": "East"
+  },
+  {
+    "name": "MV Extenstion",
+    "lat": 13.068643433939,
+    "lon": 77.789551251747,
+    "price_sqft": 3000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892aaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Nagenahalli",
+    "lat": 13.197555,
+    "lon": 77.403122,
+    "price_sqft": 3518.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016868ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Bagepalli",
+    "lat": 12.9767463,
+    "lon": 77.5752782,
+    "price_sqft": 1200.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8760145b5ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bandapura",
+    "lat": 13.045858,
+    "lon": 77.745891,
+    "price_sqft": 5942.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f6ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Budigere Cross",
+    "lat": 13.1361713,
+    "lon": 77.7530311,
+    "price_sqft": 12434.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189299ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Narayana Nagar 2nd Block",
+    "lat": 12.878290099501,
+    "lon": 77.55565502567,
+    "price_sqft": 3906.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189249ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Kembathalli",
+    "lat": 12.8528345,
+    "lon": 77.5810352,
+    "price_sqft": 5345.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618926bffffff",
+    "zone": "South"
+  },
+  {
+    "name": "6th Block Sir M Vishweshwaraiah Layout",
+    "lat": 12.995665,
+    "lon": 77.541475,
+    "price_sqft": 13650.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Soukya Road",
+    "lat": 12.986294108812,
+    "lon": 77.781202134231,
+    "price_sqft": 9750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876189211ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Bidarahalli",
+    "lat": 13.05446000361,
+    "lon": 77.759316072693,
+    "price_sqft": 4200.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892abffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "1st Block Sir M Vishveshwaraiah Layout",
+    "lat": 13.071779616349,
+    "lon": 77.56000375966,
+    "price_sqft": 13350.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014592ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "2nd Block Sir M Vishweshwaraiah Layout",
+    "lat": 12.995665,
+    "lon": 77.541475,
+    "price_sqft": 12250.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Rose Garden",
+    "lat": 13.0286143,
+    "lon": 77.6535032,
+    "price_sqft": 7845.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c5ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Sir M Visvesvaraya nagara 8th block",
+    "lat": 12.933189,
+    "lon": 77.579921,
+    "price_sqft": 16250.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189259ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yelahanka 5th Phase",
+    "lat": 13.1001182,
+    "lon": 77.5963458,
+    "price_sqft": 2174.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876016966ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Halasuru",
+    "lat": 12.975581197327,
+    "lon": 77.616962857385,
+    "price_sqft": 13127.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892e9ffffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Muneshwara Layout",
+    "lat": 13.0096022,
+    "lon": 77.526387,
+    "price_sqft": 5388.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "876014582ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Kanakanagar",
+    "lat": 13.0348252,
+    "lon": 77.606925,
+    "price_sqft": 6387.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892c8ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Koppa Gate",
+    "lat": 12.801494,
+    "lon": 77.623947,
+    "price_sqft": 4600.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014c92ffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Anjanapura 2nd Block",
+    "lat": 12.857585,
+    "lon": 77.5595363,
+    "price_sqft": 13000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Adarsh Nagar",
+    "lat": 13.0761639,
+    "lon": 77.4229679,
+    "price_sqft": 4000.0,
+    "budget_segment": "Affordable",
+    "hex_id": "876014484ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Gnanabharathi",
+    "lat": 12.93553,
+    "lon": 77.51099,
+    "price_sqft": 12110.0,
+    "budget_segment": "Premium",
+    "hex_id": "8760145a1ffffff",
+    "zone": "South-West"
+  },
+  {
+    "name": "Yashoda Nagar",
+    "lat": 13.0758812,
+    "lon": 77.5912006,
+    "price_sqft": 13750.0,
+    "budget_segment": "Premium",
+    "hex_id": "876016964ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Happy Garden Layout",
+    "lat": 13.017107,
+    "lon": 77.726835,
+    "price_sqft": 4080.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8761892f5ffffff",
+    "zone": "East"
+  },
+  {
+    "name": "Sanjay Nagar",
+    "lat": 13.0385766,
+    "lon": 77.5803831,
+    "price_sqft": 7833.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892c9ffffff",
+    "zone": "North"
+  },
+  {
+    "name": "Anjanapura 5th G Block",
+    "lat": 12.857585,
+    "lon": 77.5595363,
+    "price_sqft": 12750.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924dffffff",
+    "zone": "South"
+  },
+  {
+    "name": "Annayappa Block",
+    "lat": 13.005753772942,
+    "lon": 77.637698099333,
+    "price_sqft": 9830.0,
+    "budget_segment": "Premium",
+    "hex_id": "8761892eaffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Baiyappanahalli",
+    "lat": 12.9954434,
+    "lon": 77.6431908,
+    "price_sqft": 1900.0,
+    "budget_segment": "Affordable",
+    "hex_id": "8761892e8ffffff",
+    "zone": "North-East"
+  },
+  {
+    "name": "Kasavanahalli",
+    "lat": 12.9048148,
+    "lon": 77.6777941,
+    "price_sqft": 6510.0,
+    "budget_segment": "Premium",
+    "hex_id": "876189273ffffff",
+    "zone": "South-East"
+  },
+  {
+    "name": "Sir M Vishweshwaraiah Layout 8 th Block",
+    "lat": 12.995665,
+    "lon": 77.541475,
+    "price_sqft": 16250.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "6th Block Vishweshwaraiah Layout",
+    "lat": 13.065369,
+    "lon": 77.533642,
+    "price_sqft": 13550.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014593ffffff",
+    "zone": "North-West"
+  },
+  {
+    "name": "Dollar Layout",
+    "lat": 12.9015872,
+    "lon": 77.6008521,
+    "price_sqft": 5616.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "87618924effffff",
+    "zone": "South"
+  },
+  {
+    "name": "3rd Stage Basaveshwar Nagar",
+    "lat": 12.9953074,
+    "lon": 77.539983,
+    "price_sqft": 22000.0,
+    "budget_segment": "Premium",
+    "hex_id": "876014586ffffff",
+    "zone": "North-West"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "included_cities": [
+    "mumbai",
+    "hyderabad",
+    "chennai",
+    "kolkata",
+    "pune",
+    "ahmedabad"
+  ],
+  "excluded_cities": [
+    "bengaluru",
+    "delhi_ncr"
+  ],
+  "source_files": {
+    "mumbai": "data/reference/pincodes/mumbai_pin_candidates.csv",
+    "hyderabad": "data/reference/pincodes/hyderabad_pin_candidates.csv",
+    "chennai": "data/reference/pincodes/chennai_pin_candidates.csv",
+    "kolkata": "data/reference/pincodes/kolkata_pin_candidates.csv",
+    "pune": "data/reference/pincodes/pune_pin_candidates.csv",
+    "ahmedabad": "data/reference/pincodes/ahmedabad_pin_candidates.csv"
+  },
+  "source_counts": {
+    "mumbai": 89,
+    "hyderabad": 56,
+    "chennai": 83,
+    "kolkata": 74,
+    "pune": 145,
+    "ahmedabad": 82
+  },
+  "combined_unique_pincode_count": 529,
+  "deduplication_rule": "six-digit PIN retained once across all included cities",
+  "output_file": "data/input/udise_combined_six_cities_pincodes.json"
+}

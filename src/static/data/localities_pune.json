@@ -1,0 +1,7769 @@
+[
+  {
+    "name": "Wagholi",
+    "lat": 18.57792,
+    "lon": 73.98001,
+    "price_sqft": 6172.39,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinjawadi",
+    "lat": 18.58442,
+    "lon": 73.73721,
+    "price_sqft": 6836.14,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Punawale, Pimpri Chinchwad",
+    "lat": 18.63094,
+    "lon": 73.74466,
+    "price_sqft": 6690.26,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884037fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimple Saudagar, Pimpri Chinchwad",
+    "lat": 18.5972,
+    "lon": 73.79941,
+    "price_sqft": 8632.46,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088431bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kiwale, Dehu Road",
+    "lat": 18.66244,
+    "lon": 73.73048,
+    "price_sqft": 5861.97,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884183fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kharadi",
+    "lat": 18.55136,
+    "lon": 73.941,
+    "price_sqft": 8739.01,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885327fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadgaon Sheri Road",
+    "lat": 18.54337,
+    "lon": 73.9275,
+    "price_sqft": 7500.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885335fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner",
+    "lat": 18.55709,
+    "lon": 73.78522,
+    "price_sqft": 10485.44,
+    "budget_segment": "Premium",
+    "hex_id": "886088421dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balewadi",
+    "lat": 18.57344,
+    "lon": 73.77689,
+    "price_sqft": 9767.44,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088423bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mohammed Wadi",
+    "lat": 18.47464,
+    "lon": 73.91392,
+    "price_sqft": 6517.77,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885205fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wakad",
+    "lat": 18.65957,
+    "lon": 73.35462,
+    "price_sqft": 8219.93,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608861e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Amanora Park Town",
+    "lat": 18.51847,
+    "lon": 73.94303,
+    "price_sqft": 10446.0,
+    "budget_segment": "Premium",
+    "hex_id": "886088530dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mumbai Pune Expressway",
+    "lat": 18.73956,
+    "lon": 73.44729,
+    "price_sqft": 6777.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886b0bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ravet, Pimpri Chinchwad",
+    "lat": 18.6579,
+    "lon": 73.76231,
+    "price_sqft": 7193.16,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884113fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bibwewadi",
+    "lat": 18.47686,
+    "lon": 73.86513,
+    "price_sqft": 12652.08,
+    "budget_segment": "Premium",
+    "hex_id": "88608852e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhugaon, Bavdhan",
+    "lat": 18.503,
+    "lon": 73.754,
+    "price_sqft": 7103.9,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088551dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tathawade Pimpri Chinchwad",
+    "lat": 18.62148,
+    "lon": 73.75256,
+    "price_sqft": 7352.33,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884039fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maan",
+    "lat": 18.57381,
+    "lon": 73.73523,
+    "price_sqft": 6343.8,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tingre Nagar",
+    "lat": 18.57481,
+    "lon": 73.89052,
+    "price_sqft": 7873.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088513bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mundhwa",
+    "lat": 18.53187,
+    "lon": 73.92741,
+    "price_sqft": 9145.83,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088533dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sinhgad Road",
+    "lat": 18.47326,
+    "lon": 73.8209,
+    "price_sqft": 8567.05,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088576dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mamurdi, Dehu Road",
+    "lat": 18.6761,
+    "lon": 73.71508,
+    "price_sqft": 5894.8,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NIBM Road",
+    "lat": 18.47184,
+    "lon": 73.90159,
+    "price_sqft": 7491.43,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885203fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bavdhan",
+    "lat": 18.53696,
+    "lon": 73.77946,
+    "price_sqft": 7990.14,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088552dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manjari BK",
+    "lat": 18.5086,
+    "lon": 73.95473,
+    "price_sqft": 6906.67,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885341fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manjari Khurd",
+    "lat": 18.5278,
+    "lon": 73.96507,
+    "price_sqft": 7718.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088536dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marunji, Hinjawadi",
+    "lat": 18.44971,
+    "lon": 73.90983,
+    "price_sqft": 6769.8,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088525dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahalunge",
+    "lat": 18.56821,
+    "lon": 73.76146,
+    "price_sqft": 7668.25,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842edfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivajinagar",
+    "lat": 18.52682,
+    "lon": 73.84263,
+    "price_sqft": 14924.25,
+    "budget_segment": "Premium",
+    "hex_id": "88608850e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shewalewadi",
+    "lat": 18.4957,
+    "lon": 73.93682,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885359fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hadapsar",
+    "lat": 18.50121,
+    "lon": 73.93005,
+    "price_sqft": 7915.9,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885351fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpri Chinchwad",
+    "lat": 18.61932,
+    "lon": 73.80645,
+    "price_sqft": 9406.25,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884315fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phase 1 Hinjewadi Rajiv Gandhi Infotech Park",
+    "lat": 18.58501,
+    "lon": 73.73295,
+    "price_sqft": 9102.25,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Loni Kalbhor",
+    "lat": 18.4862,
+    "lon": 74.00659,
+    "price_sqft": 4680.5,
+    "budget_segment": "Value",
+    "hex_id": "886088c931fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Erandwane",
+    "lat": 18.50862,
+    "lon": 73.83276,
+    "price_sqft": 16479.67,
+    "budget_segment": "Premium",
+    "hex_id": "88608850c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Undri",
+    "lat": 18.45708,
+    "lon": 73.91208,
+    "price_sqft": 5682.4,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885255fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Viman Nagar",
+    "lat": 18.56423,
+    "lon": 73.91154,
+    "price_sqft": 11346.52,
+    "budget_segment": "Premium",
+    "hex_id": "8860885109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pashan",
+    "lat": 18.54009,
+    "lon": 73.79446,
+    "price_sqft": 10233.92,
+    "budget_segment": "Premium",
+    "hex_id": "8860884259fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadgaon Sheri",
+    "lat": 18.54773,
+    "lon": 73.9192,
+    "price_sqft": 10385.38,
+    "budget_segment": "Premium",
+    "hex_id": "886088514bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhanori",
+    "lat": 18.58398,
+    "lon": 73.89054,
+    "price_sqft": 6463.03,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885131fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lohegaon",
+    "lat": 18.59314,
+    "lon": 73.91969,
+    "price_sqft": 6059.39,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088512dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charholi BK",
+    "lat": 18.64372,
+    "lon": 73.89647,
+    "price_sqft": 6906.27,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885aadfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Keshav Nagar Mundhwa",
+    "lat": 18.53439,
+    "lon": 73.94053,
+    "price_sqft": 6867.87,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088532bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thergaon, Pimpri Chinchwad",
+    "lat": 18.61683,
+    "lon": 73.7781,
+    "price_sqft": 9421.59,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088406bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Kalyani Nagar",
+    "lat": 18.54882,
+    "lon": 73.91448,
+    "price_sqft": 8441.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088515dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Handewadi",
+    "lat": 18.46621,
+    "lon": 73.92265,
+    "price_sqft": 5430.13,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885247fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yerawada, Airport Road",
+    "lat": 18.55881,
+    "lon": 73.88838,
+    "price_sqft": 14555.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860885111fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kothrud",
+    "lat": 18.50658,
+    "lon": 73.81033,
+    "price_sqft": 13873.73,
+    "budget_segment": "Premium",
+    "hex_id": "886088509dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sus",
+    "lat": 18.55277,
+    "lon": 73.76659,
+    "price_sqft": 7549.1,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884213fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpri",
+    "lat": 18.62209,
+    "lon": 73.81058,
+    "price_sqft": 8945.6,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884339fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Akurdi",
+    "lat": 18.63515,
+    "lon": 73.78635,
+    "price_sqft": 9175.25,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088415bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yewalewadi",
+    "lat": 18.43526,
+    "lon": 73.89221,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd67fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Moshi",
+    "lat": 18.66412,
+    "lon": 73.84712,
+    "price_sqft": 5674.32,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088588bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambegaon BK",
+    "lat": 18.4556,
+    "lon": 73.83969,
+    "price_sqft": 6959.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088529dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Somatane",
+    "lat": 18.69941,
+    "lon": 73.68293,
+    "price_sqft": 5455.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tathawade Road",
+    "lat": 18.62009,
+    "lon": 73.75164,
+    "price_sqft": 6884.43,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884039fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadmukhwadi",
+    "lat": 18.64668,
+    "lon": 73.88156,
+    "price_sqft": 4881.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885aa7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kondhwa BK",
+    "lat": 18.4619,
+    "lon": 73.88191,
+    "price_sqft": 7000.3,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885213fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chinchwad, Pimpri Chinchwad",
+    "lat": 18.63412,
+    "lon": 73.79381,
+    "price_sqft": 10121.5,
+    "budget_segment": "Premium",
+    "hex_id": "8860884159fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katraj",
+    "lat": 18.45688,
+    "lon": 73.86066,
+    "price_sqft": 6690.2,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimple Nilakh, Pimpri Chinchwad",
+    "lat": 18.62066,
+    "lon": 73.78509,
+    "price_sqft": 10067.22,
+    "budget_segment": "Premium",
+    "hex_id": "8860884061fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhankawadi",
+    "lat": 18.46858,
+    "lon": 73.85078,
+    "price_sqft": 8846.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885281fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadgaon BK",
+    "lat": 18.54348,
+    "lon": 74.06508,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2667fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NIBM Annexe Area",
+    "lat": 18.48532,
+    "lon": 73.89842,
+    "price_sqft": 6569.9,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borhade Wadi",
+    "lat": 18.66708,
+    "lon": 73.84666,
+    "price_sqft": 5277.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885883fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Law College Road",
+    "lat": 18.51297,
+    "lon": 73.82643,
+    "price_sqft": 18688.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860885089fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhanori Lohegaon Road",
+    "lat": 18.59737,
+    "lon": 73.90168,
+    "price_sqft": 7170.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885ac9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kondhwa",
+    "lat": 18.47306,
+    "lon": 73.88637,
+    "price_sqft": 7121.31,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dapodi, Pimpri Chinchwad",
+    "lat": 18.58656,
+    "lon": 73.82912,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sadashiv Peth",
+    "lat": 18.50932,
+    "lon": 73.84628,
+    "price_sqft": 14765.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Uday Baug, Ghorpadi",
+    "lat": 18.51314,
+    "lon": 73.90579,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885313fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manjri, Manjri Budruk",
+    "lat": 18.51864,
+    "lon": 73.97599,
+    "price_sqft": 6937.36,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2691fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambegaon",
+    "lat": 18.48019,
+    "lon": 73.84174,
+    "price_sqft": 6934.75,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yewalewadi, Katraj",
+    "lat": 18.44063,
+    "lon": 73.89057,
+    "price_sqft": 5252.4,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pisoli",
+    "lat": 18.45662,
+    "lon": 73.90135,
+    "price_sqft": 4638.23,
+    "budget_segment": "Value",
+    "hex_id": "8860885257fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fursungi",
+    "lat": 18.47766,
+    "lon": 73.95834,
+    "price_sqft": 5079.29,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c987fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hole Vasti",
+    "lat": 18.45797,
+    "lon": 73.9121,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885255fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Somatne Phata",
+    "lat": 18.70406,
+    "lon": 73.68704,
+    "price_sqft": 4578.5,
+    "budget_segment": "Value",
+    "hex_id": "8860884f11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maval, Lonavala",
+    "lat": 18.74808,
+    "lon": 73.44878,
+    "price_sqft": 4665.0,
+    "budget_segment": "Value",
+    "hex_id": "8860886b01fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talegaon Dabhade",
+    "lat": 18.71621,
+    "lon": 73.68333,
+    "price_sqft": 3957.67,
+    "budget_segment": "Value",
+    "hex_id": "8860884c6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikhali Pimpri Chinchwad",
+    "lat": 18.67255,
+    "lon": 73.81347,
+    "price_sqft": 5392.2,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884161fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Magarpatta",
+    "lat": 18.51575,
+    "lon": 73.92975,
+    "price_sqft": 10352.94,
+    "budget_segment": "Premium",
+    "hex_id": "886088530bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhayari",
+    "lat": 18.45632,
+    "lon": 73.82013,
+    "price_sqft": 5903.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885293fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rahatani",
+    "lat": 18.60696,
+    "lon": 73.82395,
+    "price_sqft": 9448.67,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884309fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nanded Fata",
+    "lat": 18.45793,
+    "lon": 73.79742,
+    "price_sqft": 7150.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885709fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khadakwasla",
+    "lat": 18.43767,
+    "lon": 73.77492,
+    "price_sqft": 9554.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088562dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phase 2 Hinjewadi Rajiv Gandhi Infotech Park",
+    "lat": 18.59588,
+    "lon": 73.70904,
+    "price_sqft": 6739.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishrantwadi, Airport Road",
+    "lat": 18.57298,
+    "lon": 73.88616,
+    "price_sqft": 8058.9,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088513bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chakan",
+    "lat": 18.73773,
+    "lon": 73.8569,
+    "price_sqft": 3351.38,
+    "budget_segment": "Value",
+    "hex_id": "88608859b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talegaon Chakan Road",
+    "lat": 18.73868,
+    "lon": 73.75299,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884ab5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Model Colony, Shivaji Nagar",
+    "lat": 18.53192,
+    "lon": 73.83779,
+    "price_sqft": 18432.5,
+    "budget_segment": "Premium",
+    "hex_id": "88608850e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikhali",
+    "lat": 18.68108,
+    "lon": 73.8227,
+    "price_sqft": 6424.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884165fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimple Gurav, Pimpri Chinchwad",
+    "lat": 18.59328,
+    "lon": 73.81603,
+    "price_sqft": 9745.67,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884351fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deccan Gymkhana, F C Road",
+    "lat": 18.51639,
+    "lon": 73.83835,
+    "price_sqft": 16889.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bopkhel",
+    "lat": 18.58244,
+    "lon": 73.85589,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Salunkhe Vihar Society",
+    "lat": 18.48009,
+    "lon": 73.90424,
+    "price_sqft": 6333.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885207fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phase 3 Hinjewadi Rajiv Gandhi Infotech Park",
+    "lat": 18.58322,
+    "lon": 73.69304,
+    "price_sqft": 6851.75,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088472dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gahunje",
+    "lat": 18.65927,
+    "lon": 73.71049,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884197fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pirangut",
+    "lat": 18.51191,
+    "lon": 73.72686,
+    "price_sqft": 4334.46,
+    "budget_segment": "Value",
+    "hex_id": "88608855ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wanwadi",
+    "lat": 18.50668,
+    "lon": 73.897,
+    "price_sqft": 13500.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860885041fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jambhe",
+    "lat": 18.63004,
+    "lon": 73.72533,
+    "price_sqft": 6333.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mangalwar Peth, Kasba Peth",
+    "lat": 18.52333,
+    "lon": 73.86455,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885039fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koregaon Park",
+    "lat": 18.53685,
+    "lon": 73.89657,
+    "price_sqft": 15663.81,
+    "budget_segment": "Premium",
+    "hex_id": "8860885067fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bakori",
+    "lat": 18.56192,
+    "lon": 73.9349,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2493fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Narhe",
+    "lat": 18.46086,
+    "lon": 73.82998,
+    "price_sqft": 4921.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885291fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner Pashan Link Road",
+    "lat": 18.54891,
+    "lon": 73.79251,
+    "price_sqft": 9974.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884255fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ranjangaon",
+    "lat": 18.74693,
+    "lon": 74.22975,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2a05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambadwet",
+    "lat": 18.51127,
+    "lon": 73.65155,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884601fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Boat Club Road",
+    "lat": 18.53859,
+    "lon": 73.87811,
+    "price_sqft": 17141.5,
+    "budget_segment": "Premium",
+    "hex_id": "8860885023fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghorpadi",
+    "lat": 18.51911,
+    "lon": 73.89641,
+    "price_sqft": 10100.67,
+    "budget_segment": "Premium",
+    "hex_id": "886088506bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangavade",
+    "lat": 18.65586,
+    "lon": 73.70768,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884193fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pashan Sus Road",
+    "lat": 18.54507,
+    "lon": 73.78063,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884253fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Paud Road",
+    "lat": 18.50694,
+    "lon": 73.80119,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885091fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katraj Kondhwa Road",
+    "lat": 18.45139,
+    "lon": 73.87525,
+    "price_sqft": 5862.71,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talegaon Dhamdhere",
+    "lat": 18.6744,
+    "lon": 74.15043,
+    "price_sqft": 3456.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e21c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhagwan Tatyasaheb Kawade Road",
+    "lat": 18.52734,
+    "lon": 73.89826,
+    "price_sqft": 10055.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860885061fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baramati",
+    "lat": 18.15801,
+    "lon": 74.56637,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608c49abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lonavala",
+    "lat": 18.73632,
+    "lon": 73.45776,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886b43fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhukum",
+    "lat": 18.49737,
+    "lon": 73.74109,
+    "price_sqft": 5740.5,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088551bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikhali BK",
+    "lat": 18.6882,
+    "lon": 73.80596,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088412dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh Baner Link Road",
+    "lat": 18.56355,
+    "lon": 73.79696,
+    "price_sqft": 13890.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860884201fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bopodi, Old Mumbai Pune-Highway",
+    "lat": 18.57673,
+    "lon": 73.82259,
+    "price_sqft": 14385.5,
+    "budget_segment": "Premium",
+    "hex_id": "886088426dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirgaon",
+    "lat": 18.70113,
+    "lon": 73.69704,
+    "price_sqft": 3781.0,
+    "budget_segment": "Value",
+    "hex_id": "8860884f1dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Murud",
+    "lat": 17.77709,
+    "lon": 73.11873,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886089d315fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalyani Nagar",
+    "lat": 18.54652,
+    "lon": 73.9036,
+    "price_sqft": 11810.79,
+    "budget_segment": "Premium",
+    "hex_id": "8860885151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mankar Chowk Road",
+    "lat": 18.61139,
+    "lon": 73.7678,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884001fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner Highway Side Rd",
+    "lat": 18.55875,
+    "lon": 73.77874,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088421dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh",
+    "lat": 18.55587,
+    "lon": 73.81089,
+    "price_sqft": 11405.86,
+    "budget_segment": "Premium",
+    "hex_id": "8860884245fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gorhe Bk",
+    "lat": 18.43841,
+    "lon": 73.78912,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885751fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirur",
+    "lat": 18.73628,
+    "lon": 74.23602,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2a0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Magarpatta Road",
+    "lat": 18.52121,
+    "lon": 73.93098,
+    "price_sqft": 9000.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885303fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shikrapur",
+    "lat": 18.67442,
+    "lon": 74.11434,
+    "price_sqft": 3241.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e2193fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Solapur Road",
+    "lat": 18.45977,
+    "lon": 74.0519,
+    "price_sqft": 2542.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e349bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kirkatwadi",
+    "lat": 18.45511,
+    "lon": 73.80159,
+    "price_sqft": 4174.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885709fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner Road",
+    "lat": 18.55758,
+    "lon": 73.78763,
+    "price_sqft": 7096.5,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088420bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Market Yard, Gultekdi",
+    "lat": 18.47833,
+    "lon": 73.87165,
+    "price_sqft": 10000.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608852e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manjri BK",
+    "lat": 18.52729,
+    "lon": 73.87903,
+    "price_sqft": 7800.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885007fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nagar Road",
+    "lat": 18.56086,
+    "lon": 73.91827,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karvenagar",
+    "lat": 18.49338,
+    "lon": 73.82474,
+    "price_sqft": 12471.86,
+    "budget_segment": "Premium",
+    "hex_id": "88608850ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadgaon BK",
+    "lat": 18.47279,
+    "lon": 73.82863,
+    "price_sqft": 7206.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Warje",
+    "lat": 18.48744,
+    "lon": 73.80508,
+    "price_sqft": 7966.23,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088572dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangamvadi",
+    "lat": 18.5354,
+    "lon": 73.87284,
+    "price_sqft": 14252.0,
+    "budget_segment": "Premium",
+    "hex_id": "886088503dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rambaug Colony, Kothrud",
+    "lat": 18.51262,
+    "lon": 73.81556,
+    "price_sqft": 16149.0,
+    "budget_segment": "Premium",
+    "hex_id": "8860885083fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Spine Road",
+    "lat": 18.65532,
+    "lon": 73.83142,
+    "price_sqft": 7200.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Daund",
+    "lat": 18.46335,
+    "lon": 74.49164,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e16b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Junnar",
+    "lat": 19.06391,
+    "lon": 73.92619,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8f47fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattawadi",
+    "lat": 18.49891,
+    "lon": 73.83708,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dahanukar Colony, Kothrud",
+    "lat": 18.49628,
+    "lon": 73.81223,
+    "price_sqft": 17158.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dehu",
+    "lat": 18.69957,
+    "lon": 73.77505,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884ac3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Varale Talegaon Dabhade",
+    "lat": 18.71903,
+    "lon": 73.71057,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f05fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadgaon",
+    "lat": 18.53615,
+    "lon": 73.79528,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884259fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parvati Gaon, Parvati Darshan",
+    "lat": 18.4948,
+    "lon": 73.8507,
+    "price_sqft": 14545.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608852a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sambhajinagar Chinchwad",
+    "lat": 18.572,
+    "lon": 73.8243,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088426dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gultekadi",
+    "lat": 18.49407,
+    "lon": 73.86704,
+    "price_sqft": 15724.33,
+    "budget_segment": "Premium",
+    "hex_id": "8860885053fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patil Nagar",
+    "lat": 18.13544,
+    "lon": 74.53395,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608eb245fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Varve Bk",
+    "lat": 18.29674,
+    "lon": 73.87419,
+    "price_sqft": 5921.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088ce51fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mulshi",
+    "lat": 18.53344,
+    "lon": 73.66212,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088462dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhigwan",
+    "lat": 18.45908,
+    "lon": 74.33923,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ea8a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charholi Road",
+    "lat": 18.64108,
+    "lon": 73.90041,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088585bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khed",
+    "lat": 18.70816,
+    "lon": 73.85998,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885991fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jalochi",
+    "lat": 18.16911,
+    "lon": 74.58953,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e86dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shilatne",
+    "lat": 18.76419,
+    "lon": 73.49031,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ab6b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chovisawadi",
+    "lat": 18.66266,
+    "lon": 73.88191,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885813fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasba Peth",
+    "lat": 18.51912,
+    "lon": 73.8567,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navi Peth, Sadashiv Peth",
+    "lat": 18.50598,
+    "lon": 73.84184,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Walhekarwadi",
+    "lat": 18.63382,
+    "lon": 73.76144,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884023fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saswad",
+    "lat": 18.36764,
+    "lon": 74.00908,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088ca1dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhagwan Nagar, Pimpri Chinchwad",
+    "lat": 18.60466,
+    "lon": 73.74858,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sanaswadi",
+    "lat": 18.66307,
+    "lon": 74.09423,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2e41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dighi",
+    "lat": 18.61233,
+    "lon": 73.86992,
+    "price_sqft": 5806.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a9dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nigdi, Pimpri Chinchwad",
+    "lat": 18.65504,
+    "lon": 73.77582,
+    "price_sqft": 8178.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884111fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kharalwadi",
+    "lat": 18.62491,
+    "lon": 73.80907,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884339fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangvi, Pimpri Chinchwad",
+    "lat": 18.58238,
+    "lon": 73.81987,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884265fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganesh Peth",
+    "lat": 18.51069,
+    "lon": 73.86096,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalyan",
+    "lat": 18.88215,
+    "lon": 73.54259,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608aa2ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Prabhat Road",
+    "lat": 18.51247,
+    "lon": 73.83439,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar Parvati Paytha",
+    "lat": 18.48387,
+    "lon": 73.84783,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivane",
+    "lat": 18.4729,
+    "lon": 73.7962,
+    "price_sqft": 2917.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885705fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chinchwad Gaon, Pimpri Chinchwad",
+    "lat": 18.62844,
+    "lon": 73.78931,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884065fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghorpade Peth, Swargate, Shivaji Road",
+    "lat": 18.50242,
+    "lon": 73.85947,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885019fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karpe Nagar",
+    "lat": 18.60096,
+    "lon": 73.75154,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884019fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhor",
+    "lat": 18.23132,
+    "lon": 73.84265,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c465fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasar Amboli",
+    "lat": 18.51038,
+    "lon": 73.66447,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088466bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shridharnagar Chinchwad",
+    "lat": 18.63138,
+    "lon": 73.78848,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884065fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manchar",
+    "lat": 18.96933,
+    "lon": 73.93573,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a80e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gujar Nimbalkarwadi",
+    "lat": 18.43536,
+    "lon": 73.87054,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd3dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganj Peth",
+    "lat": 18.51831,
+    "lon": 73.85705,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tambe Wasti",
+    "lat": 18.5375,
+    "lon": 73.79007,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884259fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhawani Peth",
+    "lat": 18.51166,
+    "lon": 73.86992,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangavi",
+    "lat": 18.57065,
+    "lon": 73.81827,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884261fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Umbarde",
+    "lat": 18.56133,
+    "lon": 73.8348,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885191fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tukaram Tupe Nagar, Hadapsar",
+    "lat": 18.50504,
+    "lon": 73.95342,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885341fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Narayangaon",
+    "lat": 19.10301,
+    "lon": 73.97229,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8aa7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mohan Nagar Co operative Society",
+    "lat": 18.554,
+    "lon": 73.76761,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884213fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpri Gaon, Pimpri Chinchwad",
+    "lat": 18.62339,
+    "lon": 73.80803,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884339fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raviwar Peth",
+    "lat": 18.51223,
+    "lon": 73.86021,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parvati Hills, Parvati Darshan",
+    "lat": 18.49109,
+    "lon": 73.84711,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navalakh Umbre",
+    "lat": 18.80149,
+    "lon": 73.69485,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ab21dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhosari",
+    "lat": 18.61997,
+    "lon": 73.85019,
+    "price_sqft": 6065.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884369fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kate Wasti",
+    "lat": 18.62124,
+    "lon": 73.73055,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Someshwarwadi, Pashan",
+    "lat": 18.54646,
+    "lon": 73.80289,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088424bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kesnand",
+    "lat": 18.55814,
+    "lon": 73.99193,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tupe Vasti, Pimpri Chinchwad",
+    "lat": 18.68055,
+    "lon": 73.84756,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Alephata",
+    "lat": 18.80482,
+    "lon": 73.96844,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a9627fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Paud",
+    "lat": 18.51465,
+    "lon": 73.74223,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885517fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhamburde",
+    "lat": 18.5512,
+    "lon": 73.37732,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088623bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katraj Ghat Road",
+    "lat": 18.43509,
+    "lon": 73.86016,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd37fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parvati Paytha",
+    "lat": 18.49308,
+    "lon": 73.8508,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hingne BK",
+    "lat": 18.48971,
+    "lon": 73.81982,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalbhor Nagar, Pimpri Chinchwad",
+    "lat": 18.64775,
+    "lon": 73.7889,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884157fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jambhul",
+    "lat": 18.73043,
+    "lon": 73.63948,
+    "price_sqft": 3399.0,
+    "budget_segment": "Value",
+    "hex_id": "8860884c35fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Varale",
+    "lat": 18.75785,
+    "lon": 73.70462,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d69fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajgurunagar",
+    "lat": 18.79398,
+    "lon": 73.87421,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a94dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pragati Nagar, Bopodi, Old Mumbai Pune-Highway",
+    "lat": 18.68845,
+    "lon": 73.70012,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khamboli",
+    "lat": 18.59947,
+    "lon": 73.68495,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088409bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mawal",
+    "lat": 18.62616,
+    "lon": 73.74828,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884031fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lavale",
+    "lat": 18.46962,
+    "lon": 73.63732,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880967fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpari",
+    "lat": 18.63274,
+    "lon": 73.80469,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884331fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yelwadi",
+    "lat": 18.72284,
+    "lon": 73.76193,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884a87fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indapur",
+    "lat": 18.14228,
+    "lon": 74.92432,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e9243fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tadiwala Road",
+    "lat": 18.53474,
+    "lon": 73.87327,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088503dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pradhikaran Nigdi",
+    "lat": 18.64888,
+    "lon": 73.77464,
+    "price_sqft": 10879.5,
+    "budget_segment": "Premium",
+    "hex_id": "8860884119fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner Gaon, Baner",
+    "lat": 18.56188,
+    "lon": 73.78051,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884215fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koregaon Mul",
+    "lat": 18.49711,
+    "lon": 74.11964,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e3431fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malwadi",
+    "lat": 18.5053,
+    "lon": 73.93892,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885355fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sashte",
+    "lat": 18.54903,
+    "lon": 74.0447,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2623fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mukund Nagar",
+    "lat": 18.49647,
+    "lon": 73.85831,
+    "price_sqft": 13838.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608852a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kurkumbh",
+    "lat": 18.39392,
+    "lon": 74.53858,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608eb90bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balewadi Phata, Baner",
+    "lat": 18.56469,
+    "lon": 73.78354,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884203fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kedari Nagar Wanwadi",
+    "lat": 18.48547,
+    "lon": 73.90186,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shantinagar, Bhosari",
+    "lat": 18.62733,
+    "lon": 73.84459,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884361fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 29 Ravet",
+    "lat": 18.64394,
+    "lon": 73.7522,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hivare",
+    "lat": 18.77253,
+    "lon": 74.12693,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e289dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wanawadi Gaon",
+    "lat": 18.49407,
+    "lon": 73.89902,
+    "price_sqft": 9700.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885049fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadegaon",
+    "lat": 18.55656,
+    "lon": 74.06613,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2753fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manjari Road",
+    "lat": 18.50944,
+    "lon": 73.96306,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088534dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adarsh Nagar Lohegaon",
+    "lat": 18.60295,
+    "lon": 73.93254,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a51fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pur",
+    "lat": 18.30095,
+    "lon": 73.97342,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c025fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shindaone",
+    "lat": 18.44635,
+    "lon": 74.12843,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e36e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpri Chinchwad Road",
+    "lat": 18.61878,
+    "lon": 73.81909,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884301fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Uruli Kanchan",
+    "lat": 18.48822,
+    "lon": 74.12315,
+    "price_sqft": 3678.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e3439fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nanded",
+    "lat": 18.4741,
+    "lon": 73.79642,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885705fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vijay Nagar Dighi",
+    "lat": 18.60249,
+    "lon": 73.88995,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885ac3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ubale Nagar",
+    "lat": 18.56643,
+    "lon": 73.95775,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e249dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kolwadi",
+    "lat": 18.5419,
+    "lon": 73.99174,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e26a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tilekar Nagar, Kondhwa Budruk",
+    "lat": 18.44692,
+    "lon": 73.88218,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd27fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Done",
+    "lat": 18.66123,
+    "lon": 73.57661,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860887b63fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shukrawar Peth",
+    "lat": 18.48521,
+    "lon": 73.85848,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Peth Manchar",
+    "lat": 19.00469,
+    "lon": 73.94687,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a81ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khalumbre",
+    "lat": 18.73918,
+    "lon": 73.78014,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884aadfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikas Nagar Dehu Road",
+    "lat": 18.66847,
+    "lon": 73.72728,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borhalewadi",
+    "lat": 18.66512,
+    "lon": 73.84705,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088588bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rui",
+    "lat": 18.50238,
+    "lon": 73.82881,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Surynagari",
+    "lat": 18.57653,
+    "lon": 73.89193,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088513bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kadam Wasti",
+    "lat": 18.48577,
+    "lon": 74.01302,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c93dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dalvi Nagar Hadapsar",
+    "lat": 18.51912,
+    "lon": 73.91137,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885317fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhambarde",
+    "lat": 18.50907,
+    "lon": 73.83029,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885089fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirvali",
+    "lat": 18.58982,
+    "lon": 73.45013,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860887a93fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Narayan Peth",
+    "lat": 18.51331,
+    "lon": 73.84748,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shaniwar peth, Narayan Peth",
+    "lat": 18.51638,
+    "lon": 73.85348,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sutarwadi, Pashan",
+    "lat": 18.53849,
+    "lon": 73.78543,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088425bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Budhwar Peth, Shivaji Road",
+    "lat": 18.51692,
+    "lon": 73.85697,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ideal Colony, Kothrud",
+    "lat": 18.50868,
+    "lon": 73.81736,
+    "price_sqft": 18125.0,
+    "budget_segment": "Premium",
+    "hex_id": "886088508bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinjawadi Village",
+    "lat": 18.56716,
+    "lon": 73.83473,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885195fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Autadwadi Handewadi",
+    "lat": 18.4816,
+    "lon": 73.93136,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885265fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandkhed",
+    "lat": 18.64376,
+    "lon": 73.66421,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884e19fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Uruli Devachi",
+    "lat": 18.45985,
+    "lon": 73.94336,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c99bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Satara Road",
+    "lat": 18.41569,
+    "lon": 73.8862,
+    "price_sqft": 10970.0,
+    "budget_segment": "Premium",
+    "hex_id": "886088cd0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Urse",
+    "lat": 18.70989,
+    "lon": 73.6347,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884c15fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lonikand",
+    "lat": 18.58467,
+    "lon": 73.96953,
+    "price_sqft": 4421.5,
+    "budget_segment": "Value",
+    "hex_id": "88608e2485fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kadam Wasti Loni Kalbhor",
+    "lat": 18.4847,
+    "lon": 74.01154,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c939fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mangdewadi, Katraj",
+    "lat": 18.43578,
+    "lon": 73.863,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd31fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karve Road",
+    "lat": 18.5047,
+    "lon": 73.84736,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ale",
+    "lat": 18.52461,
+    "lon": 73.87862,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885007fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhim Nagar Moshi",
+    "lat": 18.66655,
+    "lon": 73.85514,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885881fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Medankarwadi",
+    "lat": 18.69199,
+    "lon": 73.87334,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608859dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashok Nagar",
+    "lat": 18.52876,
+    "lon": 73.84882,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Airport Road",
+    "lat": 18.56239,
+    "lon": 73.89273,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088511dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nerhe",
+    "lat": 18.52614,
+    "lon": 73.78407,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885567fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kharabwadi",
+    "lat": 18.75145,
+    "lon": 73.84259,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884b57fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhanori Road",
+    "lat": 18.58694,
+    "lon": 73.88763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885137fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Purandar Colony Rahatani",
+    "lat": 18.60868,
+    "lon": 73.78519,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nimbalkar Vasti",
+    "lat": 18.52461,
+    "lon": 73.87862,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885007fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nanapeth",
+    "lat": 18.56364,
+    "lon": 73.88674,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885111fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lohgaon Road",
+    "lat": 18.58903,
+    "lon": 73.90823,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088512bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nere",
+    "lat": 18.63258,
+    "lon": 73.69578,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramwadi Wadgaon Sheri",
+    "lat": 18.54851,
+    "lon": 73.92012,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088514bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar Tulshibagwale Colony",
+    "lat": 18.49028,
+    "lon": 73.84762,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sopan Baug",
+    "lat": 18.51587,
+    "lon": 73.90505,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885069fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Purandar Colony Kiwale",
+    "lat": 18.66399,
+    "lon": 73.73602,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884181fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rasta Peth",
+    "lat": 18.51775,
+    "lon": 73.86657,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885015fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Theur",
+    "lat": 18.50075,
+    "lon": 74.02405,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c927fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lullanagar",
+    "lat": 18.49068,
+    "lon": 73.88153,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885059fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mordewadi",
+    "lat": 18.99918,
+    "lon": 73.94041,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a81d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Guruwar Peth",
+    "lat": 18.4226,
+    "lon": 73.87406,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd07fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasarsai",
+    "lat": 18.6007,
+    "lon": 73.69816,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088409dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malinagar Dehu",
+    "lat": 18.71416,
+    "lon": 73.76262,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884a81fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Boripardhi",
+    "lat": 18.48005,
+    "lon": 74.26037,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e3289fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadgaon Khurd",
+    "lat": 18.46115,
+    "lon": 73.80745,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885747fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kaspate Wasti",
+    "lat": 18.59515,
+    "lon": 73.77274,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088405dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Otur",
+    "lat": 19.25841,
+    "lon": 73.98566,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ac4cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charholi Budruk Nirgudi Road",
+    "lat": 18.64992,
+    "lon": 73.91879,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088584bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar Hivare BK",
+    "lat": 19.19691,
+    "lon": 73.98268,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a89adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sudarshan Nagar Pimple Gurav",
+    "lat": 18.59778,
+    "lon": 73.81434,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884357fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashwant Nagar Talegaon Dabhade",
+    "lat": 18.68844,
+    "lon": 73.72907,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f49fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sainagar Kondhwa Budruk",
+    "lat": 18.45727,
+    "lon": 73.87498,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dawadi",
+    "lat": 18.78354,
+    "lon": 73.95656,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a9639fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talegaon Dabhade R",
+    "lat": 18.74784,
+    "lon": 73.67917,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand Nagar",
+    "lat": 18.48242,
+    "lon": 73.82525,
+    "price_sqft": 7650.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpale",
+    "lat": 18.30755,
+    "lon": 74.03442,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d899fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhegadewadi",
+    "lat": 18.54959,
+    "lon": 73.65937,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884711fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dudulgaon, Alandi",
+    "lat": 18.68113,
+    "lon": 73.86722,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Charholi Kurd",
+    "lat": 18.66834,
+    "lon": 73.90962,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885801fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wahagaon",
+    "lat": 18.58417,
+    "lon": 73.74517,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adhale Bk",
+    "lat": 18.65829,
+    "lon": 73.59916,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884e97fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh Ravet BRTS Road",
+    "lat": 18.63598,
+    "lon": 73.75042,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884035fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirur Road",
+    "lat": 18.7406,
+    "lon": 74.39169,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e0c83fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sambhagi Nagar",
+    "lat": 18.49548,
+    "lon": 73.8836,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088505dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jadhavwadi",
+    "lat": 18.6857,
+    "lon": 73.8272,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wakad Road",
+    "lat": 18.58921,
+    "lon": 73.77985,
+    "price_sqft": 7361.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884235fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxmi Chowk Road",
+    "lat": 18.60102,
+    "lon": 73.74011,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088401bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wagholi Road",
+    "lat": 18.59066,
+    "lon": 73.95714,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasba Baramati",
+    "lat": 18.14659,
+    "lon": 74.56721,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608c4981fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Valane",
+    "lat": 18.54289,
+    "lon": 73.51524,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860887109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wireless Colony, Aundh",
+    "lat": 18.56383,
+    "lon": 73.80468,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088420dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Somwar Peth",
+    "lat": 18.51844,
+    "lon": 73.86267,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885015fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shiraswadi",
+    "lat": 18.5717,
+    "lon": 73.98871,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chande",
+    "lat": 18.53295,
+    "lon": 73.7486,
+    "price_sqft": 5906.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885537fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chattushringi",
+    "lat": 18.56599,
+    "lon": 73.86885,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kondhawe Dhawade",
+    "lat": 18.45989,
+    "lon": 73.77675,
+    "price_sqft": 4719.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885715fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pansarewadi",
+    "lat": 18.3052,
+    "lon": 74.3998,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ea333fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Agarkar Nagar",
+    "lat": 18.52012,
+    "lon": 73.87146,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885003fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Darumbre",
+    "lat": 18.62143,
+    "lon": 73.72694,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nehru Nagar, Pimpri Chinchwad",
+    "lat": 18.63158,
+    "lon": 73.82167,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088432bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Subhash Nagar Shukrawar Peth",
+    "lat": 18.50516,
+    "lon": 73.85723,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mayur Colony Kothrud",
+    "lat": 18.50453,
+    "lon": 73.81681,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chichbaiwadi",
+    "lat": 18.90459,
+    "lon": 74.0212,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8249fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Walvekar Nagar, Parvati Darshan",
+    "lat": 18.4834,
+    "lon": 73.85588,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganesh Mala",
+    "lat": 18.49626,
+    "lon": 73.83694,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalas",
+    "lat": 18.5675,
+    "lon": 73.87383,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gunjalwadi",
+    "lat": 19.12593,
+    "lon": 73.94223,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8881fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jejuri",
+    "lat": 18.32363,
+    "lon": 74.09268,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d815fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tungarli, Lonavala",
+    "lat": 18.76248,
+    "lon": 73.4136,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886867fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wanowrie",
+    "lat": 18.49615,
+    "lon": 73.89125,
+    "price_sqft": 9214.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088504bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dangat Patil Nagar Shivane",
+    "lat": 18.46674,
+    "lon": 73.79555,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885701fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saras Baug",
+    "lat": 18.50061,
+    "lon": 73.85517,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinjawadi Phase 2 Road",
+    "lat": 18.59386,
+    "lon": 73.73459,
+    "price_sqft": 9524.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608842a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pune Bengaluru Highway",
+    "lat": 18.50916,
+    "lon": 73.85875,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanhe",
+    "lat": 18.74824,
+    "lon": 73.60949,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d9dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shankar Sheth Rd",
+    "lat": 18.50234,
+    "lon": 73.87104,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885057fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patilnagar Chikhali",
+    "lat": 18.68874,
+    "lon": 73.81151,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884a5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Erandwana Gaothan",
+    "lat": 18.50715,
+    "lon": 73.83513,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhusari Colony, Kothrud",
+    "lat": 18.50943,
+    "lon": 73.79274,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885093fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bund Garden Road",
+    "lat": 18.5369,
+    "lon": 73.88199,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885021fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katvi",
+    "lat": 18.74544,
+    "lon": 73.6625,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d19fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Sanghavi",
+    "lat": 18.57812,
+    "lon": 73.81884,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884265fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadebolai",
+    "lat": 18.57734,
+    "lon": 74.06411,
+    "price_sqft": 2665.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e2715fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gopalwadi",
+    "lat": 18.49664,
+    "lon": 74.26837,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e32e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shankar Nagar Mundhwa",
+    "lat": 18.52704,
+    "lon": 73.94039,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885305fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambi",
+    "lat": 18.75871,
+    "lon": 73.67055,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d03fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jadhav Nagar Mundhwa",
+    "lat": 18.51401,
+    "lon": 73.9014,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghotawade",
+    "lat": 18.54982,
+    "lon": 73.66208,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884711fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambale Gaon",
+    "lat": 18.45392,
+    "lon": 74.0438,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c949fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganesh Nagar Karve Nagar",
+    "lat": 18.49524,
+    "lon": 73.82726,
+    "price_sqft": 12158.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Padvi",
+    "lat": 18.60946,
+    "lon": 73.91435,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhayari Phata Road",
+    "lat": 18.45099,
+    "lon": 73.81212,
+    "price_sqft": 4785.0,
+    "budget_segment": "Value",
+    "hex_id": "8860885741fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kirti Nagar Vadgaon Budruk",
+    "lat": 18.46605,
+    "lon": 73.82258,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885297fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxmi Nagar Parvati Paytha",
+    "lat": 18.4941,
+    "lon": 73.84895,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hingne Khurd",
+    "lat": 18.48335,
+    "lon": 73.82795,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parshwapuram, Lonavala",
+    "lat": 18.76749,
+    "lon": 73.39796,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886821fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashwantnagar Pimpri Colony",
+    "lat": 18.63589,
+    "lon": 73.82152,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884323fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishnu Dev Nagar Punawale",
+    "lat": 18.63732,
+    "lon": 73.7522,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884035fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambegaon Pathar Road",
+    "lat": 18.45655,
+    "lon": 73.84141,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088529dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madhav Baug, Kothrud",
+    "lat": 18.5092,
+    "lon": 73.8079,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088509dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sukhsagar Nagar Katraj",
+    "lat": 18.45682,
+    "lon": 73.86913,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dehu Road",
+    "lat": 18.68656,
+    "lon": 73.75303,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balaji Nagar",
+    "lat": 18.47422,
+    "lon": 73.85939,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Abasaheb Raikar Nagar",
+    "lat": 18.44903,
+    "lon": 73.81114,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885741fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kedagaon",
+    "lat": 18.47498,
+    "lon": 74.23612,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e3291fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saswad Road",
+    "lat": 18.43419,
+    "lon": 73.96254,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c8e5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Handewadi Road",
+    "lat": 18.47002,
+    "lon": 73.93146,
+    "price_sqft": 5288.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885269fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirwal",
+    "lat": 18.1841,
+    "lon": 73.96815,
+    "price_sqft": 2914.0,
+    "budget_segment": "Value",
+    "hex_id": "886088d52bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shani Nagar, Ambegaon Budruk",
+    "lat": 18.44405,
+    "lon": 73.84831,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852d1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganga Dham",
+    "lat": 18.51271,
+    "lon": 73.87393,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088500bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikas Nagar Wanwadi",
+    "lat": 18.51082,
+    "lon": 73.88423,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885009fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhore Nagar, Pimpri Chinchwad",
+    "lat": 18.57309,
+    "lon": 73.82047,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088426dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhilarewadi",
+    "lat": 18.42205,
+    "lon": 73.85954,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd3bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Morewadi",
+    "lat": 18.63305,
+    "lon": 73.81052,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884335fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Takawe Bk",
+    "lat": 18.81262,
+    "lon": 73.6023,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ab705fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indira Nagar Kothrud",
+    "lat": 18.50977,
+    "lon": 73.8,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885091fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nanekarwadi",
+    "lat": 18.50839,
+    "lon": 73.96373,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088534dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kashid Nagar",
+    "lat": 18.60701,
+    "lon": 73.79943,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884311fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kala Khadak",
+    "lat": 18.60773,
+    "lon": 73.75505,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088401dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wakadewadi, Shivaji Nagar",
+    "lat": 18.54316,
+    "lon": 73.85257,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalewadi Pimpri Chinchwad",
+    "lat": 18.61528,
+    "lon": 73.79269,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884069fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bund Garden, Sangamvadi",
+    "lat": 18.53742,
+    "lon": 73.88084,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885021fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jawakar Nagar",
+    "lat": 18.53855,
+    "lon": 73.83183,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vitthalwadi Hingne Khurd",
+    "lat": 18.48189,
+    "lon": 73.82928,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "NDA Road",
+    "lat": 18.47506,
+    "lon": 73.77839,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885731fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pune Nashik Highway",
+    "lat": 19.05788,
+    "lon": 73.9894,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8ac9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fatima Nagar Wanowrie",
+    "lat": 18.50209,
+    "lon": 73.90178,
+    "price_sqft": 7034.5,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885049fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhayari Phata, Dhayari",
+    "lat": 18.44804,
+    "lon": 73.81386,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885749fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lokmanya Bal Gangadhar Tilak Road",
+    "lat": 18.50845,
+    "lon": 73.8492,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885013fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shastrinagar Yerawada",
+    "lat": 18.54501,
+    "lon": 73.87848,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885027fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Swargate, Shivaji Road",
+    "lat": 18.5041,
+    "lon": 73.85839,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddheshwar Nagar, Tingre Nagar",
+    "lat": 18.5743,
+    "lon": 73.88344,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851edfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kad Nagar, Undri",
+    "lat": 18.45982,
+    "lon": 73.91279,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885209fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Camp",
+    "lat": 18.51407,
+    "lon": 73.87622,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088500bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ravade",
+    "lat": 18.55631,
+    "lon": 73.78079,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088421dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh Road",
+    "lat": 18.56314,
+    "lon": 73.82741,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885197fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kusgaon PM",
+    "lat": 18.613,
+    "lon": 73.65797,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884505fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hadapsar Industrial Estate",
+    "lat": 18.50843,
+    "lon": 73.91953,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885319fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rupeenagar",
+    "lat": 18.67477,
+    "lon": 73.78364,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884139fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pandharkar Vasti, Akurdi",
+    "lat": 18.6461,
+    "lon": 73.77762,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884119fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ahmednagar",
+    "lat": 18.70872,
+    "lon": 74.17444,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2137fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lal Bahadur Shastri Road",
+    "lat": 18.50693,
+    "lon": 73.84439,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lohagad",
+    "lat": 18.65154,
+    "lon": 73.71153,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884193fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madhav Nagar, Dhanori",
+    "lat": 18.57418,
+    "lon": 73.91445,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885105fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhekrai Nagar",
+    "lat": 18.48263,
+    "lon": 73.9526,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mirje",
+    "lat": 18.22471,
+    "lon": 73.90052,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c761fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Veer",
+    "lat": 18.54653,
+    "lon": 73.88486,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885025fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kudale Baug, Vadgaon Budruk",
+    "lat": 18.46376,
+    "lon": 73.82139,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885769fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhavani Peth, Kasba Peth",
+    "lat": 18.51519,
+    "lon": 73.8636,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885015fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parvati Industrial Estate, Parvati Darshan",
+    "lat": 18.48954,
+    "lon": 73.85526,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sopan Baug Society, Ghorpadi",
+    "lat": 18.51461,
+    "lon": 73.90281,
+    "price_sqft": 13873.67,
+    "budget_segment": "Premium",
+    "hex_id": "8860885045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talwade",
+    "lat": 18.64332,
+    "lon": 73.79258,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Salisbury Park, Gultekdi",
+    "lat": 18.49173,
+    "lon": 73.87382,
+    "price_sqft": 14648.0,
+    "budget_segment": "Premium",
+    "hex_id": "886088505bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandarkar Road",
+    "lat": 18.51826,
+    "lon": 73.83587,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasarwadi, Pimpri Chinchwad",
+    "lat": 18.59815,
+    "lon": 73.8218,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884355fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tamhini Ghat Road",
+    "lat": 18.45074,
+    "lon": 73.43167,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608872bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koregaon Park Annexe, Mundhwa",
+    "lat": 18.53081,
+    "lon": 73.90449,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885065fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nighotwadi",
+    "lat": 19.00435,
+    "lon": 73.92569,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a81d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jadhav Wadi Chikhali",
+    "lat": 18.67652,
+    "lon": 73.82437,
+    "price_sqft": 4006.0,
+    "budget_segment": "Value",
+    "hex_id": "886088416dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kamshet",
+    "lat": 18.72152,
+    "lon": 73.60164,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884ca9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mangaldas Road",
+    "lat": 18.53492,
+    "lon": 73.88318,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088502bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadhu BK",
+    "lat": 18.66519,
+    "lon": 74.03962,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2ec1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vidyanagar, Dhanori",
+    "lat": 18.57923,
+    "lon": 73.8944,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885139fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pune Solapur Highway",
+    "lat": 18.48057,
+    "lon": 74.02608,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c905fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nimbalkar Nagar Thergaon",
+    "lat": 18.61794,
+    "lon": 73.76102,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884007fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "ICS Colony, Ashok Nagar",
+    "lat": 18.54258,
+    "lon": 73.83181,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandan Nagar, Malwadi",
+    "lat": 18.51228,
+    "lon": 73.94051,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885309fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinganewadi",
+    "lat": 18.54917,
+    "lon": 73.77354,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088421bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kondhapuri",
+    "lat": 18.72637,
+    "lon": 74.20014,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2a13fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoslenagar Ashok Nagar",
+    "lat": 18.54125,
+    "lon": 73.84289,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panchawati, Pashan",
+    "lat": 18.53258,
+    "lon": 73.80731,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Old Mumbai Pune Highway",
+    "lat": 18.64612,
+    "lon": 73.71649,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088419bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Navasahyadri Society, Karvenagar",
+    "lat": 18.49426,
+    "lon": 73.82964,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balkrishna Sakharam Dhole Patil Road",
+    "lat": 18.5346,
+    "lon": 73.8763,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088502bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baner-Balewadi Road",
+    "lat": 18.56931,
+    "lon": 73.78012,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884239fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mohan Nagar Dhankawadi",
+    "lat": 18.46033,
+    "lon": 73.84928,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088528bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kolhewadi, Khadakwasla",
+    "lat": 18.44451,
+    "lon": 73.80018,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088575dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kune Village, Lonavala",
+    "lat": 18.77235,
+    "lon": 73.37971,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608869cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hanuman Nagar Wadarvadi",
+    "lat": 18.53941,
+    "lon": 73.87968,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885023fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh Gaon, Aundh",
+    "lat": 18.56388,
+    "lon": 73.81148,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088426bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sakal Nagar, Aundh",
+    "lat": 18.54717,
+    "lon": 73.82022,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raghav Nagar Vadgaon Budruk",
+    "lat": 18.45852,
+    "lon": 73.8397,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088529dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vitthal Nagar, Chikhali",
+    "lat": 18.66839,
+    "lon": 73.80517,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088410dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sarola",
+    "lat": 18.17768,
+    "lon": 73.95526,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d539fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nasrapur",
+    "lat": 18.27514,
+    "lon": 73.87415,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c561fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandoli",
+    "lat": 18.84495,
+    "lon": 73.87398,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8649fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajgad Colony, Pimpri Chinchwad",
+    "lat": 18.60593,
+    "lon": 73.78764,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vitthal Nagar Hadapsar",
+    "lat": 18.52921,
+    "lon": 73.93421,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885307fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kunj Colony, Pimpri Chinchwad",
+    "lat": 18.59011,
+    "lon": 73.80276,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884225fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adarsh Nagar Wadgaon Sheri",
+    "lat": 18.54883,
+    "lon": 73.91158,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088515dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dashrath Nagar",
+    "lat": 18.48203,
+    "lon": 73.94989,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Warve Khurd",
+    "lat": 18.59096,
+    "lon": 73.80065,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884225fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pratibha Nagar, Dhankawadi",
+    "lat": 18.46655,
+    "lon": 73.85197,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885281fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Somnath Nagar Wadgaon Sheri",
+    "lat": 18.55634,
+    "lon": 73.92308,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885141fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Garmal, Dhayari",
+    "lat": 18.45381,
+    "lon": 73.81214,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885741fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattwadi",
+    "lat": 18.49578,
+    "lon": 73.83721,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokul Nagar Katraj",
+    "lat": 18.44938,
+    "lon": 73.87434,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852c9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khed Shivapur",
+    "lat": 18.35213,
+    "lon": 73.854,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cc55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Belekar Wasti, Manjri Budruk",
+    "lat": 18.5241,
+    "lon": 73.96904,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2697fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kavade Mala, Ghorpadi",
+    "lat": 18.51446,
+    "lon": 73.89856,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishal Nagar, Pimpri Chinchwad",
+    "lat": 18.58461,
+    "lon": 73.78298,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884235fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "MIDC",
+    "lat": 18.65119,
+    "lon": 73.80918,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884141fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jal Vayu Vihar",
+    "lat": 18.65452,
+    "lon": 73.84117,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddarth Nagar Society",
+    "lat": 18.56558,
+    "lon": 73.8125,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088426bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sasane Nagar, Hadapsar",
+    "lat": 18.49091,
+    "lon": 73.93456,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885359fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Krushna Nagar Wadgaon Sheri",
+    "lat": 18.55643,
+    "lon": 73.9175,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885143fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Akshay Nagar, Dhankawadi",
+    "lat": 18.46124,
+    "lon": 73.8544,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885289fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tulshibagwale Colony, Parvati Darshan",
+    "lat": 18.4871,
+    "lon": 73.84556,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Nana Peth",
+    "lat": 18.51437,
+    "lon": 73.86693,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokhalenagar",
+    "lat": 18.52795,
+    "lon": 73.8309,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahalunge Ingale",
+    "lat": 18.76041,
+    "lon": 73.81006,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884847fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kikvi",
+    "lat": 18.46468,
+    "lon": 73.83592,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885295fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jangali Maharaj Road",
+    "lat": 18.52295,
+    "lon": 73.84885,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850edfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Velhe",
+    "lat": 18.37288,
+    "lon": 73.71571,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860881931fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Satav Nagar",
+    "lat": 18.4717,
+    "lon": 73.9324,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885269fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shinde Vasti Gokhalenagar",
+    "lat": 18.53124,
+    "lon": 73.82114,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Siddharth Nagar Bavdhan",
+    "lat": 18.51377,
+    "lon": 73.77371,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088550dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Urawade",
+    "lat": 18.49316,
+    "lon": 73.67112,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088464dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "MG Road",
+    "lat": 18.51376,
+    "lon": 73.87911,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088500bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malavli",
+    "lat": 18.74606,
+    "lon": 73.48181,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ab693fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Revenue Colony, Shivaji Nagar",
+    "lat": 18.52831,
+    "lon": 73.84781,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pune University Road",
+    "lat": 18.54026,
+    "lon": 73.83211,
+    "price_sqft": 20455.0,
+    "budget_segment": "Luxury",
+    "hex_id": "88608850adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sadhu Vaswani Road",
+    "lat": 18.52844,
+    "lon": 73.87995,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088502bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mathura Colony, Pimpri Chinchwad",
+    "lat": 18.66086,
+    "lon": 73.79644,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Senapati Bapat Road",
+    "lat": 18.5313,
+    "lon": 73.82945,
+    "price_sqft": 12043.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bajirao Road",
+    "lat": 18.51556,
+    "lon": 73.85366,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "DP Road",
+    "lat": 18.50218,
+    "lon": 73.80303,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885099fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadki",
+    "lat": 18.45847,
+    "lon": 73.95897,
+    "price_sqft": 3308.0,
+    "budget_segment": "Value",
+    "hex_id": "886088c9d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramtekadi, Hadapsar",
+    "lat": 18.50311,
+    "lon": 73.91312,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088531bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Borade Vasti, Pimpri Chinchwad",
+    "lat": 18.66827,
+    "lon": 73.83698,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885895fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganga Nagar Fursungi",
+    "lat": 18.48934,
+    "lon": 73.95886,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9bdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khadki",
+    "lat": 18.54639,
+    "lon": 73.85612,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panshet",
+    "lat": 18.41306,
+    "lon": 73.6813,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880b6dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kale Padal, Hadapsar",
+    "lat": 18.48528,
+    "lon": 73.94298,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Talegaon Dabhade Road",
+    "lat": 18.73228,
+    "lon": 73.6697,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d5bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganeshkhind",
+    "lat": 18.55874,
+    "lon": 73.84829,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088518bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rihe",
+    "lat": 18.58291,
+    "lon": 73.6446,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088455bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ballalwadi",
+    "lat": 19.25095,
+    "lon": 73.90858,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a1151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gurukrupa Colony Bhosari",
+    "lat": 18.62073,
+    "lon": 73.86047,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a95fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gopalpatti",
+    "lat": 18.51254,
+    "lon": 73.96932,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e269bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pingale Wasti",
+    "lat": 18.53096,
+    "lon": 73.91324,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885333fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mumbai Pune Bypass Road",
+    "lat": 18.47279,
+    "lon": 73.81727,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885761fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinjawadi Wakad Road",
+    "lat": 18.59131,
+    "lon": 73.75006,
+    "price_sqft": 8640.0,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884053fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bharati Vidyapeeth Campus",
+    "lat": 18.45836,
+    "lon": 73.8544,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885289fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahadev Nagar Wadgaon Sheri",
+    "lat": 18.54854,
+    "lon": 73.92547,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885149fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yavat",
+    "lat": 18.47807,
+    "lon": 74.24869,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e328bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mate Nagar, Vadgaonsheri",
+    "lat": 18.55078,
+    "lon": 73.92349,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088514bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dange Chowk Road",
+    "lat": 18.60835,
+    "lon": 73.75774,
+    "price_sqft": 8126.5,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088400bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Maharshi Nagar",
+    "lat": 18.49069,
+    "lon": 73.86292,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Veerbhadra Nagar, Baner",
+    "lat": 18.56205,
+    "lon": 73.77373,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884215fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalewadi Phata Pimpri Colony",
+    "lat": 18.60631,
+    "lon": 73.77697,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884047fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "EON Free Zone, Kharadi",
+    "lat": 18.55358,
+    "lon": 73.95211,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vadban, Mundhwa",
+    "lat": 18.53241,
+    "lon": 73.925,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885339fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxmi Road",
+    "lat": 18.51748,
+    "lon": 73.86152,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885015fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Damodar Raykar Nagar, Dhayari",
+    "lat": 18.43298,
+    "lon": 73.81011,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cdb5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patwardhan Baug",
+    "lat": 18.50224,
+    "lon": 73.82996,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chitanya Nagar, Dhankawadi",
+    "lat": 18.46236,
+    "lon": 73.85698,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885289fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sathe Colony Akurdi",
+    "lat": 18.63115,
+    "lon": 73.77206,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884029fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhairav Nagar, Dhanori",
+    "lat": 18.58312,
+    "lon": 73.88655,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885133fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandralok Nagari",
+    "lat": 18.45037,
+    "lon": 73.8091,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885741fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhagyoday Nagar",
+    "lat": 18.47239,
+    "lon": 73.88446,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadachi Wadi, Undri",
+    "lat": 18.44222,
+    "lon": 73.9171,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c8b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Happy Colony, Kothrud",
+    "lat": 18.49512,
+    "lon": 73.81462,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850d1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koregaon Bhima",
+    "lat": 18.6511,
+    "lon": 74.06625,
+    "price_sqft": 2689.0,
+    "budget_segment": "Value",
+    "hex_id": "88608e252dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Old Sangvi, Pimpri Chinchwad",
+    "lat": 18.58145,
+    "lon": 73.81807,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884265fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Purnanagar",
+    "lat": 18.66077,
+    "lon": 73.80658,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884147fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Range Hills",
+    "lat": 18.55179,
+    "lon": 73.83816,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885199fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kapurhol",
+    "lat": 18.23155,
+    "lon": 73.91309,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c2b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sunarwadi, Bavdhan",
+    "lat": 18.52111,
+    "lon": 73.77324,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885505fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khilarewadi, Erandwane, Karve Road",
+    "lat": 18.51244,
+    "lon": 73.839,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Datta Nagar Kothrud",
+    "lat": 18.4909,
+    "lon": 73.82317,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashoka Nagar, Kharadi",
+    "lat": 18.55988,
+    "lon": 73.94166,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e249bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahadeonagar, Hadapsar",
+    "lat": 18.47303,
+    "lon": 73.88629,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jijai Nagar, Kothrud",
+    "lat": 18.5014,
+    "lon": 73.79623,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088509bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pathare Wasti",
+    "lat": 18.60375,
+    "lon": 73.9372,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a55fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malwadi Hadapsar",
+    "lat": 18.5051,
+    "lon": 73.9378,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885355fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sun City, Anand Nagar",
+    "lat": 18.47637,
+    "lon": 73.81323,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885761fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hadapsar Gaon, Hadapsar",
+    "lat": 18.49969,
+    "lon": 73.93231,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885351fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Meera Nagar, Koregaon Park",
+    "lat": 18.53818,
+    "lon": 73.8997,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088515bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mohan Nagar Chinchwad",
+    "lat": 18.64088,
+    "lon": 73.7943,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884159fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mitha Nagar, Bibvewadi",
+    "lat": 18.47173,
+    "lon": 73.88537,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khed Shivapur Kondanpur Road",
+    "lat": 18.34677,
+    "lon": 73.83723,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cc53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Fergusson College Road",
+    "lat": 18.52082,
+    "lon": 73.84223,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "TMV Colony, Mukund Nagar",
+    "lat": 18.49505,
+    "lon": 73.86513,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885053fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pune Cantonment",
+    "lat": 18.49648,
+    "lon": 73.87704,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885051fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivthirth Nagar",
+    "lat": 18.50971,
+    "lon": 73.80855,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088509dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katarkhadak",
+    "lat": 18.58977,
+    "lon": 73.59468,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608845d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sudumbre",
+    "lat": 18.68111,
+    "lon": 73.74819,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raikar Mala Road",
+    "lat": 18.43494,
+    "lon": 73.80947,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cdb5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Loni",
+    "lat": 18.45711,
+    "lon": 73.93532,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088524dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tanaji Nagar Chinchwad",
+    "lat": 18.6272,
+    "lon": 73.78512,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884067fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Krushna Nagar Chinchwad",
+    "lat": 18.63629,
+    "lon": 73.77832,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088402dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vikas Nagar Road",
+    "lat": 18.61788,
+    "lon": 73.80264,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884315fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sainath Nagar Wadgaon Sheri",
+    "lat": 18.54246,
+    "lon": 73.92813,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885335fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpri Chinchwad New Township Development Authority, Bhosari",
+    "lat": 18.64327,
+    "lon": 73.82794,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884325fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Perugate, Sadashiv Peth",
+    "lat": 18.50352,
+    "lon": 73.8579,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088501bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Suraksha Nagar, Hadapsar",
+    "lat": 18.49642,
+    "lon": 73.9279,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885353fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Motiram Nagar, Warje",
+    "lat": 18.48793,
+    "lon": 73.79812,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885721fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghole Road",
+    "lat": 18.52465,
+    "lon": 73.84466,
+    "price_sqft": 16750.0,
+    "budget_segment": "Premium",
+    "hex_id": "88608850e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balewadi Gaon, Balewadi",
+    "lat": 18.57606,
+    "lon": 73.7789,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884231fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sunita Nagar",
+    "lat": 18.56053,
+    "lon": 73.92668,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885141fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gokul Nagar Dhanori",
+    "lat": 18.59051,
+    "lon": 73.89071,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885137fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khandale",
+    "lat": 18.57018,
+    "lon": 73.90982,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885101fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rakshak Nagar, Kharadi",
+    "lat": 18.552,
+    "lon": 73.94211,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885325fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shivneri Nagar",
+    "lat": 18.47831,
+    "lon": 73.88932,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thorat Colony Erandwane",
+    "lat": 18.51286,
+    "lon": 73.83327,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahatma Society, Kothrud",
+    "lat": 18.54845,
+    "lon": 73.85153,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manik Baug, Anand Nagar",
+    "lat": 18.47223,
+    "lon": 73.82187,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088576dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Barade Wadi",
+    "lat": 18.67339,
+    "lon": 73.82647,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088416dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malegaon",
+    "lat": 18.52226,
+    "lon": 73.69313,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608855b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katrajnagar, Katraj",
+    "lat": 18.43825,
+    "lon": 73.87171,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd23fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Commerzone IT Park, Yerawada, Airport Road",
+    "lat": 18.56239,
+    "lon": 73.89273,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088511dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Choudhari Wasti",
+    "lat": 18.55711,
+    "lon": 73.94165,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e249bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jagdishnagar",
+    "lat": 18.55621,
+    "lon": 73.81654,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884245fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kharadi Gaon, Kharadi",
+    "lat": 18.55392,
+    "lon": 73.94426,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885325fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panchod, Balaji Nagar",
+    "lat": 18.46565,
+    "lon": 73.86017,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088528dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nimbaj Nagar, Anand Nagar",
+    "lat": 18.47973,
+    "lon": 73.81795,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885765fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sarita Vihar, Dattawadi",
+    "lat": 18.49518,
+    "lon": 73.83512,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pimpale Jagatap",
+    "lat": 18.30405,
+    "lon": 74.03622,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d8d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "New Modikhana, Katad Khana",
+    "lat": 18.50802,
+    "lon": 73.87729,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088500bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattanagar Shani Nagar",
+    "lat": 18.44817,
+    "lon": 73.84739,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852d1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karegaon",
+    "lat": 18.73614,
+    "lon": 74.15917,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2a83fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malshiras",
+    "lat": 18.13611,
+    "lon": 74.62595,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608c4955fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patil Nagar Bavdhan",
+    "lat": 18.52106,
+    "lon": 73.77279,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885505fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sant Nagar Lohegaon",
+    "lat": 18.59767,
+    "lon": 73.9291,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangam Nagar, Pimpri Chinchwad",
+    "lat": 18.57167,
+    "lon": 73.82732,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Indraprashtha Society, Hadapsar",
+    "lat": 18.50127,
+    "lon": 73.95206,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088534bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Parande Nagar, Dhanori",
+    "lat": 18.59626,
+    "lon": 73.89272,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885acbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxman Nagar Thergaon",
+    "lat": 18.56718,
+    "lon": 73.77102,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Donaje",
+    "lat": 18.4227,
+    "lon": 73.82245,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd85fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Umbraj",
+    "lat": 18.56681,
+    "lon": 73.7808,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884215fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sridhar Colony, Karvenagar",
+    "lat": 18.48625,
+    "lon": 73.82331,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vittalvadi, Hingne Khurd",
+    "lat": 18.48104,
+    "lon": 73.82631,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vighnaharta Nagar Katraj",
+    "lat": 18.45762,
+    "lon": 73.83878,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088529dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Marutirao Gaikwad Nagar, Aundh",
+    "lat": 18.55877,
+    "lon": 73.81015,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884247fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shahunagar, Pimpri Chinchwad",
+    "lat": 18.65501,
+    "lon": 73.8099,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884141fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashwant Nagar Kharadi",
+    "lat": 18.55009,
+    "lon": 73.93494,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885327fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Janaki Nagar Kothrud",
+    "lat": 18.47528,
+    "lon": 73.82896,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chaitanya Nagar, Kothrud",
+    "lat": 18.49759,
+    "lon": 73.80716,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885099fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pargaon Memane",
+    "lat": 18.35835,
+    "lon": 74.12714,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d953fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Babhulsar Khurd",
+    "lat": 18.76005,
+    "lon": 74.30155,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e76dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sawardari",
+    "lat": 18.77061,
+    "lon": 73.7772,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088483bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Devale",
+    "lat": 19.29799,
+    "lon": 73.7419,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a001bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karanjgaon",
+    "lat": 18.58745,
+    "lon": 73.82389,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884359fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "North Hadapsar, Hadapsar",
+    "lat": 18.50606,
+    "lon": 73.9259,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885357fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 16 Chikhali",
+    "lat": 18.66349,
+    "lon": 73.81926,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884169fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pratik Nagar Mohanwadi",
+    "lat": 18.56726,
+    "lon": 73.88208,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885117fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gorhe Khurd",
+    "lat": 18.40898,
+    "lon": 73.75845,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885603fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Theur Kesnand Road",
+    "lat": 18.5493,
+    "lon": 74.03044,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2637fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baburao Nagar",
+    "lat": 18.81688,
+    "lon": 74.36681,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e7623fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Guru Nanak Nagar",
+    "lat": 18.502,
+    "lon": 73.87922,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885055fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lokmanya Colony, Kothrud",
+    "lat": 18.50789,
+    "lon": 73.8048,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885091fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi",
+    "lat": 18.5873,
+    "lon": 73.69932,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608840d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pawar Nagar 3, Pimpri Chinchwad",
+    "lat": 18.6177,
+    "lon": 73.7736,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088400dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Taware Colony, Parvati Darshan",
+    "lat": 18.48689,
+    "lon": 73.85551,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malad",
+    "lat": 19.18702,
+    "lon": 72.84312,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608b4635fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Azad Nagar Kothrud",
+    "lat": 18.50396,
+    "lon": 73.80704,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885099fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganga Hamlet, Viman Nagar",
+    "lat": 18.56471,
+    "lon": 73.91122,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885109fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Triveni Nagar Transport Nagar",
+    "lat": 18.66428,
+    "lon": 73.76397,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalwad",
+    "lat": 18.59287,
+    "lon": 73.90362,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885123fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Godbole Vasti, Manjri Budruk",
+    "lat": 18.52929,
+    "lon": 73.96399,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088536dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sant Nagar Parvati Paytha",
+    "lat": 18.48583,
+    "lon": 73.85721,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Awhalwadi",
+    "lat": 18.56273,
+    "lon": 73.9859,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yamuna Nagar Wakad",
+    "lat": 18.60438,
+    "lon": 73.76162,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088400bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Laxman Nagar Baner",
+    "lat": 18.57002,
+    "lon": 73.77279,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088423bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Munjaba Vasti, Dhanori",
+    "lat": 18.58973,
+    "lon": 73.89545,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885135fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Padmavati Nagar",
+    "lat": 18.4774,
+    "lon": 73.86023,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chandani Chowk, Bavdhan",
+    "lat": 18.50707,
+    "lon": 73.78269,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885545fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gavhanevasti",
+    "lat": 18.61771,
+    "lon": 73.84852,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884369fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Alkapuri Society, Kothrud",
+    "lat": 18.50643,
+    "lon": 73.80388,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885091fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhumkar Nagar Wakad",
+    "lat": 18.60377,
+    "lon": 73.74782,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mandai, Shukrawar Peth, Shivaji Road",
+    "lat": 18.51179,
+    "lon": 73.85667,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885011fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gangotri Nagar",
+    "lat": 18.58384,
+    "lon": 73.82425,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jagtap Dairy, Pimpri Chinchwad",
+    "lat": 18.59236,
+    "lon": 73.78307,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884049fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Akash Nagar Sanjay Park",
+    "lat": 18.57198,
+    "lon": 73.9196,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088510dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sainikwadi, Vadgaonsheri",
+    "lat": 18.55157,
+    "lon": 73.91666,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088515dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shindenagar Bavdhan",
+    "lat": 18.51205,
+    "lon": 73.78212,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088556bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shree Siddhivinayak Meera, Undri",
+    "lat": 18.44368,
+    "lon": 73.91701,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c8b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalubai Nagar Wagholi",
+    "lat": 18.57775,
+    "lon": 73.98521,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e24e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phulenagar, Yerawada",
+    "lat": 18.56096,
+    "lon": 73.87498,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ajmera Housing Society, Pimpri",
+    "lat": 18.63384,
+    "lon": 73.81445,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088433dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Apte Road",
+    "lat": 18.51975,
+    "lon": 73.84245,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gujrat Colony",
+    "lat": 18.50572,
+    "lon": 73.80955,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088509dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector Number 11 Moshi",
+    "lat": 18.66239,
+    "lon": 73.82962,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885891fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Uttam Nagar",
+    "lat": 18.45944,
+    "lon": 73.77208,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885711fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhiree Village, Dhayari",
+    "lat": 18.43771,
+    "lon": 73.8161,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cda3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ramnagar Sanaswadi",
+    "lat": 18.66881,
+    "lon": 74.10318,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2e4dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Udhyog Nagar, Pimpri Chinchwad",
+    "lat": 18.64316,
+    "lon": 73.78652,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bijali Nagar",
+    "lat": 18.64207,
+    "lon": 73.77378,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884025fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sanewadi, Aundh",
+    "lat": 18.55543,
+    "lon": 73.80648,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884247fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Alandi, Kelgaon",
+    "lat": 18.67717,
+    "lon": 73.9059,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885807fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balaji Nagar Bhosari",
+    "lat": 18.63296,
+    "lon": 73.83586,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884367fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Katad Khana",
+    "lat": 18.49227,
+    "lon": 73.849,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghule Nagar Vadgaon Budruk",
+    "lat": 18.46326,
+    "lon": 73.82794,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885297fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sakore Nagar, Viman Nagar",
+    "lat": 18.56146,
+    "lon": 73.90816,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088510bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahadev Wadi Mohammed Wadi",
+    "lat": 18.46999,
+    "lon": 73.92202,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088526bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sagar Co Operative Housing Society",
+    "lat": 18.51608,
+    "lon": 73.78162,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088556bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jambhulwadi",
+    "lat": 18.43024,
+    "lon": 73.84107,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cde7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Punya Nagari",
+    "lat": 18.52773,
+    "lon": 73.90951,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088506dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chintamani Nagar Tulshibagwale Colony",
+    "lat": 18.48692,
+    "lon": 73.84479,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Adarsh Colony Thergaon",
+    "lat": 18.5746,
+    "lon": 73.89299,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885139fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Joggers Park",
+    "lat": 18.54648,
+    "lon": 73.90161,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885151fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tirupati Nagar",
+    "lat": 18.48646,
+    "lon": 73.80717,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088572dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahadev Nagar Dhayari",
+    "lat": 18.4394,
+    "lon": 73.81585,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cda3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gangadham Shatrunjay Road",
+    "lat": 18.46881,
+    "lon": 73.87619,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vaiduwadi Gokhalenagar",
+    "lat": 18.51784,
+    "lon": 73.87256,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885003fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Holewadi",
+    "lat": 18.84743,
+    "lon": 73.89337,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a94a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gitai Colony, Chikhali",
+    "lat": 18.68003,
+    "lon": 73.81255,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884167fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Morgaon",
+    "lat": 18.27265,
+    "lon": 74.32062,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ea0c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ingawale Nagar",
+    "lat": 18.58315,
+    "lon": 73.78605,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088423dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Benkar Nagar, Dhayari",
+    "lat": 18.44423,
+    "lon": 73.81559,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885749fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ram Nagar Bavdhan",
+    "lat": 18.52446,
+    "lon": 73.77867,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885563fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lalit Estate, Baner",
+    "lat": 18.56268,
+    "lon": 73.77941,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884215fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Atul Nagar, Warje",
+    "lat": 18.48613,
+    "lon": 73.79118,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885723fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chintamani Paradise, Kothrud",
+    "lat": 18.50421,
+    "lon": 73.79816,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088509bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gurunanak Nagar Santosh Nagar",
+    "lat": 18.45275,
+    "lon": 73.86034,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand Tirth Nagar",
+    "lat": 18.45229,
+    "lon": 73.87572,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yashwantrao Chavan Nagar",
+    "lat": 18.46196,
+    "lon": 73.83843,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088529dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Balaji Nagar Ghorpadi",
+    "lat": 18.48033,
+    "lon": 73.86982,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hingane Mala, Hadapsar",
+    "lat": 18.49569,
+    "lon": 73.93194,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885351fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nande",
+    "lat": 18.52732,
+    "lon": 73.78326,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885567fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhageerath, Gokhalenagar",
+    "lat": 18.53022,
+    "lon": 73.82913,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ravet Village Road",
+    "lat": 18.64645,
+    "lon": 73.75501,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608841c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhamalwadi",
+    "lat": 18.48288,
+    "lon": 73.95031,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kelewadi, Kothrud",
+    "lat": 18.50763,
+    "lon": 73.825,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885089fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bopgaon",
+    "lat": 18.3837,
+    "lon": 73.95333,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cabdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vasunde",
+    "lat": 18.34761,
+    "lon": 74.49359,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608eb815fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deccan Hills",
+    "lat": 18.59145,
+    "lon": 73.77426,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088404bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ashtapur",
+    "lat": 18.56477,
+    "lon": 74.12824,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e22d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Matoshree Nagar, Nigdi",
+    "lat": 18.63744,
+    "lon": 73.76176,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884023fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Keshav Nagar Hadapsar",
+    "lat": 18.51147,
+    "lon": 73.93525,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088530bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nana Nagar, Kirkitwadi",
+    "lat": 18.44117,
+    "lon": 73.79221,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885751fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Utkarsh Nagar",
+    "lat": 18.49916,
+    "lon": 73.94293,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088535dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patas",
+    "lat": 18.43439,
+    "lon": 74.46136,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608eab09fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Meeta Nagar, Kondhwa",
+    "lat": 18.46916,
+    "lon": 73.88545,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghotawade Phata",
+    "lat": 18.51344,
+    "lon": 73.6779,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088466dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kumar Samrudhi Society",
+    "lat": 18.57376,
+    "lon": 73.88457,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885117fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "More Vasti",
+    "lat": 18.67172,
+    "lon": 73.78556,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884139fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoirnagar, Pimpri Chinchwad",
+    "lat": 18.6414,
+    "lon": 73.78015,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884153fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sant Nagar Moshi",
+    "lat": 18.65,
+    "lon": 73.84253,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858d7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tulaja Bhawani Nagar, Kharadi",
+    "lat": 18.56445,
+    "lon": 73.94861,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2491fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ragvilas Society, Koregaon Park",
+    "lat": 18.54286,
+    "lon": 73.89042,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088502dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gadital, Hadapsar",
+    "lat": 18.49916,
+    "lon": 73.94293,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088535dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shiv Nagar Pashan",
+    "lat": 18.53551,
+    "lon": 73.78818,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088425bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Suryalok Nagari, Hadapsar",
+    "lat": 18.50299,
+    "lon": 73.92055,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885319fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhau Patil Road",
+    "lat": 18.56692,
+    "lon": 73.83178,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885195fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Urit Nagar, Warje",
+    "lat": 18.49469,
+    "lon": 73.78834,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885549fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Davaje",
+    "lat": 18.4077,
+    "lon": 73.66242,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880b0dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tulshibaug",
+    "lat": 18.51425,
+    "lon": 73.85551,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885017fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tal Haveli",
+    "lat": 18.69944,
+    "lon": 73.7423,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884a9bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wanjalewadi",
+    "lat": 18.44177,
+    "lon": 73.7904,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885751fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Badhan Nagar, Kondhwa",
+    "lat": 18.47165,
+    "lon": 73.88611,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kasedi",
+    "lat": 18.34048,
+    "lon": 73.50751,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880f09fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gavliwada, Lonavala",
+    "lat": 18.75698,
+    "lon": 73.40844,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886863fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vayusena Nagar",
+    "lat": 18.59467,
+    "lon": 73.91751,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088512dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Velankar Colony",
+    "lat": 18.4965,
+    "lon": 73.85556,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Wadarvadi",
+    "lat": 18.52772,
+    "lon": 73.83225,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dattanagar Ambegaon BK",
+    "lat": 18.44741,
+    "lon": 73.84837,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852d1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gogalwadi",
+    "lat": 18.38071,
+    "lon": 73.87204,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cc65fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Santosh Nagar, Ambegaon Budruk",
+    "lat": 18.44488,
+    "lon": 73.8575,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Niranjan Park, Anand Nagar",
+    "lat": 18.47159,
+    "lon": 73.82265,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088576dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shatrunjay Nagar, Kondhwa Budruk",
+    "lat": 18.4533,
+    "lon": 73.87754,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sahakar Nagar 2, Parvati Darshan",
+    "lat": 18.48701,
+    "lon": 73.8444,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajendra Nagar, Sadashiv Peth",
+    "lat": 18.50332,
+    "lon": 73.84127,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shankar Kalat Nagar",
+    "lat": 18.59661,
+    "lon": 73.76307,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884055fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sector 2 Indrayani Nagar",
+    "lat": 18.63579,
+    "lon": 73.84117,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858dbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aga Nagar, Vadgaonsheri",
+    "lat": 18.56101,
+    "lon": 73.92527,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885141fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nankude Vasti, Aundh",
+    "lat": 18.55728,
+    "lon": 73.8,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884209fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pallod Farms",
+    "lat": 18.55812,
+    "lon": 73.7964,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884209fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shetphal Haveli",
+    "lat": 18.19191,
+    "lon": 74.6574,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e8609fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jagtap Wasti",
+    "lat": 18.18258,
+    "lon": 74.06428,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088d039fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tukai Darshan",
+    "lat": 18.49026,
+    "lon": 73.949,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mugawade",
+    "lat": 18.54734,
+    "lon": 73.62501,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884409fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Satar Nagar, Hadapsar",
+    "lat": 18.47493,
+    "lon": 73.93745,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088526dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Tukai Nagar Kale Padal",
+    "lat": 18.48801,
+    "lon": 73.94296,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambavane",
+    "lat": 18.44421,
+    "lon": 73.5867,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608809c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangrun",
+    "lat": 18.40056,
+    "lon": 73.67864,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885693fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Patil Nagar Pimple Nilakh",
+    "lat": 18.58578,
+    "lon": 73.78419,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884235fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Askarwadi",
+    "lat": 18.40381,
+    "lon": 73.89777,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd41fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gondhalenagar",
+    "lat": 18.49493,
+    "lon": 73.94958,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganesh Nagar Ghorpadi",
+    "lat": 18.49733,
+    "lon": 73.825,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sasane Colony, Mundhwa",
+    "lat": 18.53244,
+    "lon": 73.94059,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885305fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aranyeshwar Nagar",
+    "lat": 18.48651,
+    "lon": 73.8511,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Holkarwadi",
+    "lat": 18.43857,
+    "lon": 73.93928,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c8abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ghodegaon",
+    "lat": 19.04667,
+    "lon": 73.84765,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a8c51fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chourai Nagar",
+    "lat": 18.70493,
+    "lon": 73.67911,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f13fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jalgaon Supe",
+    "lat": 18.23611,
+    "lon": 74.46209,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608eb1c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dutta Nagar, Pimpri Chinchwad",
+    "lat": 18.5719,
+    "lon": 73.83204,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851bbfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kranti Nagar Pimple Nilakh",
+    "lat": 18.57436,
+    "lon": 73.79249,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884207fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambedkar Nagar Kondhwa",
+    "lat": 18.46626,
+    "lon": 73.88441,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Panmala, Pimpri Chinchwad",
+    "lat": 18.49995,
+    "lon": 73.84007,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mahableshwar",
+    "lat": 18.21328,
+    "lon": 73.74969,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c495fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mali Ali, Pimpri Chinchwad",
+    "lat": 18.61234,
+    "lon": 73.79963,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884317fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Keshav Nagar Chinchwad",
+    "lat": 18.57829,
+    "lon": 73.85898,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851a9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ekbote Colony, Swargate",
+    "lat": 18.50232,
+    "lon": 73.86727,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885019fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raigad Colony, Pimpri Chinchwad",
+    "lat": 18.60757,
+    "lon": 73.7864,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ambedkar Nagar Market Yard",
+    "lat": 18.47399,
+    "lon": 73.87374,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aranyeshwar Road",
+    "lat": 18.49002,
+    "lon": 73.87083,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088505bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rakshak Society, Pimpri Chinchwad",
+    "lat": 18.5815,
+    "lon": 73.7943,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088422bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Manik Colony, Pimpri Chinchwad",
+    "lat": 18.62865,
+    "lon": 73.7886,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884065fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ruston Colony",
+    "lat": 18.61284,
+    "lon": 73.88555,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a89fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nakhate Nagar",
+    "lat": 18.6119,
+    "lon": 73.78235,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088406bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nandoshi Wanjalewadi",
+    "lat": 18.4428,
+    "lon": 73.83558,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852d3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vishnupuram Colony, Vadgaon Budruk",
+    "lat": 18.46176,
+    "lon": 73.82874,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885291fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gaikwad Vasti, Pimpri Chinchwad",
+    "lat": 18.68554,
+    "lon": 73.85183,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lavasa",
+    "lat": 18.40413,
+    "lon": 73.50034,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880d61fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajiv Gandhi Nagar Kondhwa Budruk",
+    "lat": 18.46003,
+    "lon": 73.86947,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852c5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Renuka Nagar Urit Nagar",
+    "lat": 18.46644,
+    "lon": 73.82324,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885297fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Premnagar Ashok Nagar",
+    "lat": 18.53779,
+    "lon": 73.83639,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850adfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhujbal Vasti, Pimpri Chinchwad",
+    "lat": 18.59268,
+    "lon": 73.75523,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884053fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Varasgaon",
+    "lat": 18.50386,
+    "lon": 73.90257,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088504dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Aundh Slums, Aundh",
+    "lat": 18.5617,
+    "lon": 73.80312,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088420dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhawade Vasahat, Bhosari",
+    "lat": 18.61617,
+    "lon": 73.84918,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884369fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sasoon Road",
+    "lat": 18.53363,
+    "lon": 73.87837,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088502bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kanchan Galli",
+    "lat": 18.51567,
+    "lon": 73.82614,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885081fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Porwal Road",
+    "lat": 18.60598,
+    "lon": 73.91008,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a1bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Subhas Nagar, Hadapsar",
+    "lat": 18.50003,
+    "lon": 73.92386,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885353fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Satavwadi, Hadapsar",
+    "lat": 18.49532,
+    "lon": 73.94847,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kohinoor Estate, Shivaji Nagar",
+    "lat": 18.54764,
+    "lon": 73.8544,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sadar Bazaar",
+    "lat": 18.50964,
+    "lon": 73.87321,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088500bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kadachiwadi",
+    "lat": 18.74682,
+    "lon": 73.87498,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884b49fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhandgaon",
+    "lat": 18.53404,
+    "lon": 73.95702,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885367fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Anand Nagar Chinchwad",
+    "lat": 18.63466,
+    "lon": 73.79559,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884159fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kambre",
+    "lat": 18.79277,
+    "lon": 73.53666,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ab455fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhadas Road",
+    "lat": 18.54442,
+    "lon": 73.57634,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608844c7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vitthal Nagar Warje",
+    "lat": 18.47628,
+    "lon": 73.7875,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088573dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kudje",
+    "lat": 18.45255,
+    "lon": 73.76706,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885713fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raghoba Patil Nagar",
+    "lat": 18.53896,
+    "lon": 73.93422,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885323fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kalkhairewadi",
+    "lat": 18.31166,
+    "lon": 74.37341,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ea021fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Baburdi",
+    "lat": 18.28885,
+    "lon": 74.37731,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608ea00dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Malkhed",
+    "lat": 18.39319,
+    "lon": 73.70954,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608856d5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhivri",
+    "lat": 18.43972,
+    "lon": 73.88587,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088cd21fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Karegaon Karde Road",
+    "lat": 18.76737,
+    "lon": 74.31814,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e76ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Gandhi Peth",
+    "lat": 18.62761,
+    "lon": 73.78088,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884067fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chimbali",
+    "lat": 18.68459,
+    "lon": 73.85038,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608858abfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Taljai Forest Area",
+    "lat": 18.47219,
+    "lon": 73.84689,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885287fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shirole Road",
+    "lat": 18.52303,
+    "lon": 73.84469,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850e1fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Velvand",
+    "lat": 18.20065,
+    "lon": 73.74484,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c491fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Harishchandri",
+    "lat": 18.23598,
+    "lon": 73.90734,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c0d9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kelad",
+    "lat": 18.20595,
+    "lon": 73.58195,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880203fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Ganegaon Khalsa",
+    "lat": 18.75881,
+    "lon": 74.19467,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e2859fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Koregaon Park Road",
+    "lat": 18.53618,
+    "lon": 73.8868,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885029fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nirmal Nagar",
+    "lat": 18.50275,
+    "lon": 73.88645,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885043fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Pandhari Nagar Handewadi",
+    "lat": 18.45764,
+    "lon": 73.93745,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c99bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kaveri Nagar",
+    "lat": 18.60492,
+    "lon": 73.77432,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884047fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shahupuri",
+    "lat": 16.70022,
+    "lon": 74.23762,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860ab094dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Shankar Rao Jamdar Road",
+    "lat": 18.14762,
+    "lon": 74.5599,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608c4983fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhigwan Road",
+    "lat": 18.1788,
+    "lon": 74.60233,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608e86ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mrutyunjay Colony",
+    "lat": 18.50673,
+    "lon": 73.8147,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088508bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chiklap",
+    "lat": 18.67139,
+    "lon": 73.82544,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088416dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Lohiya Nagar Ghorpade Peth",
+    "lat": 18.50513,
+    "lon": 73.86653,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885019fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Khodad Road",
+    "lat": 19.06482,
+    "lon": 74.05926,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608a999bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Hadashi",
+    "lat": 18.4932,
+    "lon": 73.94838,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c9b7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Temghar Lavasa Road",
+    "lat": 18.45208,
+    "lon": 73.58765,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608809e9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Phase 2 Gangadham",
+    "lat": 18.47922,
+    "lon": 73.87639,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852e5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jawal",
+    "lat": 18.58867,
+    "lon": 73.59818,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608845ddfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Bhoir Colony, Pimpri Chinchwad",
+    "lat": 18.63369,
+    "lon": 73.78987,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884065fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sangamner",
+    "lat": 18.54701,
+    "lon": 73.87499,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608851c9fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mitra Mandal Colony, Parvati Darshan",
+    "lat": 18.49554,
+    "lon": 73.85406,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a7fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Rajarampuri",
+    "lat": 16.68898,
+    "lon": 74.2505,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860ab0b25fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mohitewadi",
+    "lat": 18.74722,
+    "lon": 73.61164,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d9dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "ST Colony",
+    "lat": 18.49295,
+    "lon": 73.85679,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608852a5fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Madhuban Colony Rahatni",
+    "lat": 18.60699,
+    "lon": 73.78332,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Yojna Nagar",
+    "lat": 18.73743,
+    "lon": 73.68845,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884d4bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dandekar Pool",
+    "lat": 18.50251,
+    "lon": 73.84546,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Raghuveer Nagar, Vadgaonsheri",
+    "lat": 18.61337,
+    "lon": 73.91342,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a11fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kala Nagar, Dhankawadi",
+    "lat": 18.46294,
+    "lon": 73.85734,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885289fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Deshmukh Nagar",
+    "lat": 18.46346,
+    "lon": 73.77817,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885715fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nyati County, Mohammed Wadi",
+    "lat": 18.46243,
+    "lon": 73.92213,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885247fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Thite Nagar, Kharadi",
+    "lat": 18.54389,
+    "lon": 73.94157,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885321fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saibaba Nagar, Kondhwa",
+    "lat": 18.46862,
+    "lon": 73.88059,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885217fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Clover Village, Wanawari",
+    "lat": 18.48434,
+    "lon": 73.89799,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088523dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Jarande Nagar, Mohammed Wadi",
+    "lat": 18.48234,
+    "lon": 73.91208,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088522bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Devadi",
+    "lat": 18.29236,
+    "lon": 73.96386,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088c023fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Nighoje",
+    "lat": 18.73167,
+    "lon": 73.81867,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884a3dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kachare Colony",
+    "lat": 18.5135,
+    "lon": 73.8386,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850ebfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Induri",
+    "lat": 18.73396,
+    "lon": 73.72131,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860884f2dfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Mandvi Bk",
+    "lat": 18.40994,
+    "lon": 73.70365,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885681fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dive",
+    "lat": 18.3861,
+    "lon": 74.03059,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088ca29fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Municipal Colony",
+    "lat": 18.50066,
+    "lon": 73.84641,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850cdfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sathe Nagar, Lohegaon",
+    "lat": 18.59818,
+    "lon": 73.92317,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885a53fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Empress Garden, Ghorpadi",
+    "lat": 18.51478,
+    "lon": 73.90247,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885045fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Chikhalgaon",
+    "lat": 18.55804,
+    "lon": 73.20852,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860886435fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Dhaygude Wada, Aundh",
+    "lat": 18.56875,
+    "lon": 73.77532,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088423bfffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Sanjay Park",
+    "lat": 18.57018,
+    "lon": 73.9035,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885103fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Vakil Nagar, Erandwane, Karve Road",
+    "lat": 18.49873,
+    "lon": 73.8309,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "88608850c3fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Synagogue Street",
+    "lat": 18.51824,
+    "lon": 73.87463,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860885003fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Saiv Bk",
+    "lat": 18.40436,
+    "lon": 73.58986,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "8860880801fffff",
+    "zone": "Central"
+  },
+  {
+    "name": "Kusgaon Lonavala",
+    "lat": 18.75806,
+    "lon": 73.42169,
+    "price_sqft": null,
+    "budget_segment": "Mid-Segment",
+    "hex_id": "886088686dfffff",
+    "zone": "Central"
+  }
+]

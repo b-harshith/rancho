@@ -1,0 +1,1688 @@
+{
+  "generated_from": {
+    "master": "DATA/final/bangalore_hex7_affluent_family_intelligence_master.json",
+    "report": "src/public/data/report.json"
+  },
+  "coverage": {
+    "final_h3_hexes": 309,
+    "active_analysis_hexes": 309,
+    "coverage_note": "The rerun publishes the active analysis H3 footprint used for zone, micro-market, hex, and catchment views."
+  },
+  "executive_metrics": {
+    "family_tam": 0,
+    "zones": 9,
+    "micro_markets": 12,
+    "q4_total_units": 384295,
+    "q4_total_families": 384544,
+    "total_projects": 8920
+  },
+  "recommendations": {
+    "zones": [
+      {
+        "name": "East",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 100725,
+        "tam_share_pct": 31.8,
+        "avg_score": 44.87,
+        "commute_score": 0.0,
+        "confidence_band": "High confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "South-East",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 57567,
+        "tam_share_pct": 18.2,
+        "avg_score": 42.47,
+        "commute_score": 0.0,
+        "confidence_band": "High confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "North",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 53444,
+        "tam_share_pct": 16.9,
+        "avg_score": 45.52,
+        "commute_score": 0.0,
+        "confidence_band": "High confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "North-East",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 31028,
+        "tam_share_pct": 9.8,
+        "avg_score": 31.48,
+        "commute_score": 0.0,
+        "confidence_band": "Medium confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "South",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 27341,
+        "tam_share_pct": 8.6,
+        "avg_score": 41.78,
+        "commute_score": 0.0,
+        "confidence_band": "High confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "Central",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 25830,
+        "tam_share_pct": 8.2,
+        "avg_score": 62.7,
+        "commute_score": 0.0,
+        "confidence_band": "High confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "South-West",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 11547,
+        "tam_share_pct": 3.6,
+        "avg_score": 35.94,
+        "commute_score": 0.0,
+        "confidence_band": "Medium confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "North-West",
+        "status": "Validate on ground",
+        "rationale": "Promising signal exists, but evidence or access needs field confirmation.",
+        "tam": 7280,
+        "tam_share_pct": 2.3,
+        "avg_score": 20.73,
+        "commute_score": 0.0,
+        "confidence_band": "Medium confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      },
+      {
+        "name": "West",
+        "status": "Avoid for now",
+        "rationale": "Low current TAM or weak evidence relative to stronger alternatives.",
+        "tam": 1914,
+        "tam_share_pct": 0.6,
+        "avg_score": 20.32,
+        "commute_score": 0.0,
+        "confidence_band": "Medium confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      }
+    ],
+    "micro_markets": [
+      {
+        "name": "Hagaduru",
+        "zone": "East",
+        "status": "Launch now",
+        "rationale": "99,501 family TAM, 66.3 avg score, commute proxy 80.7.",
+        "tam": 99501,
+        "tam_share_pct": 31.4,
+        "avg_score": 66.32,
+        "commute_score": 80.7,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Kempapura-Byatarayanapura",
+        "zone": "North",
+        "status": "Launch now",
+        "rationale": "46,328 family TAM, 62.7 avg score, commute proxy 76.2.",
+        "tam": 46328,
+        "tam_share_pct": 14.6,
+        "avg_score": 62.72,
+        "commute_score": 76.2,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Chikkakanneli-Gunjur",
+        "zone": "South-East",
+        "status": "Launch now",
+        "rationale": "43,478 family TAM, 62.7 avg score, commute proxy 79.8.",
+        "tam": 43478,
+        "tam_share_pct": 13.7,
+        "avg_score": 62.67,
+        "commute_score": 79.8,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Yelenahalli-Doddakammanahalli",
+        "zone": "South",
+        "status": "Shortlist",
+        "rationale": "26,139 family TAM, 57.4 avg score, commute proxy 80.1.",
+        "tam": 26139,
+        "tam_share_pct": 8.3,
+        "avg_score": 57.4,
+        "commute_score": 80.1,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Ejipura-Sri Lakshmi Devi Ward",
+        "zone": "Central",
+        "status": "Shortlist",
+        "rationale": "25,830 family TAM, 62.7 avg score, commute proxy 90.4.",
+        "tam": 25830,
+        "tam_share_pct": 8.2,
+        "avg_score": 62.7,
+        "commute_score": 90.4,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Hennur-Lingarajpura",
+        "zone": "North-East",
+        "status": "Validate on ground",
+        "rationale": "14,808 family TAM, 56.2 avg score, commute proxy 79.8.",
+        "tam": 14808,
+        "tam_share_pct": 4.7,
+        "avg_score": 56.2,
+        "commute_score": 79.8,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Cheemasandra",
+        "zone": "North-East",
+        "status": "Validate on ground",
+        "rationale": "11,862 family TAM, 50.4 avg score, commute proxy 56.3.",
+        "tam": 11862,
+        "tam_share_pct": 3.7,
+        "avg_score": 50.38,
+        "commute_score": 56.3,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Nalwadi Krishnaraja Wadiyar Ward-Malleshwaram",
+        "zone": "North-West",
+        "status": "Validate on ground",
+        "rationale": "6,326 family TAM, 54.1 avg score, commute proxy 88.0.",
+        "tam": 6326,
+        "tam_share_pct": 2.0,
+        "avg_score": 54.14,
+        "commute_score": 88.0,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Bangarappa Nagara-Rajarajeshwari Nagara",
+        "zone": "South-West",
+        "status": "Validate on ground",
+        "rationale": "6,295 family TAM, 54.3 avg score, commute proxy 82.3.",
+        "tam": 6295,
+        "tam_share_pct": 2.0,
+        "avg_score": 54.26,
+        "commute_score": 82.3,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      },
+      {
+        "name": "Kamakshipalya",
+        "zone": "West",
+        "status": "Avoid for now",
+        "rationale": "1,794 family TAM, 48.8 avg score, commute proxy 88.6.",
+        "tam": 1794,
+        "tam_share_pct": 0.6,
+        "avg_score": 48.82,
+        "commute_score": 88.6,
+        "next_step": "Prioritize commercial inventory search inside the highest-scoring connected pockets."
+      }
+    ],
+    "avoid_or_deprioritize": [
+      {
+        "name": "West",
+        "status": "Avoid for now",
+        "rationale": "Low current TAM or weak evidence relative to stronger alternatives.",
+        "tam": 1914,
+        "tam_share_pct": 0.6,
+        "avg_score": 20.32,
+        "commute_score": 0.0,
+        "confidence_band": "Medium confidence",
+        "next_step": "Keep as benchmark or revisit after field validation."
+      }
+    ]
+  },
+  "sensitivity": {
+    "center_capacity": [
+      {
+        "penetration": 0.01,
+        "center_capacity": 120,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.01,
+        "center_capacity": 180,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.01,
+        "center_capacity": 240,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.02,
+        "center_capacity": 120,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.02,
+        "center_capacity": 180,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.02,
+        "center_capacity": 240,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.03,
+        "center_capacity": 120,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.03,
+        "center_capacity": 180,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.03,
+        "center_capacity": 240,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.05,
+        "center_capacity": 120,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.05,
+        "center_capacity": 180,
+        "estimated_centers": 0.0
+      },
+      {
+        "penetration": 0.05,
+        "center_capacity": 240,
+        "estimated_centers": 0.0
+      }
+    ],
+    "catchment_radius": [
+      {
+        "radius_km": 3,
+        "interpretation": "Immediate neighborhood validation"
+      },
+      {
+        "radius_km": 5,
+        "interpretation": "Local launch catchment"
+      },
+      {
+        "radius_km": 7,
+        "interpretation": "Current default expansion lens"
+      },
+      {
+        "radius_km": 10,
+        "interpretation": "Broad city-submarket scan"
+      }
+    ]
+  },
+  "validation": {
+    "coverage": {
+      "final_h3_hexes": 309,
+      "active_analysis_hexes": 309,
+      "coverage_note": "The rerun publishes the active analysis H3 footprint used for zone, micro-market, hex, and catchment views."
+    },
+    "totals": {
+      "final_countable_family_tam": 0.0,
+      "csv_countable_family_tam": 0.0,
+      "active_geojson_family_tam": 0.0,
+      "zone_report_family_tam": 316676.0
+    },
+    "checks": [
+      {
+        "name": "Final master hex count",
+        "status": "pass",
+        "value": 309,
+        "expected": 309
+      },
+      {
+        "name": "Active analysis hex count",
+        "status": "pass",
+        "value": 309,
+        "expected": 309
+      },
+      {
+        "name": "Final JSON vs CSV TAM",
+        "status": "pass",
+        "value": 0.0,
+        "expected": 0.0
+      },
+      {
+        "name": "Active GeoJSON vs zone report TAM",
+        "status": "fail",
+        "value": 0.0,
+        "expected": 316676.0
+      },
+      {
+        "name": "Missing POI coordinates",
+        "status": "pass",
+        "value": 0,
+        "expected": 0
+      },
+      {
+        "name": "Duplicate society names",
+        "status": "warn",
+        "value": 5,
+        "expected": 0
+      }
+    ]
+  },
+  "commute": {
+    "method": "Free OSM/OSRM-derived commute-friction proxy",
+    "not_live_traffic": true,
+    "components": [
+      "Arterial access",
+      "Road quality proxy",
+      "Network redundancy",
+      "Route directness",
+      "Chokepoint risk proxy",
+      "Traffic pattern proxy",
+      "Transit relief"
+    ],
+    "zone_summary": {
+      "East": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 63.6,
+        "best_hexes": [
+          {
+            "hex_id": "8761892ecffffff",
+            "name": "Indiranagar",
+            "score": 88.2
+          },
+          {
+            "hex_id": "876189252ffffff",
+            "name": "Jeevan Bhimanagar-L.B Shastri Nagar",
+            "score": 87.9
+          },
+          {
+            "hex_id": "87618920bffffff",
+            "name": "Priyadarshini Ward-Marathahalli",
+            "score": 87.2
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "8761892a4ffffff",
+            "name": "Govindapura-Bangalore East",
+            "score": 24.9
+          },
+          {
+            "hex_id": "876189319ffffff",
+            "name": "Gunduru",
+            "score": 24.5
+          },
+          {
+            "hex_id": "876189399ffffff",
+            "name": "Bangalore North",
+            "score": 24.2
+          }
+        ]
+      },
+      "North": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 48.2,
+        "best_hexes": [
+          {
+            "hex_id": "8760145b2ffffff",
+            "name": "Sadashiva Nagara",
+            "score": 88.9
+          },
+          {
+            "hex_id": "8761892cdffffff",
+            "name": "Dinnur",
+            "score": 87.2
+          },
+          {
+            "hex_id": "8761892c8ffffff",
+            "name": "Kempapura-Byatarayanapura",
+            "score": 86.7
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "8760169adffffff",
+            "name": "Vaderahalli",
+            "score": 24.4
+          },
+          {
+            "hex_id": "876016d52ffffff",
+            "name": "Bangalore North",
+            "score": 24.2
+          },
+          {
+            "hex_id": "873d914c1ffffff",
+            "name": "Agaram",
+            "score": 24.0
+          }
+        ]
+      },
+      "South-East": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 67.3,
+        "best_hexes": [
+          {
+            "hex_id": "876189242ffffff",
+            "name": "HSR Layout",
+            "score": 92.4
+          },
+          {
+            "hex_id": "87618925cffffff",
+            "name": "Koramangala 4th Block-A Adugodi",
+            "score": 89.9
+          },
+          {
+            "hex_id": "876189246ffffff",
+            "name": "Kudlu-Agara",
+            "score": 88.7
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "876189221ffffff",
+            "name": "Valagere Kallahalli",
+            "score": 48.1
+          },
+          {
+            "hex_id": "87618936bffffff",
+            "name": "Avuda Denahalli",
+            "score": 47.8
+          },
+          {
+            "hex_id": "876189350ffffff",
+            "name": "Modihalli",
+            "score": 41.2
+          }
+        ]
+      },
+      "Central": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 90.4,
+        "best_hexes": [
+          {
+            "hex_id": "8760145b1ffffff",
+            "name": "Rajajinagara",
+            "score": 94.1
+          },
+          {
+            "hex_id": "8760145b5ffffff",
+            "name": "Nehru Nagar",
+            "score": 93.4
+          },
+          {
+            "hex_id": "876189259ffffff",
+            "name": "Sunkenahalli-Devagiri Temple Ward",
+            "score": 93.1
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "87618925affffff",
+            "name": "Ashokanagar-Sampangirama Nagar",
+            "score": 87.3
+          },
+          {
+            "hex_id": "87618925effffff",
+            "name": "Ejipura-Sri Lakshmi Devi Ward",
+            "score": 86.1
+          },
+          {
+            "hex_id": "8761892e8ffffff",
+            "name": "Old Baiyappanahalli-Maruthi Seva Nagara",
+            "score": 85.8
+          }
+        ]
+      },
+      "South": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 66.9,
+        "best_hexes": [
+          {
+            "hex_id": "87618925dffffff",
+            "name": "J.P Nagar-N.S Palya",
+            "score": 91.8
+          },
+          {
+            "hex_id": "876189243ffffff",
+            "name": "Kodi Chikkanahalli",
+            "score": 91.5
+          },
+          {
+            "hex_id": "87618924affffff",
+            "name": "Sarakki-Kumaraswamy Layout",
+            "score": 91.0
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "876014526ffffff",
+            "name": "Tharalu",
+            "score": 39.5
+          },
+          {
+            "hex_id": "876014524ffffff",
+            "name": "Vaddarahalli",
+            "score": 26.8
+          },
+          {
+            "hex_id": "876014cd6ffffff",
+            "name": "Ravgodlu",
+            "score": 25.7
+          }
+        ]
+      },
+      "North-West": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 51.0,
+        "best_hexes": [
+          {
+            "hex_id": "876014594ffffff",
+            "name": "Dollars Colony",
+            "score": 92.9
+          },
+          {
+            "hex_id": "876014586ffffff",
+            "name": "Basaveshwara Nagara",
+            "score": 91.7
+          },
+          {
+            "hex_id": "8760145b3ffffff",
+            "name": "Nalwadi Krishnaraja Wadiyar Ward-Malleshwaram",
+            "score": 91.4
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "87601684affffff",
+            "name": "Tharabanahalli",
+            "score": 24.4
+          },
+          {
+            "hex_id": "876016863ffffff",
+            "name": "Bangalore North",
+            "score": 24.1
+          },
+          {
+            "hex_id": "876016b11ffffff",
+            "name": "Makanakuppe",
+            "score": 24.0
+          }
+        ]
+      },
+      "North-East": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 49.8,
+        "best_hexes": [
+          {
+            "hex_id": "8761892eaffffff",
+            "name": "HRBR Layout-Subbayanapalya",
+            "score": 91.7
+          },
+          {
+            "hex_id": "8761892e3ffffff",
+            "name": "K.S. Nissar Ahmed Ward",
+            "score": 87.7
+          },
+          {
+            "hex_id": "8761892ccffffff",
+            "name": "Hennur-Lingarajpura",
+            "score": 87.6
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "876189748ffffff",
+            "name": "Arasinakunte",
+            "score": 24.5
+          },
+          {
+            "hex_id": "876189648ffffff",
+            "name": "Aramane Nagara",
+            "score": 24.5
+          },
+          {
+            "hex_id": "876189659ffffff",
+            "name": "Harinagar",
+            "score": 24.5
+          }
+        ]
+      },
+      "South-West": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 68.8,
+        "best_hexes": [
+          {
+            "hex_id": "8760145a4ffffff",
+            "name": "Padmanabhanagara-Kathriguppe",
+            "score": 92.6
+          },
+          {
+            "hex_id": "8760145a0ffffff",
+            "name": "Swamy Vivekananda Ward-Deepanjali Nagara",
+            "score": 91.3
+          },
+          {
+            "hex_id": "87618924bffffff",
+            "name": "Kane Muneshwara Ward-Sarvabhouma Nagar",
+            "score": 87.1
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "87601451affffff",
+            "name": "Kommagatta",
+            "score": 52.8
+          },
+          {
+            "hex_id": "87601451effffff",
+            "name": "Hemmigepura",
+            "score": 51.0
+          },
+          {
+            "hex_id": "876014b14ffffff",
+            "name": "Chickpete",
+            "score": 25.9
+          }
+        ]
+      },
+      "West": {
+        "score_tam_weighted": 0.0,
+        "score_area_weighted": 61.0,
+        "best_hexes": [
+          {
+            "hex_id": "8760145a2ffffff",
+            "name": "Bapuji Nagara",
+            "score": 90.1
+          },
+          {
+            "hex_id": "876014584ffffff",
+            "name": "Kamakshipalya",
+            "score": 88.4
+          },
+          {
+            "hex_id": "8760145a3ffffff",
+            "name": "Attigupe-Hampi Nagar",
+            "score": 87.3
+          }
+        ],
+        "worst_hexes": [
+          {
+            "hex_id": "8760144a9ffffff",
+            "name": "Bhattarahalli",
+            "score": 25.3
+          },
+          {
+            "hex_id": "8760144adffffff",
+            "name": "Manchenahalli",
+            "score": 24.8
+          },
+          {
+            "hex_id": "87601441effffff",
+            "name": "Soladevanahalli",
+            "score": 24.2
+          }
+        ]
+      }
+    },
+    "top_commute_hexes": [
+      {
+        "hex_id": "8760145b1ffffff",
+        "name": "Rajajinagara",
+        "lat": 12.986103,
+        "lon": 77.552619,
+        "score": 94.1,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 83.3,
+          "network_redundancy": 100.0,
+          "route_directness": 90.4,
+          "chokepoint_risk_proxy": 95.1,
+          "traffic_pattern_proxy": 95.2,
+          "transit_relief": 93.1
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.38,
+          "nearest_routed_poi_minutes_at_35_kmph": 4.9,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Magadi Road Metro Station",
+            "line": "Unknown",
+            "distance_km": 1.2
+          },
+          "best_corridors": [
+            {
+              "name": "Apollo Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.9,
+              "route_distance_km": 2.87,
+              "directness_ratio": 1.37
+            },
+            {
+              "name": "Even Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 6.0,
+              "route_distance_km": 3.5,
+              "directness_ratio": 1.21
+            },
+            {
+              "name": "RxDx Healthcare",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 7.7,
+              "route_distance_km": 4.5,
+              "directness_ratio": 1.97
+            },
+            {
+              "name": "Manipal Hospital Malleshwaram",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 9.6,
+              "route_distance_km": 5.6,
+              "directness_ratio": 2.02
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8760145b5ffffff",
+        "name": "Nehru Nagar",
+        "lat": 12.971088,
+        "lon": 77.569213,
+        "score": 93.4,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 69.3,
+          "network_redundancy": 100.0,
+          "route_directness": 94.5,
+          "chokepoint_risk_proxy": 98.1,
+          "traffic_pattern_proxy": 94.9,
+          "transit_relief": 100.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.3,
+          "nearest_routed_poi_minutes_at_35_kmph": 3.8,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Nadaprabhu Kempegowda Station, Majestic Metro Station",
+            "line": "Unknown",
+            "distance_km": 0.65
+          },
+          "best_corridors": [
+            {
+              "name": "Apollo Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.8,
+              "route_distance_km": 2.19,
+              "directness_ratio": 1.16
+            },
+            {
+              "name": "Even Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.9,
+              "route_distance_km": 2.28,
+              "directness_ratio": 1.24
+            },
+            {
+              "name": "Rangadore Memorial Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.1,
+              "route_distance_km": 2.39,
+              "directness_ratio": 1.21
+            },
+            {
+              "name": "HCG  - The Specialist in Cancer Care",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.7,
+              "route_distance_km": 3.31,
+              "directness_ratio": 1.4
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876189259ffffff",
+        "name": "Sunkenahalli-Devagiri Temple Ward",
+        "lat": 12.933638,
+        "lon": 77.58122,
+        "score": 93.1,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 75.8,
+          "network_redundancy": 100.0,
+          "route_directness": 89.2,
+          "chokepoint_risk_proxy": 94.3,
+          "traffic_pattern_proxy": 95.9,
+          "transit_relief": 100.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.4,
+          "nearest_routed_poi_minutes_at_35_kmph": 0.9,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Jayanagar Metro Station",
+            "line": "Unknown",
+            "distance_km": 0.47
+          },
+          "best_corridors": [
+            {
+              "name": "Cloudnine Hospital - Jayanagar",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 0.9,
+              "route_distance_km": 0.54,
+              "directness_ratio": 1.68
+            },
+            {
+              "name": "Apollo Speciality Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 1.8,
+              "route_distance_km": 1.08,
+              "directness_ratio": 2.35
+            },
+            {
+              "name": "Apollo Cradle & Children’s Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.8,
+              "route_distance_km": 2.83,
+              "directness_ratio": 1.47
+            },
+            {
+              "name": "Rangadore Memorial Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.3,
+              "route_distance_km": 3.06,
+              "directness_ratio": 1.24
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876014594ffffff",
+        "name": "Dollars Colony",
+        "lat": 13.030956,
+        "lon": 77.561791,
+        "score": 92.9,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 77.1,
+          "network_redundancy": 100.0,
+          "route_directness": 91.4,
+          "chokepoint_risk_proxy": 95.9,
+          "traffic_pattern_proxy": 92.3,
+          "transit_relief": 87.8
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.36,
+          "nearest_routed_poi_minutes_at_35_kmph": 0.9,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Yeshwantpur Metro Station",
+            "line": "Unknown",
+            "distance_km": 1.55
+          },
+          "best_corridors": [
+            {
+              "name": "Smiles Institute of Gastroenterology",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 0.9,
+              "route_distance_km": 0.52,
+              "directness_ratio": 1.26
+            },
+            {
+              "name": "Cloudnine Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.7,
+              "route_distance_km": 3.32,
+              "directness_ratio": 1.29
+            },
+            {
+              "name": "Manipal Hospital Malleshwaram",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 6.3,
+              "route_distance_km": 3.65,
+              "directness_ratio": 1.38
+            },
+            {
+              "name": "RxDx Healthcare",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 6.4,
+              "route_distance_km": 3.73,
+              "directness_ratio": 1.28
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8760145a4ffffff",
+        "name": "Padmanabhanagara-Kathriguppe",
+        "lat": 12.926232,
+        "lon": 77.560041,
+        "score": 92.6,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 76.5,
+          "network_redundancy": 100.0,
+          "route_directness": 91.7,
+          "chokepoint_risk_proxy": 96.1,
+          "traffic_pattern_proxy": 93.1,
+          "transit_relief": 82.3
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.35,
+          "nearest_routed_poi_minutes_at_35_kmph": 5.5,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Banashankari Metro Station",
+            "line": "Unknown",
+            "distance_km": 1.91
+          },
+          "best_corridors": [
+            {
+              "name": "Kusuma Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.5,
+              "route_distance_km": 3.19,
+              "directness_ratio": 1.57
+            },
+            {
+              "name": "Apollo Speciality Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 6.8,
+              "route_distance_km": 3.98,
+              "directness_ratio": 1.38
+            },
+            {
+              "name": "Cloudnine Hospital - Jayanagar",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 7.0,
+              "route_distance_km": 4.06,
+              "directness_ratio": 1.48
+            },
+            {
+              "name": "Aster RV Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 7.1,
+              "route_distance_km": 4.13,
+              "directness_ratio": 1.28
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876189242ffffff",
+        "name": "HSR Layout",
+        "lat": 12.910985,
+        "lon": 77.635603,
+        "score": 92.4,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 77.1,
+          "network_redundancy": 100.0,
+          "route_directness": 88.6,
+          "chokepoint_risk_proxy": 93.8,
+          "traffic_pattern_proxy": 90.6,
+          "transit_relief": 96.3
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.41,
+          "nearest_routed_poi_minutes_at_35_kmph": 1.9,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Bommanahalli Metro Station",
+            "line": "Unknown",
+            "distance_km": 0.99
+          },
+          "best_corridors": [
+            {
+              "name": "Greenview Medical Center",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 1.9,
+              "route_distance_km": 1.14,
+              "directness_ratio": 1.23
+            },
+            {
+              "name": "Lotus Multispeciality Center",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.4,
+              "route_distance_km": 1.99,
+              "directness_ratio": 1.31
+            },
+            {
+              "name": "Marvel Multispeciality Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.2,
+              "route_distance_km": 2.44,
+              "directness_ratio": 1.51
+            },
+            {
+              "name": "Sai Thunga Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.7,
+              "route_distance_km": 3.32,
+              "directness_ratio": 1.67
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8761892edffffff",
+        "name": "Agaram",
+        "lat": 12.970885,
+        "lon": 77.628189,
+        "score": 92.3,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 68.9,
+          "network_redundancy": 100.0,
+          "route_directness": 93.1,
+          "chokepoint_risk_proxy": 97.2,
+          "traffic_pattern_proxy": 86.4,
+          "transit_relief": 100.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.32,
+          "nearest_routed_poi_minutes_at_35_kmph": 3.6,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Halasuru Metro Station",
+            "line": "Unknown",
+            "distance_km": 0.65
+          },
+          "best_corridors": [
+            {
+              "name": "Manipal Clinic Indiranagar",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.6,
+              "route_distance_km": 2.08,
+              "directness_ratio": 1.81
+            },
+            {
+              "name": "Vikram Aura Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.7,
+              "route_distance_km": 2.76,
+              "directness_ratio": 1.31
+            },
+            {
+              "name": "Cloudnine Hospital - Whitefield",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 6.3,
+              "route_distance_km": 3.69,
+              "directness_ratio": 1.23
+            },
+            {
+              "name": "Manipal Hospitals Old Airport Road",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 7.1,
+              "route_distance_km": 4.17,
+              "directness_ratio": 1.59
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "87618925dffffff",
+        "name": "J.P Nagar-N.S Palya",
+        "lat": 12.918612,
+        "lon": 77.597815,
+        "score": 91.8,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 76.2,
+          "network_redundancy": 100.0,
+          "route_directness": 83.9,
+          "chokepoint_risk_proxy": 90.4,
+          "traffic_pattern_proxy": 97.9,
+          "transit_relief": 100.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.5,
+          "nearest_routed_poi_minutes_at_35_kmph": 2.8,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Jayadeva Hospital Metro Station",
+            "line": "Unknown",
+            "distance_km": 0.31
+          },
+          "best_corridors": [
+            {
+              "name": "Apollo Cradle & Children’s Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 2.8,
+              "route_distance_km": 1.62,
+              "directness_ratio": 1.18
+            },
+            {
+              "name": "Aster RV Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.3,
+              "route_distance_km": 2.54,
+              "directness_ratio": 1.57
+            },
+            {
+              "name": "Cadabams Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.5,
+              "route_distance_km": 2.61,
+              "directness_ratio": 1.44
+            },
+            {
+              "name": "Apollo Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 5.9,
+              "route_distance_km": 3.45,
+              "directness_ratio": 1.41
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "87618925bffffff",
+        "name": "Ashoka Pillar-Dharmaraya Swamy Temple Ward",
+        "lat": 12.956068,
+        "lon": 77.585808,
+        "score": 91.7,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 69.2,
+          "network_redundancy": 100.0,
+          "route_directness": 89.0,
+          "chokepoint_risk_proxy": 94.2,
+          "traffic_pattern_proxy": 97.7,
+          "transit_relief": 92.7
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.4,
+          "nearest_routed_poi_minutes_at_35_kmph": 3.9,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Lalbagh Metro Station",
+            "line": "Unknown",
+            "distance_km": 1.23
+          },
+          "best_corridors": [
+            {
+              "name": "Rangadore Memorial Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.9,
+              "route_distance_km": 2.27,
+              "directness_ratio": 1.41
+            },
+            {
+              "name": "Sita Bhateja Specialty Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.0,
+              "route_distance_km": 2.34,
+              "directness_ratio": 1.38
+            },
+            {
+              "name": "HCG  - The Specialist in Cancer Care",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.4,
+              "route_distance_km": 2.55,
+              "directness_ratio": 2.82
+            },
+            {
+              "name": "Trustwell Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.5,
+              "route_distance_km": 2.63,
+              "directness_ratio": 4.88
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8761892eaffffff",
+        "name": "HRBR Layout-Subbayanapalya",
+        "lat": 13.015755,
+        "lon": 77.637379,
+        "score": 91.7,
+        "band": "Excellent commute convenience",
+        "components": {
+          "arterial_access": 100.0,
+          "road_quality_proxy": 74.2,
+          "network_redundancy": 100.0,
+          "route_directness": 94.9,
+          "chokepoint_risk_proxy": 98.5,
+          "traffic_pattern_proxy": 90.6,
+          "transit_relief": 62.4
+        },
+        "evidence": {
+          "median_route_directness_ratio": 1.29,
+          "nearest_routed_poi_minutes_at_35_kmph": 1.4,
+          "entry_exit_proxy_count": 8,
+          "nearest_metro": {
+            "name": "Baiyappanahalli Metro Station",
+            "line": "Unknown",
+            "distance_km": 3.22
+          },
+          "best_corridors": [
+            {
+              "name": "Cura Hospitals",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 1.4,
+              "route_distance_km": 0.79,
+              "directness_ratio": 1.24
+            },
+            {
+              "name": "Trilife Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 1.6,
+              "route_distance_km": 0.94,
+              "directness_ratio": 1.47
+            },
+            {
+              "name": "Shishuka Children's Specialty Hospital",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 3.4,
+              "route_distance_km": 2.0,
+              "directness_ratio": 1.39
+            },
+            {
+              "name": "Cloudnine Hospital - HRBR",
+              "type": "hospital",
+              "travel_time_min_at_35_kmph": 4.2,
+              "route_distance_km": 2.44,
+              "directness_ratio": 1.21
+            }
+          ],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      }
+    ],
+    "weak_commute_hexes": [
+      {
+        "hex_id": "876016b11ffffff",
+        "name": "Makanakuppe",
+        "lat": 13.248166,
+        "lon": 77.29188,
+        "score": 24.0,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 1.0,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 28.87
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "873d914c1ffffff",
+        "name": "Agaram",
+        "lat": 23.272253,
+        "lon": 77.472223,
+        "score": 24.0,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 1.0,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 1135.84
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876016863ffffff",
+        "name": "Bangalore North",
+        "lat": 13.218129,
+        "lon": 77.442786,
+        "score": 24.1,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 1.6,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 18.16
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "87601441effffff",
+        "name": "Soladevanahalli",
+        "lat": 13.001588,
+        "lon": 77.359382,
+        "score": 24.2,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 2.4,
+          "network_redundancy": 4.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 79.4,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 13.77
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876189399ffffff",
+        "name": "Bangalore North",
+        "lat": 13.037323,
+        "lon": 77.878358,
+        "score": 24.2,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 2.8,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Whitefield (Kadugodi) Metro Station",
+            "line": "#e542de",
+            "distance_km": 13.84
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876016d52ffffff",
+        "name": "Bangalore North",
+        "lat": 13.591639,
+        "lon": 77.795116,
+        "score": 24.2,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 2.3,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Whitefield (Kadugodi) Metro Station",
+            "line": "#e542de",
+            "distance_km": 66.38
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8760169adffffff",
+        "name": "Vaderahalli",
+        "lat": 13.284996,
+        "lon": 77.692596,
+        "score": 24.4,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 3.2,
+          "network_redundancy": 0.4,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Krishnarajapura Metro Station",
+            "line": "#e542de",
+            "distance_km": 31.74
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "876016bb1ffffff",
+        "name": "Krishnaiahnapalya",
+        "lat": 13.352669,
+        "lon": 77.352401,
+        "score": 24.4,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 3.5,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 35.32
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "87601684affffff",
+        "name": "Tharabanahalli",
+        "lat": 13.277973,
+        "lon": 77.376437,
+        "score": 24.4,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 4.0,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 26.65
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      },
+      {
+        "hex_id": "8760168e4ffffff",
+        "name": "Bangalore West",
+        "lat": 13.345098,
+        "lon": 77.508041,
+        "score": 24.5,
+        "band": "Commute friction risk",
+        "components": {
+          "arterial_access": 11.6,
+          "road_quality_proxy": 4.2,
+          "network_redundancy": 0.0,
+          "route_directness": 47.6,
+          "chokepoint_risk_proxy": 32.4,
+          "traffic_pattern_proxy": 86.8,
+          "transit_relief": 20.0
+        },
+        "evidence": {
+          "median_route_directness_ratio": 2.2,
+          "nearest_routed_poi_minutes_at_35_kmph": 30.0,
+          "entry_exit_proxy_count": 1,
+          "nearest_metro": {
+            "name": "Madavara Metro Station",
+            "line": "Unknown",
+            "distance_km": 32.21
+          },
+          "best_corridors": [],
+          "traffic_caveat": "Free proxy from OSM/OSRM-derived routing evidence; not live traffic."
+        }
+      }
+    ]
+  },
+  "handoff_links": [
+    {
+      "label": "Executive report",
+      "href": "reports/EXECUTIVE_REPORT.md"
+    },
+    {
+      "label": "Data dictionary",
+      "href": "reports/DATA_DICTIONARY.md"
+    },
+    {
+      "label": "Commute methodology",
+      "href": "reports/COMMUTE_METHODOLOGY.md"
+    },
+    {
+      "label": "Validation summary",
+      "href": "reports/VALIDATION_SUMMARY.md"
+    },
+    {
+      "label": "Source lineage",
+      "href": "reports/SOURCE_LINEAGE.md"
+    },
+    {
+      "label": "Society data richness audit",
+      "href": "reports/SOCIETY_DATA_RICHNESS_AUDIT.md"
+    }
+  ],
+  "quartile_breakdown": [
+    {
+      "quartile": "Q1",
+      "rows": 2152,
+      "units": 314491.0,
+      "avg_price": 9789159.75,
+      "min_price": 560105.0,
+      "max_price": 24710000.0
+    },
+    {
+      "quartile": "Q2",
+      "rows": 2271,
+      "units": 290052.0,
+      "avg_price": 13260191.2,
+      "min_price": 3183000.0,
+      "max_price": 27410000.0
+    },
+    {
+      "quartile": "Q3",
+      "rows": 2200,
+      "units": 315313.0,
+      "avg_price": 16842361.03,
+      "min_price": 4200000.0,
+      "max_price": 55000000.0
+    },
+    {
+      "quartile": "Q4",
+      "rows": 2268,
+      "units": 384295.0,
+      "avg_price": 32069059.24,
+      "min_price": 4310346.0,
+      "max_price": 537110000.0
+    }
+  ],
+  "project_type_breakdown": [
+    {
+      "project_type": "Apartment",
+      "count": 8339,
+      "share_pct": 93.49
+    },
+    {
+      "project_type": "Villa/House",
+      "count": 362,
+      "share_pct": 4.06
+    },
+    {
+      "project_type": "Builder Floor",
+      "count": 190,
+      "share_pct": 2.13
+    }
+  ]
+}

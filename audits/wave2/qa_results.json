@@ -1,0 +1,186 @@
+{
+  "task_id": "W2-INDEPENDENT-QA",
+  "status": "FAIL",
+  "executed_at": "2026-06-30T10:15:00+05:30",
+  "scope": "Wave 2 contracts/config/IDs/paths/ranking, collector framework, and Bengaluru staged rebuild",
+  "recommendation": "RETURN_TO_PRODUCERS; do not accept Wave 2 until collector contract compatibility, collector path containment, and exposed credential remediation are independently reverified.",
+  "artifact_results": [
+    {
+      "artifact": "config/cities.yaml + config/source_city_registry.json + src/multicity/config.py",
+      "status": "PASS",
+      "evidence": {
+        "configured_cities": 8,
+        "processing_order": ["bengaluru", "delhi_ncr", "mumbai", "hyderabad", "chennai", "kolkata", "pune", "ahmedabad"],
+        "unverified_source_mappings_blocked": 40,
+        "unverified_source_mappings_tested": 40,
+        "schema_version_mismatch_rejected": true,
+        "unknown_city_rejected": true
+      },
+      "issues": []
+    },
+    {
+      "artifact": "src/multicity/ids.py + src/multicity/paths.py",
+      "status": "PASS",
+      "evidence": {
+        "cross_city_ids_distinct": true,
+        "id_path_separator_rejected": true,
+        "absolute_path_rejected": true,
+        "parent_traversal_rejected": true,
+        "backslash_traversal_rejected": true
+      },
+      "issues": []
+    },
+    {
+      "artifact": "src/multicity/ranking.py + schemas/multicity/v1/ranking.schema.json",
+      "status": "PASS",
+      "evidence": {
+        "competition_ranks": [1, 2, 2, 4],
+        "null_value_rank": null,
+        "null_quality_status": "unavailable",
+        "low_coverage_rank": null,
+        "low_coverage_quality_status": "insufficient_coverage",
+        "non_admitted_excluded": true,
+        "generated_ranking_schema_errors": 0
+      },
+      "issues": []
+    },
+    {
+      "artifact": "schemas/multicity/v1/*.schema.json",
+      "status": "PASS",
+      "evidence": {
+        "draft_2020_12_schemas_checked": 7,
+        "metaschema_errors": 0,
+        "relative_refs_resolved": true
+      },
+      "issues": []
+    },
+    {
+      "artifact": "collectors/adapters.py outputs against canonical entity contracts",
+      "status": "FAIL",
+      "evidence": {
+        "fixtures_tested": ["yellowslate", "magicbricks", "99acres", "practo"],
+        "fixtures_passing_common_entity_schema": 0,
+        "fixtures_passing_runtime_contract": 0,
+        "fixtures_passing_json_schema": 0,
+        "observed_entity_ids": ["hyderabad:yellowslate:ys-redacted-1", "hyderabad:magicbricks:mb-redacted-1", "hyderabad:99acres:ac-redacted-1", "hyderabad:practo:pr-redacted-1"],
+        "required_entity_id_shape": "canonical_city_id:entity_type:source:source_id",
+        "common_failures": ["missing lineage object", "missing namespaced entity_type segment: three-part entity_id instead of required four-part namespace", "missing entity_kind", "missing source-specific required fields"]
+      },
+      "issues": [
+        {
+          "id": "W2-QA-001",
+          "severity": "critical",
+          "summary": "Every automated collector fixture normalizes to a record that fails both the runtime canonical entity validator and its source-specific JSON Schema."
+        }
+      ]
+    },
+    {
+      "artifact": "collectors/core.py + collectors/cli.py safety/fail-closed/parser/resume behavior",
+      "status": "FAIL",
+      "evidence": {
+        "targeted_tests_passed": 6,
+        "targeted_tests_run": 6,
+        "unknown_mapping_exit_code": 2,
+        "preflight_threshold_pct": 90,
+        "repeated_bengaluru_guard": true,
+        "fixture_parsers_exercised": 5,
+        "resume_duplicate_raw_lines": 0,
+        "network_collection_disabled": true,
+        "malicious_config_city": "../escape",
+        "malicious_config_exit_code": 0,
+        "write_outside_output_root_observed": true
+      },
+      "issues": [
+        {
+          "id": "W2-QA-002",
+          "severity": "high",
+          "summary": "Collector Layout does not validate city/source path components; a config containing canonical_city_id '../escape' writes normalized output outside output-root."
+        }
+      ]
+    },
+    {
+      "artifact": "pipelines/bengaluru_rebuild + DATA/staging/bengaluru/current",
+      "status": "PASS",
+      "evidence": {
+        "independent_runs": 2,
+        "all_output_hashes_equal": true,
+        "master_hexes": 309,
+        "geojson_hexes": 309,
+        "residential_records": 2268,
+        "residential_records_with_hex": 2268,
+        "residential_unique_hexes": 220,
+        "residential_hexes_inside_master": 186,
+        "residential_hexes_outside_master": 34,
+        "outside_hex_records_inspected": 54,
+        "outside_hex_missing_coordinates": 0,
+        "outside_hex_missing_names": 0,
+        "outside_hex_tam_sum": 19297.0,
+        "independent_totals": {
+          "countable_family_tam": 0.0,
+          "direct_family_tam": 316676.0,
+          "direct_total_units": 316676.0,
+          "nearby_family_tam_weighted_context": 353613.62,
+          "society_cluster_tam_weighted_context_not_counted": 528821.07,
+          "surrounding_affluent_cluster_tam_weighted_context_not_counted": 143292.89
+        },
+        "output_hashes": {
+          "client_summary.json": "5854faa57019c7060bd03fd4401eb6379ecb6bef5c756cbb59391af5faa8e3f0",
+          "hexes.geojson": "0438e0c38ee81fb0f715e241258873a615b7462f896d619c24e2f1a0954584d2",
+          "hexes_master.json": "ebea3677ad8b0af0493d8b697796da16471d9b59b1adef8109e864eb69393e00",
+          "report.json": "77b6af8eed812c05131979e054719875bccfcb49c997db8ab820375672b115b7",
+          "residential.json": "45e54585664835663bb08e67acae8f05b673bcc28df6c4af9619eddb15134994",
+          "run_manifest.json": "7f3da54245c997a8ab7ec2d3bb49dab4bd80105f72608df92e288fdf5175c43d"
+        },
+        "mutation_tests": [
+          {"mutation": "GeoJSON H3 ID changed", "exit_code": 1, "detected": true},
+          {"mutation": "report countable total changed", "exit_code": 1, "detected": true},
+          {"mutation": "summary outside-footprint count changed", "exit_code": 1, "detected": true}
+        ]
+      },
+      "issues": [
+        {
+          "id": "W2-QA-003",
+          "severity": "medium",
+          "summary": "The hash-locked accepted input reports countable_family_tam=0 while direct_family_tam=316676. This is deterministic and reconciled, but merits producer/metric-owner semantic review before downstream use."
+        }
+      ]
+    },
+    {
+      "artifact": "workspace secret and OCR/CAPTCHA scan",
+      "status": "FAIL",
+      "evidence": {
+        "hardcoded_google_maps_api_keys_found": 1,
+        "hardcoded_key_location": "src/server.py:33",
+        "collector_ocr_or_captcha_solver_code_found": 0,
+        "collector_session_embedded": false,
+        "env_example_present": true
+      },
+      "issues": [
+        {
+          "id": "W2-QA-004",
+          "severity": "critical",
+          "summary": "A Google Maps API key is hard-coded in src/server.py:33. Treat it as exposed and rotate/revoke it; removal alone is insufficient."
+        }
+      ]
+    }
+  ],
+  "test_runs": {
+    "targeted_multicity": {"run": 10, "passed": 10, "failed": 0},
+    "targeted_collectors": {"run": 6, "passed": 6, "failed": 0},
+    "targeted_reconciliation": {"run": 2, "passed": 2, "failed": 0},
+    "core_legacy": {"run": 26, "passed": 26, "failed": 0},
+    "independent_negative_checks": {"run": 9, "passed": 6, "failed_as_defects": 3}
+  },
+  "commands": [
+    "python3 -m unittest discover -s tests/multicity -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests/collectors -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests/reconciliation -p 'test_*.py' -v",
+    "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "python3 pipelines/bengaluru_rebuild/rebuild.py --repo-root . --output <temp>/one",
+    "python3 pipelines/bengaluru_rebuild/rebuild.py --repo-root . --output <temp>/two",
+    "python3 tests/reconciliation/reconcile_bengaluru.py --staging <temp>/one",
+    "python3 tests/reconciliation/reconcile_bengaluru.py --staging <mutated-temp>",
+    "jsonschema Draft202012Validator.check_schema over schemas/multicity/v1/*.json",
+    "rg secret/high-entropy patterns and OCR/CAPTCHA solver patterns excluding venv/.git"
+  ]
+}

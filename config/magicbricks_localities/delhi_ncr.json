@@ -1,0 +1,38 @@
+{
+  "cities": {
+    "delhi_ncr": {
+      "components": [
+        {
+          "source_city_id": "2624",
+          "source_city_name": "New Delhi",
+          "verified_url": "https://www.magicbricks.com/localities-in-new-delhi",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        },
+        {
+          "source_city_id": "6403",
+          "source_city_name": "Noida",
+          "verified_url": "https://www.magicbricks.com/localities-in-noida",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        },
+        {
+          "source_city_id": "2951",
+          "source_city_name": "Gurgaon",
+          "verified_url": "https://www.magicbricks.com/localities-in-gurgaon",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        },
+        {
+          "source_city_id": "6146",
+          "source_city_name": "Ghaziabad",
+          "verified_url": "https://www.magicbricks.com/localities-in-ghaziabad",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        },
+        {
+          "source_city_id": "2944",
+          "source_city_name": "Faridabad",
+          "verified_url": "https://www.magicbricks.com/localities-in-faridabad",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

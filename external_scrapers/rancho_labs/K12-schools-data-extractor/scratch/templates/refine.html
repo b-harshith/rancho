@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 2 — Campus Polygon Refinement Mission Control</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        :root {
+            --bg-color: #08090e;
+            --bg-gradient: radial-gradient(circle at top left, #121422, #05060a);
+            --panel-bg: rgba(18, 20, 32, 0.65);
+            --panel-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00f2fe;
+            --accent-cyan-glow: rgba(0, 242, 254, 0.35);
+            --accent-magenta: #f35588;
+            --accent-magenta-glow: rgba(243, 85, 136, 0.3);
+            --accent-green: #00ff87;
+            --accent-green-glow: rgba(0, 255, 135, 0.3);
+            --accent-orange: #ff9f43;
+            --accent-orange-glow: rgba(255, 159, 67, 0.3);
+            --accent-red: #ff5252;
+            --accent-red-glow: rgba(255, 82, 82, 0.3);
+            --card-radius: 16px;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg-color);
+            background-image: var(--bg-gradient);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            overflow-x: hidden;
+        }
+
+        /* ── Frosted Glass Panels ───────────────────────────────────────────── */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--card-radius);
+            box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        /* ── Header Layout ───────────────────────────────────────────────────── */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 18px 28px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .pulsing-logo {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent-magenta);
+            box-shadow: 0 0 12px var(--accent-magenta);
+            animation: pulse-pink 2s infinite alternate;
+        }
+
+        @keyframes pulse-pink {
+            0% { transform: scale(0.95); box-shadow: 0 0 8px var(--accent-magenta-glow); }
+            100% { transform: scale(1.15); box-shadow: 0 0 20px var(--accent-magenta); }
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 30%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-badge-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-secondary);
+        }
+
+        .status-dot.active {
+            background: var(--accent-green);
+            box-shadow: 0 0 10px var(--accent-green);
+            animation: pulse-active 0.8s infinite alternate;
+        }
+
+        @keyframes pulse-active {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* ── Dashboard Grid ─────────────────────────────────────────────────── */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 38% 62%;
+            gap: 24px;
+            flex-grow: 1;
+            align-items: stretch;
+        }
+
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* ── Card Elements ───────────────────────────────────────────────────── */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+        }
+
+        /* ── Controls Layout ────────────────────────────────────────────────── */
+        .control-panel {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 11px 18px;
+            font-size: 13.5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            outline: none;
+            flex-grow: 1;
+        }
+
+        .btn:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: rgba(255, 255, 255, 0.18);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-magenta) 0%, #be185d 100%);
+            border: none;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--accent-magenta-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            box-shadow: 0 6px 20px var(--accent-magenta);
+        }
+
+        .btn-reset {
+            background: rgba(255, 159, 67, 0.1);
+            color: var(--accent-orange);
+            border: 1px solid rgba(255, 159, 67, 0.25);
+        }
+
+        .btn-reset:hover:not(:disabled) {
+            background: rgba(255, 159, 67, 0.18);
+            border-color: var(--accent-orange);
+        }
+
+        .btn-stop {
+            background: rgba(255, 82, 82, 0.12);
+            color: var(--accent-red);
+            border: 1px solid rgba(255, 82, 82, 0.25);
+            flex-grow: 0.5;
+        }
+
+        .btn-stop:hover:not(:disabled) {
+            background: rgba(255, 82, 82, 0.22);
+            border-color: var(--accent-red);
+        }
+
+        .btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        /* ── Telemetry Grid ─────────────────────────────────────────────────── */
+        .metrics-card {
+            padding: 20px;
+        }
+
+        .progress-section {
+            margin-bottom: 20px;
+        }
+
+        .progress-label-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .progress-track {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-magenta), var(--accent-cyan));
+            width: 0%;
+            border-radius: 10px;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px var(--accent-cyan-glow);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .metric-cell {
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-lbl {
+            font-size: 11.5px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+        }
+
+        .metric-val {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .metric-val.cyan { color: var(--accent-cyan); text-shadow: 0 0 8px var(--accent-cyan-glow); }
+        .metric-val.magenta { color: var(--accent-magenta); text-shadow: 0 0 8px var(--accent-magenta-glow); }
+        .metric-val.green { color: var(--accent-green); text-shadow: 0 0 8px var(--accent-green-glow); }
+        .metric-val.orange { color: var(--accent-orange); text-shadow: 0 0 8px var(--accent-orange-glow); }
+
+        .current-school-display {
+            font-size: 13px;
+            border-top: 1px solid var(--panel-border);
+            padding-top: 12px;
+            margin-top: 4px;
+            display: flex;
+            gap: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* ── Cyberpunk Logs Console ────────────────────────────────────────── */
+        .console-panel {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 250px;
+            padding: 20px;
+        }
+
+        .console-box {
+            background: #030407;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 14px;
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            line-height: 1.6;
+            overflow-y: auto;
+            flex-grow: 1;
+            height: 0;
+            color: #e2e8f0;
+        }
+
+        .log-row {
+            margin-bottom: 8px;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+            cursor: pointer;
+            transition: background 0.15s ease;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .log-row:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .log-ts {
+            color: var(--text-secondary);
+            margin-right: 6px;
+        }
+
+        .log-tag {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .log-msg {
+            color: #e2e8f0;
+            flex-grow: 1;
+        }
+
+        .log-row.REFINED { border-color: var(--accent-cyan); }
+        .log-row.REFINED .log-tag { color: var(--accent-cyan); }
+        
+        .log-row.MERGED { border-color: var(--accent-green); }
+        .log-row.MERGED .log-tag { color: var(--accent-green); }
+
+        .log-row.REJECTED { border-color: var(--accent-red); }
+        .log-row.REJECTED .log-tag { color: var(--accent-red); }
+
+        .log-row.INFO { border-color: var(--accent-magenta); }
+        .log-row.INFO .log-tag { color: var(--accent-magenta); }
+
+        .log-row.SUCCESS { border-color: var(--accent-green); }
+        .log-row.SUCCESS .log-tag { color: var(--accent-green); }
+
+        .log-row.ERROR { border-color: var(--accent-orange); }
+        .log-row.ERROR .log-tag { color: var(--accent-orange); }
+
+        /* ── Map Display ─────────────────────────────────────────────────────── */
+        #map-container {
+            padding: 10px;
+            position: relative;
+        }
+
+        #map {
+            height: 480px;
+            border-radius: var(--card-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 1;
+        }
+
+        /* Legend overlay in Map */
+        .map-legend {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            z-index: 1000;
+            background: rgba(8, 9, 14, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+        }
+
+        /* ── Datatable Panel ─────────────────────────────────────────────────── */
+        .table-panel {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .table-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-box {
+            background: rgba(8, 9, 14, 0.8);
+            color: var(--text-primary);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-size: 13.5px;
+            width: 250px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box:focus {
+            border-color: var(--accent-magenta);
+            box-shadow: 0 0 8px rgba(243, 85, 136, 0.2);
+        }
+
+        .scrollable-table {
+            max-height: 350px;
+            overflow-y: auto;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: #030407;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--panel-border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+            color: #cbd5e1;
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.015);
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 10.5px;
+            font-weight: 500;
+        }
+
+        .badge-refined { background: rgba(0, 242, 254, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 242, 254, 0.2); }
+        .badge-original { background: rgba(255, 159, 67, 0.1); color: var(--accent-orange); border: 1px solid rgba(255, 159, 67, 0.2); }
+        .badge-none { background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        .btn-mini {
+            padding: 4px 8px;
+            font-size: 11px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Local file Warning Overlay -->
+    <div id="file-protocol-warning" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(8,9,14,0.95); z-index: 99999; justify-content: center; align-items: center; flex-direction: column; padding: 40px; text-align: center;">
+        <div style="background: rgba(255, 82, 82, 0.1); border: 1.5px solid var(--accent-red); border-radius: 16px; padding: 40px; max-width: 600px; box-shadow: 0 0 30px rgba(255,82,82,0.2);">
+            <span style="font-size: 64px; margin-bottom: 20px; display: block;">⚠️</span>
+            <h2 style="font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">DASHBOARD CONNECTION REQUIRED</h2>
+            <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-bottom: 24px;">
+                You have opened this HTML file directly from your filesystem using the <code style="font-family: var(--font-mono); color: var(--accent-red); background: rgba(255,82,82,0.15); padding: 2px 6px; border-radius: 4px;">file://</code> protocol. The dashboard requires the Python backend server to be running in order to load data, fetch coordinates, and stream logs.
+            </p>
+            <h3 style="font-size: 15px; color: var(--accent-cyan); margin-bottom: 8px;">Please access the dashboard via this URL instead:</h3>
+            <div style="font-family: var(--font-mono); font-size: 18px; color: var(--text-primary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px; margin-bottom: 24px; letter-spacing: 0.5px;">
+                http://localhost:8081
+            </div>
+            <p style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.5;">
+                To launch the backend server, open your terminal and run:<br/>
+                <code style="font-family: var(--font-mono); background: rgba(255,255,255,0.08); padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 6px; color: #fff;">.venv/bin/python3 scratch/refine_dashboard.py</code>
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-panel">
+        <div class="header-title">
+            <div class="pulsing-logo"></div>
+            <h1>CAMPUS FOOTPRINT REFINEMENT • STAGE 2</h1>
+        </div>
+        <div class="status-badge-container">
+            <div class="status-dot" id="refine-status-dot"></div>
+            <span id="refine-status-text" style="text-transform: uppercase;">IDLE</span>
+        </div>
+    </header>
+
+    <!-- Main Grid -->
+    <div class="dashboard-grid">
+        
+        <!-- Left Column -->
+        <div class="left-col">
+            
+            <!-- Controls -->
+            <div class="glass-panel control-panel">
+                <div class="card-header">
+                    <h2 class="card-title">Refinement Controls</h2>
+                </div>
+                <div class="btn-group">
+                    <button id="btn-start" class="btn btn-primary" onclick="startRefinement()">
+                        🔬 Start Campus Refinement
+                    </button>
+                    <button id="btn-reset" class="btn btn-reset" onclick="resetRefinement()">
+                        🔄 Reset Fields
+                    </button>
+                    <button id="btn-stop" class="btn btn-stop" onclick="stopRefinement()" disabled>
+                        🛑 Stop
+                    </button>
+                </div>
+            </div>
+
+            <!-- Telemetry Metrics -->
+            <div class="glass-panel metrics-card">
+                <div class="card-header">
+                    <h2 class="card-title">Telemetry metrics</h2>
+                    <span id="timer-display" style="font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary)">0s</span>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-label-row">
+                        <span>Schools Processing</span>
+                        <span id="progress-pct">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Processed / Total</span>
+                        <span class="metric-val" id="metric-processed-total">0 / 0</span>
+                    </div>
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Refined / Unchanged</span>
+                        <span class="metric-val green" id="metric-refined-unchanged">0 / 0</span>
+                    </div>
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Candidates Scanned</span>
+                        <span class="metric-val orange" id="metric-cands-scanned">0</span>
+                    </div>
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Merged / Rejected</span>
+                        <span class="metric-val cyan" id="metric-merged-rejected">0 / 0</span>
+                    </div>
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Avg Area Expansion</span>
+                        <span class="metric-val magenta" id="metric-avg-expansion">0.0%</span>
+                    </div>
+                    <div class="metric-cell">
+                        <span class="metric-lbl">Features Scanned</span>
+                        <span class="metric-val" id="metric-features" style="font-size:16px;">0</span>
+                    </div>
+                </div>
+
+                <div class="current-school-display">
+                    <span style="color: var(--text-secondary);">Currently: </span>
+                    <span id="metric-current" style="font-weight: 500;">Idle...</span>
+                </div>
+            </div>
+
+            <!-- Cyberpunk Console -->
+            <div class="glass-panel console-panel">
+                <div class="card-header">
+                    <h2 class="card-title">Live Refinement Stream</h2>
+                    <button class="btn btn-mini" onclick="clearConsole()">Clear</button>
+                </div>
+                <div id="console-output" class="console-box">
+                    <div class="log-row INFO"><span class="log-ts">00:00:00</span><span class="log-tag">[SYSTEM]</span> Ready to monitor campus boundary refinement.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-col">
+            
+            <!-- Map -->
+            <div class="glass-panel" id="map-container">
+                <div id="map"></div>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(255, 159, 67, 0.4); border: 1.5px solid var(--accent-orange);"></div>
+                        <span>Original Footprint</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(0, 255, 135, 0.3); border: 1.5px solid var(--accent-green);"></div>
+                        <span>Merged Overture Candidate (Score &ge; 35)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(255, 82, 82, 0.1); border: 1.5px dashed var(--accent-red);"></div>
+                        <span>Rejected Overture Candidate (Score &lt; 35)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(0, 242, 254, 0.35); border: 2px solid var(--accent-cyan);"></div>
+                        <span>Final Refined Campus boundary</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schools Table -->
+            <div class="glass-panel table-panel">
+                <div class="table-toolbar">
+                    <h2 class="card-title">Verified Schools Database</h2>
+                    <input type="text" id="search-input" class="search-box" placeholder="Search by school name..." oninput="filterTable()">
+                </div>
+                <div class="scrollable-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>Board</th>
+                                <th>Merged Polys</th>
+                                <th>Area Expansion</th>
+                                <th>Status</th>
+                                <th style="text-align: center;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td colspan="7" style="text-align: center; color: var(--text-secondary); padding: 40px;">
+                                    Loading verification database...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script Logic -->
+    <script>
+        var darkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        });
+
+        var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+            maxZoom: 20
+        });
+
+        var map = L.map('map', { 
+            renderer: L.canvas(),
+            layers: [darkMatter]
+        }).setView([12.9716, 77.5946], 11);
+
+        var baseMaps = {
+            "Dark Matter": darkMatter,
+            "Satellite Imagery": satellite
+        };
+
+        L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
+
+        var schoolMarkers = {};
+        var currentMapLayers = [];
+        var schoolsData = [];
+        var sseSource = null;
+
+        // Fetch schools data
+        async function fetchSchools() {
+            try {
+                const res = await fetch('/api/schools');
+                schoolsData = await res.json();
+                renderMarkers();
+                renderTable();
+            } catch (err) {
+                console.error("Error loading schools list:", err);
+            }
+        }
+
+        // Render Leaflet Markers
+        function renderMarkers() {
+            Object.values(schoolMarkers).forEach(m => map.removeLayer(m));
+            schoolMarkers = {};
+
+            schoolsData.forEach(s => {
+                if (s.lat && s.lon) {
+                    var color = s.refined ? '#00f2fe' : (s.has_polygon ? '#ff9f43' : '#94a3b8');
+                    var radius = s.refined ? 6 : (s.has_polygon ? 5 : 3.5);
+                    
+                    var marker = L.circleMarker([s.lat, s.lon], {
+                        radius: radius,
+                        fillColor: color,
+                        color: '#000',
+                        weight: 1,
+                        opacity: 0.8,
+                        fillOpacity: 0.85
+                    });
+
+                    var popupHtml = `
+                        <div style="font-family: var(--font-body); color: #08090e; width: 200px;">
+                            <strong style="font-size: 13px;">${s.name}</strong><br/>
+                            <span style="font-size: 11px; color: #555;">Code: ${s.code}</span><br/>
+                            <span style="font-size: 11px; color: #555;">Board: ${s.board}</span><br/>
+                            ${s.refined ? `<hr style="margin: 6px 0"/><span style="font-size: 11.5px; font-weight: 600; color: #be185d;">Refined: +${s.area_increase_pct}% Area</span><br/>
+                            <span style="font-size: 11px; color: #be185d;">Merged Polygons: ${s.candidates_count}</span>` : ''}
+                        </div>
+                    `;
+                    marker.bindPopup(popupHtml);
+                    marker.addTo(map);
+                    schoolMarkers[s.code] = marker;
+                }
+            });
+        }
+
+        // Render Table Rows
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+
+            if (schoolsData.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-secondary);">No schools in database.</td></tr>`;
+                return;
+            }
+
+            schoolsData.forEach(s => {
+                const tr = document.createElement('tr');
+                tr.id = `row-${s.code}`;
+                
+                let statusBadge = `<span class="badge badge-none">No Boundary</span>`;
+                if (s.has_polygon) {
+                    statusBadge = s.refined 
+                        ? `<span class="badge badge-refined">Refined Stage 2</span>`
+                        : `<span class="badge badge-original">Original 2D</span>`;
+                }
+
+                tr.innerHTML = `
+                    <td style="font-family: var(--font-mono); font-size:11px;">${s.code}</td>
+                    <td style="font-weight: 500;" title="${s.name}">${s.name}</td>
+                    <td>${s.board}</td>
+                    <td>${s.refined ? s.candidates_count : '—'}</td>
+                    <td style="font-weight:600; color: ${s.refined ? 'var(--accent-cyan)' : 'inherit'}">${s.refined ? `+${s.area_increase_pct}%` : '—'}</td>
+                    <td>${statusBadge}</td>
+                    <td style="text-align: center;">
+                        ${s.lat ? `<button class="btn btn-mini" style="background: rgba(243,85,136,0.1); border-color: rgba(243,85,136,0.3); color: var(--accent-magenta);" onclick="panToSchool('${s.code}', ${s.lat}, ${s.lon})">🔍 Inspect</button>` : '—'}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterTable() {
+            const q = document.getElementById('search-input').value.toLowerCase();
+            schoolsData.forEach(s => {
+                const r = document.getElementById(`row-${s.code}`);
+                if (r) {
+                    const match = s.name.toLowerCase().includes(q) || s.code.toLowerCase().includes(q);
+                    r.style.display = match ? '' : 'none';
+                }
+            });
+        }
+
+        // Locate and render spatial polygons for inspected school
+        function panToSchool(code, lat, lon) {
+            map.setView([lat, lon], 17.5);
+            clearMapLayers();
+
+            const school = schoolsData.find(s => s.code === code);
+            if (!school || !school.has_polygon || !school.polygon) return;
+
+            // Draw original footprint
+            var origLayer = L.polygon(school.polygon, {
+                color: 'var(--accent-orange)',
+                fillColor: 'var(--accent-orange)',
+                fillOpacity: 0.15,
+                weight: 1.5
+            }).addTo(map);
+            currentMapLayers.push(origLayer);
+
+            // Draw refined polygon if it has one
+            if (school.refined) {
+                var refLayer = L.polygon(school.polygon, { // If refined, school.polygon is updated in CSV
+                    color: 'var(--accent-cyan)',
+                    fillColor: 'var(--accent-cyan)',
+                    fillOpacity: 0.35,
+                    weight: 2.5
+                }).addTo(map);
+                currentMapLayers.push(refLayer);
+                
+                refLayer.bindTooltip(`<strong>${school.name} (Refined Campus)</strong><br/>Area Increase: +${school.area_increase_pct}%<br/>Merged Candidates: ${school.candidates_count}`, { permanent: false, sticky: true }).openTooltip();
+            } else {
+                origLayer.bindTooltip(`<strong>${school.name} (Original)</strong>`, { permanent: false, sticky: true }).openTooltip();
+            }
+
+            if (schoolMarkers[code]) {
+                schoolMarkers[code].openPopup();
+            }
+        }
+
+        function clearMapLayers() {
+            currentMapLayers.forEach(l => map.removeLayer(l));
+            currentMapLayers = [];
+        }
+
+        // SSE Telemetry Connection
+        function connectSSE() {
+            if (sseSource) sseSource.close();
+            
+            sseSource = new EventSource('/api/stream');
+
+            sseSource.onmessage = function(e) {
+                const event = JSON.parse(e.data);
+                const type = event.type;
+                const data = event.data;
+
+                if (type === 'status_update') {
+                    const state = data;
+                    
+                    // Update controls status
+                    document.getElementById('refine-status-text').innerText = state.status;
+                    const dot = document.getElementById('refine-status-dot');
+                    if (state.status === "SCANNING" || state.status === "MERGING") {
+                        dot.classList.add('active');
+                        document.getElementById('btn-start').disabled = true;
+                        document.getElementById('btn-reset').disabled = true;
+                        document.getElementById('btn-stop').disabled = false;
+                    } else {
+                        dot.classList.remove('active');
+                        document.getElementById('btn-start').disabled = false;
+                        document.getElementById('btn-reset').disabled = false;
+                        document.getElementById('btn-stop').disabled = true;
+                    }
+
+                    // Telemetry Updates
+                    document.getElementById('timer-display').innerText = state.elapsed_time;
+                    document.getElementById('metric-processed-total').innerText = `${state.processed_count} / ${state.total_count}`;
+                    document.getElementById('metric-refined-unchanged').innerText = `${state.refined_count} / ${state.unchanged_count}`;
+                    document.getElementById('metric-cands-scanned').innerText = state.candidates_count;
+                    document.getElementById('metric-merged-rejected').innerText = `${state.merged_count} / ${state.rejected_count}`;
+                    document.getElementById('metric-avg-expansion').innerText = `${state.avg_area_increase.toFixed(1)}%`;
+                    document.getElementById('metric-features').innerText = state.features_scanned.toLocaleString();
+                    document.getElementById('metric-current').innerText = state.current_school;
+
+                    // Progress Bar
+                    if (state.total_count > 0) {
+                        const pct = Math.round((state.processed_count / state.total_count) * 100);
+                        document.getElementById('progress-pct').innerText = pct + '%';
+                        document.getElementById('progress-fill').style.width = pct + '%';
+                    }
+                } else if (type === 'log') {
+                    appendConsoleLog(data);
+                }
+            };
+
+            sseSource.onerror = function() {
+                console.log("SSE connection broken. Reconnecting...");
+            };
+        }
+
+        var lastAutoPlotTime = 0;
+        var activeAutoPlotSchoolCode = null;
+
+        function autoPlotSchool(log) {
+            const now = Date.now();
+            // Throttle candidate plotting to max once per 600ms to keep it smooth, but ALWAYS plot final refined shapes
+            if (log.status !== "REFINED" && (now - lastAutoPlotTime < 600)) {
+                return;
+            }
+            lastAutoPlotTime = now;
+
+            if (activeAutoPlotSchoolCode !== log.code || log.status === "REFINED") {
+                activeAutoPlotSchoolCode = log.code;
+                map.setView([log.lat, log.lon], 18);
+                clearMapLayers();
+            }
+
+            // Render original polygon
+            if (log.school_polygon) {
+                var orig = L.polygon(log.school_polygon, {
+                    color: 'var(--accent-orange)',
+                    fillColor: 'var(--accent-orange)',
+                    fillOpacity: 0.15,
+                    weight: 1.5
+                }).addTo(map);
+                currentMapLayers.push(orig);
+            }
+
+            // Render candidate polygon
+            if (log.candidate_polygon) {
+                const isMerged = log.status === "MERGED" || log.merged;
+                var cand = L.polygon(log.candidate_polygon, {
+                    color: isMerged ? 'var(--accent-green)' : 'var(--accent-red)',
+                    fillColor: isMerged ? 'var(--accent-green)' : 'transparent',
+                    fillOpacity: isMerged ? 0.3 : 0,
+                    weight: 2,
+                    dashArray: isMerged ? '' : '4, 4'
+                }).addTo(map);
+                currentMapLayers.push(cand);
+            }
+
+            // Render refined polygon
+            if (log.refined_polygon) {
+                var ref = L.polygon(log.refined_polygon, {
+                    color: 'var(--accent-cyan)',
+                    fillColor: 'var(--accent-cyan)',
+                    fillOpacity: 0.35,
+                    weight: 2.5
+                }).addTo(map);
+                currentMapLayers.push(ref);
+                
+                ref.bindTooltip(`<strong>${log.name} (Refined Campus)</strong><br/>Expansion: +${log.area_increase_pct}%<br/>Perimeter: ${log.new_perimeter}m`, { permanent: true, direction: 'top' }).openTooltip();
+            }
+        }
+
+        // Live Log Append & Interactive Plotting
+        function appendConsoleLog(log) {
+            const out = document.getElementById('console-output');
+            const row = document.createElement('div');
+            row.className = `log-row ${log.status}`;
+            
+            let statusText = `[${log.status}]`;
+            if (log.status === "MERGED") statusText = `[CANDIDATE MERGED]`;
+            if (log.status === "REJECTED") statusText = `[CANDIDATE REJECTED]`;
+            if (log.status === "REFINED") statusText = `[CAMPUS REFINED]`;
+
+            row.innerHTML = `
+                <span class="log-ts">${log.time}</span>
+                <span class="log-tag">${statusText}</span>
+                <span class="log-msg">${log.code ? `[${log.code}] ` : ''}${log.name} — ${log.details}</span>
+            `;
+
+            // Make log row clickable for instant map visualizer plotting!
+            if (log.lat && log.lon) {
+                row.onclick = function() {
+                    map.setView([log.lat, log.lon], 18);
+                    clearMapLayers();
+
+                    // Render original polygon
+                    if (log.school_polygon) {
+                        var orig = L.polygon(log.school_polygon, {
+                            color: 'var(--accent-orange)',
+                            fillColor: 'var(--accent-orange)',
+                            fillOpacity: 0.15,
+                            weight: 1.5
+                        }).addTo(map);
+                        currentMapLayers.push(orig);
+                        orig.bindTooltip(`<strong>${log.name} (Original)</strong>`, { permanent: false });
+                    }
+
+                    // Render candidate polygon
+                    if (log.candidate_polygon) {
+                        const isMerged = log.status === "MERGED" || log.merged;
+                        var cand = L.polygon(log.candidate_polygon, {
+                            color: isMerged ? 'var(--accent-green)' : 'var(--accent-red)',
+                            fillColor: isMerged ? 'var(--accent-green)' : 'transparent',
+                            fillOpacity: isMerged ? 0.3 : 0,
+                            weight: 2,
+                            dashArray: isMerged ? '' : '4, 4'
+                        }).addTo(map);
+                        currentMapLayers.push(cand);
+                        
+                        cand.bindTooltip(`<strong>Overture feature (${log.layer_type})</strong><br/>Score: ${log.score}<br/>Decision: ${isMerged ? 'MERGED' : 'REJECTED'}`, { permanent: true, direction: 'top' }).openTooltip();
+                    }
+
+                    // Render refined polygon
+                    if (log.refined_polygon) {
+                        var ref = L.polygon(log.refined_polygon, {
+                            color: 'var(--accent-cyan)',
+                            fillColor: 'var(--accent-cyan)',
+                            fillOpacity: 0.35,
+                            weight: 2.5
+                        }).addTo(map);
+                        currentMapLayers.push(ref);
+                        
+                        ref.bindTooltip(`<strong>${log.name} (Refined Campus)</strong><br/>Expansion: +${log.area_increase_pct}%<br/>Perimeter: ${log.new_perimeter}m`, { permanent: false }).openTooltip();
+                    }
+                };
+            }
+
+            out.appendChild(row);
+            out.scrollTop = out.scrollHeight;
+
+            // Automatically plot spatial details live!
+            if (log.lat && log.lon && (log.status === "MERGED" || log.status === "REFINED")) {
+                autoPlotSchool(log);
+            }
+
+            // Trigger data refresh on pipeline completes or specific refined events
+            if (log.status === "REFINED" || log.status === "COMPLETE" || log.status === "SUCCESS") {
+                fetchSchools();
+            }
+        }
+
+        function clearConsole() {
+            document.getElementById('console-output').innerHTML = '';
+        }
+
+        // Actions handlers
+        async function startRefinement() {
+            try {
+                const res = await fetch('/api/start', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}' });
+                const data = await res.json();
+                if (data.error) {
+                    alert("Error starting: " + data.error);
+                }
+            } catch (err) {
+                alert("Fail to start pipeline: " + err);
+            }
+        }
+
+        async function stopRefinement() {
+            try {
+                await fetch('/api/stop', { method: 'POST' });
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        async function resetRefinement() {
+            if (confirm("Are you sure you want to reset all Stage 2 campus refinement columns in the database CSV? This will clear all refined perimeters and candidate counts.")) {
+                try {
+                    const res = await fetch('/api/reset', { method: 'POST' });
+                    const data = await res.json();
+                    if (data.error) {
+                        alert("Error resetting: " + data.error);
+                    } else {
+                        fetchSchools();
+                        clearConsole();
+                        clearMapLayers();
+                        appendConsoleLog({
+                            time: new Date().toLocaleTimeString(),
+                            status: "SUCCESS",
+                            name: "Reset Complete",
+                            details: "Stage 2 Refinement parameters have been cleared. Ready to start again."
+                        });
+                    }
+                } catch (err) {
+                    alert("Fail to reset: " + err);
+                }
+            }
+        }
+
+        // Initialize Page
+        window.onload = function() {
+            if (window.location.protocol === 'file:') {
+                document.getElementById('file-protocol-warning').style.display = 'flex';
+                return;
+            }
+            fetchSchools();
+            connectSSE();
+        };
+    </script>
+</body>
+</html>

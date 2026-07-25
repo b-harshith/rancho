@@ -1,0 +1,71 @@
+[project]
+name = "k12-schools-data-extractor"
+version = "0.1.0"
+description = "Async CLI tool to scrape K12 school registries, extract compliance & fee data, and build a structured master database via LLM."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+    # --- CLI & Terminal UI ---
+    "typer[all]>=0.12.0,<1.0",
+    "rich>=13.7,<14.0",
+
+    # --- Async HTTP ---
+    "aiohttp>=3.9,<4.0",
+
+    # --- Browser Automation ---
+    "playwright>=1.44,<2.0",
+
+    # --- PDF & OCR ---
+    "pymupdf>=1.24,<2.0",          # imported as `fitz`
+    "pytesseract>=0.3.10,<1.0",
+    "Pillow>=10.3,<11.0",           # required by pytesseract
+
+    # --- LLM ---
+    "openai>=1.30,<2.0",
+    "instructor>=1.3,<2.0",
+    "pydantic>=2.7,<3.0",
+
+    # --- Data ---
+    "pandas>=2.2,<3.0",
+    "openpyxl>=3.1,<4.0",          # Excel export
+
+    # --- State / DB ---
+    "aiosqlite>=0.20,<1.0",
+
+    # --- Retry / Resilience ---
+    "tenacity>=8.3,<9.0",
+
+    # --- Env Config ---
+    "python-dotenv>=1.0,<2.0",
+
+    # --- Spatial Data & GIS ---
+    "shapely>=2.0,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+k12 = "main:app"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

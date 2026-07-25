@@ -1,0 +1,832 @@
+[
+  {
+    "name": "Attiguppe Metro Station",
+    "original_name": "Attiguppe",
+    "latitude": 12.9618931,
+    "longitude": 77.5335788,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857563"
+  },
+  {
+    "name": "BTM Layout Metro Station",
+    "original_name": "BTM Layout",
+    "latitude": 12.9165878,
+    "longitude": 77.6081182,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198226"
+  },
+  {
+    "name": "Baiyappanahalli Metro Station",
+    "original_name": "Baiyappanahalli",
+    "latitude": 12.9907594,
+    "longitude": 77.6523612,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857549"
+  },
+  {
+    "name": "Banashankari Metro Station",
+    "original_name": "Banashankari",
+    "latitude": 12.9152208,
+    "longitude": 77.573598,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710294"
+  },
+  {
+    "name": "Benniganahalli Metro Station",
+    "original_name": "Benniganahalli",
+    "latitude": 12.9965158,
+    "longitude": 77.6684619,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760197766"
+  },
+  {
+    "name": "Beratena Agrahara Metro Station",
+    "original_name": "Beratena Agrahara",
+    "latitude": 12.8638665,
+    "longitude": 77.6578624,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198153"
+  },
+  {
+    "name": "Biocon Hebbagodi Metro Station",
+    "original_name": "Biocon Hebbagodi",
+    "latitude": 12.8290325,
+    "longitude": 77.6813744,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/11521199307"
+  },
+  {
+    "name": "Bommanahalli Metro Station",
+    "original_name": "Bommanahalli",
+    "latitude": 12.9106157,
+    "longitude": 77.6264782,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198202"
+  },
+  {
+    "name": "Central Silk Board Metro Station",
+    "original_name": "Central Silk Board",
+    "latitude": 12.9165816,
+    "longitude": 77.620567,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198212"
+  },
+  {
+    "name": "Challaghatta Metro Station",
+    "original_name": "Challaghatta",
+    "latitude": 12.8973539,
+    "longitude": 77.4612877,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919570131"
+  },
+  {
+    "name": "Chickpete Metro Station",
+    "original_name": "Chickpete",
+    "latitude": 12.9668974,
+    "longitude": 77.5745566,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710301"
+  },
+  {
+    "name": "Chikkabidarakallu Metro Station",
+    "original_name": "Chikkabidarakallu",
+    "latitude": 13.0523616,
+    "longitude": 77.4879154,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Chikkabidarakallu metro station",
+    "osm_id": "node/1576973954"
+  },
+  {
+    "name": "Cubbon Park Metro Station",
+    "original_name": "Cubbon Park",
+    "latitude": 12.9809575,
+    "longitude": 77.5975756,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857555"
+  },
+  {
+    "name": "Dasarahalli Metro Station",
+    "original_name": "Dasarahalli",
+    "latitude": 13.0432607,
+    "longitude": 77.5125535,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5960788724"
+  },
+  {
+    "name": "Deepanjali Nagar Metro Station",
+    "original_name": "Deepanjali Nagar",
+    "latitude": 12.9520578,
+    "longitude": 77.5370122,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857564"
+  },
+  {
+    "name": "Delta Electronics Bommasandra Metro Station",
+    "original_name": "Delta Electronics Bommasandra",
+    "latitude": 12.8193944,
+    "longitude": 77.6883453,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760197806"
+  },
+  {
+    "name": "Doddakallasandra Metro Station",
+    "original_name": "Doddakallasandra",
+    "latitude": 12.8846435,
+    "longitude": 77.5527546,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919651776"
+  },
+  {
+    "name": "Dr. B. R. Ambedkar Station, Vidhana Soudha Metro Station",
+    "original_name": "Dr. B. R. Ambedkar Station, Vidhana Soudha",
+    "latitude": 12.9787419,
+    "longitude": 77.5916385,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857556"
+  },
+  {
+    "name": "Electronic City Metro Station",
+    "original_name": "Electronic City",
+    "latitude": 12.8565053,
+    "longitude": 77.6635228,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198145"
+  },
+  {
+    "name": "Garudacharpalya Metro Station",
+    "original_name": "Garudacharpalya",
+    "latitude": 12.9934505,
+    "longitude": 77.7036768,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Garudacharapalya metro station",
+    "osm_id": "node/5760197762"
+  },
+  {
+    "name": "Goraguntepalya Metro Station",
+    "original_name": "Goraguntepalya",
+    "latitude": 13.0283319,
+    "longitude": 77.5408483,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "way/1353733806"
+  },
+  {
+    "name": "Halasuru Metro Station",
+    "original_name": "Halasuru",
+    "latitude": 12.9764992,
+    "longitude": 77.626686,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857552"
+  },
+  {
+    "name": "Hongasandra Metro Station",
+    "original_name": "Hongasandra",
+    "latitude": 12.9016952,
+    "longitude": 77.6319861,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198198"
+  },
+  {
+    "name": "Hoodi Metro Station",
+    "original_name": "Hoodi",
+    "latitude": 12.9888029,
+    "longitude": 77.711326,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Hoodi Junction metro station",
+    "osm_id": "node/5760197761"
+  },
+  {
+    "name": "Hopefarm Channasandra Metro Station",
+    "original_name": "Hopefarm Channasandra",
+    "latitude": 12.9873426,
+    "longitude": 77.7538033,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Channasandra metro station",
+    "osm_id": "node/5760197745"
+  },
+  {
+    "name": "Hosa Road Metro Station",
+    "original_name": "Hosa Road",
+    "latitude": 12.8707491,
+    "longitude": 77.652447,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198162"
+  },
+  {
+    "name": "Huskur Road Metro Station",
+    "original_name": "Huskur Road",
+    "latitude": 12.8391572,
+    "longitude": 77.6773716,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198122"
+  },
+  {
+    "name": "Indiranagar Metro Station",
+    "original_name": "Indiranagar",
+    "latitude": 12.9783325,
+    "longitude": 77.6386612,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857551"
+  },
+  {
+    "name": "Infosys Foundation Konappana Agrahara Metro Station",
+    "original_name": "Infosys Foundation Konappana Agrahara",
+    "latitude": 12.8464134,
+    "longitude": 77.6711655,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198133"
+  },
+  {
+    "name": "Jalahalli Metro Station",
+    "original_name": "Jalahalli",
+    "latitude": 13.0394104,
+    "longitude": 77.5197351,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Jalahalli metro station",
+    "osm_id": "node/5960788725"
+  },
+  {
+    "name": "Jaya Prakash Nagar Metro Station",
+    "original_name": "Jaya Prakash Nagar",
+    "latitude": 12.9074747,
+    "longitude": 77.5731279,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710293"
+  },
+  {
+    "name": "Jayadeva Hospital Metro Station",
+    "original_name": "Jayadeva Hospital",
+    "latitude": 12.916731,
+    "longitude": 77.5999663,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/3302642058"
+  },
+  {
+    "name": "Jayanagar Metro Station",
+    "original_name": "Jayanagar",
+    "latitude": 12.9295069,
+    "longitude": 77.5801439,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710296"
+  },
+  {
+    "name": "Jnanabharathi Metro Station",
+    "original_name": "Jnanabharathi",
+    "latitude": 12.9354357,
+    "longitude": 77.5124063,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9049846515"
+  },
+  {
+    "name": "Kadugodi Tree Park Metro Station",
+    "original_name": "Kadugodi Tree Park",
+    "latitude": 12.9856503,
+    "longitude": 77.7470121,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Kadugodi metro station",
+    "osm_id": "node/11941186870"
+  },
+  {
+    "name": "Kengeri Bus Terminal Metro Station",
+    "original_name": "Kengeri Bus Terminal",
+    "latitude": 12.914689,
+    "longitude": 77.4878557,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9051395755"
+  },
+  {
+    "name": "Kengeri Metro Station",
+    "original_name": "Kengeri",
+    "latitude": 12.9079105,
+    "longitude": 77.4765784,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9051405243"
+  },
+  {
+    "name": "Konanakunte Cross Metro Station",
+    "original_name": "Konanakunte Cross",
+    "latitude": 12.8889671,
+    "longitude": 77.5626665,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919651777"
+  },
+  {
+    "name": "Krantivira Sangolli Rayanna Railway Station Metro Station",
+    "original_name": "Krantivira Sangolli Rayanna Railway Station",
+    "latitude": 12.9758768,
+    "longitude": 77.5653767,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857559"
+  },
+  {
+    "name": "Krishna Rajendra Market Metro Station",
+    "original_name": "Krishna Rajendra Market",
+    "latitude": 12.9608788,
+    "longitude": 77.5746578,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710300"
+  },
+  {
+    "name": "Krishnarajapura Metro Station",
+    "original_name": "Krishnarajapura",
+    "latitude": 12.9999024,
+    "longitude": 77.6776703,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Krishnarajapura metro station",
+    "osm_id": "node/5760197765"
+  },
+  {
+    "name": "Kudlu Gate Metro Station",
+    "original_name": "Kudlu Gate",
+    "latitude": 12.8899259,
+    "longitude": 77.6392156,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198187"
+  },
+  {
+    "name": "Kundalahalli Metro Station",
+    "original_name": "Kundalahalli",
+    "latitude": 12.977594,
+    "longitude": 77.7155586,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Kundalahalli metro station",
+    "osm_id": "node/5760197755"
+  },
+  {
+    "name": "Lalbagh Metro Station",
+    "original_name": "Lalbagh",
+    "latitude": 12.9465265,
+    "longitude": 77.580016,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710298"
+  },
+  {
+    "name": "Madavara Metro Station",
+    "original_name": "Madavara",
+    "latitude": 13.0574214,
+    "longitude": 77.4728055,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Madavara metro station",
+    "osm_id": "node/1576973953"
+  },
+  {
+    "name": "Magadi Road Metro Station",
+    "original_name": "Magadi Road",
+    "latitude": 12.975632,
+    "longitude": 77.5553523,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857560"
+  },
+  {
+    "name": "Mahakavi Kuvempu Road Metro Station",
+    "original_name": "Mahakavi Kuvempu Road",
+    "latitude": 12.9985297,
+    "longitude": 77.5568986,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706689"
+  },
+  {
+    "name": "Mahalakshmi Metro Station",
+    "original_name": "Mahalakshmi",
+    "latitude": 13.0080475,
+    "longitude": 77.5488066,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706691"
+  },
+  {
+    "name": "Mahatma Gandhi Road Metro Station",
+    "original_name": "Mahatma Gandhi Road",
+    "latitude": 12.9755264,
+    "longitude": 77.6067902,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Mahatma Gandhi Road metro station (Bangalore)",
+    "osm_id": "node/6400857554"
+  },
+  {
+    "name": "Manjunathanagara Metro Station",
+    "original_name": "Manjunathanagara",
+    "latitude": 13.0500898,
+    "longitude": 77.4944461,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Manjunathanagara metro station",
+    "osm_id": "node/1576973980"
+  },
+  {
+    "name": "Mantri Square Sampige Road Metro Station",
+    "original_name": "Mantri Square Sampige Road",
+    "latitude": 12.9904629,
+    "longitude": 77.5707293,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706688"
+  },
+  {
+    "name": "Mysore Road Metro Station",
+    "original_name": "Mysore Road",
+    "latitude": 12.9467183,
+    "longitude": 77.5301588,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857565"
+  },
+  {
+    "name": "Nadaprabhu Kempegowda Station, Majestic Metro Station",
+    "original_name": "Nadaprabhu Kempegowda Station, Majestic",
+    "latitude": 12.9757079,
+    "longitude": 77.5728757,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Majestic metro station",
+    "osm_id": "node/6400857558"
+  },
+  {
+    "name": "Nagasandra Metro Station",
+    "original_name": "Nagasandra",
+    "latitude": 13.0479536,
+    "longitude": 77.5001422,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Nagasandra metro station",
+    "osm_id": "node/11941173068"
+  },
+  {
+    "name": "Nallurahalli Metro Station",
+    "original_name": "Nallurahalli",
+    "latitude": 12.9766408,
+    "longitude": 77.7248845,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Nallurhalli metro station",
+    "osm_id": "node/5760197754"
+  },
+  {
+    "name": "National College Metro Station",
+    "original_name": "National College",
+    "latitude": 12.9505266,
+    "longitude": 77.5736898,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710299"
+  },
+  {
+    "name": "Pantharapalya - Nayandahalli Metro Station",
+    "original_name": "Pantharapalya - Nayandahalli",
+    "latitude": 12.9416715,
+    "longitude": 77.5251166,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9050797592"
+  },
+  {
+    "name": "Pattanagere Metro Station",
+    "original_name": "Pattanagere",
+    "latitude": 12.9242505,
+    "longitude": 77.4983509,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9051417969"
+  },
+  {
+    "name": "Pattandur Agrahara Metro Station",
+    "original_name": "Pattandur Agrahara",
+    "latitude": 12.9876393,
+    "longitude": 77.7377718,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Pattandur Agrahara metro station",
+    "osm_id": "node/5760197749"
+  },
+  {
+    "name": "Peenya Industry Metro Station",
+    "original_name": "Peenya Industry",
+    "latitude": 13.0363176,
+    "longitude": 77.5254924,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706696"
+  },
+  {
+    "name": "Peenya Metro Station",
+    "original_name": "Peenya",
+    "latitude": 13.0330189,
+    "longitude": 77.533201,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706695"
+  },
+  {
+    "name": "Ragigudda Metro Station",
+    "original_name": "Ragigudda",
+    "latitude": 12.9170807,
+    "longitude": 77.5883015,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198239"
+  },
+  {
+    "name": "Rajajinagar Metro Station",
+    "original_name": "Rajajinagar",
+    "latitude": 13.0005247,
+    "longitude": 77.5496568,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6410706690"
+  },
+  {
+    "name": "Rajarajeshwari Nagar Metro Station",
+    "original_name": "Rajarajeshwari Nagar",
+    "latitude": 12.9365996,
+    "longitude": 77.5196788,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9051410519"
+  },
+  {
+    "name": "Rashtreeya Vidyalaya Road Metro Station",
+    "original_name": "Rashtreeya Vidyalaya Road",
+    "latitude": 12.9215807,
+    "longitude": 77.5802015,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710295"
+  },
+  {
+    "name": "Sandal Soap Factory Metro Station",
+    "original_name": "Sandal Soap Factory",
+    "latitude": 13.0146544,
+    "longitude": 77.5539839,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Sandal Soap Factory metro station",
+    "osm_id": "node/6410706692"
+  },
+  {
+    "name": "Seetharampalya Metro Station",
+    "original_name": "Seetharampalya",
+    "latitude": 12.9808558,
+    "longitude": 77.7087854,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Sitharama Palya metro station",
+    "osm_id": "node/5760197757"
+  },
+  {
+    "name": "Silk Institute Metro Station",
+    "original_name": "Silk Institute",
+    "latitude": 12.8617298,
+    "longitude": 77.5299545,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919651773"
+  },
+  {
+    "name": "Singasandra Metro Station",
+    "original_name": "Singasandra",
+    "latitude": 12.8808178,
+    "longitude": 77.6448456,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5760198182"
+  },
+  {
+    "name": "Singayyanapalya Metro Station",
+    "original_name": "Singayyanapalya",
+    "latitude": 12.9965445,
+    "longitude": 77.6927176,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Singayyanapalya metro station",
+    "osm_id": "node/5760197764"
+  },
+  {
+    "name": "Sir M. Visvesvaraya Stn., Central College Metro Station",
+    "original_name": "Sir M. Visvesvaraya Stn., Central College",
+    "latitude": 12.9745197,
+    "longitude": 77.58422,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857557"
+  },
+  {
+    "name": "South End Circle Metro Station",
+    "original_name": "South End Circle",
+    "latitude": 12.9382573,
+    "longitude": 77.5800556,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710297"
+  },
+  {
+    "name": "Sri Balagangadharanatha Swamiji Station, Hosahalli Metro Station",
+    "original_name": "Sri Balagangadharanatha Swamiji Station, Hosahalli",
+    "latitude": 12.9742933,
+    "longitude": 77.5456215,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857561"
+  },
+  {
+    "name": "Sri Sathya Sai Hospital Metro Station",
+    "original_name": "Sri Sathya Sai Hospital",
+    "latitude": 12.9811949,
+    "longitude": 77.7275361,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Sri Sathya Sai Hospital metro station",
+    "osm_id": "node/5760197751"
+  },
+  {
+    "name": "Srirampura Metro Station",
+    "original_name": "Srirampura",
+    "latitude": 12.9965253,
+    "longitude": 77.5631963,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/5960788726"
+  },
+  {
+    "name": "Swami Vivekananda Road Metro Station",
+    "original_name": "Swami Vivekananda Road",
+    "latitude": 12.9859306,
+    "longitude": 77.644897,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857550"
+  },
+  {
+    "name": "Thalaghattapura Metro Station",
+    "original_name": "Thalaghattapura",
+    "latitude": 12.8714097,
+    "longitude": 77.5383958,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919651774"
+  },
+  {
+    "name": "Trinity Metro Station",
+    "original_name": "Trinity",
+    "latitude": 12.9730218,
+    "longitude": 77.6170205,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857553"
+  },
+  {
+    "name": "Vajarahalli Metro Station",
+    "original_name": "Vajarahalli",
+    "latitude": 12.8774369,
+    "longitude": 77.5447414,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/9919651775"
+  },
+  {
+    "name": "Vijayanagar Metro Station",
+    "original_name": "Vijayanagar",
+    "latitude": 12.9709559,
+    "longitude": 77.5374044,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6400857562"
+  },
+  {
+    "name": "Whitefield (Kadugodi) Metro Station",
+    "original_name": "Whitefield (Kadugodi)",
+    "latitude": 12.9957428,
+    "longitude": 77.7579489,
+    "line": "#e542de",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Whitefield (Kadugodi) metro station",
+    "osm_id": "node/5760197744"
+  },
+  {
+    "name": "Yelachenahalli Metro Station",
+    "original_name": "Yelachenahalli",
+    "latitude": 12.8960498,
+    "longitude": 77.5701194,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "N/A",
+    "osm_id": "node/6432710292"
+  },
+  {
+    "name": "Yeshwantpur Metro Station",
+    "original_name": "Yeshwantpur",
+    "latitude": 13.0232678,
+    "longitude": 77.5498751,
+    "line": "Unknown",
+    "operator": "Bangalore Metro Rail Corporation Limited",
+    "wikipedia": "en:Yeshwanthpur metro station",
+    "osm_id": "node/11941186869"
+  }
+]

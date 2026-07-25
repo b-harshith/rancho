@@ -1,0 +1,388 @@
+{
+  "listing": {
+    "send_app": {
+      "is_sending": false,
+      "message_sent": false
+    },
+    "alert": {
+      "is_open": false,
+      "message": ""
+    },
+    "cta_section": {},
+    "multi_center_drop": {},
+    "is_loading": false
+  },
+  "listingV2": {
+    "app_data": {
+      "current_page": 1,
+      "is_fetching_data": false,
+      "is_non_prime_section_expanded": false,
+      "has_partner_split_position_appeared": false,
+      "cta_context": "DOCTOR_LISTING",
+      "is_fetching_pill_relations": false,
+      "is_fetching_relations_cta_data": true,
+      "is_relations_cta_data_resolved": false
+    },
+    "banner_data": {
+      "consult_banner": null,
+      "entities": {},
+      "items": []
+    },
+    "card_list": [
+      {
+        "sub_type": "prime_header",
+        "position": 1,
+        "type": "headers"
+      },
+      {
+        "id": "1131816",
+        "position": 1,
+        "type": "establishments"
+      },
+      {
+        "id": "1131812",
+        "position": 2,
+        "type": "establishments"
+      },
+      {
+        "sub_type": 1,
+        "position": 3,
+        "type": "guided_prompt"
+      },
+      {
+        "id": "927402",
+        "position": 3,
+        "type": "establishments"
+      },
+      {
+        "id": "625693",
+        "position": 4,
+        "type": "establishments"
+      },
+      {
+        "id": "1106420",
+        "position": 5,
+        "type": "establishments"
+      },
+      {
+        "id": "df525a83-fcf1-46f5-b4ed-83781edcc59e",
+        "position": 6,
+        "type": "estab_overview"
+      },
+      {
+        "id": "930035",
+        "position": 6,
+        "type": "establishments"
+      },
+      {
+        "id": "1147974",
+        "position": 7,
+        "type": "establishments"
+      },
+      {
+        "id": "637575",
+        "position": 8,
+        "type": "establishments"
+      },
+      {
+        "id": "1041383",
+        "position": 9,
+        "type": "establishments"
+      },
+      {
+        "id": "939499",
+        "position": 10,
+        "type": "establishments"
+      }
+    ],
+    "doctors": {
+      "entities": {},
+      "items": []
+    },
+    "form": {
+      "city": "bangalore",
+      "cerebro_search_value": "hospital",
+      "cerebro_search_category": "type",
+      "results_type": "hospital",
+      "cerebro_search_value_en": "hospital",
+      "searched_value": "hospital",
+      "cerebro_locality_value": null,
+      "cerebro_locality_category": null,
+      "cerebro_ranking": null
+    },
+    "filters_data": {
+      "filters": [],
+      "sort": []
+    },
+    "header": {
+      "entities": {
+        "prime_header": {
+          "id": "prime_header",
+          "sub_type": "prime_header",
+          "title": "1,498 Hospitals in Bangalore",
+          "sub_text": ""
+        }
+      },
+      "items": [
+        {
+          "sub_type": "prime_header",
+          "position": 1
+        }
+      ]
+    },
+    "listing_bottom_seo": [],
+    "listing_data": {
+      "doctors_found": 0,
+      "prime_count": null,
+      "non_prime_count": null,
+      "consult_banner": null,
+      "experiment_id": "",
+      "book_type": "",
+      "pcd_doctor_count": 0
+    },
+    "non_prime_card_list": [],
+    "procedure_meta_data": {
+      "pricing_widget": null,
+      "search_content": [],
+      "value_card": null
+    },
+    "reach_data": {
+      "ads": [],
+      "meta_data": {
+        "card_position": "1"
+      }
+    },
+    "seo_data": {
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "link": "/"
+        },
+        {
+          "label": "Bangalore",
+          "link": null
+        }
+      ],
+      "description": "Looking for a trusted hospital near you in Bangalore today? Read real patient reviews, compare fees, check timings \u2014 and book your appointment instantly on Practo. Find top-rated hospitals nearby, trusted by patients like you. These are highly rated for treatment quality, experience, convenience, and hygiene.",
+      "footers": [
+        {
+          "title": "Hospitals in Top Localities in Bangalore",
+          "items": [
+            {
+              "link": "/bangalore/hospitals/all-hospitals/jayanagar-4-block",
+              "label": "Hospitals in Jayanagar 4 Block"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/bellandur",
+              "label": "Hospitals in Bellandur"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/yelahanka",
+              "label": "Hospitals in Yelahanka"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/indiranagar",
+              "label": "Hospitals in Indiranagar"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/whitefield",
+              "label": "Hospitals in Whitefield"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/padmanabhanagar",
+              "label": "Hospitals in Padmanabhanagar"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/nagarbhavi",
+              "label": "Hospitals in Nagarbhavi"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/kammana-halli",
+              "label": "Hospitals in Kammana Halli"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/mathikere-bel",
+              "label": "Hospitals in Mathikere   Bel"
+            },
+            {
+              "link": "/bangalore/hospitals/all-hospitals/jp-nagar",
+              "label": "Hospitals in Jp Nagar"
+            }
+          ]
+        }
+      ],
+      "h1_title": "Hospitals in Bangalore",
+      "side_bar": [
+        {
+          "title": "Hospitals in Top Cities",
+          "items": [
+            {
+              "label": "Hospitals in Coimbatore",
+              "link": "/coimbatore/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Visakhapatnam",
+              "link": "/visakhapatnam/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Thane",
+              "link": "/thane/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Ghaziabad",
+              "link": "/ghaziabad/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Kolkata",
+              "link": "/kolkata/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Indore",
+              "link": "/indore/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Delhi",
+              "link": "/delhi/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Hyderabad",
+              "link": "/hyderabad/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Guwahati",
+              "link": "/guwahati/hospitals/all-hospitals"
+            },
+            {
+              "label": "Hospitals in Surat",
+              "link": "/surat/hospitals/all-hospitals"
+            }
+          ]
+        },
+        {
+          "title": "Top speciality hospitals in Bangalore",
+          "items": [
+            {
+              "label": "Orthopedic Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/orthopedic-hospitals"
+            },
+            {
+              "label": "Andrology Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/andrology-hospitals"
+            },
+            {
+              "label": "Pain Management Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/pain-management-hospitals"
+            },
+            {
+              "label": "Dental Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/dental-hospitals"
+            },
+            {
+              "label": "Neurology Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/neurology-hospitals"
+            },
+            {
+              "label": "Speech Therapy Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/speech-therapy-hospitals"
+            },
+            {
+              "label": "Pediatric Cardiology Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/pediatric-cardiology-hospitals"
+            },
+            {
+              "label": "Hair Transplant Surgery Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/hair-transplant-surgery-hospitals"
+            },
+            {
+              "label": "Gastroenterology Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/gastroenterology-hospitals"
+            },
+            {
+              "label": "Cardiology Hospitals in Bangalore",
+              "link": "/bangalore/hospitals/cardiology-hospitals"
+            }
+          ]
+        }
+      ],
+      "title": "Best Hospitals Near Me in Bangalore | Practo. Book Appointments, View Fees, Reviews & Contact Details.",
+      "schema_sequential_listing": {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListOrder": "Ordered",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)",
+            "url": "https://www.practo.com/bangalore/hospital/columbia-asia-hospital1-whitefield"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Manipal Hospitals",
+            "url": "https://www.practo.com/bangalore/hospital/manipal-hospital-yeshwanthpur"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Koshys Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/koshys-hospital-ramamurthy-nagar-2-1"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Motherhood Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/motherhood-hospital-indiranagar"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Motherhood Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/motherhood-hospital-whitefield-3"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Sagar Hospitals",
+            "url": "https://www.practo.com/bangalore/hospital/sagar-hospitals-banashankari"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Apollo Cradle &amp; Children\u2019s Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/apollo-cradle-4-marathahalli"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Manipal Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/columbia-asia-hospital-hebbala-hebbal"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Manipal Hospital",
+            "url": "https://www.practo.com/bangalore/hospital/dr-malathi-manipal-hospital-jayanagar"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Cloudnine Hospital - Old Airport Road",
+            "url": "https://www.practo.com/bangalore/hospital/cloudnine-hospital-old-airport-road"
+          }
+        ]
+      }
+    },
+    "practice_card": {},
+    "pills_carousel": {
+      "header_text": "",
+      "entities": {},
+      "list": []
+    },
+    "why_consult_banner": {},
+    "in_clinic_banner": {},
+    "top_doctor_section": {},
+    "contextual_banner": {}
+  }
+}

@@ -1,0 +1,2 @@
+"""UDISE+ network-response collector."""
+

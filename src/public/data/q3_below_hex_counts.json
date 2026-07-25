@@ -1,0 +1,1701 @@
+{
+  "metadata": {
+    "description": "Full-universe Q1/Q2/Q3 property counts aggregated by H3 resolution 7 hex.",
+    "hex_count": 423,
+    "property_count": 6623
+  },
+  "hexes": [
+    {
+      "hex_id": "8760140a5ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014400ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014410ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014414ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014420ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014421ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014423ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014424ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014425ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014433ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014436ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014481ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876014482ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014483ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014484ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014485ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876014486ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601448effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014493ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014499ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601449cffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8760144a2ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "8760144acffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760144aeffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760144b0ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760144b1ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760144b2ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760144b3ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8760144d5ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014503ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014504ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601450affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601450dffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014510ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876014511ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014512ffffff",
+      "q3_and_below_property_count": 88
+    },
+    {
+      "hex_id": "876014513ffffff",
+      "q3_and_below_property_count": 34
+    },
+    {
+      "hex_id": "876014514ffffff",
+      "q3_and_below_property_count": 16
+    },
+    {
+      "hex_id": "876014515ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876014516ffffff",
+      "q3_and_below_property_count": 59
+    },
+    {
+      "hex_id": "876014518ffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "876014519ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601451affffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601451bffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601451cffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "87601451dffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87601451effffff",
+      "q3_and_below_property_count": 24
+    },
+    {
+      "hex_id": "876014520ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876014521ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014522ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876014526ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "876014531ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014532ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "876014533ffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "876014536ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014540ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014569ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014570ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014580ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876014581ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876014582ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876014583ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876014584ffffff",
+      "q3_and_below_property_count": 38
+    },
+    {
+      "hex_id": "876014585ffffff",
+      "q3_and_below_property_count": 27
+    },
+    {
+      "hex_id": "876014586ffffff",
+      "q3_and_below_property_count": 17
+    },
+    {
+      "hex_id": "87601458cffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87601458effffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014590ffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "876014591ffffff",
+      "q3_and_below_property_count": 17
+    },
+    {
+      "hex_id": "876014592ffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "876014593ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876014594ffffff",
+      "q3_and_below_property_count": 23
+    },
+    {
+      "hex_id": "876014595ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "876014596ffffff",
+      "q3_and_below_property_count": 25
+    },
+    {
+      "hex_id": "876014598ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601459affffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601459cffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87601459dffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601459effffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "8760145a0ffffff",
+      "q3_and_below_property_count": 26
+    },
+    {
+      "hex_id": "8760145a1ffffff",
+      "q3_and_below_property_count": 49
+    },
+    {
+      "hex_id": "8760145a2ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "8760145a3ffffff",
+      "q3_and_below_property_count": 28
+    },
+    {
+      "hex_id": "8760145a4ffffff",
+      "q3_and_below_property_count": 64
+    },
+    {
+      "hex_id": "8760145a5ffffff",
+      "q3_and_below_property_count": 78
+    },
+    {
+      "hex_id": "8760145a6ffffff",
+      "q3_and_below_property_count": 20
+    },
+    {
+      "hex_id": "8760145a8ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "8760145a9ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8760145aaffffff",
+      "q3_and_below_property_count": 20
+    },
+    {
+      "hex_id": "8760145abffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760145acffffff",
+      "q3_and_below_property_count": 34
+    },
+    {
+      "hex_id": "8760145adffffff",
+      "q3_and_below_property_count": 30
+    },
+    {
+      "hex_id": "8760145aeffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "8760145b0ffffff",
+      "q3_and_below_property_count": 25
+    },
+    {
+      "hex_id": "8760145b1ffffff",
+      "q3_and_below_property_count": 12
+    },
+    {
+      "hex_id": "8760145b2ffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "8760145b3ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "8760145b4ffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "8760145b5ffffff",
+      "q3_and_below_property_count": 10
+    },
+    {
+      "hex_id": "8760145b6ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876014c90ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876014c91ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876014c92ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014c93ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876014c94ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014c95ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876014c96ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "876014c9affffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014c9effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014cb0ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014cb2ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876014cb3ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876014cb6ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876014cd2ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876014cf3ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876014d93ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014d9affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876014d9effffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016801ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016803ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016805ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876016814ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601681bffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601681cffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016821ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016824ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876016825ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016826ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016828ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601682bffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601682cffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87601682dffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "87601682effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760168c4ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016901ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016902ffffff",
+      "q3_and_below_property_count": 10
+    },
+    {
+      "hex_id": "876016903ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016908ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876016909ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601690affffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601690bffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601690cffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601690dffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601690effffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876016910ffffff",
+      "q3_and_below_property_count": 12
+    },
+    {
+      "hex_id": "876016911ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016912ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016913ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016914ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016915ffffff",
+      "q3_and_below_property_count": 27
+    },
+    {
+      "hex_id": "87601691affffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601691cffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601691dffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601691effffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016920ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876016924ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016928ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016929ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87601692affffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601692bffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87601692cffffff",
+      "q3_and_below_property_count": 10
+    },
+    {
+      "hex_id": "87601692dffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601692effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016933ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016935ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016942ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "876016944ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "876016946ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016950ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016951ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016953ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016954ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876016956ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601695effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016960ffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "876016961ffffff",
+      "q3_and_below_property_count": 24
+    },
+    {
+      "hex_id": "876016962ffffff",
+      "q3_and_below_property_count": 15
+    },
+    {
+      "hex_id": "876016963ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "876016964ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "876016965ffffff",
+      "q3_and_below_property_count": 42
+    },
+    {
+      "hex_id": "876016966ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876016968ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601696cffffff",
+      "q3_and_below_property_count": 16
+    },
+    {
+      "hex_id": "87601696dffffff",
+      "q3_and_below_property_count": 12
+    },
+    {
+      "hex_id": "87601696effffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "876016970ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016971ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016972ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016974ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016975ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876016976ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876016982ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876016983ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601698cffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87601698effffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016998ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601699affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601699cffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87601699dffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "8760169a4ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760169a5ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8760169aeffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876016b26ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189200ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189201ffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "876189203ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189204ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189205ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189206ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189208ffffff",
+      "q3_and_below_property_count": 71
+    },
+    {
+      "hex_id": "876189209ffffff",
+      "q3_and_below_property_count": 61
+    },
+    {
+      "hex_id": "87618920affffff",
+      "q3_and_below_property_count": 55
+    },
+    {
+      "hex_id": "87618920bffffff",
+      "q3_and_below_property_count": 108
+    },
+    {
+      "hex_id": "87618920cffffff",
+      "q3_and_below_property_count": 40
+    },
+    {
+      "hex_id": "87618920dffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "87618920effffff",
+      "q3_and_below_property_count": 26
+    },
+    {
+      "hex_id": "876189210ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189211ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189213ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189214ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189218ffffff",
+      "q3_and_below_property_count": 32
+    },
+    {
+      "hex_id": "876189219ffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "87618921affffff",
+      "q3_and_below_property_count": 50
+    },
+    {
+      "hex_id": "87618921bffffff",
+      "q3_and_below_property_count": 49
+    },
+    {
+      "hex_id": "87618921cffffff",
+      "q3_and_below_property_count": 47
+    },
+    {
+      "hex_id": "87618921dffffff",
+      "q3_and_below_property_count": 48
+    },
+    {
+      "hex_id": "87618921effffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189220ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876189221ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "876189223ffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "876189224ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189225ffffff",
+      "q3_and_below_property_count": 19
+    },
+    {
+      "hex_id": "876189228ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618922affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618922bffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "87618922cffffff",
+      "q3_and_below_property_count": 58
+    },
+    {
+      "hex_id": "87618922dffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87618922effffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189233ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189234ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189240ffffff",
+      "q3_and_below_property_count": 58
+    },
+    {
+      "hex_id": "876189241ffffff",
+      "q3_and_below_property_count": 86
+    },
+    {
+      "hex_id": "876189242ffffff",
+      "q3_and_below_property_count": 28
+    },
+    {
+      "hex_id": "876189243ffffff",
+      "q3_and_below_property_count": 100
+    },
+    {
+      "hex_id": "876189244ffffff",
+      "q3_and_below_property_count": 88
+    },
+    {
+      "hex_id": "876189245ffffff",
+      "q3_and_below_property_count": 31
+    },
+    {
+      "hex_id": "876189246ffffff",
+      "q3_and_below_property_count": 62
+    },
+    {
+      "hex_id": "876189248ffffff",
+      "q3_and_below_property_count": 58
+    },
+    {
+      "hex_id": "876189249ffffff",
+      "q3_and_below_property_count": 62
+    },
+    {
+      "hex_id": "87618924affffff",
+      "q3_and_below_property_count": 42
+    },
+    {
+      "hex_id": "87618924bffffff",
+      "q3_and_below_property_count": 79
+    },
+    {
+      "hex_id": "87618924cffffff",
+      "q3_and_below_property_count": 82
+    },
+    {
+      "hex_id": "87618924dffffff",
+      "q3_and_below_property_count": 37
+    },
+    {
+      "hex_id": "87618924effffff",
+      "q3_and_below_property_count": 120
+    },
+    {
+      "hex_id": "876189250ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189251ffffff",
+      "q3_and_below_property_count": 24
+    },
+    {
+      "hex_id": "876189252ffffff",
+      "q3_and_below_property_count": 55
+    },
+    {
+      "hex_id": "876189253ffffff",
+      "q3_and_below_property_count": 35
+    },
+    {
+      "hex_id": "876189254ffffff",
+      "q3_and_below_property_count": 44
+    },
+    {
+      "hex_id": "876189255ffffff",
+      "q3_and_below_property_count": 14
+    },
+    {
+      "hex_id": "876189256ffffff",
+      "q3_and_below_property_count": 13
+    },
+    {
+      "hex_id": "876189258ffffff",
+      "q3_and_below_property_count": 22
+    },
+    {
+      "hex_id": "876189259ffffff",
+      "q3_and_below_property_count": 23
+    },
+    {
+      "hex_id": "87618925affffff",
+      "q3_and_below_property_count": 23
+    },
+    {
+      "hex_id": "87618925bffffff",
+      "q3_and_below_property_count": 26
+    },
+    {
+      "hex_id": "87618925cffffff",
+      "q3_and_below_property_count": 22
+    },
+    {
+      "hex_id": "87618925dffffff",
+      "q3_and_below_property_count": 36
+    },
+    {
+      "hex_id": "87618925effffff",
+      "q3_and_below_property_count": 23
+    },
+    {
+      "hex_id": "876189260ffffff",
+      "q3_and_below_property_count": 74
+    },
+    {
+      "hex_id": "876189261ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "876189262ffffff",
+      "q3_and_below_property_count": 33
+    },
+    {
+      "hex_id": "876189263ffffff",
+      "q3_and_below_property_count": 100
+    },
+    {
+      "hex_id": "876189264ffffff",
+      "q3_and_below_property_count": 13
+    },
+    {
+      "hex_id": "876189265ffffff",
+      "q3_and_below_property_count": 19
+    },
+    {
+      "hex_id": "876189266ffffff",
+      "q3_and_below_property_count": 31
+    },
+    {
+      "hex_id": "876189268ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189269ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87618926affffff",
+      "q3_and_below_property_count": 74
+    },
+    {
+      "hex_id": "87618926bffffff",
+      "q3_and_below_property_count": 44
+    },
+    {
+      "hex_id": "87618926cffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189270ffffff",
+      "q3_and_below_property_count": 21
+    },
+    {
+      "hex_id": "876189271ffffff",
+      "q3_and_below_property_count": 31
+    },
+    {
+      "hex_id": "876189272ffffff",
+      "q3_and_below_property_count": 54
+    },
+    {
+      "hex_id": "876189273ffffff",
+      "q3_and_below_property_count": 111
+    },
+    {
+      "hex_id": "876189274ffffff",
+      "q3_and_below_property_count": 10
+    },
+    {
+      "hex_id": "876189275ffffff",
+      "q3_and_below_property_count": 17
+    },
+    {
+      "hex_id": "876189276ffffff",
+      "q3_and_below_property_count": 37
+    },
+    {
+      "hex_id": "876189280ffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "876189282ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189285ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189288ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "87618928dffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "87618928effffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189290ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189291ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189294ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189295ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189296ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "8761892a2ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892a3ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892a8ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "8761892a9ffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "8761892aaffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "8761892abffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "8761892adffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "8761892aeffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892b2ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892c0ffffff",
+      "q3_and_below_property_count": 44
+    },
+    {
+      "hex_id": "8761892c1ffffff",
+      "q3_and_below_property_count": 86
+    },
+    {
+      "hex_id": "8761892c2ffffff",
+      "q3_and_below_property_count": 19
+    },
+    {
+      "hex_id": "8761892c3ffffff",
+      "q3_and_below_property_count": 57
+    },
+    {
+      "hex_id": "8761892c4ffffff",
+      "q3_and_below_property_count": 59
+    },
+    {
+      "hex_id": "8761892c5ffffff",
+      "q3_and_below_property_count": 209
+    },
+    {
+      "hex_id": "8761892c6ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "8761892c8ffffff",
+      "q3_and_below_property_count": 35
+    },
+    {
+      "hex_id": "8761892c9ffffff",
+      "q3_and_below_property_count": 23
+    },
+    {
+      "hex_id": "8761892caffffff",
+      "q3_and_below_property_count": 31
+    },
+    {
+      "hex_id": "8761892cbffffff",
+      "q3_and_below_property_count": 58
+    },
+    {
+      "hex_id": "8761892ccffffff",
+      "q3_and_below_property_count": 53
+    },
+    {
+      "hex_id": "8761892cdffffff",
+      "q3_and_below_property_count": 79
+    },
+    {
+      "hex_id": "8761892ceffffff",
+      "q3_and_below_property_count": 53
+    },
+    {
+      "hex_id": "8761892d1ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8761892d2ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892d3ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "8761892d4ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "8761892d6ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892d8ffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "8761892d9ffffff",
+      "q3_and_below_property_count": 28
+    },
+    {
+      "hex_id": "8761892daffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "8761892dbffffff",
+      "q3_and_below_property_count": 11
+    },
+    {
+      "hex_id": "8761892dcffffff",
+      "q3_and_below_property_count": 17
+    },
+    {
+      "hex_id": "8761892ddffffff",
+      "q3_and_below_property_count": 56
+    },
+    {
+      "hex_id": "8761892deffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "8761892e0ffffff",
+      "q3_and_below_property_count": 45
+    },
+    {
+      "hex_id": "8761892e1ffffff",
+      "q3_and_below_property_count": 115
+    },
+    {
+      "hex_id": "8761892e2ffffff",
+      "q3_and_below_property_count": 39
+    },
+    {
+      "hex_id": "8761892e3ffffff",
+      "q3_and_below_property_count": 46
+    },
+    {
+      "hex_id": "8761892e4ffffff",
+      "q3_and_below_property_count": 46
+    },
+    {
+      "hex_id": "8761892e5ffffff",
+      "q3_and_below_property_count": 105
+    },
+    {
+      "hex_id": "8761892e6ffffff",
+      "q3_and_below_property_count": 66
+    },
+    {
+      "hex_id": "8761892e8ffffff",
+      "q3_and_below_property_count": 21
+    },
+    {
+      "hex_id": "8761892e9ffffff",
+      "q3_and_below_property_count": 22
+    },
+    {
+      "hex_id": "8761892eaffffff",
+      "q3_and_below_property_count": 57
+    },
+    {
+      "hex_id": "8761892ebffffff",
+      "q3_and_below_property_count": 22
+    },
+    {
+      "hex_id": "8761892ecffffff",
+      "q3_and_below_property_count": 49
+    },
+    {
+      "hex_id": "8761892edffffff",
+      "q3_and_below_property_count": 17
+    },
+    {
+      "hex_id": "8761892eeffffff",
+      "q3_and_below_property_count": 56
+    },
+    {
+      "hex_id": "8761892f0ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8761892f1ffffff",
+      "q3_and_below_property_count": 22
+    },
+    {
+      "hex_id": "8761892f2ffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "8761892f3ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761892f4ffffff",
+      "q3_and_below_property_count": 7
+    },
+    {
+      "hex_id": "8761892f5ffffff",
+      "q3_and_below_property_count": 65
+    },
+    {
+      "hex_id": "8761892f6ffffff",
+      "q3_and_below_property_count": 12
+    },
+    {
+      "hex_id": "876189309ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618930affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618930bffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87618930dffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87618930effffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189328ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189329ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189340ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189341ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189342ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189343ffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "876189344ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189345ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189346ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189348ffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "876189349ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "87618934affffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "87618934bffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "87618934cffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "87618934dffffff",
+      "q3_and_below_property_count": 5
+    },
+    {
+      "hex_id": "87618934effffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "876189350ffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "876189351ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189352ffffff",
+      "q3_and_below_property_count": 25
+    },
+    {
+      "hex_id": "876189353ffffff",
+      "q3_and_below_property_count": 18
+    },
+    {
+      "hex_id": "876189354ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189355ffffff",
+      "q3_and_below_property_count": 10
+    },
+    {
+      "hex_id": "876189356ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189358ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189359ffffff",
+      "q3_and_below_property_count": 98
+    },
+    {
+      "hex_id": "87618935affffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87618935bffffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "87618935cffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87618935dffffff",
+      "q3_and_below_property_count": 8
+    },
+    {
+      "hex_id": "87618935effffff",
+      "q3_and_below_property_count": 6
+    },
+    {
+      "hex_id": "876189362ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189368ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189369ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87618936bffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87618936cffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618936dffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "87618936effffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189371ffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "876189373ffffff",
+      "q3_and_below_property_count": 9
+    },
+    {
+      "hex_id": "876189374ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189375ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189382ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189383ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189389ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618938dffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189392ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189395ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189399ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761893a8ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189629ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189643ffffff",
+      "q3_and_below_property_count": 3
+    },
+    {
+      "hex_id": "876189649ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618964affffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189651ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189653ffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "876189659ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189669ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189672ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189674ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "8761896ebffffff",
+      "q3_and_below_property_count": 2
+    },
+    {
+      "hex_id": "8761896eeffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "876189768ffffff",
+      "q3_and_below_property_count": 1
+    },
+    {
+      "hex_id": "87618976bffffff",
+      "q3_and_below_property_count": 4
+    },
+    {
+      "hex_id": "87618976effffff",
+      "q3_and_below_property_count": 1
+    }
+  ]
+}

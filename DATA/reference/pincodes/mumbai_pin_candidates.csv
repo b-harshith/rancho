@@ -1,0 +1,90 @@
+pincode,canonical_city_id,districts,states,office_count,has_delivery_office,decision,decision_rule,source
+400001,mumbai,MUMBAI,MAHARASHTRA,6,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400002,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400003,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400004,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400005,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400006,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400007,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400008,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400009,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400010,mumbai,MUMBAI;MUMBAI SUBURBAN,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400011,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400012,mumbai,MUMBAI,MAHARASHTRA,7,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400013,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400014,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400015,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400016,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400017,mumbai,MUMBAI,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400018,mumbai,MUMBAI,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400019,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400020,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400021,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400022,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400024,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400025,mumbai,MUMBAI,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400026,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400027,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400028,mumbai,MUMBAI,MAHARASHTRA,6,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400029,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400030,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400031,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400032,mumbai,MUMBAI,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400033,mumbai,MUMBAI,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400034,mumbai,MUMBAI,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400035,mumbai,MUMBAI,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400037,mumbai,MUMBAI,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400042,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400043,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400049,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400050,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400051,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400052,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400053,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400054,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400055,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400056,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400057,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400058,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400059,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400060,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400061,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400063,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400064,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400065,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400066,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400067,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400068,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400069,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400070,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400071,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400072,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400074,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400075,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400076,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400077,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400078,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400079,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400080,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,5,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400081,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400082,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400083,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400084,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400085,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400086,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400087,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400088,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400089,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400091,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400092,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400093,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400094,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400095,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400096,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400097,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400098,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400099,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,3,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400101,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400102,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,2,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400103,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,1,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv
+400104,mumbai,MUMBAI SUBURBAN,MAHARASHTRA,4,true,include,office district is in configured city scope,https://www.data.gov.in/sites/default/files/datafile/pincode.csv

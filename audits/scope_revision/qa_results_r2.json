@@ -1,0 +1,53 @@
+{
+  "task_id": "DNC-SCOPE-REVISION-QA-R2",
+  "reviewed_on": "2026-06-30",
+  "overall_code_data_verdict": "PASS",
+  "launch_recommendation": "MAGICBRICKS_TECHNICALLY_ADMITTED_EZYSCHOOLING_EXTERNALLY_BLOCKED",
+  "tracks": {
+    "DNC-GEO-PINS": {
+      "code_data_status": "PASS",
+      "evidence": {"candidate_rows": 194, "unique_candidates": 194, "exclusion_rows": 101, "intersection": []},
+      "external_blockers": ["Google runtime boundary/address comparison remains pending and is not a polygon-source requirement"]
+    },
+    "DNC-EZYSCHOOLING": {
+      "code_data_status": "PASS",
+      "evidence": {
+        "producer_tests": "5/5 PASS",
+        "runtime_and_school_schema_validation": "PASS",
+        "durable_challenge_failure_evidence": "PASS",
+        "cache_physically_pruned_and_rewritten_before_use": "PASS",
+        "cache_probe_survivors": 1,
+        "hashed_and_redacted_cache": "PASS",
+        "bounds_behavior": "PASS"
+      },
+      "external_blockers": ["Delhi NCR Ezyschooling component mapping is still unverified; collector must remain blocked until evidenced"]
+    },
+    "DNC-MB-LOCALITIES": {
+      "code_data_status": "PASS",
+      "technically_admitted_for_bounded_full_production_launch": true,
+      "evidence": {
+        "producer_tests": "12/12 PASS",
+        "strict_token_traversal_variants_rejected": "9/9",
+        "stage2_resumed_foreign_state_quarantined": true,
+        "stage2_failed_manifest_durable": true,
+        "preflight_artifacts_resolved": 10,
+        "preflight_hashes_recomputed": "10/10 PASS",
+        "preflight_content_consistency": "10/10 PASS",
+        "common_and_typed_contract": "PASS",
+        "invalid_contract_mutations_rejected": "4/4",
+        "limit_accounting": {"discovered_total": 2, "details_required": 2, "details_completed": 1, "details_missing": 1, "production_complete": false}
+      },
+      "external_blockers": []
+    }
+  },
+  "external_blockers": [
+    {"track": "DNC-EZYSCHOOLING", "blocker": "Verified Delhi NCR source mapping has not been supplied"},
+    {"track": "DNC-GEO-PINS", "blocker": "Google runtime comparison remains pending; open-source boundaries and PIN ledger independently pass"}
+  ],
+  "security": {"live_calls_by_qa": 0, "api_key_used_by_qa": false, "committed_key_matches": 0, "new_pipeline_osrm_matches": 0},
+  "commands": [
+    "python3 -m unittest tests.schools.test_ezyschooling tests.localities.test_magicbricks_localities -v",
+    "python3 tests/qa_scope_revision/final_probes.py",
+    "secret and OSRM scans over scope-revision pipeline paths"
+  ]
+}

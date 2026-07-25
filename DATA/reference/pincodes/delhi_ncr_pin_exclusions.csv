@@ -1,0 +1,102 @@
+pincode,districts,states,office_count,decision,reason,candidate_universe
+121102,PALWAL,HARYANA,25,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+121103,PALWAL,HARYANA,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+121105,PALWAL,HARYANA,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+121106,PALWAL,HARYANA,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+121107,PALWAL,HARYANA,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+122104,NUH,HARYANA,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+122105,NUH,HARYANA,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+122107,NUH,HARYANA,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+122108,NUH,HARYANA,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+122508,NUH,HARYANA,17,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203001,BULANDSHAHR;HATHRAS,UTTAR PRADESH,31,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203002,BULANDSHAHR,UTTAR PRADESH,5,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203129,BULANDSHAHR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203131,BULANDSHAHR,UTTAR PRADESH,28,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203132,BULANDSHAHR,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203150,BULANDSHAHR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203205,BULANDSHAHR,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203206,BULANDSHAHR,UTTAR PRADESH,2,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203389,BULANDSHAHR,UTTAR PRADESH,5,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203390,BULANDSHAHR,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203391,BULANDSHAHR,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203392,BULANDSHAHR,UTTAR PRADESH,16,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203393,BULANDSHAHR,UTTAR PRADESH,17,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203394,BULANDSHAHR,UTTAR PRADESH,19,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203395,BULANDSHAHR,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203396,BULANDSHAHR,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203397,BULANDSHAHR,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203398,BULANDSHAHR,UTTAR PRADESH,15,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203399,BULANDSHAHR,UTTAR PRADESH,4,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203401,BULANDSHAHR,UTTAR PRADESH,3,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203402,BULANDSHAHR,UTTAR PRADESH,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203403,BULANDSHAHR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203405,BULANDSHAHR,UTTAR PRADESH,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203407,BULANDSHAHR,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203408,BULANDSHAHR,UTTAR PRADESH,21,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203409,BULANDSHAHR,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203411,BULANDSHAHR,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+203412,BULANDSHAHR,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212104,PRAYAGRAJ,UTTAR PRADESH,15,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212105,PRAYAGRAJ,UTTAR PRADESH,1,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212106,PRAYAGRAJ,UTTAR PRADESH,18,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212107,PRAYAGRAJ,UTTAR PRADESH,21,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212108,PRAYAGRAJ,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212109,PRAYAGRAJ,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212111,PRAYAGRAJ,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212201,KAUSHAMBI,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212202,KAUSHAMBI;PRAYAGRAJ,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212203,KAUSHAMBI,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212204,KAUSHAMBI,UTTAR PRADESH,5,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212205,KAUSHAMBI,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212206,KAUSHAMBI,UTTAR PRADESH,5,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212207,KAUSHAMBI,UTTAR PRADESH,14,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212208,KAUSHAMBI;PRAYAGRAJ,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212212,PRAYAGRAJ,UTTAR PRADESH,1,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212213,KAUSHAMBI,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212214,KAUSHAMBI,UTTAR PRADESH,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212216,KAUSHAMBI,UTTAR PRADESH,18,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212217,KAUSHAMBI,UTTAR PRADESH,21,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212218,KAUSHAMBI,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212301,PRAYAGRAJ,UTTAR PRADESH,18,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212302,PRAYAGRAJ,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212303,PRAYAGRAJ,UTTAR PRADESH,17,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212305,PRAYAGRAJ,UTTAR PRADESH,13,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212306,PRAYAGRAJ,UTTAR PRADESH,25,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212307,PRAYAGRAJ,UTTAR PRADESH,9,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212308,PRAYAGRAJ,UTTAR PRADESH,1,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212401,JAUNPUR;PRAYAGRAJ,UTTAR PRADESH,13,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212402,PRAYAGRAJ,UTTAR PRADESH,15,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212404,PRAYAGRAJ,UTTAR PRADESH,3,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212405,PRAYAGRAJ,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212502,PRAYAGRAJ,UTTAR PRADESH,9,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212503,PRAYAGRAJ,UTTAR PRADESH,9,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212507,PRAYAGRAJ,UTTAR PRADESH,14,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212601,FATEHPUR,UTTAR PRADESH,23,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212620,FATEHPUR,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212621,FATEHPUR,UTTAR PRADESH,16,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212622,FATEHPUR,UTTAR PRADESH,13,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212631,FATEHPUR,UTTAR PRADESH,15,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212635,FATEHPUR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212641,FATEHPUR,UTTAR PRADESH,12,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212645,FATEHPUR,UTTAR PRADESH,4,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212650,FATEHPUR,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212651,FATEHPUR,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212653,FATEHPUR,UTTAR PRADESH,8,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212654,FATEHPUR,UTTAR PRADESH,3,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212655,FATEHPUR,UTTAR PRADESH,23,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212656,FATEHPUR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212657,FATEHPUR,UTTAR PRADESH,18,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212658,FATEHPUR,UTTAR PRADESH,13,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212659,FATEHPUR,UTTAR PRADESH,4,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212661,FATEHPUR,UTTAR PRADESH,7,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212663,FATEHPUR,UTTAR PRADESH,10,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212664,FATEHPUR,UTTAR PRADESH,13,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+212665,FATEHPUR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245101,HAPUR,UTTAR PRADESH,31,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245201,HAPUR,UTTAR PRADESH,14,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245205,HAPUR,UTTAR PRADESH,20,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245206,MEERUT,UTTAR PRADESH,14,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245207,HAPUR,UTTAR PRADESH,11,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245208,HAPUR,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit
+245301,HAPUR,UTTAR PRADESH,6,exclude,"same 3-digit postal prefix as included PIN, but no office in an approved component district",adjacent_prefix_audit

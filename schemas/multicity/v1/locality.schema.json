@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/locality.schema.json",
+  "title": "Canonical locality v1",
+  "allOf": [{"$ref": "common_entity.schema.json"}],
+  "type": "object",
+  "required": ["entity_kind", "price_per_sqft", "rating", "review_count"],
+  "properties": {
+    "entity_kind": {"const": "locality"},
+    "price_per_sqft": {"type": ["number", "null"], "minimum": 0},
+    "rating": {"type": ["number", "null"], "minimum": 0},
+    "review_count": {"type": ["integer", "null"], "minimum": 0}
+  }
+}

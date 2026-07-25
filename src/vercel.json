@@ -1,0 +1,71 @@
+{
+  "name": "ranchoblr",
+  "version": 2,
+  "functions": {
+    "api/catchment.py": {
+      "includeFiles": "runtime_data/catchment/**/*"
+    },
+    "api/multicity.py": {
+      "includeFiles": "public/data/multicity/**/*"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/bangalore",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/bengaluru",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/city/delhi_ncr",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/city/bengaluru",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/city/hyderabad",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/city/mumbai",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/cities/delhi_ncr",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/cities/bengaluru",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/cities/hyderabad",
+      "destination": "/multicity.html"
+    },
+    {
+      "source": "/cities/mumbai",
+      "destination": "/multicity.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/multicity.html",
+      "permanent": false
+    },
+    {
+      "source": "/city/pune",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cities/pune",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

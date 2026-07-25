@@ -1,0 +1,107 @@
+# ============================================================
+# CatchmentIQ — Income Tier Configuration
+# ============================================================
+#
+# DATA REALITY NOTE (Bangalore MagicBricks dataset, June 2026):
+#   - 100% of listings are Rent transactions (0 Sale listings).
+#   - Rental price_per_sqft is the per-month rate: median 33/sqft,
+#     p75 = 50/sqft, p90 = 82/sqft across all listings.
+#   - For the 40 LPA tier (rent >= 50k/month), median ppsqft = 45/sqft.
+#   - Sale filters are retained as stubs for future sale data ingestion.
+#
+# RENT-AS-FIRST-CLASS SIGNAL:
+#   In Bangalore's HNI segment, renting at 80k+/month in Whitefield
+#   or Indiranagar is as real a demand signal as property ownership.
+#   rent_weight_override = 1.0 for premium tier (full parity with sale).
+# ============================================================
+
+# Fee brackets for student segmentation (shared across all tiers).
+# Used by the Spatial Interaction Model to segment predicted students
+# in each hex by the fee bracket of their school.
+fee_brackets:
+  premium:
+    label: "Premium (40 LPA+)"
+    fee_min: 150000
+  midmarket:
+    label: "Mid-Market (12-25 LPA)"
+    fee_min: 60000
+    fee_max: 150000
+  economy:
+    label: "Economy (<12 LPA)"
+    fee_max: 60000
+
+tiers:
+  premium_40lpa:
+    label: "40 LPA+"
+    school_fee_min: 150000          # 1.5L/year minimum school fee
+
+    # Board type is a first-class filter — not a footnote.
+    # IB/IGCSE parents are almost definitionally Rancho Labs' audience.
+    # CBSE is mixed. State board families are out of scope.
+    school_boards: ["IB", "IGCSE", "ICSE", "Cambridge", "CBSE"]
+
+    # Board priority scores used in School Partnership Score ranking.
+    # Scale: 0.5 = weakest signal -> 3.0 = strongest signal.
+    board_priority:
+      IB: 3.0
+      IGCSE: 3.0
+      Cambridge: 2.5
+      ICSE: 2.0
+      CBSE: 1.5
+      default: 0.2
+
+    realestate:
+      sale:                         # Stub — no sale data in current dataset
+        price_min: 15000000         # 1.5 Cr
+        price_max: null
+        bhk_min: 3
+        price_per_sqft_min: 8000    # 8k/sqft (future sale data)
+      rent:
+        price_min: 40000            # 40k/month
+        price_max: 300000           # Cap at 3L/month
+        bhk_min: 2
+        # 30/sqft/month = adjusted floor.
+        # Rejects 1BHK studios listed at 40k+ with inflated per-sqft rates.
+        price_per_sqft_min: 30
+        price_per_sqft_max: 150     # Ceiling to filter absurd outliers
+
+    # Full parity — renting 80k/month in Whitefield IS the signal.
+    rent_weight_override: 1.0
+
+    poi_categories:
+      - luxury_auto_dealer
+      - international_school
+      - premium_supermarket
+      - premium_gym
+      - fine_dining
+
+  midmarket_12lpa:
+    label: "12-25 LPA"
+    school_fee_min: 60000           # 60k/year
+    school_fee_max: 200000          # 2L/year
+    school_boards: ["CBSE", "ICSE", "State"]
+    board_priority:
+      CBSE: 2.0
+      ICSE: 2.5
+      State: 1.0
+      default: 0.5
+
+    realestate:
+      sale:                         # Stub — no sale data in current dataset
+        price_min: 6000000          # 60L
+        price_max: 15000000
+        bhk_min: 2
+        price_per_sqft_min: 4000
+      rent:
+        price_min: 20000            # 20k/month
+        price_max: 100000           # Cap at 1L/month
+        bhk_min: 2
+        price_per_sqft_min: 20      # 20/sqft/month (near median for this range)
+        price_per_sqft_max: 60      # Ceiling to filter absurd outliers
+
+    rent_weight_override: 0.85
+
+    poi_categories:
+      - value_retail
+      - coaching_centre
+      - mid_tier_gym

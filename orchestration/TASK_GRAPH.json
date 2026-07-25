@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-06-30T00:00:00+05:30",
+  "allowed_statuses": ["pending", "ready", "in_progress", "blocked", "needs_review", "failed", "complete"],
+  "active_city": "delhi_ncr",
+  "tasks": [
+    {
+      "id": "W1-ORCHESTRATE",
+      "city": "all",
+      "owner_agent": "/root",
+      "status": "complete",
+      "dependencies": [],
+      "allowed_files": ["orchestration/**", "config/**", "runs/**"],
+      "expected_outputs": ["orchestration/MASTER_PLAN.md", "orchestration/TASK_GRAPH.json", "orchestration/AGENT_REGISTRY.md", "orchestration/FILE_OWNERSHIP.md", "orchestration/DECISION_LOG.md", "orchestration/BLOCKERS.md", "orchestration/HANDOFF_LOG.md", "orchestration/cities/*/STATUS.md", "config/cities.yaml", "config/source_city_registry.json"],
+      "acceptance_criteria": ["All required state files exist", "City order and sequential gate are explicit", "Unknown mappings are null rather than guessed", "Wave 1 ownership does not overlap"],
+      "verifier": "/root"
+    },
+    {
+      "id": "W1-BASELINE-AUDIT",
+      "city": "bengaluru",
+      "owner_agent": "/root/baseline_audit",
+      "status": "complete",
+      "dependencies": [],
+      "allowed_files": ["docs/multicity/00_baseline_audit.md", "tests/fixtures/multicity/bengaluru/**"],
+      "expected_outputs": ["docs/multicity/00_baseline_audit.md"],
+      "acceptance_criteria": ["Covers prompt section 3 from actual files", "Reports real schemas/counts/coverage", "Identifies hardcodes and metric lineage", "Documents leakage and regression risks"],
+      "verifier": "/root"
+    },
+    {
+      "id": "W1-SOURCE-MAP",
+      "city": "all",
+      "owner_agent": "/root/source_mapping",
+      "status": "complete",
+      "dependencies": [],
+      "allowed_files": ["docs/multicity/SCRAPER_INVENTORY.md", "docs/multicity/source_mappings/**"],
+      "expected_outputs": ["docs/multicity/SCRAPER_INVENTORY.md", "docs/multicity/source_mappings/*.md"],
+      "acceptance_criteria": ["Scraper variants compared with mtime and feature evidence", "No secret material copied", "Verified mappings include evidence and unknown mappings remain explicit", "Compliance/session constraints documented"],
+      "verifier": "/root"
+    },
+    {
+      "id": "W1-DOCS-SKELETON",
+      "city": "all",
+      "owner_agent": "/root/docs_skeleton",
+      "status": "complete",
+      "dependencies": [],
+      "allowed_files": ["docs/multicity/RUNBOOK.md", "docs/multicity/DATA_DICTIONARY.md", "docs/multicity/METRIC_DEFINITIONS.md", "docs/multicity/FINAL_HANDOFF.md"],
+      "expected_outputs": ["docs/multicity/RUNBOOK.md", "docs/multicity/DATA_DICTIONARY.md", "docs/multicity/METRIC_DEFINITIONS.md", "docs/multicity/FINAL_HANDOFF.md"],
+      "acceptance_criteria": ["Required final-document structure exists", "Unverified values are labeled", "No city is falsely marked complete"],
+      "verifier": "/root"
+    },
+    {
+      "id": "W2-CONTRACTS-CONFIG",
+      "city": "all",
+      "owner_agent": "/root/contracts_config",
+      "status": "complete",
+      "dependencies": ["W1-BASELINE-AUDIT", "W1-SOURCE-MAP"],
+      "allowed_files": ["config/**", "schemas/**", "src/multicity/**", "tests/multicity/**"],
+      "expected_outputs": ["Versioned schemas", "Config validators", "City-scoped stable ID utilities", "Regression fixtures"],
+      "acceptance_criteria": ["Every city entity requires canonical_city_id and lineage", "Validators and unit tests pass", "Bengaluru fixture is preserved"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "W2-SAFE-COLLECTORS",
+      "city": "all",
+      "owner_agent": "/root/safe_collectors",
+      "status": "complete",
+      "dependencies": ["W1-SOURCE-MAP"],
+      "allowed_files": ["collectors/**", "tests/collectors/**", ".env.example", ".gitignore"],
+      "expected_outputs": ["Safe configuration-driven collector framework", "Source adapters that fail closed", "Redacted parser fixtures/tests", "Human-only UDISE workflow", "Secret-free runtime configuration example"],
+      "acceptance_criteria": ["No embedded credentials or OCR CAPTCHA path", "Required CLI/resume/manifest controls exist", "Unknown mappings fail closed", "Preflight city validation and parser tests pass", "No live production collection performed"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "W2-BLR-REBUILD",
+      "city": "bengaluru",
+      "owner_agent": "/root/bengaluru_rebuild",
+      "status": "complete",
+      "dependencies": ["W1-BASELINE-AUDIT"],
+      "allowed_files": ["pipelines/bengaluru_rebuild/**", "data/staging/bengaluru/**", "tests/reconciliation/**"],
+      "expected_outputs": ["Single input manifest", "Isolated atomic staging build or explicit blocked manifest", "Reconciliation script/results", "Output hashes and counts"],
+      "acceptance_criteria": ["Existing public/reference data untouched", "Rebuild is reproducible from declared inputs", "Hex/TAM sums agree across staged outputs", "Contextual TAM excluded from additive totals", "Failures are explicit rather than patched"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-STAGE0",
+      "city": "delhi_ncr",
+      "owner_agent": "unassigned",
+      "status": "blocked",
+      "dependencies": ["W2-CONTRACTS-CONFIG"],
+      "allowed_files": ["config/**", "docs/multicity/source_mappings/delhi_ncr.md", "data/cities/delhi_ncr/audits/**", "runs/01_delhi_ncr/**"],
+      "expected_outputs": ["Approved NCR component policy", "Boundary and PIN provenance", "Four source-family preflight manifests"],
+      "acceptance_criteria": ["All mappings evidenced", "At least 90% sample city match for each source", "No repeated Bengaluru sample", "No CAPTCHA or access-control bypass"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "W2-INDEPENDENT-QA",
+      "city": "all",
+      "owner_agent": "/root/independent_qa",
+      "status": "complete",
+      "dependencies": ["W2-CONTRACTS-CONFIG", "W2-SAFE-COLLECTORS", "W2-BLR-REBUILD"],
+      "allowed_files": ["audits/wave2/**", "tests/qa/**"],
+      "expected_outputs": ["audits/wave2/QA_REPORT.md", "audits/wave2/qa_results.json"],
+      "acceptance_criteria": ["Producer-independent commands and recomputation recorded", "Contracts/rankings/isolation reviewed", "Collector security/fail-closed behavior reviewed", "Staged reconciliation mutation test fails loudly", "Per-track PASS/FAIL has evidence"],
+      "verifier": "/root"
+    },
+    {
+      "id": "DNC-COLLECT-NORMALIZE",
+      "city": "delhi_ncr",
+      "owner_agent": "unassigned producers",
+      "status": "pending",
+      "dependencies": ["DNC-STAGE0"],
+      "allowed_files": ["data/cities/delhi_ncr/raw/**", "data/cities/delhi_ncr/normalized/**", "data/cities/delhi_ncr/audits/**"],
+      "expected_outputs": ["Raw source layers", "Normalized schools/projects/localities/hospitals", "Manifests/quarantine/merge ledgers"],
+      "acceptance_criteria": ["Source totals reconcile", "Schemas pass", "Stable IDs unique", "Completeness and city leakage reported", "Rerun hashes deterministic"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-GEO-PINS",
+      "city": "delhi_ncr",
+      "owner_agent": "/root/geo_boundary_pins",
+      "status": "complete",
+      "dependencies": ["W2-INDEPENDENT-QA"],
+      "allowed_files": ["pipelines/geospatial/**", "data/reference/boundaries/**", "data/reference/pincodes/**", "data/cities/delhi_ncr/audits/geospatial/**", "tests/geospatial/**", "docs/multicity/geospatial/**"],
+      "expected_outputs": ["NCR component/boundary policy", "Boundary with source provenance", "PIN inclusion/exclusion ledger", "Haversine utility/tests", "Redacted geocoding cache/tooling"],
+      "acceptance_criteria": ["No API key in files/logs", "Boundary and PIN provenance explicit", "Component cities retained", "Haversine labeled straight-line", "Independent QA passes"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-EZYSCHOOLING",
+      "city": "delhi_ncr",
+      "owner_agent": "/root/ezyschooling_pipeline",
+      "status": "blocked",
+      "dependencies": ["W2-CONTRACTS-CONFIG"],
+      "allowed_files": ["collectors/ezyschooling/**", "pipelines/schools/**", "tests/schools/**", "tests/collectors/fixtures/ezyschooling_*.json", "docs/multicity/source_mappings/ezyschooling_*.md"],
+      "expected_outputs": ["Multi-stage resumable collector", "Search/detail parser fixtures", "Canonical normalize/merge/geocode adapters", "Preflight evidence or explicit block"],
+      "acceptance_criteria": ["Every enumerated unique detail link is processed or explained", "No forced matches", "Bounds/precision/cache lineage present", "No secret leakage", "Independent QA passes"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-MB-LOCALITIES",
+      "city": "delhi_ncr",
+      "owner_agent": "/root/magicbricks_localities",
+      "status": "complete",
+      "dependencies": ["W2-CONTRACTS-CONFIG"],
+      "allowed_files": ["collectors/magicbricks_localities/**", "tests/localities/**", "tests/collectors/fixtures/magicbricks_localities_*.json", "docs/multicity/source_mappings/magicbricks_localities_*.md"],
+      "expected_outputs": ["Multi-stage resumable localities collector", "Listing/detail parser fixtures", "Completeness manifest", "Preflight evidence or explicit block"],
+      "acceptance_criteria": ["Page and detail stages both exist", "Every unique detail link processed or explained", "Correct-city preflight >=90%", "Canonical locality contract/lineage passes", "Independent QA passes"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-SPATIAL-METRICS",
+      "city": "delhi_ncr",
+      "owner_agent": "unassigned",
+      "status": "pending",
+      "dependencies": ["DNC-COLLECT-NORMALIZE"],
+      "allowed_files": ["data/cities/delhi_ncr/derived/**", "data/cities/delhi_ncr/audits/**"],
+      "expected_outputs": ["H3/zones/micromarkets/catchments/summary", "TAM and metric lineage manifests"],
+      "acceptance_criteria": ["Only QA-approved normalized inputs consumed", "Countable TAM excludes contextual weights", "Spatial joins and aggregate reconciliation pass"],
+      "verifier": "Independent QA and Reconciliation Agent"
+    },
+    {
+      "id": "DNC-ADMISSION-DASHBOARD",
+      "city": "delhi_ncr",
+      "owner_agent": "/root plus unassigned dashboard owner",
+      "status": "pending",
+      "dependencies": ["DNC-SPATIAL-METRICS"],
+      "allowed_files": ["data/master/**", "src/**", "tests/**", "docs/multicity/**", "runs/01_delhi_ncr/**", "orchestration/**"],
+      "expected_outputs": ["Independent QA PASS", "Admitted city summary", "Absolute rankings", "UI/E2E and Bengaluru regression evidence", "City report/handoff"],
+      "acceptance_criteria": ["All Stage 6 gates pass", "Ranking semantics/ties/nulls/coverage pass", "No cross-city leakage", "Orchestrator records admission decision"],
+      "verifier": "/root"
+    }
+  ]
+}

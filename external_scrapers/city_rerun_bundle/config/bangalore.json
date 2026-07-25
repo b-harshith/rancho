@@ -1,0 +1,29 @@
+{
+  "city_slug": "bangalore",
+  "city_name": "Bangalore",
+  "city_geocode_context": "Bangalore, India",
+  "city_boundary_context": "Bangalore, Karnataka, India",
+  "city_zone_names": [
+    "Bangalore North",
+    "Bangalore South",
+    "Bangalore East",
+    "Bangalore West",
+    "Bangalore Central"
+  ],
+  "city_map_center": [12.9716, 77.5946],
+  "city_metro_bounds": {
+    "min_lat": 12.65,
+    "max_lat": 13.40,
+    "min_lon": 77.20,
+    "max_lon": 78.05
+  },
+  "99acres_locality_target_url": "https://www.99acres.com/bangalore-reviews-and-ratings-wrffid",
+  "99acres_locality_api_city_id": "20_LOCATION",
+  "99acres_society_target_url": "https://www.99acres.com/property-registry-records-in-bangalore-rrffid?entityType=PROJECT&referrer_section=CHECK_TRANSACTION_PRICES&src_page=REI_CITY_INSIGHTS&sortOrder=MOST_REGISTRY_RECORDS&timeDuration=1",
+  "99acres_society_api_city_id": "20_LOCATION",
+  "99acres_cookie_header": "GOOGLE_SEARCH_ID=7586841775570601160; 99_ab=20; _gcl_au=1.1.357647951.1775570606; _fbp=fb.1.1775570605968.103300648800715314; showCookieBanner=1; pncity=0; _ga_232988985=GS2.1.s1777401007$o1$g1$t1777401031$j36$l0$h0; _gcl_gs=2.1.k1$i1778339549$u120502976; PHPSESSID=145eb9b8a850c0621b31322dbb14d17d; arcity=25; nwcity=2282; ccity=bangalore; session_source=; isRefererGoogle=false; PROPLOGIN=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIwYmU5Y2Q4Yy0zYzZmLTQwZDctYjQ5YS1lZGVjYTQyZGY1MjEiLCJzdWIiOiIxMDIzODQwNDYiLCJpYXQiOjE3ODEwNzkzNzUsImV4cCI6MTg0NDE1MTM3NSwic2VjcmV0SWQiOiI3NTg2ODQxNzc1NTcwNjAxMTYwIn0.bOMj5_bayXO7vvPmd6NMMsnreXMCojRKyLB4FzERoBwZV6OVBlyiAheNtCTk1A42giM7fq8cWl9zyX-NZZkiyw; LAST_LOGIN=2026-46-10-01:46:15; xAB=SuperControlGroup%3D31%3AN%2CSimPropRnt%3D60%3AY%2CMLSEARCHSRP%3D18%3AY%2CMANDLOGIN%3D88%3AN%2CAutorenew%3D65%3AN%2CGOOGLEREFR%3D76%3AY%2C1CLICKEOI%3D64%3AN%2CPDImageSRP%3D63%3AY%2CFREEMDESK%3D69%3AN%2CLOCALAREA%3D98%3AY%2CMLSEARCHMONET%3D83%3AY%2COwnConsent%3D35%3AN%2CBPRentAlgo%3D10%3AY%2CppfFields%3D57%3AN%2CAPTMAPXID%3D57%3AY%2CMANDLOGWEB%3D12%3AY; sessionno=11; DISP_NAME=Harshith; _ga=GA1.2.859976766.1775570606",
+  "osrm_url": "http://localhost:5001",
+  "sez_kml_path": "data/Stage2 processing/sez_office_zones.kml",
+  "overture_buildings_path": "data/overture/bangalore_buildings.geojson",
+  "emit_html_maps": false
+}

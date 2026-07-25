@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "canonical_city_id": "delhi_ncr",
+  "generated_on": "2026-06-30",
+  "status": "prepared_open_sources_google_reference_pending",
+  "pin_coverage": {
+    "included_unique_pins": 194,
+    "excluded_adjacent_prefix_pins": 101,
+    "component_pin_counts": {
+      "delhi_nct": 97,
+      "faridabad": 15,
+      "ghaziabad": 26,
+      "gurugram": 29,
+      "noida_greater_noida": 28
+    },
+    "cross_component_pin_count": 1,
+    "duplicate_pincodes_in_output": 0
+  },
+  "boundary_coverage": {
+    "district_feature_count": 15,
+    "component_count": 5,
+    "delhi_nct_district_count": 11,
+    "all_source_geometries_valid": true,
+    "union_valid": true,
+    "union_geometry_type": "Polygon",
+    "bounds_wgs84": {
+      "west": 76.65104,
+      "south": 28.07571,
+      "east": 77.71876,
+      "north": 28.92616
+    },
+    "representative_center_wgs84": {
+      "lat": 28.500909999999998,
+      "lon": 77.28734154656385
+    },
+    "component_district_counts": {
+      "delhi_nct": 11,
+      "faridabad": 1,
+      "ghaziabad": 1,
+      "gurugram": 1,
+      "noida_greater_noida": 1
+    },
+    "components": {
+      "delhi_nct": {
+        "district_count": 11,
+        "bounds_wgs84": {
+          "west": 76.83881,
+          "south": 28.40447,
+          "east": 77.3437,
+          "north": 28.88355
+        },
+        "representative_center_wgs84": {
+          "lat": 28.643985,
+          "lon": 77.12364767423273
+        }
+      },
+      "faridabad": {
+        "district_count": 1,
+        "bounds_wgs84": {
+          "west": 77.15043,
+          "south": 28.19907,
+          "east": 77.50755,
+          "north": 28.51467
+        },
+        "representative_center_wgs84": {
+          "lat": 28.356805,
+          "lon": 77.32729288643533
+        }
+      },
+      "ghaziabad": {
+        "district_count": 1,
+        "bounds_wgs84": {
+          "west": 77.199,
+          "south": 28.61126,
+          "east": 77.71876,
+          "north": 28.92616
+        },
+        "representative_center_wgs84": {
+          "lat": 28.76888,
+          "lon": 77.46468087514737
+        }
+      },
+      "gurugram": {
+        "district_count": 1,
+        "bounds_wgs84": {
+          "west": 76.65104,
+          "south": 28.20497,
+          "east": 77.24201,
+          "north": 28.54144
+        },
+        "representative_center_wgs84": {
+          "lat": 28.372889999999998,
+          "lon": 76.94350926769332
+        }
+      },
+      "noida_greater_noida": {
+        "district_count": 1,
+        "bounds_wgs84": {
+          "west": 77.29686,
+          "south": 28.07571,
+          "east": 77.69859,
+          "north": 28.63873
+        },
+        "representative_center_wgs84": {
+          "lat": 28.357595,
+          "lon": 77.57062311431143
+        }
+      }
+    }
+  },
+  "google_conflict_check": {
+    "status": "blocked",
+    "reason": "GOOGLE_MAPS_API_KEY not present in runtime environment"
+  }
+}

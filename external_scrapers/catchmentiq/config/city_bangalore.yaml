@@ -1,0 +1,62 @@
+city:
+  name: "Bangalore"
+  osm_relation_id: 4479470          # For downloading boundary from OSM
+  center: [12.9716, 77.5946]
+  zoom: 11
+  bounding_box:                      # Lat/Lon bounds for data validation
+    min_lat: 12.85
+    max_lat: 13.10
+    min_lon: 77.50
+    max_lon: 77.74
+
+
+grid:
+  h3_resolution: 7                   # ~1.22km hex edge. Good for city-level continuous zones.
+  mask_sources:                      # What to mask out as uninhabitable
+    - water                          # Lakes, rivers
+    - industrial                     # Industrial zones
+    - military                       # Cantonment areas
+
+isochrones:
+  engine: "none"               # "osrm", "traveltime", "ors", or "none" (local buffers)
+  ors_api_key: "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjJhM2RlYmFiMzgwNTQwMGFhZjgxOWM2NzdiMjI1OWUxIiwiaCI6Im11cm11cjY0In0="
+  traveltime_app_id: "b8e70188"
+  osrm_url: "http://localhost:5000"  # Self-hosted OSRM fallback
+  bands_minutes: [10, 20, 30]        # 3 bands. NOT 4. Drop 45-60 min.
+  profile: "driving"                 # Driving mode
+  time_of_day: "peak"               # Use peak hour travel times
+
+gravity_model:
+  alpha: 1.1                        # Mass exponent (Wealth Sensitivity)
+  beta: 1.25                          # Distance friction (Commute Sensitivity)
+  distance_decay_beta: 0.3          # Exponential decay rate (km⁻¹). Attractiveness halves every ~2.3km
+  max_radius_km: 15                 # Max school-to-hex distance considered (km)
+  valhalla_url: "http://localhost:8002"
+  costing: "auto"
+  alpha_presets:                     # Human-readable labels for UI
+    low: 0.7
+    medium: 1.0
+    high: 1.5
+  beta_presets:
+    low: 1.5
+    medium: 2.0
+    high: 2.5
+
+smoothing:
+  method: "conditional_kring"      # Smooth only into populated neighboring hexes
+  k_ring_radius: 1                   # Sharper concentration
+
+stability:
+  num_runs: 3                        # 3-run stability check (NOT Monte Carlo 1000)
+  alpha_jitter: 0.3
+  beta_jitter: 0.5
+
+realestate:
+  sale_weight: 0.7                   # Weight for sale listings in capacity mass
+  rent_weight: 0.7                   # Weight for rent listings
+  max_listing_age_days: 730          # Ignore listings older than 2 years (24 months)
+  use_confidence_score: true         # Weight by MagicBricks confidence
+
+output:
+  formats: ["html", "csv", "geojson", "pdf"]
+  top_n_zones: 25                    # How many top hexes to highlight

@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "chennai": {
+      "components": [
+        {
+          "source_city_id": "5196",
+          "source_city_name": "Chennai",
+          "verified_url": "https://www.magicbricks.com/localities-in-Chennai",
+          "pagination_url": "https://www.magicbricks.com/mbutility/localitySearchPage?autoLoad=Y&page={page}&sortBy=&cityName={city_name}"
+        }
+      ]
+    }
+  }
+}

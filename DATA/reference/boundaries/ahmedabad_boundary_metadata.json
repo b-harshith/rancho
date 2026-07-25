@@ -1,0 +1,31 @@
+{
+  "canonical_city_id": "ahmedabad",
+  "generated_on": "2026-06-30",
+  "scope_policy": "District geometry aligned to the district-based India Post PIN candidate scope; not a municipal or cadastral boundary.",
+  "source_districts": [
+    "Ahmadabad"
+  ],
+  "feature_count": 1,
+  "geometry_type": "MultiPolygon",
+  "center": {
+    "lat": 22.761104543449196,
+    "lon": 72.24769514944694
+  },
+  "bounds": {
+    "west": 71.84029,
+    "south": 21.59134,
+    "east": 72.84448,
+    "north": 23.50857
+  },
+  "area_square_degrees": 0.637826079099999,
+  "boundary_sha256": "a840b84f1b491b108129f3ee1a2d058db9454ad65d5ff4776640b4fe053ed0aa",
+  "source": {
+    "dataset": "geoBoundaries gbOpen India ADM2",
+    "revision": "9469f09",
+    "boundary_year": "2021",
+    "license": "ODbL 1.0",
+    "source_organization": "Pathways Data Pvt. Ltd., lgdirectory.gov.in",
+    "api_url": "https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/",
+    "download_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM2/geoBoundaries-IND-ADM2.geojson"
+  }
+}

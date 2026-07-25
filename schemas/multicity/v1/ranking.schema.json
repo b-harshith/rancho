@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bangalorerancho.local/schemas/multicity/v1/ranking.schema.json",
+  "title": "Absolute city ranking v1",
+  "type": "object",
+  "required": ["schema_version", "metric_id", "label", "unit", "metric_type", "direction", "methodology_version", "as_of", "minimum_coverage_pct", "ranking_policy", "rows"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "metric_id": {"type": "string", "minLength": 1},
+    "label": {"type": "string", "minLength": 1},
+    "unit": {"type": "string", "minLength": 1},
+    "metric_type": {"const": "absolute"},
+    "direction": {"enum": ["asc", "desc"]},
+    "methodology_version": {"type": "string", "minLength": 1},
+    "as_of": {"type": "string", "format": "date-time"},
+    "minimum_coverage_pct": {"type": "number", "minimum": 0, "maximum": 100},
+    "ranking_policy": {"const": "competition"},
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["canonical_city_id", "value", "rank", "coverage_pct", "quality_status", "source_count", "lineage"],
+        "properties": {
+          "canonical_city_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "value": {"type": ["number", "null"]},
+          "rank": {"type": ["integer", "null"], "minimum": 1},
+          "coverage_pct": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+          "quality_status": {"enum": ["qualified", "insufficient_coverage", "unavailable"]},
+          "source_count": {"type": ["integer", "null"], "minimum": 0},
+          "lineage": {"type": "object", "minProperties": 1}
+        }
+      }
+    }
+  }
+}

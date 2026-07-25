@@ -1,0 +1,21 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": 101,
+      "name": "North Star International School",
+      "slug": "north-star-international-school-noida",
+      "school_city": {"id": 7, "name": "Noida", "slug": "noida"},
+      "geocoords": {"lat": 28.5355, "lon": 77.391},
+      "zipcode": "201301",
+      "avg_fees": {"2026-2027": {"range": {"lowest_fee": 10000, "highest_fee": 12000, "tenure": "monthly"}}},
+      "school_boardss": [{"name": "CBSE"}]
+    },
+    {
+      "id": 102,
+      "name": "River View School",
+      "slug": "river-view-school-gurugram",
+      "school_city": {"id": 8, "name": "Gurugram", "slug": "gurugram"}
+    }
+  ]
+}

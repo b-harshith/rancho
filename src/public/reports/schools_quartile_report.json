@@ -1,0 +1,22 @@
+{
+  "total_rows": 2007,
+  "quartile_analysis_1_counts": {
+    "Q4": 501,
+    "Q3": 502,
+    "Q2": 502,
+    "Q1": 502
+  },
+  "quartile_analysis_2_counts": {
+    "Q4-Sub-Q4": 125,
+    "Q4-Sub-Q3": 125,
+    "Q4-Sub-Q2": 125,
+    "Q4-Sub-Q1": 126
+  },
+  "q4_rows": 501,
+  "field_notes": {
+    "quartile analysis 1": "Computed from fee_max across all kept schools.",
+    "quartile analysis 2": "Computed only within Q4 schools from quartile analysis 1.",
+    "quartile_category": "Human-readable tier label derived from quartile analysis.",
+    "quartile_tag": "Short slug tag derived from the quartile category."
+  }
+}

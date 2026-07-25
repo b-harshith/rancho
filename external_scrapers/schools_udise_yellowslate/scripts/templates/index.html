@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Matching Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --surface-hover: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --border-radius: 12px;
+            --border-color: #334155;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 2rem;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .left-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .right-panel {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .target-card {
+            border-color: var(--accent-color);
+            background: linear-gradient(145deg, var(--surface-color), #1e293b);
+            position: sticky;
+            top: 2rem;
+        }
+
+        .candidate-card {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border-color: #64748b;
+            background-color: var(--surface-hover);
+        }
+
+        h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .detail-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .detail-value {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .badge-success { background-color: rgba(16, 185, 129, 0.2); color: #34d399; }
+        .badge-warning { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+        .badge-info { background-color: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            font-family: 'Outfit', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn:active { transform: scale(0.98); }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover { background-color: var(--accent-hover); }
+
+        .btn-danger {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .btn-danger:hover {
+            background-color: rgba(239, 68, 68, 0.2);
+        }
+        
+        .score {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .score-low {
+            color: #f59e0b;
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        #loading {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(15, 23, 42, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            display: none;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s, border-color 0.2s;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover {
+            color: var(--text-primary);
+        }
+        .nav-link.active {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+
+    <header>
+        <div style="display: flex; align-items: center; gap: 2.5rem;">
+            <h1>School Matching Tool</h1>
+            <nav style="display: flex; gap: 1.5rem;">
+                <a href="/" class="nav-link active">Match Queue</a>
+                <a href="/udise" class="nav-link">UDISE Directory</a>
+            </nav>
+        </div>
+        <div id="status" class="badge badge-info">Initializing...</div>
+    </header>
+
+    <div class="container" id="main-content" style="display: none;">
+        <div class="left-panel">
+            <div class="card target-card">
+                <h2>Target: Yellowslate School</h2>
+                <h3 id="ts-name">Loading...</h3>
+                
+                <div class="details">
+                    <div class="detail-item">
+                        <span class="detail-label">Area</span>
+                        <span class="detail-value" id="ts-area">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Board</span>
+                        <span class="detail-value" id="ts-board">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Pincode</span>
+                        <span class="detail-value" id="ts-pincode">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Fee Bracket</span>
+                        <span class="detail-value" id="ts-fee">-</span>
+                    </div>
+                    <div class="detail-item" style="grid-column: 1 / -1;">
+                        <span class="detail-label">Yellowslate URL</span>
+                        <a id="ts-url" href="#" target="_blank" style="color: var(--accent-color); text-decoration: none; word-break: break-all; font-size: 0.9rem;">-</a>
+                    </div>
+                </div>
+
+                <button class="btn btn-danger" onclick="skipSchool()">Skip This School</button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 1rem;">
+                <h2 style="margin: 0;">UDISE Candidates</h2>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="text" id="manual-search-input" placeholder="Search school name, code, pincode..." 
+                           style="background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: var(--border-radius); font-family: inherit; font-size: 0.9rem; width: 280px; transition: border-color 0.2s;"
+                           oninput="handleSearchInput(this.value)">
+                    <button id="clear-search-btn" class="btn" onclick="clearSearch()" 
+                            style="display: none; padding: 0.6rem 1rem; font-size: 0.85rem; background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius);">
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <div id="candidates-container">
+                <!-- Candidates will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="done-content" style="display: none; justify-content: center; align-items: center; flex: 1;">
+        <div class="empty-state">
+            <h2 style="font-size: 2rem; color: white;">All Done! 🎉</h2>
+            <p style="font-size: 1.25rem;">No more unmatched schools left.</p>
+        </div>
+    </div>
+
+    <script>
+        let currentYellowslate = null;
+        let defaultCandidates = [];
+        let searchTimeout = null;
+        let isSearching = false;
+
+        function showLoading() { document.getElementById('loading').style.display = 'flex'; }
+        function hideLoading() { document.getElementById('loading').style.display = 'none'; }
+
+        async function fetchNext() {
+            // Reset search input and state
+            document.getElementById('manual-search-input').value = '';
+            document.getElementById('clear-search-btn').style.display = 'none';
+            isSearching = false;
+            
+            showLoading();
+            try {
+                const res = await fetch('/api/next');
+                const data = await res.json();
+                
+                if (data.status === 'done') {
+                    document.getElementById('main-content').style.display = 'none';
+                    document.getElementById('done-content').style.display = 'flex';
+                    document.getElementById('status').textContent = 'Completed';
+                    document.getElementById('status').className = 'badge badge-success';
+                } else if (data.status === 'ok') {
+                    currentYellowslate = data.yellowslate;
+                    defaultCandidates = data.candidates;
+                    renderTarget(data.yellowslate);
+                    renderCandidates(data.candidates);
+                    document.getElementById('main-content').style.display = 'flex';
+                    document.getElementById('done-content').style.display = 'none';
+                    document.getElementById('status').textContent = 'Matching';
+                    document.getElementById('status').className = 'badge badge-warning';
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error fetching data');
+            }
+            hideLoading();
+        }
+
+        function handleSearchInput(val) {
+            clearTimeout(searchTimeout);
+            
+            const clearBtn = document.getElementById('clear-search-btn');
+            if (val.trim()) {
+                clearBtn.style.display = 'inline-flex';
+                isSearching = true;
+            } else {
+                clearBtn.style.display = 'none';
+                isSearching = false;
+                loadDefaultCandidates();
+                return;
+            }
+
+            searchTimeout = setTimeout(async () => {
+                showLoading();
+                try {
+                    const targetName = currentYellowslate ? encodeURIComponent(currentYellowslate.school_name) : '';
+                    const res = await fetch(`/api/search_udise?q=${encodeURIComponent(val)}&target_name=${targetName}`);
+                    const candidates = await res.json();
+                    renderCandidates(candidates);
+                } catch (err) {
+                    console.error(err);
+                }
+                hideLoading();
+            }, 300);
+        }
+
+        function loadDefaultCandidates() {
+            renderCandidates(defaultCandidates);
+        }
+
+        function clearSearch() {
+            document.getElementById('manual-search-input').value = '';
+            document.getElementById('clear-search-btn').style.display = 'none';
+            isSearching = false;
+            loadDefaultCandidates();
+        }
+
+        function renderTarget(ys) {
+            document.getElementById('ts-name').textContent = ys.school_name || 'N/A';
+            document.getElementById('ts-area').textContent = ys.area || 'N/A';
+            document.getElementById('ts-board').textContent = ys.board_text || 'N/A';
+            document.getElementById('ts-pincode').textContent = ys.school_location?.pincode || 'N/A';
+            document.getElementById('ts-fee').textContent = ys.fee?.assigned_bracket_label || 'N/A';
+            
+            const urlEl = document.getElementById('ts-url');
+            if (ys.school_url) {
+                urlEl.href = ys.school_url;
+                urlEl.textContent = ys.school_url;
+            } else {
+                urlEl.removeAttribute('href');
+                urlEl.textContent = 'N/A';
+            }
+        }
+
+        function renderCandidates(candidates) {
+            const container = document.getElementById('candidates-container');
+            container.innerHTML = '';
+
+            if (!candidates || candidates.length === 0) {
+                container.innerHTML = '<div class="card"><p>No candidates found.</p></div>';
+                return;
+            }
+
+            candidates.forEach(c => {
+                const div = document.createElement('div');
+                div.className = 'card candidate-card';
+                div.onclick = () => matchSchool(c.udise_code);
+
+                const isLowScore = c.score < 0.6;
+                const scoreClass = isLowScore ? 'score-low' : '';
+
+                div.innerHTML = `
+                    <div style="flex: 1;">
+                        <h3>${c.name}</h3>
+                        <div class="details">
+                            <div class="detail-item">
+                                <span class="detail-label">UDISE Code</span>
+                                <span class="detail-value">${c.udise_code}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Board</span>
+                                <span class="detail-value">${c.board || 'N/A'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Pincode</span>
+                                <span class="detail-value">${c.pincode || 'N/A'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Enrollment</span>
+                                <span class="detail-value">${c.enrollment || 'N/A'}</span>
+                            </div>
+                        </div>
+                        <div class="detail-item" style="margin-top: 1rem;">
+                            <span class="detail-label">Address</span>
+                            <span class="detail-value" style="font-size: 0.9rem; color: var(--text-secondary);">${c.address || 'N/A'}</span>
+                        </div>
+                    </div>
+                    <div style="margin-left: 2rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                        <div class="score ${scoreClass}">${(c.score * 100).toFixed(0)}%</div>
+                        <button class="btn btn-primary" onclick="event.stopPropagation(); matchSchool('${c.udise_code}')">Select</button>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        async function matchSchool(udiseCode) {
+            if (!currentYellowslate) return;
+            
+            showLoading();
+            try {
+                const res = await fetch('/api/match', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        yellowslate_name: currentYellowslate.school_name,
+                        udise_code: udiseCode,
+                        yellowslate_data: currentYellowslate
+                    })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    fetchNext();
+                } else {
+                    alert('Error saving match');
+                    hideLoading();
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error making match request');
+                hideLoading();
+            }
+        }
+
+        async function skipSchool() {
+            if (!currentYellowslate) return;
+            
+            showLoading();
+            try {
+                const res = await fetch('/api/skip', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        yellowslate_name: currentYellowslate.school_name
+                    })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    fetchNext();
+                } else {
+                    alert('Error skipping school');
+                    hideLoading();
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error making skip request');
+                hideLoading();
+            }
+        }
+
+        // Initialize
+        fetchNext();
+    </script>
+</body>
+</html>

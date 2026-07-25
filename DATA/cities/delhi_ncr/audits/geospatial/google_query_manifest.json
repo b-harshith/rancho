@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "provider": "google_geocoding_api",
+  "status": "pending_runtime_key_injection",
+  "environment_variable": "GOOGLE_MAPS_API_KEY",
+  "cache_policy": {
+    "directory": "data/cities/delhi_ncr/audits/geospatial/google_cache",
+    "ttl_days": 29,
+    "request_urls_must_be_redacted": true
+  },
+  "queries": [
+    {"component_id": "delhi_nct", "query": "National Capital Territory of Delhi, India"},
+    {"component_id": "gurugram", "query": "Gurugram district, Haryana, India"},
+    {"component_id": "faridabad", "query": "Faridabad district, Haryana, India"},
+    {"component_id": "ghaziabad", "query": "Ghaziabad district, Uttar Pradesh, India"},
+    {"component_id": "noida_greater_noida", "query": "Gautam Buddha Nagar district, Uttar Pradesh, India"}
+  ]
+}
