@@ -270,7 +270,7 @@ class Database:
             ).fetchall()
             return {row["status"]: int(row["count"]) for row in rows}
 
-    def create_challenge(self, job_id: int, pin_task_id: int, image_data_url: str) -> int:
+    def create_challenge(self, job_id: int, pin_task_id: int, image_data_url: str = "") -> int:
         with self._lock, self.connect() as db:
             db.execute(
                 "UPDATE captcha_challenges SET status='superseded' "
@@ -280,7 +280,7 @@ class Database:
             cursor = db.execute(
                 "INSERT INTO captcha_challenges(job_id,pin_task_id,image_data_url,created_at) "
                 "VALUES(?,?,?,?)",
-                (job_id, pin_task_id, image_data_url, utc_now()),
+                (job_id, pin_task_id, "", utc_now()),
             )
             return int(cursor.lastrowid)
 
