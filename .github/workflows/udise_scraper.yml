@@ -64,8 +64,9 @@ jobs:
         HF_REPO: herseiiii/udise-data
         UDISE_HEADLESS: '1'
         UDISE_CHROME: /usr/bin/google-chrome
-        # Standard GitHub Actions runner has 2 vCPUs, so we keep concurrency moderate (4 browsers)
-        UDISE_BROWSER_CONCURRENCY: '4'
+        # 2 vCPUs / 7 GB RAM runner. Chrome is I/O-bound (network waits), so 8 concurrent
+        # sessions is safe: ~350 MB each = ~2.8 GB Chrome + ~1.3 GB OS/Python/EasyOCR < 7 GB
+        UDISE_BROWSER_CONCURRENCY: '8'
       run: |
         cd external_scrapers/schools_udise_yellowslate
         python run_cli_batch.py
