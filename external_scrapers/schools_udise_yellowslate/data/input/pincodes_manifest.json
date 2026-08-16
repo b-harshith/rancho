@@ -1,0 +1,9 @@
+{
+  "source_kmz": "/Users/malleswararao/Desktop/Harshith files/dd7bfd69-143e-462b-bfa3-2ac35d931342.kmz",
+  "source_member": "india_pin_codes_2025.kml",
+  "source_kml_sha256": "9249db1e92eb8543844f3099da4e57b7390db754800f8ec5d781e6250df1add6",
+  "unique_pincodes": 19312,
+  "first_pincode": "110001",
+  "last_pincode": "855117",
+  "output": "/Users/malleswararao/Desktop/BangaloreRancho/web_platform_vercel_exact_latest/external_scrapers/schools_udise_yellowslate/data/input/pincodes.json"
+}
