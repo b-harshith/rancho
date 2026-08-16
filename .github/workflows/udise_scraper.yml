@@ -69,3 +69,17 @@ jobs:
       run: |
         cd external_scrapers/schools_udise_yellowslate
         python run_cli_batch.py
+
+    - name: Send Progress Email Report
+      if: always()
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HF_REPO: herseiiii/udise-data
+        RECIPIENT_EMAIL: bejjankiharshith1234@gmail.com
+        SMTP_USER: ${{ secrets.SMTP_USER }}
+        SMTP_PASS: ${{ secrets.SMTP_PASS }}
+        SMTP_HOST: ${{ secrets.SMTP_HOST }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      run: |
+        cd external_scrapers/schools_udise_yellowslate
+        python send_progress_email.py
