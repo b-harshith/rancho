@@ -1,0 +1,71 @@
+name: UDISE Scraper Cloud Job
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Trigger automatically every 6 hours
+  workflow_dispatch:      # Allow manual trigger from GitHub Actions tab
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libglib2.0-0 libgl1-mesa-glx
+
+    - name: Install PyTorch CPU and Headless OpenCV
+      run: |
+        pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+        pip install opencv-python-headless
+
+    - name: Install Python dependencies
+      run: |
+        cd external_scrapers/schools_udise_yellowslate
+        pip install -r requirements.txt
+        pip install huggingface_hub
+
+    - name: Restore SQLite Database from Hugging Face Hub
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HF_REPO: herseiiii/udise-data
+      run: |
+        cd external_scrapers/schools_udise_yellowslate
+        python -c "
+        import os, shutil
+        from huggingface_hub import hf_hub_download
+        try:
+            downloaded = hf_hub_download(
+                repo_id='${{ env.HF_REPO }}',
+                filename='udise_data.sqlite3',
+                repo_type='dataset',
+                token='${{ env.HF_TOKEN }}'
+            )
+            os.makedirs('data/runtime', exist_ok=True)
+            shutil.copy2(downloaded, 'data/runtime/udise_data.sqlite3')
+            print('Database successfully restored from HF Dataset.')
+        except Exception as e:
+            print('No existing database found or download failed:', e)
+        "
+
+    - name: Run Scraper Batch
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HF_REPO: herseiiii/udise-data
+        UDISE_HEADLESS: '1'
+        UDISE_CHROME: /usr/bin/google-chrome
+        # Standard GitHub Actions runner has 2 vCPUs, so we keep concurrency moderate (4 browsers)
+        UDISE_BROWSER_CONCURRENCY: '4'
+      run: |
+        cd external_scrapers/schools_udise_yellowslate
+        python run_cli_batch.py
