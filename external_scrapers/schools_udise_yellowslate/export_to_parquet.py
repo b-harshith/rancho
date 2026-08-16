@@ -6,6 +6,8 @@ import zlib
 import sqlite3
 from pathlib import Path
 import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
 from huggingface_hub import HfApi, hf_hub_download
 
 ROOT = Path(__file__).resolve().parent
@@ -51,30 +53,47 @@ def export_network_responses(conn: sqlite3.Connection) -> Path:
     cursor = conn.cursor()
     cursor.execute("SELECT id, job_id, pincode, school_id, year_id, phase, request_id, method, url, status_code, mime_type, body_json, body_text, body_sha256, captured_at FROM network_responses")
     
-    rows = []
-    count = 0
-    while True:
-        batch = cursor.fetchmany(10000)
-        if not batch:
-            break
-        for r in batch:
-            body_j = decompress_text(r[11])
-            body_t = decompress_text(r[12])
-            rows.append({
-                "id": r[0], "job_id": r[1], "pincode": r[2], "school_id": r[3],
-                "year_id": r[4], "phase": r[5], "request_id": r[6], "method": r[7],
-                "url": r[8], "status_code": r[9], "mime_type": r[10],
-                "body": body_j if body_j else body_t,
-                "body_sha256": r[13], "captured_at": r[14]
-            })
-        count += len(batch)
-        print(f"  - Parsed {count:,} response payloads...")
-            
-    df = pd.DataFrame(rows)
+    schema = pa.schema([
+        ("id", pa.int64()),
+        ("job_id", pa.int64()),
+        ("pincode", pa.string()),
+        ("school_id", pa.string()),
+        ("year_id", pa.string()),
+        ("phase", pa.string()),
+        ("request_id", pa.string()),
+        ("method", pa.string()),
+        ("url", pa.string()),
+        ("status_code", pa.int64()),
+        ("mime_type", pa.string()),
+        ("body", pa.string()),
+        ("body_sha256", pa.string()),
+        ("captured_at", pa.string()),
+    ])
     out_path = PARQUET_DIR / "network_responses.parquet"
-    df.to_parquet(out_path, compression="zstd", index=False)
+    count = 0
+    with pq.ParquetWriter(out_path, schema, compression="zstd") as writer:
+        while True:
+            batch = cursor.fetchmany(1000)
+            if not batch:
+                break
+            rows = []
+            for r in batch:
+                body_j = decompress_text(r[11])
+                body_t = decompress_text(r[12])
+                rows.append({
+                    "id": r[0], "job_id": r[1], "pincode": r[2], "school_id": r[3],
+                    "year_id": r[4], "phase": r[5], "request_id": r[6], "method": r[7],
+                    "url": r[8], "status_code": r[9], "mime_type": r[10],
+                    "body": body_j if body_j else body_t,
+                    "body_sha256": r[13], "captured_at": r[14]
+                })
+            writer.write_table(pa.Table.from_pylist(rows, schema=schema))
+            count += len(batch)
+            if count % 10000 == 0:
+                print(f"  - Parsed {count:,} response payloads...")
+
     size_mb = out_path.stat().st_size / (1024 * 1024)
-    print(f"  - Created {out_path.name} ({len(df):,} rows, {size_mb:.2f} MB)")
+    print(f"  - Created {out_path.name} ({count:,} rows, {size_mb:.2f} MB)")
     return out_path
 
 def export_all() -> None:

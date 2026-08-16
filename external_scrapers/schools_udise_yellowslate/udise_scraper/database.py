@@ -190,6 +190,35 @@ class Database:
             )
             return job_id
 
+    def recover_interrupted_job(self, job_id: int) -> dict[str, int]:
+        """Return work abandoned by a terminated runner to the pending queue."""
+        with self._lock, self.connect() as db:
+            pin_cursor = db.execute(
+                "UPDATE pin_tasks SET status='retry',error=NULL,completed_at=NULL "
+                "WHERE job_id=? AND status IN ('claimed','running')",
+                (job_id,),
+            )
+            school_cursor = db.execute(
+                "UPDATE schools SET status='pending',error=NULL,updated_at=? "
+                "WHERE job_id=? AND status='running'",
+                (utc_now(), job_id),
+            )
+            challenge_cursor = db.execute(
+                "UPDATE captcha_challenges SET status='superseded' "
+                "WHERE job_id=? AND status='waiting'",
+                (job_id,),
+            )
+            db.execute(
+                "UPDATE jobs SET status='queued',error=NULL,current_pincode=NULL,"
+                "current_school_id=NULL,updated_at=? WHERE id=?",
+                (utc_now(), job_id),
+            )
+            return {
+                "pincodes": int(pin_cursor.rowcount),
+                "schools": int(school_cursor.rowcount),
+                "challenges": int(challenge_cursor.rowcount),
+            }
+
     def update_job(self, job_id: int, **fields: Any) -> None:
         if not fields:
             return

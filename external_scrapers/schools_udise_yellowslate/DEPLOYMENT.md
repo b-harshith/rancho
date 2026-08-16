@@ -7,9 +7,9 @@ To run this scraper completely **free of charge 24/7 without a subscription**, w
 ---
 
 ## How It Works
-1. **GitHub Actions**: Runs a headless virtual machine that executes `run_cli_batch.py` in the background. It will automatically run for up to 5 hours, auto-solving CAPTCHAs with EasyOCR.
-2. **Persistent Storage**: On startup, it restores the database from your private Hugging Face Dataset repository. Every 5 minutes, it uploads a safe SQLite hot backup.
-3. **Continuous Execution**: The workflow is scheduled to trigger automatically every 6 hours to resume where it left off, running until all 19,300+ pincodes are completed.
+1. **GitHub Actions**: Runs a headless virtual machine that executes `run_cli_batch.py`, auto-solving CAPTCHAs with EasyOCR. The scraper itself has no overall runtime cutoff.
+2. **Persistent Storage**: On startup, it restores the database from your private Hugging Face Dataset repository. Every 30 minutes, it uploads a transaction-safe SQLite checkpoint.
+3. **Continuous Execution**: The workflow is scheduled every 6 hours. If GitHub rotates the hosted runner, interrupted PIN tasks are returned to the queue and the next run resumes them. Overlapping runs are serialized until all 19,300+ PIN codes reach a terminal state.
 
 ---
 
