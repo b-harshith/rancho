@@ -23,6 +23,7 @@ CHROME_PATH = os.environ.get(
 HEADLESS = os.environ.get("UDISE_HEADLESS", "1") != "0"
 BROWSER_CONCURRENCY = max(1, min(int(os.environ.get("UDISE_BROWSER_CONCURRENCY", "20")), 30))
 
+(ROOT / "logs").mkdir(parents=True, exist_ok=True)
 log_handler = RotatingFileHandler(
     ROOT / "logs/udise_scraper.log", maxBytes=5_000_000, backupCount=3, encoding="utf-8"
 )
