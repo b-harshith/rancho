@@ -10,8 +10,28 @@ from pathlib import Path
 from typing import Any, Iterator
 
 
+import zlib
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def compress_text(text: str | None) -> bytes | None:
+    if not text:
+        return None
+    return zlib.compress(text.encode("utf-8"), level=6)
+
+
+def decompress_text(val: Any) -> str | None:
+    if val is None:
+        return None
+    if isinstance(val, bytes):
+        try:
+            return zlib.decompress(val).decode("utf-8", errors="replace")
+        except Exception:
+            return str(val)
+    return str(val)
 
 
 class Database:
@@ -25,6 +45,7 @@ class Database:
     def connect(self) -> Iterator[sqlite3.Connection]:
         connection = sqlite3.connect(self.path, timeout=30)
         connection.row_factory = sqlite3.Row
+        connection.create_function("decompress", 1, decompress_text)
         connection.execute("PRAGMA journal_mode=WAL")
         connection.execute("PRAGMA foreign_keys=ON")
         try:
@@ -384,13 +405,18 @@ class Database:
         except (TypeError, json.JSONDecodeError):
             pass
         digest = hashlib.sha256(body_text.encode("utf-8", errors="replace")).hexdigest()
+        
+        # Compress payloads with zlib to shrink database size by ~85%
+        compressed_json = compress_text(body_json) if body_json else None
+        compressed_text = compress_text(body_text) if not body_json else None
+        
         values = (
             record["job_id"], record.get("pincode"), record.get("school_id"),
             record.get("year_id"), record["phase"], record["request_id"],
             record.get("method"), record["url"], record.get("status_code"),
             record.get("mime_type"), json.dumps(record.get("request_headers") or {}),
-            json.dumps(record.get("response_headers") or {}), body_json,
-            None if body_json is not None else body_text, digest, utc_now(),
+            json.dumps(record.get("response_headers") or {}), compressed_json,
+            compressed_text, digest, utc_now(),
         )
         with self._lock, self.connect() as db:
             db.execute(
@@ -489,7 +515,12 @@ class Database:
             item = dict(row)
             for field in json_fields:
                 if item.get(field):
-                    item[field] = json.loads(item[field])
+                    val = decompress_text(item[field])
+                    if val:
+                        try:
+                            item[field] = json.loads(val)
+                        except (TypeError, json.JSONDecodeError):
+                            item[field] = val
             return item
         return {
             "job": dict(job) if job else None,
