@@ -33,7 +33,7 @@ jobs:
       run: |
         cd external_scrapers/schools_udise_yellowslate
         pip install -r requirements.txt
-        pip install huggingface_hub
+        pip install huggingface_hub pandas pyarrow
 
     - name: Restore SQLite Database from Hugging Face Hub
       env:

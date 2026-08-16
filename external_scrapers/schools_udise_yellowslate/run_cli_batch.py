@@ -76,6 +76,11 @@ def main() -> None:
                             repo_type="dataset",
                         )
                         print("Backup uploaded successfully.")
+                        try:
+                            from export_to_parquet import export_all
+                            export_all()
+                        except Exception as pe:
+                            print(f"Parquet export failed: {pe}")
                     except Exception as e:
                         print(f"Backup upload failed: {e}")
                         
@@ -101,6 +106,11 @@ def main() -> None:
                 repo_type="dataset",
             )
             print("Final database upload complete.")
+            try:
+                from export_to_parquet import export_all
+                export_all()
+            except Exception as pe:
+                print(f"Final Parquet export failed: {pe}")
         except Exception as e:
             print(f"Final upload failed: {e}")
 
