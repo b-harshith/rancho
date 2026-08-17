@@ -2,7 +2,9 @@ name: UDISE Scraper Cloud Job
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Trigger automatically every 6 hours
+    # GitHub-hosted jobs have a platform-enforced runtime cap. Queue a continuation
+    # every hour so the scraper resumes promptly whenever a runner is rotated.
+    - cron: '0 * * * *'
   workflow_dispatch:      # Allow manual trigger from GitHub Actions tab
 
 # A scheduled continuation may be queued while the previous run is still active.
@@ -17,10 +19,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
         python-version: '3.10'
         cache: 'pip'
@@ -29,11 +31,20 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y libglib2.0-0
+        sudo rm -rf /var/lib/apt/lists/*
+
+    - name: Reclaim unused runner disk
+      run: |
+        sudo rm -rf /usr/local/lib/android
+        sudo rm -rf /usr/share/dotnet
+        sudo rm -rf /opt/ghc
+        df -h /
 
     - name: Install PyTorch CPU and Headless OpenCV
       run: |
         pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
         pip install opencv-python-headless
+        pip cache purge
 
     - name: Install Python dependencies
       run: |
@@ -48,18 +59,18 @@ jobs:
       run: |
         cd external_scrapers/schools_udise_yellowslate
         python -c "
-        import os, shutil
+        import os
         from huggingface_hub import hf_hub_download
         try:
+            os.makedirs('data/runtime', exist_ok=True)
             downloaded = hf_hub_download(
                 repo_id='${{ env.HF_REPO }}',
                 filename='udise_data.sqlite3',
                 repo_type='dataset',
-                token='${{ env.HF_TOKEN }}'
+                token='${{ env.HF_TOKEN }}',
+                local_dir='data/runtime'
             )
-            os.makedirs('data/runtime', exist_ok=True)
-            shutil.copy2(downloaded, 'data/runtime/udise_data.sqlite3')
-            print('Database successfully restored from HF Dataset.')
+            print('Database successfully restored from HF Dataset:', downloaded)
         except Exception as e:
             print('No existing database found or download failed:', e)
         "
@@ -78,17 +89,3 @@ jobs:
       run: |
         cd external_scrapers/schools_udise_yellowslate
         python run_cli_batch.py
-
-    - name: Send Progress Email Report
-      if: always()
-      env:
-        HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        HF_REPO: herseiiii/udise-data
-        RECIPIENT_EMAIL: bejjankiharshith1234@gmail.com
-        SMTP_USER: ${{ secrets.SMTP_USER }}
-        SMTP_PASS: ${{ secrets.SMTP_PASS }}
-        SMTP_HOST: ${{ secrets.SMTP_HOST }}
-        SMTP_PORT: ${{ secrets.SMTP_PORT }}
-      run: |
-        cd external_scrapers/schools_udise_yellowslate
-        python send_progress_email.py

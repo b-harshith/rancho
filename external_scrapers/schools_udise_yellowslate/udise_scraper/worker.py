@@ -109,8 +109,6 @@ class Collector:
             self.browser.on("Network.loadingFinished", self._on_finished)
             self._capture_thread = threading.Thread(target=self._capture_loop, daemon=True)
             self._capture_thread.start()
-            self._ledger_thread = threading.Thread(target=self._ledger_loop, daemon=True)
-            self._ledger_thread.start()
             self.db.update_job(job_id, status="running")
             self._log("info", "browser.ready", "Chrome CDP connection is ready")
             while not self.stop_event.is_set():
@@ -144,8 +142,6 @@ class Collector:
             self.browser.on("Network.loadingFinished", self._on_finished)
             self._capture_thread = threading.Thread(target=self._capture_loop, daemon=True)
             self._capture_thread.start()
-            self._ledger_thread = threading.Thread(target=self._ledger_loop, daemon=True)
-            self._ledger_thread.start()
             self._log("info", "browser.ready", "Dedicated PIN browser session is ready")
             self._process_pin(task)
         except Exception as exc:
@@ -559,32 +555,11 @@ class Collector:
             "url": request.get("url"),
             "headers": request.get("headers") or {},
         }
-        url = request.get("url") or ""
-        if context.job_id and url.startswith(("http://", "https://")):
-            self._ledger_queue.put(("request", {
-                "job_id": context.job_id,
-                "pincode": context.pincode,
-                "school_id": context.school_id,
-                "year_id": context.year_id,
-                "phase": context.phase,
-                "request_id": event["requestId"],
-                "method": request.get("method"),
-                "url": url,
-                "resource_type": event.get("type"),
-                "headers": request.get("headers") or {},
-                "post_data": request.get("postData"),
-            }))
 
     def _on_response(self, event: dict[str, Any]) -> None:
         response = event.get("response") or {}
         url = response.get("url") or ""
         mime = (response.get("mimeType") or "").lower()
-        self._ledger_queue.put(("response", {
-            "job_id": self.context.job_id,
-            "request_id": event["requestId"],
-            "status": response.get("status"),
-            "mime_type": mime,
-        }))
         if API_MARKER not in url:
             return
         if "json" not in mime and not url.endswith("getCaptcha"):

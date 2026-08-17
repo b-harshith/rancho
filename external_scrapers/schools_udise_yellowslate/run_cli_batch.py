@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import os
-import sqlite3
 import time
-from contextlib import closing
+from collections import Counter
+from io import BytesIO
+import json
 from huggingface_hub import HfApi
 
 from app import database, collector, load_pincodes, DB_PATH
-from app_hf import HF_TOKEN, HF_REPO, BACKUP_PATH
+from app_hf import HF_TOKEN, HF_REPO
 
 CHECKPOINT_INTERVAL_SECONDS = max(
     60, int(os.environ.get("UDISE_CHECKPOINT_INTERVAL_SECONDS", "1800"))
@@ -26,17 +27,13 @@ def upload_parquet_final() -> None:
 
 
 def upload_sqlite_checkpoint(api: "HfApi", label: str = "checkpoint") -> bool:
-    """Upload a transaction-safe database snapshot that the next runner can resume."""
+    """Upload the quiesced database that the next runner can resume."""
     if not DB_PATH.exists():
         return False
     try:
-        print(f"Creating safe SQLite hot backup for {label}...")
-        with closing(sqlite3.connect(DB_PATH)) as src, closing(sqlite3.connect(BACKUP_PATH)) as dest:
-            with dest:
-                src.backup(dest)
         print(f"Uploading SQLite {label} to Hugging Face Dataset...")
         api.upload_file(
-            path_or_fileobj=str(BACKUP_PATH),
+            path_or_fileobj=str(DB_PATH),
             path_in_repo="udise_data.sqlite3",
             repo_id=HF_REPO,
             repo_type="dataset",
@@ -48,8 +45,63 @@ def upload_sqlite_checkpoint(api: "HfApi", label: str = "checkpoint") -> bool:
         return False
 
 
+def upload_progress(api: "HfApi", job_id: int) -> None:
+    status = database.status(job_id)
+    counts = Counter(pin["status"] for pin in status["pins"])
+    payload = {
+        "job": status.get("job"),
+        "pin_statuses": dict(sorted(counts.items())),
+        "terminal_pincodes": counts["completed"] + counts["failed"],
+        "unfinished_pincodes": sum(counts[name] for name in ("pending", "retry", "claimed", "running")),
+    }
+    try:
+        api.upload_file(
+            path_or_fileobj=BytesIO((json.dumps(payload, indent=2) + "\n").encode()),
+            path_in_repo="progress.json",
+            repo_id=HF_REPO,
+            repo_type="dataset",
+        )
+    except Exception as exc:
+        print(f"Progress summary upload failed: {exc}")
+
+
+def quiesce_and_checkpoint(api: "HfApi", job_id: int, resume: bool = True) -> bool:
+    """Stop writers, persist a consistent DB, then resume unfinished work."""
+    if collector.running:
+        print("Pausing browser pool for a consistent checkpoint...")
+        collector.stop()
+        collector.wait_until_stopped()
+    before = database.status(job_id)
+    if any(
+        pin["status"] in {"pending", "retry", "claimed", "running"}
+        for pin in before["pins"]
+    ):
+        database.recover_interrupted_job(job_id)
+    database.flush_wal()
+    uploaded = upload_sqlite_checkpoint(api)
+    if uploaded:
+        upload_progress(api, job_id)
+    status = database.status(job_id)
+    unfinished = any(
+        pin["status"] in {"pending", "retry", "claimed", "running"}
+        for pin in status["pins"]
+    )
+    if resume and unfinished:
+        print("Checkpoint complete. Resuming browser pool...")
+        collector.start(job_id)
+    return unfinished
+
+
 def main() -> None:
     print("Initializing CLI headless scraping batch...")
+
+    compacted = database.compact_capture_storage()
+    if any(compacted.values()):
+        print(
+            "Reclaimed SQLite space from unused HTTP ledger data: "
+            f"{compacted['requests']} requests and "
+            f"{compacted['response_headers']} response-header rows."
+        )
     
     # Check if there is an active job already in progress
     status = database.status()
@@ -111,15 +163,17 @@ def main() -> None:
                 # Advance the clock before uploading so a slow upload cannot cause
                 # an immediate second checkpoint when control returns.
                 last_checkpoint = time.monotonic()
-                upload_sqlite_checkpoint(api)
+                if not quiesce_and_checkpoint(api, job_id):
+                    break
                         
     except KeyboardInterrupt:
         print("Manual interrupt received. Stopping collector...")
         collector.stop()
+        collector.wait_until_stopped()
         
     # A normally completed pool gets one final resumable DB and one final Parquet export.
     if api and HF_REPO:
-        upload_sqlite_checkpoint(api, label="final")
+        quiesce_and_checkpoint(api, job_id, resume=False)
         final_job = database.status(job_id).get("job") or {}
         if final_job.get("status") in {"completed", "completed_with_errors"}:
             upload_parquet_final()

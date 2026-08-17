@@ -55,6 +55,21 @@ class CollectorPool:
             for child in self.children.values():
                 child.stop()
 
+    def wait_until_stopped(self) -> None:
+        """Wait until the coordinator and every browser worker have closed."""
+        if self.thread and self.thread.is_alive():
+            self.thread.join()
+        while True:
+            with self._lock:
+                child_threads = [
+                    child.thread for child in self.children.values()
+                    if child.thread and child.thread.is_alive()
+                ]
+            if not child_threads:
+                return
+            for thread in child_threads:
+                thread.join()
+
     def _coordinate(self, job_id: int) -> None:
         self.db.update_job(job_id, status="starting", error=None)
         self.db.log_event(

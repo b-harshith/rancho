@@ -219,6 +219,39 @@ class Database:
                 "challenges": int(challenge_cursor.rowcount),
             }
 
+    def compact_capture_storage(self) -> dict[str, int]:
+        """Remove unused HTTP ledger data and reclaim its SQLite pages."""
+        with self._lock:
+            db = sqlite3.connect(self.path, timeout=30)
+            try:
+                request_count = int(db.execute("SELECT COUNT(*) FROM network_requests").fetchone()[0])
+                header_count = int(db.execute(
+                    "SELECT COUNT(*) FROM network_responses "
+                    "WHERE request_headers_json IS NOT NULL OR response_headers_json IS NOT NULL"
+                ).fetchone()[0])
+                if not request_count and not header_count:
+                    return {"requests": 0, "response_headers": 0}
+                db.execute("DELETE FROM network_requests")
+                db.execute(
+                    "UPDATE network_responses SET request_headers_json=NULL,response_headers_json=NULL "
+                    "WHERE request_headers_json IS NOT NULL OR response_headers_json IS NOT NULL"
+                )
+                db.commit()
+                db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
+                db.execute("VACUUM")
+                return {"requests": request_count, "response_headers": header_count}
+            finally:
+                db.close()
+
+    def flush_wal(self) -> None:
+        """Merge committed WAL pages into the main file before a direct upload."""
+        with self._lock:
+            db = sqlite3.connect(self.path, timeout=30)
+            try:
+                db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
+            finally:
+                db.close()
+
     def update_job(self, job_id: int, **fields: Any) -> None:
         if not fields:
             return
@@ -443,8 +476,8 @@ class Database:
             record["job_id"], record.get("pincode"), record.get("school_id"),
             record.get("year_id"), record["phase"], record["request_id"],
             record.get("method"), record["url"], record.get("status_code"),
-            record.get("mime_type"), json.dumps(record.get("request_headers") or {}),
-            json.dumps(record.get("response_headers") or {}), compressed_json,
+            record.get("mime_type"), None,
+            None, compressed_json,
             compressed_text, digest, utc_now(),
         )
         with self._lock, self.connect() as db:

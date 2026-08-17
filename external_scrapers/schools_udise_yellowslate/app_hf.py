@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import os
-import shutil
 import sqlite3
 import time
 import threading
@@ -17,20 +16,22 @@ DB_PATH = Path(os.environ.get("UDISE_DB", ROOT / "data/runtime/udise_data.sqlite
 BACKUP_PATH = DB_PATH.parent / "udise_data_backup.sqlite3"
 
 def download_db() -> None:
+    if DB_PATH.exists() and DB_PATH.stat().st_size:
+        print(f"Using existing runtime database: {DB_PATH}")
+        return
     if not HF_TOKEN or not HF_REPO:
         print("HF_TOKEN or HF_REPO not set. Skipping initial database download.")
         return
     print(f"Downloading database from Hugging Face Dataset: {HF_REPO}...")
     try:
-        # Download database to a temporary location first to avoid locking
-        downloaded_file = hf_hub_download(
+        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+        hf_hub_download(
             repo_id=HF_REPO,
             filename="udise_data.sqlite3",
             repo_type="dataset",
-            token=HF_TOKEN
+            token=HF_TOKEN,
+            local_dir=DB_PATH.parent,
         )
-        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(downloaded_file, DB_PATH)
         print("Database downloaded and restored successfully.")
     except Exception as e:
         print(f"Failed to download database or no database exists yet: {e}. Starting fresh.")
