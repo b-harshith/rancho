@@ -21,7 +21,9 @@ class CollectorPool:
         self.db = database
         self.chrome_path = chrome_path
         self.headless = headless
-        self.max_browsers = max(1, min(max_browsers, 10))
+        # The workflow controls the actual capacity. Keep a defensive ceiling for
+        # future larger runners without limiting them to the standard-runner value.
+        self.max_browsers = max(1, min(max_browsers, 64))
         self.thread: threading.Thread | None = None
         self.stop_event = threading.Event()
         self.children: dict[int, Collector] = {}
