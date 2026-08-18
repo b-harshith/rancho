@@ -15,34 +15,23 @@ CHECKPOINT_INTERVAL_SECONDS = max(
 )
 
 
-def upload_parquet_final() -> None:
-    """Export Parquet once, after every PIN task has reached a terminal state."""
+def upload_parquet_only(api: "HfApi") -> None:
+    """Export and upload only Parquet files to HF. SQLite NEVER uploaded to HF."""
     try:
-        print("Exporting final Parquet files from the completed database...")
+        print("Exporting latest data to Parquet and uploading to HF...")
         from export_to_parquet import export_all
         export_all()
-        print("Final Parquet files exported and uploaded successfully.")
     except Exception as pe:
-        print(f"Final Parquet export failed: {pe}")
+        print(f"Parquet export failed: {pe}")
 
 
 def upload_sqlite_checkpoint(api: "HfApi", label: str = "checkpoint") -> bool:
-    """Upload the quiesced database that the next runner can resume."""
-    if not DB_PATH.exists():
-        return False
-    try:
-        print(f"Uploading SQLite {label} to Hugging Face Dataset...")
-        api.upload_file(
-            path_or_fileobj=str(DB_PATH),
-            path_in_repo="udise_data.sqlite3",
-            repo_id=HF_REPO,
-            repo_type="dataset",
-        )
-        print(f"SQLite {label} upload complete.")
-        return True
-    except Exception as e:
-        print(f"SQLite {label} upload failed: {e}")
-        return False
+    """SQLite is NEVER uploaded to HF — only Parquet to prevent LFS bloat.
+    This function is kept as a stub so existing call sites don't break.
+    State is persisted via upload_parquet_only() instead.
+    """
+    upload_parquet_only(api)
+    return DB_PATH.exists()
 
 
 def upload_progress(api: "HfApi", job_id: int) -> None:
@@ -171,12 +160,10 @@ def main() -> None:
         collector.stop()
         collector.wait_until_stopped()
         
-    # A normally completed pool gets one final resumable DB and one final Parquet export.
+    # Final: always upload Parquet so HF reflects the latest progress.
     if api and HF_REPO:
         quiesce_and_checkpoint(api, job_id, resume=False)
-        final_job = database.status(job_id).get("job") or {}
-        if final_job.get("status") in {"completed", "completed_with_errors"}:
-            upload_parquet_final()
+        upload_parquet_only(api)
 
 if __name__ == "__main__":
     main()
