@@ -1,33 +1,35 @@
 FROM python:3.10-slim
 
-# Install chromium browser and driver
+# Install chromium browser and system dependencies
 RUN apt-get update && apt-get install -y \
     chromium \
     chromium-driver \
+    libglib2.0-0 \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up app directory
 WORKDIR /app
 
-# Pre-install CPU version of PyTorch and headless OpenCV to keep docker image size minimal (EasyOCR dependencies)
+# Pre-install CPU version of PyTorch, headless OpenCV, pandas, pyarrow, and huggingface_hub
 RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
-    pip install --no-cache-dir opencv-python-headless
+    pip install --no-cache-dir opencv-python-headless pandas pyarrow huggingface_hub
 
 # Copy requirements and install them
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install huggingface_hub for dataset persistence
-RUN pip install --no-cache-dir huggingface_hub
-
 # Copy all scraper code
 COPY . .
 
-# Configure scraper for headless chromium inside Docker
-ENV PORT=7860
+# Environment variables for Render
+ENV PORT=10000
 ENV UDISE_HEADLESS=1
 ENV UDISE_CHROME=/usr/bin/chromium
+ENV UDISE_BROWSER_CONCURRENCY=3
+ENV HF_TOKEN=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
+ENV HF_REPO=herseiiii/udise-data
 
-EXPOSE 7860
+EXPOSE 10000
 
-CMD ["python", "app_hf.py"]
+CMD ["python", "start_render.py"]

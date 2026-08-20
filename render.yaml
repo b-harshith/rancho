@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: udise-scraper
+    env: docker
+    dockerfilePath: external_scrapers/schools_udise_yellowslate/Dockerfile
+    dockerContext: external_scrapers/schools_udise_yellowslate
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: HF_TOKEN
+        value: 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
+      - key: HF_REPO
+        value: herseiiii/udise-data
+      - key: UDISE_HEADLESS
+        value: "1"
+      - key: UDISE_CHROME
+        value: /usr/bin/chromium
+      - key: UDISE_BROWSER_CONCURRENCY
+        value: "3"
