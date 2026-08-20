@@ -11,7 +11,7 @@ from app import database, collector, load_pincodes, DB_PATH
 from app_hf import HF_TOKEN, HF_REPO
 
 CHECKPOINT_INTERVAL_SECONDS = max(
-    60, int(os.environ.get("UDISE_CHECKPOINT_INTERVAL_SECONDS", "1800"))
+    60, int(os.environ.get("UDISE_CHECKPOINT_INTERVAL_SECONDS", "300"))
 )
 
 
